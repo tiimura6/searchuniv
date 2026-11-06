@@ -1,76 +1,6 @@
 {
  "add": [
   {
-   "name": "三重大学",
-   "type": "国立",
-   "pref": "三重県",
-   "hp": "http://www.mie-u.ac.jp/",
-   "cat": "national"
-  },
-  {
-   "name": "京都工芸繊維大学",
-   "type": "国立",
-   "pref": "京都府",
-   "hp": "http://www.kit.ac.jp/",
-   "cat": "national"
-  },
-  {
-   "name": "京都教育大学",
-   "type": "国立",
-   "pref": "京都府",
-   "hp": "http://www.kyokyo-u.ac.jp/",
-   "cat": "national"
-  },
-  {
-   "name": "兵庫教育大学",
-   "type": "国立",
-   "pref": "兵庫県",
-   "hp": "http://www.hyogo-u.ac.jp/",
-   "cat": "national"
-  },
-  {
-   "name": "和歌山大学",
-   "type": "国立",
-   "pref": "和歌山県",
-   "hp": "http://www.wakayama-u.ac.jp/",
-   "cat": "national"
-  },
-  {
-   "name": "大阪教育大学",
-   "type": "国立",
-   "pref": "大阪府",
-   "hp": "http://www.osaka-kyoiku.ac.jp/",
-   "cat": "national"
-  },
-  {
-   "name": "奈良教育大学",
-   "type": "国立",
-   "pref": "奈良県",
-   "hp": "http://www.nara-edu.ac.jp/home-jp.htm",
-   "cat": "national"
-  },
-  {
-   "name": "滋賀医科大学",
-   "type": "国立",
-   "pref": "滋賀県",
-   "hp": "http://www.shiga-med.ac.jp/",
-   "cat": "national"
-  },
-  {
-   "name": "滋賀大学",
-   "type": "国立",
-   "pref": "滋賀県",
-   "hp": "http://www.shiga-u.ac.jp/",
-   "cat": "national"
-  },
-  {
-   "name": "山口大学",
-   "type": "国立",
-   "pref": "山口県",
-   "hp": "http://www.yamaguchi-u.ac.jp/",
-   "cat": "national"
-  },
-  {
    "name": "島根大学",
    "type": "国立",
    "pref": "島根県",
@@ -219,6 +149,13 @@
    "type": "国立",
    "pref": "北海道",
    "hp": "http://www.muroran-it.ac.jp/index-j.html",
+   "cat": "national"
+  },
+  {
+   "name": "三重大学",
+   "type": "国立",
+   "pref": "三重県",
+   "hp": "http://www.mie-u.ac.jp/",
    "cat": "national"
   },
   {
@@ -4839,6 +4776,42 @@
   {
    "name": "福井大学",
    "op": "add"
+  },
+  {
+   "name": "京都工芸繊維大学",
+   "op": "add"
+  },
+  {
+   "name": "京都教育大学",
+   "op": "add"
+  },
+  {
+   "name": "兵庫教育大学",
+   "op": "add"
+  },
+  {
+   "name": "和歌山大学",
+   "op": "add"
+  },
+  {
+   "name": "大阪教育大学",
+   "op": "add"
+  },
+  {
+   "name": "奈良教育大学",
+   "op": "add"
+  },
+  {
+   "name": "滋賀医科大学",
+   "op": "add"
+  },
+  {
+   "name": "滋賀大学",
+   "op": "add"
+  },
+  {
+   "name": "山口大学",
+   "op": "add"
   }
  ],
  "failed": [],
@@ -4851,16 +4824,13 @@
   "千葉大学": 1,
   "埼玉大学": 1,
   "横浜国立大学": 1,
-  "東京外国語大学": 1
+  "東京外国語大学": 1,
+  "三重大学": 1,
+  "国立看護大学校": 1,
+  "電動モビリティシステム専門職大学": 1,
+  "北海道教育大学": 1
  },
  "enrich": [
-  {
-   "name": "国立看護大学校",
-   "keinet": null,
-   "need": [
-    "methods"
-   ]
-  },
   {
    "name": "航空大学校",
    "keinet": null,
@@ -4871,20 +4841,6 @@
   {
    "name": "職業能力開発大学校（ポリテクカレッジ）",
    "keinet": null,
-   "need": [
-    "methods"
-   ]
-  },
-  {
-   "name": "電動モビリティシステム専門職大学",
-   "keinet": null,
-   "need": [
-    "methods"
-   ]
-  },
-  {
-   "name": "北海道教育大学",
-   "keinet": "1030",
    "need": [
     "methods"
    ]
@@ -6109,15 +6065,6 @@
    ]
   },
   {
-   "name": "国立看護大学校",
-   "keinet": "",
-   "need": [
-    "licenses",
-    "careers",
-    "research"
-   ]
-  },
-  {
    "name": "職業能力開発総合大学校",
    "keinet": "5040",
    "need": [
@@ -6309,13 +6256,6 @@
    ]
   },
   {
-   "name": "北海道教育大学",
-   "keinet": "1030",
-   "need": [
-    "methods"
-   ]
-  },
-  {
    "name": "北見工業大学",
    "keinet": "1020",
    "need": [
@@ -6446,6 +6386,116 @@
    "keinet": "1205",
    "need": [
     "methods_gap"
+   ]
+  },
+  {
+   "name": "国立看護大学校",
+   "keinet": null,
+   "need": [
+    "methods"
+   ]
+  },
+  {
+   "name": "電動モビリティシステム専門職大学",
+   "keinet": null,
+   "need": [
+    "methods"
+   ]
+  },
+  {
+   "name": "北海道教育大学",
+   "keinet": "1030",
+   "need": [
+    "methods"
+   ]
+  },
+  {
+   "name": "国立看護大学校",
+   "keinet": "",
+   "need": [
+    "licenses",
+    "careers",
+    "research"
+   ]
+  },
+  {
+   "name": "北海道教育大学",
+   "keinet": "1030",
+   "need": [
+    "methods"
+   ]
+  },
+  {
+   "name": "京都工芸繊維大学",
+   "keinet": "1290",
+   "need": [
+    "methods_gap"
+   ]
+  },
+  {
+   "name": "京都教育大学",
+   "keinet": "1285",
+   "need": [
+    "methods_gap"
+   ]
+  },
+  {
+   "name": "兵庫教育大学",
+   "keinet": "1320",
+   "need": [
+    "methods_gap"
+   ]
+  },
+  {
+   "name": "和歌山大学",
+   "keinet": "1335",
+   "need": [
+    "methods",
+    "licenses",
+    "careers",
+    "research"
+   ]
+  },
+  {
+   "name": "大阪教育大学",
+   "keinet": "1305",
+   "need": [
+    "methods"
+   ]
+  },
+  {
+   "name": "奈良教育大学",
+   "keinet": "1325",
+   "need": [
+    "methods_gap",
+    "licenses",
+    "careers"
+   ]
+  },
+  {
+   "name": "滋賀医科大学",
+   "keinet": "1275",
+   "need": [
+    "methods_gap",
+    "licenses",
+    "careers",
+    "research"
+   ]
+  },
+  {
+   "name": "滋賀大学",
+   "keinet": "1270",
+   "need": [
+    "methods",
+    "licenses",
+    "careers"
+   ]
+  },
+  {
+   "name": "山口大学",
+   "keinet": "1365",
+   "need": [
+    "methods"
    ]
   }
  ],
