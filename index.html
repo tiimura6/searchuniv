@@ -108,6 +108,21 @@ details summary{cursor:pointer}
 .cnews .h{font-weight:700;font-size:12px;color:var(--accent);margin-bottom:4px}
 .cnews li{font-size:12.5px;margin:2px 0}
 .cnews a{color:var(--ink)}
+.aiform{display:flex;flex-direction:column;gap:10px;background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:14px 16px;margin-top:6px}
+.aiform label{display:flex;flex-direction:column;gap:4px;font-size:12px;color:var(--muted)}
+.aiform input,.aiform select{font-family:inherit;font-size:14px;border:1px solid var(--line);border-radius:8px;padding:8px 10px;background:var(--bg);color:var(--ink)}
+.airow{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:10px}
+.aibtns{display:flex;gap:8px}
+.aistatus{font-size:13px;color:var(--muted);margin:10px 2px}
+.aiout{display:flex;flex-direction:column;gap:10px}
+.airec{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:12px 16px}
+.airec h3{margin:0 0 4px;font-size:16px;display:flex;align-items:baseline;gap:8px;flex-wrap:wrap}
+.airec .rk{color:var(--accent);font-size:13px}
+.airec .why{font-size:13.5px;margin:6px 0}
+.airec .pts{margin:4px 0 6px;padding-left:1.1em;font-size:12.5px}
+.airec .caut{font-size:12px;color:var(--ng)}
+.airec .acts{display:flex;gap:10px;margin-top:6px;align-items:center}
+.tabs{flex-wrap:wrap}
 .info{border:1px solid var(--line);border-radius:10px;padding:8px 12px;margin:4px 0 10px;font-size:13px}
 .it{width:100%;border-collapse:collapse}
 .it th{width:7.2em;text-align:left;vertical-align:top;font-weight:500;color:var(--muted);font-size:12px;padding:5px 8px 5px 0;white-space:nowrap}
@@ -156,7 +171,7 @@ ul.mini li{font-size:12.5px;margin:2px 0}
 <body>
 <header>
   <h1>Searchuniv</h1>
-  <nav class="tabs"><a href="#cards" data-v="cards">カード</a><a href="#map" data-v="map">地図</a><a href="#news" data-v="news">ニュース</a></nav>
+  <nav class="tabs"><a href="#cards" data-v="cards">カード</a><a href="#map" data-v="map">地図</a><a href="#news" data-v="news">ニュース</a><a href="#ai" data-v="ai">AIおすすめ</a></nav>
 </header>
 <main>
 <section id="v-cards">
@@ -202,6 +217,23 @@ ul.mini li{font-size:12.5px;margin:2px 0}
   <div class="mapwrap"><svg id="jmap" viewBox="170 0 490 450" role="img" aria-label="日本地図"><g id="prefs"></g><g id="dots"></g><g id="labels"></g><g id="hl"></g></svg>
     <div class="zoomctl"><button class="btn" id="zin" title="拡大">＋</button><button class="btn" id="zout" title="縮小">−</button></div></div>
   <div id="mpanel" class="mpanel"></div>
+</section>
+
+<section id="v-ai" hidden>
+  <form id="aiform" class="aiform" onsubmit="return false">
+    <label>目指している職業<input id="ai-job" placeholder="例：臨床心理士、ゲームプログラマー、英語教員"></label>
+    <label>学びたい学問・興味<input id="ai-study" placeholder="例：心理学、AI、国際関係、昆虫の生態"></label>
+    <div class="airow">
+      <label>地域<select id="ai-region"><option value="">こだわらない</option><option>北海道・東北</option><option>関東</option><option>中部</option><option>近畿</option><option>中国・四国</option><option>九州・沖縄</option></select></label>
+      <label>設置区分<select id="ai-type"><option value="">こだわらない</option><option value="pub">国公立</option><option value="pri">私立</option><option value="dai">大学校</option></select></label>
+      <label>学力の目安<input id="ai-level" placeholder="例：共テ75%、偏差値60"></label>
+      <label>学費の上限<input id="ai-budget" placeholder="例：初年度150万円まで"></label>
+    </div>
+    <label>その他の条件<input id="ai-other" placeholder="例：自宅から通いたい、留学したい、奨学金重視"></label>
+    <div class="aibtns"><button class="btn big" id="ai-go" type="button">おすすめを出す</button><button class="btn" id="ai-stop" type="button" hidden>停止</button></div>
+  </form>
+  <div id="ai-status" class="aistatus"></div>
+  <div id="ai-out" class="aiout"></div>
 </section>
 
 <section id="v-news" hidden>
@@ -654,8 +686,8 @@ $("card").addEventListener("touchend",e=>{ if(sx===null) return; const dx=e.chan
 // ===== 画面切替 =====
 function showView(){
   const v=(location.hash||"#cards").slice(1);
-  const view=["cards","map","news"].includes(v)?v:"cards";
-  for(const id of ["cards","map","news"]) $("v-"+id).hidden = id!==view;
+  const view=["cards","map","news","ai"].includes(v)?v:"cards";
+  for(const id of ["cards","map","news","ai"]) $("v-"+id).hidden = id!==view;
   document.querySelectorAll(".tabs a").forEach(a=>a.classList.toggle("on",a.dataset.v===view));
   if(view==="map") initMap();
   if(view==="news") renderNews();
@@ -798,6 +830,77 @@ $("nq").addEventListener("input",renderNews); $("nf").addEventListener("change",
     }, err=>{ clearTimeout(timer); newsState="off"; renderNews(); });
   }catch(e){ clearTimeout(timer); newsState="off"; renderNews(); }
 })();
+
+// ===== AIおすすめ =====
+const REGION={"北海道・東北":["北海道","青森","岩手","宮城","秋田","山形","福島"],"関東":["茨城","栃木","群馬","埼玉","千葉","東京","神奈川"],"中部":["新潟","富山","石川","福井","山梨","長野","岐阜","静岡","愛知"],"近畿":["三重","滋賀","京都","大阪","兵庫","奈良","和歌山"],"中国・四国":["鳥取","島根","岡山","広島","山口","徳島","香川","愛媛","高知"],"九州・沖縄":["福岡","佐賀","長崎","熊本","大分","宮崎","鹿児島","沖縄"]};
+function regionOf(pref){ for(const [r,ps] of Object.entries(REGION)) if(ps.some(p=>pref.startsWith(p))) return r; return ""; }
+function typeKey(x){ if(x.cat==="daigakkou") return "dai"; return /国立|公立/.test(x.type)?"pub":"pri"; }
+function profile(x){
+  const f=INFO[x.name]||{}, e=EXAM[x.name]||{};
+  const parts=[x.name+"｜"+x.type+"｜"+x.pref, "特色:"+x.feats.join(" / ")];
+  if(f.faculties&&f.faculties.length) parts.push("学部:"+f.faculties.join("・"));
+  if(f.research&&f.research.length) parts.push("研究:"+f.research.join("・"));
+  if(f.licenses&&f.licenses.length) parts.push("資格:"+f.licenses.join("・"));
+  if(f.careers) parts.push("進路:"+f.careers);
+  const d=f.difficulty; if(d&&(d.hensachi||d.kyotei)) parts.push("難易度:"+[d.hensachi&&("偏差値"+d.hensachi),d.kyotei&&("共テ"+d.kyotei)].filter(Boolean).join(" "));
+  if(f.tuition&&f.tuition.amount!=null) parts.push("初年度納付金:"+f.tuition.amount+"円");
+  if(e.general&&e.general.ratio!=null) parts.push("一般倍率:"+e.general.ratio);
+  parts.push("担任メモ:"+x.memo);
+  return parts.join("｜");
+}
+function grams(t){ const s=new Set(); const c=t.replace(/[\s、。・,./／()（）「」]/g,""); for(let i=0;i<c.length-1;i++) s.add(c.substr(i,2)); return s; }
+function prefilter(q,region,type,limit){
+  const g=grams(q);
+  return items.filter(x=>(!region||regionOf(x.pref)===region||x.cat==="daigakkou"&&!type)&&(!type||typeKey(x)===type)&&x.name!=="電動モビリティシステム専門職大学")
+    .map(x=>{ const t=profile(x); let sc=0; for(const k of g) if(t.includes(k)) sc++; return {x,t,sc}; })
+    .sort((a,b)=>b.sc-a.sc).slice(0,limit);
+}
+let aiCtl=null, sampleFn=null;
+(async()=>{ try{ sampleFn = (window.claude&&claude.use) ? await claude.use("sample") : null; }catch(e){ sampleFn=null; }
+  if(!sampleFn){ $("ai-status").textContent="この画面でAIおすすめは使えません（Claudeの公開ページで開くと使えます）。"; $("ai-go").disabled=true; } })();
+$("ai-stop").onclick=()=>aiCtl&&aiCtl.abort();
+$("ai-go").onclick=async()=>{
+  if(!sampleFn) return;
+  const job=$("ai-job").value.trim(), study=$("ai-study").value.trim();
+  if(!job&&!study){ $("ai-status").textContent="職業か学びたい学問のどちらかを入力してください。"; return; }
+  const region=$("ai-region").value, type=$("ai-type").value;
+  const q=[job,study,$("ai-other").value].join(" ");
+  const cands=prefilter(q,region,type,90);
+  if(!cands.length){ $("ai-status").textContent="条件に合う学校がありません。"; return; }
+  const prompt=`あなたは日本の高校の進路指導を支える専門家です。以下の生徒の希望に合う進学先を、候補リストの中だけから最大8校選び、合う順に並べてください。
+候補リストにない学校は絶対に挙げないこと。候補の情報に書かれていない事実（偏差値・資格・就職先など）を作らないこと。不確かな点は caution に書くこと。
+生徒の希望:
+- 目指している職業: ${job||"未定"}
+- 学びたい学問・興味: ${study||"未定"}
+- 地域: ${region||"こだわらない"}
+- 設置区分: ${({pub:"国公立",pri:"私立",dai:"大学校"})[type]||"こだわらない"}
+- 学力の目安: ${$("ai-level").value||"不明"}
+- 学費の上限: ${$("ai-budget").value||"不明"}
+- その他: ${$("ai-other").value||"なし"}
+
+出力は次の形のJSON配列だけ:
+[{"name":"候補リストの学校名そのまま","reason":"この生徒に合う理由（2文以内）","points":["根拠となる学部・資格・進路など（候補情報から）", "..."],"caution":"注意点（学力・学費・距離・入試方式など、なければ空文字）"}]
+
+候補リスト（1行1校）:
+${cands.map(c=>c.t).join("\n")}`;
+  aiCtl=new AbortController(); $("ai-go").disabled=true; $("ai-stop").hidden=false; $("ai-out").innerHTML="";
+  $("ai-status").textContent=`${items.length}校から絞り込んだ${cands.length}校をAIが検討中…（30秒〜1分ほどかかります）`;
+  try{
+    const res=await sampleFn.json(prompt,{signal:aiCtl.signal,modelTier:"default"});
+    const list=(Array.isArray(res)?res:[]).filter(r=>r&&items.some(x=>x.name===r.name)).slice(0,8);
+    if(!list.length){ $("ai-status").textContent="おすすめを作れませんでした。条件を変えてもう一度お試しください。"; return; }
+    $("ai-status").textContent="AIの提案です。最終判断は募集要項と本人の意思で。";
+    $("ai-out").innerHTML=list.map((r,i)=>{ const x=items.find(y=>y.name===r.name);
+      return '<div class="airec"><h3><span class="rk">#'+(i+1)+'</span>'+esc(x.name)+'<span class="sub2">'+esc(x.type)+'｜'+esc(x.pref)+'</span></h3><div class="why">'+esc(String(r.reason||""))+'</div>'+
+      (Array.isArray(r.points)&&r.points.length?'<ul class="pts">'+r.points.slice(0,4).map(p=>'<li>'+esc(String(p))+'</li>').join("")+'</ul>':'')+
+      (r.caution?'<div class="caut">注意：'+esc(String(r.caution))+'</div>':'')+
+      '<div class="acts"><button class="btn" data-card="'+x.id+'">カードを見る</button><button class="btn" data-map="'+esc(x.name)+'">地図で見る</button>'+hpLink(x.name)+'</div></div>'; }).join("");
+    $("ai-out").querySelectorAll("[data-card]").forEach(b=>b.onclick=()=>openCard(+b.dataset.card));
+    $("ai-out").querySelectorAll("[data-map]").forEach(b=>b.onclick=()=>{ location.hash="#map"; setTimeout(()=>selectUniv(b.dataset.map),80); });
+  }catch(e){
+    const c=e&&e.code; $("ai-status").textContent = c==="cancelled"?"停止しました。": c==="not_granted"||c==="sampling_disabled"?"AIの利用が許可されていません。": c==="rate_limited"?"利用が集中しています。少し待ってからお試しください。":"うまく作れませんでした。もう一度お試しください。";
+  }finally{ $("ai-go").disabled=false; $("ai-stop").hidden=true; }
+};
 
 shuffleOrder(); rebuild(); showView();
 </script>
