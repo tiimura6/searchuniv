@@ -327,7 +327,7 @@ ul.mini li{font-size:12.5px;margin:2px 0}
       <div class="sbar"><input type="search" id="mq" placeholder="大学名・学部・学科・学問（例：看護、心理、建築）・地域で検索" autocomplete="off"><button class="btn" id="mreset">全国</button></div>
       <div class="sfilt">
         <select id="f-kyoka" aria-label="共通テスト科目数"><option value="">共テ教科数：すべて</option><option value="le3">3教科以下</option><option value="4-5">4〜5教科</option><option value="ge6">6教科以上</option><option value="none">共テ利用なし</option></select>
-        <select id="f-kei" aria-label="学問の系統"><option value="">学問の系統：すべて</option></select><select id="f-meth" aria-label="入試方式"><option value="">入試方式：すべて</option><option value="kouki">後期日程あり</option><option value="nijiH">二次（個別）重視</option><option value="ktH">共テ重視</option><option value="suisen">公募推薦あり</option><option value="sk_nokt">推薦・総合型で共テ不要あり</option><option value="sogo">総合型あり</option><option value="ktriyo">共テ利用方式あり（私立）</option></select><select id="f-rl" aria-label="英語R:L比率"><option value="">英語R:L：すべて</option><option value="1:1">1:1（均等）</option><option value="r">リーディング重視（3:1・4:1など）</option><option value="other">その他の比率</option></select>
+        <select id="f-kei" aria-label="学問の系統"><option value="">学問の系統：すべて</option></select><select id="f-meth" aria-label="入試方式"><option value="">入試方式：すべて</option><option value="kouki">後期日程あり</option><option value="nijiH">二次（個別）重視</option><option value="ktH">共テ重視</option><option value="suisen">公募推薦あり</option><option value="sk_nokt">推薦・総合型で共テ不要あり</option><option value="sogo">総合型あり</option><option value="ktriyo">共テ利用方式あり（私立）</option></select><select id="f-eng" aria-label="英語外部試験"><option value="">英語外部試験：すべて</option><option value="any">利用する方式あり</option><option value="shikaku">出願資格として使える</option><option value="kansan">得点換算・加点・みなし満点あり</option><option value="ippan">一般選抜で使える</option></select><select id="f-rl" aria-label="英語R:L比率"><option value="">英語R:L：すべて</option><option value="1:1">1:1（均等）</option><option value="r">リーディング重視（3:1・4:1など）</option><option value="other">その他の比率</option></select>
         <div class="kchk" role="group" aria-label="種別で表示を切り替え"><label class="chk"><input type="checkbox" class="fk" value="国立" checked><i style="background:#1f4e79"></i>国立</label><label class="chk"><input type="checkbox" class="fk" value="公立" checked><i style="background:#2a7f62"></i>公立</label><label class="chk"><input type="checkbox" class="fk" value="私立" checked><i style="background:#b0532a"></i>私立</label><label class="chk"><input type="checkbox" class="fk" value="その他" checked><i style="background:#4b5563"></i>その他（大学校・専門職大学）</label></div>
       </div>
       <div id="mcount" class="mcount"></div>
@@ -356,6 +356,7 @@ ul.mini li{font-size:12.5px;margin:2px 0}
     <div class="airow">
       <label>模試の種類<select id="ai-moshi"><option value="kawai">河合塾 全統記述模試</option><option value="shinken">ベネッセ 進研模試</option></select></label>
       <label>模試の偏差値<input id="ai-level" inputmode="decimal" placeholder="例：58"></label>
+      <label>英検（級またはCSE）<input id="ai-eiken" placeholder="例：2級 / CSE2150"></label>
       <label>共テ得点率（％）<input id="ai-kt" inputmode="decimal" placeholder="例：72"></label>
       <label>共テで受ける教科数<select id="ai-kyoka"><option value="">未定・共テなし</option><option value="3">3教科まで</option><option value="5">4〜5教科</option><option value="6">6教科以上</option></select></label>
       <label>学費の上限（初年度）<select id="ai-budget"><option value="">こだわらない</option><option value="1000000">100万円まで</option><option value="1300000">130万円まで</option><option value="1600000">160万円まで</option><option value="2000000">200万円まで</option></select></label>
@@ -856,7 +857,17 @@ function sourceBlock(name){
     (src.length?'<ul class="mini">'+src.slice(0,30).map(u=>'<li><a href="'+esc(u)+'" target="_blank" rel="noopener">'+esc(host(u))+'</a> <span class="sub2">'+esc(decodeURI(u).replace(/^https?:\/\/[^/]+/,"").slice(0,60))+'</span></li>').join("")+'</ul>':'<div class="sub2">出典の記録なし</div>')+
     '<div class="enote">※年度表示のない項目は '+esc(DATA_DATE.replace(/-/g,"/"))+' 時点で集めた情報です。出願前に必ず大学の募集要項で確認してください。</div></details>';
 }
-function extraBlocks(name){ const f=INFO[name]||{}; return fdiffBlock(f)+scheduleBlock(f)+moneyBlock(f)+sourceBlock(name); }
+
+// ===== 英語外部試験 =====
+const GRADE_CSE={"準2級":1728,"2級":1980,"準1級":2304,"1級":2630};   // 英検の各級の合格基準スコア（英検公式）
+function engNeed(r){ if(r.cse) return +r.cse; const g=String(r.grade||"").match(/準1級|準2級|1級|2級/); return g?GRADE_CSE[g[0]]:null; }
+function engBlock(f){
+  const E=f.eng; if(!E) return "";
+  if(!(E.rows||[]).length) return E.summary?'<details class="xb"><summary>英語外部試験</summary><div class="sub2">'+esc(E.summary)+'</div></details>':"";
+  return '<details class="xb" open><summary>英語外部試験の利用'+(E.year?'<span class="sub2">'+esc(E.year)+'</span>':'')+'</summary>'+(E.summary?'<div class="msum">'+esc(E.summary)+'</div>':'')+'<div class="tblw"><table class="xt"><thead><tr><th>方式</th><th>使い方</th><th>基準</th><th>対象</th></tr></thead><tbody>'+
+    E.rows.map(r=>'<tr><td><span class="ktag" style="background:'+(KUBUN_COLOR[r.kubun]||"#4b5563")+'">'+esc(r.kubun||"")+'</span>'+esc(r.name||"")+'</td><td>'+esc(r.use||"")+'</td><td>'+esc(r.level||"")+(r.tests?'<div class="sub2">'+esc(r.tests)+'</div>':'')+'</td><td>'+esc(r.faculties||"")+(r.note?'<div class="sub2">'+esc(r.note)+'</div>':'')+'</td></tr>').join("")+'</tbody></table></div>'+(E.note?'<div class="enote">※'+esc(E.note)+'</div>':'')+'</details>';
+}
+function extraBlocks(name){ const f=INFO[name]||{}; return fdiffBlock(f)+scheduleBlock(f)+engBlock(f)+moneyBlock(f)+sourceBlock(name); }
 
 // ===== 併願タブ：日程・受験料・手続締切・比較 =====
 let PLAN_SEL=null;   // 比較・日程に入れる大学（候補の中から）
@@ -1130,6 +1141,10 @@ function openCard(id){
 }
 function passFilters(x){
   const kf=$("f-kyoka").value, rf=$("f-rl").value;
+  const ef=$("f-eng").value; if(ef){ const L=(((INFO[x.name]||{}).eng)||{}).rows||[]; if(!L.length) return false;
+    if(ef==="shikaku"&&!L.some(r=>/出願資格/.test(r.use||""))) return false;
+    if(ef==="kansan"&&!L.some(r=>/換算|加点|みなし/.test(r.use||""))) return false;
+    if(ef==="ippan"&&!L.some(r=>r.kubun==="一般"||r.kubun==="共テ利用")) return false; }
   const kf2=$("f-kei").value; if(kf2&&!keiHits(x,kf2).length) return false;
   const mf=$("f-meth").value; if(mf){ const L=(((INFO[x.name]||{}).methods)||{}).list||[]; if(!L.length) return false;
     const ok={kouki:()=>L.some(r=>/後期/.test(r.name)), nijiH:()=>L.some(r=>r.kubun==="一般"&&r.kn&&r.kn[1]>r.kn[0]), ktH:()=>L.some(r=>r.kubun==="一般"&&r.kn&&r.kn[0]>r.kn[1]),
@@ -1152,7 +1167,7 @@ function kindGroup(x){ const k=kindOf(x); return (k==="国立"||k==="公立"||k=
 function kindVisible(x){ const on=kindsOn(); return on.size===4||on.has(kindGroup(x)); }
 function applyKindDots(){ const by=new Map(items.map(x=>[x.name,x])); document.querySelectorAll("#jmap .dot").forEach(c=>{ const x=by.get(c.querySelector("title").textContent); c.classList.toggle("off", !!x&&!kindVisible(x)); }); }
 function kindsOn(){ return new Set([...document.querySelectorAll(".fk:checked")].map(e=>e.value)); }
-function filtersActive(){ return $("f-kei").value||$("f-kyoka").value||$("f-rl").value||$("f-meth").value||kindsOn().size<4; }
+function filtersActive(){ return $("f-eng").value||$("f-kei").value||$("f-kyoka").value||$("f-rl").value||$("f-meth").value||kindsOn().size<4; }
 const REGION_Q={"北海道":["北海道"],"東北":["青森","岩手","宮城","秋田","山形","福島"],"北海道・東北":["北海道","青森","岩手","宮城","秋田","山形","福島"],"関東":["茨城","栃木","群馬","埼玉","千葉","東京","神奈川"],"首都圏":["埼玉","千葉","東京","神奈川"],"北陸":["新潟","富山","石川","福井"],"甲信越":["山梨","長野","新潟"],"東海":["岐阜","静岡","愛知","三重"],"中部":["新潟","富山","石川","福井","山梨","長野","岐阜","静岡","愛知"],"近畿":["三重","滋賀","京都","大阪","兵庫","奈良","和歌山"],"関西":["滋賀","京都","大阪","兵庫","奈良","和歌山"],"中国":["鳥取","島根","岡山","広島","山口"],"四国":["徳島","香川","愛媛","高知"],"中国・四国":["鳥取","島根","岡山","広島","山口","徳島","香川","愛媛","高知"],"九州":["福岡","佐賀","長崎","熊本","大分","宮崎","鹿児島"],"九州・沖縄":["福岡","佐賀","長崎","熊本","大分","宮崎","鹿児島","沖縄"],"沖縄":["沖縄"]};
 const KIND_Q={"国立":["国立"],"国立大学":["国立"],"公立":["公立"],"公立大学":["公立"],"国公立":["国立","公立"],"国公立大学":["国立","公立"],"私立":["私立"],"私立大学":["私立"],"大学校":["大学校"],"専門職大学":["専門職大学"],"専門職":["専門職大学"]};
 const KEI={
@@ -1221,6 +1236,7 @@ function renderResults(){
   if(!list.length&&qv&&filtersActive()) msg+="：検索語「"+qv+"」と絞り込みの両方に合う学校がありません。検索語を消すと絞り込みだけで探せます。";
   if(noK) msg+="（共テ情報が未登録の"+noK+"校は対象外）";
   if(noM) msg+="（入試方式が未登録の"+noM+"校は対象外）";
+  const noE=$("f-eng").value?items.filter(x=>!(((INFO[x.name]||{}).eng)||{}).rows).length:0; if(noE) msg+="（英語外部試験が未登録の"+noE+"校は対象外）";
   $("mcount").textContent=msg;
   const kv=$("f-kei").value;
   const facHit=x=>{ const f=INFO[x.name]||{}; let h=kv?keiHits(x,kv):[]; if(!h.length&&qv&&!isCorrect(qv,x.name)&&!nz(x.name).includes(nz(qv))){ const ws=[qv,...(typeof concepts==="function"?concepts(qv).flat():[])].filter(w=>w.length>=2); h=facList(f).filter(t=>ws.some(w=>t.includes(w))); }
@@ -1234,12 +1250,12 @@ function renderResults(){
   applyKindDots(); MATCH=set.size?set:(filtersActive()?new Set():null); if($("labels")&&$("labels").childNodes.length+document.querySelectorAll("#jmap .dot").length) placeLabels();
 }
 $("mq").addEventListener("input",()=>{ CUR_SEL=null; $("hl").innerHTML=""; $("mpanel").innerHTML=""; renderResults(); });
-[$("f-kei"),$("f-kyoka"),$("f-rl"),$("f-meth"),...document.querySelectorAll(".fk")].forEach(el=>el.addEventListener("change",()=>{
+[$("f-eng"),$("f-kei"),$("f-kyoka"),$("f-rl"),$("f-meth"),...document.querySelectorAll(".fk")].forEach(el=>el.addEventListener("change",()=>{
   // 学校を選んだ後は検索欄にその校名が入っているので、絞り込みを変えたら校名を消して一覧に戻す
   if($("mpanel").innerHTML&&items.some(x=>x.name===$("mq").value)) $("mq").value="";
   $("mpanel").innerHTML=""; renderResults(); }));
 $("mq").addEventListener("keydown",e=>{ if(e.key==="Enter"){ const l=searchUnivs($("mq").value); if(l.length) selectUniv(l[0].name); } });
-$("mreset").onclick=()=>{ MATCH=null; LAST_LIST=[]; CUR_SEL=null; renderSearchNews(); document.querySelectorAll(".fk").forEach(e=>e.checked=true); applyKindDots(); $("f-kei").value=""; $("f-kyoka").value=""; $("f-rl").value=""; $("f-meth").value=""; document.querySelectorAll(".fk").forEach(e=>e.checked=true); $("hl").innerHTML=""; $("mpanel").innerHTML=""; $("mresults").innerHTML=""; $("mcount").textContent=""; $("mq").value=""; document.querySelectorAll("#jmap .dot.dim").forEach(c=>c.classList.remove("dim")); setVB(HOME_VB); };
+$("mreset").onclick=()=>{ MATCH=null; LAST_LIST=[]; CUR_SEL=null; renderSearchNews(); document.querySelectorAll(".fk").forEach(e=>e.checked=true); applyKindDots(); $("f-eng").value=""; $("f-kei").value=""; $("f-kyoka").value=""; $("f-rl").value=""; $("f-meth").value=""; document.querySelectorAll(".fk").forEach(e=>e.checked=true); $("hl").innerHTML=""; $("mpanel").innerHTML=""; $("mresults").innerHTML=""; $("mcount").textContent=""; $("mq").value=""; document.querySelectorAll("#jmap .dot.dim").forEach(c=>c.classList.remove("dim")); setVB(HOME_VB); };
 window.addEventListener("hashchange",()=>{ if(location.hash==="#map") requestAnimationFrame(()=>scaleMarks()); });
 
 
@@ -1348,6 +1364,7 @@ function studentInput(){
   const raw=num($("ai-level").value), moshi=$("ai-moshi").value;
   return {moshi, rawHen:raw, hen:raw==null?null:(moshi==="shinken"?shinkenToKawai(raw):raw), job:$("ai-job").value.trim(), study:$("ai-study").value.trim(), other:$("ai-other").value.trim(),
     region:$("ai-region").value, type:$("ai-type").value, kt:num($("ai-kt").value),
+    eng:(()=>{ const t=($("ai-eiken").value||"").normalize("NFKC"); const c=t.match(/(\d{4})/); if(c) return +c[1]; const g=t.match(/準1級|準2級|1級|2級/); return g?GRADE_CSE[g[0]]:null; })(), engTxt:($("ai-eiken").value||"").trim(),
     kyoka:+$("ai-kyoka").value||null, budget:+$("ai-budget").value||null, ways:[...document.querySelectorAll(".aiw:checked")].map(e=>e.value)};
 }
 function fdiffPick(x,S,groups){
@@ -1398,7 +1415,8 @@ function recommend(S){
     else if(S.hen!=null||S.kt!=null) caution.push("難易度が未登録");
     if(band==="ch"&&gap>=8) { sc*=0.6; caution.push("かなりの挑戦（目安との差 "+gap.toFixed(1)+"）"); }
     if(x.cat==="daigakkou") caution.push("大学校は学位・身分・採用の扱いが大学と異なる");
-    res.push({x,sc,band,gap,why:[...why.values()],caution,wayRows,fd});
+    let engOk=null; if(S.eng){ const E=((f.eng||{}).rows)||[]; engOk=E.filter(r=>{ const n=engNeed(r); return n!=null&&S.eng>=n; }); }
+    res.push({x,sc,band,gap,why:[...why.values()],caution,wayRows,fd,engOk});
   }
   return res.sort((a,b)=>b.sc-a.sc||(PRIO[a.x.cat]??20)-(PRIO[b.x.cat]??20));
 }
@@ -1415,6 +1433,7 @@ function recCard(r,i){
   else if(m.summary) rows.push(["入試方式",esc(m.summary)]);
   if(gd.fit) rows.push(["向いている生徒",esc(gd.fit)]);
   if(gd.ask) rows.push(["面談で確認",esc(gd.ask)]);
+  if(r.engOk&&r.engOk.length) rows.push(["英語外部試験",'<span style="color:#2a7f62">基準を満たす：</span>'+r.engOk.slice(0,3).map(e=>esc(e.name+"（"+e.use+"・"+e.level+"）")).join("<br>")]);
   const caut=[...(gd.caution?[gd.caution]:[]),...r.caution];
   if(caut.length) rows.push(["注意",'<span style="color:var(--ng)">'+esc(caut.join("／"))+'</span>']);
   return '<div class="airec"><h3><span class="rk">'+(i+1)+'</span>'+badge(x)+esc(x.name)+'<span class="sub2">'+metaPrefix(x)+esc(x.pref)+'</span></h3>'+
@@ -1444,7 +1463,7 @@ $("ai-go").onclick=()=>{
   const list=recommend(S);
   if(!list.length){ $("ai-status").textContent="条件に合う学校が見つかりませんでした。言葉を変える（例：「臨床心理士」→「心理」）か、地域・区分・学費・入試方式の条件をゆるめてください。"; $("ai-out").innerHTML=""; $("ai-print").hidden=true; return; }
   $("ai-status").textContent=items.length+"校の登録情報と照らし合わせて"+list.length+"校が該当。各区分の上位を表示しています。最終判断は募集要項と本人の意思で。";
-  const cond=[S.job&&("職業："+S.job),S.study&&("学問："+S.study),S.hen!=null&&(S.moshi==="shinken"?("進研模試 偏差値 "+S.rawHen+"（河合換算 約"+S.hen+"）"):("河合模試 偏差値 "+S.hen)),S.kt!=null&&("共テ "+S.kt+"%"),S.kyoka&&("共テ "+({3:"3教科まで",5:"4〜5教科",6:"6教科以上"})[S.kyoka]),S.budget&&("学費 "+man(S.budget)+"まで"),S.region&&("地域："+S.region),S.type&&("区分："+({pub:"国公立",pri:"私立",dai:"大学校"})[S.type]),S.ways.length&&("方式："+S.ways.join("・")),S.other&&("その他："+S.other)].filter(Boolean);
+  const cond=[S.job&&("職業："+S.job),S.study&&("学問："+S.study),S.hen!=null&&(S.moshi==="shinken"?("進研模試 偏差値 "+S.rawHen+"（河合換算 約"+S.hen+"）"):("河合模試 偏差値 "+S.hen)),S.kt!=null&&("共テ "+S.kt+"%"),S.engTxt&&("英検 "+S.engTxt),S.kyoka&&("共テ "+({3:"3教科まで",5:"4〜5教科",6:"6教科以上"})[S.kyoka]),S.budget&&("学費 "+man(S.budget)+"まで"),S.region&&("地域："+S.region),S.type&&("区分："+({pub:"国公立",pri:"私立",dai:"大学校"})[S.type]),S.ways.length&&("方式："+S.ways.join("・")),S.other&&("その他："+S.other)].filter(Boolean);
   let h='<div class="msheet"><h2>面談シート</h2><div class="sub2">'+new Date().toLocaleDateString("ja-JP")+'　'+esc(cond.join("／"))+'</div></div>';
   for(const [k,label,desc] of BANDS){
     const L=list.filter(r=>r.band===k).slice(0,k==="unk"?8:5); if(!L.length) continue;
