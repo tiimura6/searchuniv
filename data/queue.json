@@ -1,76 +1,6 @@
 {
  "add": [
   {
-   "name": "北海道教育大学",
-   "type": "国立",
-   "pref": "北海道",
-   "hp": "http://www.hokkyodai.ac.jp/",
-   "cat": "national"
-  },
-  {
-   "name": "北見工業大学",
-   "type": "国立",
-   "pref": "北海道",
-   "hp": "http://www.kitami-it.ac.jp/",
-   "cat": "national"
-  },
-  {
-   "name": "室蘭工業大学",
-   "type": "国立",
-   "pref": "北海道",
-   "hp": "http://www.muroran-it.ac.jp/index-j.html",
-   "cat": "national"
-  },
-  {
-   "name": "宮城教育大学",
-   "type": "国立",
-   "pref": "宮城県",
-   "hp": "http://www.miyakyo-u.ac.jp/",
-   "cat": "national"
-  },
-  {
-   "name": "小樽商科大学",
-   "type": "国立",
-   "pref": "北海道",
-   "hp": "http://www.otaru-uc.ac.jp/",
-   "cat": "national"
-  },
-  {
-   "name": "山形大学",
-   "type": "国立",
-   "pref": "山形県",
-   "hp": "http://www.yamagata-u.ac.jp/index-j.html",
-   "cat": "national"
-  },
-  {
-   "name": "岩手大学",
-   "type": "国立",
-   "pref": "岩手県",
-   "hp": "http://www.iwate-u.ac.jp/",
-   "cat": "national"
-  },
-  {
-   "name": "帯広畜産大学",
-   "type": "国立",
-   "pref": "北海道",
-   "hp": "http://www.obihiro.ac.jp/",
-   "cat": "national"
-  },
-  {
-   "name": "弘前大学",
-   "type": "国立",
-   "pref": "青森県",
-   "hp": "http://www.hirosaki-u.ac.jp/",
-   "cat": "national"
-  },
-  {
-   "name": "旭川医科大学",
-   "type": "国立",
-   "pref": "北海道",
-   "hp": "http://www.asahikawa-med.ac.jp/",
-   "cat": "national"
-  },
-  {
    "name": "福島大学",
    "type": "国立",
    "pref": "福島県",
@@ -353,6 +283,13 @@
    "hp": "https://www.naist.jp/",
    "cat": "national",
    "note": "高校からの通常の進学先ではない（括弧内の理由）。カードの memo にもその旨を書く。"
+  },
+  {
+   "name": "室蘭工業大学",
+   "type": "国立",
+   "pref": "北海道",
+   "hp": "http://www.muroran-it.ac.jp/index-j.html",
+   "cat": "national"
   },
   {
    "name": "名寄市立大学",
@@ -4896,67 +4833,57 @@
    "need": [
     "research"
    ]
+  },
+  {
+   "name": "北海道教育大学",
+   "op": "add"
+  },
+  {
+   "name": "北見工業大学",
+   "op": "add"
+  },
+  {
+   "name": "宮城教育大学",
+   "op": "add"
+  },
+  {
+   "name": "小樽商科大学",
+   "op": "add"
+  },
+  {
+   "name": "山形大学",
+   "op": "add"
+  },
+  {
+   "name": "岩手大学",
+   "op": "add"
+  },
+  {
+   "name": "帯広畜産大学",
+   "op": "add"
+  },
+  {
+   "name": "弘前大学",
+   "op": "add"
+  },
+  {
+   "name": "旭川医科大学",
+   "op": "add"
   }
  ],
  "failed": [],
- "fail_count": {},
+ "fail_count": {
+  "室蘭工業大学": 1,
+  "東京科学大学": 1,
+  "神戸大学": 1,
+  "筑波大学": 1,
+  "茨城大学": 1,
+  "千葉大学": 1,
+  "埼玉大学": 1,
+  "横浜国立大学": 1,
+  "東京外国語大学": 1
+ },
  "enrich": [
-  {
-   "name": "東京科学大学",
-   "keinet": "1150",
-   "need": [
-    "research"
-   ]
-  },
-  {
-   "name": "神戸大学",
-   "keinet": "1310",
-   "need": [
-    "research"
-   ]
-  },
-  {
-   "name": "筑波大学",
-   "keinet": "1085",
-   "need": [
-    "research"
-   ]
-  },
-  {
-   "name": "茨城大学",
-   "keinet": "1075",
-   "need": [
-    "research"
-   ]
-  },
-  {
-   "name": "千葉大学",
-   "keinet": "1105",
-   "need": [
-    "research"
-   ]
-  },
-  {
-   "name": "埼玉大学",
-   "keinet": "1100",
-   "need": [
-    "research"
-   ]
-  },
-  {
-   "name": "横浜国立大学",
-   "keinet": "1170",
-   "need": [
-    "research"
-   ]
-  },
-  {
-   "name": "東京外国語大学",
-   "keinet": "1130",
-   "need": [
-    "research"
-   ]
-  },
   {
    "name": "お茶の水女子大学",
    "keinet": "1110",
@@ -5723,6 +5650,132 @@
     "licenses",
     "careers",
     "research"
+   ]
+  },
+  {
+   "name": "東京科学大学",
+   "keinet": "1150",
+   "need": [
+    "research"
+   ]
+  },
+  {
+   "name": "神戸大学",
+   "keinet": "1310",
+   "need": [
+    "research"
+   ]
+  },
+  {
+   "name": "筑波大学",
+   "keinet": "1085",
+   "need": [
+    "research"
+   ]
+  },
+  {
+   "name": "茨城大学",
+   "keinet": "1075",
+   "need": [
+    "research"
+   ]
+  },
+  {
+   "name": "千葉大学",
+   "keinet": "1105",
+   "need": [
+    "research"
+   ]
+  },
+  {
+   "name": "埼玉大学",
+   "keinet": "1100",
+   "need": [
+    "research"
+   ]
+  },
+  {
+   "name": "横浜国立大学",
+   "keinet": "1170",
+   "need": [
+    "research"
+   ]
+  },
+  {
+   "name": "東京外国語大学",
+   "keinet": "1130",
+   "need": [
+    "research"
+   ]
+  },
+  {
+   "name": "北海道教育大学",
+   "keinet": "1030",
+   "need": [
+    "methods"
+   ]
+  },
+  {
+   "name": "北見工業大学",
+   "keinet": "1020",
+   "need": [
+    "methods"
+   ]
+  },
+  {
+   "name": "宮城教育大学",
+   "keinet": "1055",
+   "need": [
+    "methods"
+   ]
+  },
+  {
+   "name": "小樽商科大学",
+   "keinet": "1010",
+   "need": [
+    "careers",
+    "methods"
+   ]
+  },
+  {
+   "name": "山形大学",
+   "keinet": "1065",
+   "need": [
+    "careers",
+    "methods"
+   ]
+  },
+  {
+   "name": "岩手大学",
+   "keinet": "1045",
+   "need": [
+    "careers",
+    "methods"
+   ]
+  },
+  {
+   "name": "帯広畜産大学",
+   "keinet": "1015",
+   "need": [
+    "methods"
+   ]
+  },
+  {
+   "name": "弘前大学",
+   "keinet": "1040",
+   "need": [
+    "kyotsu",
+    "methods"
+   ]
+  },
+  {
+   "name": "旭川医科大学",
+   "keinet": "1005",
+   "need": [
+    "licenses",
+    "careers",
+    "kyotsu",
+    "methods"
    ]
   }
  ],
