@@ -482,6 +482,8 @@ function frontFacts(x){
   const d=f.difficulty; if(d&&(d.hensachi||d.kyotei)) rows.push(["難易度",[d.hensachi?"偏差値 "+esc(d.hensachi):"",d.kyotei?"共テ "+esc(d.kyotei):""].filter(Boolean).join("／")]);
   const t=f.tuition; if(t&&t.amount!=null) rows.push(["初年度納付金",yen(t.amount)]);
   const e=EXAM[x.name]; if(e&&e.general&&e.general.ratio!=null) rows.push(["一般選抜倍率",Number(e.general.ratio).toFixed(1)+"倍"]);
+  if(f.research&&f.research.length) rows.push(["有名な研究分野",esc(f.research.map(m).join("／"))]);
+  if(f.notable&&f.notable.length) rows.push(["著名な教授",esc(f.notable.map(m).join("／"))]);
   if(!rows.length) return "";
   return '<table class="ff">'+rows.map(r=>'<tr><th>'+r[0]+'</th><td>'+r[1]+'</td></tr>').join("")+'</table>';
 }
@@ -492,7 +494,8 @@ function hintList(x){
   if(f.notable&&f.notable.length) h.push(["著名な教授",f.notable.map(m).join("／")]);
   return h;
 }
-function hintHTML(x){
+function hintHTML(x){ return ""; }
+function hintHTML_unused(x){
   const h=hintList(x); if(!h.length) return "";
   return '<div class="hints" onclick="event.stopPropagation()"><div class="hlist"></div><button class="btn" type="button" data-n="0">ヒント（'+h[0][0]+'）</button></div>';
 }
