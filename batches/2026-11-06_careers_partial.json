@@ -1,0 +1,177 @@
+[
+ {
+  "name": "東京大学",
+  "info": {
+   "licenses": [
+    "医師国家試験受験資格（医学科）",
+    "薬剤師国家試験受験資格（薬学科）",
+    "獣医師国家試験受験資格（獣医学課程）",
+    "看護師国家試験受験資格（健康総合科学科）",
+    "教員免許（中・高 各教科）",
+    "一級建築士受験資格（工・農の一部学科）"
+   ],
+   "careers": "理系は大学院進学が中心（理学部物理学科94.1%、薬学部薬科学科98.7%、農学部応用生命科学課程90.9%が進学）。文系は就職が中心で、経済学部経営学科91.2%・法学部第1類78.1%が就職（2024年度卒）。",
+   "sources": [
+    "https://search.keinet.ne.jp/1120/outline/licential",
+    "https://search.keinet.ne.jp/1120/outline/admission_employment"
+   ]
+  }
+ },
+ {
+  "name": "京都大学",
+  "info": {
+   "licenses": [
+    "医師国家試験受験資格（医学科）",
+    "薬剤師国家試験受験資格（薬学科）",
+    "看護師・保健師・理学療法士・作業療法士・臨床検査技師の受験資格（人間健康科学科）",
+    "教員免許（中・高 各教科）",
+    "一級建築士受験資格（建築学科）",
+    "公認心理師受験資格（文・教育・総合人間）"
+   ],
+   "careers": "理・工・農は大学院進学が中心（理学部84.8%、工学部各学科約85〜90%が進学）。経済学部は82.8%が就職、文学部・教育学部・総合人間学部も就職が約6割（2024年度卒）。",
+   "sources": [
+    "https://search.keinet.ne.jp/1280/outline/licential",
+    "https://search.keinet.ne.jp/1280/outline/admission_employment"
+   ]
+  }
+ },
+ {
+  "name": "筑波大学",
+  "info": {
+   "licenses": [
+    "教員免許（小・中・高 各教科、特別支援）",
+    "医師国家試験受験資格（医学類）",
+    "看護師・保健師国家試験受験資格（看護学類）",
+    "臨床検査技師国家試験受験資格（医療科学類）",
+    "公認心理師受験資格（心理学類）",
+    "学芸員・司書"
+   ],
+   "careers": "理工・生命環境・情報系は大学院進学が中心（化学類91.2%、応用理工学類91.4%、情報科学類82.9%が進学）。人文・社会系や体育専門学群は就職が6〜8割、看護学類は75.0%が就職（2024年度卒）。",
+   "sources": [
+    "https://search.keinet.ne.jp/1085/outline/licential",
+    "https://search.keinet.ne.jp/1085/outline/admission_employment"
+   ]
+  }
+ },
+ {
+  "name": "大阪公立大学",
+  "info": {
+   "licenses": [
+    "教員免許（中・高 各教科）",
+    "医師国家試験受験資格",
+    "獣医師国家試験受験資格",
+    "看護師国家試験受験資格",
+    "管理栄養士国家試験受験資格",
+    "一級建築士受験資格（建築学科・居住環境学科）"
+   ],
+   "careers": "学部全体の就職率・就職先はKei-Netに未掲載。看護学部は2026年度看護師国家試験で受験者135名全員合格、工学研究科機械系専攻の修士修了者は98.9%が就職（2024年度）。",
+   "sources": [
+    "https://search.keinet.ne.jp/1615/outline/licential",
+    "https://search.keinet.ne.jp/1615/outline/admission_employment"
+   ]
+  }
+ },
+ {
+  "name": "早稲田大学",
+  "info": {
+   "licenses": [
+    "教員免許（小・中・高 各教科）",
+    "学芸員",
+    "司書",
+    "公認心理師受験資格",
+    "社会福祉士受験資格（人間科学部）",
+    "一級建築士受験資格（建築学科）"
+   ],
+   "careers": "2024年度の学部卒業者約8,600人のうち就職約69%・進学約21%。理工系3学部は進学率65〜77%で大学院進学が中心、文系学部は就職が8割前後。",
+   "sources": [
+    "https://search.keinet.ne.jp/2293/outline/licential",
+    "https://search.keinet.ne.jp/2293/outline/admission_employment"
+   ]
+  }
+ },
+ {
+  "name": "神田外語大学",
+  "info": {
+   "licenses": [
+    "教員免許（中・高 英語）",
+    "教員免許（高 中国語）",
+    "教員免許（高 韓国語・スペイン語）"
+   ],
+   "careers": "2024年度卒業者は外国語学部で就職者比率80.8%、進学1.1%。グローバル・リベラルアーツ学部は就職77.1%、進学8.6%。",
+   "sources": [
+    "https://search.keinet.ne.jp/2172/outline/licential",
+    "https://search.keinet.ne.jp/2172/outline/admission_employment"
+   ]
+  }
+ },
+ {
+  "name": "関西外国語大学",
+  "info": {
+   "licenses": [
+    "教員免許（中・高 英語）",
+    "教員免許（中・高 国語）",
+    "教員免許（中・高 スペイン語）",
+    "小学校教諭一種",
+    "学校図書館司書教諭",
+    "司書"
+   ],
+   "careers": "2024年度卒業者の就職者比率は外国語学部83.1%、英語国際学部83.9%、英語キャリア学部90.7%。大学院進学は各学部とも2%前後。",
+   "sources": [
+    "https://search.keinet.ne.jp/2535/outline/licential",
+    "https://search.keinet.ne.jp/2535/outline/admission_employment"
+   ]
+  }
+ },
+ {
+  "name": "茨城キリスト教大学",
+  "info": {
+   "licenses": [
+    "教員免許（小・中・高・幼・特別支援ほか）",
+    "保育士",
+    "看護師・保健師国家試験受験資格",
+    "管理栄養士受験資格",
+    "社会福祉士受験資格",
+    "公認心理師受験資格"
+   ],
+   "careers": "2024年度卒業者の就職率は文学部92.9%、経営学部94.4%、看護学部95.2%、生活科学部91.8%と、どの学部も9割超が就職。",
+   "sources": [
+    "https://search.keinet.ne.jp/2107/outline/licential",
+    "https://search.keinet.ne.jp/2107/outline/admission_employment"
+   ]
+  }
+ },
+ {
+  "name": "常磐大学",
+  "info": {
+   "licenses": [
+    "教員免許（幼・小・中・高 ほか）",
+    "看護師・保健師国家試験受験資格",
+    "管理栄養士受験資格",
+    "公認心理師受験資格",
+    "司書",
+    "社会調査士"
+   ],
+   "careers": "",
+   "sources": [
+    "https://search.keinet.ne.jp/2108/outline/licential"
+   ]
+  }
+ },
+ {
+  "name": "流通経済大学",
+  "info": {
+   "licenses": [
+    "教員免許（中・高 社会・公民・地理歴史）",
+    "教員免許（中・高 保健体育）",
+    "教員免許（高 商業・情報）",
+    "保育士",
+    "社会福祉主事",
+    "認定心理士"
+   ],
+   "careers": "",
+   "sources": [
+    "https://search.keinet.ne.jp/2109/outline/licential"
+   ]
+  }
+ }
+]

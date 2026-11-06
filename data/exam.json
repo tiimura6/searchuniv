@@ -1,0 +1,2658 @@
+{
+"東京大学": {
+"general": {
+"year": 2026,
+"applicants": 8329,
+"examinees": 7381,
+"passers": 2990,
+"ratio": 2.5,
+"ratio_prev": 2.5
+},
+"suisen": {
+"year": 2026,
+"applicants": 265,
+"passers": 93,
+"ratio": 2.8
+},
+"format": "一般選抜は前期日程のみ（後期なし）。学校推薦型選抜を全10学部（医学部は医・健康総合科学）で実施し募集人員は各学部2〜30人と小規模、総合型選抜はKei-Netに掲載なし。",
+"note": "推薦は受験者欄が全学部空欄のため倍率=志願者÷合格者。総合型選抜はKei-Net上に掲載なし。",
+"sources": [
+"https://search.keinet.ne.jp/1120/general/exam_result",
+"https://search.keinet.ne.jp/1120/recommend/exam_result"
+]
+},
+"京都大学": {
+"general": {
+"year": 2026,
+"applicants": 8015,
+"examinees": 7648,
+"passers": 2682,
+"ratio": 2.9,
+"ratio_prev": 2.9
+},
+"suisen": {
+"year": 2026,
+"applicants": 253,
+"passers": 71,
+"ratio": 3.6
+},
+"sogo": {
+"year": 2026,
+"applicants": 478,
+"passers": 100,
+"ratio": 4.8
+},
+"format": "一般選抜は前期日程のみ。推薦・総合は「特色入試」として学部ごとに学校推薦型（法・経済・工・医医）と総合型（文・教育・理・農・医人間健康・薬・総合人間）に分かれ、工・理では女性枠も設置。",
+"note": "推薦・総合は学部学科別数値をPythonで全学合算。受験者が一部空欄の区分は受験者をnullとし倍率=志願者÷合格者。総合型は多段階選抜のため受験者nullとし倍率=志願者÷(2次)合格者。",
+"sources": [
+"https://search.keinet.ne.jp/1280/general/exam_result",
+"https://search.keinet.ne.jp/1280/recommend/exam_result"
+]
+},
+"大阪大学": {
+"general": {
+"year": 2026,
+"applicants": 7335,
+"examinees": 6764,
+"passers": 3053,
+"ratio": 2.2,
+"ratio_prev": 2.2
+},
+"suisen": {
+"year": 2026,
+"applicants": 640,
+"examinees": 640,
+"passers": 180,
+"ratio": 3.6
+},
+"sogo": {
+"year": 2026,
+"applicants": 443,
+"passers": 136,
+"ratio": 3.3
+},
+"format": "一般選抜はKei-Net上前期日程のみ掲載。学校推薦型は工・基礎工・医・歯・薬の理系学部、総合型は文・外国語（各専攻2〜6人）・法・経済・理（挑戦/研究奨励型）・人間科学で実施。",
+"note": "推薦・総合は学部学科別数値をPythonで全学合算。受験者が一部空欄の区分は受験者をnullとし倍率=志願者÷合格者。総合型は多段階選抜のため受験者nullとし倍率=志願者÷(2次)合格者。総合型の2次受験者は全行空欄。",
+"sources": [
+"https://search.keinet.ne.jp/1295/general/exam_result",
+"https://search.keinet.ne.jp/1295/recommend/exam_result"
+]
+},
+"東北大学": {
+"general": {
+"year": 2026,
+"applicants": 5782,
+"examinees": 4335,
+"passers": 1817,
+"ratio": 2.4,
+"ratio_prev": 2.4
+},
+"sogo": {
+"year": 2026,
+"applicants": 2590,
+"passers": 706,
+"ratio": 3.7
+},
+"format": "一般選抜は前期中心で後期は経済・理のみ。学校推薦型の掲載はなく、総合型選抜（AOⅡ期・Ⅲ期、科学オリンピック、地域枠等）を全学部で大規模に実施。",
+"note": "総合型はⅡ期・Ⅲ期・科学オリンピック・グローバル・地域枠を合算。推薦・総合は学部学科別数値をPythonで全学合算。受験者が一部空欄の区分は受験者をnullとし倍率=志願者÷合格者。総合型は多段階選抜のため受験者nullとし倍率=志願者÷(2次)合格者。",
+"sources": [
+"https://search.keinet.ne.jp/1050/general/exam_result",
+"https://search.keinet.ne.jp/1050/recommend/exam_result"
+]
+},
+"名古屋大学": {
+"general": {
+"year": 2026,
+"applicants": 4358,
+"examinees": 3953,
+"passers": 1820,
+"ratio": 2.2,
+"ratio_prev": 2.3
+},
+"suisen": {
+"year": 2026,
+"applicants": 960,
+"examinees": 722,
+"passers": 369,
+"ratio": 2.0
+},
+"sogo": {
+"year": 2026,
+"applicants": 59,
+"passers": 15,
+"ratio": 3.9
+},
+"format": "一般選抜は前期日程が基本で後期は医学部医学科（一般枠）のみ。学校推薦型を全学部で実施（法45人・経済40人など規模大）、総合型は理学部のみ。",
+"note": "推薦・総合は学部学科別数値をPythonで全学合算。受験者が一部空欄の区分は受験者をnullとし倍率=志願者÷合格者。総合型は多段階選抜のため受験者nullとし倍率=志願者÷(2次)合格者。",
+"sources": [
+"https://search.keinet.ne.jp/1250/general/exam_result",
+"https://search.keinet.ne.jp/1250/recommend/exam_result"
+]
+},
+"九州大学": {
+"general": {
+"year": 2026,
+"applicants": 6952,
+"examinees": 5333,
+"passers": 2388,
+"ratio": 2.2,
+"ratio_prev": 2.4
+},
+"suisen": {
+"year": 2026,
+"applicants": 124,
+"examinees": 113,
+"passers": 44,
+"ratio": 2.6
+},
+"sogo": {
+"year": 2026,
+"applicants": 802,
+"passers": 232,
+"ratio": 3.5
+},
+"format": "一般選抜は前期・後期あり（後期は人文・法・経済・理・工・農・薬）。学校推薦型は文・共創・芸術工・歯に限られ、総合型（Ⅰ・Ⅱ）をほぼ全学部で実施。",
+"note": "推薦・総合は学部学科別数値をPythonで全学合算。受験者が一部空欄の区分は受験者をnullとし倍率=志願者÷合格者。総合型は多段階選抜のため受験者nullとし倍率=志願者÷(2次)合格者。",
+"sources": [
+"https://search.keinet.ne.jp/1405/general/exam_result",
+"https://search.keinet.ne.jp/1405/recommend/exam_result"
+]
+},
+"北海道大学": {
+"general": {
+"year": 2026,
+"applicants": 9299,
+"examinees": 6879,
+"passers": 2558,
+"ratio": 2.7,
+"ratio_prev": 2.6
+},
+"sogo": {
+"year": 2026,
+"applicants": 373,
+"passers": 121,
+"ratio": 3.1
+},
+"format": "一般選抜は前期・後期あり。前期は「総合入試」（文系・理系一括募集、理系は重点科目別5区分）と学部別入試を併用。総合型（フロンティア入試TypeⅠ/Ⅱ、国際総合入試）を理・工・水産・医・歯などで実施。",
+"note": "学校推薦型選抜はKei-Netに掲載なし。推薦・総合は学部学科別数値をPythonで全学合算。受験者が一部空欄の区分は受験者をnullとし倍率=志願者÷合格者。総合型は多段階選抜のため受験者nullとし倍率=志願者÷(2次)合格者。",
+"sources": [
+"https://search.keinet.ne.jp/1025/general/exam_result",
+"https://search.keinet.ne.jp/1025/recommend/exam_result"
+]
+},
+"一橋大学": {
+"general": {
+"year": 2026,
+"applicants": 4375,
+"examinees": 2674,
+"passers": 957,
+"ratio": 2.8,
+"ratio_prev": 2.8
+},
+"suisen": {
+"year": 2025,
+"applicants": 72,
+"examinees": 72,
+"passers": 33,
+"ratio": 2.2
+},
+"format": "一般選抜は前期日程中心で後期は経済・ソーシャル・データサイエンスのみ。学校推薦型（共通テスト課す）を5学部で計55人募集、総合型選抜はなし。",
+"note": "推薦はKei-Netに入試結果ページが見つからず、ベネッセ マナビジョンの2025年度数値（5学部合算）を使用。総合型選抜は掲載なし。",
+"sources": [
+"https://search.keinet.ne.jp/1165/general/exam_result",
+"https://search.keinet.ne.jp/1165/recommend/exam_rec",
+"https://manabi.benesse.ne.jp/daigaku/school/1185/nyushi/bairitsu/"
+]
+},
+"東京科学大学": {
+"general": {
+"year": 2026,
+"applicants": 4070,
+"examinees": 3260,
+"passers": 1107,
+"ratio": 2.9,
+"ratio_prev": 3.4
+},
+"suisen": {
+"year": 2026,
+"applicants": 322,
+"passers": 82,
+"ratio": 3.9
+},
+"sogo": {
+"year": 2026,
+"applicants": 890,
+"passers": 218,
+"ratio": 4.1
+},
+"format": "一般選抜は前期日程のみ。総合型選抜を理・工・物質理工・情報理工・生命理工・環境社会理工の各学院で実施し女子枠の比重が大きい（工学院女子枠70人など）。学校推薦型は生命理工学院・医学部・歯学部で実施。",
+"note": "推薦・総合は学部学科別数値をPythonで全学合算。受験者が一部空欄の区分は受験者をnullとし倍率=志願者÷合格者。総合型は多段階選抜のため受験者nullとし倍率=志願者÷(2次)合格者。",
+"sources": [
+"https://search.keinet.ne.jp/1150/general/exam_result",
+"https://search.keinet.ne.jp/1150/recommend/exam_result"
+]
+},
+"神戸大学": {
+"general": {
+"year": 2026,
+"applicants": 10134,
+"examinees": 7384,
+"passers": 2546,
+"ratio": 2.9,
+"ratio_prev": 3.0
+},
+"suisen": {
+"year": 2026,
+"applicants": 503,
+"passers": 124,
+"ratio": 4.1
+},
+"sogo": {
+"year": 2026,
+"applicants": 381,
+"passers": 95,
+"ratio": 4.0
+},
+"format": "一般選抜は前期・後期あり（経済・経営・医医・医療創成工は前期のみ）。学校推薦型は経済50人・経営40人など、総合型は「志」特別選抜を中心に多数学科で少人数実施。",
+"note": "推薦・総合は学部学科別数値をPythonで全学合算。受験者が一部空欄の区分は受験者をnullとし倍率=志願者÷合格者。総合型は多段階選抜のため受験者nullとし倍率=志願者÷(2次)合格者。推薦の受験者は全行空欄。",
+"sources": [
+"https://search.keinet.ne.jp/1310/general/exam_result",
+"https://search.keinet.ne.jp/1310/recommend/exam_result"
+]
+},
+"筑波大学": {
+"general": {
+"year": 2026,
+"applicants": 5617,
+"examinees": 4592,
+"passers": 1560,
+"ratio": 2.9,
+"ratio_prev": 3.0
+},
+"suisen": {
+"year": 2026,
+"applicants": 1683,
+"examinees": 1676,
+"passers": 551,
+"ratio": 3.0
+},
+"sogo": {
+"year": 2026,
+"applicants": 346,
+"passers": 38,
+"ratio": 9.1
+},
+"format": "一般選抜は前期・後期あり、前期では学群別に加え「総合選抜」（文系・理系Ⅰ〜Ⅲ）を実施。学校推薦型を全学群で大規模に実施（体育90人、医学群医44人+地域枠23人など）、総合型は一部学類のみ。",
+"note": "推薦・総合は学部学科別数値をPythonで全学合算。受験者が一部空欄の区分は受験者をnullとし倍率=志願者÷合格者。総合型は多段階選抜のため受験者nullとし倍率=志願者÷(2次)合格者。総合型の倍率は志願者÷2次合格者。",
+"sources": [
+"https://search.keinet.ne.jp/1085/general/exam_result",
+"https://search.keinet.ne.jp/1085/recommend/exam_result"
+]
+},
+"茨城大学": {
+"general": {
+"year": 2026,
+"applicants": 4715,
+"examinees": 2887,
+"passers": 1477,
+"ratio": 2.0,
+"ratio_prev": 2.2
+},
+"suisen": {
+"year": 2026,
+"applicants": 613,
+"examinees": 612,
+"passers": 267,
+"ratio": 2.3
+},
+"sogo": {
+"year": 2026,
+"applicants": 177,
+"passers": 61,
+"ratio": 2.9
+},
+"format": "一般選抜は前期・後期あり（人文社会・教育・理・工・農で後期）。学校推薦型を全学部で実施（工・農は専門高校枠、工は女子枠あり）、総合型は地域未来共創学環・教育・工・農の一部。",
+"note": "推薦・総合は学部学科別数値をPythonで全学合算。受験者が一部空欄の区分は受験者をnullとし倍率=志願者÷合格者。総合型は多段階選抜のため受験者nullとし倍率=志願者÷(2次)合格者。",
+"sources": [
+"https://search.keinet.ne.jp/1075/general/exam_result",
+"https://search.keinet.ne.jp/1075/recommend/exam_result"
+]
+},
+"千葉大学": {
+"general": {
+"year": 2026,
+"applicants": 11783,
+"examinees": 8568,
+"passers": 2370,
+"ratio": 3.6,
+"ratio_prev": 3.8
+},
+"suisen": {
+"year": 2026,
+"applicants": 237,
+"examinees": 234,
+"passers": 76,
+"ratio": 3.1
+},
+"sogo": {
+"year": 2026,
+"applicants": 521,
+"passers": 145,
+"ratio": 3.6
+},
+"format": "一般選抜は前期・後期あり（文・法政経・理・工・園芸・医・薬で後期）。学校推薦型は文・情報データサイエンス・医・薬・看護、総合型は教育学部を中心に国際教養・法政経・理・工・園芸で実施。",
+"note": "推薦・総合は学部学科別数値をPythonで全学合算。受験者が一部空欄の区分は受験者をnullとし倍率=志願者÷合格者。総合型は多段階選抜のため受験者nullとし倍率=志願者÷(2次)合格者。",
+"sources": [
+"https://search.keinet.ne.jp/1105/general/exam_result",
+"https://search.keinet.ne.jp/1105/recommend/exam_result"
+]
+},
+"埼玉大学": {
+"general": {
+"year": 2026,
+"applicants": 6873,
+"examinees": 4574,
+"passers": 1582,
+"ratio": 2.9,
+"ratio_prev": 2.7
+},
+"suisen": {
+"year": 2026,
+"applicants": 434,
+"examinees": 430,
+"passers": 148,
+"ratio": 2.9
+},
+"sogo": {
+"year": 2026,
+"applicants": 66,
+"passers": 20,
+"ratio": 3.3
+},
+"format": "一般選抜は前期・後期あり（教養・経済・教育・理・工で後期）。学校推薦型を教養（Ⅰ型・Ⅱ型）・教育・理・工で実施、総合型は経済・理（生体制御）・工（情報工）のみ。",
+"note": "推薦・総合は学部学科別数値をPythonで全学合算。受験者が一部空欄の区分は受験者をnullとし倍率=志願者÷合格者。総合型は多段階選抜のため受験者nullとし倍率=志願者÷(2次)合格者。",
+"sources": [
+"https://search.keinet.ne.jp/1100/general/exam_result",
+"https://search.keinet.ne.jp/1100/recommend/exam_result"
+]
+},
+"横浜国立大学": {
+"general": {
+"year": 2026,
+"applicants": 8356,
+"examinees": 5220,
+"passers": 1668,
+"ratio": 3.1,
+"ratio_prev": 3.6
+},
+"suisen": {
+"year": 2026,
+"applicants": 229,
+"examinees": 226,
+"passers": 101,
+"ratio": 2.2
+},
+"sogo": {
+"year": 2026,
+"applicants": 845,
+"passers": 182,
+"ratio": 4.6
+},
+"format": "一般選抜は前期・後期日程で実施。学校推薦型は経営学部・理工学部の一部で小規模、総合型は教育・都市科学・経済・理工の各学部で実施し、教育学部では専門領域別の総合型が多数設けられている。",
+"note": "推薦・総合はKei-Net掲載の2026年度行を全学合算。2026年度教育学部の学校推薦型は数値空欄のため含まず。総合型は受験者が2次受験者のみ公表のため examinees=null・倍率は志願者÷合格者（2次受験者計441）。",
+"sources": [
+"https://search.keinet.ne.jp/general/exam_result_sp/1170",
+"https://search.keinet.ne.jp/1170/recommend/exam_result"
+]
+},
+"東京外国語大学": {
+"general": {
+"year": 2026,
+"applicants": 2189,
+"examinees": 1448,
+"passers": 705,
+"ratio": 2.1,
+"ratio_prev": 2.3
+},
+"suisen": {
+"year": 2026,
+"applicants": 167,
+"examinees": 163,
+"passers": 80,
+"ratio": 2.0
+},
+"format": "一般選抜は前期・後期日程で実施。学校推薦型は言語文化・国際社会・国際日本の3学部で実施（2026年度合格者計80名）。",
+"note": "総合型はKei-Netに数値掲載なし（null）。",
+"sources": [
+"https://search.keinet.ne.jp/1130/general/exam_result",
+"https://search.keinet.ne.jp/1130/recommend/exam_result"
+]
+},
+"お茶の水女子大学": {
+"general": {
+"year": 2026,
+"applicants": 1357,
+"examinees": 1020,
+"passers": 413,
+"ratio": 2.5,
+"ratio_prev": 2.8
+},
+"suisen": {
+"year": 2026,
+"applicants": 179,
+"passers": 65,
+"ratio": 2.8
+},
+"sogo": {
+"year": 2026,
+"applicants": 178,
+"passers": 33,
+"ratio": 5.4
+},
+"format": "一般選抜は前期・後期日程で実施。学校推薦型には通常枠と高大連携枠があり、総合型は理学部・生活科学部・共創工学部などで学科別に、文系学科は文教育・生活科学・共創工の合同区分で実施。",
+"note": "推薦・総合とも受験者数の掲載がないため倍率は志願者÷合格者。総合型の文系合同区分（志願者110）は学科別合格者を合算して計上。",
+"sources": [
+"https://search.keinet.ne.jp/1110/general/exam_result",
+"https://search.keinet.ne.jp/1110/recommend/exam_result"
+]
+},
+"東京学芸大学": {
+"general": {
+"year": 2026,
+"applicants": 2137,
+"examinees": 1603,
+"passers": 906,
+"ratio": 1.8,
+"ratio_prev": 1.9
+},
+"suisen": {
+"year": 2026,
+"applicants": 409,
+"examinees": 405,
+"passers": 142,
+"ratio": 2.9
+},
+"sogo": {
+"year": 2026,
+"applicants": 160,
+"examinees": 157,
+"passers": 47,
+"ratio": 3.3
+},
+"format": "教育学部のみの単科で、一般選抜は前期・後期日程。学校推薦型は初等・中等・特別支援・養護・教育支援の各専攻で実施し高大接続プログラム枠もある。総合型は音楽・美術・保健体育・生涯スポーツなど実技系中心。",
+"note": "一般選抜はKei-Net一般ページが取得不可のため大学公式PDF（前期＋後期合計、追加合格1名を含まない）。推薦は高大接続プログラム枠を含む。総合型は1次選考の記載がなく2次受験者を受験者として計上。",
+"sources": [
+"https://www.u-gakugei.ac.jp/nyushi/upload/2026_tgu_examination_result.pdf",
+"https://www.u-gakugei.ac.jp/nyushi/upload/2025_tgu_examination_result.pdf",
+"https://search.keinet.ne.jp/1135/recommend/exam_result"
+]
+},
+"東京農工大学": {
+"general": {
+"year": 2026,
+"applicants": 3418,
+"examinees": 2262,
+"passers": 824,
+"ratio": 2.7,
+"ratio_prev": 2.5
+},
+"suisen": {
+"year": 2026,
+"applicants": 432,
+"examinees": 432,
+"passers": 75,
+"ratio": 5.8
+},
+"sogo": {
+"year": 2026,
+"applicants": 88,
+"examinees": 88,
+"passers": 26,
+"ratio": 3.4
+},
+"format": "一般選抜は前期・後期日程で、後期の志願者が前期を上回る。学校推薦型は工・農両学部の全学科で、総合型は工学部のSAIL入試と農学部環境資源科学科のゼミナール入試。",
+"note": "推薦の共同獣医・産業動物獣医師養成枠は受験者空欄（志願2・合格0）のため受験者計は志願者で補完。総合型の受験者は2次受験者。",
+"sources": [
+"https://search.keinet.ne.jp/1160/general/exam_result",
+"https://search.keinet.ne.jp/1160/recommend/exam_result"
+]
+},
+"電気通信大学": {
+"general": {
+"year": 2026,
+"applicants": 4287,
+"examinees": 2811,
+"passers": 733,
+"ratio": 3.8,
+"ratio_prev": 3.4
+},
+"suisen": {
+"year": 2026,
+"applicants": 162,
+"examinees": 162,
+"passers": 72,
+"ratio": 2.3
+},
+"sogo": {
+"year": 2026,
+"applicants": 141,
+"passers": 42,
+"ratio": 3.4
+},
+"format": "一般選抜は前期・後期日程で、後期の志願者が前期の約2倍。学校推薦型は昼間学域のⅠ〜Ⅲ類で各プログラム別に、総合型は昼間Ⅰ〜Ⅲ類と夜間主の先端工学基礎課程で実施。",
+"note": "総合型は夜間主（先端工学基礎、第2次募集含む）を含む。昼間のみは志願91・合格14。受験者は2次受験者のみ公表のため examinees=null・倍率は志願者÷合格者（2次受験者計73）。",
+"sources": [
+"https://search.keinet.ne.jp/1115/general/exam_result",
+"https://search.keinet.ne.jp/1115/recommend/exam_result"
+]
+},
+"東京都立大学": {
+"general": {
+"year": 2026,
+"applicants": 7166,
+"examinees": 4670,
+"passers": 1485,
+"ratio": 3.1,
+"ratio_prev": 3.4
+},
+"suisen": {
+"year": 2026,
+"applicants": 725,
+"examinees": 637,
+"passers": 348,
+"ratio": 1.8
+},
+"sogo": {
+"year": 2026,
+"applicants": 129,
+"passers": 42,
+"ratio": 3.1
+},
+"format": "一般選抜は前期・後期日程で実施。学校推薦型は公募制に加え指定校・高校特定型・都立工科高校等特別推薦があり、総合型はグローバル人材育成・ゼミナール・科学オリンピック・研究室探検・情報Ⅰ・Ⅱ利用など多様な方式を小規模に実施。",
+"note": "推薦は指定校等を含む全区分合算（人文社会学部公募は1次選考ありで受験者が志願者を大きく下回る）。総合型は受験者が2次受験者のため examinees=null・倍率は志願者÷合格者。",
+"sources": [
+"https://search.keinet.ne.jp/1532/general/exam_result",
+"https://search.keinet.ne.jp/1532/recommend/exam_result"
+]
+},
+"横浜市立大学": {
+"general": {
+"year": 2026,
+"applicants": 2488,
+"examinees": 2022,
+"passers": 715,
+"ratio": 2.8,
+"ratio_prev": 2.8
+},
+"suisen": {
+"year": 2026,
+"applicants": 596,
+"examinees": 570,
+"passers": 304,
+"ratio": 1.9
+},
+"sogo": {
+"year": 2026,
+"applicants": 186,
+"passers": 60,
+"ratio": 3.1
+},
+"format": "一般選抜は前期・後期日程で実施。学校推薦型は公募・指定校に加え医学部の特別公募（県内・県外枠）があり、総合型は国際教養・国際商・理・データサイエンスの各学部で科学オリンピック枠も設けている。",
+"note": "推薦は指定校（合格率100%）を含む合算で、公募のみでは倍率が高い。総合型は受験者が2次受験者のみのため examinees=null・倍率は志願者÷合格者（2次受験者計90）。",
+"sources": [
+"https://search.keinet.ne.jp/1540/general/exam_result",
+"https://search.keinet.ne.jp/1540/recommend/exam_result"
+]
+},
+"宇都宮大学": {
+"general": {
+"year": 2026,
+"applicants": 2267,
+"examinees": 1667,
+"passers": 790,
+"ratio": 2.1,
+"ratio_prev": 2.2
+},
+"suisen": {
+"year": 2026,
+"applicants": 372,
+"examinees": 355,
+"passers": 131,
+"ratio": 2.7
+},
+"sogo": {
+"year": 2026,
+"applicants": 254,
+"passers": 89,
+"ratio": 2.9
+},
+"format": "一般選抜は前期・後期日程で実施。学校推薦型は国際・共同教育・工・農の各学部、総合型は地域デザイン科学・データサイエンス経営・共同教育・工・農の各学部で実施し、教育学部では教科別の総合型がある。",
+"note": "農学部は2026年度に学科再編があり、2025年度のみ掲載の旧学科は除外。総合型の受験者は2次受験者のため examinees=null・倍率は志願者÷合格者。",
+"sources": [
+"https://search.keinet.ne.jp/1090/general/exam_result",
+"https://search.keinet.ne.jp/1090/recommend/exam_result"
+]
+},
+"群馬大学": {
+"general": {
+"year": 2026,
+"applicants": 2370,
+"examinees": 1615,
+"passers": 852,
+"ratio": 1.9,
+"ratio_prev": 2.2
+},
+"suisen": {
+"year": 2026,
+"applicants": 682,
+"examinees": 681,
+"passers": 363,
+"ratio": 1.9
+},
+"sogo": {
+"year": 2026,
+"applicants": 76,
+"passers": 23,
+"ratio": 3.3
+},
+"format": "一般選抜は前期・後期日程で実施。学校推薦型は共同教育・理工・医・情報の全学部で行い医学科には地域医療枠がある。総合型は共同教育学部の一部教科、理工学部の専門学科・総合学科特別選抜、iTFL入試など小規模。",
+"note": "総合型の受験者は2次受験者のため examinees=null・倍率は志願者÷合格者。",
+"sources": [
+"https://search.keinet.ne.jp/1095/general/exam_result",
+"https://search.keinet.ne.jp/1095/recommend/exam_result"
+]
+},
+"高崎経済大学": {
+"general": {
+"year": 2026,
+"applicants": 5557,
+"examinees": 3311,
+"passers": 1139,
+"ratio": 2.9,
+"ratio_prev": 3.0
+},
+"suisen": {
+"year": 2026,
+"applicants": 486,
+"examinees": 486,
+"passers": 195,
+"ratio": 2.5
+},
+"format": "公立大学で、一般選抜は前期・中期・後期の3日程で実施。学校推薦型は地域政策学部（区分Ⅰ・Ⅱ）と経済学部で行い、募集人員195名に対し合格者195名。",
+"note": "総合型はKei-Netに掲載なし（null）。",
+"sources": [
+"https://search.keinet.ne.jp/1520/general/exam_result",
+"https://search.keinet.ne.jp/1520/recommend/exam_result"
+]
+},
+"東京海洋大学": {
+"general": {
+"year": 2026,
+"applicants": 1892,
+"examinees": 1410,
+"passers": 418,
+"ratio": 3.4,
+"ratio_prev": 3.5
+},
+"suisen": {
+"year": 2026,
+"applicants": 132,
+"examinees": 131,
+"passers": 31,
+"ratio": 4.2
+},
+"sogo": {
+"year": 2026,
+"applicants": 189,
+"passers": 33,
+"ratio": 5.7
+},
+"format": "一般選抜は前期・後期日程で実施。学校推薦型は海洋生命科学部・海洋資源環境学部で一般枠と専門学科枠、総合型は海洋生命科学部・海洋工学部でA方式・B方式（専門・総合）・D方式（商船教員養成）を実施。",
+"note": "総合型は1次選考で大きく絞られる（2次受験者計87）。受験者は2次のみ公表のため examinees=null・倍率は志願者÷合格者。",
+"sources": [
+"https://search.keinet.ne.jp/1152/general/exam_result",
+"https://search.keinet.ne.jp/1152/recommend/exam_result"
+]
+},
+"東京藝術大学": {
+"general": {
+"year": 2026,
+"applicants": 3876,
+"examinees": 3806,
+"passers": 461,
+"ratio": 8.3,
+"ratio_prev": 7.7
+},
+"format": "一般選抜は前期日程のみで、後期日程はない。",
+"note": "推薦・総合型の入試結果ページは取得できず（null）。",
+"sources": [
+"https://search.keinet.ne.jp/1140/general/exam_result"
+]
+},
+"茨城県立医療大学": {
+"general": {
+"year": 2026,
+"applicants": 232,
+"examinees": 225,
+"passers": 93,
+"ratio": 2.4,
+"ratio_prev": 2.1
+},
+"suisen": {
+"year": 2026,
+"applicants": 212,
+"examinees": 212,
+"passers": 85,
+"ratio": 2.5
+},
+"format": "公立の保健医療学部単科大学で、一般選抜は前期日程のみ掲載。学校推薦型は看護・理学療法・作業療法・放射線技術科学の4学科で実施。",
+"note": "総合型はKei-Netに掲載なし（null）。",
+"sources": [
+"https://search.keinet.ne.jp/1519/general/exam_result",
+"https://search.keinet.ne.jp/1519/recommend/exam_result"
+]
+},
+"大阪公立大学": {
+"general": {
+"year": 2026,
+"applicants": 15231,
+"examinees": 11771,
+"passers": 3041,
+"ratio": 3.9,
+"ratio_prev": 3.7
+},
+"suisen": {
+"year": 2026,
+"applicants": 1530,
+"examinees": 1527,
+"passers": 384,
+"ratio": 4.0
+},
+"sogo": {
+"year": 2026,
+"applicants": 96,
+"examinees": 91,
+"passers": 23,
+"ratio": 4.0
+},
+"format": "一般選抜は前期・中期・後期の3日程で実施（公立大の中期日程あり）。推薦は経済・商の英語重点/数学重点、医の地域限定・大阪府指定医療枠、農・生活科学の府内枠/全国枠など学部ごとに多様で、総合型は商・工・医・現代システム科学域の一部のみの小規模実施。",
+"note": "推薦・総合型はKei-Net掲載の学部・学科別数値を合算（2026年度行のみ）。総合型の受験者・合格者は2次選考の数値。",
+"sources": [
+"https://search.keinet.ne.jp/1615/general/exam_result",
+"https://search.keinet.ne.jp/1615/recommend/exam_result"
+]
+},
+"国際教養大学": {
+"general": {
+"year": 2026,
+"applicants": 1135,
+"examinees": 931,
+"passers": 172,
+"ratio": 5.4,
+"ratio_prev": 4.2
+},
+"suisen": {
+"year": 2026,
+"applicants": 156,
+"examinees": 156,
+"passers": 43,
+"ratio": 3.6
+},
+"sogo": {
+"year": 2026,
+"applicants": 226,
+"examinees": 223,
+"passers": 47,
+"ratio": 4.7
+},
+"format": "独自日程（A日程・B日程・C日程の別日程）と国際教養（一般）枠で一般選抜を行い、B日程は合格者5名と超高倍率。推薦は約35名枠、総合型は総合型Ⅰ・グローバル・セミナー・グローバル・ワークショップの3方式。",
+"note": "総合型は3方式を合算、受験者・合格者は2次選考の数値。",
+"sources": [
+"https://search.keinet.ne.jp/1521/general/exam_result",
+"https://search.keinet.ne.jp/1521/recommend/exam_result"
+]
+},
+"会津大学": {
+"general": {
+"year": 2026,
+"applicants": 500,
+"examinees": 469,
+"passers": 156,
+"ratio": 3.0,
+"ratio_prev": 3.4
+},
+"suisen": {
+"year": 2026,
+"applicants": 166,
+"examinees": 165,
+"passers": 96,
+"ratio": 1.7
+},
+"format": "コンピュータ理工学部の単科で、一般選抜はA・B2方式の前期のみ掲載（後期の掲載なし）。学校推薦型はA・B各48名と大きく、合格者数では推薦が一般の6割程度を占める。",
+"note": "総合型選抜はKei-Netに結果掲載なしのためnull。",
+"sources": [
+"https://search.keinet.ne.jp/1518/general/exam_result",
+"https://search.keinet.ne.jp/1518/recommend/exam_result"
+]
+},
+"福島県立医科大学": {
+"general": {
+"year": 2026,
+"applicants": 841,
+"examinees": 564,
+"passers": 223,
+"ratio": 2.5,
+"ratio_prev": 2.2
+},
+"suisen": {
+"year": 2026,
+"applicants": 296,
+"examinees": 289,
+"passers": 127,
+"ratio": 2.3
+},
+"sogo": {
+"year": 2026,
+"applicants": 16,
+"examinees": 15,
+"passers": 5,
+"ratio": 3.0
+},
+"format": "一般選抜は前期・後期の2日程。推薦は医学部55名をはじめ保健科学・看護各学部で実施し、医学部は総合型（募集5名、1次・2次選考）も実施。",
+"note": "推薦はKei-Net掲載の5表を合算（保健科学部臨床検査学科の表なし、見出しと表の対応が不明瞭）。総合型は医学部のみで2次選考の数値。",
+"sources": [
+"https://search.keinet.ne.jp/1515/general/exam_result",
+"https://search.keinet.ne.jp/1515/recommend/exam_result"
+]
+},
+"新潟大学": {
+"general": {
+"year": 2026,
+"applicants": 5624,
+"examinees": 3993,
+"passers": 1829,
+"ratio": 2.2,
+"ratio_prev": 2.1
+},
+"suisen": {
+"year": 2026,
+"applicants": 1230,
+"examinees": 1227,
+"passers": 533,
+"ratio": 2.3
+},
+"sogo": {
+"year": 2026,
+"applicants": 257,
+"examinees": 257,
+"passers": 124,
+"ratio": 2.1
+},
+"format": "一般選抜は前期・後期の2日程で、後期の志願者が多い。推薦は全学部で実施（工学部はⅠ型専門枠・女子枠、Ⅱ型など細分）、総合型は経済科学・理・工・創生学部で実施。",
+"note": "推薦・総合型はKei-Net掲載の学科別数値を合算（志願者0・空欄行は0扱い）。総合型の受験者・合格者は2次選考の数値。",
+"sources": [
+"https://search.keinet.ne.jp/1180/general/exam_result",
+"https://search.keinet.ne.jp/1180/recommend/exam_result"
+]
+},
+"金沢大学": {
+"general": {
+"year": 2026,
+"applicants": 3985,
+"examinees": 3594,
+"passers": 1683,
+"ratio": 2.1,
+"ratio_prev": 1.9
+},
+"suisen": {
+"year": 2026,
+"applicants": 115,
+"examinees": 83,
+"passers": 48,
+"ratio": 1.7
+},
+"sogo": {
+"year": 2026,
+"applicants": 363,
+"examinees": 340,
+"passers": 203,
+"ratio": 1.7
+},
+"format": "一般選抜は前期のみ（学域・学類単位）。総合型の比重が大きく、A-lympiad・超然文学・防災・復興人材・女子枠特別・デジタル人材・地元育成など独自方式が多数。推薦は人間社会・医薬保健学域が中心。",
+"note": "推薦・総合型はKei-Net掲載の学類・方式別2026年度数値を合算（2026年度空欄行は0扱い）。推薦の医学類は共通テストによる第1段階選抜で受験者が志願者を大きく下回る。KUGS特別入試等は区分外。",
+"sources": [
+"https://search.keinet.ne.jp/1200/general/exam_result",
+"https://search.keinet.ne.jp/1200/recommend/exam_result"
+]
+},
+"信州大学": {
+"general": {
+"year": 2026,
+"applicants": 5933,
+"examinees": 3996,
+"passers": 1745,
+"ratio": 2.3,
+"ratio_prev": 2.1
+},
+"suisen": {
+"year": 2026,
+"applicants": 1077,
+"examinees": 1074,
+"passers": 386,
+"ratio": 2.8
+},
+"sogo": {
+"year": 2026,
+"applicants": 174,
+"examinees": 169,
+"passers": 59,
+"ratio": 2.9
+},
+"format": "一般選抜は前期・後期の2日程。推薦は全学部で大規模に実施（Ⅰ＝共通テストなし／Ⅱ＝共通テストありの区分）、総合型は教育・理（地球学）・工学部で実施。",
+"note": "推薦・総合型はKei-Net掲載の2026年度数値を合算。工学部の旧学科（2025年度のみの行）は除外。総合型は2次選考の数値。",
+"sources": [
+"https://search.keinet.ne.jp/1225/general/exam_result",
+"https://search.keinet.ne.jp/1225/recommend/exam_result"
+]
+},
+"静岡大学": {
+"general": {
+"year": 2026,
+"applicants": 6085,
+"examinees": 3693,
+"passers": 1784,
+"ratio": 2.1,
+"ratio_prev": 2.1
+},
+"suisen": {
+"year": 2026,
+"applicants": 530,
+"examinees": 529,
+"passers": 273,
+"ratio": 1.9
+},
+"sogo": {
+"year": 2026,
+"applicants": 151,
+"examinees": 151,
+"passers": 70,
+"ratio": 2.2
+},
+"format": "一般選抜は前期・後期の2日程で後期の志願者が前期を上回る。推薦は多くの学科で「共通テスト課す」型、教育学部に地域指定枠あり。総合型は工学部・グローバル共創科学部・情報学部などで実施。",
+"note": "Kei-Netページは見出しと表の対応が崩れていたため、全表の2026年度行を出現順に合算（2026年度行のない総合型7表は除外）。",
+"sources": [
+"https://search.keinet.ne.jp/1230/general/exam_result",
+"https://search.keinet.ne.jp/1230/recommend/exam_result"
+]
+},
+"広島大学": {
+"general": {
+"year": 2026,
+"applicants": 5712,
+"examinees": 4311,
+"passers": 2328,
+"ratio": 1.9,
+"ratio_prev": 2.2
+},
+"suisen": {
+"year": 2026,
+"applicants": 229,
+"passers": 92,
+"ratio": 2.5
+},
+"sogo": {
+"year": 2026,
+"applicants": 676,
+"passers": 179,
+"ratio": 3.8
+},
+"format": "一般選抜は前期・後期の2日程。総合型（Ⅰ型・Ⅱ型、女子枠、日本地学オリンピック型、サイエンス研究評価型等）を全学的に実施し、推薦は経済・医（ふるさと枠）・情報科学（地方創生枠）など一部に限られる。",
+"note": "Kei-Netで推薦の一部と総合型の受験者（2次受験者）が空欄のため examinees は null、倍率は志願者÷合格者で算出。推薦9表・総合型59表のうち数値のある行を合算。",
+"sources": [
+"https://search.keinet.ne.jp/1360/general/exam_result",
+"https://search.keinet.ne.jp/1360/recommend/exam_result"
+]
+},
+"岡山大学": {
+"general": {
+"year": 2026,
+"applicants": 4208,
+"examinees": 3805,
+"passers": 1633,
+"ratio": 2.3,
+"ratio_prev": 2.2
+},
+"suisen": {
+"year": 2026,
+"applicants": 1012,
+"examinees": 997,
+"passers": 411,
+"ratio": 2.4
+},
+"sogo": {
+"year": 2026,
+"applicants": 887,
+"examinees": 855,
+"passers": 249,
+"ratio": 3.4
+},
+"format": "一般選抜はKei-Net掲載上すべて前期のみ。推薦は工学部・教育学部が大規模で医学部に地域枠（岡山・広島・兵庫）、総合型は文・法・理・医保健・薬とグローバル・ディスカバリー・プログラム（ディスカバリー入試・国際入試）で実施。",
+"note": "推薦・総合型はKei-Net掲載の2026年度数値を合算（夜間主の空欄行は除外）。総合型は2次選考の数値で、国際入試（10月入学含む）も含む。",
+"sources": [
+"https://search.keinet.ne.jp/1355/general/exam_result",
+"https://search.keinet.ne.jp/1355/recommend/exam_result"
+]
+},
+"熊本大学": {
+"general": {
+"year": 2026,
+"applicants": 4117,
+"examinees": 3099,
+"passers": 1437,
+"ratio": 2.2,
+"ratio_prev": 2.3
+},
+"suisen": {
+"year": 2026,
+"applicants": 786,
+"examinees": 779,
+"passers": 340,
+"ratio": 2.3
+},
+"sogo": {
+"year": 2026,
+"applicants": 106,
+"examinees": 106,
+"passers": 24,
+"ratio": 4.4
+},
+"format": "一般選抜は前期・後期の2日程。推薦は全学部で実施（工学部はⅡア・Ⅱイ、医学部は一般・地域・熊本みらい医療枠など）、総合型は共創学環の3方式のみ掲載。",
+"note": "推薦は2026年度行のある表のみ合算（教育学部の一部学科・文学部旧専攻等は2026年度数値なし）。総合型は共創学環3方式のみ（グローバルリーダーコースは2026年度数値なし）。",
+"sources": [
+"https://search.keinet.ne.jp/1440/general/exam_result",
+"https://search.keinet.ne.jp/1440/recommend/exam_result"
+]
+},
+"奈良女子大学": {
+"general": {
+"year": 2026,
+"applicants": 1769,
+"examinees": 1096,
+"passers": 479,
+"ratio": 2.3,
+"ratio_prev": 2.7
+},
+"suisen": {
+"year": 2026,
+"applicants": 211,
+"examinees": 207,
+"passers": 54,
+"ratio": 3.8
+},
+"sogo": {
+"year": 2026,
+"applicants": 124,
+"examinees": 56,
+"passers": 26,
+"ratio": 2.2
+},
+"format": "女子大学。一般選抜は前期・後期の2日程。推薦は高大連携特別を含む小規模実施、総合型は文・理・工（Q²型・Q³型）・生活環境学部で学部単位に募集し2段階選考。",
+"note": "総合型は学部単位の志願者・2次受験者と学科別の2次合格者を合算（1次選考で絞り込み後の受験者数を使用）。",
+"sources": [
+"https://search.keinet.ne.jp/1330/general/exam_result",
+"https://search.keinet.ne.jp/1330/recommend/exam_result"
+]
+},
+"長岡技術科学大学": {
+"general": {
+"year": 2026,
+"applicants": 135,
+"examinees": 125,
+"passers": 57,
+"ratio": 2.2,
+"ratio_prev": 1.1
+},
+"suisen": {
+"year": 2026,
+"applicants": 49,
+"examinees": 49,
+"passers": 33,
+"ratio": 1.5
+},
+"format": "工学部（工学課程）単科。1年次入学の一般選抜は前期日程のみで、学校推薦型は共通テスト免除の専門・総合学科枠と普通科・理数科枠の2区分。総合型の掲載なし。",
+"note": "Kei-Netに推薦の入試結果ページがなく、推薦は旺文社パスナビの学校推薦型選抜合計（共テ免専・総＋共テ免普・理）を使用。総合型はnull。",
+"sources": [
+"https://search.keinet.ne.jp/1175/general/exam_result",
+"https://passnavi.obunsha.co.jp/univ/0360/bairitsu/"
+]
+},
+"豊橋技術科学大学": {
+"general": {
+"year": 2026,
+"applicants": 114,
+"examinees": 109,
+"passers": 50,
+"ratio": 2.2,
+"ratio_prev": 2.1
+},
+"suisen": {
+"year": 2026,
+"applicants": 80,
+"examinees": 79,
+"passers": 36,
+"ratio": 2.2
+},
+"format": "工学部単科。一般選抜は前期のみ。推薦は普通科・理数科等枠と、各課程の「工業に関する学科等」枠に分かれる。総合型の結果掲載なし。",
+"note": "推薦はKei-Net掲載の6表を合算。総合型選抜はKei-Netに結果掲載なしのためnull。",
+"sources": [
+"https://search.keinet.ne.jp/1245/general/exam_result",
+"https://search.keinet.ne.jp/1245/recommend/exam_result"
+]
+},
+"早稲田大学": {
+"general": {
+"year": 2026,
+"applicants": 94438,
+"examinees": 76345,
+"passers": 14957,
+"ratio": 5.7,
+"ratio_prev": 5.7
+},
+"suisen": {
+"year": 2026,
+"passers": 1577
+},
+"sogo": {
+"year": 2026,
+"applicants": 1997,
+"passers": 364,
+"ratio": 5.5
+},
+"format": "推薦は文・教育・国際教養・文化構想・法・政経・商・理工3学部・人間科学で指定校推薦を実施（各学部130〜225名規模）。総合型は国際教養学部AO（募集100名）、スポーツ科学部トップアスリート、社会科学部全国自己推薦、全学的な地域探究・貢献入試など多様。",
+"note": "一般の倍率はKei-Net大学計の掲載値（2026年受験者÷合格者で計算すると約5.1、2025年は約5.0）。一般の合格者に追加・第2志望合格198名（2025年512名）を含む。推薦は指定校の合格者のみ公表で志願者不明のため倍率null（2026年合格者合計を学部合算）。総合型は1次または最終の志願者と最終合格者を方式ごとに合算した志願者÷合格者（受験者は一部のみ公表）。",
+"sources": [
+"https://search.keinet.ne.jp/2293/general/exam_result",
+"https://search.keinet.ne.jp/2293sp/recommend/exam_result_sp"
+]
+},
+"慶應義塾大学": {
+"general": {
+"year": 2026,
+"applicants": 42033,
+"examinees": 38287,
+"passers": 9708,
+"ratio": 3.9,
+"ratio_prev": 3.7
+},
+"format": "一般選抜が中心。推薦は法・経済・商・理工・薬で指定校推薦、総合型は文学部自主応募制（募集120名）と法学部FIT入試（A・B方式）などを実施。",
+"note": "一般の合格者に追加合格526名（2025年940名）を含む。推薦はKei-Netで数値非公表のためnull。総合型は文学部（志願390・合格116）と法学部FITの一部のみ掲載で全学合算できないためnull。",
+"sources": [
+"https://search.keinet.ne.jp/2210/general/exam_result",
+"https://search.keinet.ne.jp/2210sp/recommend/exam_result_sp"
+]
+},
+"上智大学": {
+"general": {
+"year": 2026,
+"applicants": 31946,
+"examinees": 30912,
+"passers": 8304,
+"ratio": 3.7,
+"ratio_prev": 3.3
+},
+"suisen": {
+"year": 2026,
+"applicants": 1678,
+"passers": 847,
+"ratio": 2.0
+},
+"format": "推薦は全学部で公募制と指定校制の2本立て（公募制は学科ごとに数名〜数十名を選抜）。一般選抜は追加・第2志望合格を含む。",
+"note": "一般の合格者に追加・第2志望合格1,449名を含む。推薦は公募制＋指定校制の学科別数値を合算（受験者は非公表のため志願者÷合格者）。総合型はKei-Netに結果掲載なしでnull。",
+"sources": [
+"https://search.keinet.ne.jp/2221/general/exam_result",
+"https://search.keinet.ne.jp/2221/recommend/exam_result"
+]
+},
+"東京理科大学": {
+"sogo": {
+"year": 2026,
+"applicants": 286,
+"passers": 167,
+"ratio": 1.7
+},
+"format": "総合型は各学部の「英語資格検定＋特定教科評価」方式と工・先進工・創域理工・創域情報学部の「女子」枠、理学部第二部の総合型で実施（各学科募集3〜20名程度）。一般はA方式（共テ）など複数方式。",
+"note": "一般はKei-Netのページが長く取得時に大学計行まで読み込めず、公式の合計も見つからずnull。推薦はKei-Netに結果掲載なしでnull。総合型は最終志願者÷最終合格者を学科合算（情報計算科学・経営システム工は空欄）。",
+"sources": [
+"https://search.keinet.ne.jp/2262/recommend/exam_result",
+"https://search.keinet.ne.jp/2262/general/exam_result"
+]
+},
+"国際基督教大学（ICU）": {
+"general": {
+"year": 2026,
+"applicants": 1320,
+"examinees": 1278,
+"passers": 360,
+"ratio": 3.6,
+"ratio_prev": 3.5
+},
+"format": "教養学部アーツ・サイエンス学科の1学部1学科。総合型は英語外部試験利用（募集60名、英語資格必須・評定4.1以上・専願）と理数探究利用（5名）で、1次書類・2次面接。",
+"note": "総合型・推薦の入試結果はKei-Netに掲載なくnull（総合型の方式概要は2027年度入試の情報）。",
+"sources": [
+"https://search.keinet.ne.jp/2214/general/exam_result",
+"https://search.keinet.ne.jp/2214/recommend/exam_ao"
+]
+},
+"学習院大学": {
+"general": {
+"year": 2026,
+"applicants": 28558,
+"passers": 5604,
+"ratio": 5.1,
+"ratio_prev": 4.1
+},
+"suisen": {
+"year": 2026,
+"applicants": 1204,
+"passers": 961,
+"ratio": 1.3
+},
+"sogo": {
+"year": 2026,
+"applicants": 247,
+"passers": 66,
+"ratio": 3.7
+},
+"format": "推薦は学部単位の指定校推薦が大半で、ほかに各学科の公募制推薦（若干名）を実施。総合型は国際社会科学部（募集20名）と国際文化交流学部で実施。",
+"note": "一般2026年は受験者未判明のため倍率は志願者÷合格者（Kei-Net掲載値）。合格者に追加218名を含む。志願者は前年比125%。推薦は指定校＋公募の合算（附属校は数値なし）、受験者非公表で志願者÷合格者。総合型はKei-Net掲載の2方式のみ合算。",
+"sources": [
+"https://search.keinet.ne.jp/2204/general/exam_result",
+"https://search.keinet.ne.jp/2204/recommend/exam_result"
+]
+},
+"明治大学": {
+"general": {
+"year": 2026,
+"applicants": 115012,
+"examinees": 107670,
+"passers": 26272,
+"ratio": 4.1,
+"ratio_prev": 3.9
+},
+"sogo": {
+"year": 2026,
+"applicants": 1110,
+"passers": 284,
+"ratio": 3.9
+},
+"format": "総合型は文・国際日本・総合数理・理工・農学部の自己推薦特別入試、政治経済学部のグローバル型特別入試、商学部の公募制特別入試（共テ利用・全商協）などで実施。一般は学部別・全学部統一・共テ利用。",
+"note": "推薦はKei-Netに2026年度データなくnull。総合型は1次志願者（なければ最終志願者）と最終合格者を学科・方式ごとに合算。",
+"sources": [
+"https://search.keinet.ne.jp/2286/general/exam_result",
+"https://search.keinet.ne.jp/2286/recommend/exam_result"
+]
+},
+"青山学院大学": {
+"general": {
+"year": 2026,
+"applicants": 54444,
+"examinees": 50180,
+"passers": 10958,
+"ratio": 4.6,
+"ratio_prev": 4.2
+},
+"suisen": {
+"year": 2026,
+"applicants": 1644,
+"passers": 1521,
+"ratio": 1.1
+},
+"sogo": {
+"year": 2026,
+"applicants": 674,
+"passers": 173,
+"ratio": 3.9
+},
+"format": "推薦は指定校・併設高校・系属校・キリスト教同盟校・全国キリスト者・スポーツなど多様な区分で全学部実施。総合型（自己推薦）は文学部（英米文・史・比較芸術）、地球社会共生、コミュニティ人間科学部で実施。",
+"note": "推薦は全区分（指定校・併設・系属等含む）を合算、受験者非公表で志願者÷合格者（一部行は志願者空欄）。総合型は1次志願者÷最終合格者。",
+"sources": [
+"https://search.keinet.ne.jp/2200/general/exam_result",
+"https://search.keinet.ne.jp/2200/recommend/exam_result"
+]
+},
+"立教大学": {
+"general": {
+"year": 2026,
+"applicants": 70194,
+"examinees": 40823,
+"passers": 15408,
+"ratio": 4.4,
+"ratio_prev": 4.0
+},
+"format": "総合型は自由選抜入試・アスリート選抜入試・国際コース選抜入試を各学部で実施。一般は共テ利用を含み、受験者数が判明しない方式がある。",
+"note": "一般の倍率はKei-Net大学計の掲載値（受験者÷合格者で計算すると約2.6。共テ利用など受験者不明の方式を含むためとみられる）。合格者に追加1,439名を含む。推薦はKei-Netにデータなし、総合型は表の対応が崩れて正確に合算できずnull。",
+"sources": [
+"https://search.keinet.ne.jp/2290/general/exam_result",
+"https://search.keinet.ne.jp/2290/recommend/exam_result"
+]
+},
+"中央大学": {
+"sogo": {
+"year": 2026,
+"applicants": 1902,
+"passers": 570,
+"ratio": 3.3
+},
+"format": "総合型は文学部の自己推薦特別入試、法学部のチャレンジ入試・英語運用能力特別入試、経済学部の高大接続入試、国際経営学部の自己推薦、理工系学部の高大接続型自己推薦、全学部のスポーツ推薦など。",
+"note": "一般はKei-Netのページが長く取得時に大学計行まで読み込めず、公式の合計も見つからずnull。推薦はKei-Netにデータなしでnull。総合型は1次志願者（なければ最終志願者）と最終合格者を合算（理工学部は空欄）。",
+"sources": [
+"https://search.keinet.ne.jp/2242/recommend/exam_result",
+"https://search.keinet.ne.jp/2242/general/exam_result"
+]
+},
+"法政大学": {
+"general": {
+"year": 2026,
+"applicants": 111240,
+"examinees": 106013,
+"passers": 18654,
+"ratio": 5.7,
+"ratio_prev": 4.2
+},
+"sogo": {
+"year": 2026,
+"applicants": 1400,
+"examinees": 1400,
+"passers": 360,
+"ratio": 3.9
+},
+"format": "推薦は各学部でスポーツ・指定校・付属校推薦を実施。総合型はグローバル教養学部GIS自己推薦、国際文化学部SA自己推薦、各学部の自己推薦・英語外部試験利用・グローバル体験公募などで実施。",
+"note": "一般の合格者に追加87名を含み、2025年から合格者が大幅に減少（23,753→18,654）。推薦は数値非公表でnull。総合型は最終の志願・受験・合格を合算（受験者は志願者と同数で掲載）。",
+"sources": [
+"https://search.keinet.ne.jp/2279/general/exam_result",
+"https://search.keinet.ne.jp/2279/recommend/exam_result"
+]
+},
+"同志社大学": {
+"general": {
+"year": 2026,
+"applicants": 55544,
+"examinees": 43097,
+"passers": 16589,
+"ratio": 3.2,
+"ratio_prev": 3.0
+},
+"suisen": {
+"year": 2026,
+"applicants": 908,
+"examinees": 583,
+"passers": 315,
+"ratio": 1.9
+},
+"sogo": {
+"year": 2026,
+"applicants": 101,
+"passers": 18,
+"ratio": 5.6
+},
+"format": "推薦は公募制推薦・自己推薦・スポーツ推薦を学部ごとに実施（各学科数名〜20名程度）。総合型は商学部フレックス複合、生命医科学部、スポーツ健康科学部などで小規模に実施。",
+"note": "一般の倍率はKei-Net大学計の掲載値（受験者÷合格者で計算すると約2.6）。推薦は公募制・自己推薦・スポーツを合算し受験者÷合格者。総合型はKei-Net掲載の3方式のみで1次志願者÷最終合格者。",
+"sources": [
+"https://search.keinet.ne.jp/2498/general/exam_result",
+"https://search.keinet.ne.jp/2498/recommend/exam_result"
+]
+},
+"立命館大学": {
+"general": {
+"year": 2026,
+"applicants": 98635,
+"passers": 30288,
+"ratio": 3.3
+},
+"sogo": {
+"year": 2026,
+"applicants": 2155,
+"passers": 888,
+"ratio": 2.4
+},
+"format": "一般選抜は延べ志願者98,635人、実志願者34,703人（1人平均約2.8回出願）。総合型は各学部独自方式（講義選抜、セミナー、UNITE Program、CREA方式など）と全学の文化・芸術活動／スポーツ方式を実施。",
+"note": "一般はKei-Netで大学計行を取得できず、大学公式（2027年度入試ガイド）の2026年度一般選抜合計を使用。受験者非公表のため倍率は延べ志願者÷合格者で自分で計算、前年値なし。共テ方式を含むかは資料から判別できず。推薦はKei-Netにデータなしでnull。総合型は1次志願者（なければ最終志願者）と最終合格者を合算。",
+"sources": [
+"https://admission.ritsumei.ac.jp/assets/file/2027/application/guide/64.pdf",
+"https://search.keinet.ne.jp/2504/recommend/exam_result",
+"https://search.keinet.ne.jp/2504/general/exam_result"
+]
+},
+"関西学院大学": {
+"sogo": {
+"year": 2026,
+"applicants": 1136,
+"passers": 480,
+"ratio": 2.4
+},
+"format": "総合型は全学部で探究評価型・学部特色型・国際活躍型・スポーツ型の方式を実施。",
+"note": "一般はKei-Netのページが長く取得時に大学計行まで読み込めず、公式の合計も見つからずnull。推薦はKei-Netにデータなしでnull。総合型は1次志願者÷最終合格者を合算。",
+"sources": [
+"https://search.keinet.ne.jp/2558/recommend/exam_result",
+"https://search.keinet.ne.jp/2558/general/exam_result"
+]
+},
+"関西大学": {
+"general": {
+"year": 2026,
+"applicants": 86952,
+"examinees": 84692,
+"passers": 18626,
+"ratio": 4.5,
+"ratio_prev": 4.0
+},
+"suisen": {
+"year": 2026,
+"applicants": 166,
+"passers": 82,
+"ratio": 2.0
+},
+"sogo": {
+"year": 2026,
+"applicants": 1017,
+"passers": 339,
+"ratio": 3.0
+},
+"format": "一般方式（3教科型、2教科英語外部利用型など）と共通テスト利用方式（前期・併用・後期）で構成。学校推薦型（公募）は商学部と理工系3学部のみで小規模、総合型はAO（1次・最終の2段階）に加えSF入試・女子特別入試など多様。",
+"note": "一般の合格者には追加・第2志望合格119名を含む。推薦・総合型は受験者非公表のため倍率は志願者÷合格者。総合型は1次志願者（1次欄が無い行は最終志願者）と最終合格者で合算。Kei-Net表の見出しと表の対応が一部不明確（理工系の女子特別・SF入試）で、概算。",
+"sources": [
+"https://search.keinet.ne.jp/2533/general/exam_result",
+"https://search.keinet.ne.jp/2533sp/recommend/exam_result_sp"
+]
+},
+"南山大学": {
+"general": {
+"year": 2026,
+"applicants": 23131,
+"examinees": 22767,
+"passers": 6993,
+"ratio": 3.3,
+"ratio_prev": 2.4
+},
+"suisen": {
+"year": 2026,
+"applicants": 825,
+"passers": 820,
+"ratio": 1.0
+},
+"sogo": {
+"year": 2026,
+"applicants": 526,
+"passers": 254,
+"ratio": 2.1
+},
+"format": "一般方式（一般・全学統一個別型）と共通テスト利用方式（前期3/5/6教科型、全学統一テ併用、後期）。推薦はカトリック系校・指定校・学園内校・長期留学経験者などで大半が全員合格、総合型は資格・検定試験活用型、プレゼンテーション型など学科ごとの方式。",
+"note": "推薦・総合型は受験者非公表のため倍率は志願者÷合格者。総合型は1次志願者（1次が無い方式は最終志願者）と最終合格者で合算。",
+"sources": [
+"https://search.keinet.ne.jp/2460/general/exam_result",
+"https://search.keinet.ne.jp/2460/recommend/exam_result"
+]
+},
+"西南学院大学": {
+"general": {
+"year": 2026,
+"applicants": 22175,
+"examinees": 21578,
+"passers": 5644,
+"ratio": 3.8,
+"ratio_prev": 3.7
+},
+"suisen": {
+"year": 2026,
+"applicants": 910,
+"examinees": 910,
+"passers": 910,
+"ratio": 1.0
+},
+"sogo": {
+"year": 2026,
+"applicants": 289,
+"examinees": 285,
+"passers": 146,
+"ratio": 2.0
+},
+"format": "一般選抜は一般方式と共通テスト利用方式の合計。学校推薦型は指定校・独自指定校・系列校（西南学院高校、西南女学院高校）で全員合格、総合型は各学科で実施（神学部は志願者0）。",
+"note": "総合型は最終段階の数値で合算。",
+"sources": [
+"https://search.keinet.ne.jp/2705/general/exam_result",
+"https://search.keinet.ne.jp/2705/recommend/exam_result"
+]
+},
+"成蹊大学": {
+"general": {
+"year": 2026,
+"applicants": 30688,
+"examinees": 29124,
+"passers": 5512,
+"ratio": 5.3,
+"ratio_prev": 3.9
+},
+"sogo": {
+"year": 2026,
+"applicants": 461,
+"examinees": 461,
+"passers": 127,
+"ratio": 3.6
+},
+"format": "一般方式は3教科学部個別・2教科全学統一・2教科グローバルの3方式、共通テスト利用は3教科型・5科目国公併願・4-6型奨学金。総合型はAO入試を全学部で実施。",
+"note": "一般の合格者には追加・第2志望合格298名を含む。学校推薦型はKei-Netに結果掲載なし。総合型は最終の数値で合算。",
+"sources": [
+"https://search.keinet.ne.jp/2228/general/exam_result",
+"https://search.keinet.ne.jp/2228/recommend/exam_result"
+]
+},
+"成城大学": {
+"general": {
+"year": 2026,
+"applicants": 19925,
+"examinees": 19294,
+"passers": 4249,
+"ratio": 4.5,
+"ratio_prev": 3.1
+},
+"sogo": {
+"year": 2026,
+"applicants": 855,
+"examinees": 813,
+"passers": 149,
+"ratio": 5.5
+},
+"format": "一般方式（A方式3教科型・2教科型、全学部統一のS方式）と共通テスト利用方式（B方式3教科型、N方式、B方式後期）。総合型は文芸・社会イノベーション・法・経済の各学科で1次・最終の2段階選抜。",
+"note": "学校推薦型はKei-Netに結果掲載なし。総合型は1次の志願者・受験者と最終合格者で合算。",
+"sources": [
+"https://search.keinet.ne.jp/2229/general/exam_result",
+"https://search.keinet.ne.jp/2229/recommend/exam_result"
+]
+},
+"明治学院大学": {
+"general": {
+"year": 2026,
+"applicants": 30487,
+"examinees": 29619,
+"passers": 7782,
+"ratio": 3.8,
+"ratio_prev": 3.8
+},
+"sogo": {
+"year": 2026,
+"applicants": 1026,
+"passers": 391,
+"ratio": 2.6
+},
+"format": "一般方式（A日程3教科型、全学3教科型・全学英語外部型、B日程）と共通テスト利用方式（前期・後期）。総合型は全学部で自己推薦AO入試（1次・最終）を実施。",
+"note": "学校推薦型はKei-Netに結果掲載なし。総合型は受験者非公表のため1次志願者÷最終合格者で算出。",
+"sources": [
+"https://search.keinet.ne.jp/2287/general/exam_result",
+"https://search.keinet.ne.jp/2287/recommend/exam_result"
+]
+},
+"獨協大学": {
+"general": {
+"year": 2026,
+"applicants": 23642,
+"examinees": 23193,
+"passers": 6227,
+"ratio": 3.7,
+"ratio_prev": 3.1
+},
+"suisen": {
+"year": 2026,
+"applicants": 66,
+"examinees": 64,
+"passers": 34,
+"ratio": 1.9
+},
+"sogo": {
+"year": 2026,
+"applicants": 526,
+"examinees": 463,
+"passers": 271,
+"ratio": 1.7
+},
+"format": "一般選抜は一般方式と共通テスト利用方式の合計。学校推薦型は課外活動・卒業生子女推薦で小規模、総合型は自己推薦入試が中心で、ドイツ語・フランス語学科ではQ（課題探究）入試も実施。",
+"note": "推薦はKei-Net掲載の公募系（課外活動・卒業生子女）のみで、指定校推薦は含まない。総合型は最終の数値で合算。",
+"sources": [
+"https://search.keinet.ne.jp/2156/general/exam_result",
+"https://search.keinet.ne.jp/2156/recommend/exam_result"
+]
+},
+"國學院大學": {
+"general": {
+"year": 2026,
+"applicants": 24146,
+"examinees": 23339,
+"passers": 5069,
+"ratio": 4.6,
+"ratio_prev": 4.4
+},
+"sogo": {
+"year": 2026,
+"applicants": 2005,
+"examinees": 1992,
+"passers": 605,
+"ratio": 3.3
+},
+"format": "一般方式はA日程（3教科型・最高得点型・特色型・英語外部活用型など）とB日程、共通テスト利用はV方式。総合型は全学部で実施し、院友子弟等、神道・宗教特別、学部特別選考などの枠もある。",
+"note": "学校推薦型はKei-Netに結果掲載なし。総合型は1次の志願者・受験者（1次欄が無い方式は最終の値）と最終合格者で合算。神道文化（フレックス）は2026年度掲載なし。",
+"sources": [
+"https://search.keinet.ne.jp/2213/general/exam_result",
+"https://search.keinet.ne.jp/2213/recommend/exam_result"
+]
+},
+"武蔵大学": {
+"general": {
+"year": 2026,
+"applicants": 16925,
+"examinees": 16420,
+"passers": 4338,
+"ratio": 3.8,
+"ratio_prev": 4.8
+},
+"sogo": {
+"year": 2026,
+"applicants": 827,
+"passers": 318,
+"ratio": 2.6
+},
+"format": "一般選抜は一般方式と共通テスト利用方式の2本立て。総合型は学科ごとに語学力重視・テーマ追究・ゼミ力重視・課外活動重視型など多様な方式を設け、経済学部の課外活動重視型が最大規模。",
+"note": "学校推薦型はKei-Netに結果掲載なし。総合型は受験者非公表のため倍率は志願者÷合格者。2026年度の数値が無い社会学科テーマレポート方式は含めていない。",
+"sources": [
+"https://search.keinet.ne.jp/2281/general/exam_result",
+"https://search.keinet.ne.jp/2281/recommend/exam_result"
+]
+},
+"日本大学": {
+"general": {
+"year": 2026,
+"applicants": 111902,
+"examinees": 102050
+},
+"format": "一般選抜はA個別方式（第1〜3期）とN全学統一方式（第1・2期）、共通テスト利用はC方式（2〜4教科など）とCA併用方式。推薦は公募制・指定校制を多くの学部で実施。",
+"note": "Kei-Netの一般選抜・推薦総合型ページは取得時に途中で切れ、大学計を取得できず。一般の志願者・受験者はリセマム記事（代々木ゼミナール資料）によるもので、合格者・倍率は不明のためnull。推薦・総合型は取得不完全・行ずれのためnull。",
+"sources": [
+"https://search.keinet.ne.jp/2267/general/exam_result",
+"https://search.keinet.ne.jp/2267/recommend/exam_result",
+"https://resemom.jp/article/2026/08/26/87299.html"
+]
+},
+"東洋大学": {
+"general": {
+"year": 2026,
+"applicants": 119233,
+"examinees": 115100,
+"ratio": 4.6
+},
+"format": "一般選抜は前期（3教科・3教科最高得点・4教科、ベスト2など）と後期、共通テスト利用も前期・後期の多方式。学校推薦型は基礎学力テスト型・総合評価型、第2部では「独立自活」支援推薦も実施。",
+"note": "Kei-Netの一般選抜ページは取得時に途中で切れ、大学計を取得できず。志願者・受験者・実質倍率4.57はリセマム記事（代々木ゼミナール資料）による。合格者は不明。推薦・総合型は取得結果に行ずれがあり信頼できないためnull。",
+"sources": [
+"https://search.keinet.ne.jp/2265/general/exam_result",
+"https://search.keinet.ne.jp/2265/recommend/exam_result",
+"https://resemom.jp/article/2026/08/26/87299.html"
+]
+},
+"駒澤大学": {
+"general": {
+"year": 2026,
+"applicants": 35565,
+"examinees": 34507,
+"passers": 9022,
+"ratio": 3.8,
+"ratio_prev": 3.2
+},
+"suisen": {
+"year": 2026,
+"applicants": 944,
+"examinees": 944,
+"passers": 942,
+"ratio": 1.0
+},
+"sogo": {
+"year": 2026,
+"applicants": 884,
+"examinees": 863,
+"passers": 336,
+"ratio": 2.6
+},
+"format": "一般方式（T方式2月・S方式・全学部統一日程・T方式3月）と共通テスト利用方式（前期・中期・後期）。総合型は自己推薦（総合評価型・特性評価型）を各学科で実施。",
+"note": "Kei-Net掲載の推薦（ほぼ全員合格）・総合型を全行合算。ページ上で学部見出しと表の位置がずれている箇所があるが、合計値には影響しない。",
+"sources": [
+"https://search.keinet.ne.jp/2216/general/exam_result",
+"https://search.keinet.ne.jp/2216/recommend/exam_result"
+]
+},
+"専修大学": {
+"general": {
+"year": 2026,
+"applicants": 54228,
+"examinees": 51548,
+"passers": 11814,
+"ratio": 4.4,
+"ratio_prev": 3.3
+},
+"suisen": {
+"year": 2026,
+"applicants": 156,
+"examinees": 155,
+"passers": 72,
+"ratio": 2.2
+},
+"sogo": {
+"year": 2026,
+"applicants": 273,
+"passers": 76,
+"ratio": 3.6
+},
+"format": "一般選抜は一般方式と共通テスト利用方式の合計。Kei-Netに掲載の学校推薦型は経営・商学部の公募制（一般・全商協）、総合型は国際コミュニケーション・経済・経営・ネットワーク情報学部で1次・最終の2段階選抜。",
+"note": "推薦・総合型はKei-Net掲載分（一部学部）のみ。総合型は1次志願者÷最終合格者で算出。",
+"sources": [
+"https://search.keinet.ne.jp/2233/general/exam_result",
+"https://search.keinet.ne.jp/2233/recommend/exam_result"
+]
+},
+"芝浦工業大学": {
+"general": {
+"year": 2026,
+"applicants": 53156
+},
+"format": "一般選抜は前期（A・B方式）、全学統一（A・B方式）、後期と共通テスト利用（前期・後期）。2026年度の志願者は全方式で53,156人（一般28,191、共通テスト利用24,965）、前年比138%。",
+"note": "Kei-Netの一般選抜・推薦総合型ページが途中で切れ大学計を取得できず。一般の志願者数のみ大学公式の志願者確定資料（2026/2/18）から取得し、受験者・合格者・倍率はnull。推薦・総合型は取得不完全のためnull。",
+"sources": [
+"https://search.keinet.ne.jp/2219/general/exam_result",
+"https://search.keinet.ne.jp/2219/recommend/exam_result",
+"https://www.shibaura-it.ac.jp/assets/2026_ippannsigannsya.pdf"
+]
+},
+"東京都市大学": {
+"general": {
+"year": 2026,
+"applicants": 29393,
+"examinees": 28245,
+"passers": 6135,
+"ratio": 4.6,
+"ratio_prev": 4.0
+},
+"suisen": {
+"year": 2026,
+"applicants": 172,
+"examinees": 142,
+"passers": 86,
+"ratio": 1.7
+},
+"sogo": {
+"year": 2026,
+"applicants": 755,
+"examinees": 739,
+"passers": 295,
+"ratio": 2.5
+},
+"format": "一般選抜は個別の一般方式（前期・中期・後期）と共通テスト利用方式（前期は3教科型・5/6教科基準・探究併用型・情報併用型など、後期は小論文併用等）の二本立て。総合型は2段階選抜制に加え学科別の1段階選抜制（学際探究理工系・原子力人材・創作ソフトウェア等）があり、推薦は公募制。",
+"note": "推薦・総合型はKei-Netの2026年度行のみ合算（2026年度に方式区分が変わり、空欄の旧区分行は除外）。推薦は公募制のみ掲載",
+"sources": [
+"https://search.keinet.ne.jp/2282/general/exam_result",
+"https://search.keinet.ne.jp/2282/recommend/exam_result"
+]
+},
+"東京電機大学": {
+"general": {
+"year": 2026,
+"applicants": 37973,
+"examinees": 36011,
+"passers": 5673,
+"ratio": 6.3,
+"ratio_prev": 5.3
+},
+"suisen": {
+"year": 2026,
+"applicants": 609,
+"examinees": 536,
+"passers": 175,
+"ratio": 3.1
+},
+"sogo": {
+"year": 2026,
+"applicants": 69,
+"examinees": 68,
+"passers": 43,
+"ratio": 1.6
+},
+"format": "一般選抜は一般方式（学科別の前期・後期日程＋英語外部試験利用）と共通テスト利用方式（前期・後期）で構成。推薦型の規模が総合型より大きく、工学部第二部（夜間）には働く学生向けの総合型もある。",
+"note": "推薦・総合型はKei-Net掲載の学科別行を合算（指定校等が含まれるかは不明）",
+"sources": [
+"https://search.keinet.ne.jp/2259/general/exam_result",
+"https://search.keinet.ne.jp/2259/recommend/exam_result"
+]
+},
+"工学院大学": {
+"general": {
+"year": 2026,
+"applicants": 24483,
+"examinees": 23249,
+"passers": 4529,
+"ratio": 5.1,
+"ratio_prev": 3.8
+},
+"sogo": {
+"year": 2026,
+"applicants": 655,
+"examinees": 611,
+"passers": 204,
+"ratio": 3.0
+},
+"format": "一般方式はＡ日程（前期）・Ｓ日程（全学統一）・英語外部試験・Ｂ日程（中期）・Ｍ日程（後期）など複数日程、別に共通テスト利用方式（前期・後期）がある。総合型は自己推薦型・探究成果活用型・総合評価型（先進工）が中心。",
+"note": "学校推薦型はKei-Netに結果掲載なし",
+"sources": [
+"https://search.keinet.ne.jp/2212/general/exam_result",
+"https://search.keinet.ne.jp/2212/recommend/exam_result"
+]
+},
+"東京農業大学": {
+"general": {
+"year": 2026,
+"applicants": 25655,
+"examinees": 25087,
+"passers": 6103,
+"ratio": 4.1,
+"ratio_prev": 3.6
+},
+"suisen": {
+"year": 2026,
+"applicants": 491,
+"examinees": 489,
+"passers": 235,
+"ratio": 2.1
+},
+"sogo": {
+"year": 2026,
+"applicants": 1015,
+"examinees": 1002,
+"passers": 672,
+"ratio": 1.5
+},
+"format": "一般方式はＡ日程・Ｂ日程、共通テスト利用方式は前期（4・3・2科目型）と後期（3科目型）。総合型は全学部一斉の方式に加え「高校で学んだ実践スキル」「東京農大ファミリー」、北海道オホーツクの生物産業学部独自方式があり、推薦は全学科で実施。",
+"note": "",
+"sources": [
+"https://search.keinet.ne.jp/2260/general/exam_result",
+"https://search.keinet.ne.jp/2260/recommend/exam_result"
+]
+},
+"北里大学": {
+"general": {
+"year": 2026,
+"applicants": 12733,
+"examinees": 11915,
+"passers": 4285,
+"ratio": 2.8,
+"ratio_prev": 2.7
+},
+"suisen": {
+"year": 2026,
+"applicants": 764,
+"examinees": 761,
+"passers": 541,
+"ratio": 1.4
+},
+"sogo": {
+"year": 2026,
+"applicants": 372,
+"examinees": 363,
+"passers": 188,
+"ratio": 1.9
+},
+"format": "一般方式は前期・中期・後期の日程別、別に共通テスト利用方式がある。推薦は公募制・指定校制が中心で、医学部は指定校と県別の地域枠指定校で募集。総合型は医療衛生学部・海洋生命科学部などで実施。",
+"note": "推薦は公募制・指定校制・地域枠を合算、総合型の健康科学部2次・3次募集は空欄",
+"sources": [
+"https://search.keinet.ne.jp/2205/general/exam_result",
+"https://search.keinet.ne.jp/2205/recommend/exam_result"
+]
+},
+"自治医科大学": {
+"general": {
+"year": 2026,
+"applicants": 2010,
+"examinees": 1941,
+"passers": 209,
+"ratio": 9.3,
+"ratio_prev": 9.5
+},
+"format": "一般選抜は医学部医学科と看護学部看護学科の2区分。総合型は医学部で栃木・富山・山梨・山口・佐賀の各県枠（専願・地域条件・修学資金受給手続きが必要、1次書類・2次面接と教科試験）として実施。",
+"note": "推薦・総合型の入試結果はKei-Netに掲載なし（一般のみ）",
+"sources": [
+"https://search.keinet.ne.jp/2122/general/exam_result",
+"https://search.keinet.ne.jp/2122/recommend/exam_result",
+"https://search.keinet.ne.jp/2122/recommend/exam_ao"
+]
+},
+"国際医療福祉大学": {
+"general": {
+"year": 2026,
+"applicants": 11283,
+"examinees": 11012,
+"passers": 3319,
+"ratio": 3.3,
+"ratio_prev": 3.2
+},
+"suisen": {
+"year": 2026,
+"applicants": 934,
+"examinees": 932,
+"passers": 794,
+"ratio": 1.2
+},
+"sogo": {
+"year": 2026,
+"applicants": 645,
+"examinees": 635,
+"passers": 476,
+"ratio": 1.3
+},
+"format": "一般方式は前期・特待奨学生・後期の区分があり、別に共通テスト利用方式がある。推薦・総合型は医療福祉・薬・看護・リハビリ系など医学部以外の学科で広く実施（成田・小田原・福岡の各学部含む）。",
+"note": "医学部は推薦・総合型の掲載なし。総合型は成田キャンパス各学部の掲載なし",
+"sources": [
+"https://search.keinet.ne.jp/2125/general/exam_result",
+"https://search.keinet.ne.jp/2125/recommend/exam_result"
+]
+},
+"順天堂大学": {
+"general": {
+"year": 2026,
+"applicants": 13245,
+"examinees": 12748,
+"passers": 3114,
+"ratio": 4.1,
+"ratio_prev": 4.1
+},
+"suisen": {
+"year": 2026,
+"applicants": 876,
+"examinees": 868,
+"passers": 431,
+"ratio": 2.0
+},
+"sogo": {
+"year": 2026,
+"applicants": 3608,
+"examinees": 3541,
+"passers": 975,
+"ratio": 3.6
+},
+"format": "一般方式は学部別に日程・方式が分かれ（医はA方式・B方式・地域枠、薬はA/B/S日程など）、共通テスト利用方式は前期・併用・後期等。総合型はスポーツ健康科学部（Ⅰ〜Ⅲ期・トップアスリート特別）が大規模で、医学部も国際臨床医・研究医枠の総合型を実施。",
+"note": "推薦・総合型は全方式（特別推薦・トップアスリート特別含む）を合算",
+"sources": [
+"https://search.keinet.ne.jp/2220/general/exam_result",
+"https://search.keinet.ne.jp/2220/recommend/exam_result"
+]
+},
+"東京慈恵会医科大学": {
+"general": {
+"year": 2026,
+"applicants": 1997,
+"examinees": 1764,
+"passers": 361,
+"ratio": 4.9,
+"ratio_prev": 6.3
+},
+"format": "一般選抜は医学部医学科と医学部看護学科の2区分のみで、Kei-Net上に共通テスト利用方式の掲載はない。推薦・総合型の結果掲載もなく、一般選抜中心の入試。",
+"note": "一般大学計の合格者には追加・第2志望合格118名を含む。推薦・総合型の結果は未掲載",
+"sources": [
+"https://search.keinet.ne.jp/2253/general/exam_result"
+]
+},
+"日本医科大学": {
+"general": {
+"year": 2026,
+"applicants": 3681,
+"examinees": 3368,
+"passers": 227,
+"ratio": 14.8,
+"ratio_prev": 17.7
+},
+"format": "一般方式は医学部の前期・後期と地域枠（東京都・千葉県・埼玉県・静岡県・新潟県）で、共通テスト利用方式は「グローバル特別」。",
+"note": "推薦・総合型の結果はKei-Netに掲載なし",
+"sources": [
+"https://search.keinet.ne.jp/2268/general/exam_result"
+]
+},
+"獨協医科大学": {
+"general": {
+"year": 2026,
+"applicants": 7421,
+"examinees": 6456,
+"passers": 283,
+"ratio": 22.8,
+"ratio_prev": 14.9
+},
+"suisen": {
+"year": 2026,
+"applicants": 262,
+"examinees": 262,
+"passers": 123,
+"ratio": 2.1
+},
+"format": "一般選抜は医学部（前期・栃木県/新潟県地域枠・後期）と看護学部（Ａ日程・Ｂ日程）。推薦は医学部で地域特別枠・指定校制（栃木/埼玉/茨城県地域枠含む）・系列校、看護学部で公募制・指定校制を実施。",
+"note": "推薦は医学部・看護学部の全方式を合算。総合型はKei-Netで医学部1行のみ掲載（志願者欄空欄、受験者1・合格者1）で実態を反映していない可能性",
+"sources": [
+"https://search.keinet.ne.jp/2123/general/exam_result",
+"https://search.keinet.ne.jp/2123/recommend/exam_result"
+]
+},
+"津田塾大学": {
+"general": {
+"year": 2026,
+"applicants": 4364,
+"examinees": 4202,
+"passers": 2029,
+"ratio": 2.1,
+"ratio_prev": 1.6
+},
+"suisen": {
+"year": 2026,
+"applicants": 195,
+"examinees": 190,
+"passers": 186,
+"ratio": 1.0
+},
+"sogo": {
+"year": 2026,
+"applicants": 379,
+"examinees": 202,
+"passers": 135,
+"ratio": 1.5
+},
+"format": "一般方式はＡ方式とＡ方式英語外部試験利用、共通テスト利用はＣ前期・Ｂ方式（共通テスト＋個別）・Ｃ後期。総合型は英語英文の英語4技能型・探究型や総合政策学部で実施、推薦は指定校制が中心。",
+"note": "推薦は公募制・指定校制を合算",
+"sources": [
+"https://search.keinet.ne.jp/2243/general/exam_result",
+"https://search.keinet.ne.jp/2243/recommend/exam_result"
+]
+},
+"東京女子大学": {
+"general": {
+"year": 2026,
+"applicants": 5361,
+"examinees": 5165,
+"passers": 1991,
+"ratio": 2.6,
+"ratio_prev": 2.4
+},
+"sogo": {
+"year": 2026,
+"examinees": 163,
+"passers": 126,
+"ratio": 1.3
+},
+"format": "大学計は一般方式と共通テスト利用方式の合計で、志願者の約4割が共通テスト利用方式。総合型選抜「知のかけはし入試」を現代教養学部の各専攻で実施。",
+"note": "学校推薦型はKei-Netに結果掲載なし。総合型（知のかけはし）はKei-Netで志願者欄が空欄のため受験者・合格者のみ合算、人文専攻（専攻未分化分）は空欄で除外",
+"sources": [
+"https://search.keinet.ne.jp/2254/general/exam_result",
+"https://search.keinet.ne.jp/2254/recommend/exam_result"
+]
+},
+"日本女子大学": {
+"general": {
+"year": 2026,
+"applicants": 12050,
+"examinees": 11722,
+"passers": 3804,
+"ratio": 3.1,
+"ratio_prev": 2.6
+},
+"suisen": {
+"year": 2026,
+"applicants": 151,
+"examinees": 144,
+"passers": 75,
+"ratio": 1.9
+},
+"sogo": {
+"year": 2026,
+"applicants": 681,
+"examinees": 623,
+"passers": 447,
+"ratio": 1.4
+},
+"format": "一般方式は個別3科目・英語外部利用型・個別2科目など学科別、共通テスト利用方式は前期（3・4・5科目型）と後期。推薦は公募制・指定校制・附属校・連携校、総合型は全学科で実施。",
+"note": "推薦は志願者・受験者が公表されている公募制のみ合算。指定校・附属校・連携校は合格者のみ掲載（計560名）で含めていない。一般大学計の合格者は追加114名を含む",
+"sources": [
+"https://search.keinet.ne.jp/2272/general/exam_result",
+"https://search.keinet.ne.jp/2272/recommend/exam_result"
+]
+},
+"聖心女子大学": {
+"general": {
+"year": 2026,
+"applicants": 722,
+"examinees": 663,
+"passers": 484,
+"ratio": 1.4,
+"ratio_prev": 1.6
+},
+"format": "一般方式は現代教養学部の3教科Ａ方式・3教科Ｂ方式・総合小論文方式（2月期・3月期）で、別に共通テスト利用方式がある。",
+"note": "推薦・総合型の入試結果はKei-Net・パスナビで見つからず",
+"sources": [
+"https://search.keinet.ne.jp/2230/general/exam_result",
+"https://passnavi.obunsha.co.jp/univ/2560/suisen/"
+]
+},
+"立命館アジア太平洋大学（APU）": {
+"general": {
+"year": 2026,
+"applicants": 2711,
+"examinees": 2634,
+"passers": 444,
+"ratio": 5.9,
+"ratio_prev": 2.2
+},
+"sogo": {
+"year": 2026,
+"applicants": 1365,
+"examinees": 1348,
+"passers": 504,
+"ratio": 2.7
+},
+"format": "一般選抜は一般方式（スタンダード3・英語重視方式・後期）と共通テスト利用方式（2月・3月入試、共テ＋英国／探究／面接、併用など多数）。総合型選抜は総合評価方式（論述型・探究型）と活動アピール方式を3学部で実施。",
+"note": "Kei-Netに学校推薦型選抜の結果掲載なし。総合型は3学部の論述型・探究型・活動アピールの最終志願者・受験者・合格者を合算。一般の大学計倍率は2025年度2.2→2026年度5.9と急上昇。",
+"sources": [
+"https://search.keinet.ne.jp/2766/general/exam_result",
+"https://search.keinet.ne.jp/2766/recommend/exam_result"
+]
+},
+"神田外語大学": {
+"general": {
+"year": 2026,
+"applicants": 4653,
+"examinees": 4549,
+"passers": 1440,
+"ratio": 3.2,
+"ratio_prev": 3.1
+},
+"suisen": {
+"year": 2026,
+"applicants": 132,
+"examinees": 131,
+"passers": 131,
+"ratio": 1.0
+},
+"sogo": {
+"year": 2026,
+"applicants": 961,
+"examinees": 935,
+"passers": 474,
+"ratio": 2.0
+},
+"format": "一般選抜は一般方式（2科目型・3科目型）と共通テスト利用方式（2〜5科目・共通テスト＋）をそれぞれ2月選考・3月選考で実施。総合型選抜は10月・11月選考、学校推薦型（公募）は11月・12月選考と英語資格方式があり、総合型の規模が推薦より大きい。",
+"note": "推薦・総合型は外国語学部・グローバル・リベラルアーツ学部の全学科・全選考を合算（総合型は最終選考の数値）。受験者0の行は除外。",
+"sources": [
+"https://search.keinet.ne.jp/2172/general/exam_result",
+"https://search.keinet.ne.jp/2172/recommend/exam_result"
+]
+},
+"関西外国語大学": {
+"general": {
+"year": 2026,
+"applicants": 11948,
+"examinees": 11771,
+"passers": 5084,
+"ratio": 2.3,
+"ratio_prev": 2.4
+},
+"suisen": {
+"year": 2026,
+"applicants": 12134,
+"examinees": 12016,
+"passers": 4618,
+"ratio": 2.6
+},
+"sogo": {
+"year": 2026,
+"applicants": 39,
+"examinees": 37,
+"passers": 21,
+"ratio": 1.8
+},
+"format": "一般選抜は前期（A方式・S方式・B方式・共テ＋）と後期、共通テスト利用（前期3・5科目型、共通テスト＋、後期2科目型）。学校推薦型（公募制前期・後期、特技）が一般選抜並みの大規模入試となっているのが特徴で、総合型は国際共生学部のグローバルチャレンジのみ。",
+"note": "推薦は外国語・英語キャリア・英語国際・国際共生・アジア共創（学部見出し不明の行を含む）の公募制前期・後期・特技S/A/B/Cを合算。英語国際（旧区分）は2026年度空欄。総合型は国際共生学部の最終選考のみ。",
+"sources": [
+"https://search.keinet.ne.jp/2535/general/exam_result",
+"https://search.keinet.ne.jp/2535/recommend/exam_result"
+]
+},
+"茨城キリスト教大学": {
+"general": {
+"year": 2026,
+"applicants": 791,
+"examinees": 784,
+"passers": 671,
+"ratio": 1.2,
+"ratio_prev": 1.2
+},
+"suisen": {
+"year": 2026,
+"applicants": 252,
+"examinees": 252,
+"passers": 240,
+"ratio": 1.1
+},
+"sogo": {
+"year": 2026,
+"applicants": 221,
+"examinees": 216,
+"passers": 176,
+"ratio": 1.2
+},
+"format": "一般選抜は一般方式と共通テスト利用方式をそれぞれ1期・2期で実施。学校推薦型・総合型は文・経営・看護・生活科学部と未来教養学環の全学科で実施。",
+"note": "推薦・総合型は全学科を合算（総合型は最終選考の数値）。",
+"sources": [
+"https://search.keinet.ne.jp/2107/general/exam_result",
+"https://search.keinet.ne.jp/2107/recommend/exam_result"
+]
+},
+"常磐大学": {
+"general": {
+"year": 2026,
+"applicants": 692,
+"examinees": 676,
+"passers": 582,
+"ratio": 1.2,
+"ratio_prev": 1.1
+},
+"suisen": {
+"year": 2026,
+"applicants": 278,
+"examinees": 278,
+"passers": 277,
+"ratio": 1.0
+},
+"sogo": {
+"year": 2026,
+"applicants": 352,
+"examinees": 346,
+"passers": 289,
+"ratio": 1.2
+},
+"format": "一般選抜は一般方式（A方式・B方式）と共通テスト利用方式（I期・II期）。総合型選抜はI〜III期のほか卒業生推薦・課外活動（I・II期）があり、学校推薦型は全学科で実施。",
+"note": "推薦・総合型は看護・総合政策・人間科学部の全学科・全方式を合算（総合型は最終選考の数値）。",
+"sources": [
+"https://search.keinet.ne.jp/2108/general/exam_result",
+"https://search.keinet.ne.jp/2108/recommend/exam_result"
+]
+},
+"流通経済大学": {
+"general": {
+"year": 2026,
+"applicants": 1928,
+"passers": 1310,
+"ratio": 1.5,
+"ratio_prev": 1.3
+},
+"suisen": {
+"year": 2026,
+"applicants": 430,
+"passers": 430,
+"ratio": 1.0
+},
+"sogo": {
+"year": 2026,
+"applicants": 850,
+"passers": 794,
+"ratio": 1.1
+},
+"format": "一般選抜は一般方式と共通テスト利用方式。総合型選抜の募集人員が全学科で推薦と同等以上あり、総合型・推薦が入学者の大きな比重を占める。",
+"note": "受験者数が非掲載のため倍率はすべて志願者÷合格者。推薦・総合型は5学部9学科を合算（総合型は最終志願者・最終合格者）。",
+"sources": [
+"https://search.keinet.ne.jp/2109/general/exam_result",
+"https://search.keinet.ne.jp/2109/recommend/exam_result"
+]
+},
+"防衛大学校": {
+"general": {
+"year": 2026,
+"applicants": 8310,
+"examinees": 8310,
+"passers": 940,
+"ratio": 8.8,
+"ratio_prev": 7.4
+},
+"suisen": {
+"year": 2026,
+"applicants": 520,
+"examinees": 520,
+"passers": 241,
+"ratio": 2.2
+},
+"sogo": {
+"year": 2026,
+"applicants": 179,
+"examinees": 179,
+"passers": 59,
+"ratio": 3.0
+},
+"format": "採用試験は推薦採用（高校長等の推薦、学力・口述試験・身体検査）、総合選抜採用（1次学力、2次で適応能力・問題解決能力・基礎体力試験と口述・身体検査）、一般採用（1次学力、2次口述・身体検査）の3区分。専攻は人文・社会科学と理工学で、令和9年度入校の募集人員は推薦約215・総合選抜約50・一般約215名。",
+"note": "2026年度（令和8年4月入校）の数字。パスナビの専攻×男女別行（人文・社会/理工×男子/女子）を区分ごとに合算した。パスナビは志願者数=受験者数で同値掲載のため、examineesも同値を入れた（実受験者数ではない可能性あり）。ratio_prevはパスナビの一般選抜合計の前年倍率。防衛省公式の入試結果ページ（/nda/admissions/info/result/）は取得できなかった。",
+"sources": [
+"https://passnavi.obunsha.co.jp/univ/5340/bairitsu/",
+"https://www.mod.go.jp/nda/admissions/info/requirements/"
+]
+},
+"防衛医科大学校": {
+"general": {
+"year": 2026,
+"examinees": 7268,
+"passers": 589,
+"ratio": 12.3,
+"ratio_prev": 12.1
+},
+"format": "一般選抜（採用試験）で医学科（募集85）、看護学科自衛官コース（75）、看護学科技官コース（45）を募集。",
+"note": "Kei-Net大学計（医7,268人中の内訳：医学科 受験5,877/合格378=15.5倍、看護・自衛官 1,034/133=7.8倍、看護・技官 357/78=4.6倍）。2026年度の志願者数は未掲載。Kei-Netとパスナビには一般選抜の行しかなく、推薦・総合選抜の結果は見つからなかった。",
+"sources": [
+"https://search.keinet.ne.jp/5060/general/exam_result",
+"https://passnavi.obunsha.co.jp/univ/5310/bairitsu/"
+]
+},
+"気象大学校": {
+"general": {
+"year": 2026,
+"applicants": 296,
+"examinees": 230,
+"passers": 62,
+"ratio": 3.7,
+"ratio_prev": 4.1
+},
+"format": "人事院が実施する国家公務員採用試験（気象大学校学生採用試験・高校卒業程度）。第1次試験（10月）と第2次試験（12月）を経て最終合格が決まる。",
+"note": "2025年度試験（2026年4月入校）。人事院『2025年度国家公務員採用試験実施状況』による。受験者は第1次試験受験者、第1次合格79人。前年（2024年度試験）は受験269/最終合格66人。2026年度試験は申込者285人（実施中）。",
+"sources": [
+"https://www.jinji.go.jp/content/000009521.pdf",
+"https://www.jinji.go.jp/content/000005977.pdf",
+"https://www.jinji.go.jp/saiyo/siken/sennmonnsyoku_kousotsu/kidai/kisyoudai.html"
+]
+},
+"海上保安大学校": {
+"general": {
+"year": 2026,
+"applicants": 365,
+"examinees": 269,
+"passers": 88,
+"ratio": 3.1,
+"ratio_prev": 2.7
+},
+"format": "人事院が実施する海上保安大学校学生採用試験（高卒後2年以内が対象）。第1次試験（10月）と第2次試験（12月）を経て、1月に最終合格発表。",
+"note": "2025年度試験（2026年4月入校）。人事院『2025年度国家公務員採用試験実施状況』による。第1次合格132人。前年（2024年度試験）は受験236/最終合格87人。",
+"sources": [
+"https://www.jinji.go.jp/content/000009521.pdf",
+"https://www.jinji.go.jp/content/000005977.pdf",
+"https://www.kaiho.mlit.go.jp/10kanku/amami/pdf/2026saiyouannai01.pdf"
+]
+},
+"水産大学校": {
+"general": {
+"year": 2026,
+"applicants": 493,
+"examinees": 476,
+"passers": 302,
+"ratio": 1.6,
+"ratio_prev": 1.3
+},
+"suisen": {
+"year": 2026,
+"applicants": 121,
+"examinees": 119,
+"passers": 72,
+"ratio": 1.7
+},
+"format": "5学科（水産流通経営・海洋生産管理・海洋機械工・食品科学・生物生産）で、一般選抜（募集113）と推薦入試（募集82、A・B・C等の種別あり）を実施。",
+"note": "一般はKei-Net大学計。推薦はパスナビの学校推薦型選抜合計。パスナビには総合型選抜の行がない。水産流通経営と食品科学の一般は合格者が受験者を上回る（掲載どおり）。",
+"sources": [
+"https://search.keinet.ne.jp/5030/general/exam_result",
+"https://passnavi.obunsha.co.jp/univ/5360/bairitsu/"
+]
+},
+"国立看護大学校": {
+"format": "",
+"note": "Kei-Net・パスナビ・公式HPのいずれでも入試結果ページを検索で見つけられなかった。",
+"sources": []
+},
+"職業能力開発総合大学校": {
+"general": {
+"year": 2026,
+"applicants": 215,
+"examinees": 196,
+"passers": 144,
+"ratio": 1.4,
+"ratio_prev": 1.5
+},
+"suisen": {
+"year": 2025,
+"applicants": 68,
+"examinees": 67,
+"passers": 46,
+"ratio": 1.5
+},
+"format": "総合課程は機械・電気・電子情報・建築の4専攻。一般選抜（各専攻募集20）と学校推薦（各専攻募集8）がある。",
+"note": "一般はKei-Net合計（合格144のうち31は追加・第2志望合格）。推薦はベネッセ・マナビジョンの専攻別数値（2025年度）を合算したもので、2026年度は未確認。",
+"sources": [
+"https://search.keinet.ne.jp/5040/general/exam_result",
+"https://manabi.benesse.ne.jp/daigaku/school/4362/nyushi/bairitsu/"
+]
+},
+"航空保安大学校": {
+"general": {
+"year": 2026,
+"applicants": 387,
+"examinees": 327,
+"passers": 112,
+"ratio": 2.9,
+"ratio_prev": 2.9
+},
+"format": "人事院が実施する航空保安大学校学生採用試験。区分は2つ（人事院の公務員白書）。複数段階の試験を経て最終合格が決まる。",
+"note": "2025年度試験（2026年4月入校）。人事院『2025年度国家公務員採用試験実施状況』による2区分の合計。第1次合格190人。前年（2024年度試験）は受験301/最終合格103人。",
+"sources": [
+"https://www.jinji.go.jp/content/000009521.pdf",
+"https://www.jinji.go.jp/content/000005977.pdf",
+"https://www.jinji.go.jp/kouho_houdo/koumuinhakusyo/hakusho/R6/1-3-01-2.html"
+]
+},
+"茨城県立農業大学校": {
+"format": "",
+"note": "茨城県公式HPで入試結果（応募・合格者数）を検索で見つけられず、取得できたPDFもなかった。",
+"sources": []
+},
+"国際ファッション専門職大学": {
+"format": "総合型選抜（面接評価型・作品・資格評価型、出願6回、書類・面接中心）と学校推薦型選抜（専願1〜3期・併願2〜3期）を実施。東京・大阪・名古屋の各キャンパスで募集。一般選抜の有無は確認できた出典に記載なし。",
+"note": "Kei-Netで該当ページを発見できず、パスナビの倍率ページも数値なし。公式HPの入試結果も見つからず。",
+"sources": [
+"https://passnavi.obunsha.co.jp/univ/9202/sougou/",
+"https://passnavi.obunsha.co.jp/univ/9202/suisen/",
+"https://passnavi.obunsha.co.jp/univ/9202/bairitsu/"
+]
+},
+"情報経営イノベーション専門職大学（iU）": {
+"suisen": {
+"year": 2026,
+"applicants": 5,
+"examinees": 4,
+"passers": 4,
+"ratio": 1.0
+},
+"sogo": {
+"year": 2026,
+"applicants": 97,
+"examinees": 94,
+"passers": 93,
+"ratio": 1.0
+},
+"format": "総合型選抜（2025年度はグループワーク型・プレゼン型・小論文型等の方式別）が中心で募集人員60名、学校推薦型（公募）40名。一般選抜はA・B・C日程（3教科型）を実施。",
+"note": "一般選抜はKei-Netの結果ページが取得できず、ベネッセでは志願者等非公表のためnull。総合型2026年度は学部全体の数値のみ掲載（2025年度は方式別）。",
+"sources": [
+"https://search.keinet.ne.jp/2106/recommend/exam_result",
+"https://manabi.benesse.ne.jp/daigaku/school/3343/nyushi/bairitsu/"
+]
+},
+"東京国際工科専門職大学": {
+"general": {
+"year": 2025,
+"applicants": 463,
+"passers": 251,
+"ratio": 1.8
+},
+"format": "現名称は国際工科専門職大学（2027年4月に東京国際工科専門職大学へ改称し、名古屋・大阪の国際工科専門職大学と統合予定）。一般・学校推薦型・総合型を実施し、総合型は適性診断型・資格評価型・専門高校出身者対象型（2027年にAI入試新設予定）。",
+"note": "Kei-Netの2026年度一般選抜は未掲載のため2025年度（受験者非掲載で倍率は志願者÷合格者）。推薦・総合型の結果ページは取得できず、パスナビの倍率ページも数値なし。",
+"sources": [
+"https://search.keinet.ne.jp/2113/general/exam_result",
+"https://passnavi.obunsha.co.jp/univ/9215/sougou/",
+"https://passnavi.obunsha.co.jp/univ/9215/bairitsu/"
+]
+},
+"開志専門職大学": {
+"general": {
+"year": 2026,
+"applicants": 138,
+"examinees": 136,
+"passers": 132,
+"ratio": 1.0,
+"ratio_prev": 1.0
+},
+"suisen": {
+"year": 2026,
+"applicants": 73,
+"examinees": 73,
+"passers": 73,
+"ratio": 1.0
+},
+"sogo": {
+"year": 2026,
+"applicants": 78,
+"examinees": 76,
+"passers": 76,
+"ratio": 1.0
+},
+"format": "事業創造・アニメ・マンガ・情報の3学部。一般選抜は一般方式と共通テスト利用方式、総合型選抜はA〜D日程と併願、学校推薦型は公募型と指定校型（前期・後期）。",
+"note": "推薦の2026年度は公募型が空欄のため指定校型のみの合算。総合型は全日程の最終選考を合算。",
+"sources": [
+"https://search.keinet.ne.jp/2343/general/exam_result",
+"https://search.keinet.ne.jp/2343/recommend/exam_result"
+]
+},
+"芸術文化観光専門職大学": {
+"general": {
+"year": 2026,
+"applicants": 73,
+"examinees": 67,
+"passers": 25,
+"ratio": 2.7,
+"ratio_prev": 2.7
+},
+"suisen": {
+"year": 2026,
+"applicants": 78,
+"examinees": 78,
+"passers": 33,
+"ratio": 2.4
+},
+"sogo": {
+"year": 2026,
+"applicants": 93,
+"examinees": 93,
+"passers": 31,
+"ratio": 3.0
+},
+"format": "兵庫県立の1学部1学科（芸術文化・観光学科、募集80名）。一般選抜20名（A日程・B日程の別日程）、学校推薦型30名、総合型30名で、推薦・総合型が定員の過半。",
+"note": "推薦・総合型はパスナビの選抜区分別合計（2026年度）。パスナビの表は列見出しが崩れており、倍率は受験者÷合格者で再計算して整合を確認。",
+"sources": [
+"https://search.keinet.ne.jp/1628/general/exam_result",
+"https://passnavi.obunsha.co.jp/univ/9102/bairitsu/"
+]
+},
+"静岡県立農林環境専門職大学": {
+"general": {
+"year": 2026,
+"applicants": 28,
+"examinees": 28,
+"passers": 15,
+"ratio": 1.9,
+"ratio_prev": 1.8
+},
+"suisen": {
+"year": 2026,
+"applicants": 24,
+"examinees": 24,
+"passers": 12,
+"ratio": 2.0
+},
+"format": "生産環境経営学部生産環境経営学科（募集24名）。一般選抜は前期のみ12名、学校推薦型（学校長推薦）12名。",
+"note": "推薦はパスナビ（2026年度）。総合型選抜の結果は掲載なし。",
+"sources": [
+"https://search.keinet.ne.jp/1572/general/exam_result",
+"https://passnavi.obunsha.co.jp/univ/9101/bairitsu/"
+]
+},
+"高知リハビリテーション専門職大学": {
+"general": {
+"year": 2026,
+"applicants": 13,
+"examinees": 13,
+"passers": 13,
+"ratio": 1.0,
+"ratio_prev": 1.1
+},
+"suisen": {
+"year": 2026,
+"applicants": 37,
+"examinees": 37,
+"passers": 37,
+"ratio": 1.0
+},
+"sogo": {
+"year": 2026,
+"applicants": 29,
+"examinees": 29,
+"passers": 29,
+"ratio": 1.0
+},
+"format": "理学療法・作業療法・言語聴覚の3学科。一般選抜は一般方式と共通テスト利用方式、学校推薦型は公募と指定校（指定校が中心）、総合型はA〜C日程と高知高等学校対象。",
+"note": "推薦は公募＋指定校の合算。総合型2026年度は学科単位の最終数値のみ掲載（方式別は2025年度のみ）。",
+"sources": [
+"https://search.keinet.ne.jp/2690/general/exam_result",
+"https://search.keinet.ne.jp/2690/recommend/exam_result"
+]
+},
+"東京保健医療専門職大学": {
+"general": {
+"year": 2025,
+"applicants": 10,
+"examinees": 8,
+"passers": 7,
+"ratio": 1.1
+},
+"suisen": {
+"year": 2025,
+"applicants": 47,
+"examinees": 47,
+"passers": 46,
+"ratio": 1.0
+},
+"format": "リハビリテーション学部（理学療法学科・作業療法学科）。掲載区分は一般選抜前期と学校推薦型（公募）で、推薦の募集人員（各30名）が一般前期（各20名）より多い。",
+"note": "Kei-Net・公式HPで結果が見つからず、ベネッセ マナビジョン（2025年7月までの収集情報＝2025年度入試）の2学科合算。一般は前期のみ、総合型は掲載なし。",
+"sources": [
+"https://manabi.benesse.ne.jp/daigaku/school/3348/nyushi/bairitsu/rihabiri/"
+]
+},
+"名古屋国際工科専門職大学": {
+"format": "工科学部（情報工・デジタルエンタテインメント）。2027年4月に国際工科専門職大学（東京国際工科専門職大学へ改称）と統合予定で、統合後は総合型（適性診断型・資格評価型・専門高校出身者対象型等）を東京・大阪・名古屋キャンパスで実施。現行の一般・推薦の有無は取得出典で未確認。",
+"note": "Kei-Netの結果ページ（コード2425想定）が取得できず、公式HP・パスナビでも入試結果を見つけられなかった。",
+"sources": [
+"https://search.keinet.ne.jp/2113/general/exam_result",
+"https://passnavi.obunsha.co.jp/univ/9215/sougou/"
+]
+},
+"電動モビリティシステム専門職大学": {
+"format": "山形県飯豊町、電気自動車システム工学部（入学定員40名）。2023年4月開学、入学者は2023年度3人・2024年度1人で、2024年10月に2025年度入学者の募集停止が発表された。",
+"note": "募集停止のため2026年度入試結果なし。入試区分の詳細は取得出典に記載なし。",
+"sources": [
+"https://jidounten-lab.com/u_50566"
+]
+}
+}

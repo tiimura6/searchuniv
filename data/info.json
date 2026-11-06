@@ -1,0 +1,4276 @@
+{
+"東京大学": {
+"difficulty": {
+"hensachi": "67.5〜72.5",
+"kyotei": "85%〜90%",
+"year": "2027年度入試用"
+},
+"faculties": [
+"文学部",
+"教育学部",
+"教養学部",
+"法学部",
+"経済学部",
+"理学部",
+"工学部",
+"農学部",
+"医学部",
+"薬学部",
+"College of Design（2027年9月設置予定）"
+],
+"students": {
+"count": 14074,
+"year": 2025
+},
+"founded": "1877年（東京開成学校・東京医学校を統合し創立）／1949年 新制大学",
+"access": "本郷キャンパス：東京メトロ東大前駅徒歩1分／駒場キャンパス：京王井の頭線駒場東大前駅すぐ",
+"tuition": {
+"amount": 924960,
+"label": "全学部共通・入学金＋授業料（授業料642,960円）",
+"year": 2026
+},
+"news": [
+"2025年12月、国際卓越研究大学の第2期審査で認定に至らず「継続審査」（最長1年）とされた。",
+"2027年9月に新課程「College of Design」を設置予定（Kei-Net掲載）。"
+],
+"notable": [
+"梶田隆章（宇宙線物理学・ニュートリノ振動の発見で2015年ノーベル物理学賞／東京大学卓越教授・特別栄誉教授）"
+],
+"sources": [
+"https://search.keinet.ne.jp/1120/general/border_rate",
+"https://search.keinet.ne.jp/1120",
+"https://search.keinet.ne.jp/1120/outline/department",
+"https://search.keinet.ne.jp/1120/outline/expense",
+"https://search.keinet.ne.jp/1120/outline/campus",
+"https://www.u-tokyo.ac.jp/focus/ja/articles/z1304_00162.html",
+"https://www.mext.go.jp/b_menu/activity/detail/2025/20251219.html",
+"https://www.ehime-u.ac.jp/wp-content/uploads/2026/06/pr_20260625_pias.pdf",
+"https://search.keinet.ne.jp/1120/outline/licential",
+"https://search.keinet.ne.jp/1120/outline/admission_employment"
+],
+"licenses": [
+"医師国家試験受験資格（医学科）",
+"薬剤師国家試験受験資格（薬学科）",
+"獣医師国家試験受験資格（獣医学課程）",
+"看護師国家試験受験資格（健康総合科学科）",
+"教員免許（中・高 各教科）",
+"一級建築士受験資格（工・農の一部学科）"
+],
+"careers": "理系は大学院進学が中心（理学部物理学科94.1%、薬学部薬科学科98.7%、農学部応用生命科学課程90.9%が進学）。文系は就職が中心で、経済学部経営学科91.2%・法学部第1類78.1%が就職（2024年度卒）。"
+},
+"京都大学": {
+"difficulty": {
+"hensachi": "60.0〜70.0",
+"kyotei": "77%〜90%",
+"year": "2027年度入試用"
+},
+"faculties": [
+"総合人間学部",
+"文学部",
+"教育学部",
+"法学部",
+"経済学部",
+"理学部",
+"医学部",
+"薬学部",
+"工学部",
+"農学部"
+],
+"students": {
+"count": 12721,
+"year": 2025
+},
+"founded": "1897年（京都帝国大学創設）／1949年 新制大学",
+"access": "吉田キャンパス：京阪出町柳駅・神宮丸太町駅から徒歩約10〜20分（京都駅から市バスも可）",
+"tuition": {
+"amount": 817800,
+"label": "全学部共通・入学金＋授業料",
+"year": 2026
+},
+"news": [
+"2025年10月、北川進特別教授が金属有機構造体（MOF）の開発でノーベル化学賞を受賞。",
+"2026年7月31日に国際卓越研究大学に認定され、8月7日に25年間の研究等体制強化計画が認可された（東北大・東京科学大に続く3校目）。"
+],
+"notable": [
+"北川進（配位化学・MOF/多孔性配位高分子の開発で2025年ノーベル化学賞／理事・副学長、高等研究院特別教授）",
+"本庶佑（免疫学・PD-1の発見で2018年ノーベル生理学・医学賞／受賞時 高等研究院副院長・特別教授）"
+],
+"sources": [
+"https://search.keinet.ne.jp/1280/general/border_rate",
+"https://search.keinet.ne.jp/1280",
+"https://search.keinet.ne.jp/1280/outline/department",
+"https://search.keinet.ne.jp/1280/outline/expense",
+"https://search.keinet.ne.jp/1280/outline/campus",
+"https://www.kyoto-u.ac.jp/ja/news/2026-08-07-2",
+"https://www.mext.go.jp/b_menu/activity/detail/2026/20260703.html",
+"https://www.nedo.go.jp/news/other/ZZKH_100122.html",
+"https://www.kyoto-u.ac.jp/ja/about/history/honor/award_b/nobel.html",
+"https://search.keinet.ne.jp/1280/outline/licential",
+"https://search.keinet.ne.jp/1280/outline/admission_employment"
+],
+"licenses": [
+"医師国家試験受験資格（医学科）",
+"薬剤師国家試験受験資格（薬学科）",
+"看護師・保健師・理学療法士・作業療法士・臨床検査技師の受験資格（人間健康科学科）",
+"教員免許（中・高 各教科）",
+"一級建築士受験資格（建築学科）",
+"公認心理師受験資格（文・教育・総合人間）"
+],
+"careers": "理・工・農は大学院進学が中心（理学部84.8%、工学部各学科約85〜90%が進学）。経済学部は82.8%が就職、文学部・教育学部・総合人間学部も就職が約6割（2024年度卒）。"
+},
+"大阪大学": {
+"difficulty": {
+"hensachi": "55.0〜70.0",
+"kyotei": "70%〜87%",
+"year": "2027年度入試用"
+},
+"faculties": [
+"文学部",
+"人間科学部",
+"外国語学部",
+"法学部",
+"経済学部",
+"理学部",
+"医学部",
+"歯学部",
+"薬学部",
+"工学部",
+"基礎工学部"
+],
+"students": {
+"count": 15111,
+"year": 2025
+},
+"founded": "1931年（大阪帝国大学創設）／1949年 新制大学",
+"access": "豊中キャンパス：大阪モノレール柴原阪大前駅徒歩約7〜15分／吹田キャンパス：大阪モノレール阪大病院前駅徒歩約5〜15分",
+"tuition": {
+"amount": 817800,
+"label": "全学部共通・入学金＋授業料（Kei-Netは2025年度入学者の値）",
+"year": 2025
+},
+"news": [
+"2025年10月、坂口志文特任教授（免疫学フロンティア研究センター）が制御性T細胞の発見でノーベル生理学・医学賞を受賞。"
+],
+"notable": [
+"坂口志文（免疫学・制御性T細胞の発見で2025年ノーベル生理学・医学賞／免疫学フロンティア研究センター特任教授）"
+],
+"sources": [
+"https://search.keinet.ne.jp/1295/general/border_rate",
+"https://search.keinet.ne.jp/1295",
+"https://search.keinet.ne.jp/1295/outline/department",
+"https://search.keinet.ne.jp/1295/outline/expense",
+"https://search.keinet.ne.jp/1295/outline/campus",
+"https://www.mext.go.jp/b_menu/activity/detail/2025/20251006.html",
+"https://www.kyoto-u.ac.jp/ja/about/history/honor/award_b/nobel.html"
+]
+},
+"東北大学": {
+"difficulty": {
+"hensachi": "50.0〜67.5",
+"kyotei": "65%〜92%",
+"year": "2027年度入試用"
+},
+"faculties": [
+"文学部",
+"教育学部",
+"法学部",
+"経済学部",
+"理学部",
+"医学部",
+"歯学部",
+"薬学部",
+"工学部",
+"農学部"
+],
+"students": {
+"count": 10733,
+"year": 2025
+},
+"founded": "1907年（東北帝国大学創立）／1949年 新制大学",
+"access": "川内北キャンパス（1・2年）：地下鉄東西線川内駅直結／青葉山キャンパス：地下鉄東西線青葉山駅直結",
+"tuition": {
+"amount": 817800,
+"label": "全学部共通・入学金＋授業料",
+"year": 2026
+},
+"news": [
+"2024年11月、国際卓越研究大学の第1号に認定された。",
+"2024年4月、青葉山新キャンパス内の次世代放射光施設NanoTerasu（ナノテラス）が稼働を開始。"
+],
+"notable": [
+"片桐秀樹（糖尿病・代謝学・臓器間神経ネットワークによる代謝制御の解明で2025年度武田医学賞／医学系研究科教授）"
+],
+"sources": [
+"https://search.keinet.ne.jp/1050/general/border_rate",
+"https://search.keinet.ne.jp/1050",
+"https://search.keinet.ne.jp/1050/outline/department",
+"https://search.keinet.ne.jp/1050/outline/expense",
+"https://search.keinet.ne.jp/1050/outline/campus",
+"https://sp.m.jiji.com/english/show/36539",
+"https://www.watch.impress.co.jp/docs/news/1587784.html",
+"https://mypage.atpress.ne.jp/smart/news/5101596"
+]
+},
+"名古屋大学": {
+"difficulty": {
+"hensachi": "50.0〜67.5",
+"kyotei": "65%〜92%",
+"year": "2027年度入試用"
+},
+"faculties": [
+"文学部",
+"教育学部",
+"法学部",
+"経済学部",
+"情報学部",
+"理学部",
+"医学部",
+"工学部",
+"農学部"
+],
+"students": {
+"count": 9524,
+"year": 2025
+},
+"founded": "1871年（仮病院・仮医学校）／1939年 名古屋帝国大学創設／1949年 新制大学",
+"access": "東山キャンパス：地下鉄名城線名古屋大学駅すぐ／鶴舞キャンパス（医学科）：JR・地下鉄鶴舞駅徒歩5分",
+"tuition": {
+"amount": 817800,
+"label": "全学部共通・入学金＋授業料",
+"year": 2026
+},
+"news": [
+"2026年8月、酸フッ化物固体電解質で過去最高のリチウムイオン伝導率を達成したと発表（全固体電池への応用に期待）。",
+"2026年3月、酸化ガリウムのSi基板上へのエピタキシャル成長に「世界初」で成功したと共同研究グループが発表。"
+],
+"notable": [
+"天野浩（半導体工学・青色LEDの開発で2014年ノーベル物理学賞／未来材料・システム研究所特任教授、名古屋大学卓越教授）"
+],
+"sources": [
+"https://search.keinet.ne.jp/1250/general/border_rate",
+"https://search.keinet.ne.jp/1250",
+"https://search.keinet.ne.jp/1250/outline/department",
+"https://search.keinet.ne.jp/1250/outline/expense",
+"https://search.keinet.ne.jp/1250/outline/campus",
+"https://profs.provost.nagoya-u.ac.jp/html/100014894_ja.html",
+"https://www.itmedia.co.jp/keywords/nagoya_univ.html"
+]
+},
+"九州大学": {
+"difficulty": {
+"hensachi": "52.5〜67.5",
+"kyotei": "66%〜90%",
+"year": "2027年度入試用"
+},
+"faculties": [
+"文学部",
+"教育学部",
+"法学部",
+"経済学部",
+"共創学部",
+"理学部",
+"医学部",
+"歯学部",
+"薬学部",
+"工学部",
+"芸術工学部",
+"農学部"
+],
+"students": {
+"count": 11687,
+"year": 2025
+},
+"founded": "1903年（京都帝国大学福岡医科大学）／1911年 九州帝国大学創立／1949年 新制大学",
+"access": "伊都キャンパス：JR九大学研都市駅から昭和バス「九大伊都キャンパス」下車／病院キャンパス：地下鉄馬出九大病院前駅すぐ",
+"tuition": {
+"amount": 817800,
+"label": "全学部共通・入学金＋授業料",
+"year": 2026
+},
+"news": [
+"2025年、藤川茂紀主幹教授らのナノ分離膜を用いたCO2直接回収装置「DAC-U」が大阪・関西万博で常設展示され、展示館がEXPO INNOVATION AWARDを受賞。",
+"2025年、安達千波矢主幹教授が有機EL研究で江崎玲於奈賞を受賞。"
+],
+"notable": [
+"安達千波矢（有機エレクトロニクス・有機EL材料研究で2025年江崎玲於奈賞／工学研究院主幹教授）",
+"藤川茂紀（ナノ材料・CO2直接回収用ナノ分離膜の開発／主幹教授）"
+],
+"sources": [
+"https://search.keinet.ne.jp/1405/general/border_rate",
+"https://search.keinet.ne.jp/1405",
+"https://search.keinet.ne.jp/1405/outline/department",
+"https://search.keinet.ne.jp/1405/outline/expense",
+"https://search.keinet.ne.jp/1405/outline/campus",
+"https://www.kyushu-u.ac.jp/en/university/president/message/2601nentou"
+]
+},
+"北海道大学": {
+"difficulty": {
+"hensachi": "50.0〜67.5",
+"kyotei": "63%〜88%",
+"year": "2027年度入試用"
+},
+"faculties": [
+"文学部",
+"教育学部",
+"法学部",
+"経済学部",
+"理学部",
+"医学部",
+"歯学部",
+"薬学部",
+"工学部",
+"農学部",
+"獣医学部",
+"水産学部"
+],
+"students": {
+"count": 11365,
+"year": 2025
+},
+"founded": "1876年（札幌農学校）／1918年 北海道帝国大学／1949年 新制大学",
+"access": "札幌キャンパス：JR札幌駅から徒歩7分／函館キャンパス（水産3・4年）：JR函館駅から函館バス「北大前」下車",
+"tuition": {
+"amount": 817800,
+"label": "全学部共通・入学金＋授業料",
+"year": 2026
+},
+"news": [
+"2026年10月、紅藻から血糖値の調整に有望な化合物を発見したと発表。"
+],
+"notable": [
+"ベンジャミン・リスト（化学、2021年ノーベル化学賞／化学反応創成研究拠点ICReDD主任研究者・Hokkaido University Professor）"
+],
+"sources": [
+"https://search.keinet.ne.jp/1025/general/border_rate",
+"https://search.keinet.ne.jp/1025",
+"https://search.keinet.ne.jp/1025/outline/department",
+"https://search.keinet.ne.jp/1025/outline/expense",
+"https://search.keinet.ne.jp/1025/outline/campus",
+"https://www.global.hokudai.ac.jp/news",
+"https://www.icredd.hokudai.ac.jp/list-pf/?p=57",
+"https://www.global.hokudai.ac.jp/blog/dr-benjamin-list-a-specially-appointed-professor-at-hokkaido-university-was-awarded-the-nobel-prize-in-chemistry"
+]
+},
+"一橋大学": {
+"difficulty": {
+"hensachi": "65.0〜72.5",
+"kyotei": "83%〜90%",
+"year": "2027年度入試用"
+},
+"faculties": [
+"商学部",
+"経済学部",
+"法学部",
+"社会学部",
+"ソーシャル・データサイエンス学部"
+],
+"students": {
+"count": 4340,
+"year": 2025
+},
+"founded": "1875年（商法講習所）／1949年 一橋大学（新制）",
+"access": "国立キャンパス：JR国立駅から徒歩10分",
+"tuition": {
+"amount": 924960,
+"label": "全学部共通・入学金＋授業料（授業料642,960円）",
+"year": 2026
+},
+"news": [],
+"notable": [
+"佐藤主光（経済学研究科教授・財政学、2024年紫綬褒章）"
+],
+"sources": [
+"https://search.keinet.ne.jp/1165/general/border_rate",
+"https://search.keinet.ne.jp/1165",
+"https://search.keinet.ne.jp/1165/outline/department",
+"https://search.keinet.ne.jp/1165/outline/expense",
+"https://search.keinet.ne.jp/1165/outline/campus",
+"https://www.hit-u.ac.jp/hq-mag/innovation/569_20241002/"
+]
+},
+"東京科学大学": {
+"difficulty": {
+"hensachi": "50.0〜70.0",
+"kyotei": "62%〜92%",
+"year": "2027年度入試用"
+},
+"faculties": [
+"理学院",
+"工学院",
+"物質理工学院",
+"情報理工学院",
+"生命理工学院",
+"環境・社会理工学院",
+"医学部",
+"歯学部"
+],
+"students": {
+"count": 6313,
+"year": 2025
+},
+"founded": "1881年（東京職工学校）・1928年（東京高等歯科医学校）／2024年 東京工業大学と東京医科歯科大学が統合し発足",
+"access": "大岡山キャンパス（理工系）：東急大岡山駅徒歩1分／湯島キャンパス（医・歯2年以降）：JR御茶ノ水駅徒歩2分",
+"tuition": {
+"amount": 917400,
+"label": "理工系6学院・入学金＋授業料（授業料635,400円。医歯系は授業料642,960円）",
+"year": 2026
+},
+"news": [
+"2025年12月、国際卓越研究大学の第2期審査で採択され、2026年4月から体制強化計画を開始することになった。"
+],
+"notable": [
+"大隅良典（細胞生物学・オートファジーの仕組みの解明で2016年ノーベル生理学・医学賞／受賞時 東京工業大学特任教授）"
+],
+"sources": [
+"https://search.keinet.ne.jp/1150/general/border_rate",
+"https://search.keinet.ne.jp/1150",
+"https://search.keinet.ne.jp/1150/outline/department",
+"https://search.keinet.ne.jp/1150/outline/expense",
+"https://search.keinet.ne.jp/1150/outline/campus",
+"https://www.mext.go.jp/b_menu/activity/detail/2025/20251219.html",
+"https://www.kyoto-u.ac.jp/ja/about/history/honor/award_b/nobel.html"
+]
+},
+"神戸大学": {
+"difficulty": {
+"hensachi": "52.5〜67.5",
+"kyotei": "68%〜87%",
+"year": "2027年度入試用"
+},
+"faculties": [
+"文学部",
+"国際人間科学部",
+"法学部",
+"経済学部",
+"経営学部",
+"理学部",
+"医学部",
+"工学部",
+"システム情報学部",
+"農学部",
+"海洋政策科学部"
+],
+"students": {
+"count": 11543,
+"year": 2025
+},
+"founded": "1949年 新制神戸大学発足（前身校を統合）",
+"access": "六甲台キャンパス：JR六甲道駅・阪急六甲駅から市バス「神大正門前」等下車（阪急六甲駅から徒歩15〜25分）",
+"tuition": {
+"amount": 817800,
+"label": "全学部共通・入学金＋授業料（諸会費等を含むKei-Net掲載の初年度合計は約86〜96万円）",
+"year": 2026
+},
+"news": [
+"2024年10月、国産手術支援ロボット「hinotori」を用いた小児手術に世界で初めて成功。",
+"2025年1月、常温・可視光でアルカンから水素を取り出す触媒を開発。"
+],
+"notable": [
+"西村和雄（特別栄誉教授・経済学、日本学士院会員・紫綬褒章）"
+],
+"sources": [
+"https://search.keinet.ne.jp/1310/general/border_rate",
+"https://search.keinet.ne.jp/1310",
+"https://search.keinet.ne.jp/1310/outline/department",
+"https://search.keinet.ne.jp/1310/outline/expense",
+"https://search.keinet.ne.jp/1310/outline/campus",
+"https://www.kobe-u.ac.jp/ja/about/public-relations/press/2024",
+"https://www.research.kobe-u.ac.jp/gksh-web/iar/faculty/honorary.html"
+]
+},
+"筑波大学": {
+"difficulty": {
+"hensachi": "55.0〜65.0",
+"kyotei": "70%〜88%",
+"year": "2027年度入試用"
+},
+"faculties": [
+"人文・文化学群",
+"社会・国際学群",
+"人間学群",
+"生命環境学群",
+"理工学群",
+"情報学群",
+"医学群",
+"体育専門学群",
+"芸術専門学群",
+"総合学域群"
+],
+"students": {
+"count": 9561,
+"year": 2025
+},
+"founded": "1872年（師範学校）／1973年 筑波大学開学",
+"access": "筑波キャンパス：つくばセンター（TXつくば駅）からバス「筑波大学循環」",
+"tuition": {
+"amount": 817800,
+"label": "全学群共通・入学金＋授業料",
+"year": 2026
+},
+"news": [
+"2024年8月、世界的な研究大学ネットワーク「Worldwide Universities Network（WUN）」に日本の大学として初めて加盟。"
+],
+"notable": [
+"柳沢正史（国際統合睡眠医科学研究機構教授・睡眠医学、2023年クラリベイト引用栄誉賞）"
+],
+"sources": [
+"https://search.keinet.ne.jp/1085/general/border_rate",
+"https://search.keinet.ne.jp/1085",
+"https://search.keinet.ne.jp/1085/outline/department",
+"https://search.keinet.ne.jp/1085/outline/expense",
+"https://search.keinet.ne.jp/1085/outline/campus",
+"https://search.keinet.ne.jp/1085/outline/licential",
+"https://search.keinet.ne.jp/1085/outline/admission_employment",
+"https://wun.ac.uk/article/wun-welcomes-university-of-tsukuba-to-the-network/",
+"https://nrid.nii.ac.jp/nrid/1000020202369/",
+"https://www.amed.go.jp/news/topics/20230926.html"
+],
+"licenses": [
+"教員免許（小・中・高 各教科、特別支援）",
+"医師国家試験受験資格（医学類）",
+"看護師・保健師国家試験受験資格（看護学類）",
+"臨床検査技師国家試験受験資格（医療科学類）",
+"公認心理師受験資格（心理学類）",
+"学芸員・司書"
+],
+"careers": "理工・生命環境・情報系は大学院進学が中心（化学類91.2%、応用理工学類91.4%、情報科学類82.9%が進学）。人文・社会系や体育専門学群は就職が6〜8割、看護学類は75.0%が就職（2024年度卒）。"
+},
+"茨城大学": {
+"difficulty": {
+"hensachi": "40.0〜55.0",
+"kyotei": "52%〜74%",
+"year": "2027年度入試用"
+},
+"faculties": [
+"人文社会科学部",
+"教育学部",
+"理学部",
+"工学部",
+"農学部",
+"地域未来共創学環"
+],
+"students": {
+"count": 6782,
+"year": 2025
+},
+"founded": "1874年（茨城師範学校）／1949年 茨城大学（新制）",
+"access": "水戸キャンパス：JR水戸駅から茨城交通バス「茨大前」下車／日立キャンパス（工2〜4年）：JR日立駅・常陸多賀駅からバス「茨大前」下車",
+"tuition": {
+"amount": 817800,
+"label": "全学部共通・入学金＋授業料",
+"year": 2026
+},
+"news": [
+"2024年4月、東海サテライトキャンパスのフロンティア応用原子科学研究センターを改組し、原子科学研究教育センターを新設。"
+],
+"notable": [],
+"sources": [
+"https://search.keinet.ne.jp/1075/general/border_rate",
+"https://search.keinet.ne.jp/1075",
+"https://search.keinet.ne.jp/1075/outline/department",
+"https://search.keinet.ne.jp/1075/outline/expense",
+"https://search.keinet.ne.jp/1075/outline/campus",
+"https://univ-journal.net/243252/"
+]
+},
+"千葉大学": {
+"difficulty": {
+"hensachi": "42.5〜70.0",
+"kyotei": "59%〜90%",
+"year": "2027年度入試用"
+},
+"faculties": [
+"国際教養学部",
+"文学部",
+"法政経学部",
+"教育学部",
+"理学部",
+"工学部",
+"情報・データサイエンス学部",
+"園芸学部",
+"医学部",
+"薬学部",
+"看護学部"
+],
+"students": {
+"count": 10450,
+"year": 2025
+},
+"founded": "1949年 新制千葉大学発足（千葉医科大学などを統合）",
+"access": "西千葉キャンパス：JR西千葉駅徒歩2分／亥鼻キャンパス（医・薬・看護）：JR千葉駅から京成バス",
+"tuition": {
+"amount": 924960,
+"label": "全学部共通・入学金＋授業料（授業料642,960円）",
+"year": 2026
+},
+"news": [
+"2025年11月、宇宙園芸研究センターが国際的な宇宙農業ロードマップの策定に参画。",
+"2026年10月、ガーナ大学野口記念医学研究所と共同ワクチン研究拠点の設置に向けた覚書を締結。"
+],
+"notable": [
+"大栗真宗（先進科学センター教授・宇宙論、2024年日本学士院賞）",
+"清野宏（卓越教授・粘膜免疫学/ワクチン開発、2024年日本学士院賞）"
+],
+"sources": [
+"https://search.keinet.ne.jp/1105/general/border_rate",
+"https://search.keinet.ne.jp/1105",
+"https://search.keinet.ne.jp/1105/outline/department",
+"https://search.keinet.ne.jp/1105/outline/expense",
+"https://search.keinet.ne.jp/1105/outline/campus",
+"https://www.h.chiba-u.jp/topics/2025/index.html",
+"https://www.eurekalert.org/newsportal/japan/home?page=25",
+"https://www.chiba-u.ac.jp/news/award/post_113.html"
+]
+},
+"埼玉大学": {
+"difficulty": {
+"hensachi": "45.0〜60.0",
+"kyotei": "53%〜79%",
+"year": "2027年度入試用"
+},
+"faculties": [
+"教養学部",
+"経済学部",
+"教育学部",
+"理学部",
+"工学部"
+],
+"students": {
+"count": 6931,
+"year": 2025
+},
+"founded": "1873年（学校改正局）／1949年 埼玉大学（新制）",
+"access": "本部キャンパス（さいたま市桜区）：JR北浦和駅・南与野駅、東武志木駅からバス「埼玉大学」下車",
+"tuition": {
+"amount": 924960,
+"label": "全学部共通・入学金＋授業料（授業料642,960円）",
+"year": 2026
+},
+"news": [
+"2026年10月、廃棄ポリアミドから、発光色を紫外〜黄緑色に調整できるカーボン量子ドットを作製したと発表。"
+],
+"notable": [],
+"sources": [
+"https://search.keinet.ne.jp/1100/general/border_rate",
+"https://search.keinet.ne.jp/1100",
+"https://search.keinet.ne.jp/1100/outline/department",
+"https://search.keinet.ne.jp/1100/outline/expense",
+"https://search.keinet.ne.jp/1100/outline/campus",
+"https://www.eurekalert.org/newsportal/japan/home?page=25"
+]
+},
+"横浜国立大学": {
+"difficulty": {
+"hensachi": "55.0〜67.5",
+"kyotei": "62%〜86%",
+"year": "2027年度入試用"
+},
+"faculties": [
+"経済学部",
+"経営学部",
+"教育学部",
+"都市科学部",
+"理工学部"
+],
+"students": {
+"count": 7512,
+"year": 2026
+},
+"founded": "1876年（横浜師範学校）／1949年 新制大学",
+"access": "常盤台キャンパス：横浜駅からバス「横浜国立大学正門前」下車、または地下鉄三ツ沢上町駅から徒歩16分",
+"tuition": {
+"amount": 817800,
+"label": "全学部共通・入学金＋授業料",
+"year": 2026
+},
+"news": [
+"2024年7月、理論上予測されながら未確認だったハイドレートの最後の基本構造を実験室で作り出すことに成功したと発表。",
+"2025年10月、高速・超低消費電力の超伝導ニューロン素子を開発したと発表。",
+"2025年12月、人の健康を脅かす有害藻類を殺す新種の海洋性ツボカビを発見したと発表。"
+],
+"notable": [
+"馬場俊彦（工学研究院教授・フォトニックナノ構造デバイス、2024年紫綬褒章）"
+],
+"sources": [
+"https://search.keinet.ne.jp/1170/general/border_rate",
+"https://search.keinet.ne.jp/1170",
+"https://search.keinet.ne.jp/1170/outline/campus",
+"https://search.keinet.ne.jp/1170/outline/expense",
+"https://jpcup.niad.ac.jp/cn/institute/0224/",
+"https://www.ripo.ynu.ac.jp/about/ynu_research/haishin/",
+"https://www.ynu.ac.jp/hus/jinji/31706/detail.html"
+]
+},
+"東京外国語大学": {
+"difficulty": {
+"hensachi": "57.5〜62.5",
+"kyotei": "71%〜88%",
+"year": "2027年度入試用"
+},
+"faculties": [
+"言語文化学部",
+"国際社会学部",
+"国際日本学部"
+],
+"students": {
+"count": 3759,
+"year": 2025
+},
+"founded": "1873年（東京外国語学校）／1949年 新制大学",
+"access": "府中キャンパス：西武多摩川線 多磨駅から徒歩約5分",
+"tuition": {
+"amount": 817800,
+"label": "全学部共通・入学金＋授業料（別途諸会費17,000円）",
+"year": 2026
+},
+"news": [],
+"notable": [
+"蛭田圭（講師・全体主義研究、2024年日本学術振興会賞）"
+],
+"sources": [
+"https://search.keinet.ne.jp/1130/general/border_rate",
+"https://search.keinet.ne.jp/1130",
+"https://search.keinet.ne.jp/1130/outline/campus",
+"https://search.keinet.ne.jp/1130/outline/expense",
+"https://search.keinet.ne.jp/1130/outline/department",
+"https://www.tufs.ac.jp/research/researcher/remarkable.html"
+]
+},
+"お茶の水女子大学": {
+"difficulty": {
+"hensachi": "52.5〜62.5",
+"kyotei": "66%〜88%",
+"year": "2027年度入試用"
+},
+"faculties": [
+"文教育学部",
+"理学部",
+"生活科学部",
+"共創工学部"
+],
+"students": {
+"count": 2079,
+"year": 2025
+},
+"founded": "1875年（東京女子師範学校）／1949年 新制大学",
+"access": "大塚キャンパス：東京メトロ茗荷谷駅から徒歩7分",
+"tuition": {
+"amount": 817800,
+"label": "全学部共通・入学金＋授業料",
+"year": 2026
+},
+"news": [
+"2024年4月、共創工学部（人間環境工学科・文化情報工学科）を設置し工学系教育を開始。"
+],
+"notable": [],
+"sources": [
+"https://search.keinet.ne.jp/1110/general/border_rate",
+"https://search.keinet.ne.jp/1110",
+"https://search.keinet.ne.jp/1110/outline/campus",
+"https://search.keinet.ne.jp/1110/outline/expense",
+"https://search.keinet.ne.jp/1110/outline/department"
+]
+},
+"東京学芸大学": {
+"difficulty": {
+"hensachi": "47.5〜60.0",
+"kyotei": "58%〜76%",
+"year": "2027年度入試用"
+},
+"faculties": [
+"教育学部"
+],
+"students": {
+"count": 4416,
+"year": 2025
+},
+"founded": "1873年（東京府小学教則講習所）／1949年 新制大学",
+"access": "小金井キャンパス：JR国分寺駅から徒歩約20分（バスあり）、JR武蔵小金井駅からバス",
+"tuition": {
+"amount": 817800,
+"label": "教育学部・入学金＋授業料",
+"year": 2026
+},
+"news": [],
+"notable": [],
+"sources": [
+"https://search.keinet.ne.jp/1135/general/border_rate",
+"https://search.keinet.ne.jp/1135",
+"https://search.keinet.ne.jp/1135/outline/campus",
+"https://search.keinet.ne.jp/1135/outline/expense",
+"https://search.keinet.ne.jp/1135/outline/department"
+]
+},
+"東京農工大学": {
+"difficulty": {
+"hensachi": "52.5〜70.0",
+"kyotei": "68%〜85%",
+"year": "2027年度入試用"
+},
+"faculties": [
+"工学部",
+"農学部"
+],
+"students": {
+"count": 3812,
+"year": 2025
+},
+"founded": "1874年（内務省勧業寮内藤新宿出張所）／1949年 新制大学",
+"access": "小金井キャンパス（工）：JR東小金井駅から徒歩6〜8分／府中キャンパス（農）：JR北府中駅から徒歩12分",
+"tuition": {
+"amount": 924960,
+"label": "全学部共通・入学金＋授業料（授業料642,960円）",
+"year": 2026
+},
+"news": [
+"2026年3月、深海由来の天然化合物が二つの仕組みでがん細胞を攻撃することを報告。"
+],
+"notable": [],
+"sources": [
+"https://search.keinet.ne.jp/1160/general/border_rate",
+"https://search.keinet.ne.jp/1160",
+"https://search.keinet.ne.jp/1160/outline/campus",
+"https://search.keinet.ne.jp/1160/outline/expense",
+"https://search.keinet.ne.jp/1160/outline/department",
+"https://phys.org/rss-feed/partners/tokyo-university-of-agriculture-and-technology/"
+]
+},
+"電気通信大学": {
+"difficulty": {
+"hensachi": "55.0〜57.5",
+"kyotei": "70%〜76%",
+"year": "2027年度入試用"
+},
+"faculties": [
+"情報理工学域（昼間）",
+"情報理工学域（夜間主）"
+],
+"students": {
+"count": 3441,
+"year": 2025
+},
+"founded": "1918年（無線電信講習所）／1949年 新制大学",
+"access": "調布キャンパス：京王線 調布駅から徒歩5分",
+"tuition": {
+"amount": 924960,
+"label": "情報理工学域（昼間）・入学金＋授業料（授業料642,960円）",
+"year": 2026
+},
+"news": [
+"2026年1月、細菌がべん毛を体に巻き付けて微細な隙間をトンネルのように進む仕組みを報告。"
+],
+"notable": [
+"福島邦彦（特別栄誉教授・ファジィシステム研究所特別研究員、ニューラルネットワーク研究）"
+],
+"sources": [
+"https://search.keinet.ne.jp/1115/general/border_rate",
+"https://search.keinet.ne.jp/1115",
+"https://search.keinet.ne.jp/1115/outline/campus",
+"https://search.keinet.ne.jp/1115/outline/expense",
+"https://search.keinet.ne.jp/1115/outline/department",
+"https://phys.org/rss-feed/partners/university-of-electro-communications/",
+"https://www.uec.ac.jp/research/members/distinguished_honorary_professor.html"
+]
+},
+"東京都立大学": {
+"difficulty": {
+"hensachi": "52.5〜60.0",
+"kyotei": "64%〜83%",
+"year": "2027年度入試用"
+},
+"faculties": [
+"人文社会学部",
+"法学部",
+"経済経営学部",
+"理学部",
+"都市環境学部",
+"システムデザイン学部",
+"健康福祉学部"
+],
+"students": {
+"count": 6935,
+"year": 2025
+},
+"founded": "1929年（旧制府立高等学校）／1949年 新制大学（2005年 首都大学東京、2020年 東京都立大学に改称）",
+"access": "南大沢キャンパス：京王相模原線 南大沢駅から徒歩5分",
+"tuition": {
+"amount": 802800,
+"label": "全学部共通・入学金（都外）＋授業料",
+"year": 2026
+},
+"news": [],
+"notable": [],
+"sources": [
+"https://search.keinet.ne.jp/1532/general/border_rate",
+"https://search.keinet.ne.jp/1532",
+"https://search.keinet.ne.jp/1532/outline/campus",
+"https://search.keinet.ne.jp/1532/outline/expense",
+"https://search.keinet.ne.jp/1532/outline/department"
+]
+},
+"横浜市立大学": {
+"difficulty": {
+"hensachi": "52.5〜67.5",
+"kyotei": "68%〜87%",
+"year": "2027年度入試用"
+},
+"faculties": [
+"国際教養学部",
+"国際商学部",
+"理学部",
+"データサイエンス学部",
+"医学部"
+],
+"students": {
+"count": 4309,
+"year": 2025
+},
+"founded": "1882年（横浜商法学校）／1949年 新制大学",
+"access": "金沢八景キャンパス：京急・シーサイドライン金沢八景駅から徒歩約5分／福浦キャンパス（医）：シーサイドライン市大医学部駅から徒歩約1分",
+"tuition": {
+"amount": 839400,
+"label": "国際教養・国際商・データサイエンス学部・入学金（市外）＋授業料",
+"year": 2026
+},
+"news": [
+"2025年1月、文部科学省の「地域中核・特色ある研究大学強化促進事業（J-PEAKS）」に採択される。",
+"2025年11月、J-PEAKSの一環として福浦キャンパスに研究・共創拠点「オープンイノベーションラボ」を開所。",
+"2026年8月、大阪公立大学・名古屋市立大学と連携する研究基盤プロジェクトが文部科学省・JSTの「先端研究基盤刷新事業（EPOCH）」に採択される。"
+],
+"notable": [
+"松本直通（医学部・遺伝学／ソトス症候群など希少疾患の原因遺伝子を数十発見）"
+],
+"sources": [
+"https://search.keinet.ne.jp/1540/general/border_rate",
+"https://search.keinet.ne.jp/1540",
+"https://search.keinet.ne.jp/1540/outline/campus",
+"https://search.keinet.ne.jp/1540/outline/expense",
+"https://search.keinet.ne.jp/1540/outline/department",
+"https://www.yokohama-cu.ac.jp/univ/corp/tt534t0000000pc5-att/202603-YCUPROFILE.pdf",
+"https://www.yokohama-cu.ac.jp/news/2025/cduaom000002go73-att/20251126kaishoshiki.pdf",
+"https://digitalpr.jp/pdf.php?r=140543"
+]
+},
+"宇都宮大学": {
+"difficulty": {
+"hensachi": "45.0〜52.5",
+"kyotei": "54%〜75%",
+"year": "2027年度入試用"
+},
+"faculties": [
+"地域デザイン科学部",
+"国際学部",
+"データサイエンス経営学部",
+"共同教育学部",
+"工学部",
+"農学部"
+],
+"students": {
+"count": 4222,
+"year": 2025
+},
+"founded": "1873年（類似師範学校）／1949年 新制大学",
+"access": "峰キャンパス：JR宇都宮駅からバス「宇都宮大学前」下車徒歩1分（LRT「峰」から徒歩12分）／陽東キャンパス：LRT「宇都宮大学陽東キャンパス」から徒歩9分",
+"tuition": {
+"amount": 817800,
+"label": "全学部共通・入学金＋授業料",
+"year": 2026
+},
+"news": [
+"2024年4月、データサイエンス経営学部を新設。",
+"2026年4月、農学部を改組しフロンティア食品科学科など4学科体制に再編。"
+],
+"notable": [],
+"sources": [
+"https://search.keinet.ne.jp/1090/general/border_rate",
+"https://search.keinet.ne.jp/1090",
+"https://search.keinet.ne.jp/1090/outline/campus",
+"https://search.keinet.ne.jp/1090/outline/expense",
+"https://search.keinet.ne.jp/1090/outline/department"
+]
+},
+"群馬大学": {
+"difficulty": {
+"hensachi": "42.5〜62.5",
+"kyotei": "50%〜81%",
+"year": "2027年度入試用"
+},
+"faculties": [
+"共同教育学部",
+"情報学部",
+"医学部",
+"理工学部"
+],
+"students": {
+"count": 5056,
+"year": 2025
+},
+"founded": "1873年（小学校教員伝習所）／1949年 新制大学",
+"access": "荒牧キャンパス：JR前橋駅からバス「群馬大学荒牧」下車／桐生キャンパス（理工2年次以降）：JR桐生駅からバス",
+"tuition": {
+"amount": 817800,
+"label": "全学部共通・入学金＋授業料",
+"year": 2026
+},
+"news": [
+"2025年8月、未来先端研究機構の二村圭祐教授らがアポリポタンパク質Dの新たな抗腫瘍メカニズムを報告。"
+],
+"notable": [],
+"sources": [
+"https://search.keinet.ne.jp/1095/general/border_rate",
+"https://search.keinet.ne.jp/1095",
+"https://search.keinet.ne.jp/1095/outline/campus",
+"https://search.keinet.ne.jp/1095/outline/expense",
+"https://search.keinet.ne.jp/1095/outline/department",
+"https://www.giar.gunma-u.ac.jp/eng/?p=2905"
+]
+},
+"高崎経済大学": {
+"difficulty": {
+"hensachi": "50.0〜55.0",
+"kyotei": "61%〜74%",
+"year": "2027年度入試用"
+},
+"faculties": [
+"経済学部",
+"地域政策学部"
+],
+"students": {
+"count": 4138,
+"year": 2025
+},
+"founded": "1952年（高崎市立短期大学商経科）／1957年 高崎経済大学開学",
+"access": "高崎キャンパス：JR高崎駅からバス「経済大学前」下車",
+"tuition": {
+"amount": 802800,
+"label": "全学部共通・入学金（市外）＋授業料（2025年度入学者用の値）",
+"year": 2025
+},
+"news": [],
+"notable": [],
+"sources": [
+"https://search.keinet.ne.jp/1520/general/border_rate",
+"https://search.keinet.ne.jp/1520",
+"https://search.keinet.ne.jp/1520/outline/campus",
+"https://search.keinet.ne.jp/1520/outline/expense",
+"https://search.keinet.ne.jp/1520/outline/department"
+]
+},
+"東京海洋大学": {
+"difficulty": {
+"hensachi": "50.0〜60.0",
+"kyotei": "64%〜80%",
+"year": "2027年度入試用"
+},
+"faculties": [
+"海洋生命科学部",
+"海洋工学部",
+"海洋資源環境学部"
+],
+"students": {
+"count": 1944,
+"year": 2025
+},
+"founded": "1875年（三菱商船学校）・1888年（水産伝習所）／2003年 東京商船大学と東京水産大学が統合し開学",
+"access": "品川キャンパス：JR・京急 品川駅から徒歩約10分／越中島キャンパス（海洋工）：JR越中島駅から徒歩約2分",
+"tuition": {
+"amount": 817800,
+"label": "全学部共通・入学金＋授業料",
+"year": 2026
+},
+"news": [],
+"notable": [
+"吉崎悟朗（水圏生殖工学研究所長・魚類発生工学、2023年紫綬褒章）",
+"日比谷紀之（客員教授・海洋物理学/深海乱流、2025年紫綬褒章）"
+],
+"sources": [
+"https://search.keinet.ne.jp/1152/general/border_rate",
+"https://search.keinet.ne.jp/1152",
+"https://search.keinet.ne.jp/1152/outline/campus",
+"https://search.keinet.ne.jp/1152/outline/expense",
+"https://search.keinet.ne.jp/1152/outline/department",
+"https://www.kaiyodai.ac.jp/faculty/s/news/detail/post_36.html",
+"https://www.kaiyodai.ac.jp/faculty/r/news/detail/_2023_1.html"
+]
+},
+"東京藝術大学": {
+"difficulty": {
+"hensachi": "55.0〜62.5",
+"kyotei": "53%〜87%",
+"year": "2027年度入試用"
+},
+"faculties": [
+"美術学部",
+"音楽学部"
+],
+"students": {
+"count": 2002,
+"year": 2025
+},
+"founded": "1887年（東京美術学校・東京音楽学校）／1949年 新制大学",
+"access": "上野キャンパス：JR上野駅・鶯谷駅から徒歩約10分",
+"tuition": {
+"amount": 981360,
+"label": "全学部共通・入学金（338,400円）＋授業料（642,960円）",
+"year": 2026
+},
+"news": [],
+"notable": [
+"日比野克彦（学長・現代美術家、2022年就任）"
+],
+"sources": [
+"https://search.keinet.ne.jp/1140/general/border_rate",
+"https://search.keinet.ne.jp/1140",
+"https://search.keinet.ne.jp/1140/outline/campus",
+"https://search.keinet.ne.jp/1140/outline/expense",
+"https://search.keinet.ne.jp/1140/outline/department",
+"https://www.geidai.ac.jp/wp-content/uploads/2023/09/yakuinjoukyou2025.pdf"
+]
+},
+"茨城県立医療大学": {
+"difficulty": {
+"hensachi": "42.5〜50.0",
+"kyotei": "52%〜65%",
+"year": "2027年度入試用"
+},
+"faculties": [
+"保健医療学部"
+],
+"students": {
+"count": 712,
+"year": 2025
+},
+"founded": "1995年 開学",
+"access": "阿見キャンパス：JR土浦駅から関東鉄道バス「県立医療大学入口」下車徒歩約5分（JR荒川沖駅からもバス）",
+"tuition": {
+"amount": 1117500,
+"label": "保健医療学部・入学金（県外564,000円）＋授業料",
+"year": 2026
+},
+"news": [],
+"notable": [],
+"sources": [
+"https://search.keinet.ne.jp/1519/general/border_rate",
+"https://search.keinet.ne.jp/1519",
+"https://search.keinet.ne.jp/1519/outline/campus",
+"https://search.keinet.ne.jp/1519/outline/expense",
+"https://search.keinet.ne.jp/1519/outline/department"
+]
+},
+"大阪公立大学": {
+"difficulty": {
+"hensachi": "52.5〜67.5",
+"kyotei": "66%〜86%",
+"year": "2027年度入試用"
+},
+"faculties": [
+"文学部",
+"法学部",
+"経済学部",
+"商学部",
+"理学部",
+"工学部",
+"農学部",
+"獣医学部",
+"医学部",
+"看護学部",
+"生活科学部",
+"現代システム科学域"
+],
+"students": {
+"count": 11581,
+"year": 2025,
+"note": "Kei-Net掲載の学部別学生数（2025年度現在）の合計"
+},
+"founded": "1880年（大阪商業講習所）／2022年 大阪市立大学と大阪府立大学が統合し開学",
+"access": "森之宮キャンパス：JR・地下鉄森ノ宮駅から徒歩13分／杉本キャンパス：JR杉本町駅すぐ",
+"tuition": {
+"amount": 917800,
+"label": "全学部共通・入学金（府外者382,000円）＋授業料",
+"year": 2026
+},
+"news": [
+"2025年9月、大阪城東部の森之宮に新たなメインキャンパス「森之宮キャンパス」を開設"
+],
+"notable": [
+"寺北明久（理学研究科教授・分子生理学/光受容タンパク質オプシン、2023年紫綬褒章）"
+],
+"sources": [
+"https://search.keinet.ne.jp/1615",
+"https://search.keinet.ne.jp/1615/general/border_rate",
+"https://search.keinet.ne.jp/1615/outline/expense",
+"https://search.keinet.ne.jp/1615/outline/campus",
+"https://search.keinet.ne.jp/1615/outline/department",
+"https://www.omu.ac.jp/assets/pr_20251016_kaisetukinenibento.pdf",
+"https://search.keinet.ne.jp/1615/outline/licential",
+"https://search.keinet.ne.jp/1615/outline/admission_employment",
+"https://www.omu.ac.jp/info/news/entry-05767.html"
+],
+"licenses": [
+"教員免許（中・高 各教科）",
+"医師国家試験受験資格",
+"獣医師国家試験受験資格",
+"看護師国家試験受験資格",
+"管理栄養士国家試験受験資格",
+"一級建築士受験資格（建築学科・居住環境学科）"
+],
+"careers": "学部全体の就職率・就職先はKei-Netに未掲載。看護学部は2026年度看護師国家試験で受験者135名全員合格、工学研究科機械系専攻の修士修了者は98.9%が就職（2024年度）。"
+},
+"国際教養大学": {
+"difficulty": {
+"hensachi": "65.0〜70.0",
+"kyotei": "80%〜87%",
+"year": "2027年度入試用"
+},
+"faculties": [
+"国際教養学部"
+],
+"students": {
+"count": 859,
+"year": 2025,
+"note": "Kei-Net掲載の学部別学生数（2025年度現在）の合計"
+},
+"founded": "2004年 開学（2003年設置認可）",
+"access": "秋田キャンパス：JR和田駅から中央交通バス「国際教養大学」下車",
+"tuition": {
+"amount": 1119000,
+"label": "国際教養学部・入学金（県外者423,000円）＋授業料696,000円（寮費等別）",
+"year": 2026
+},
+"news": [],
+"notable": [
+"モンテ・カセム（学長）"
+],
+"sources": [
+"https://search.keinet.ne.jp/1521",
+"https://search.keinet.ne.jp/1521/general/border_rate",
+"https://search.keinet.ne.jp/1521/outline/expense",
+"https://search.keinet.ne.jp/1521/outline/campus",
+"https://search.keinet.ne.jp/1521/outline/department",
+"https://web.aiu.ac.jp/wp-content/uploads/2025/09/Commencement-Address_President.pdf"
+]
+},
+"会津大学": {
+"difficulty": {
+"hensachi": "42.5〜45.0",
+"kyotei": "59%〜63%",
+"year": "2027年度入試用"
+},
+"faculties": [
+"コンピュータ理工学部"
+],
+"students": {
+"count": 1113,
+"year": 2025,
+"note": "Kei-Net掲載の学部別学生数（2025年度現在）の合計"
+},
+"founded": "1993年 開学（1992年設置認可）",
+"access": "会津若松市一箕町：JR会津若松駅から会津バス「会津大学前」下車",
+"tuition": {
+"amount": 1084800,
+"label": "コンピュータ理工学部・入学金（県外者564,000円）＋授業料520,800円",
+"year": 2026
+},
+"news": [
+"2024年度、宇宙情報科学研究センターが文部科学省の共同利用・共同研究拠点の期末評価でA評価を受け、認定が更新される"
+],
+"notable": [],
+"sources": [
+"https://search.keinet.ne.jp/1518",
+"https://search.keinet.ne.jp/1518/general/border_rate",
+"https://search.keinet.ne.jp/1518/outline/expense",
+"https://search.keinet.ne.jp/1518/outline/campus",
+"https://search.keinet.ne.jp/1518/outline/department",
+"https://u-aizu.ac.jp/files/2025jigyouhouokusyo.pdf"
+]
+},
+"福島県立医科大学": {
+"difficulty": {
+"hensachi": "47.5〜62.5",
+"kyotei": "49%〜79%",
+"year": "2027年度入試用"
+},
+"faculties": [
+"医学部",
+"看護学部",
+"保健科学部"
+],
+"students": {
+"count": 1719,
+"year": 2025,
+"note": "Kei-Net掲載の学部別学生数（2025年度現在）の合計"
+},
+"founded": "1944年（福島県立女子医学専門学校）／1952年 新制医科大学",
+"access": "光が丘キャンパス（医・看護）：JR福島駅からバス「医科大学前」下車／福島駅前キャンパス（保健科学）：JR福島駅から徒歩5分",
+"tuition": {
+"amount": 1381800,
+"label": "医学部・入学金（県外者846,000円）＋授業料535,800円（看護・保健科学は県外入学金564,000円で1,099,800円）",
+"year": 2026
+},
+"news": [
+"2025年1月、ハーバード大学T.H.チャン公衆衛生大学院が同大学と連携した冬季コース「福島フィールドトリップ」を開始。"
+],
+"notable": [],
+"sources": [
+"https://search.keinet.ne.jp/1515",
+"https://search.keinet.ne.jp/1515/general/border_rate",
+"https://search.keinet.ne.jp/1515/outline/expense",
+"https://search.keinet.ne.jp/1515/outline/campus",
+"https://search.keinet.ne.jp/1515/outline/department",
+"https://www.fmu.ac.jp/en/news/"
+]
+},
+"新潟大学": {
+"difficulty": {
+"hensachi": "45.0〜65.0",
+"kyotei": "52%〜84%",
+"year": "2027年度入試用"
+},
+"faculties": [
+"人文学部",
+"法学部",
+"経済科学部",
+"教育学部",
+"理学部",
+"工学部",
+"農学部",
+"医学部",
+"歯学部",
+"創生学部"
+],
+"students": {
+"count": 9980,
+"year": 2025,
+"note": "Kei-Net掲載の学部別学生数（2025年度現在）の合計"
+},
+"founded": "1869年（新潟の施薬院・種痘所）／1949年 新制新潟大学",
+"access": "五十嵐キャンパス：JR新潟大学前駅から徒歩15分（新潟駅からバスも可）／旭町キャンパス（医・歯）：JR白山駅から徒歩10分",
+"tuition": {
+"amount": 817800,
+"label": "入学金＋授業料（Kei-Net 2026年度入学者用）・全学部共通",
+"year": 2026
+},
+"news": [
+"2025年1月、文部科学省・JSPSの「地域中核・特色ある研究大学強化促進事業（J-PEAKS）」に採択される"
+],
+"notable": [],
+"sources": [
+"https://search.keinet.ne.jp/1180",
+"https://search.keinet.ne.jp/1180/general/border_rate",
+"https://search.keinet.ne.jp/1180/outline/expense",
+"https://search.keinet.ne.jp/1180/outline/campus",
+"https://search.keinet.ne.jp/1180/outline/department",
+"https://www.jsps.go.jp/file/storage/j-press-releases_2024/20250124_PressRelease.pdf"
+]
+},
+"金沢大学": {
+"difficulty": {
+"hensachi": "47.5〜65.0",
+"kyotei": "59%〜82%",
+"year": "2027年度入試用"
+},
+"faculties": [
+"人間社会学域",
+"理工学域",
+"医薬保健学域",
+"融合学域"
+],
+"students": {
+"count": 8216,
+"year": 2025,
+"note": "Kei-Net掲載の学部別学生数（2025年度現在）の合計（国際基幹教育院所属を含む）"
+},
+"founded": "1862年（加賀藩 彦三種痘所）／1949年 新制金沢大学",
+"access": "角間キャンパス：JR金沢駅から北陸鉄道バス「金沢大学中央」等下車／宝町・鶴間キャンパス（医薬保健）：金沢駅からバス「小立野」下車",
+"tuition": {
+"amount": 817800,
+"label": "入学金＋授業料（Kei-Net 2026年度入学者用）・全学域共通",
+"year": 2026
+},
+"news": [
+"2025年、ナノ生命科学研究所（WPI-NanoLSI）がナノ針を使う原子間力顕微鏡でがん細胞の核の硬さを測定し、核の弾性ががん進行の指標になり得ることを示した。"
+],
+"notable": [
+"安藤敏夫（特任教授・高速原子間力顕微鏡/ナノ生命科学研究所、2023年紫綬褒章）"
+],
+"sources": [
+"https://search.keinet.ne.jp/1200",
+"https://search.keinet.ne.jp/1200/general/border_rate",
+"https://search.keinet.ne.jp/1200/outline/expense",
+"https://search.keinet.ne.jp/1200/outline/campus",
+"https://search.keinet.ne.jp/1200/outline/department",
+"https://www.eurekalert.org/news-releases/1104866",
+"https://ridb.kanazawa-u.ac.jp/public/detail.php?id=1983"
+]
+},
+"信州大学": {
+"difficulty": {
+"hensachi": "45.0〜62.5",
+"kyotei": "51%〜83%",
+"year": "2027年度入試用"
+},
+"faculties": [
+"人文学部",
+"経法学部",
+"教育学部",
+"理学部",
+"工学部",
+"繊維学部",
+"農学部",
+"医学部",
+"サステナブル社会協創学環（2027年4月設置予定）"
+],
+"students": {
+"count": 8910,
+"year": 2025,
+"note": "Kei-Net掲載の学部別学生数（2025年度現在）の合計"
+},
+"founded": "1873年（筑摩県師範講習所）／1949年 新制信州大学",
+"access": "松本キャンパス：JR松本駅からアルピコバス「信州大学前」下車／長野（工学）キャンパス：JR長野駅から徒歩約20分",
+"tuition": {
+"amount": 817800,
+"label": "入学金＋授業料（Kei-Net 2026年度入学者用）・全学部共通（Kei-Net備考では2025年度の額）",
+"year": 2026
+},
+"news": [
+"2027年4月、既存8学部の知を結集した文理横断の新組織「サステナブル社会協創学環」を新設予定"
+],
+"notable": [
+"遠藤守信（特別栄誉教授・カーボンナノチューブ研究、2008年紫綬褒章）"
+],
+"sources": [
+"https://search.keinet.ne.jp/1225",
+"https://search.keinet.ne.jp/1225/general/border_rate",
+"https://search.keinet.ne.jp/1225/outline/expense",
+"https://search.keinet.ne.jp/1225/outline/campus",
+"https://search.keinet.ne.jp/1225/outline/department",
+"https://www.shinshu-u.ac.jp/school/sc/pdf/学環説明会_信学会長野校.pdf",
+"https://endomoribu.shinshu-u.ac.jp/profile.html"
+]
+},
+"静岡大学": {
+"difficulty": {
+"hensachi": "45.0〜55.0",
+"kyotei": "50%〜75%",
+"year": "2027年度入試用"
+},
+"faculties": [
+"人文社会科学部",
+"教育学部",
+"情報学部",
+"理学部",
+"工学部",
+"農学部",
+"グローバル共創科学部"
+],
+"students": {
+"count": 8465,
+"year": 2025,
+"note": "Kei-Net掲載の学部別学生数（2025年度現在）の合計（人文社会科学部夜間主を含む）"
+},
+"founded": "1875年（静岡師範学校）／1949年 新制静岡大学",
+"access": "静岡キャンパス：JR静岡駅からしずてつバス「静岡大学」下車／浜松キャンパス：JR浜松駅から遠鉄バス「静岡大学」下車",
+"tuition": {
+"amount": 817800,
+"label": "入学金＋授業料（Kei-Net 2026年度入学者用）・昼間学部共通（夜間主は408,900円）",
+"year": 2026
+},
+"news": [],
+"notable": [
+"寺西信一（電子工学研究所特任教授・イメージセンサー、2023年エミー賞）"
+],
+"sources": [
+"https://search.keinet.ne.jp/1230",
+"https://search.keinet.ne.jp/1230/general/border_rate",
+"https://search.keinet.ne.jp/1230/outline/expense",
+"https://search.keinet.ne.jp/1230/outline/campus",
+"https://search.keinet.ne.jp/1230/outline/department",
+"https://tdb.shizuoka.ac.jp/rdb/public/Default2.aspx?id=11268&l=0&t=35"
+]
+},
+"広島大学": {
+"difficulty": {
+"hensachi": "45.0〜65.0",
+"kyotei": "58%〜83%",
+"year": "2027年度入試用"
+},
+"faculties": [
+"総合科学部",
+"文学部",
+"教育学部",
+"法学部",
+"経済学部",
+"理学部",
+"医学部",
+"歯学部",
+"薬学部",
+"工学部",
+"生物生産学部",
+"情報科学部"
+],
+"students": {
+"count": 10730,
+"year": 2025,
+"note": "Kei-Net掲載の学部別学生数（2025年度現在）の合計（夜間主を含む）"
+},
+"founded": "1874年（白島学校）／1949年 新制広島大学",
+"access": "東広島キャンパス：JR西条駅等から中国JRバス「広大中央口」等下車／霞キャンパス（医・歯・薬）：JR広島駅等からバス「大学病院前」下車",
+"tuition": {
+"amount": 817800,
+"label": "入学金＋授業料（Kei-Net 2025年度入学者用）・昼間学部共通（夜間主は408,900円）",
+"year": 2025
+},
+"news": [
+"2025年10月、物理学者らが新しいタイプの「時間結晶」を作り出したと発表。",
+"2025年11月、室温超伝導への道を開く可能性がある異常な電子状態を明らかにしたと発表。"
+],
+"notable": [
+"二川浩樹（医系科学研究科教授・歯学/抗菌成分「イータック」開発、2026年春紫綬褒章）",
+"井戸川豊（人間社会科学研究科教授・陶芸、2025年秋紫綬褒章）"
+],
+"sources": [
+"https://search.keinet.ne.jp/1360",
+"https://search.keinet.ne.jp/1360/general/border_rate",
+"https://search.keinet.ne.jp/1360/outline/expense",
+"https://search.keinet.ne.jp/1360/outline/campus",
+"https://search.keinet.ne.jp/1360/outline/department",
+"https://www.hiroshima-u.ac.jp/index.php/en/research/news?page=2",
+"https://www.hiroshima-u.ac.jp/news/97228",
+"https://www.hiroshima-u.ac.jp/news/93738"
+]
+},
+"岡山大学": {
+"difficulty": {
+"hensachi": "50.0〜65.0",
+"kyotei": "59%〜84%",
+"year": "2027年度入試用"
+},
+"faculties": [
+"文学部",
+"法学部",
+"経済学部",
+"教育学部",
+"理学部",
+"工学部",
+"農学部",
+"医学部",
+"歯学部",
+"薬学部"
+],
+"students": {
+"count": 10246,
+"year": 2025,
+"note": "Kei-Net掲載の学部別学生数（2025年度現在）の合計（夜間主を含む）"
+},
+"founded": "1870年（岡山藩医学館）／1949年 新制岡山大学",
+"access": "津島キャンパス：JR法界院駅から徒歩10分／鹿田キャンパス（医・歯）：路面電車清輝橋駅から徒歩8分",
+"tuition": {
+"amount": 817800,
+"label": "入学金＋授業料（Kei-Net 2026年度入学者用）・全学部共通",
+"year": 2026
+},
+"news": [
+"2024年9月、小型で持ち運べる原子核時計の実現につながる実験系を示した研究を発表。",
+"2025年12月、これまで報告例のなかったラジカル型マクロラクトン化により、光で大環状ラクトンを合成する新手法を報告。"
+],
+"notable": [
+"馬建鋒（資源植物科学研究所教授・植物栄養生理学、2022年紫綬褒章）"
+],
+"sources": [
+"https://search.keinet.ne.jp/1355",
+"https://search.keinet.ne.jp/1355/general/border_rate",
+"https://search.keinet.ne.jp/1355/outline/expense",
+"https://search.keinet.ne.jp/1355/outline/campus",
+"https://search.keinet.ne.jp/1355/outline/department",
+"https://phys.org/rss-feed/partners/okayama-university/",
+"https://www.okayama-u.ac.jp/tp/news/news_id11577.html"
+]
+},
+"熊本大学": {
+"difficulty": {
+"hensachi": "47.5〜65.0",
+"kyotei": "60%〜82%",
+"year": "2027年度入試用"
+},
+"faculties": [
+"文学部",
+"法学部",
+"教育学部",
+"理学部",
+"工学部",
+"医学部",
+"薬学部",
+"情報融合学環",
+"共創学環"
+],
+"students": {
+"count": 7730,
+"year": 2025,
+"note": "Kei-Net掲載の学部別学生数（2025年度現在）の合計"
+},
+"founded": "1756年（再春館）／1949年 新制熊本大学",
+"access": "黒髪キャンパス：JR上熊本駅から都市バス「子飼橋」下車徒歩10分（熊本駅からバスも可）／本荘キャンパス（医）：JR熊本駅からバス「大学病院前」下車",
+"tuition": {
+"amount": 817800,
+"label": "入学金＋授業料（Kei-Net 2026年度入学者用）・全学部共通（Kei-Net備考では授業料は2025年度の額）",
+"year": 2026
+},
+"news": [
+"2024年4月、TSMC進出を受け半導体人材を育成する学部相当組織「情報融合学環」を開設（創立以来初の学部新設）",
+"2025年1月、「地域中核・特色ある研究大学強化促進事業（J-PEAKS）」に採択される"
+],
+"notable": [
+"河村能人（卓越教授・KUMADAIマグネシウム合金開発、2017年紫綬褒章）"
+],
+"sources": [
+"https://search.keinet.ne.jp/1440",
+"https://search.keinet.ne.jp/1440/general/border_rate",
+"https://search.keinet.ne.jp/1440/outline/expense",
+"https://search.keinet.ne.jp/1440/outline/campus",
+"https://search.keinet.ne.jp/1440/outline/department",
+"https://kumanichi.com/articles/1381472",
+"https://dempa-digital.com/?p=672210",
+"https://www.jsps.go.jp/file/storage/j-press-releases_2024/20250124_PressRelease.pdf",
+"https://kaken.nii.ac.jp/ja/grant/KAKENHI-PROJECT-25H00807",
+"https://www.kumamoto-u.ac.jp/whatsnew/sizen/170508"
+]
+},
+"奈良女子大学": {
+"difficulty": {
+"hensachi": "50.0〜60.0",
+"kyotei": "64%〜80%",
+"year": "2027年度入試用"
+},
+"faculties": [
+"文学部",
+"理学部",
+"生活環境学部",
+"工学部"
+],
+"students": {
+"count": 2177,
+"year": 2025,
+"note": "Kei-Net掲載の学部別学生数（2025年度現在）の合計"
+},
+"founded": "1908年（奈良女子高等師範学校）／1949年 新制奈良女子大学",
+"access": "奈良市北魚屋東町：近鉄奈良駅から徒歩5分",
+"tuition": {
+"amount": 817800,
+"label": "入学金＋授業料（Kei-Net 2025年度入学者用）・全学部共通",
+"year": 2025
+},
+"news": [],
+"notable": [],
+"sources": [
+"https://search.keinet.ne.jp/1330",
+"https://search.keinet.ne.jp/1330/general/border_rate",
+"https://search.keinet.ne.jp/1330/outline/expense",
+"https://search.keinet.ne.jp/1330/outline/campus",
+"https://search.keinet.ne.jp/1330/outline/department"
+]
+},
+"長岡技術科学大学": {
+"difficulty": {
+"hensachi": "40.0",
+"kyotei": "53%",
+"year": "2027年度入試用"
+},
+"faculties": [
+"工学部"
+],
+"students": {
+"count": 1167,
+"year": 2025,
+"note": "Kei-Net掲載の学部別学生数（2025年度現在）の合計"
+},
+"founded": "1976年 開学",
+"access": "長岡市上富岡町：JR長岡駅から越後交通バス「技大前」下車",
+"tuition": {
+"amount": 817800,
+"label": "入学金＋授業料（Kei-Net 2025年度入学者用）",
+"year": 2025
+},
+"news": [
+"2025年1月、「地域中核・特色ある研究大学強化促進事業（J-PEAKS）」に採択される"
+],
+"notable": [],
+"sources": [
+"https://search.keinet.ne.jp/1175",
+"https://search.keinet.ne.jp/1175/general/border_rate",
+"https://search.keinet.ne.jp/1175/outline/expense",
+"https://search.keinet.ne.jp/1175/outline/campus",
+"https://search.keinet.ne.jp/1175/outline/department",
+"https://www.jsps.go.jp/file/storage/j-press-releases_2024/20250124_PressRelease.pdf"
+]
+},
+"豊橋技術科学大学": {
+"difficulty": {
+"hensachi": "45.0",
+"kyotei": "61%",
+"year": "2027年度入試用"
+},
+"faculties": [
+"工学部"
+],
+"students": {
+"count": 1232,
+"year": 2025,
+"note": "Kei-Net掲載の学部別学生数（2025年度現在）の合計"
+},
+"founded": "1976年 開学",
+"access": "豊橋市天伯町：JR・名鉄豊橋駅から豊鉄バス「技科大前」下車",
+"tuition": {
+"amount": 817800,
+"label": "入学金＋授業料（Kei-Net 2026年度入学者用）",
+"year": 2026
+},
+"news": [
+"2025年9月、かんきつ害虫の共生細菌に、これまでどの生物でも知られていなかった管状構造を発見。"
+],
+"notable": [],
+"sources": [
+"https://search.keinet.ne.jp/1245",
+"https://search.keinet.ne.jp/1245/general/border_rate",
+"https://search.keinet.ne.jp/1245/outline/expense",
+"https://search.keinet.ne.jp/1245/outline/campus",
+"https://search.keinet.ne.jp/1245/outline/department",
+"https://phys.org/rss-feed/partners/toyohashi-university-of-technology/"
+]
+},
+"早稲田大学": {
+"difficulty": {
+"hensachi": "62.5〜70.0",
+"kyotei": "75%〜94%",
+"year": "2027年度入試用"
+},
+"faculties": [
+"政治経済学部",
+"法学部",
+"教育学部",
+"商学部",
+"社会科学部",
+"国際教養学部",
+"文化構想学部",
+"文学部",
+"基幹理工学部",
+"創造理工学部",
+"先進理工学部",
+"人間科学部",
+"スポーツ科学部"
+],
+"students": {
+"count": 38290,
+"year": 2025
+},
+"founded": "1882年（東京専門学校開校）／1902年 早稲田大学に改称",
+"access": "早稲田キャンパス：東京メトロ早稲田駅から徒歩5分／西早稲田キャンパス：東京メトロ西早稲田駅直結",
+"tuition": {
+"amount": 1250700,
+"label": "法学部・入学金＋授業料＋諸会費等（文学部・文化構想学部は1,295,000円）",
+"year": 2026
+},
+"news": [
+"2026年4月、令和8年度科学技術分野の文部科学大臣表彰を6名の教員が受賞（熱帯林ガバナンス、非線型分散型方程式、原始銀河団観測など）",
+"2025年秋、薄井彰・熊谷隆・田邉新一の3教授が紫綬褒章を受章"
+],
+"notable": [
+"熊谷隆（理工学術院教授・確率論、フラクタル上の異常拡散の解析／2025年紫綬褒章）",
+"田邉新一（理工学術院教授・建築環境設備学、温熱快適性・換気研究、元日本建築学会会長／2025年紫綬褒章）",
+"薄井彰（商学学術院教授・会計学、実証会計学の開拓／2025年紫綬褒章）"
+],
+"sources": [
+"https://search.keinet.ne.jp/2293/general/border_rate",
+"https://passnavi.obunsha.co.jp/univ/3190/difficulty/",
+"https://search.keinet.ne.jp/2293",
+"https://search.keinet.ne.jp/2293/outline/campus",
+"https://search.keinet.ne.jp/2293/outline/expense",
+"https://search.keinet.ne.jp/outline/department_sp/2293",
+"https://www.waseda.jp/inst/research/news/83998",
+"https://www.waseda.jp/top/news/114635",
+"https://search.keinet.ne.jp/2293/outline/licential",
+"https://search.keinet.ne.jp/2293/outline/admission_employment"
+],
+"licenses": [
+"教員免許（小・中・高 各教科）",
+"学芸員",
+"司書",
+"公認心理師受験資格",
+"社会福祉士受験資格（人間科学部）",
+"一級建築士受験資格（建築学科）"
+],
+"careers": "2024年度の学部卒業者約8,600人のうち就職約69%・進学約21%。理工系3学部は進学率65〜77%で大学院進学が中心、文系学部は就職が8割前後。"
+},
+"慶應義塾大学": {
+"difficulty": {
+"hensachi": "57.5〜72.5",
+"kyotei": null,
+"year": "2027年度入試用"
+},
+"faculties": [
+"文学部",
+"法学部",
+"経済学部",
+"商学部",
+"総合政策学部",
+"環境情報学部",
+"理工学部",
+"医学部",
+"薬学部",
+"看護医療学部"
+],
+"students": {
+"count": 28839,
+"year": 2025
+},
+"founded": "1858年（福澤諭吉の蘭学塾）／1920年 大学令による大学／1949年 新制大学",
+"access": "三田キャンパス：JR田町駅から徒歩8分／日吉キャンパス：東急・地下鉄日吉駅から徒歩1分",
+"tuition": {
+"amount": 1513350,
+"label": "法学部・入学金＋授業料＋施設設備費＋在籍基本料＋諸会費",
+"year": 2026
+},
+"news": [
+"2026年7月、iPS細胞由来神経前駆細胞を移植する亜急性期脊髄損傷の臨床研究で、最長4年の追跡で長期安全性を確認しNature Medicineに発表",
+"2026年10月、化石から世界最古の現生種のチョウ（ミヤマシロチョウの仲間）を報告"
+],
+"notable": [
+"岡野栄之（再生医療リサーチセンター長・教授・幹細胞/再生医学、iPS細胞による脊髄損傷治療研究）",
+"中村雅也（医学部整形外科学教授・脊髄損傷へのiPS細胞移植臨床研究）",
+"佐藤俊朗（医学部医化学教授・オルガノイド技術の確立／2025年度武田医学賞）"
+],
+"sources": [
+"https://search.keinet.ne.jp/2210/general/border_rate",
+"https://search.keinet.ne.jp/2210",
+"https://search.keinet.ne.jp/2210/outline/campus",
+"https://search.keinet.ne.jp/2210/outline/expense",
+"https://search.keinet.ne.jp/2210/outline/department",
+"https://www.keio.ac.jp/ja/press-release/20260722-press-02/",
+"https://www.keio.ac.jp/ja/press-releases/",
+"https://mypage.atpress.ne.jp/smart/news/5101596"
+]
+},
+"上智大学": {
+"difficulty": {
+"hensachi": "52.5〜70.0",
+"kyotei": "74%〜89%",
+"year": "2027年度入試用"
+},
+"faculties": [
+"神学部",
+"文学部",
+"総合人間科学部",
+"法学部",
+"経済学部",
+"外国語学部",
+"総合グローバル学部",
+"国際教養学部",
+"理工学部"
+],
+"students": {
+"count": 12419,
+"year": 2025
+},
+"founded": "1913年 上智大学開校（1911年 財団法人上智学院設立）／1948年 新制大学",
+"access": "四谷キャンパス：JR・東京メトロ四ツ谷駅から徒歩3分",
+"tuition": {
+"amount": 1408650,
+"label": "法学部・経済学部・文学部（一部学科）・入学金＋授業料＋施設設備費＋在籍料＋諸会費",
+"year": 2026
+},
+"news": [
+"2027年4月、理工学部にデジタルグリーンテクノロジー学科を設置予定（認可申請中）"
+],
+"notable": [
+"前嶋和弘（総合グローバル学部教授・アメリカ政治、政治とメディア）"
+],
+"sources": [
+"https://search.keinet.ne.jp/2221/general/border_rate",
+"https://search.keinet.ne.jp/2221",
+"https://search.keinet.ne.jp/2221/outline/campus",
+"https://search.keinet.ne.jp/2221/outline/expense",
+"https://search.keinet.ne.jp/2221/outline/department",
+"https://www.service-js.jp/news/upload/getsureiken_20261007.pdf"
+]
+},
+"東京理科大学": {
+"difficulty": {
+"hensachi": "42.5〜62.5",
+"kyotei": "60%〜86%",
+"year": "2027年度入試用"
+},
+"faculties": [
+"理学部第一部",
+"工学部",
+"薬学部",
+"創域理工学部",
+"先進工学部",
+"経営学部",
+"創域情報学部",
+"理学部第二部"
+],
+"students": {
+"count": 16967,
+"year": 2025
+},
+"founded": "1881年（東京物理学講習所）／1949年 東京理科大学発足",
+"access": "神楽坂キャンパス：JR・地下鉄飯田橋駅から徒歩5分／葛飾キャンパス：JR・東京メトロ金町駅から徒歩8分",
+"tuition": {
+"amount": 1428740,
+"label": "経営学部（経営・ビジネスエコノミクス）・入学金＋授業料＋施設費＋諸会費（理学部は約180万〜186万円）",
+"year": 2026
+},
+"news": [
+"2026年10月、硤合憲三栄誉教授が「不斉自己触媒反応（硤合反応）」の発見によりノーベル化学賞を受賞（アンリ・カガン氏と共同）",
+"2026年4月、創域情報学部を新設し、理学部第一部に科学コミュニケーション学科を設置"
+],
+"notable": [
+"硤合憲三（栄誉教授・有機化学、不斉自己触媒反応「硤合反応」の発見／2026年ノーベル化学賞、2025年日本学士院賞）",
+"工藤昭彦（研究推進機構総合研究院教授／2026年紫綬褒章）",
+"相澤清晴（研究推進機構総合研究院教授／2026年紫綬褒章）"
+],
+"sources": [
+"https://search.keinet.ne.jp/2262/general/border_rate",
+"https://search.keinet.ne.jp/2262",
+"https://search.keinet.ne.jp/2262/outline/campus",
+"https://search.keinet.ne.jp/2262/outline/expense",
+"https://search.keinet.ne.jp/2262/outline/department",
+"https://www.tus.ac.jp/about/awards-and-honors/",
+"https://www.tus.ac.jp/today/archive/20261007_3541.html"
+]
+},
+"国際基督教大学（ICU）": {
+"difficulty": {
+"hensachi": "65.0〜67.5",
+"kyotei": null,
+"year": "2027年度入試用"
+},
+"faculties": [
+"教養学部"
+],
+"students": {
+"count": 2902,
+"year": 2025
+},
+"founded": "1949年 創立／1953年 教養学部開学",
+"access": "三鷹キャンパス：JR三鷹駅・JR/西武武蔵境駅から小田急バス「国際基督教大学」下車",
+"tuition": {
+"amount": 1821000,
+"label": "教養学部（アーツ・サイエンス）・入学金＋授業料＋施設費",
+"year": 2026
+},
+"news": [
+"2024年2月、負ミュオン寿命分析により鋼中の低濃度炭素を深さ別に非破壊で測定する手法の研究成果を発表",
+"2025年1月、岩切正一郎学長がフランス政府から教育功労章（オフィシエ）を受章"
+],
+"notable": [
+"岩切正一郎（学長・フランス文学、ボードレール研究とフランス戯曲翻訳／湯浅芳子賞、仏教育功労章オフィシエ）"
+],
+"sources": [
+"https://search.keinet.ne.jp/2214/general/border_rate",
+"https://search.keinet.ne.jp/2214",
+"https://search.keinet.ne.jp/2214/outline/campus",
+"https://search.keinet.ne.jp/2214/outline/expense",
+"https://search.keinet.ne.jp/2214/outline/department",
+"https://www.icu.ac.jp/en/about/press/",
+"https://www.christiantoday.co.jp/articles/34420/20250123/icu-president-receives-ordre-des-palmes-academiques.htm"
+]
+},
+"学習院大学": {
+"difficulty": {
+"hensachi": "52.5〜60.0",
+"kyotei": "72%〜82%",
+"year": "2027年度入試用"
+},
+"faculties": [
+"法学部",
+"経済学部",
+"文学部",
+"理学部",
+"国際社会科学部",
+"国際文化交流学部"
+],
+"students": {
+"count": 9054,
+"year": 2025
+},
+"founded": "1847年（京都で学習院開講）／1949年 新制大学",
+"access": "目白キャンパス：JR目白駅から徒歩30秒／戸山キャンパス（国際文化交流学部）：東京メトロ西早稲田駅から徒歩1分",
+"tuition": {
+"amount": 1364300,
+"label": "法学部・入学金＋授業料（在籍料含む）＋施設費＋諸会費",
+"year": 2026
+},
+"news": [
+"2026年4月、国際文化交流学部を新設（戸山キャンパス）",
+"2026年4月、老化で弱ったミトコンドリアを増やす新規化合物「マイトルビン」の発見を発表（日本女子大学などと共同）"
+],
+"notable": [
+"田崎晴明（理学部物理学科教授、理論物理学・統計物理学・数理物理学、2025年第71回仁科記念賞、第1回久保亮五記念賞）"
+],
+"sources": [
+"https://search.keinet.ne.jp/2204/general/border_rate",
+"https://search.keinet.ne.jp/2204",
+"https://search.keinet.ne.jp/2204/outline/campus",
+"https://search.keinet.ne.jp/2204/outline/expense",
+"https://search.keinet.ne.jp/2204/outline/department",
+"https://digitalpr.jp/c/666/2",
+"https://haltasaki.github.io/indexJ.html"
+]
+},
+"明治大学": {
+"difficulty": {
+"hensachi": "57.5〜67.5",
+"kyotei": "77%〜87%",
+"year": "2027年度入試用"
+},
+"faculties": [
+"法学部",
+"商学部",
+"政治経済学部",
+"文学部",
+"理工学部",
+"農学部",
+"経営学部",
+"情報コミュニケーション学部",
+"国際日本学部",
+"総合数理学部"
+],
+"students": {
+"count": 33130,
+"year": 2025
+},
+"founded": "1881年（明治法律学校）／1903年 明治大学に改称",
+"access": "駿河台キャンパス：JR・東京メトロ御茶ノ水駅から徒歩3分／和泉キャンパス：京王明大前駅から徒歩5分",
+"tuition": {
+"amount": 1382300,
+"label": "法学部・入学金＋授業料＋施設費＋実習費＋諸会費",
+"year": 2026
+},
+"news": [
+"2025年2月、土壌微生物の生存を制御する研究で世界初の成果をScientific Reportsに発表。",
+"2025年2月、ケンタウルス座銀河団のガスに関する研究がNatureに掲載。"
+],
+"notable": [
+"齋藤孝（文学部教授、教育学者・著述家）"
+],
+"sources": [
+"https://search.keinet.ne.jp/2286/general/border_rate",
+"https://search.keinet.ne.jp/2286",
+"https://search.keinet.ne.jp/2286/outline/campus",
+"https://search.keinet.ne.jp/2286/outline/expense",
+"https://search.keinet.ne.jp/2286/outline/department",
+"https://www.meiji.ac.jp/cip/english/news/2025/index_2025.html",
+"https://www.city.numazu.shizuoka.jp/shisei/pr/press/pdf/2024/20240830_1.pdf"
+]
+},
+"青山学院大学": {
+"difficulty": {
+"hensachi": "52.5〜65.0",
+"kyotei": "73%〜87%",
+"year": "2027年度入試用"
+},
+"faculties": [
+"文学部",
+"教育人間科学部",
+"経済学部",
+"法学部",
+"経営学部",
+"国際政治経済学部",
+"総合文化政策学部",
+"理工学部",
+"社会情報学部",
+"地球社会共生学部",
+"コミュニティ人間科学部"
+],
+"students": {
+"count": 20047,
+"year": 2025
+},
+"founded": "1874年（源流の女子小学校）／1949年 青山学院大学開校",
+"access": "青山キャンパス：東京メトロ表参道駅から徒歩5分／相模原キャンパス：JR淵野辺駅から徒歩7分",
+"tuition": {
+"amount": 1429000,
+"label": "法学部・入学金＋授業料＋施設費＋教育活動料＋在籍基本料＋諸会費",
+"year": 2026
+},
+"news": [
+"2027年4月、統計データサイエンス学環を設置予定"
+],
+"notable": [
+"福岡伸一（総合文化政策学部教授、分子生物学、『生物と無生物のあいだ』で2007年サントリー学芸賞）"
+],
+"sources": [
+"https://search.keinet.ne.jp/2200/general/border_rate",
+"https://search.keinet.ne.jp/2200",
+"https://search.keinet.ne.jp/2200/outline/campus",
+"https://search.keinet.ne.jp/2200/outline/expense",
+"https://search.keinet.ne.jp/2200/outline/department",
+"https://raweb1.jm.aoyama.ac.jp/aguhp/k05/resid/S001464/868",
+"https://www.suntory.co.jp/sfnd/prize_ssah/detail/2007sf1.html"
+]
+},
+"立教大学": {
+"difficulty": {
+"hensachi": "57.5〜65.0",
+"kyotei": "74%〜89%",
+"year": "2027年度入試用"
+},
+"faculties": [
+"文学部",
+"異文化コミュニケーション学部",
+"経済学部",
+"経営学部",
+"理学部",
+"社会学部",
+"法学部",
+"観光学部",
+"コミュニティ福祉学部",
+"現代心理学部",
+"スポーツウエルネス学部",
+"環境学部"
+],
+"students": {
+"count": 20180,
+"year": 2025
+},
+"founded": "1874年（築地の私塾、のち立教学校）／1907年 立教大学に改称",
+"access": "池袋キャンパス：JR等池袋駅から徒歩7分／新座キャンパス：東武志木駅から徒歩15分",
+"tuition": {
+"amount": 1374500,
+"label": "法学部・経済学部・入学金＋授業料（在籍料含む）＋諸会費",
+"year": 2026
+},
+"news": [
+"2026年4月、環境学部（環境学科）を新設"
+],
+"notable": [
+"中原淳（経営学部教授、人材開発・組織開発研究）"
+],
+"sources": [
+"https://search.keinet.ne.jp/2290/general/border_rate",
+"https://search.keinet.ne.jp/2290",
+"https://search.keinet.ne.jp/2290/outline/campus",
+"https://search.keinet.ne.jp/2290/outline/expense",
+"https://search.keinet.ne.jp/2290/outline/department",
+"https://nrid.nii.ac.jp/nrid/1000000342618/"
+]
+},
+"中央大学": {
+"difficulty": {
+"hensachi": "52.5〜62.5",
+"kyotei": "75%〜88%",
+"year": "2027年度入試用"
+},
+"faculties": [
+"法学部",
+"経済学部",
+"商学部",
+"文学部",
+"総合政策学部",
+"国際経営学部",
+"国際情報学部",
+"基幹理工学部",
+"社会理工学部",
+"先進理工学部",
+"スポーツ情報学部（2027年開設予定）"
+],
+"students": {
+"count": 26378,
+"year": 2025
+},
+"founded": "1885年（英吉利法律学校）／1905年 中央大学に改称",
+"access": "多摩キャンパス：多摩モノレール中央大学・明星大学駅直結／茗荷谷キャンパス（法学部）：東京メトロ茗荷谷駅から徒歩1分",
+"tuition": {
+"amount": 1391100,
+"label": "法学部・入学金＋授業料＋施設費＋諸会費（2025年度入学者用、文学部は1,339,100円）",
+"year": 2025
+},
+"news": [
+"2026年4月、理工学部を基幹理工学部・社会理工学部・先進理工学部の3学部に再編",
+"2027年4月、スポーツ情報学部を開設予定"
+],
+"notable": [
+"山田昌弘（文学部教授、家族社会学）"
+],
+"sources": [
+"https://search.keinet.ne.jp/2242/general/border_rate",
+"https://search.keinet.ne.jp/2242",
+"https://search.keinet.ne.jp/2242/outline/campus",
+"https://search.keinet.ne.jp/2242/outline/expense",
+"https://search.keinet.ne.jp/2242/outline/department",
+"https://nrid.nii.ac.jp/ja/nrid/1000090191337"
+]
+},
+"法政大学": {
+"difficulty": {
+"hensachi": "52.5〜65.0",
+"kyotei": "70%〜86%",
+"year": "2027年度入試用"
+},
+"faculties": [
+"法学部",
+"文学部",
+"経済学部",
+"社会学部",
+"経営学部",
+"国際文化学部",
+"人間環境学部",
+"現代福祉学部",
+"キャリアデザイン学部",
+"グローバル教養学部",
+"スポーツ健康学部",
+"情報科学部",
+"デザイン工学部",
+"理工学部",
+"生命科学部"
+],
+"students": {
+"count": 29669,
+"year": 2025
+},
+"founded": "1880年（東京法学社）／1903年 和仏法律学校法政大学に改称",
+"access": "市ケ谷キャンパス：市ケ谷駅・飯田橋駅から徒歩10分／小金井キャンパス：JR東小金井駅から徒歩15分",
+"tuition": {
+"amount": 1314600,
+"label": "法学部（法律学科）・入学金＋授業料＋施設費＋諸会費",
+"year": 2026
+},
+"news": [],
+"notable": [
+"山口二郎（法学部教授、政治学）"
+],
+"sources": [
+"https://search.keinet.ne.jp/2279/general/border_rate",
+"https://search.keinet.ne.jp/2279",
+"https://search.keinet.ne.jp/2279/outline/campus",
+"https://search.keinet.ne.jp/2279/outline/expense",
+"https://search.keinet.ne.jp/2279/outline/department",
+"https://nrid.nii.ac.jp/ja/nrid/1000070143352"
+]
+},
+"同志社大学": {
+"difficulty": {
+"hensachi": "55.0〜62.5",
+"kyotei": "76%〜91%",
+"year": "2027年度入試用"
+},
+"faculties": [
+"神学部",
+"文学部",
+"社会学部",
+"法学部",
+"経済学部",
+"商学部",
+"政策学部",
+"文化情報学部",
+"理工学部",
+"生命医科学部",
+"スポーツ健康科学部",
+"心理学部",
+"グローバル・コミュニケーション学部",
+"グローバル地域文化学部"
+],
+"students": {
+"count": 26844,
+"year": 2025
+},
+"founded": "1875年（同志社英学校）／1920年 大学令による大学／1948年 新制大学",
+"access": "今出川キャンパス：地下鉄今出川駅から徒歩1分／京田辺キャンパス：JR同志社前駅から徒歩10分",
+"tuition": {
+"amount": 1178000,
+"label": "法学部・入学金＋授業料＋施設費＋諸会費",
+"year": 2026
+},
+"news": [
+"2025年12月、有毒な一酸化窒素を室温で窒素ガスに変換する反応を偶然発見したと発表。"
+],
+"notable": [
+"村田晃嗣（法学部教授、国際関係論・アメリカ政治外交、サントリー学芸賞・吉田茂賞）"
+],
+"sources": [
+"https://search.keinet.ne.jp/2498/general/border_rate",
+"https://search.keinet.ne.jp/2498",
+"https://search.keinet.ne.jp/2498/outline/campus",
+"https://search.keinet.ne.jp/2498/outline/expense",
+"https://search.keinet.ne.jp/2498/outline/department",
+"https://phys.org/rss-feed/partners/doshisha-university/",
+"https://researchmap.jp/read0201310"
+]
+},
+"立命館大学": {
+"difficulty": {
+"hensachi": "50.0〜67.5",
+"kyotei": "68%〜90%",
+"year": "2027年度入試用"
+},
+"faculties": [
+"法学部",
+"産業社会学部",
+"国際関係学部",
+"文学部",
+"映像学部",
+"経済学部",
+"スポーツ健康科学部",
+"食マネジメント学部",
+"理工学部",
+"情報理工学部",
+"生命科学部",
+"薬学部",
+"経営学部",
+"政策科学部",
+"総合心理学部",
+"グローバル教養学部",
+"デザイン・アート学部"
+],
+"students": {
+"count": 34834,
+"year": 2025
+},
+"founded": "1869年（私塾立命館）／1900年 京都法政学校創立／1948年 新制大学",
+"access": "衣笠キャンパス：京福等持院・立命館大学衣笠キャンパス前駅から徒歩約6分／大阪いばらきキャンパス：JR茨木駅から徒歩約5分",
+"tuition": {
+"amount": 1345200,
+"label": "法学部・入学金＋授業料＋諸会費",
+"year": 2026
+},
+"news": [
+"2026年4月、デザイン・アート学部を新設",
+"2024年、映像学部と情報理工学部が大阪いばらきキャンパスへ移転"
+],
+"notable": [
+"中川毅（総合科学技術研究機構教授・古気候学研究センター長、水月湖「年縞」の分析が地質年代の世界標準IntCalに採用、2025年日本文化財科学会業績賞）"
+],
+"sources": [
+"https://search.keinet.ne.jp/2504/general/border_rate",
+"https://search.keinet.ne.jp/2504",
+"https://search.keinet.ne.jp/2504/outline/campus",
+"https://search.keinet.ne.jp/2504/outline/expense",
+"https://search.keinet.ne.jp/2504/outline/department",
+"https://www.ritsumei.ac.jp/news/detail?id=4104"
+]
+},
+"関西学院大学": {
+"difficulty": {
+"hensachi": "52.5〜67.5",
+"kyotei": "69%〜92%",
+"year": "2027年度入試用"
+},
+"faculties": [
+"神学部",
+"文学部",
+"社会学部",
+"法学部",
+"経済学部",
+"商学部",
+"人間福祉学部",
+"国際学部",
+"教育学部",
+"総合政策学部",
+"理学部",
+"工学部",
+"生命環境学部",
+"建築学部"
+],
+"students": {
+"count": 24784,
+"year": 2025
+},
+"founded": "1889年（神戸・原田の森で創立）／1932年 大学設立認可／1948年 新制大学",
+"access": "西宮上ケ原キャンパス：阪急甲東園駅・仁川駅から徒歩12分／神戸三田キャンパス：JR新三田駅などからバス",
+"tuition": {
+"amount": 1182000,
+"label": "法学部・入学金＋授業料＋施設費＋諸会費",
+"year": 2026
+},
+"news": [],
+"notable": [
+"鈴木謙介（社会学部教授、社会学）"
+],
+"sources": [
+"https://search.keinet.ne.jp/2558/general/border_rate",
+"https://search.keinet.ne.jp/2558",
+"https://search.keinet.ne.jp/2558/outline/campus",
+"https://search.keinet.ne.jp/2558/outline/expense",
+"https://search.keinet.ne.jp/2558/outline/department",
+"https://nrid.nii.ac.jp/ja/nrid/1000090410232"
+]
+},
+"関西大学": {
+"difficulty": {
+"hensachi": "50.0〜60.0",
+"kyotei": "62%〜86%",
+"year": "2027年度入試用"
+},
+"faculties": [
+"文学部",
+"外国語学部",
+"社会学部",
+"社会安全学部",
+"法学部",
+"政策創造学部",
+"経済学部",
+"商学部",
+"環境都市工学部",
+"化学生命工学部",
+"システム理工学部",
+"人間健康学部",
+"総合情報学部",
+"ビジネスデータサイエンス学部"
+],
+"students": {
+"count": 28492,
+"year": 2025
+},
+"founded": "1886年（関西法律学校）／1905年 私立関西大学に改称",
+"access": "千里山キャンパス：阪急関大前駅から徒歩5分／高槻ミューズキャンパス：JR高槻駅から徒歩7分",
+"tuition": {
+"amount": 1277000,
+"label": "法・経済・商学部・入学金＋授業料＋諸会費",
+"year": 2026
+},
+"news": [
+"2026年、大規模・長期の研究拠点を支援する「フラッグシップ研究プログラム」を創設（1件あたり10年間で約1億円、2026年度開始）",
+"2026年、関西医科大学との共同研究で、魚由来タンパク質の摂取が加齢による短期記憶の低下を防ぐ可能性を発表"
+],
+"notable": [
+"宮本勝浩（名誉教授・バレンタインやWBCなど各種イベントの経済効果推計で知られる）"
+],
+"sources": [
+"https://search.keinet.ne.jp/2533",
+"https://search.keinet.ne.jp/2533/general/border_rate",
+"https://search.keinet.ne.jp/2533/outline/department",
+"https://search.keinet.ne.jp/2533/outline/campus",
+"https://search.keinet.ne.jp/2533/outline/expense",
+"https://digitalpr.jp/c/1227/5",
+"https://www.kansai-u.ac.jp/ja/about/pr/pressrelease/2025/02/post_81743.html"
+]
+},
+"南山大学": {
+"difficulty": {
+"hensachi": "42.5〜57.5",
+"kyotei": "54%〜83%",
+"year": "2027年度入試用"
+},
+"faculties": [
+"外国語学部",
+"人文学部",
+"国際教養学部",
+"法学部",
+"総合政策学部",
+"経済学部",
+"経営学部",
+"理工学部"
+],
+"students": {
+"count": 9884,
+"year": 2025
+},
+"founded": "1932年（南山中学校）／1949年 南山大学開学",
+"access": "名古屋キャンパス：地下鉄八事日赤駅から徒歩8分",
+"tuition": {
+"amount": 1271300,
+"label": "人文・法・経済・経営学部・入学金＋授業料＋施設費＋諸会費",
+"year": 2026
+},
+"news": [],
+"notable": [],
+"sources": [
+"https://search.keinet.ne.jp/2460",
+"https://search.keinet.ne.jp/2460/general/border_rate",
+"https://search.keinet.ne.jp/2460/outline/department",
+"https://search.keinet.ne.jp/2460/outline/campus",
+"https://search.keinet.ne.jp/2460/outline/expense",
+"https://www.nanzan-u.ac.jp/research/"
+]
+},
+"西南学院大学": {
+"difficulty": {
+"hensachi": "47.5〜55.0",
+"kyotei": "58%〜78%",
+"year": "2027年度入試用"
+},
+"faculties": [
+"神学部",
+"外国語学部",
+"国際文化学部",
+"法学部",
+"経済学部",
+"商学部",
+"人間科学部"
+],
+"students": {
+"count": 8382,
+"year": 2025
+},
+"founded": "1916年（西南学院創立）／1949年 新制大学",
+"access": "西新キャンパス：地下鉄西新駅から徒歩5分",
+"tuition": {
+"amount": 1224160,
+"label": "法・経済・商・国際文化学部・入学金＋授業料＋施設費＋諸会費",
+"year": 2026
+},
+"news": [],
+"notable": [],
+"sources": [
+"https://search.keinet.ne.jp/2705",
+"https://search.keinet.ne.jp/2705/general/border_rate",
+"https://search.keinet.ne.jp/2705/outline/department",
+"https://search.keinet.ne.jp/2705/outline/campus",
+"https://search.keinet.ne.jp/2705/outline/expense"
+]
+},
+"成蹊大学": {
+"difficulty": {
+"hensachi": "47.5〜60.0",
+"kyotei": "64%〜84%",
+"year": "2027年度入試用"
+},
+"faculties": [
+"文学部",
+"国際共創学部",
+"法学部",
+"経済学部",
+"経営学部",
+"理工学部"
+],
+"students": {
+"count": 7703,
+"year": 2025
+},
+"founded": "1912年（成蹊実務学校）／1949年 成蹊大学開学",
+"access": "吉祥寺キャンパス：JR・京王吉祥寺駅から徒歩15分（関東バス「成蹊学園前」も可）",
+"tuition": {
+"amount": 1355000,
+"label": "文・法・経済・経営学部・入学金＋授業料＋施設費（同窓会費別）",
+"year": 2026
+},
+"news": [
+"2026年、理工学部の三浦正志教授が第22回日本学術振興会賞を受賞",
+"2025年9月、ANA総合研究所と教育・研究での連携に関する基本協定を締結"
+],
+"notable": [
+"三浦正志（理工学部教授・第22回日本学術振興会賞受賞）"
+],
+"sources": [
+"https://search.keinet.ne.jp/2228",
+"https://search.keinet.ne.jp/2228/general/border_rate",
+"https://search.keinet.ne.jp/2228/outline/department",
+"https://search.keinet.ne.jp/2228/outline/campus",
+"https://search.keinet.ne.jp/2228/outline/expense",
+"https://www.seikei.ac.jp/university/news_topics/research/index_2.html",
+"https://digitalpr.jp/r/117785"
+]
+},
+"成城大学": {
+"difficulty": {
+"hensachi": "50.0〜57.5",
+"kyotei": "71%〜80%",
+"year": "2027年度入試用"
+},
+"faculties": [
+"文芸学部",
+"社会イノベーション学部",
+"法学部",
+"経済学部"
+],
+"students": {
+"count": 5832,
+"year": 2025
+},
+"founded": "1950年 成城大学開学（経済学部・理学部）",
+"access": "成城キャンパス：小田急・東京メトロ成城学園前駅から徒歩4分",
+"tuition": {
+"amount": 1342500,
+"label": "文芸学部・入学金＋授業料＋施設費＋諸会費等（2025年度入学者用）",
+"year": 2025
+},
+"news": [
+"2025年3月、データサイエンス教育研究センターが琉球大学と教育協力協定を締結"
+],
+"notable": [],
+"sources": [
+"https://search.keinet.ne.jp/2229",
+"https://search.keinet.ne.jp/2229/general/border_rate",
+"https://search.keinet.ne.jp/2229/outline/department",
+"https://search.keinet.ne.jp/2229/outline/campus",
+"https://search.keinet.ne.jp/2229/outline/expense",
+"https://digitalpr.jp/r/105617"
+]
+},
+"明治学院大学": {
+"difficulty": {
+"hensachi": "50.0〜62.5",
+"kyotei": "65%〜82%",
+"year": "2027年度入試用"
+},
+"faculties": [
+"文学部",
+"心理学部",
+"社会学部",
+"国際学部",
+"法学部",
+"経済学部",
+"情報数理学部"
+],
+"students": {
+"count": 12598,
+"year": 2025
+},
+"founded": "1863年（ヘボン塾）／1949年 新制大学",
+"access": "白金キャンパス：都営地下鉄高輪台駅・白金台駅から徒歩7分／横浜キャンパス：JR戸塚駅からバス",
+"tuition": {
+"amount": 1335090,
+"label": "社会学部社会学科・入学金＋授業料＋施設費＋諸会費等",
+"year": 2026
+},
+"news": [
+"2024年、情報数理学部を新設"
+],
+"notable": [
+"稲葉振一郎（社会学部教授、社会倫理学）"
+],
+"sources": [
+"https://search.keinet.ne.jp/2287",
+"https://search.keinet.ne.jp/2287/general/border_rate",
+"https://search.keinet.ne.jp/2287/outline/department",
+"https://search.keinet.ne.jp/2287/outline/campus",
+"https://search.keinet.ne.jp/2287/outline/expense",
+"https://nrid.nii.ac.jp/ja/nrid/1000040252944"
+]
+},
+"獨協大学": {
+"difficulty": {
+"hensachi": "42.5〜55.0",
+"kyotei": "62%〜82%",
+"year": "2027年度入試用"
+},
+"faculties": [
+"外国語学部",
+"国際教養学部",
+"法学部",
+"経済学部"
+],
+"students": {
+"count": 8639,
+"year": 2025
+},
+"founded": "1883年（獨逸学協会学校）／1964年 獨協大学開学",
+"access": "草加キャンパス：東武線獨協大学前〈草加松原〉駅から徒歩5分",
+"tuition": {
+"amount": 1352800,
+"label": "全学部共通・入学金＋授業料＋施設費＋諸会費",
+"year": 2026
+},
+"news": [],
+"notable": [],
+"sources": [
+"https://search.keinet.ne.jp/2156",
+"https://search.keinet.ne.jp/2156/general/border_rate",
+"https://search.keinet.ne.jp/2156/outline/department",
+"https://search.keinet.ne.jp/2156/outline/campus",
+"https://search.keinet.ne.jp/2156/outline/expense"
+]
+},
+"國學院大學": {
+"difficulty": {
+"hensachi": "52.5〜60.0",
+"kyotei": "68%〜82%",
+"year": "2027年度入試用"
+},
+"faculties": [
+"文学部",
+"神道文化学部",
+"法学部",
+"経済学部",
+"人間開発学部",
+"観光まちづくり学部"
+],
+"students": {
+"count": 11233,
+"year": 2025
+},
+"founded": "1882年（皇典講究所）／1920年 大学令による大学",
+"access": "渋谷キャンパス：渋谷駅から徒歩13分（都営バスも可）／横浜たまプラーザキャンパス：東急たまプラーザ駅から徒歩5分",
+"tuition": {
+"amount": 1315300,
+"label": "文学部・入学金＋授業料＋施設費＋諸会費",
+"year": 2026
+},
+"news": [],
+"notable": [
+"吉見俊哉（観光まちづくり学部教授・東京大学名誉教授、都市論・メディア論、日本のカルチュラル・スタディーズを牽引）"
+],
+"sources": [
+"https://search.keinet.ne.jp/2213",
+"https://search.keinet.ne.jp/2213/general/border_rate",
+"https://search.keinet.ne.jp/2213/outline/department",
+"https://search.keinet.ne.jp/2213/outline/campus",
+"https://search.keinet.ne.jp/2213/outline/expense",
+"https://www.nichibun.ac.jp/ja/events/uploads/symposium/2025/07/11/Shunya_YOSHIMI_profile.pdf"
+]
+},
+"武蔵大学": {
+"difficulty": {
+"hensachi": "52.5〜60.0",
+"kyotei": "71%〜79%",
+"year": "2027年度入試用"
+},
+"faculties": [
+"経済学部",
+"人文学部",
+"社会学部",
+"国際教養学部"
+],
+"students": {
+"count": 5052,
+"year": 2025
+},
+"founded": "1922年（旧制武蔵高等学校）／1949年 新制大学",
+"access": "江古田キャンパス：西武鉄道江古田駅から徒歩6分",
+"tuition": {
+"amount": 1389100,
+"label": "経済・人文学部・入学金＋授業料＋施設費＋諸会費",
+"year": 2026
+},
+"news": [],
+"notable": [
+"千田有紀（社会学部教授、社会学）"
+],
+"sources": [
+"https://search.keinet.ne.jp/2281",
+"https://search.keinet.ne.jp/2281/general/border_rate",
+"https://search.keinet.ne.jp/2281/outline/department",
+"https://search.keinet.ne.jp/2281/outline/campus",
+"https://search.keinet.ne.jp/2281/outline/expense",
+"https://nrid.nii.ac.jp/ja/nrid/1000070323730"
+]
+},
+"日本大学": {
+"difficulty": {
+"hensachi": "35.0〜65.0",
+"kyotei": "39%〜76%",
+"year": "2027年度入試用"
+},
+"faculties": [
+"法学部",
+"文理学部",
+"経済学部",
+"商学部",
+"芸術学部",
+"国際関係学部",
+"危機管理学部",
+"スポーツ科学部",
+"理工学部",
+"生産工学部",
+"工学部",
+"医学部",
+"歯学部",
+"松戸歯学部",
+"生物資源科学部",
+"薬学部"
+],
+"students": {
+"count": 67284,
+"year": 2025
+},
+"founded": "1889年（日本法律学校）／1920年 大学令による大学",
+"access": "法学部（三崎町）：JR水道橋駅から徒歩3〜5分／文理学部（桜上水）：京王・東急下高井戸駅から徒歩8分",
+"tuition": {
+"amount": 1260000,
+"label": "法学部・入学金＋授業料＋施設費（校友会費等別）",
+"year": 2026
+},
+"news": [],
+"notable": [
+"古川隆久（文理学部史学科教授、日本近現代史）"
+],
+"sources": [
+"https://search.keinet.ne.jp/2267",
+"https://search.keinet.ne.jp/2267/general/border_rate",
+"https://search.keinet.ne.jp/2267/outline/department",
+"https://search.keinet.ne.jp/2267/outline/campus",
+"https://search.keinet.ne.jp/2267/outline/expense",
+"https://chs.nihon-u.ac.jp/wp-content/uploads/2025/12/R6_02古川隆久.pdf"
+]
+},
+"東洋大学": {
+"difficulty": {
+"hensachi": "40.0〜60.0",
+"kyotei": "54%〜88%",
+"year": "2027年度入試用"
+},
+"faculties": [
+"文学部",
+"経済学部",
+"経営学部",
+"法学部",
+"社会学部",
+"国際学部",
+"国際観光学部",
+"情報連携学部",
+"福祉社会デザイン学部",
+"健康スポーツ科学部",
+"理工学部",
+"総合情報学部",
+"生命科学部",
+"食環境科学部",
+"環境イノベーション学部"
+],
+"students": {
+"count": 31494,
+"year": 2025
+},
+"founded": "1887年（私立哲学館）／1949年 新制大学",
+"access": "白山キャンパス：都営地下鉄白山駅・東京メトロ本駒込駅から徒歩5分／川越キャンパス：東武鉄道鶴ヶ島駅から徒歩10分",
+"tuition": {
+"amount": 1265000,
+"label": "文・法・経済・経営学部（第1部）・入学金＋授業料＋施設費＋諸会費",
+"year": 2026
+},
+"news": [],
+"notable": [
+"坂村健（情報連携学学術実業連携機構 特別研究員、コンピュータ科学、情報連携学部INIADの開設時学部長）"
+],
+"sources": [
+"https://search.keinet.ne.jp/2265",
+"https://search.keinet.ne.jp/2265/general/border_rate",
+"https://search.keinet.ne.jp/2265/outline/department",
+"https://search.keinet.ne.jp/2265/outline/campus",
+"https://search.keinet.ne.jp/2265/outline/expense",
+"https://nrid.nii.ac.jp/nrid/1000010126071",
+"https://www.jef.or.jp/Ken_Sakamura_2018_3-4.pdf"
+]
+},
+"駒澤大学": {
+"difficulty": {
+"hensachi": "42.5〜55.0",
+"kyotei": "55%〜77%",
+"year": "2027年度入試用"
+},
+"faculties": [
+"仏教学部",
+"文学部",
+"経済学部",
+"法学部",
+"経営学部",
+"医療健康科学部",
+"グローバル・メディア・スタディーズ学部"
+],
+"students": {
+"count": 14676,
+"year": 2025
+},
+"founded": "1592年（学林）／1949年 新制大学",
+"access": "駒沢キャンパス：東急駒沢大学駅から徒歩10分",
+"tuition": {
+"amount": 1297000,
+"label": "経済・経営・法（フレックスA）学部・入学金＋授業料＋施設費＋諸会費",
+"year": 2026
+},
+"news": [],
+"notable": [],
+"sources": [
+"https://search.keinet.ne.jp/2216",
+"https://search.keinet.ne.jp/2216/general/border_rate",
+"https://search.keinet.ne.jp/2216/outline/department",
+"https://search.keinet.ne.jp/2216/outline/campus",
+"https://search.keinet.ne.jp/2216/outline/expense"
+]
+},
+"専修大学": {
+"difficulty": {
+"hensachi": "45.0〜57.5",
+"kyotei": "59%〜81%",
+"year": "2027年度入試用"
+},
+"faculties": [
+"経済学部",
+"法学部",
+"経営学部",
+"商学部",
+"文学部",
+"人間科学部",
+"国際コミュニケーション学部",
+"ネットワーク情報学部"
+],
+"students": {
+"count": 17967,
+"year": 2025
+},
+"founded": "1880年（専修学校）／1949年 新制大学",
+"access": "生田キャンパス：小田急向ヶ丘遊園駅から徒歩14分（バスも可）／神田キャンパス：地下鉄九段下駅から徒歩1分",
+"tuition": {
+"amount": 1225000,
+"label": "法学部・入学金＋授業料＋施設費＋諸会費",
+"year": 2026
+},
+"news": [],
+"notable": [
+"野口旭（経済学部特任教授、経済学）"
+],
+"sources": [
+"https://search.keinet.ne.jp/2233",
+"https://search.keinet.ne.jp/2233/general/border_rate",
+"https://search.keinet.ne.jp/2233/outline/department",
+"https://search.keinet.ne.jp/2233/outline/campus",
+"https://search.keinet.ne.jp/2233/outline/expense",
+"https://nrid.nii.ac.jp/ja/nrid/1000000208315"
+]
+},
+"芝浦工業大学": {
+"difficulty": {
+"hensachi": "50.0〜60.0",
+"kyotei": "69%〜80%",
+"year": "2027年度入試用"
+},
+"faculties": [
+"工学部",
+"システム理工学部",
+"デザイン工学部",
+"建築学部"
+],
+"students": {
+"count": 7939,
+"year": 2025
+},
+"founded": "1927年（東京高等工商学校）／1949年 芝浦工業大学開学",
+"access": "豊洲キャンパス：東京メトロ豊洲駅から徒歩7分／大宮キャンパス：JR東大宮駅からスクールバス（徒歩20分）",
+"tuition": {
+"amount": 1795020,
+"label": "全学部共通・入学金＋授業料＋施設費＋諸会費",
+"year": 2026
+},
+"news": [
+"2025年9月、AIを使って苦味を感じ取るタンパク質の構造を解読したと発表。"
+],
+"notable": [],
+"sources": [
+"https://search.keinet.ne.jp/2219",
+"https://search.keinet.ne.jp/2219/general/border_rate",
+"https://search.keinet.ne.jp/2219/outline/department",
+"https://search.keinet.ne.jp/2219/outline/campus",
+"https://search.keinet.ne.jp/2219/outline/expense",
+"https://phys.org/rss-feed/partners/shibaura-institute-of-technology/"
+]
+},
+"東京都市大学": {
+"difficulty": {
+"hensachi": "45.0〜57.5",
+"kyotei": "69%〜78%",
+"year": "2027年度入試用"
+},
+"faculties": [
+"都市生活学部",
+"理工学部",
+"情報工学部",
+"建築都市デザイン学部",
+"環境学部",
+"人間科学部",
+"メディア情報学部",
+"デザイン・データ科学部",
+"創発デザイン工学環（2027年4月設置予定）"
+],
+"students": {
+"count": 7506,
+"year": 2025
+},
+"founded": "1929年（武蔵高等工科学校）／2009年 東京都市大学に改称",
+"access": "世田谷キャンパス：東急尾山台駅から徒歩12分／横浜キャンパス：地下鉄中川駅から徒歩5分",
+"tuition": {
+"amount": 1562000,
+"label": "都市生活学部・入学金＋授業料＋諸会費",
+"year": 2026
+},
+"news": [
+"2026年3月、建築学科の手塚貴晴教授が米国建築家協会（AIA）の名誉フェローに選出された。",
+"2026年4月、「ひらめき・こと・もの・ひと」づくりプログラムが文部科学省「知識集約型社会を支える人材育成事業」の事後評価で最高評価Sを獲得した。",
+"2024年11月、大学院情報データ科学研究科（2025年9月横浜キャンパスに開設）の設置届出が文部科学省に受理された。"
+],
+"notable": [
+"手塚貴晴（建築学・建築家、2026年米国建築家協会名誉フェロー）"
+],
+"sources": [
+"https://search.keinet.ne.jp/2282/general/border_rate",
+"https://search.keinet.ne.jp/2282",
+"https://search.keinet.ne.jp/2282/outline/department",
+"https://search.keinet.ne.jp/2282/outline/campus",
+"https://search.keinet.ne.jp/2282/outline/expense",
+"https://digitalpr.jp/c/1037/3",
+"https://digitalpr.jp/r/99743"
+]
+},
+"東京電機大学": {
+"difficulty": {
+"hensachi": "40.0〜55.0",
+"kyotei": "49%〜72%",
+"year": "2027年度入試用"
+},
+"faculties": [
+"未来科学部",
+"工学部",
+"システムデザイン工学部",
+"理工学部",
+"工学部第二部"
+],
+"students": {
+"count": 9347,
+"year": 2025
+},
+"founded": "1907年（電機学校）／1949年 東京電機大学開設",
+"access": "東京千住キャンパス：北千住駅から徒歩1分／埼玉鳩山キャンパス：北坂戸駅・高坂駅等からスクールバス",
+"tuition": {
+"amount": 1713160,
+"label": "工学部・入学金＋授業料＋諸会費",
+"year": 2026
+},
+"news": [],
+"notable": [],
+"sources": [
+"https://search.keinet.ne.jp/2259/general/border_rate",
+"https://search.keinet.ne.jp/2259",
+"https://search.keinet.ne.jp/2259/outline/department",
+"https://search.keinet.ne.jp/2259/outline/campus",
+"https://search.keinet.ne.jp/2259/outline/expense",
+"https://passnavi.obunsha.co.jp/univ/2850/difficulty/"
+]
+},
+"工学院大学": {
+"difficulty": {
+"hensachi": "52.5〜60.0",
+"kyotei": "60%〜73%",
+"year": "2027年度入試用"
+},
+"faculties": [
+"工学部",
+"建築学部",
+"先進工学部",
+"情報学部"
+],
+"students": {
+"count": 6237,
+"year": 2025
+},
+"founded": "1888年（工手学校）／1949年 工学院大学開学",
+"access": "新宿キャンパス：新宿駅から徒歩5分／八王子キャンパス：八王子駅・拝島駅から西東京バス",
+"tuition": {
+"amount": 1731160,
+"label": "工学部・入学金＋授業料＋施設費＋実習費＋諸会費",
+"year": 2026
+},
+"news": [
+"2025年、先進工学部応用物理学科の研究チームが165〜220nmで動作する水銀フリーの深紫外面発光光源を開発し、イノベーション・ジャパン2025で公開した。"
+],
+"notable": [],
+"sources": [
+"https://search.keinet.ne.jp/2212/general/border_rate",
+"https://search.keinet.ne.jp/2212",
+"https://search.keinet.ne.jp/2212/outline/department",
+"https://search.keinet.ne.jp/2212/outline/campus",
+"https://search.keinet.ne.jp/2212/outline/expense",
+"https://www.atpress.ne.jp/smart/news/8645356"
+]
+},
+"東京農業大学": {
+"difficulty": {
+"hensachi": "35.0〜55.0",
+"kyotei": "56%〜83%",
+"year": "2027年度入試用"
+},
+"faculties": [
+"農学部",
+"応用生物科学部",
+"地域環境科学部",
+"生物産業学部",
+"国際食料情報学部",
+"生命科学部"
+],
+"students": {
+"count": 12945,
+"year": 2025
+},
+"founded": "1891年（徳川育英会育英黌農業科）／1925年 大学令により大学設立",
+"access": "世田谷キャンパス：小田急経堂駅・千歳船橋駅から徒歩15分／厚木キャンパス：本厚木駅から神奈中バス",
+"tuition": {
+"amount": 1413800,
+"label": "国際食料情報学部（食料環境経済・アグリビジネス学科）・入学金＋授業料＋施設費＋実習費＋諸会費等",
+"year": 2026
+},
+"news": [
+"2026年5月、光合成アンテナの性能を酵素で調整できることを示し、シアノバクテリアの色素代謝設計に新たな指針を示した。",
+"2026年4月、東京科学大学などとの共同研究で、下水処理水から多摩川に流れ込む細菌群集の時空間的な動態を解明した。"
+],
+"notable": [
+"小泉武夫（名誉教授、発酵学、全国発酵のまちづくりネットワーク協議会会長）"
+],
+"sources": [
+"https://search.keinet.ne.jp/2260/general/border_rate",
+"https://search.keinet.ne.jp/2260",
+"https://search.keinet.ne.jp/2260/outline/department",
+"https://search.keinet.ne.jp/2260/outline/campus",
+"https://search.keinet.ne.jp/2260/outline/expense",
+"https://digitalpr.jp/c/2209/4",
+"https://digitalpr.jp/cl4/45",
+"https://www.city.yokote.lg.jp/_res/projects/default_project/_page_/001/010/552/hakkou_meibo_r7.10.10.pdf"
+]
+},
+"北里大学": {
+"difficulty": {
+"hensachi": "37.5〜62.5",
+"kyotei": "39%〜84%",
+"year": "2027年度入試用"
+},
+"faculties": [
+"理学部",
+"未来工学部",
+"獣医学部",
+"海洋生命科学部",
+"医学部",
+"薬学部",
+"医療衛生学部",
+"看護学部",
+"健康科学部"
+],
+"students": {
+"count": 8466,
+"year": 2025
+},
+"founded": "1962年 北里大学開設（衛生学部）",
+"access": "相模原キャンパス：小田急相模大野駅・JR相模原駅からバス／白金キャンパス：広尾駅・白金高輪駅から徒歩10分",
+"tuition": {
+"amount": 1709000,
+"label": "理学部（物理・化学科）・入学金＋授業料＋施設費＋諸会費（文系学部なし）",
+"year": 2026
+},
+"news": [
+"2025年8月、大規模な化合物データに対応する分子生成AIモデル「FRATTVAE」を開発した。",
+"2025年5月、国際共同研究で炎症性腸疾患（IBD）の進展を4段階に整理し、2045年までの患者数増加を予測した。"
+],
+"notable": [
+"大村智（天然物化学、2015年ノーベル生理学・医学賞、北里大学特別栄誉教授）"
+],
+"sources": [
+"https://search.keinet.ne.jp/2205/general/border_rate",
+"https://search.keinet.ne.jp/2205",
+"https://search.keinet.ne.jp/2205/outline/department",
+"https://search.keinet.ne.jp/2205/outline/campus",
+"https://search.keinet.ne.jp/2205/outline/expense",
+"https://digitalpr.jp/c/668/3",
+"https://www.amed.go.jp/news/topics/20151005.html"
+]
+},
+"自治医科大学": {
+"difficulty": {
+"hensachi": "47.5〜67.5",
+"kyotei": null,
+"year": "2027年度入試用"
+},
+"faculties": [
+"医学部",
+"看護学部"
+],
+"students": {
+"count": 1162,
+"year": 2025
+},
+"founded": "1972年 開学",
+"access": "キャンパス（栃木県下野市）：JR自治医大駅から徒歩約10分",
+"tuition": {
+"amount": 4600000,
+"label": "医学部・入学金＋授業料＋施設費＋実習費（入学者全員に学生納付金相当額を貸与する修学資金制度あり）",
+"year": 2026
+},
+"news": [],
+"notable": [
+"永井良三（学長、医学者）"
+],
+"sources": [
+"https://search.keinet.ne.jp/2122/general/border_rate",
+"https://search.keinet.ne.jp/2122",
+"https://search.keinet.ne.jp/2122/outline/department",
+"https://search.keinet.ne.jp/2122/outline/campus",
+"https://search.keinet.ne.jp/2122/outline/expense",
+"https://jadecom.or.jp/library/magazine/upload/2025/02/25/%E3%82%A4%E3%83%B3%E3%82%BF%E3%83%93%E3%83%A5%E3%83%BC%E5%86%92%E9%A0%AD2%E3%83%9A%E3%83%BC%E3%82%B8_1.pdf"
+]
+},
+"国際医療福祉大学": {
+"difficulty": {
+"hensachi": "35.0〜67.5",
+"kyotei": "44%〜86%",
+"year": "2027年度入試用"
+},
+"faculties": [
+"医療福祉学部",
+"赤坂心理・医療福祉マネジメント学部",
+"医学部",
+"薬学部",
+"福岡薬学部",
+"成田薬学部",
+"成田看護学部",
+"保健医療学部",
+"成田保健医療学部",
+"小田原保健医療学部",
+"福岡保健医療学部"
+],
+"students": {
+"count": 9480,
+"year": 2025
+},
+"founded": "1995年 開学（起源は1910年開院の高木眼科医院）",
+"access": "大田原キャンパス：JR那須塩原駅からスクールバス／成田キャンパス：京成公津の杜駅前",
+"tuition": {
+"amount": 1060000,
+"label": "医療福祉学部・入学金＋授業料＋施設費＋実習費",
+"year": 2026
+},
+"news": [],
+"notable": [
+"鈴木康裕（学長、元厚生労働省医務技監・WHO執行理事）"
+],
+"sources": [
+"https://search.keinet.ne.jp/2125/general/border_rate",
+"https://search.keinet.ne.jp/2125",
+"https://search.keinet.ne.jp/2125/outline/department",
+"https://search.keinet.ne.jp/2125/outline/campus",
+"https://search.keinet.ne.jp/2125/outline/expense",
+"https://prtimes.jp/main/html/rd/p/000001897.000042328.html"
+]
+},
+"順天堂大学": {
+"difficulty": {
+"hensachi": "42.5〜70.0",
+"kyotei": "59%〜90%",
+"year": "2027年度入試用"
+},
+"faculties": [
+"国際教養学部",
+"医学部",
+"薬学部",
+"保健医療学部",
+"医療科学部",
+"医療看護学部",
+"保健看護学部",
+"スポーツ健康科学部",
+"健康データサイエンス学部"
+],
+"students": {
+"count": 8098,
+"year": 2025
+},
+"founded": "1838年（順天堂医学塾）／1951年 順天堂大学",
+"access": "本郷・お茶の水キャンパス：御茶ノ水駅から徒歩7分／さくらキャンパス：京成酒々井駅・JR酒々井駅からバス",
+"tuition": {
+"amount": 1550000,
+"label": "国際教養学部・入学金＋授業料＋施設費",
+"year": 2026
+},
+"news": [
+"2026年9月、順天堂大学発の研究チームが健康寿命の延伸を競う国際賞「XPRIZE Healthspan」の決勝に進出。"
+],
+"notable": [
+"天野篤（医学部特任教授、心臓血管外科医）"
+],
+"sources": [
+"https://search.keinet.ne.jp/2220/general/border_rate",
+"https://search.keinet.ne.jp/2220",
+"https://search.keinet.ne.jp/2220/outline/department",
+"https://search.keinet.ne.jp/2220/outline/campus",
+"https://search.keinet.ne.jp/2220/outline/expense",
+"https://www.juntendo.ac.jp/news/index_4.html",
+"https://gentosha-go.com/60/authors/66179359b57622086a000001"
+]
+},
+"東京慈恵会医科大学": {
+"difficulty": {
+"hensachi": "52.5〜70.0",
+"kyotei": null,
+"year": "2027年度入試用"
+},
+"faculties": [
+"医学部"
+],
+"students": {
+"count": 891,
+"year": 2025
+},
+"founded": "1881年（成医会講習所）／1921年 東京慈恵会医科大学",
+"access": "西新橋キャンパス：御成門駅から徒歩3分／国領キャンパス：京王国領駅から徒歩10分",
+"tuition": {
+"amount": 3500000,
+"label": "医学部医学科・入学金＋授業料",
+"year": 2026
+},
+"news": [],
+"notable": [
+"大木隆生（医学部教授、血管外科）"
+],
+"sources": [
+"https://search.keinet.ne.jp/2253/general/exam_subject",
+"https://search.keinet.ne.jp/2253",
+"https://search.keinet.ne.jp/2253/outline/department",
+"https://search.keinet.ne.jp/2253/outline/campus",
+"https://search.keinet.ne.jp/2253/outline/expense",
+"https://nrid.nii.ac.jp/ja/nrid/1000050260948"
+]
+},
+"日本医科大学": {
+"difficulty": {
+"hensachi": "52.5〜70.0",
+"kyotei": "65%〜88%",
+"year": "2027年度入試用"
+},
+"faculties": [
+"医学部",
+"医療健康科学部"
+],
+"students": {
+"count": 757,
+"year": 2025
+},
+"founded": "1876年（済生学舎）／1926年 日本医科大学",
+"access": "千駄木キャンパス：千駄木駅・根津駅から徒歩8分／武蔵境キャンパス：JR武蔵境駅から徒歩2分",
+"tuition": {
+"amount": 4500000,
+"label": "医学部医学科・入学金＋授業料＋施設費",
+"year": 2026
+},
+"news": [],
+"notable": [],
+"sources": [
+"https://search.keinet.ne.jp/2268/general/border_rate",
+"https://search.keinet.ne.jp/2268",
+"https://search.keinet.ne.jp/2268/outline/department",
+"https://search.keinet.ne.jp/2268/outline/campus",
+"https://search.keinet.ne.jp/2268/outline/expense"
+]
+},
+"獨協医科大学": {
+"difficulty": {
+"hensachi": "37.5〜62.5",
+"kyotei": null,
+"year": "2027年度入試用"
+},
+"faculties": [
+"医学部",
+"看護学部"
+],
+"students": {
+"count": 1249,
+"year": 2025
+},
+"founded": "1973年 開学",
+"access": "キャンパス（栃木県壬生町）：東武おもちゃのまち駅から徒歩約15分",
+"tuition": {
+"amount": 9300000,
+"label": "医学部医学科・入学金＋授業料＋施設費＋諸会費",
+"year": 2026
+},
+"news": [],
+"notable": [],
+"sources": [
+"https://search.keinet.ne.jp/2123/general/border_rate",
+"https://search.keinet.ne.jp/2123",
+"https://search.keinet.ne.jp/2123/outline/department",
+"https://search.keinet.ne.jp/2123/outline/campus",
+"https://search.keinet.ne.jp/2123/outline/expense"
+]
+},
+"津田塾大学": {
+"difficulty": {
+"hensachi": "40.0〜52.5",
+"kyotei": "53%〜79%",
+"year": "2027年度入試用"
+},
+"faculties": [
+"学芸学部",
+"総合政策学部"
+],
+"students": {
+"count": 3294,
+"year": 2025
+},
+"founded": "1900年（津田梅子が女子英学塾を開校）／1948年 津田塾大学",
+"access": "小平キャンパス：西武鷹の台駅から徒歩8分／千駄ヶ谷キャンパス：JR千駄ケ谷駅から徒歩1分",
+"tuition": {
+"amount": 1300000,
+"label": "学芸学部（英語英文学科）・入学金＋授業料＋施設費",
+"year": 2026
+},
+"news": [],
+"notable": [
+"萱野稔人（総合政策学部教授、哲学者）"
+],
+"sources": [
+"https://search.keinet.ne.jp/2243/general/border_rate",
+"https://search.keinet.ne.jp/2243",
+"https://search.keinet.ne.jp/2243/outline/department",
+"https://search.keinet.ne.jp/2243/outline/campus",
+"https://search.keinet.ne.jp/2243/outline/expense",
+"https://www.chikumashobo.co.jp/author/005286/"
+]
+},
+"東京女子大学": {
+"difficulty": {
+"hensachi": "45.0〜55.0",
+"kyotei": "57%〜77%",
+"year": "2027年度入試用"
+},
+"faculties": [
+"現代教養学部"
+],
+"students": {
+"count": 3876,
+"year": 2025
+},
+"founded": "1918年 開学／1948年 新制大学",
+"access": "善福寺キャンパス：JR西荻窪駅から徒歩約12分",
+"tuition": {
+"amount": 1341500,
+"label": "現代教養学部（人文学科）・入学金＋授業料＋施設費＋諸会費",
+"year": 2026
+},
+"news": [],
+"notable": [
+"森本あんり（学長、神学・宗教学・アメリカ研究）"
+],
+"sources": [
+"https://search.keinet.ne.jp/2254/general/border_rate",
+"https://search.keinet.ne.jp/2254",
+"https://search.keinet.ne.jp/2254/outline/department",
+"https://search.keinet.ne.jp/2254/outline/campus",
+"https://search.keinet.ne.jp/2254/outline/expense",
+"https://univpress.co.jp/wp-content/themes/cnn3.0/pubdata/2026/takuetsu/0695.pdf"
+]
+},
+"日本女子大学": {
+"difficulty": {
+"hensachi": "45.0〜57.5",
+"kyotei": "65%〜82%",
+"year": "2027年度入試用"
+},
+"faculties": [
+"文学部",
+"国際文化学部",
+"理学部",
+"食科学部",
+"家政学部",
+"建築デザイン学部",
+"人間社会学部",
+"経済学部（2027年4月設置予定）"
+],
+"students": {
+"count": 6194,
+"year": 2025
+},
+"founded": "1901年（日本女子大学校）／1948年 新制大学",
+"access": "目白キャンパス：東京メトロ雑司が谷駅から徒歩8分／JR目白駅から徒歩15分",
+"tuition": {
+"amount": 1339660,
+"label": "文学部・入学金＋授業料＋施設費＋諸会費",
+"year": 2026
+},
+"news": [],
+"notable": [
+"篠原聡子（学長、建築家）"
+],
+"sources": [
+"https://search.keinet.ne.jp/2272/general/border_rate",
+"https://search.keinet.ne.jp/2272",
+"https://search.keinet.ne.jp/2272/outline/department",
+"https://search.keinet.ne.jp/2272/outline/campus",
+"https://search.keinet.ne.jp/2272/outline/expense",
+"https://digitalpr.jp/r/121730"
+]
+},
+"聖心女子大学": {
+"difficulty": {
+"hensachi": "40.0",
+"kyotei": "61%",
+"year": "2027年度入試用"
+},
+"faculties": [
+"現代教養学部"
+],
+"students": {
+"count": 2349,
+"year": 2025
+},
+"founded": "1916年（聖心女子学院高等専門学校）／1948年 聖心女子大学",
+"access": "広尾キャンパス：東京メトロ広尾駅から徒歩3分",
+"tuition": {
+"amount": 1430000,
+"label": "現代教養学部・入学金＋授業料＋施設費",
+"year": 2026
+},
+"news": [],
+"notable": [],
+"sources": [
+"https://search.keinet.ne.jp/2230/general/border_rate",
+"https://search.keinet.ne.jp/2230",
+"https://search.keinet.ne.jp/2230/outline/department",
+"https://search.keinet.ne.jp/2230/outline/campus",
+"https://search.keinet.ne.jp/2230/outline/expense"
+]
+},
+"立命館アジア太平洋大学（APU）": {
+"difficulty": {
+"hensachi": "50.0〜52.5",
+"kyotei": "62%〜81%",
+"year": "2027年度入試用"
+},
+"faculties": [
+"アジア太平洋学部",
+"国際経営学部",
+"サステイナビリティ観光学部"
+],
+"students": {
+"count": 6201,
+"year": 2025
+},
+"founded": "2000年 開学",
+"access": "別府キャンパス（大分県別府市）：JR亀川駅から路線バス約15分／JR別府駅から路線バス約35分",
+"tuition": {
+"amount": 1540000,
+"label": "全学部共通・入学金＋授業料＋諸会費",
+"year": 2026
+},
+"news": [
+"2024年1月、出口治明学長の任期満了に伴い米山裕副学長が学長に就任",
+"2025年5月時点で在籍学生6,541名のうち国際学生が48.3%（111の国・地域）、開学以来の受入国・地域数が170に到達",
+"2025年11月、開学25周年記念式典を別府で開催"
+],
+"notable": [
+"出口治明（前学長〈2018〜2023年〉・ライフネット生命創業者、歴史・教養書の著述家）"
+],
+"sources": [
+"https://search.keinet.ne.jp/2766/general/border_rate",
+"https://search.keinet.ne.jp/2766/outline/department",
+"https://www.apu.ac.jp/home/about/content250/Student_Enrollment_by_CountryRegion_251101.pdf",
+"https://passnavi.obunsha.co.jp/univ/5142/expense/",
+"https://passnavi.obunsha.co.jp/univ/5142/location/",
+"https://ja.dbpedia.org/page/%E7%AB%8B%E5%91%BD%E9%A4%A8%E3%82%A2%E3%82%B8%E3%82%A2%E5%A4%AA%E5%B9%B3%E6%B4%8B%E5%A4%A7%E5%AD%A6",
+"https://www.apu.ac.jp/home/about/content46/R2023_12_4.pdf",
+"https://www.apu.ac.jp/home/about/content46/R2025_05_14.pdf",
+"https://www.apu.ac.jp/home/about/content46/R2025_11_14.pdf"
+]
+},
+"神田外語大学": {
+"difficulty": {
+"hensachi": "40.0〜50.0",
+"kyotei": "56%〜81%",
+"year": "2027年度入試用"
+},
+"faculties": [
+"外国語学部",
+"グローバル・リベラルアーツ学部"
+],
+"students": {
+"count": 4238,
+"year": 2025
+},
+"founded": "1957年（セントラル英会話学校）／1987年 神田外語大学開学",
+"access": "幕張キャンパス（千葉市美浜区）：JR海浜幕張駅・京成幕張駅から徒歩約15分",
+"tuition": {
+"amount": 1525000,
+"label": "外国語学部・入学金＋授業料＋施設/教育充実費＋諸会費",
+"year": 2026
+},
+"news": [
+"2025年4月、「THE日本大学ランキング2025」で私立大学総合8位・教育充実度3位"
+],
+"notable": [],
+"sources": [
+"https://search.keinet.ne.jp/2172/general/border_rate",
+"https://search.keinet.ne.jp/2172/outline/department",
+"https://search.keinet.ne.jp/2172/outline/expense",
+"https://search.keinet.ne.jp/2172/outline/campus",
+"https://search.keinet.ne.jp/2172",
+"https://www.kandagaigo.ac.jp/kuis/cms/wp-content/uploads/2025/05/3f38adaca317c992e74a92561776e58b.pdf",
+"https://search.keinet.ne.jp/2172/outline/licential",
+"https://search.keinet.ne.jp/2172/outline/admission_employment"
+],
+"licenses": [
+"教員免許（中・高 英語）",
+"教員免許（高 中国語）",
+"教員免許（高 韓国語・スペイン語）"
+],
+"careers": "2024年度卒業者は外国語学部で就職者比率80.8%、進学1.1%。グローバル・リベラルアーツ学部は就職77.1%、進学8.6%。"
+},
+"関西外国語大学": {
+"difficulty": {
+"hensachi": "40.0〜57.5",
+"kyotei": "57%〜78%",
+"year": "2027年度入試用"
+},
+"faculties": [
+"外国語学部",
+"英語キャリア学部",
+"英語国際学部",
+"国際共生学部"
+],
+"students": {
+"count": 10606,
+"year": 2025
+},
+"founded": "1945年（谷本英学院）／1966年 関西外国語大学開設",
+"access": "中宮キャンパス（枚方市）：京阪御殿山駅から徒歩16分・枚方市駅から徒歩20分／御殿山キャンパス・グローバルタウン：京阪御殿山駅から徒歩12分",
+"tuition": {
+"amount": 1420300,
+"label": "外国語学部（全学部同額）・入学金＋授業料＋施設/教育充実費＋諸会費",
+"year": 2026
+},
+"news": [],
+"notable": [],
+"sources": [
+"https://search.keinet.ne.jp/2535/general/border_rate",
+"https://search.keinet.ne.jp/2535/outline/department",
+"https://search.keinet.ne.jp/2535/outline/expense",
+"https://search.keinet.ne.jp/2535/outline/campus",
+"https://search.keinet.ne.jp/2535",
+"https://search.keinet.ne.jp/2535/outline/licential",
+"https://search.keinet.ne.jp/2535/outline/admission_employment"
+],
+"licenses": [
+"教員免許（中・高 英語）",
+"教員免許（中・高 国語）",
+"教員免許（中・高 スペイン語）",
+"小学校教諭一種",
+"学校図書館司書教諭",
+"司書"
+],
+"careers": "2024年度卒業者の就職者比率は外国語学部83.1%、英語国際学部83.9%、英語キャリア学部90.7%。大学院進学は各学部とも2%前後。"
+},
+"茨城キリスト教大学": {
+"difficulty": {
+"hensachi": "35.0〜42.5",
+"kyotei": "44%〜58%",
+"year": "2027年度入試用"
+},
+"faculties": [
+"文学部",
+"経営学部",
+"看護学部",
+"生活科学部",
+"未来教養学環"
+],
+"students": {
+"count": 2391,
+"year": 2025
+},
+"founded": "1949年（シオンカレッヂ）／1967年 茨城キリスト教大学開校",
+"access": "日立キャンパス（日立市大みか町）：JR大甕駅から徒歩圏",
+"tuition": {
+"amount": 1354660,
+"label": "文学部（現代英語・文化交流）・入学金＋授業料＋施設・教育充実費＋諸会費＋情報教育費",
+"year": 2026
+},
+"news": [],
+"notable": [],
+"sources": [
+"https://search.keinet.ne.jp/2107/general/border_rate",
+"https://search.keinet.ne.jp/2107/outline/department",
+"https://search.keinet.ne.jp/2107/outline/expense",
+"https://search.keinet.ne.jp/2107/outline/campus",
+"https://search.keinet.ne.jp/2107",
+"https://search.keinet.ne.jp/2107/outline/licential",
+"https://search.keinet.ne.jp/2107/outline/admission_employment"
+],
+"licenses": [
+"教員免許（小・中・高・幼・特別支援ほか）",
+"保育士",
+"看護師・保健師国家試験受験資格",
+"管理栄養士受験資格",
+"社会福祉士受験資格",
+"公認心理師受験資格"
+],
+"careers": "2024年度卒業者の就職率は文学部92.9%、経営学部94.4%、看護学部95.2%、生活科学部91.8%と、どの学部も9割超が就職。"
+},
+"常磐大学": {
+"difficulty": {
+"hensachi": "35.0〜42.5",
+"kyotei": "40%〜56%",
+"year": "2027年度入試用"
+},
+"faculties": [
+"人間科学部",
+"総合政策学部",
+"看護学部"
+],
+"students": {
+"count": 2976,
+"year": 2025
+},
+"founded": "1909年（裁縫教授所）／1983年 常磐大学開学",
+"access": "見和キャンパス（水戸市）：JR水戸駅・赤塚駅からバス「常磐大学前」下車／桜の郷キャンパス（看護）：見和キャンパスからシャトルバス",
+"tuition": {
+"amount": 1320000,
+"label": "総合政策学部・入学金＋授業料＋施設/教育充実費＋実習費",
+"year": 2026
+},
+"news": [],
+"notable": [],
+"sources": [
+"https://search.keinet.ne.jp/2108/general/border_rate",
+"https://search.keinet.ne.jp/2108/outline/department",
+"https://search.keinet.ne.jp/2108/outline/expense",
+"https://search.keinet.ne.jp/2108/outline/campus",
+"https://search.keinet.ne.jp/2108",
+"https://search.keinet.ne.jp/2108/outline/licential"
+],
+"licenses": [
+"教員免許（幼・小・中・高 ほか）",
+"看護師・保健師国家試験受験資格",
+"管理栄養士受験資格",
+"公認心理師受験資格",
+"司書",
+"社会調査士"
+]
+},
+"流通経済大学": {
+"difficulty": {
+"hensachi": "35.0〜40.0",
+"kyotei": "37%〜58%",
+"year": "2027年度入試用"
+},
+"faculties": [
+"経済学部",
+"法学部",
+"流通情報学部",
+"共創社会学部",
+"スポーツ健康科学部"
+],
+"students": {
+"count": 5035,
+"year": 2025
+},
+"founded": "1965年 開学（日通学園）",
+"access": "龍ケ崎キャンパス：JR龍ケ崎市駅からシャトルバス／新松戸キャンパス：JR新松戸駅から徒歩4分",
+"tuition": {
+"amount": 1462300,
+"label": "経済学部（法・共創社会・流通情報も同額）・入学金＋授業料＋施設/教育充実費＋実習費＋諸会費＋課外活動振興費",
+"year": 2026
+},
+"news": [],
+"notable": [],
+"sources": [
+"https://search.keinet.ne.jp/2109/general/border_rate",
+"https://search.keinet.ne.jp/2109/outline/department",
+"https://search.keinet.ne.jp/2109/outline/expense",
+"https://search.keinet.ne.jp/2109/outline/campus",
+"https://search.keinet.ne.jp/2109",
+"https://search.keinet.ne.jp/2109/outline/licential"
+],
+"licenses": [
+"教員免許（中・高 社会・公民・地理歴史）",
+"教員免許（中・高 保健体育）",
+"教員免許（高 商業・情報）",
+"保育士",
+"社会福祉主事",
+"認定心理士"
+]
+},
+"防衛大学校": {
+"difficulty": {
+"hensachi": "47.5〜60.0",
+"kyotei": null,
+"year": "2027年度入試用"
+},
+"faculties": [
+"人文・社会科学専攻（人間文化学科・公共政策学科・国際関係学科）",
+"理工学専攻（応用物理・応用化学・地球海洋・電気電子工・通信工・サイバー・情報工・機能材料工・機械工・機械システム工・航空宇宙工・建設環境工の11学科）"
+],
+"students": {
+"count": 2000,
+"year": null,
+"note": "本科学生 約2,000名（学校案内2026年9月刊）。1学年の入学定員は480名（人文・社会100＋理工380）"
+},
+"founded": "1952年 保安大学校設置（1953年開校）／1954年 防衛大学校に改称",
+"access": "小原台キャンパス（横須賀市）：京急「馬堀海岸駅」からバス約10分",
+"tuition": {
+"amount": 0,
+"label": "学費不要（授業料免除・衣食住は国費）、特別職国家公務員として学生手当 月額約11万円＋期末手当",
+"year": 2026
+},
+"news": [
+"2025年度、米国の士官学校へ4年間留学する制度を開始",
+"2026年3月、昭和54年度に廃止された第5大隊が48年ぶりに復活し、学生隊を5大隊編成に改編"
+],
+"notable": [],
+"sources": [
+"https://passnavi.obunsha.co.jp/univ/5340/difficulty/",
+"https://search.keinet.ne.jp/5010/outline/department",
+"https://www.mod.go.jp/nda/about/outline/characteristics/",
+"https://www.mod.go.jp/nda/img/index/doc/Main_Brochure_of_NDA_JP.pdf",
+"https://www.mod.go.jp/nda/times/7323/",
+"https://www.tkfd.or.jp/experts/detail.php?id=24"
+]
+},
+"防衛医科大学校": {
+"difficulty": {
+"hensachi": "50.0〜67.5",
+"kyotei": null,
+"year": "2027年度入試用"
+},
+"faculties": [
+"医学科",
+"看護学科（自衛官候補看護学生・技官コース）"
+],
+"students": {
+"count": 941,
+"year": null,
+"note": "学生総数（パスナビ掲載、男408・女533）。新入生207人"
+},
+"founded": "1973年 開設（1974年 医学科教育開始、1975年 所沢の本校舎へ移転）",
+"access": "所沢キャンパス：西武新宿線「航空公園駅」から徒歩約10分",
+"tuition": {
+"amount": 0,
+"label": "入学金・授業料なし（特別職国家公務員）。学生手当 月額151,300円（令和7年1月1日現在、医学科・看護学科）＋期末手当年2回",
+"year": 2025
+},
+"news": [],
+"notable": [],
+"sources": [
+"https://passnavi.obunsha.co.jp/univ/5310/difficulty/",
+"https://passnavi.obunsha.co.jp/univ/5310/top/",
+"https://www.mod.go.jp/gsdf/jieikanbosyu/details/education/boeiiadai.html",
+"https://www.mod.go.jp/pco/ehime/recruit/05bouidai.html",
+"https://www.mod.go.jp/pco/ehime/recruit/06kango.html"
+]
+},
+"気象大学校": {
+"difficulty": {
+"hensachi": "65.0",
+"kyotei": null,
+"year": "パスナビ掲載（年度未確認）"
+},
+"faculties": [
+"大学部（4年制・学士（理学））"
+],
+"students": {
+"count": 60,
+"year": 2026,
+"note": "学生総数（パスナビ、2026年5月アンケート、男41・女19）。新入生17人"
+},
+"founded": "1922年 中央気象台附属測候技術官養成所／1962年 気象大学校設立",
+"access": "千葉県柏市旭町7-4-81（最寄駅等の案内は未確認）",
+"tuition": {
+"amount": 0,
+"label": "入学金・授業料不要（国家公務員として給与 毎月約17万円＋地域手当・期末勤勉手当）",
+"year": 2026
+},
+"news": [],
+"notable": [],
+"sources": [
+"https://passnavi.obunsha.co.jp/univ/5320/top/",
+"https://www.jma-net.go.jp/okinawa/kansyo/saiyou/pdf/R8_gaido_kidai.pdf",
+"https://www.jma.go.jp/jma/kishou/intro/recruit/index3.html"
+]
+},
+"海上保安大学校": {
+"difficulty": null,
+"faculties": [
+"本科（4年。航海・機関・情報通信の3専攻）",
+"専攻科（6か月）",
+"研修科国際業務課程"
+],
+"students": {
+"count": 60,
+"year": null,
+"note": "定員（1学年約60）。在校生は約220名（2020年時点、Wikipedia系資料）"
+},
+"founded": "1951年 東京で創設／1952年 呉に移転",
+"access": "広島県呉市若葉町（旧呉海軍工廠跡地）。最寄駅等の案内は未確認",
+"tuition": {
+"amount": 0,
+"label": "学費不要・給与支給（採用当初の給与 208,312円＋期末・勤勉手当等）",
+"year": 2026
+},
+"news": [],
+"notable": [],
+"sources": [
+"https://passnavi.obunsha.co.jp/univ/5350/department/",
+"https://passnavi.obunsha.co.jp/univ/5350/expense/",
+"https://www.kaiho.mlit.go.jp/info/kouhou/r8/k260624/k260624.pdf",
+"https://www.doc.surf/wiki/japan-coast-guard-academy"
+]
+},
+"水産大学校": {
+"difficulty": {
+"hensachi": "37.5〜45.0",
+"kyotei": null,
+"year": "2027年度入試用"
+},
+"faculties": [
+"水産流通経営学科",
+"海洋生産管理学科",
+"海洋機械工学科",
+"食品科学科",
+"生物生産学科"
+],
+"students": {
+"count": 932,
+"year": 2026,
+"note": "学生総数（パスナビ、2026年5月アンケート、男768・女164）。新入生221人"
+},
+"founded": "1941年 釜山高等水産学校／1963年 水産大学校に改称（2016年〜水産研究・教育機構）",
+"access": "山口県下関市永田本町2-7-1（最寄駅等の案内は未確認）",
+"tuition": {
+"amount": 817800,
+"label": "全学科共通・入学金282,000＋授業料535,800（別途諸会費100,000、Kei-Net 2025年度入学者用）",
+"year": 2025
+},
+"news": [],
+"notable": [],
+"sources": [
+"https://search.keinet.ne.jp/general/border_rate_sp/5030",
+"https://search.keinet.ne.jp/5030",
+"https://search.keinet.ne.jp/5030/outline/expense",
+"https://passnavi.obunsha.co.jp/univ/5360/top/"
+]
+},
+"国立看護大学校": {
+"difficulty": null,
+"faculties": [
+"看護学部（看護学科）"
+],
+"students": null,
+"founded": "2001年 厚生労働省が開設",
+"access": "清瀬キャンパス：西武池袋線「清瀬駅」南口から徒歩15分／西武バス5分「複十字病院」下車",
+"tuition": null,
+"news": [
+"2026年4月、開校25周年記念式典を挙行（秋篠宮妃紀子さま出席）"
+],
+"notable": [],
+"sources": [
+"https://telemail.jp/shingaku/university/10003532",
+"https://www.nippon.com/en/news/yjj2026040900662",
+"https://www.nicjp.niad.ac.jp/en/institute/shocho000001.html"
+]
+},
+"職業能力開発総合大学校": {
+"difficulty": {
+"hensachi": "35.0〜40.0",
+"kyotei": null,
+"year": "2027年度入試用"
+},
+"faculties": [
+"総合課程（機械専攻・電気専攻・電子情報専攻・建築専攻）"
+],
+"students": null,
+"founded": null,
+"access": null,
+"tuition": null,
+"news": [],
+"notable": [],
+"sources": [
+"https://search.keinet.ne.jp/5040/general/border_rate"
+]
+},
+"航空保安大学校": {
+"difficulty": null,
+"faculties": null,
+"students": null,
+"founded": null,
+"access": null,
+"tuition": null,
+"news": [],
+"notable": [],
+"sources": [
+"https://www.jinji.go.jp/kouho_houdo/koumuinhakusyo/hakusho/R6/1-3-01-2.html"
+]
+},
+"茨城県立農業大学校": {
+"difficulty": null,
+"faculties": null,
+"students": null,
+"founded": null,
+"access": null,
+"tuition": null,
+"news": [],
+"notable": [],
+"sources": []
+},
+"国際ファッション専門職大学": {
+"difficulty": {
+"hensachi": "BF",
+"kyotei": null,
+"year": "2027年度入試用"
+},
+"faculties": [
+"国際ファッション学部",
+"国際ファッション（大阪）学部",
+"国際ファッション（愛知）学部"
+],
+"students": null,
+"founded": null,
+"access": "東京キャンパス（西新宿・コクーンタワー）：新宿駅から徒歩2分／大阪キャンパス：大阪駅から徒歩90秒",
+"tuition": {
+"amount": 1700000,
+"label": "国際ファッション学部（東京）・入学金＋授業料＋施設/教育充実費（必修の海外実習費20〜60万円は別）",
+"year": 2026
+},
+"news": [],
+"notable": [],
+"sources": [
+"https://search.keinet.ne.jp/2102/general/border_rate",
+"https://search.keinet.ne.jp/2102/outline/department",
+"https://search.keinet.ne.jp/2102/outline/expense",
+"https://search.keinet.ne.jp/2102/outline/campus",
+"https://search.keinet.ne.jp/2102"
+]
+},
+"情報経営イノベーション専門職大学（iU）": {
+"difficulty": {
+"hensachi": "35.0",
+"kyotei": null,
+"year": "2027年度入試用"
+},
+"faculties": [
+"情報経営イノベーション学部"
+],
+"students": {
+"count": 655,
+"year": 2025
+},
+"founded": null,
+"access": "墨田キャンパス：東武小村井駅から徒歩7分・押上駅から徒歩15分",
+"tuition": {
+"amount": 1629660,
+"label": "情報経営イノベーション学部・入学金＋授業料＋施設・教育充実費＋諸会費",
+"year": 2026
+},
+"news": [],
+"notable": [],
+"sources": [
+"https://search.keinet.ne.jp/2106/general/border_rate",
+"https://search.keinet.ne.jp/2106/outline/department",
+"https://search.keinet.ne.jp/2106/outline/expense",
+"https://search.keinet.ne.jp/2106/outline/campus",
+"https://search.keinet.ne.jp/2106"
+]
+},
+"東京国際工科専門職大学": {
+"difficulty": {
+"hensachi": "35.0",
+"kyotei": null,
+"year": "2027年度入試用"
+},
+"faculties": [
+"工科学部"
+],
+"students": null,
+"founded": null,
+"access": "東京キャンパス（西新宿・コクーンタワー）：新宿駅から徒歩約3分",
+"tuition": {
+"amount": 1880000,
+"label": "工科学部情報工学科・入学金＋授業料＋施設/教育充実費（Kei-Netの国際工科専門職大学ページ、キャンパス別記載なし）",
+"year": 2026
+},
+"news": [
+"2027年4月に名古屋・大阪の国際工科専門職大学と統合し、工科学部を東京・大阪・名古屋の3キャンパス体制（入学定員計480名）とする予定"
+],
+"notable": [],
+"sources": [
+"https://search.keinet.ne.jp/2113/general/border_rate",
+"https://search.keinet.ne.jp/2113/outline/department",
+"https://search.keinet.ne.jp/2113/outline/expense",
+"https://search.keinet.ne.jp/2113/outline/campus",
+"https://search.keinet.ne.jp/2113"
+]
+},
+"開志専門職大学": {
+"difficulty": {
+"hensachi": "BF〜35.0",
+"kyotei": "43%〜50%",
+"year": "2027年度入試用"
+},
+"faculties": [
+"事業創造学部",
+"情報学部",
+"アニメ・マンガ学部"
+],
+"students": null,
+"founded": null,
+"access": "紫竹山キャンパス（事業創造・情報）：JR新潟駅からバス「弁天橋」下車徒歩1分／古町ルフルキャンパス（アニメ・マンガ）：JR新潟駅からバス「古町」下車徒歩1分",
+"tuition": {
+"amount": 1286000,
+"label": "事業創造学部・入学金＋授業料＋施設/教育充実費＋実習費＋諸会費（指定PC代別）",
+"year": 2026
+},
+"news": [],
+"notable": [],
+"sources": [
+"https://search.keinet.ne.jp/2343/general/border_rate",
+"https://search.keinet.ne.jp/2343/outline/department",
+"https://search.keinet.ne.jp/2343/outline/expense",
+"https://search.keinet.ne.jp/2343/outline/campus",
+"https://search.keinet.ne.jp/2343"
+]
+},
+"芸術文化観光専門職大学": {
+"difficulty": {
+"hensachi": null,
+"kyotei": "59%",
+"year": "2027年度入試用"
+},
+"faculties": [
+"芸術文化・観光学部"
+],
+"students": {
+"count": 349,
+"year": 2025
+},
+"founded": "2021年 開学（兵庫県立）",
+"access": "豊岡キャンパス（兵庫県豊岡市）：JR豊岡駅から徒歩7分",
+"tuition": {
+"amount": 817800,
+"label": "入学金（県内者282,000円）＋授業料535,800円。Kei-Netに県外者入学金の記載なく県内者額で算出。1年次全寮制で寮費月3万円別",
+"year": 2026
+},
+"news": [],
+"notable": [
+"平田オリザ（劇作家・演出家、初代学長）"
+],
+"sources": [
+"https://search.keinet.ne.jp/1628/general/border_rate",
+"https://search.keinet.ne.jp/1628/outline/department",
+"https://search.keinet.ne.jp/1628/outline/expense",
+"https://search.keinet.ne.jp/1628/outline/campus",
+"https://search.keinet.ne.jp/1628",
+"https://www.kobe-np.co.jp/news/sougou/202205/0015300027.shtml"
+]
+},
+"静岡県立農林環境専門職大学": {
+"difficulty": {
+"hensachi": "40.0",
+"kyotei": "41%",
+"year": "2027年度入試用"
+},
+"faculties": [
+"生産環境経営学部"
+],
+"students": {
+"count": 105,
+"year": 2025
+},
+"founded": "1900年（農業実務者養成教育）／2020年 開学（日本初の農林業分野の専門職大学）",
+"access": "磐田キャンパス：JR磐田駅から遠鉄バス「図書館前」下車徒歩約10分",
+"tuition": null,
+"news": [],
+"notable": [],
+"sources": [
+"https://search.keinet.ne.jp/1572/general/border_rate",
+"https://search.keinet.ne.jp/1572/outline/department",
+"https://search.keinet.ne.jp/1572/outline/expense",
+"https://search.keinet.ne.jp/1572/outline/campus",
+"https://search.keinet.ne.jp/1572",
+"https://digitalpr.jp/r/35452"
+]
+},
+"高知リハビリテーション専門職大学": {
+"difficulty": {
+"hensachi": "BF",
+"kyotei": "40%〜43%",
+"year": "2027年度入試用"
+},
+"faculties": [
+"リハビリテーション学部"
+],
+"students": {
+"count": 395,
+"year": 2025
+},
+"founded": "1968年（高知リハビリテーション学院）／2019年 専門職大学開学",
+"access": "土佐市キャンパス：JR伊野駅からスクールバス／JR高知駅からとさでん交通バス「高岡営業所」下車徒歩10分",
+"tuition": {
+"amount": 1590000,
+"label": "リハビリテーション学部・入学金＋授業料＋実習費＋図書費",
+"year": 2026
+},
+"news": [],
+"notable": [],
+"sources": [
+"https://search.keinet.ne.jp/2690/general/border_rate",
+"https://search.keinet.ne.jp/2690/outline/department",
+"https://search.keinet.ne.jp/2690/outline/expense",
+"https://search.keinet.ne.jp/2690/outline/campus",
+"https://search.keinet.ne.jp/2690"
+]
+},
+"東京保健医療専門職大学": {
+"difficulty": {
+"hensachi": "35.0〜40.0",
+"kyotei": "45%",
+"year": "2027年度入試用"
+},
+"faculties": [
+"リハビリテーション学部"
+],
+"students": {
+"count": 592,
+"year": 2025
+},
+"founded": "2020年 開学",
+"access": "江東区塩浜キャンパス：東京メトロ東陽町駅から徒歩約10分",
+"tuition": {
+"amount": 1930000,
+"label": "リハビリテーション学部・入学金＋授業料＋施設/教育充実費＋実習費＋諸会費",
+"year": 2026
+},
+"news": [],
+"notable": [],
+"sources": [
+"https://search.keinet.ne.jp/2114/general/border_rate",
+"https://search.keinet.ne.jp/2114/outline/department",
+"https://search.keinet.ne.jp/2114/outline/expense",
+"https://search.keinet.ne.jp/2114/outline/campus",
+"https://search.keinet.ne.jp/2114"
+]
+},
+"名古屋国際工科専門職大学": {
+"difficulty": {
+"hensachi": "35.0",
+"kyotei": null,
+"year": "2027年度入試用"
+},
+"faculties": [
+"工科学部"
+],
+"students": null,
+"founded": null,
+"access": "名古屋キャンパス（名駅・スパイラルタワーズ）：名古屋駅から徒歩約3分",
+"tuition": {
+"amount": 1880000,
+"label": "工科学部情報工学科・入学金＋授業料＋施設/教育充実費（Kei-Netの国際工科専門職大学ページ、キャンパス別記載なし）",
+"year": 2026
+},
+"news": [
+"2027年4月に国際工科専門職大学（東京）と統合し、同大学の名古屋キャンパス（情報工80名・デジタルエンタテインメント40名）となる予定"
+],
+"notable": [],
+"sources": [
+"https://search.keinet.ne.jp/2113/general/border_rate",
+"https://search.keinet.ne.jp/2113/outline/department",
+"https://search.keinet.ne.jp/2113/outline/expense",
+"https://search.keinet.ne.jp/2113/outline/campus",
+"https://search.keinet.ne.jp/2113"
+]
+},
+"電動モビリティシステム専門職大学": {
+"difficulty": null,
+"faculties": [
+"電気自動車システム工学部"
+],
+"students": null,
+"founded": "2023年4月 開学（山形県飯豊町）",
+"access": null,
+"tuition": null,
+"news": [
+"2024年10月、入学者が2023年度3人・2024年度1人（定員40人）にとどまり、2025年度入学者の募集停止を発表"
+],
+"notable": [],
+"sources": [
+"https://jidounten-lab.com/u_50566"
+]
+}
+}

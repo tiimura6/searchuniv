@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Searchuniv</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f5f3ee; --panel:#ffffff; --ink:#1d2433; --muted:#6b7280; --line:#e4e0d6;
+  --accent:#1f4e79; --accent-soft:#e6eef7; --ok:#2f7d4f; --ng:#b4442f;
+  --c-teidai:#7a2e3a; --c-kanto:#1f4e79; --c-chiho:#2d6a6a; --c-souke:#5b3a8c;
+  --c-march:#a1532a; --c-kankan:#8a6d1d; --c-chuken:#456b2f; --c-rikou:#2b5c8a;
+  --c-iryo:#a03a5a; --c-joshi:#9a4f86; --c-kokusai:#2c7a8a; --c-ibaraki:#6b4f2a;
+  --c-daigakkou:#33475b; --c-senmon:#b06a1a;
+}
+@media (prefers-color-scheme: dark){
+  :root{ --bg:#16181d; --panel:#20232a; --ink:#e8e6e1; --muted:#9aa0aa; --line:#30343c; --accent:#7fb0e0; --accent-soft:#25303d; }
+}
+*{box-sizing:border-box}
+body{margin:0;font-family:"Noto Sans JP",system-ui,sans-serif;background:var(--bg);color:var(--ink);line-height:1.6}
+header{padding:20px 20px 8px;max-width:880px;margin:0 auto}
+h1{font-size:20px;margin:0 0 4px;font-weight:700;letter-spacing:.02em}
+.sub{font-size:12.5px;color:var(--muted);margin:0}
+main{max-width:880px;margin:0 auto;padding:8px 20px 40px}
+.controls{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:12px 0}
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin:6px 0 10px}
+.chip{border:1px solid var(--line);background:var(--panel);color:var(--ink);border-radius:999px;padding:5px 11px;font-size:12.5px;cursor:pointer;font-family:inherit}
+.chip[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:#fff}
+@media (prefers-color-scheme: dark){.chip[aria-pressed="true"]{color:#111}}
+.chip .n{opacity:.7;margin-left:4px;font-size:11px}
+select,input[type=search],button.btn{font-family:inherit;font-size:13px;border:1px solid var(--line);background:var(--panel);color:var(--ink);border-radius:8px;padding:7px 10px}
+button.btn{cursor:pointer}
+button.btn:hover{border-color:var(--accent)}
+input[type=search]{flex:1;min-width:160px}
+.stage{perspective:1400px;margin:14px 0}
+.card{position:relative;width:100%;height:min(74vh,700px);min-height:420px;transform-style:preserve-3d;transition:transform .5s cubic-bezier(.2,.7,.2,1);cursor:pointer}
+.card.flipped{transform:rotateY(180deg)}
+.face{position:absolute;inset:0;backface-visibility:hidden;-webkit-backface-visibility:hidden;background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:26px 28px;display:flex;flex-direction:column;box-shadow:0 1px 2px rgba(0,0,0,.04),0 8px 24px rgba(0,0,0,.05);overflow:auto}
+.face::before{content:"";position:absolute;left:0;right:0;bottom:0;height:46%;background:var(--art) no-repeat center bottom/min(100%,560px) auto;opacity:.16;pointer-events:none;z-index:0}
+@media (prefers-color-scheme: dark){.face::before{opacity:.22;filter:invert(1)}}
+.face>*{position:relative;z-index:1}
+.back::before{opacity:.08}
+.front{align-items:center;justify-content:safe center;text-align:center}
+.back{transform:rotateY(180deg)}
+.badge{display:inline-block;font-size:11.5px;font-weight:500;color:#fff;border-radius:6px;padding:2px 8px;margin-right:6px}
+.meta{font-size:12.5px;color:var(--muted);margin-top:10px}
+.uname{font-size:clamp(26px,5vw,38px);font-weight:700;margin:14px 0 4px;letter-spacing:.03em}
+.hint{position:absolute;bottom:14px;left:0;right:0;text-align:center;font-size:11.5px;color:var(--muted)}
+.back h2{font-size:18px;margin:6px 0 10px}
+.back ul{margin:0 0 12px;padding-left:1.2em}
+.back li{margin:4px 0;font-size:14.5px}
+.memo{margin-top:auto;background:var(--accent-soft);border-radius:10px;padding:10px 14px;font-size:13.5px}
+.memo b{color:var(--accent)}
+.qfront{font-size:15.5px;text-align:left;max-width:620px}
+.qfront ul{padding-left:1.2em}
+.nav{display:flex;gap:8px;align-items:center;justify-content:space-between;flex-wrap:wrap}
+.nav .grp{display:flex;gap:8px}
+.big{padding:10px 16px!important;font-size:14px!important}
+.ok{border-color:var(--ok)!important;color:var(--ok)!important}
+.ng{border-color:var(--ng)!important;color:var(--ng)!important}
+.progress{font-size:13px;color:var(--muted)}
+.bar{height:6px;background:var(--line);border-radius:3px;overflow:hidden;margin:6px 0 2px}
+.bar>div{height:100%;background:var(--ok);transition:width .3s}
+.status{font-size:12px;font-weight:700;margin-left:6px}
+.status.k{color:var(--ok)} .status.u{color:var(--ng)}
+.empty{padding:60px 20px;text-align:center;color:var(--muted);background:var(--panel);border-radius:16px;border:1px dashed var(--line)}
+.foot{margin-top:24px;font-size:11.5px;color:var(--muted)}
+details{margin-top:24px;font-size:12.5px;color:var(--muted)}
+details summary{cursor:pointer}
+.listview{display:none;margin-top:14px}
+.listview table{width:100%;border-collapse:collapse;font-size:13px;background:var(--panel);border-radius:12px;overflow:hidden}
+.listview th,.listview td{border-bottom:1px solid var(--line);padding:8px 10px;text-align:left;vertical-align:top}
+.listview th{font-weight:500;color:var(--muted);font-size:12px}
+.tabs{display:flex;gap:4px;margin-top:10px}
+.tabs a{font-size:13px;padding:6px 14px;border:1px solid var(--line);border-radius:999px;color:var(--ink);text-decoration:none;background:var(--panel)}
+.tabs a.on{background:var(--accent);border-color:var(--accent);color:#fff}
+@media (prefers-color-scheme: dark){.tabs a.on{color:#111}}
+.zoomctl{position:absolute;right:10px;top:10px;display:flex;flex-direction:column;gap:6px}
+.zoomctl .btn{width:34px;height:34px;padding:0;font-size:18px;line-height:1}
+#jmap{touch-action:none;cursor:grab;user-select:none;-webkit-user-select:none}
+#jmap.drag{cursor:grabbing}
+#jmap .ulbl{font-weight:500;fill:var(--ink);paint-order:stroke;stroke:var(--panel);stroke-width:2.5px;vector-effect:non-scaling-stroke;cursor:pointer}
+.mapwrap{position:relative;background:var(--panel);border:1px solid var(--line);border-radius:16px;overflow:hidden;margin-top:6px}
+#jmap{width:100%;height:auto;display:block;max-height:72vh}
+#jmap path{fill:var(--bg);stroke:var(--muted);stroke-width:.8px;stroke-linejoin:round;vector-effect:non-scaling-stroke}
+#jmap .dot{fill:var(--accent);opacity:.45;cursor:pointer}
+#jmap .dot:hover{opacity:1}
+#jmap .hl{fill:#e0533d;stroke:#fff;stroke-width:2px;vector-effect:non-scaling-stroke}
+#jmap .pulse{fill:none;stroke:#e0533d;stroke-width:2px;vector-effect:non-scaling-stroke;animation:pulse 1.6s ease-out infinite;transform-box:fill-box;transform-origin:center}
+@keyframes pulse{from{opacity:.9;transform:scale(1)}to{opacity:0;transform:scale(4)}}
+#jmap .lbl{font-weight:700;fill:var(--ink);paint-order:stroke;stroke:var(--panel);stroke-width:3px;vector-effect:non-scaling-stroke}
+.mpanel{margin-top:10px}
+.mpanel .box{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:12px 16px}
+.mpanel h3{margin:0 0 4px;font-size:17px}
+.mpanel .meta{margin-top:0}
+.nlist{display:flex;flex-direction:column;gap:8px;margin-top:6px}
+.nitem{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:10px 14px;font-size:13.5px}
+.nitem .nh{display:flex;gap:8px;align-items:baseline;flex-wrap:wrap;font-size:12px;color:var(--muted)}
+.nitem .nu{color:var(--accent);font-weight:700}
+.nitem a.nt{display:block;color:var(--ink);font-weight:700;text-decoration:none;margin:3px 0}
+.nitem a.nt:hover{text-decoration:underline}
+.nitem .ns{font-size:12.5px;color:var(--muted)}
+.star{border:0;background:none;cursor:pointer;font-size:16px;color:var(--muted);padding:0 2px;line-height:1}
+.star.on{color:#e0a400}
+.cnews{border:1px solid var(--line);border-radius:10px;padding:8px 12px;margin:4px 0 10px;font-size:13px}
+.cnews .h{font-weight:700;font-size:12px;color:var(--accent);margin-bottom:4px}
+.cnews li{font-size:12.5px;margin:2px 0}
+.cnews a{color:var(--ink)}
+.aiform{display:flex;flex-direction:column;gap:10px;background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:14px 16px;margin-top:6px}
+.aiform label{display:flex;flex-direction:column;gap:4px;font-size:12px;color:var(--muted)}
+.aiform input,.aiform select{font-family:inherit;font-size:14px;border:1px solid var(--line);border-radius:8px;padding:8px 10px;background:var(--bg);color:var(--ink)}
+.airow{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:10px}
+.aibtns{display:flex;gap:8px}
+.aistatus{font-size:13px;color:var(--muted);margin:10px 2px}
+.aiout{display:flex;flex-direction:column;gap:10px}
+.airec{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:12px 16px}
+.airec h3{margin:0 0 4px;font-size:16px;display:flex;align-items:baseline;gap:8px;flex-wrap:wrap}
+.airec .rk{color:var(--accent);font-size:13px}
+.airec .why{font-size:13.5px;margin:6px 0}
+.airec .pts{margin:4px 0 6px;padding-left:1.1em;font-size:12.5px}
+.airec .caut{font-size:12px;color:var(--ng)}
+.airec .acts{display:flex;gap:10px;margin-top:6px;align-items:center}
+.tabs{flex-wrap:wrap}
+.info{border:1px solid var(--line);border-radius:10px;padding:8px 12px;margin:4px 0 10px;font-size:13px}
+.it{width:100%;border-collapse:collapse}
+.it th{width:7.2em;text-align:left;vertical-align:top;font-weight:500;color:var(--muted);font-size:12px;padding:5px 8px 5px 0;white-space:nowrap}
+.it td{padding:5px 0;border-bottom:1px dashed var(--line)}
+.it tr:last-child td{border-bottom:0}
+.sub2{font-size:11.5px;color:var(--muted);margin-left:2px}
+.facs{display:flex;flex-wrap:wrap;gap:4px}
+.facs span{background:var(--accent-soft);border-radius:5px;padding:1px 7px;font-size:12px}
+ul.mini{margin:0;padding-left:1.1em}
+ul.mini li{font-size:12.5px;margin:2px 0}
+.hp{font-size:12.5px;font-weight:500;margin-left:10px;color:var(--accent);white-space:nowrap}
+.ff{width:100%;border-collapse:collapse;margin-top:10px;font-size:12.5px;background:color-mix(in srgb,var(--panel) 85%,transparent);border-radius:8px}
+.ff th{width:6.8em;text-align:left;font-weight:500;color:var(--muted);padding:4px 8px 4px 0;vertical-align:top;white-space:nowrap}
+.ff td{padding:4px 0;border-bottom:1px dashed var(--line)}
+.ff tr:last-child td{border-bottom:0}
+.ff .facs span{font-size:11.5px}
+.qfront{max-width:680px!important}
+.hints{margin-top:10px}
+.hints .btn{font-size:12.5px;padding:5px 10px}
+.hint1{font-size:13px;margin:4px 0;text-align:left}
+.hint1 b{display:inline-block;font-size:11.5px;color:var(--accent);margin-right:8px;min-width:6.5em}
+.exam{border:1px solid var(--line);border-radius:10px;padding:10px 12px;margin:4px 0 12px;font-size:13px}
+.exam-h{font-weight:700;font-size:12.5px;color:var(--accent);margin-bottom:6px}
+.et{width:100%;border-collapse:collapse}
+.et th{font-weight:500;color:var(--muted);font-size:11.5px;text-align:left;padding:2px 6px 4px 0;border-bottom:1px solid var(--line)}
+.et td{padding:4px 6px 4px 0;border-bottom:1px dashed var(--line);font-variant-numeric:tabular-nums}
+.et .yr{font-size:10.5px;color:var(--muted);margin-left:4px}
+.et .prev{font-size:11px;color:var(--muted);margin-left:4px}
+.fmt{margin-top:8px;font-size:12.5px}
+.enote,.na{margin-top:6px;font-size:11.5px;color:var(--muted)}
+.src{margin-top:6px;font-size:11px;color:var(--muted)}
+.src a{color:var(--accent)}
+.listview .hp{font-size:12.5px;font-weight:500;margin-left:10px;color:var(--accent);white-space:nowrap}
+.exam{margin:0;border:0;padding:0}
+.ans{margin-top:22px;display:flex;flex-direction:column;align-items:center;gap:14px}
+.blank{display:flex;align-items:baseline;justify-content:center;font-size:clamp(22px,4.5vw,30px);font-weight:700;flex-wrap:nowrap}
+.blank input{width:9em;max-width:52vw;font-family:inherit;font-size:inherit;font-weight:700;text-align:center;border:0;border-bottom:3px solid var(--accent);background:transparent;color:var(--ink);padding:2px 4px;margin:0 2px}
+.blank input:focus{outline:none;background:var(--accent-soft)}
+.ansbtns{display:flex;gap:8px}
+.judge{font-size:18px;font-weight:700;margin-top:6px}
+.judge .good{color:var(--ok)} .judge .bad{color:var(--ng)}
+.judge .yours{display:block;font-size:12.5px;font-weight:400;color:var(--muted);margin-top:2px}
+.kbd{font-size:11px;border:1px solid var(--line);border-radius:4px;padding:0 5px}
+</style>
+</head>
+<body>
+<header>
+  <h1>Searchuniv</h1>
+  <nav class="tabs"><a href="#cards" data-v="cards">カード</a><a href="#map" data-v="map">地図</a><a href="#news" data-v="news">ニュース</a><a href="#ai" data-v="ai">AIおすすめ</a></nav>
+</header>
+<main>
+<section id="v-cards">
+  <div class="controls">
+    <input type="search" id="q" placeholder="検索">
+    <select id="mode" aria-label="出題方向">
+      <option value="type" selected>入力</option>
+      <option value="name">大学名→特色</option>
+      <option value="feat">特色→大学名</option>
+    </select>
+    <select id="filt" aria-label="学習状況">
+      <option value="all">すべて</option>
+      <option value="unknown">まだ</option>
+      <option value="unseen">未判定</option>
+    </select>
+    <button class="btn" id="toggleList">一覧</button>
+  </div>
+
+  <div class="progress"><span id="pos"></span>　<span id="stat"></span>　<span id="score" style="color:var(--ok);font-weight:500"></span></div>
+  <div class="bar"><div id="barfill" style="width:0"></div></div>
+
+  <div id="cardwrap">
+    <div class="stage"><div class="card" id="card" tabindex="0" aria-live="polite">
+      <div class="face front" id="front"></div>
+      <div class="face back" id="back"></div>
+    </div></div>
+    <div class="nav">
+      <div class="grp"><button class="btn big" id="prev">←</button><button class="btn big" id="next">→</button></div>
+      <div class="grp"><button class="btn big ng" id="markU">まだ</button><button class="btn big ok" id="markK">覚えた</button></div>
+    </div>
+  </div>
+  <div class="listview" id="listview"></div>
+
+  <p class="foot">入試データは2026年度（出典は各カード）。倍率＝受験者÷合格者（受験者不明は志願者÷合格者）。総合型は最終合格者で算出。出願前に最新の募集要項で確認。</p>
+</section>
+
+<section id="v-map" hidden>
+  <div class="controls">
+    <input type="search" id="mq" list="unames" placeholder="大学名を検索" autocomplete="off">
+    <button class="btn" id="mreset">全国</button>
+  </div>
+  <datalist id="unames"></datalist>
+  <div class="mapwrap"><svg id="jmap" viewBox="170 0 490 450" role="img" aria-label="日本地図"><g id="prefs"></g><g id="dots"></g><g id="labels"></g><g id="hl"></g></svg>
+    <div class="zoomctl"><button class="btn" id="zin" title="拡大">＋</button><button class="btn" id="zout" title="縮小">−</button></div></div>
+  <div id="mpanel" class="mpanel"></div>
+</section>
+
+<section id="v-ai" hidden>
+  <form id="aiform" class="aiform" onsubmit="return false">
+    <label>目指している職業<input id="ai-job" placeholder="例：臨床心理士、ゲームプログラマー、英語教員"></label>
+    <label>学びたい学問・興味<input id="ai-study" placeholder="例：心理学、AI、国際関係、昆虫の生態"></label>
+    <div class="airow">
+      <label>地域<select id="ai-region"><option value="">こだわらない</option><option>北海道・東北</option><option>関東</option><option>中部</option><option>近畿</option><option>中国・四国</option><option>九州・沖縄</option></select></label>
+      <label>設置区分<select id="ai-type"><option value="">こだわらない</option><option value="pub">国公立</option><option value="pri">私立</option><option value="dai">大学校</option></select></label>
+      <label>学力の目安<input id="ai-level" placeholder="例：共テ75%、偏差値60"></label>
+      <label>学費の上限<input id="ai-budget" placeholder="例：初年度150万円まで"></label>
+    </div>
+    <label>その他の条件<input id="ai-other" placeholder="例：自宅から通いたい、留学したい、奨学金重視"></label>
+    <div class="aibtns"><button class="btn big" id="ai-go" type="button">おすすめを出す</button><button class="btn" id="ai-stop" type="button" hidden>停止</button></div>
+  </form>
+  <div id="ai-status" class="aistatus"></div>
+  <div id="ai-out" class="aiout"></div>
+</section>
+
+<section id="v-news" hidden>
+  <div class="controls">
+    <input type="search" id="nq" list="unames" placeholder="大学名で絞り込み" autocomplete="off">
+    <select id="nf"><option value="all">すべて</option><option value="imp">重要のみ</option></select>
+  </div>
+  <div id="nlist" class="nlist"></div>
+  <p class="foot">報道機関・大学公式の発表から定期的に自動収集。★は重要（自動削除されません）。</p>
+</section>
+</main>
+
+<script>
+const CATS = {
+  teidai:  {label:"旧帝大＋難関国立", color:"var(--c-teidai)"},
+  kanto:   {label:"関東の国公立", color:"var(--c-kanto)"},
+  chiho:   {label:"地方・特色国公立", color:"var(--c-chiho)"},
+  souke:   {label:"早慶上理ICU", color:"var(--c-souke)"},
+  march:   {label:"GMARCH", color:"var(--c-march)"},
+  kankan:  {label:"関関同立＋西日本有力私大", color:"var(--c-kankan)"},
+  chuken:  {label:"成成明学獨國武・日東駒専", color:"var(--c-chuken)"},
+  rikou:   {label:"理工・農系私大", color:"var(--c-rikou)"},
+  iryo:    {label:"医療系私大", color:"var(--c-iryo)"},
+  joshi:   {label:"女子大", color:"var(--c-joshi)"},
+  kokusai: {label:"外国語・国際系私大", color:"var(--c-kokusai)"},
+  ibaraki: {label:"茨城県内私大", color:"var(--c-ibaraki)"},
+  daigakkou:{label:"大学校", color:"var(--c-daigakkou)"},
+  senmon:  {label:"専門職大学", color:"var(--c-senmon)"},
+  national:{label:"国立大学", color:"var(--c-kanto)"},
+  public:  {label:"公立大学", color:"var(--c-chiho)"},
+  private: {label:"私立大学", color:"var(--c-march)"}
+};
+
+// [大学名, カテゴリ, 設置区分, 所在地, [特色...], 担任メモ]
+const D = /*CARDS*/[]/*END_CARDS*/;
+
+const HP = /*HP*/{}/*END_HP*/;
+function hpLink(name){ const u=HP[name]; return u?'<a class="hp" href="'+esc(u)+'" target="_blank" rel="noopener" onclick="event.stopPropagation()">公式HP ↗</a>':''; }
+const INFO = /*INFO_DATA*/{}/*END_INFO*/;
+function yen(n){ return n===0 ? "0円" : (n==null?"—":Math.round(n/1000).toLocaleString("ja-JP")+"千円"); }
+function infoBlock(name){
+  const f = INFO[name]; if(!f) return "";
+  const rows=[];
+  const d=f.difficulty;
+  if(d && (d.hensachi||d.kyotei)) rows.push(["難易度",[d.hensachi?"偏差値 "+esc(d.hensachi):"",d.kyotei?"共テ "+esc(d.kyotei):""].filter(Boolean).join("／")]);
+  const t=f.tuition;
+  if(t && t.amount!=null) rows.push(["初年度納付金", "<b>"+yen(t.amount)+"</b>"+(t.label?'<span class="sub2">（'+esc(t.label)+'）</span>':"")]);
+  const st=f.students;
+  const scale=[st&&st.count?("学生 約"+Number(st.count).toLocaleString("ja-JP")+"人"+(st.note?"（"+esc(st.note)+"）":"")):"", f.founded?esc(f.founded):""].filter(Boolean).join("／");
+  if(scale) rows.push(["規模・創立",scale]);
+  if(f.access) rows.push(["アクセス",esc(f.access)]);
+  if(f.faculties && f.faculties.length) rows.push(["学部",'<span class="facs">'+f.faculties.map(x=>'<span>'+esc(x)+'</span>').join("")+'</span>']);
+  if(f.research && f.research.length) rows.push(["有名な研究分野",'<span class="facs">'+f.research.map(x=>'<span>'+esc(x)+'</span>').join("")+'</span>']);
+  if(f.licenses && f.licenses.length) rows.push(["取得できる資格",'<span class="facs">'+f.licenses.map(x=>'<span>'+esc(x)+'</span>').join("")+'</span>']);
+  if(f.careers) rows.push(["主な進路",esc(f.careers)]);
+  if(f.news && f.news.length) rows.push(["ニュース",'<ul class="mini">'+f.news.map(x=>'<li>'+esc(x)+'</li>').join("")+'</ul>']);
+  if(f.notable && f.notable.length) rows.push(["著名な教員",'<ul class="mini">'+f.notable.map(x=>'<li>'+esc(x)+'</li>').join("")+'</ul>']);
+  if(!rows.length) return "";
+  const src=(f.sources||[]).filter(u=>/^https?:/.test(u)).slice(0,6);
+  const srcH = src.length?'<div class="src">出典：'+src.map(u=>'<a href="'+esc(u)+'" target="_blank" rel="noopener" onclick="event.stopPropagation()">'+srcLabel(u)+'</a>').join("／")+'</div>':"";
+  return '<div class="info"><table class="it">'+rows.map(r=>'<tr><th>'+r[0]+'</th><td>'+r[1]+'</td></tr>').join("")+'</table>'+srcH+'</div>';
+}
+
+const EXAM = /*EXAM_DATA*/{}/*END_EXAM*/;
+
+function fmtN(n){ return (n===null||n===undefined||n==="")?"—":Number(n).toLocaleString("ja-JP"); }
+function fmtR(r){ return (r===null||r===undefined||r==="")?"—":Number(r).toFixed(1)+"倍"; }
+function examBlock(name, compact){
+  const e = EXAM[name]; if(!e) return "";
+  const rows = [["一般選抜",e.general],["学校推薦型",e.suisen],["総合型",e.sogo]].filter(r=>r[1]);
+  let h = '<div class="exam">';
+  if(rows.length){
+    h += '<table class="et"><thead><tr><th>区分</th><th>志願者</th><th>合格者</th><th>倍率</th></tr></thead><tbody>';
+    for(const [lab,v] of rows){
+      const prev = (v.ratio_prev!=null)?'<span class="prev">（前年 '+fmtR(v.ratio_prev)+'）</span>':'';
+      h += '<tr><td>'+lab+'<span class="yr">'+(v.year||"")+'</span></td><td>'+fmtN(v.applicants)+'</td><td>'+fmtN(v.passers)+'</td><td><b>'+fmtR(v.ratio)+'</b>'+prev+'</td></tr>';
+    }
+    h += '</tbody></table>';
+  } else {
+    h += '<div class="na">倍率データなし</div>';
+  }
+  if(e.format) h += '<div class="fmt">'+esc(e.format)+'</div>';
+  if(!compact){
+    if(e.note) h += '<div class="enote">※'+esc(e.note)+'</div>';
+    if(e.sources && e.sources.length) h += '<div class="src">出典：'+e.sources.slice(0,3).map((u,i)=>'<a href="'+esc(u)+'" target="_blank" rel="noopener" onclick="event.stopPropagation()">'+srcLabel(u)+'</a>').join("／")+'</div>';
+  }
+  return h+'</div>';
+}
+function srcLabel(u){ try{ const h=new URL(u).hostname; if(h.includes("keinet")) return "河合塾Kei-Net"; if(h.includes("obunsha")) return "旺文社パスナビ"; return h.replace(/^www\./,""); }catch(e){ return "リンク"; } }
+
+const ART={"clock": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20400%20210%22%3E%3Cg%20fill%3D%22none%22%20stroke%3D%22%237a8696%22%20stroke-width%3D%222%22%20stroke-linejoin%3D%22round%22%20stroke-linecap%3D%22round%22%3E%3Cpath%20d%3D%22M0%20190%20H400%22/%3E%3Crect%20x%3D%2260%22%20y%3D%22110%22%20width%3D%22280%22%20height%3D%2280%22/%3E%3Cpath%20d%3D%22M60%20110%20L200%2080%20L340%20110%22/%3E%0A%3Crect%20x%3D%22175%22%20y%3D%2240%22%20width%3D%2250%22%20height%3D%22150%22/%3E%3Cpath%20d%3D%22M175%2040%20L200%2015%20L225%2040%22/%3E%3Ccircle%20cx%3D%22200%22%20cy%3D%2265%22%20r%3D%2212%22/%3E%3Cpath%20d%3D%22M200%2065%20v-7%20M200%2065%20h5%22/%3E%0A%3Crect%20x%3D%2275%22%20y%3D%22122%22%20width%3D%2210%22%20height%3D%2214%22/%3E%3Crect%20x%3D%2275%22%20y%3D%22146%22%20width%3D%2210%22%20height%3D%2214%22/%3E%3Crect%20x%3D%2293%22%20y%3D%22122%22%20width%3D%2210%22%20height%3D%2214%22/%3E%3Crect%20x%3D%2293%22%20y%3D%22146%22%20width%3D%2210%22%20height%3D%2214%22/%3E%3Crect%20x%3D%22111%22%20y%3D%22122%22%20width%3D%2210%22%20height%3D%2214%22/%3E%3Crect%20x%3D%22111%22%20y%3D%22146%22%20width%3D%2210%22%20height%3D%2214%22/%3E%3Crect%20x%3D%22129%22%20y%3D%22122%22%20width%3D%2210%22%20height%3D%2214%22/%3E%3Crect%20x%3D%22129%22%20y%3D%22146%22%20width%3D%2210%22%20height%3D%2214%22/%3E%3Crect%20x%3D%22250%22%20y%3D%22122%22%20width%3D%2210%22%20height%3D%2214%22/%3E%3Crect%20x%3D%22250%22%20y%3D%22146%22%20width%3D%2210%22%20height%3D%2214%22/%3E%3Crect%20x%3D%22268%22%20y%3D%22122%22%20width%3D%2210%22%20height%3D%2214%22/%3E%3Crect%20x%3D%22268%22%20y%3D%22146%22%20width%3D%2210%22%20height%3D%2214%22/%3E%3Crect%20x%3D%22286%22%20y%3D%22122%22%20width%3D%2210%22%20height%3D%2214%22/%3E%3Crect%20x%3D%22286%22%20y%3D%22146%22%20width%3D%2210%22%20height%3D%2214%22/%3E%3Crect%20x%3D%22304%22%20y%3D%22122%22%20width%3D%2210%22%20height%3D%2214%22/%3E%3Crect%20x%3D%22304%22%20y%3D%22146%22%20width%3D%2210%22%20height%3D%2214%22/%3E%3Crect%20x%3D%22188%22%20y%3D%22160%22%20width%3D%2224%22%20height%3D%2230%22/%3E%3Cpath%20d%3D%22M25%20190%20v-14%22/%3E%3Ccircle%20cx%3D%2225%22%20cy%3D%22166%22%20r%3D%2212%22/%3E%3Cpath%20d%3D%22M375%20190%20v-14%22/%3E%3Ccircle%20cx%3D%22375%22%20cy%3D%22166%22%20r%3D%2212%22/%3E%3C/g%3E%3C/svg%3E", "gothic": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20400%20210%22%3E%3Cg%20fill%3D%22none%22%20stroke%3D%22%237a8696%22%20stroke-width%3D%222%22%20stroke-linejoin%3D%22round%22%20stroke-linecap%3D%22round%22%3E%3Cpath%20d%3D%22M0%20190%20H400%22/%3E%3Crect%20x%3D%2270%22%20y%3D%22100%22%20width%3D%22260%22%20height%3D%2290%22/%3E%0A%3Cpath%20d%3D%22M70%20100%20L90%2080%20L110%20100%20M290%20100%20L310%2080%20L330%20100%22/%3E%3Crect%20x%3D%22170%22%20y%3D%2255%22%20width%3D%2260%22%20height%3D%22135%22/%3E%3Cpath%20d%3D%22M170%2055%20L200%2025%20L230%2055%22/%3E%0A%3Cpath%20d%3D%22M188%20190%20v-26%20a12%2012%200%200%201%2024%200%20v26%22/%3E%3Cpath%20d%3D%22M186%20100%20v-20%20a14%2014%200%200%201%2028%200%20v20%20Z%22/%3E%0A%3Cpath%20d%3D%22M85%20170%20v-30%20a7%207%200%200%201%2014%200%20v30%20Z%22/%3E%3Cpath%20d%3D%22M110%20170%20v-30%20a7%207%200%200%201%2014%200%20v30%20Z%22/%3E%3Cpath%20d%3D%22M135%20170%20v-30%20a7%207%200%200%201%2014%200%20v30%20Z%22/%3E%3Cpath%20d%3D%22M250%20170%20v-30%20a7%207%200%200%201%2014%200%20v30%20Z%22/%3E%3Cpath%20d%3D%22M275%20170%20v-30%20a7%207%200%200%201%2014%200%20v30%20Z%22/%3E%3Cpath%20d%3D%22M300%20170%20v-30%20a7%207%200%200%201%2014%200%20v30%20Z%22/%3E%3Cpath%20d%3D%22M30%20190%20v-14%22/%3E%3Ccircle%20cx%3D%2230%22%20cy%3D%22166%22%20r%3D%2212%22/%3E%3Cpath%20d%3D%22M370%20190%20v-14%22/%3E%3Ccircle%20cx%3D%22370%22%20cy%3D%22166%22%20r%3D%2212%22/%3E%3C/g%3E%3C/svg%3E", "modern": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20400%20210%22%3E%3Cg%20fill%3D%22none%22%20stroke%3D%22%237a8696%22%20stroke-width%3D%222%22%20stroke-linejoin%3D%22round%22%20stroke-linecap%3D%22round%22%3E%3Cpath%20d%3D%22M0%20190%20H400%22/%3E%3Cpath%20d%3D%22M50%20190%20V90%20L170%2070%20V190%22/%3E%3Cpath%20d%3D%22M170%20190%20V50%20H300%20V190%22/%3E%3Crect%20x%3D%22300%22%20y%3D%22120%22%20width%3D%2260%22%20height%3D%2270%22/%3E%0A%3Cpath%20d%3D%22M70%20190%20V87%22/%3E%3Cpath%20d%3D%22M90%20190%20V83%22/%3E%3Cpath%20d%3D%22M110%20190%20V80%22/%3E%3Cpath%20d%3D%22M130%20190%20V77%22/%3E%3Cpath%20d%3D%22M150%20190%20V74%22/%3E%3Cpath%20d%3D%22M170%2090%20H300%22/%3E%3Cpath%20d%3D%22M170%20110%20H300%22/%3E%3Cpath%20d%3D%22M170%20130%20H300%22/%3E%3Cpath%20d%3D%22M170%20150%20H300%22/%3E%3Cpath%20d%3D%22M170%20170%20H300%22/%3E%0A%3Cpath%20d%3D%22M196%2050%20V190%22/%3E%3Cpath%20d%3D%22M222%2050%20V190%22/%3E%3Cpath%20d%3D%22M248%2050%20V190%22/%3E%3Cpath%20d%3D%22M274%2050%20V190%22/%3E%3Crect%20x%3D%22310%22%20y%3D%22132%22%20width%3D%2214%22%20height%3D%2212%22/%3E%3Crect%20x%3D%22310%22%20y%3D%22154%22%20width%3D%2214%22%20height%3D%2212%22/%3E%3Crect%20x%3D%22334%22%20y%3D%22132%22%20width%3D%2214%22%20height%3D%2212%22/%3E%3Crect%20x%3D%22334%22%20y%3D%22154%22%20width%3D%2214%22%20height%3D%2212%22/%3E%3Cpath%20d%3D%22M25%20190%20v-14%22/%3E%3Ccircle%20cx%3D%2225%22%20cy%3D%22166%22%20r%3D%2212%22/%3E%3Cpath%20d%3D%22M380%20190%20v-14%22/%3E%3Ccircle%20cx%3D%22380%22%20cy%3D%22166%22%20r%3D%2212%22/%3E%3C/g%3E%3C/svg%3E", "medical": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20400%20210%22%3E%3Cg%20fill%3D%22none%22%20stroke%3D%22%237a8696%22%20stroke-width%3D%222%22%20stroke-linejoin%3D%22round%22%20stroke-linecap%3D%22round%22%3E%3Cpath%20d%3D%22M0%20190%20H400%22/%3E%3Crect%20x%3D%2280%22%20y%3D%2270%22%20width%3D%22150%22%20height%3D%22120%22/%3E%3Crect%20x%3D%22230%22%20y%3D%22110%22%20width%3D%22100%22%20height%3D%2280%22/%3E%0A%3Cpath%20d%3D%22M150%2040%20h10%20v12%20h12%20v10%20h-12%20v12%20h-10%20v-12%20h-12%20v-10%20h12%20Z%22/%3E%3Cpath%20d%3D%22M155%2074%20v-0%22/%3E%0A%3Crect%20x%3D%2295%22%20y%3D%2285%22%20width%3D%2210%22%20height%3D%2212%22/%3E%3Crect%20x%3D%2295%22%20y%3D%22107%22%20width%3D%2210%22%20height%3D%2212%22/%3E%3Crect%20x%3D%2295%22%20y%3D%22129%22%20width%3D%2210%22%20height%3D%2212%22/%3E%3Crect%20x%3D%2295%22%20y%3D%22151%22%20width%3D%2210%22%20height%3D%2212%22/%3E%3Crect%20x%3D%22117%22%20y%3D%2285%22%20width%3D%2210%22%20height%3D%2212%22/%3E%3Crect%20x%3D%22117%22%20y%3D%22107%22%20width%3D%2210%22%20height%3D%2212%22/%3E%3Crect%20x%3D%22117%22%20y%3D%22129%22%20width%3D%2210%22%20height%3D%2212%22/%3E%3Crect%20x%3D%22117%22%20y%3D%22151%22%20width%3D%2210%22%20height%3D%2212%22/%3E%3Crect%20x%3D%22139%22%20y%3D%2285%22%20width%3D%2210%22%20height%3D%2212%22/%3E%3Crect%20x%3D%22139%22%20y%3D%22107%22%20width%3D%2210%22%20height%3D%2212%22/%3E%3Crect%20x%3D%22139%22%20y%3D%22129%22%20width%3D%2210%22%20height%3D%2212%22/%3E%3Crect%20x%3D%22139%22%20y%3D%22151%22%20width%3D%2210%22%20height%3D%2212%22/%3E%3Crect%20x%3D%22161%22%20y%3D%2285%22%20width%3D%2210%22%20height%3D%2212%22/%3E%3Crect%20x%3D%22161%22%20y%3D%22107%22%20width%3D%2210%22%20height%3D%2212%22/%3E%3Crect%20x%3D%22161%22%20y%3D%22129%22%20width%3D%2210%22%20height%3D%2212%22/%3E%3Crect%20x%3D%22161%22%20y%3D%22151%22%20width%3D%2210%22%20height%3D%2212%22/%3E%3Crect%20x%3D%22183%22%20y%3D%2285%22%20width%3D%2210%22%20height%3D%2212%22/%3E%3Crect%20x%3D%22183%22%20y%3D%22107%22%20width%3D%2210%22%20height%3D%2212%22/%3E%3Crect%20x%3D%22183%22%20y%3D%22129%22%20width%3D%2210%22%20height%3D%2212%22/%3E%3Crect%20x%3D%22183%22%20y%3D%22151%22%20width%3D%2210%22%20height%3D%2212%22/%3E%3Crect%20x%3D%22205%22%20y%3D%2285%22%20width%3D%2210%22%20height%3D%2212%22/%3E%3Crect%20x%3D%22205%22%20y%3D%22107%22%20width%3D%2210%22%20height%3D%2212%22/%3E%3Crect%20x%3D%22205%22%20y%3D%22129%22%20width%3D%2210%22%20height%3D%2212%22/%3E%3Crect%20x%3D%22205%22%20y%3D%22151%22%20width%3D%2210%22%20height%3D%2212%22/%3E%3Crect%20x%3D%22245%22%20y%3D%22122%22%20width%3D%2210%22%20height%3D%2212%22/%3E%3Crect%20x%3D%22245%22%20y%3D%22144%22%20width%3D%2210%22%20height%3D%2212%22/%3E%3Crect%20x%3D%22267%22%20y%3D%22122%22%20width%3D%2210%22%20height%3D%2212%22/%3E%3Crect%20x%3D%22267%22%20y%3D%22144%22%20width%3D%2210%22%20height%3D%2212%22/%3E%3Crect%20x%3D%22289%22%20y%3D%22122%22%20width%3D%2210%22%20height%3D%2212%22/%3E%3Crect%20x%3D%22289%22%20y%3D%22144%22%20width%3D%2210%22%20height%3D%2212%22/%3E%3Crect%20x%3D%22311%22%20y%3D%22122%22%20width%3D%2210%22%20height%3D%2212%22/%3E%3Crect%20x%3D%22311%22%20y%3D%22144%22%20width%3D%2210%22%20height%3D%2212%22/%3E%3Crect%20x%3D%22140%22%20y%3D%22160%22%20width%3D%2230%22%20height%3D%2230%22/%3E%3Cpath%20d%3D%22M40%20190%20v-14%22/%3E%3Ccircle%20cx%3D%2240%22%20cy%3D%22166%22%20r%3D%2212%22/%3E%3Cpath%20d%3D%22M365%20190%20v-14%22/%3E%3Ccircle%20cx%3D%22365%22%20cy%3D%22166%22%20r%3D%2212%22/%3E%3C/g%3E%3C/svg%3E", "academy": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20400%20210%22%3E%3Cg%20fill%3D%22none%22%20stroke%3D%22%237a8696%22%20stroke-width%3D%222%22%20stroke-linejoin%3D%22round%22%20stroke-linecap%3D%22round%22%3E%3Cpath%20d%3D%22M0%20190%20H260%22/%3E%3Cpath%20d%3D%22M260%20190%20q20%20-6%2040%200%20t40%200%20t40%200%20t40%200%22/%3E%3Cpath%20d%3D%22M260%20200%20q20%20-6%2040%200%20t40%200%20t40%200%22/%3E%0A%3Crect%20x%3D%2240%22%20y%3D%22105%22%20width%3D%22200%22%20height%3D%2285%22/%3E%3Crect%20x%3D%22110%22%20y%3D%2275%22%20width%3D%2260%22%20height%3D%2230%22/%3E%3Cpath%20d%3D%22M140%2075%20V30%22/%3E%3Cpath%20d%3D%22M140%2032%20h26%20l-6%207%20l6%207%20h-26%22/%3E%0A%3Crect%20x%3D%2255%22%20y%3D%22120%22%20width%3D%2212%22%20height%3D%2214%22/%3E%3Crect%20x%3D%2255%22%20y%3D%22146%22%20width%3D%2212%22%20height%3D%2214%22/%3E%3Crect%20x%3D%2277%22%20y%3D%22120%22%20width%3D%2212%22%20height%3D%2214%22/%3E%3Crect%20x%3D%2277%22%20y%3D%22146%22%20width%3D%2212%22%20height%3D%2214%22/%3E%3Crect%20x%3D%2299%22%20y%3D%22120%22%20width%3D%2212%22%20height%3D%2214%22/%3E%3Crect%20x%3D%2299%22%20y%3D%22146%22%20width%3D%2212%22%20height%3D%2214%22/%3E%3Crect%20x%3D%22121%22%20y%3D%22120%22%20width%3D%2212%22%20height%3D%2214%22/%3E%3Crect%20x%3D%22121%22%20y%3D%22146%22%20width%3D%2212%22%20height%3D%2214%22/%3E%3Crect%20x%3D%22143%22%20y%3D%22120%22%20width%3D%2212%22%20height%3D%2214%22/%3E%3Crect%20x%3D%22143%22%20y%3D%22146%22%20width%3D%2212%22%20height%3D%2214%22/%3E%3Crect%20x%3D%22165%22%20y%3D%22120%22%20width%3D%2212%22%20height%3D%2214%22/%3E%3Crect%20x%3D%22165%22%20y%3D%22146%22%20width%3D%2212%22%20height%3D%2214%22/%3E%3Crect%20x%3D%22187%22%20y%3D%22120%22%20width%3D%2212%22%20height%3D%2214%22/%3E%3Crect%20x%3D%22187%22%20y%3D%22146%22%20width%3D%2212%22%20height%3D%2214%22/%3E%3Crect%20x%3D%22209%22%20y%3D%22120%22%20width%3D%2212%22%20height%3D%2214%22/%3E%3Crect%20x%3D%22209%22%20y%3D%22146%22%20width%3D%2212%22%20height%3D%2214%22/%3E%3Crect%20x%3D%22128%22%20y%3D%22160%22%20width%3D%2224%22%20height%3D%2230%22/%3E%3C/g%3E%3C/svg%3E", "chapel": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20400%20210%22%3E%3Cg%20fill%3D%22none%22%20stroke%3D%22%237a8696%22%20stroke-width%3D%222%22%20stroke-linejoin%3D%22round%22%20stroke-linecap%3D%22round%22%3E%3Cpath%20d%3D%22M0%20190%20H400%22/%3E%3Crect%20x%3D%22120%22%20y%3D%22100%22%20width%3D%22160%22%20height%3D%2290%22/%3E%3Cpath%20d%3D%22M110%20100%20L200%2050%20L290%20100%22/%3E%0A%3Cpath%20d%3D%22M200%2050%20V20%20M190%2030%20H210%22/%3E%3Ccircle%20cx%3D%22200%22%20cy%3D%2280%22%20r%3D%2210%22/%3E%3Cpath%20d%3D%22M188%20190%20v-30%20a12%2012%200%200%201%2024%200%20v30%22/%3E%0A%3Cpath%20d%3D%22M135%20175%20v-35%20a8%208%200%200%201%2016%200%20v35%20Z%22/%3E%3Cpath%20d%3D%22M160%20175%20v-35%20a8%208%200%200%201%2016%200%20v35%20Z%22/%3E%3Cpath%20d%3D%22M224%20175%20v-35%20a8%208%200%200%201%2016%200%20v35%20Z%22/%3E%3Cpath%20d%3D%22M249%20175%20v-35%20a8%208%200%200%201%2016%200%20v35%20Z%22/%3E%3Crect%20x%3D%2240%22%20y%3D%22130%22%20width%3D%2280%22%20height%3D%2260%22/%3E%3Crect%20x%3D%22280%22%20y%3D%22130%22%20width%3D%2280%22%20height%3D%2260%22/%3E%0A%3Crect%20x%3D%2252%22%20y%3D%22142%22%20width%3D%2210%22%20height%3D%2212%22/%3E%3Crect%20x%3D%2252%22%20y%3D%22164%22%20width%3D%2210%22%20height%3D%2212%22/%3E%3Crect%20x%3D%2274%22%20y%3D%22142%22%20width%3D%2210%22%20height%3D%2212%22/%3E%3Crect%20x%3D%2274%22%20y%3D%22164%22%20width%3D%2210%22%20height%3D%2212%22/%3E%3Crect%20x%3D%2296%22%20y%3D%22142%22%20width%3D%2210%22%20height%3D%2212%22/%3E%3Crect%20x%3D%2296%22%20y%3D%22164%22%20width%3D%2210%22%20height%3D%2212%22/%3E%3Crect%20x%3D%22292%22%20y%3D%22142%22%20width%3D%2210%22%20height%3D%2212%22/%3E%3Crect%20x%3D%22292%22%20y%3D%22164%22%20width%3D%2210%22%20height%3D%2212%22/%3E%3Crect%20x%3D%22314%22%20y%3D%22142%22%20width%3D%2210%22%20height%3D%2212%22/%3E%3Crect%20x%3D%22314%22%20y%3D%22164%22%20width%3D%2210%22%20height%3D%2212%22/%3E%3Crect%20x%3D%22336%22%20y%3D%22142%22%20width%3D%2210%22%20height%3D%2212%22/%3E%3Crect%20x%3D%22336%22%20y%3D%22164%22%20width%3D%2210%22%20height%3D%2212%22/%3E%3Cpath%20d%3D%22M20%20190%20v-14%22/%3E%3Ccircle%20cx%3D%2220%22%20cy%3D%22166%22%20r%3D%2212%22/%3E%3Cpath%20d%3D%22M380%20190%20v-14%22/%3E%3Ccircle%20cx%3D%22380%22%20cy%3D%22166%22%20r%3D%2212%22/%3E%3C/g%3E%3C/svg%3E"};
+const ART_OF={teidai:'clock',kanto:'clock',chiho:'clock',souke:'gothic',march:'gothic',kankan:'gothic',chuken:'gothic',ibaraki:'gothic',rikou:'modern',senmon:'modern',iryo:'medical',daigakkou:'academy',joshi:'chapel',kokusai:'chapel',national:'clock',public:'clock',private:'gothic'};
+function setArt(x){ const u=ART[ART_OF[x.cat]]; for(const id of ['front','back']) $(id).style.setProperty('--art', u?'url("'+u+'")':'none'); }
+const LS_KEY = "univ_fc_marks_v1";
+let marks = {};
+try { marks = JSON.parse(localStorage.getItem(LS_KEY) || "{}"); } catch(e){ marks = {}; }
+function saveMarks(){ try { localStorage.setItem(LS_KEY, JSON.stringify(marks)); } catch(e){} }
+
+const items = D.map((r,i)=>({id:i,name:r[0],cat:r[1],type:r[2],pref:r[3],feats:r[4],memo:r[5]}));
+let activeCats = new Set(Object.keys(CATS));
+let order = items.map(x=>x.id);
+let deck = []; let idx = 0;
+
+const $ = id => document.getElementById(id);
+function esc(s){ return s.replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c])); }
+
+function buildChips(){
+  const wrap = $("chips"); wrap.innerHTML="";
+  const all = document.createElement("button");
+  all.className="chip"; all.textContent="すべて"; all.setAttribute("aria-pressed", activeCats.size===Object.keys(CATS).length);
+  all.onclick=()=>{ activeCats = activeCats.size===Object.keys(CATS).length ? new Set() : new Set(Object.keys(CATS)); buildChips(); rebuild(); };
+  wrap.appendChild(all);
+  for(const [k,v] of Object.entries(CATS)){
+    const n = items.filter(x=>x.cat===k).length;
+    const b = document.createElement("button");
+    b.className="chip"; b.innerHTML = esc(v.label)+'<span class="n">'+n+'</span>';
+    b.setAttribute("aria-pressed", activeCats.has(k));
+    b.onclick=()=>{ activeCats.has(k)?activeCats.delete(k):activeCats.add(k); buildChips(); rebuild(); };
+    wrap.appendChild(b);
+  }
+}
+
+function rebuild(keepPos){
+  const q = $("q").value.trim().toLowerCase();
+  const f = $("filt").value;
+  deck = order.map(i=>items[i]).filter(x=>{
+    if(!activeCats.has(x.cat)) return false;
+    if(f==="unknown" && marks[x.id]!=="u") return false;
+    if(f==="unseen" && marks[x.id]) return false;
+    if(q){ const hay=(x.name+x.pref+x.type+x.feats.join("")+x.memo+CATS[x.cat].label).toLowerCase(); if(!hay.includes(q)) return false; }
+    return true;
+  });
+  if(!keepPos) idx = 0;
+  if(idx>=deck.length) idx = Math.max(0,deck.length-1);
+  render(); renderList();
+}
+
+function badge(x){ return ''; }
+function statusTag(x){ return marks[x.id]==="k"?'<span class="status k">✓ 覚えた</span>':marks[x.id]==="u"?'<span class="status u">● まだ</span>':''; }
+
+function render(){
+  const card=$("card"); card.classList.remove("flipped");
+  const known = items.filter(x=>activeCats.has(x.cat)&&marks[x.id]==="k").length;
+  const total = items.filter(x=>activeCats.has(x.cat)).length;
+  $("stat").textContent = "習得 "+known+"/"+total;
+  $("barfill").style.width = total? (known/total*100)+"%" : "0";
+  if(!deck.length){
+    $("pos").textContent="0 / 0";
+    $("front").innerHTML='<div class="empty" style="border:0">該当なし</div>';
+    $("back").innerHTML=""; return;
+  }
+  const x = deck[idx];
+  setArt(x);
+  $("pos").textContent = (idx+1)+" / "+deck.length;
+  const featList = '<ul>'+x.feats.map(f=>'<li>'+esc(f)+'</li>').join("")+'</ul>';
+  const memo = '<div class="memo">'+esc(x.memo)+'</div>';
+  if($("mode").value==="name"){
+    $("front").innerHTML = '<div>'+badge(x)+statusTag(x)+'</div><div class="uname">'+esc(x.name)+'</div><div class="meta">'+esc(x.type)+'｜'+esc(x.pref)+'</div>';
+    $("back").innerHTML = '<div>'+badge(x)+statusTag(x)+'</div><h2>'+esc(x.name)+hpLink(x.name)+'</h2>'+featList+cardNews(x.name)+infoBlock(x.name)+examBlock(x.name)+memo;
+  } else if($("mode").value==="type"){
+    const masked = x.feats.map(f=>maskName(f,x.name));
+    $("front").innerHTML = '<div>'+badge(x)+statusTag(x)+'</div><div class="qfront" style="width:100%"><ul>'+masked.map(f=>'<li>'+esc(f)+'</li>').join("")+'</ul><div class="meta">'+esc(x.type)+'｜'+esc(maskName(x.pref,x.name))+'</div>'+frontFacts(x)+hintHTML(x)+
+      '<form id="ansForm" class="ans" onclick="event.stopPropagation()"><div class="blank">（<input id="ans" type="text" autocomplete="off" aria-label="学校名">）<span>'+esc(suffixOf(x.name))+'</span></div><div class="ansbtns"><button class="btn big" type="submit">回答</button><button class="btn big" type="button" id="giveup">パス</button></div></form></div>';
+    $("back").innerHTML = '<div>'+badge(x)+statusTag(x)+'</div><div id="resultLine" class="judge" style="text-align:center"></div><div class="uname" style="text-align:center;margin-top:4px">'+esc(x.name)+'</div><div class="meta" style="text-align:center">'+esc(x.pref)+' '+hpLink(x.name)+'</div><div style="margin-top:14px">'+cardNews(x.name)+infoBlock(x.name)+examBlock(x.name)+memo+'</div>';
+    answered=false; wireHints(x);
+    $("ansForm").onsubmit=e=>{e.preventDefault(); judge($("ans").value);};
+    $("giveup").onclick=e=>{e.stopPropagation(); judge(null);};
+    setTimeout(()=>{ const a=$("ans"); if(a) a.focus({preventScroll:true}); },60);
+  } else {
+    const masked = x.feats.map(f=>maskName(f,x.name));
+    $("front").innerHTML = '<div>'+badge(x)+statusTag(x)+'</div><div class="qfront"><ul>'+masked.map(f=>'<li>'+esc(f)+'</li>').join("")+'</ul><div class="meta">'+esc(x.type)+'</div>'+frontFacts(x)+hintHTML(x)+'</div>';
+    $("back").innerHTML = '<div>'+badge(x)+statusTag(x)+'</div><div class="uname" style="text-align:center">'+esc(x.name)+'</div><div class="meta" style="text-align:center">'+esc(x.pref)+' '+hpLink(x.name)+'</div><div style="margin-top:14px">'+cardNews(x.name)+infoBlock(x.name)+examBlock(x.name)+memo+'</div>';
+    wireHints(x);
+  }
+}
+// ===== 入力問題の判定 =====
+let answered=false, score={ok:0,ng:0};
+const ALIASES = {
+  "東京大学":["東大"],"京都大学":["京大"],"大阪大学":["阪大"],"東北大学":["東北大"],"名古屋大学":["名大"],"九州大学":["九大"],"北海道大学":["北大"],"一橋大学":["一橋"],"東京科学大学":["科学大"],"神戸大学":["神大"],
+  "筑波大学":["筑波"],"茨城大学":["茨大"],"千葉大学":["千葉大"],"埼玉大学":["埼大"],"横浜国立大学":["横国","横浜国大"],"東京外国語大学":["東京外大","外大","東外大"],"お茶の水女子大学":["お茶大","お茶の水"],"東京学芸大学":["学芸大"],"東京農工大学":["農工大"],"電気通信大学":["電通大"],"東京都立大学":["都立大"],"横浜市立大学":["横市","横浜市大"],"東京藝術大学":["東京芸術大学","芸大","藝大","東京芸大"],"大阪公立大学":["大阪公大","公大"],"国際教養大学":["AIU"],"長岡技術科学大学":["長岡技大","長岡技科大"],"豊橋技術科学大学":["豊橋技大","豊橋技科大"],"奈良女子大学":["奈良女"],
+  "早稲田大学":["早稲田","早大"],"慶應義塾大学":["慶應","慶応","慶応義塾大学","慶大"],"上智大学":["上智"],"東京理科大学":["理科大"],"国際基督教大学（ICU）":["ICU","国際基督教大学"],"学習院大学":["学習院"],"明治大学":["明大"],"青山学院大学":["青学","青山学院"],"立教大学":["立教"],"中央大学":["中大"],"法政大学":["法政"],
+  "同志社大学":["同志社"],"立命館大学":["立命館"],"関西学院大学":["関学"],"関西大学":["関大"],"明治学院大学":["明学"],"獨協大学":["独協大学","獨協","独協"],"國學院大學":["国学院大学","國學院","国学院"],"日本大学":["日大"],"駒澤大学":["駒沢大学","駒大"],"芝浦工業大学":["芝浦工大","芝浦"],"東京都市大学":["都市大"],"東京電機大学":["電機大","東京電機"],"東京農業大学":["農大","東京農大"],
+  "自治医科大学":["自治医大"],"国際医療福祉大学":["国際医療福祉"],"順天堂大学":["順天堂"],"東京慈恵会医科大学":["慈恵","慈恵医大"],"日本医科大学":["日医"],"獨協医科大学":["独協医科大学","獨協医大","独協医大"],"津田塾大学":["津田塾"],"東京女子大学":["東女"],"日本女子大学":["日本女子大","日女"],"聖心女子大学":["聖心"],
+  "立命館アジア太平洋大学（APU）":["APU","立命館アジア太平洋大学"],"関西外国語大学":["関西外大"],"神田外語大学":["神田外語"],"茨城キリスト教大学":["茨キリ"],"流通経済大学":["流経","流経大"],
+  "防衛大学校":["防大"],"防衛医科大学校":["防衛医大","防医大"],"海上保安大学校":["海保大"],"職業能力開発総合大学校":["職業大"],"情報経営イノベーション専門職大学（iU）":["iU","情報経営イノベーション専門職大学"]
+};
+function nz(s){
+  return (s||"").normalize("NFKC").toLowerCase()
+    .replace(/[\s　・･]/g,"").replace(/[（(].*?[)）]/g,"")
+    .replace(/慶応/g,"慶應").replace(/国学院/g,"國學院").replace(/學/g,"学").replace(/独協/g,"獨協")
+    .replace(/駒沢/g,"駒澤").replace(/芸術/g,"藝術").replace(/ヶ|ケ/g,"が");
+}
+function suffixOf(name){ const b=name.replace(/（.*?）/g,""); const m=b.match(/(専門職大学|大学校|大學|大学)$/); return m?m[1]:""; }
+function stripSuffix(s){ return s.replace(/(大学校|専門職大学|大学)$/,""); }
+// ===== 読み・ローマ字 =====
+const READ=/*READ*/{}/*END_READ*/;
+const EXTRA_ALIAS=/*ALIAS*/{}/*END_ALIAS*/;
+for(const [k,v] of Object.entries(EXTRA_ALIAS)){ ALIASES[k]=(ALIASES[k]||[]).concat(v); }
+function toHira(s){ return s.replace(/[ァ-ヶ]/g,c=>String.fromCharCode(c.charCodeAt(0)-0x60)); }
+const ROMA={"きゃ":"kya","きゅ":"kyu","きょ":"kyo","しゃ":"sha","しゅ":"shu","しょ":"sho","ちゃ":"cha","ちゅ":"chu","ちょ":"cho","にゃ":"nya","にゅ":"nyu","にょ":"nyo","ひゃ":"hya","ひゅ":"hyu","ひょ":"hyo","みゃ":"mya","みゅ":"myu","みょ":"myo","りゃ":"rya","りゅ":"ryu","りょ":"ryo","ぎゃ":"gya","ぎゅ":"gyu","ぎょ":"gyo","じゃ":"ja","じゅ":"ju","じょ":"jo","びゃ":"bya","びゅ":"byu","びょ":"byo","ぴゃ":"pya","ぴゅ":"pyu","ぴょ":"pyo","ふぁ":"fa","てぃ":"ti","でぃ":"di",
+"あ":"a","い":"i","う":"u","え":"e","お":"o","か":"ka","き":"ki","く":"ku","け":"ke","こ":"ko","さ":"sa","し":"shi","す":"su","せ":"se","そ":"so","た":"ta","ち":"chi","つ":"tsu","て":"te","と":"to","な":"na","に":"ni","ぬ":"nu","ね":"ne","の":"no","は":"ha","ひ":"hi","ふ":"fu","へ":"he","ほ":"ho","ま":"ma","み":"mi","む":"mu","め":"me","も":"mo","や":"ya","ゆ":"yu","よ":"yo","ら":"ra","り":"ri","る":"ru","れ":"re","ろ":"ro","わ":"wa","を":"o","ん":"n","が":"ga","ぎ":"gi","ぐ":"gu","げ":"ge","ご":"go","ざ":"za","じ":"ji","ず":"zu","ぜ":"ze","ぞ":"zo","だ":"da","ぢ":"ji","づ":"zu","で":"de","ど":"do","ば":"ba","び":"bi","ぶ":"bu","べ":"be","ぼ":"bo","ぱ":"pa","ぴ":"pi","ぷ":"pu","ぺ":"pe","ぽ":"po","ぁ":"a","ぃ":"i","ぅ":"u","ぇ":"e","ぉ":"o","ー":""};
+function hira2roma(h){ let r="",i=0; while(i<h.length){ if(h[i]==="っ"){ const nx=ROMA[h.substr(i+1,2)]||ROMA[h[i+1]]||""; r+=nx[0]||""; i++; continue; }
+  const two=ROMA[h.substr(i,2)]; if(two!==undefined && h.length>i+1){ r+=two; i+=2; continue; } r+=(ROMA[h[i]]??h[i]); i++; } return r; }
+function romaKey(r){ return r.toLowerCase().replace(/[^a-z]/g,"").replace(/(daigakkou|daigakko|senmonshokudaigaku|daigaku|university|univ)$/,"").replace(/ou/g,"o").replace(/oo/g,"o").replace(/uu/g,"u").replace(/nb/g,"mb").replace(/np/g,"mp").replace(/mb/g,"nb").replace(/mp/g,"np"); }
+function stripKanaSuffix(h){ return h.replace(/(せんもんしょくだいがく|だいがっこう|だいがく)$/,""); }
+function readingMatch(input,name){
+  const r=READ[name]; if(!r) return false;
+  const h=stripKanaSuffix(toHira(input.normalize("NFKC")).replace(/[\s　・･]/g,""));
+  if(h && h===r) return true;
+  if(/^[a-zA-Z\s.\-']+$/.test(input.trim())){ const k=romaKey(input); if(k && k===romaKey(hira2roma(r))) return true; }
+  return false;
+}
+
+function isCorrect(input,name){
+  if(readingMatch(input,name)) return true;
+  const a=nz(input); if(!a) return false;
+  const cands=[name,...(ALIASES[name]||[])].map(nz);
+  for(const c of cands){ if(a===c || stripSuffix(a)===stripSuffix(c)) return true; }
+  return false;
+}
+function judge(input){
+  if(answered||!deck.length) return; answered=true;
+  const x=deck[idx]; const ok = input!==null && isCorrect(input,x.name);
+  if(ok){ score.ok++; marks[x.id]="k"; } else { score.ng++; marks[x.id]="u"; }
+  saveMarks();
+  const yours = input===null?"パス":esc(input||"未入力");
+  $("resultLine").innerHTML = ok ? '<span class="good">⭕</span>' : '<span class="bad">❌</span><span class="yours">'+yours+'</span>';
+  $("card").classList.add("flipped");
+  updateScore(); updateStat();
+}
+function updateScore(){ const t=score.ok+score.ng; $("score").textContent = t? ("正答 "+score.ok+"/"+t) : ""; }
+function updateStat(){
+  const known = items.filter(x=>activeCats.has(x.cat)&&marks[x.id]==="k").length;
+  const total = items.filter(x=>activeCats.has(x.cat)).length;
+  $("stat").textContent = "習得 "+known+"/"+total;
+  $("barfill").style.width = total? (known/total*100)+"%" : "0";
+}
+
+
+
+function frontFacts(x){
+  const f=INFO[x.name]||{}; const m=t=>maskName(String(t),x.name); const rows=[];
+  if(f.faculties&&f.faculties.length) rows.push(["学部",'<span class="facs">'+f.faculties.map(t=>'<span>'+esc(m(t))+'</span>').join("")+'</span>']);
+  if(f.founded) rows.push(["創立",esc(m(f.founded))]);
+  if(f.students&&f.students.count) rows.push(["学生数","約"+Number(f.students.count).toLocaleString("ja-JP")+"人"]);
+  const d=f.difficulty; if(d&&(d.hensachi||d.kyotei)) rows.push(["難易度",[d.hensachi?"偏差値 "+esc(d.hensachi):"",d.kyotei?"共テ "+esc(d.kyotei):""].filter(Boolean).join("／")]);
+  const t=f.tuition; if(t&&t.amount!=null) rows.push(["初年度納付金",yen(t.amount)]);
+  const e=EXAM[x.name]; if(e&&e.general&&e.general.ratio!=null) rows.push(["一般選抜倍率",Number(e.general.ratio).toFixed(1)+"倍"]);
+  if(!rows.length) return "";
+  return '<table class="ff">'+rows.map(r=>'<tr><th>'+r[0]+'</th><td>'+r[1]+'</td></tr>').join("")+'</table>';
+}
+function hintList(x){
+  const f=INFO[x.name]||{}; const h=[];
+  const m=t=>maskName(String(t),x.name);
+  if(f.research&&f.research.length) h.push(["有名な研究分野",f.research.map(m).join("／")]);
+  if(f.notable&&f.notable.length) h.push(["著名な教授",f.notable.map(m).join("／")]);
+  return h;
+}
+function hintHTML(x){
+  const h=hintList(x); if(!h.length) return "";
+  return '<div class="hints" onclick="event.stopPropagation()"><div class="hlist"></div><button class="btn" type="button" data-n="0">ヒント（'+h[0][0]+'）</button></div>';
+}
+function wireHints(x){
+  const box=document.querySelector("#front .hints"); if(!box) return; const h=hintList(x);
+  const btn=box.querySelector("button"), list=box.querySelector(".hlist");
+  btn.onclick=e=>{ e.stopPropagation(); let n=+btn.dataset.n; if(n>=h.length) return;
+    list.insertAdjacentHTML("beforeend",'<div class="hint1"><b>'+h[n][0]+'</b>'+esc(h[n][1])+'</div>'); n++; btn.dataset.n=n;
+    if(n>=h.length) btn.remove(); else btn.textContent="ヒント（"+h[n][0]+"）"; };
+}
+
+function maskName(f,name){
+  const base = name.replace(/（.*?）/g,"");
+  const short = base.replace(/大学校?$|専門職大学$/,"");
+  let s = f.split(base).join("〇〇");
+  if(short.length>=2) s = s.split(short).join("〇〇");
+  return s;
+}
+
+function renderList(){
+  const lv=$("listview");
+  if(lv.style.display!=="block") return;
+  lv.innerHTML = '<table><thead><tr><th>学校名</th><th>所在地</th><th>特色</th><th>入試</th><th>メモ</th></tr></thead><tbody>'+
+    deck.map(x=>'<tr><td><b>'+esc(x.name)+'</b><br>'+hpLink(x.name)+'</td><td>'+esc(x.type)+'<br>'+esc(x.pref)+'</td><td>'+x.feats.map(esc).join('<br>')+'</td><td style="min-width:240px">'+examBlock(x.name,true)+'</td><td>'+esc(x.memo)+'</td></tr>').join("")+'</tbody></table>';
+}
+
+function flip(){ if(!deck.length) return; if($("mode").value==="type" && !answered) return; $("card").classList.toggle("flipped"); }
+function go(d){ if(!deck.length) return; if(d>0 && idx===deck.length-1){ shuffleOrder(); rebuild(); return; } idx=(idx+d+deck.length)%deck.length; render(); }
+function mark(v){ if(!deck.length) return; const x=deck[idx]; marks[x.id]=v; saveMarks();
+  const f=$("filt").value;
+  if((f==="unknown"&&v==="k")||f==="unseen"){ rebuild(true); } else { go(1); } }
+
+$("card").onclick=flip;
+$("next").onclick=()=>go(1); $("prev").onclick=()=>go(-1);
+$("markK").onclick=()=>mark("k"); $("markU").onclick=()=>mark("u");
+$("q").oninput=()=>rebuild(); $("filt").onchange=()=>rebuild(); $("mode").onchange=()=>render();
+function shuffleOrder(){ for(let i=order.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[order[i],order[j]]=[order[j],order[i]];} }
+$("toggleList").onclick=()=>{ const lv=$("listview"), cw=$("cardwrap"); const on = lv.style.display!=="block";
+  lv.style.display=on?"block":"none"; cw.style.display=on?"none":"block"; $("toggleList").textContent=on?"カード":"一覧"; renderList(); };
+document.addEventListener("keydown",e=>{
+  if($("v-cards").hidden) return;
+  if($("mode").value==="type" && answered && e.key==="Enter"){ e.preventDefault(); go(1); return; }
+  if(e.target.tagName==="INPUT"||e.target.tagName==="SELECT") return;
+  if(e.code==="Space"){e.preventDefault();flip();}
+  else if(e.key==="ArrowRight") go(1); else if(e.key==="ArrowLeft") go(-1);
+  else if(e.key==="k"||e.key==="K") mark("k"); else if(e.key==="u"||e.key==="U") mark("u");
+});
+let sx=null;
+$("card").addEventListener("touchstart",e=>{sx=e.touches[0].clientX},{passive:true});
+$("card").addEventListener("touchend",e=>{ if(sx===null) return; const dx=e.changedTouches[0].clientX-sx; if(Math.abs(dx)>50){ go(dx<0?1:-1); } sx=null; });
+
+
+// ===== 画面切替 =====
+function showView(){
+  const v=(location.hash||"#cards").slice(1);
+  const view=["cards","map","news","ai"].includes(v)?v:"cards";
+  for(const id of ["cards","map","news","ai"]) $("v-"+id).hidden = id!==view;
+  document.querySelectorAll(".tabs a").forEach(a=>a.classList.toggle("on",a.dataset.v===view));
+  if(view==="map") initMap();
+  if(view==="news") renderNews();
+}
+window.addEventListener("hashchange",showView);
+
+// ===== 地図 =====
+const MAP = /*MAP_DATA*/{}/*END_MAP*/;
+const HOME_VB=[170,0,490,450];
+let mapReady=false, curVB=HOME_VB.slice(), vbAnim=null;
+const SVGNS="http://www.w3.org/2000/svg";
+function initMap(){
+  if(mapReady) return; mapReady=true;
+  const g=$("prefs"); g.innerHTML=MAP.prefs.map(p=>'<path d="'+p.d+'"/>').join("");
+  const dg=$("dots");
+  for(const x of items){ const pt=MAP.dots[x.name]; if(!pt) continue;
+    const c=document.createElementNS(SVGNS,"circle"); c.setAttribute("cx",pt[0]); c.setAttribute("cy",pt[1]); c.setAttribute("r",1.6); c.setAttribute("class","dot");
+    const t=document.createElementNS(SVGNS,"title"); t.textContent=x.name; c.appendChild(t);
+    c.addEventListener("click",()=>selectUniv(x.name)); dg.appendChild(c); }
+  requestAnimationFrame(()=>scaleMarks());
+}
+function setVB(target){
+  cancelAnimationFrame(vbAnim); const from=curVB.slice(); const t0=performance.now(), dur=450;
+  const step=now=>{ const k=Math.min(1,(now-t0)/dur), e=1-Math.pow(1-k,3);
+    curVB=from.map((v,i)=>v+(target[i]-v)*e); $("jmap").setAttribute("viewBox",curVB.join(" ")); scaleMarks();
+    if(k<1) vbAnim=requestAnimationFrame(step); };
+  vbAnim=requestAnimationFrame(step);
+}
+const PRIO={teidai:0,kanto:1,souke:2,march:3,chiho:4,kankan:5,chuken:6,iryo:7,rikou:8,joshi:9,kokusai:10,ibaraki:1,daigakkou:11,senmon:12,national:13,public:14,private:15};
+function shortName(n){ return n.replace(/（.*?）/g,""); }
+function scaleMarks(){
+  const k=curVB[2]/HOME_VB[2];
+  document.querySelectorAll("#jmap .dot").forEach(c=>c.setAttribute("r",(2.2*k).toFixed(3)));
+  document.querySelectorAll("#jmap .hl,#jmap .pulse").forEach(c=>c.setAttribute("r",(3.4*k).toFixed(3)));
+  const l=document.querySelector("#jmap .lbl"); if(l){ l.setAttribute("font-size",(9*k).toFixed(3)); const c=document.querySelector("#jmap .hl"); l.setAttribute("x",(+c.getAttribute("cx")+5*k).toFixed(2)); l.setAttribute("y",(+c.getAttribute("cy")+3*k).toFixed(2)); }
+  placeLabels();
+}
+// 重ならない範囲で大学名を表示（優先度順に配置）
+function placeLabels(){
+  const g=$("labels"); if(!g) return; g.innerHTML="";
+  const svg=$("jmap"); const W=svg.clientWidth||800; const pxPerUnit=W/curVB[2];
+  const fs=11/pxPerUnit; const boxes=[];
+  const sel=$("mq").value;
+  const order=items.filter(x=>MAP.dots[x.name] && x.name!==sel).sort((a,b)=>(PRIO[a.cat]??20)-(PRIO[b.cat]??20));
+  const [vx,vy,vw,vh]=curVB;
+  for(const x of order){
+    const [cx,cy]=MAP.dots[x.name];
+    if(cx<vx||cx>vx+vw||cy<vy||cy>vy+vh) continue;
+    const t=shortName(x.name); const w=t.length*fs*1.0, h=fs*1.2;
+    const bx=cx+3*curVB[2]/HOME_VB[2], by=cy-h/2;
+    const hit=boxes.some(b=>!(bx+w<b[0]||bx>b[0]+b[2]||by+h<b[1]||by>b[1]+b[3]));
+    if(hit) continue;
+    boxes.push([bx,by,w,h]);
+    const el=document.createElementNS(SVGNS,"text"); el.setAttribute("x",bx.toFixed(2)); el.setAttribute("y",(cy+fs*0.38).toFixed(2));
+    el.setAttribute("font-size",fs.toFixed(3)); el.setAttribute("class","ulbl"); el.textContent=t;
+    el.addEventListener("click",()=>selectUniv(x.name)); g.appendChild(el);
+  }
+}
+// ===== パン・ズーム =====
+function clampVB(vb){ const minW=20, maxW=900; let [x,y,w,h]=vb; const r=HOME_VB[3]/HOME_VB[2];
+  w=Math.max(minW,Math.min(maxW,w)); h=w*r; x=Math.max(-100,Math.min(900-w,x)); y=Math.max(-100,Math.min(700-h,y)); return [x,y,w,h]; }
+function applyVB(vb){ cancelAnimationFrame(vbAnim); curVB=clampVB(vb); $("jmap").setAttribute("viewBox",curVB.join(" ")); scaleMarks(); }
+function svgPoint(evt){ const r=$("jmap").getBoundingClientRect(); return [curVB[0]+(evt.clientX-r.left)/r.width*curVB[2], curVB[1]+(evt.clientY-r.top)/r.height*curVB[3]]; }
+function zoomAt(px,py,f){ const [x,y,w,h]=curVB; const nw=w*f, nh=h*f; applyVB([px-(px-x)*f, py-(py-y)*f, nw, nh]); }
+(function initPanZoom(){
+  const svg=$("jmap"); const ptrs=new Map(); let last=null, pinch=null, moved=false;
+  svg.addEventListener("wheel",e=>{ e.preventDefault(); const [px,py]=svgPoint(e); zoomAt(px,py,Math.exp(e.deltaY*0.0015)); },{passive:false});
+  svg.addEventListener("pointerdown",e=>{ ptrs.set(e.pointerId,e); moved=false; if(ptrs.size===1){ last=[e.clientX,e.clientY]; } else if(ptrs.size===2){ const [a,b]=[...ptrs.values()]; pinch={d:Math.hypot(a.clientX-b.clientX,a.clientY-b.clientY)}; } });
+  svg.addEventListener("pointermove",e=>{ if(!ptrs.has(e.pointerId)) return; ptrs.set(e.pointerId,e);
+    const r=svg.getBoundingClientRect();
+    if(ptrs.size===1 && last){ const dx=e.clientX-last[0], dy=e.clientY-last[1]; if(Math.abs(dx)+Math.abs(dy)>3){ moved=true; svg.classList.add("drag"); if(!svg.hasPointerCapture(e.pointerId)) svg.setPointerCapture(e.pointerId); }
+      if(moved){ applyVB([curVB[0]-dx/r.width*curVB[2], curVB[1]-dy/r.height*curVB[3], curVB[2], curVB[3]]); last=[e.clientX,e.clientY]; } }
+    else if(ptrs.size===2 && pinch){ const [a,b]=[...ptrs.values()]; const d=Math.hypot(a.clientX-b.clientX,a.clientY-b.clientY); const mid={clientX:(a.clientX+b.clientX)/2,clientY:(a.clientY+b.clientY)/2}; const [px,py]=svgPoint(mid); zoomAt(px,py,pinch.d/d); pinch.d=d; moved=true; } });
+  const up=e=>{ ptrs.delete(e.pointerId); if(ptrs.size<2) pinch=null; if(!ptrs.size){ last=null; svg.classList.remove("drag"); } };
+  svg.addEventListener("pointerup",up); svg.addEventListener("pointercancel",up);
+  svg.addEventListener("click",e=>{ if(moved){ e.stopPropagation(); e.preventDefault(); moved=false; } },true);
+  $("zin").onclick=()=>zoomAt(curVB[0]+curVB[2]/2,curVB[1]+curVB[3]/2,0.6);
+  $("zout").onclick=()=>zoomAt(curVB[0]+curVB[2]/2,curVB[1]+curVB[3]/2,1/0.6);
+  window.addEventListener("resize",()=>{ if(!$("v-map").hidden) placeLabels(); });
+})();
+function findUniv(q){
+  if(!q) return null; const a=nz(q);
+  return items.find(x=>nz(x.name)===a) || items.find(x=>isCorrect(q,x.name)) || items.find(x=>nz(x.name).includes(a)) || null;
+}
+function selectUniv(name){
+  const x=items.find(i=>i.name===name); const pt=MAP.dots[name]; if(!x||!pt) return;
+  $("mq").value=name;
+  const hl=$("hl"); hl.innerHTML="";
+  const ring=document.createElementNS(SVGNS,"circle"); ring.setAttribute("cx",pt[0]); ring.setAttribute("cy",pt[1]); ring.setAttribute("r",2.4); ring.setAttribute("class","pulse"); ring.setAttribute("stroke-width",.8);
+  const dot=document.createElementNS(SVGNS,"circle"); dot.setAttribute("cx",pt[0]); dot.setAttribute("cy",pt[1]); dot.setAttribute("r",2.4); dot.setAttribute("class","hl"); dot.setAttribute("stroke-width",.6);
+  const lb=document.createElementNS(SVGNS,"text"); lb.setAttribute("x",pt[0]+4); lb.setAttribute("y",pt[1]+1.8); lb.setAttribute("class","lbl"); lb.textContent=x.name;
+  hl.append(ring,dot,lb); scaleMarks();
+  setVB([pt[0]-60,pt[1]-45,120,90]);
+  const f=INFO[name]||{};
+  $("mpanel").innerHTML='<div class="box"><h3>'+esc(x.name)+'</h3><div class="meta">'+esc(x.type)+'｜'+esc(x.pref)+'</div>'+(f.access?'<div style="font-size:13px;margin-top:6px">'+esc(f.access)+'</div>':'')+'<div style="margin-top:8px;display:flex;gap:10px;align-items:center"><button class="btn" id="tocard">カードを見る</button>'+hpLink(x.name)+'</div></div>';
+  $("tocard").onclick=()=>openCard(x.id);
+}
+function openCard(id){
+  $("q").value=""; $("filt").value="all"; $("mode").value="name"; rebuild();
+  const i=deck.findIndex(d=>d.id===id); if(i>=0){ idx=i; render(); }
+  location.hash="#cards";
+}
+$("mq").addEventListener("change",()=>{ const x=findUniv($("mq").value); if(x) selectUniv(x.name); });
+$("mq").addEventListener("keydown",e=>{ if(e.key==="Enter"){ const x=findUniv($("mq").value); if(x) selectUniv(x.name); } });
+$("mreset").onclick=()=>{ $("hl").innerHTML=""; $("mpanel").innerHTML=""; $("mq").value=""; setVB(HOME_VB); };
+window.addEventListener("hashchange",()=>{ if(location.hash==="#map") requestAnimationFrame(()=>scaleMarks()); });
+$("unames").innerHTML=items.map(x=>'<option value="'+esc(x.name)+'">').join("");
+
+// ===== 時事ニュース（db） =====
+let NEWS=[], newsState="loading", db=null;
+function newsFor(name){ return NEWS.filter(n=>n.univ===name).sort((a,b)=>(b.important-a.important)||(b.date||"").localeCompare(a.date||"")).slice(0,3); }
+function cardNews(name){
+  const ns=newsFor(name); if(!ns.length) return "";
+  return '<div class="cnews"><div class="h">時事ニュース</div><ul class="mini">'+ns.map(n=>'<li>'+(n.important?'★ ':'')+'<a href="'+esc(n.url||"#")+'" target="_blank" rel="noopener" onclick="event.stopPropagation()">'+esc(n.title||"")+'</a> <span class="sub2">'+esc(n.source||"")+' '+esc(n.date||"")+'</span></li>').join("")+'</ul></div>';
+}
+function renderNews(){
+  const el=$("nlist"); if(!el) return;
+  if(newsState==="loading"){ el.innerHTML='<div class="empty">読み込み中…</div>'; return; }
+  if(newsState==="off"){ el.innerHTML='<div class="empty">ニュースを読み込めませんでした。</div>'; return; }
+  const q=$("nq").value.trim(); const u=q?findUniv(q):null; const imp=$("nf").value==="imp";
+  const list=NEWS.filter(n=>(!u||n.univ===u.name)&&(!q||u||(n.univ+n.title).includes(q))&&(!imp||n.important)).sort((a,b)=>(b.date||"").localeCompare(a.date||""));
+  if(!list.length){ el.innerHTML='<div class="empty">該当なし</div>'; return; }
+  el.innerHTML=list.map(n=>'<div class="nitem"><div class="nh"><button class="star'+(n.important?' on':'')+'" data-id="'+esc(n.id)+'" title="重要">'+(n.important?'★':'☆')+'</button><span class="nu">'+esc(n.univ||"")+'</span><span>'+esc(n.date||"")+'</span><span>'+esc(n.source||"")+'</span></div><a class="nt" href="'+esc(n.url||"#")+'" target="_blank" rel="noopener">'+esc(n.title||"")+'</a>'+(n.summary?'<div class="ns">'+esc(n.summary)+'</div>':'')+'</div>').join("");
+  el.querySelectorAll(".star").forEach(b=>b.onclick=async()=>{
+    if(!db) return; const n=NEWS.find(x=>x.id===b.dataset.id); if(!n) return;
+    try{ await db.doc("news/"+n.id).update({important:!n.important}); }catch(e){ b.title="変更する権限がありません"; }
+  });
+}
+$("nq").addEventListener("input",renderNews); $("nf").addEventListener("change",renderNews);
+(async()=>{
+  const timer=setTimeout(()=>{ if(newsState==="loading"){ newsState="off"; renderNews(); } },10000);
+  try{
+    db = (window.claude && claude.use) ? await claude.use("db") : null;
+    if(!db){ clearTimeout(timer); newsState="off"; renderNews(); return; }
+    db.collection("news").orderBy("date","desc").limit(500).onSnapshot(snap=>{
+      clearTimeout(timer);
+      const docs = snap.docs || snap;
+      NEWS = docs.map(d=>{ const data = typeof d.data==="function" ? d.data() : (d.data||d); return Object.assign({id:d.id}, data); });
+      newsState="ok"; renderNews(); if(!$("v-cards").hidden) render();
+    }, err=>{ clearTimeout(timer); newsState="off"; renderNews(); });
+  }catch(e){ clearTimeout(timer); newsState="off"; renderNews(); }
+})();
+
+// ===== AIおすすめ =====
+const REGION={"北海道・東北":["北海道","青森","岩手","宮城","秋田","山形","福島"],"関東":["茨城","栃木","群馬","埼玉","千葉","東京","神奈川"],"中部":["新潟","富山","石川","福井","山梨","長野","岐阜","静岡","愛知"],"近畿":["三重","滋賀","京都","大阪","兵庫","奈良","和歌山"],"中国・四国":["鳥取","島根","岡山","広島","山口","徳島","香川","愛媛","高知"],"九州・沖縄":["福岡","佐賀","長崎","熊本","大分","宮崎","鹿児島","沖縄"]};
+function regionOf(pref){ for(const [r,ps] of Object.entries(REGION)) if(ps.some(p=>pref.startsWith(p))) return r; return ""; }
+function typeKey(x){ if(x.cat==="daigakkou") return "dai"; return /国立|公立/.test(x.type)?"pub":"pri"; }
+function profile(x){
+  const f=INFO[x.name]||{}, e=EXAM[x.name]||{};
+  const parts=[x.name+"｜"+x.type+"｜"+x.pref, "特色:"+x.feats.join(" / ")];
+  if(f.faculties&&f.faculties.length) parts.push("学部:"+f.faculties.join("・"));
+  if(f.research&&f.research.length) parts.push("研究:"+f.research.join("・"));
+  if(f.licenses&&f.licenses.length) parts.push("資格:"+f.licenses.join("・"));
+  if(f.careers) parts.push("進路:"+f.careers);
+  const d=f.difficulty; if(d&&(d.hensachi||d.kyotei)) parts.push("難易度:"+[d.hensachi&&("偏差値"+d.hensachi),d.kyotei&&("共テ"+d.kyotei)].filter(Boolean).join(" "));
+  if(f.tuition&&f.tuition.amount!=null) parts.push("初年度納付金:"+f.tuition.amount+"円");
+  if(e.general&&e.general.ratio!=null) parts.push("一般倍率:"+e.general.ratio);
+  parts.push("担任メモ:"+x.memo);
+  return parts.join("｜");
+}
+function grams(t){ const s=new Set(); const c=t.replace(/[\s、。・,./／()（）「」]/g,""); for(let i=0;i<c.length-1;i++) s.add(c.substr(i,2)); return s; }
+function prefilter(q,region,type,limit){
+  const g=grams(q);
+  return items.filter(x=>(!region||regionOf(x.pref)===region||x.cat==="daigakkou"&&!type)&&(!type||typeKey(x)===type)&&x.name!=="電動モビリティシステム専門職大学")
+    .map(x=>{ const t=profile(x); let sc=0; for(const k of g) if(t.includes(k)) sc++; return {x,t,sc}; })
+    .sort((a,b)=>b.sc-a.sc).slice(0,limit);
+}
+let aiCtl=null, sampleFn=null;
+(async()=>{ try{ sampleFn = (window.claude&&claude.use) ? await claude.use("sample") : null; }catch(e){ sampleFn=null; }
+  if(!sampleFn){ $("ai-status").textContent="この画面でAIおすすめは使えません（Claudeの公開ページで開くと使えます）。"; $("ai-go").disabled=true; } })();
+$("ai-stop").onclick=()=>aiCtl&&aiCtl.abort();
+$("ai-go").onclick=async()=>{
+  if(!sampleFn) return;
+  const job=$("ai-job").value.trim(), study=$("ai-study").value.trim();
+  if(!job&&!study){ $("ai-status").textContent="職業か学びたい学問のどちらかを入力してください。"; return; }
+  const region=$("ai-region").value, type=$("ai-type").value;
+  const q=[job,study,$("ai-other").value].join(" ");
+  const cands=prefilter(q,region,type,90);
+  if(!cands.length){ $("ai-status").textContent="条件に合う学校がありません。"; return; }
+  const prompt=`あなたは日本の高校の進路指導を支える専門家です。以下の生徒の希望に合う進学先を、候補リストの中だけから最大8校選び、合う順に並べてください。
+候補リストにない学校は絶対に挙げないこと。候補の情報に書かれていない事実（偏差値・資格・就職先など）を作らないこと。不確かな点は caution に書くこと。
+生徒の希望:
+- 目指している職業: ${job||"未定"}
+- 学びたい学問・興味: ${study||"未定"}
+- 地域: ${region||"こだわらない"}
+- 設置区分: ${({pub:"国公立",pri:"私立",dai:"大学校"})[type]||"こだわらない"}
+- 学力の目安: ${$("ai-level").value||"不明"}
+- 学費の上限: ${$("ai-budget").value||"不明"}
+- その他: ${$("ai-other").value||"なし"}
+
+出力は次の形のJSON配列だけ:
+[{"name":"候補リストの学校名そのまま","reason":"この生徒に合う理由（2文以内）","points":["根拠となる学部・資格・進路など（候補情報から）", "..."],"caution":"注意点（学力・学費・距離・入試方式など、なければ空文字）"}]
+
+候補リスト（1行1校）:
+${cands.map(c=>c.t).join("\n")}`;
+  aiCtl=new AbortController(); $("ai-go").disabled=true; $("ai-stop").hidden=false; $("ai-out").innerHTML="";
+  $("ai-status").textContent=`${items.length}校から絞り込んだ${cands.length}校をAIが検討中…（30秒〜1分ほどかかります）`;
+  try{
+    const res=await sampleFn.json(prompt,{signal:aiCtl.signal,modelTier:"default"});
+    const list=(Array.isArray(res)?res:[]).filter(r=>r&&items.some(x=>x.name===r.name)).slice(0,8);
+    if(!list.length){ $("ai-status").textContent="おすすめを作れませんでした。条件を変えてもう一度お試しください。"; return; }
+    $("ai-status").textContent="AIの提案です。最終判断は募集要項と本人の意思で。";
+    $("ai-out").innerHTML=list.map((r,i)=>{ const x=items.find(y=>y.name===r.name);
+      return '<div class="airec"><h3><span class="rk">#'+(i+1)+'</span>'+esc(x.name)+'<span class="sub2">'+esc(x.type)+'｜'+esc(x.pref)+'</span></h3><div class="why">'+esc(String(r.reason||""))+'</div>'+
+      (Array.isArray(r.points)&&r.points.length?'<ul class="pts">'+r.points.slice(0,4).map(p=>'<li>'+esc(String(p))+'</li>').join("")+'</ul>':'')+
+      (r.caution?'<div class="caut">注意：'+esc(String(r.caution))+'</div>':'')+
+      '<div class="acts"><button class="btn" data-card="'+x.id+'">カードを見る</button><button class="btn" data-map="'+esc(x.name)+'">地図で見る</button>'+hpLink(x.name)+'</div></div>'; }).join("");
+    $("ai-out").querySelectorAll("[data-card]").forEach(b=>b.onclick=()=>openCard(+b.dataset.card));
+    $("ai-out").querySelectorAll("[data-map]").forEach(b=>b.onclick=()=>{ location.hash="#map"; setTimeout(()=>selectUniv(b.dataset.map),80); });
+  }catch(e){
+    const c=e&&e.code; $("ai-status").textContent = c==="cancelled"?"停止しました。": c==="not_granted"||c==="sampling_disabled"?"AIの利用が許可されていません。": c==="rate_limited"?"利用が集中しています。少し待ってからお試しください。":"うまく作れませんでした。もう一度お試しください。";
+  }finally{ $("ai-go").disabled=false; $("ai-stop").hidden=true; }
+};
+
+shuffleOrder(); rebuild(); showView();
+</script>
+</body>
+</html>
