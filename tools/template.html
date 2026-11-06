@@ -1043,7 +1043,8 @@ document.addEventListener("click",e=>{ const w=e.target.closest&&e.target.closes
 // ===== 市町村（拡大したときに境界線と名前を出す）=====
 let MUNI=null, muniLoading=false;
 // 市町村の境界・名前は、拡大したときに初めて読み込む
-function loadMuni(){ if(MUNI||muniLoading) return; muniLoading=true;
+const SHOW_MUNI=false;   // 市町村の境界・名前は表示しない（戻すなら true）
+function loadMuni(){ if(!SHOW_MUNI||MUNI||muniLoading) return; muniLoading=true;
   fetch("muni.json").then(r=>r.ok?r.json():null).then(d=>{ if(d){ MUNI=d; placeLabels(); } }).catch(()=>{}); }
 function placeCities(boxes, ppu, inView, outside){
   const g=$("mlabels"); g.innerHTML=""; const w=curVB[2];
@@ -1169,7 +1170,7 @@ function zoomAt(px,py,f){ const [x,y,w,h]=curVB; const nw=w*f, nh=h*f; applyVB([
   // 市町村名：マウスを重ねた位置にいちばん近い市町村（役所の位置）を表示。スマホは地図をタップ
   const tip=document.createElement("div"); tip.id="ctip"; tip.hidden=true; svg.parentElement.appendChild(tip);
   let tipTimer=0;
-  const showCity=(e,ms)=>{ if(!MUNI||curVB[2]>140){ tip.hidden=true; return; }
+  const showCity=(e,ms)=>{ if(!SHOW_MUNI||!MUNI||curVB[2]>140){ tip.hidden=true; return; }
     const [px,py]=svgPoint(e), r=svg.getBoundingClientRect(), ppu=((svg.getScreenCTM()||{}).a)||r.width/curVB[2], lim=(36/ppu)**2;
     let best=null, bd=lim; for(const l of MUNI.labels){ const dx=l[1]-px, dy=l[2]-py, d=dx*dx+dy*dy; if(d<bd){ bd=d; best=l; } }
     if(!best){ tip.hidden=true; return; }
