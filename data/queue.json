@@ -1,55 +1,6 @@
 {
  "add": [
   {
-   "name": "佐賀大学",
-   "type": "国立",
-   "pref": "佐賀県",
-   "hp": "http://www.saga-u.ac.jp/",
-   "cat": "national"
-  },
-  {
-   "name": "大分大学",
-   "type": "国立",
-   "pref": "大分県",
-   "hp": "http://www.oita-u.ac.jp/",
-   "cat": "national"
-  },
-  {
-   "name": "宮崎大学",
-   "type": "国立",
-   "pref": "宮崎県",
-   "hp": "http://www.miyazaki-u.ac.jp/",
-   "cat": "national"
-  },
-  {
-   "name": "琉球大学",
-   "type": "国立",
-   "pref": "沖縄県",
-   "hp": "http://www.u-ryukyu.ac.jp/",
-   "cat": "national"
-  },
-  {
-   "name": "福岡教育大学",
-   "type": "国立",
-   "pref": "福岡県",
-   "hp": "http://www.fukuoka-edu.ac.jp/",
-   "cat": "national"
-  },
-  {
-   "name": "長崎大学",
-   "type": "国立",
-   "pref": "長崎県",
-   "hp": "http://www.nagasaki-u.ac.jp/",
-   "cat": "national"
-  },
-  {
-   "name": "鹿児島大学",
-   "type": "国立",
-   "pref": "鹿児島県",
-   "hp": "http://www.kagoshima-u.ac.jp/",
-   "cat": "national"
-  },
-  {
    "name": "鹿屋体育大学",
    "type": "国立",
    "pref": "鹿児島県",
@@ -4796,6 +4747,66 @@
   {
    "name": "宮城教育大学",
    "op": "enrich"
+  },
+  {
+   "name": "佐賀大学",
+   "op": "add"
+  },
+  {
+   "name": "大分大学",
+   "op": "add"
+  },
+  {
+   "name": "宮崎大学",
+   "op": "add"
+  },
+  {
+   "name": "琉球大学",
+   "op": "add"
+  },
+  {
+   "name": "福岡教育大学",
+   "op": "add"
+  },
+  {
+   "name": "長崎大学",
+   "op": "add"
+  },
+  {
+   "name": "鹿児島大学",
+   "op": "add"
+  },
+  {
+   "name": "電気通信大学",
+   "op": "enrich"
+  },
+  {
+   "name": "東京都立大学",
+   "op": "enrich"
+  },
+  {
+   "name": "横浜市立大学",
+   "op": "enrich"
+  },
+  {
+   "name": "宇都宮大学",
+   "op": "enrich"
+  },
+  {
+   "name": "群馬大学",
+   "op": "enrich"
+  },
+  {
+   "name": "高崎経済大学",
+   "op": "enrich"
+  },
+  {
+   "name": "東京海洋大学",
+   "op": "enrich"
+  },
+  {
+   "name": "東京藝術大学",
+   "op": "enrich"
   }
  ],
  "failed": [],
@@ -4815,62 +4826,6 @@
   "北海道教育大学": 1
  },
  "enrich": [
-  {
-   "name": "電気通信大学",
-   "keinet": "1115",
-   "need": [
-    "eng"
-   ]
-  },
-  {
-   "name": "東京都立大学",
-   "keinet": "1532",
-   "need": [
-    "eng"
-   ]
-  },
-  {
-   "name": "横浜市立大学",
-   "keinet": "1540",
-   "need": [
-    "eng"
-   ]
-  },
-  {
-   "name": "宇都宮大学",
-   "keinet": "1090",
-   "need": [
-    "eng"
-   ]
-  },
-  {
-   "name": "群馬大学",
-   "keinet": "1095",
-   "need": [
-    "eng"
-   ]
-  },
-  {
-   "name": "高崎経済大学",
-   "keinet": "1520",
-   "need": [
-    "eng"
-   ]
-  },
-  {
-   "name": "東京海洋大学",
-   "keinet": "1152",
-   "need": [
-    "eng"
-   ]
-  },
-  {
-   "name": "東京藝術大学",
-   "keinet": "1140",
-   "need": [
-    "eng"
-   ]
-  },
   {
    "name": "茨城県立医療大学",
    "keinet": "1519",
@@ -7623,6 +7578,171 @@
    "need": [
     "partners",
     "extra"
+   ]
+  },
+  {
+   "name": "佐賀大学",
+   "keinet": "1425",
+   "need": [
+    "kyotsu",
+    "methods"
+   ]
+  },
+  {
+   "name": "佐賀大学",
+   "keinet": "1425",
+   "need": [
+    "partners",
+    "extra"
+   ]
+  },
+  {
+   "name": "佐賀大学",
+   "keinet": "1425",
+   "need": [
+    "eng"
+   ]
+  },
+  {
+   "name": "大分大学",
+   "keinet": "1445",
+   "need": [
+    "kyotsu",
+    "methods",
+    "careers"
+   ]
+  },
+  {
+   "name": "大分大学",
+   "keinet": "1445",
+   "need": [
+    "partners",
+    "extra"
+   ]
+  },
+  {
+   "name": "大分大学",
+   "keinet": "1445",
+   "need": [
+    "eng"
+   ]
+  },
+  {
+   "name": "宮崎大学",
+   "keinet": "1455",
+   "need": [
+    "kyotsu",
+    "methods"
+   ]
+  },
+  {
+   "name": "宮崎大学",
+   "keinet": "1455",
+   "need": [
+    "partners",
+    "extra"
+   ]
+  },
+  {
+   "name": "宮崎大学",
+   "keinet": "1455",
+   "need": [
+    "eng"
+   ]
+  },
+  {
+   "name": "琉球大学",
+   "keinet": "1475",
+   "need": [
+    "kyotsu",
+    "methods"
+   ]
+  },
+  {
+   "name": "琉球大学",
+   "keinet": "1475",
+   "need": [
+    "partners",
+    "extra"
+   ]
+  },
+  {
+   "name": "琉球大学",
+   "keinet": "1475",
+   "need": [
+    "eng"
+   ]
+  },
+  {
+   "name": "福岡教育大学",
+   "keinet": "1420",
+   "need": [
+    "kyotsu",
+    "methods",
+    "careers"
+   ]
+  },
+  {
+   "name": "福岡教育大学",
+   "keinet": "1420",
+   "need": [
+    "partners",
+    "extra"
+   ]
+  },
+  {
+   "name": "福岡教育大学",
+   "keinet": "1420",
+   "need": [
+    "eng"
+   ]
+  },
+  {
+   "name": "長崎大学",
+   "keinet": "1435",
+   "need": [
+    "kyotsu",
+    "methods"
+   ]
+  },
+  {
+   "name": "長崎大学",
+   "keinet": "1435",
+   "need": [
+    "partners",
+    "extra"
+   ]
+  },
+  {
+   "name": "長崎大学",
+   "keinet": "1435",
+   "need": [
+    "eng"
+   ]
+  },
+  {
+   "name": "鹿児島大学",
+   "keinet": "1465",
+   "need": [
+    "kyotsu",
+    "methods",
+    "licenses",
+    "careers"
+   ]
+  },
+  {
+   "name": "鹿児島大学",
+   "keinet": "1465",
+   "need": [
+    "partners",
+    "extra"
+   ]
+  },
+  {
+   "name": "鹿児島大学",
+   "keinet": "1465",
+   "need": [
+    "eng"
    ]
   }
  ],

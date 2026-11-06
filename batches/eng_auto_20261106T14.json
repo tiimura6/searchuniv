@@ -1,0 +1,259 @@
+[
+ {
+  "name": "電気通信大学",
+  "info": {
+   "eng": {
+    "year": "2027年度入試",
+    "rows": [],
+    "summary": "記載なし（利用しないとは限らない）",
+    "note": "旺文社パスナビの英検等利用入試ページに掲載なし（情報理工学域）。最新の募集要項で確認"
+   },
+   "sources": [
+    "https://passnavi.obunsha.co.jp/univ/0320/eiken/"
+   ]
+  }
+ },
+ {
+  "name": "東京都立大学",
+  "info": {
+   "eng": {
+    "year": "2027年度入試",
+    "rows": [],
+    "summary": "記載なし（利用しないとは限らない）",
+    "note": "旺文社パスナビの英検等利用入試ページで各学部とも掲載なし。最新の募集要項で確認"
+   },
+   "sources": [
+    "https://passnavi.obunsha.co.jp/univ/1065/eiken/"
+   ]
+  }
+ },
+ {
+  "name": "横浜市立大学",
+  "info": {
+   "eng": {
+    "year": "2026年度入試（パスナビ掲載）",
+    "rows": [
+     {
+      "kubun": "総合型",
+      "name": "総合型選抜",
+      "use": "出願資格",
+      "level": "要件【A】英検準1級・IELTS 5.0／要件【B】英検2級・IELTS 4.5（級・スコアで加点あり）",
+      "grade": "2級",
+      "tests": "英検・IELTS",
+      "faculties": "国際教養学部・国際商学部・理学部",
+      "note": "要件の詳細は募集要項参照"
+     },
+     {
+      "kubun": "総合型",
+      "name": "総合型選抜（データサイエンス学部）",
+      "use": "出願資格",
+      "level": "英検2級・IELTS 4.5（加点あり）",
+      "grade": "2級",
+      "tests": "英検・IELTS",
+      "faculties": "データサイエンス学部",
+      "note": ""
+     },
+     {
+      "kubun": "総合型",
+      "name": "科学オリンピック特別",
+      "use": "出願資格",
+      "level": "英検2級・英検CSE 2200・IELTS 5.0など（その他要件あり）。英検準1級・IELTS 6.0で合計点に10点加点",
+      "grade": "2級",
+      "cse": 2200,
+      "tests": "英検・IELTS",
+      "faculties": "国際商学部・理学部・データサイエンス学部",
+      "note": "理学部は英検準1級・IELTS 5.0の要件もあり"
+     },
+     {
+      "kubun": "推薦",
+      "name": "特別公募制",
+      "use": "加点",
+      "level": "英検1級・IELTS 6.5で5.0点、英検準1級・IELTS 5.5で4.0点など（看護は英検2級・CSE 2200で2.5点まで）",
+      "grade": "準1級",
+      "tests": "英検・IELTS",
+      "faculties": "医学部（医学科・看護学科）",
+      "note": ""
+     }
+    ],
+    "summary": "国際教養・国際商・理・データサイエンスの総合型は英検2級程度が出願要件。医学部の推薦は資格の級に応じて加点。",
+    "note": "パスナビの表示は2026年度入試情報（昨年度）。TEAPは記載なし"
+   },
+   "sources": [
+    "https://passnavi.obunsha.co.jp/univ/1080/eiken/"
+   ]
+  }
+ },
+ {
+  "name": "宇都宮大学",
+  "info": {
+   "eng": {
+    "year": "2027年度入試",
+    "rows": [],
+    "summary": "記載なし（利用しないとは限らない）",
+    "note": "旺文社パスナビの英検等利用入試ページに掲載なし。最新の募集要項で確認"
+   },
+   "sources": [
+    "https://passnavi.obunsha.co.jp/univ/0180/eiken/"
+   ]
+  }
+ },
+ {
+  "name": "群馬大学",
+  "info": {
+   "eng": {
+    "year": "2027年度入試",
+    "rows": [
+     {
+      "kubun": "推薦",
+      "name": "学校推薦型Ⅰ・Ⅱ",
+      "use": "任意提出（参考）",
+      "level": "級・スコアの指定なし",
+      "tests": "英検・TEAP・IELTS",
+      "faculties": "共同教育学部・情報学部・医学部・理工学部",
+      "note": ""
+     },
+     {
+      "kubun": "推薦",
+      "name": "学校推薦型Ⅰ（GFL特別枠）",
+      "use": "出願資格",
+      "level": "英検2級",
+      "grade": "2級",
+      "tests": "英検など",
+      "faculties": "情報学部",
+      "note": "理工学部のGFL特別枠も外部試験を使うが、基準はパスナビの表で読み取れない"
+     }
+    ],
+    "summary": "外部試験の利用は学校推薦型のみ（参考資料）。情報学部のGFL特別枠は英検2級が出願要件。",
+    "note": "一般選抜・総合型での利用はパスナビに掲載なし"
+   },
+   "sources": [
+    "https://passnavi.obunsha.co.jp/univ/0190/eiken/"
+   ]
+  }
+ },
+ {
+  "name": "高崎経済大学",
+  "info": {
+   "eng": {
+    "year": "2026年度入試（パスナビ掲載）",
+    "rows": [
+     {
+      "kubun": "推薦",
+      "name": "英語重視推薦",
+      "use": "出願資格",
+      "level": "英検2級で出願可、英検準1級は50点加点",
+      "grade": "2級",
+      "tests": "英検",
+      "faculties": "経済学部（経済・経営・国際）",
+      "note": ""
+     },
+     {
+      "kubun": "推薦",
+      "name": "商業等推薦",
+      "use": "加点",
+      "level": "英検準1級20点／2級10点／準2級プラス7点／準2級5点",
+      "grade": "準2級",
+      "tests": "英検",
+      "faculties": "経済学部（経済・経営・国際）",
+      "note": ""
+     }
+    ],
+    "summary": "経済学部の推薦で英検を利用（英語重視推薦は2級が出願要件、商業等推薦は級に応じて加点）。",
+    "note": "地域政策学部はパスナビに掲載なし。表示は2026年度入試情報（昨年度）"
+   },
+   "sources": [
+    "https://passnavi.obunsha.co.jp/univ/1050/eiken/"
+   ]
+  }
+ },
+ {
+  "name": "東京海洋大学",
+  "info": {
+   "eng": {
+    "year": "2027年度入試（一般は2026年度の情報）",
+    "rows": [
+     {
+      "kubun": "一般",
+      "name": "前期日程・後期日程",
+      "use": "出願資格",
+      "level": "英検準2級・TEAP 160・IELTS 3.5",
+      "grade": "準2級",
+      "tests": "英検・TEAP・IELTS",
+      "faculties": "海洋生命科学部・海洋資源環境学部",
+      "note": "パスナビの一般選抜は2026年度（昨年度）の情報"
+     },
+     {
+      "kubun": "推薦",
+      "name": "推薦型A（一般）",
+      "use": "出願資格",
+      "level": "英検準2級・TEAP 160・IELTS 3.5",
+      "grade": "準2級",
+      "tests": "英検・TEAP・IELTS",
+      "faculties": "海洋生命科学部・海洋資源環境学部",
+      "note": ""
+     },
+     {
+      "kubun": "推薦",
+      "name": "推薦型B（専門学科・総合学科）",
+      "use": "出願資格",
+      "level": "英検3級・TEAP 135・IELTS 3.0（海洋生物資源学科は英検準2級）",
+      "grade": "3級",
+      "tests": "英検・TEAP・IELTS",
+      "faculties": "海洋生命科学部・海洋資源環境学部",
+      "note": ""
+     },
+     {
+      "kubun": "総合型",
+      "name": "総合型A・B",
+      "use": "出願資格",
+      "level": "Aは英検準2級・TEAP 160・IELTS 3.5、Bは英検3級・TEAP 135・IELTS 3.0",
+      "grade": "準2級",
+      "tests": "英検・TEAP・IELTS",
+      "faculties": "海洋生命科学部（海洋生物資源・海洋政策文化）",
+      "note": ""
+     },
+     {
+      "kubun": "総合型",
+      "name": "総合型A・B・D（海洋工学部）",
+      "use": "出願資格",
+      "level": "英検CSE 1400・TEAP 101・IELTS（CEFR B1相当）",
+      "cse": 1400,
+      "tests": "英検・TEAP・IELTS",
+      "faculties": "海洋工学部",
+      "note": ""
+     }
+    ],
+    "summary": "海洋生命科学部・海洋資源環境学部は一般選抜でも英検準2級相当が出願要件。海洋工学部の総合型は英検CSE1400相当が必要。",
+    "note": "利用方法はすべて出願資格（パスナビ）"
+   },
+   "sources": [
+    "https://passnavi.obunsha.co.jp/univ/0245/eiken/"
+   ]
+  }
+ },
+ {
+  "name": "東京藝術大学",
+  "info": {
+   "eng": {
+    "year": "2026年度入試（パスナビ掲載）",
+    "rows": [
+     {
+      "kubun": "一般",
+      "name": "前期日程（音楽学部）",
+      "use": "判定に利用",
+      "level": "英検準1級・IELTS 5.5",
+      "grade": "準1級",
+      "tests": "英検・IELTS",
+      "faculties": "音楽学部（作曲・声楽・器楽・指揮・邦楽）",
+      "note": "優遇対象は共通テストの英語（共テ外国語の受験は必須）。優遇の方法は募集要項で確認"
+     }
+    ],
+    "summary": "音楽学部の一般選抜で、英検準1級・IELTS 5.5以上を共テ英語の優遇に使う。美術学部は掲載なし。",
+    "note": "パスナビの表示は2026年度（昨年度）の情報"
+   }
+  },
+  "sources": [
+   "https://passnavi.obunsha.co.jp/univ/0270/eiken/"
+  ]
+ }
+]
