@@ -1,6 +1,9 @@
 {
  "add": [],
- "enrich": [
+ "done": [],
+ "failed": [],
+ "fail_count": {},
+ "enrich_inprogress_elsewhere": [
   "東京大学",
   "京都大学",
   "大阪大学",
@@ -114,7 +117,6 @@
   "東京保健医療専門職大学",
   "名古屋国際工科専門職大学"
  ],
- "done": [],
- "failed": [],
- "fail_count": {}
+ "enrich": [],
+ "complete": false
 }
