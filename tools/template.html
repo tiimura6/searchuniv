@@ -131,6 +131,7 @@ body.wide main,body.wide header{max-width:1320px}
 .pfeat{margin:8px 0;padding-left:1.2em;font-size:13.5px}
 #jmap .dot.off{display:none}
 #jmap.moving .ulbl,#jmap.moving .clus,#jmap.moving #mlabels{opacity:.35}
+.sdisc{margin:4px 2px 6px;font-size:12px;color:var(--ng);font-weight:600}
 #ctip{position:absolute;pointer-events:none;background:var(--panel);border:1px solid var(--line);border-radius:6px;padding:2px 7px;font-size:12px;color:var(--muted);white-space:nowrap;box-shadow:0 2px 6px rgba(0,0,0,.12);z-index:3}
 #ctip.cap{color:var(--ink);font-weight:700}
 .munip{fill:none;stroke:var(--muted);stroke-opacity:.45;stroke-width:.7px;vector-effect:non-scaling-stroke;pointer-events:none}
@@ -303,6 +304,7 @@ ul.mini li{font-size:12.5px;margin:2px 0}
   <div class="sgrid">
     <div class="sleft">
       <div class="sbar"><input type="search" id="mq" placeholder="大学名・学部・学科・学問（例：看護、心理、建築）・地域で検索" autocomplete="off"><button class="btn" id="mreset">全国</button></div>
+      <p class="sdisc">正確な情報は各大学HPを見てください。</p>
       <div class="sfilt">
         <select id="f-kyoka" aria-label="共通テスト科目数"><option value="">共テ教科数：すべて</option><option value="le3">3教科以下</option><option value="4-5">4〜5教科</option><option value="ge6">6教科以上</option><option value="none">共テ利用なし</option></select>
         <select id="f-kei" aria-label="学問の系統"><option value="">学問の系統：すべて</option></select><select id="f-meth" aria-label="入試方式"><option value="">入試方式：すべて</option><option value="kouki">後期日程あり</option><option value="nijiH">二次（個別）重視</option><option value="ktH">共テ重視</option><option value="suisen">公募推薦あり</option><option value="sk_nokt">推薦・総合型で共テ不要あり</option><option value="sogo">総合型あり</option><option value="ktriyo">共テ利用方式あり（私立）</option></select><select id="f-rl" aria-label="英語R:L比率"><option value="">英語R:L：すべて</option><option value="1:1">1:1（均等）</option><option value="r">リーディング重視（3:1・4:1など）</option><option value="other">その他の比率</option></select>
@@ -825,7 +827,7 @@ function placeCities(boxes, ppu, inView, outside){
 }
 function placeLabels(){
   const g=$("labels"); if(!g) return; g.innerHTML="";
-  const svg=$("jmap"); const W=svg.clientWidth||800; const ppu=W/curVB[2];
+  const svg=$("jmap"); const W=svg.clientWidth||800; const ctm=svg.getScreenCTM(); const ppu=(ctm&&ctm.a)||W/curVB[2];
   const fs=(innerWidth<600?16:19)/ppu, pad=2/ppu, k=curVB[2]/HOME_VB[2], r=2.2*k;
   const sel=$("mq").value; const [vx,vy,vw,vh]=curVB;
   const inView=([cx,cy])=>cx>=vx&&cx<=vx+vw&&cy>=vy&&cy<=vy+vh;
@@ -901,7 +903,7 @@ function placeLabels(){
 function clampVB(vb){ const minW=2.5, maxW=900; let [x,y,w,h]=vb; const r=HOME_VB[3]/HOME_VB[2];
   w=Math.max(minW,Math.min(maxW,w)); h=w*r; x=Math.max(-100,Math.min(900-w,x)); y=Math.max(-100,Math.min(700-h,y)); return [x,y,w,h]; }
 function applyVB(vb){ cancelAnimationFrame(vbAnim); curVB=clampVB(vb); $("jmap").setAttribute("viewBox",curVB.join(" ")); scaleMarks(); }
-function svgPoint(evt){ const r=$("jmap").getBoundingClientRect(); return [curVB[0]+(evt.clientX-r.left)/r.width*curVB[2], curVB[1]+(evt.clientY-r.top)/r.height*curVB[3]]; }
+function svgPoint(evt){ const svg=$("jmap"), m=svg.getScreenCTM(); if(m){ const p=svg.createSVGPoint(); p.x=evt.clientX; p.y=evt.clientY; const q=p.matrixTransform(m.inverse()); return [q.x,q.y]; } const r=svg.getBoundingClientRect(); return [curVB[0]+(evt.clientX-r.left)/r.width*curVB[2], curVB[1]+(evt.clientY-r.top)/r.height*curVB[3]]; }
 function zoomAt(px,py,f){ const [x,y,w,h]=curVB; const nw=w*f, nh=h*f; applyVB([px-(px-x)*f, py-(py-y)*f, nw, nh]); }
 (function initPanZoom(){
   const svg=$("jmap"); const ptrs=new Map(); let last=null, pinch=null, moved=false;
@@ -910,7 +912,7 @@ function zoomAt(px,py,f){ const [x,y,w,h]=curVB; const nw=w*f, nh=h*f; applyVB([
   svg.addEventListener("pointermove",e=>{ if(!ptrs.has(e.pointerId)) return; ptrs.set(e.pointerId,e);
     const r=svg.getBoundingClientRect();
     if(ptrs.size===1 && last){ const dx=e.clientX-last[0], dy=e.clientY-last[1]; if(Math.abs(dx)+Math.abs(dy)>3){ moved=true; svg.classList.add("drag"); if(!svg.hasPointerCapture(e.pointerId)) svg.setPointerCapture(e.pointerId); }
-      if(moved){ applyVB([curVB[0]-dx/r.width*curVB[2], curVB[1]-dy/r.height*curVB[3], curVB[2], curVB[3]]); last=[e.clientX,e.clientY]; } }
+      if(moved){ const kk=((svg.getScreenCTM()||{}).a)||r.width/curVB[2]; applyVB([curVB[0]-dx/kk, curVB[1]-dy/kk, curVB[2], curVB[3]]); last=[e.clientX,e.clientY]; } }
     else if(ptrs.size===2 && pinch){ const [a,b]=[...ptrs.values()]; const d=Math.hypot(a.clientX-b.clientX,a.clientY-b.clientY); const mid={clientX:(a.clientX+b.clientX)/2,clientY:(a.clientY+b.clientY)/2}; const [px,py]=svgPoint(mid); zoomAt(px,py,pinch.d/d); pinch.d=d; moved=true; } });
   const up=e=>{ ptrs.delete(e.pointerId); if(ptrs.size<2) pinch=null; if(!ptrs.size){ last=null; svg.classList.remove("drag"); } };
   svg.addEventListener("pointerup",up); svg.addEventListener("pointercancel",up);
@@ -919,7 +921,7 @@ function zoomAt(px,py,f){ const [x,y,w,h]=curVB; const nw=w*f, nh=h*f; applyVB([
   const tip=document.createElement("div"); tip.id="ctip"; tip.hidden=true; svg.parentElement.appendChild(tip);
   let tipTimer=0;
   const showCity=(e,ms)=>{ if(!MUNI||curVB[2]>140){ tip.hidden=true; return; }
-    const [px,py]=svgPoint(e), r=svg.getBoundingClientRect(), ppu=r.width/curVB[2], lim=(36/ppu)**2;
+    const [px,py]=svgPoint(e), r=svg.getBoundingClientRect(), ppu=((svg.getScreenCTM()||{}).a)||r.width/curVB[2], lim=(36/ppu)**2;
     let best=null, bd=lim; for(const l of MUNI.labels){ const dx=l[1]-px, dy=l[2]-py, d=dx*dx+dy*dy; if(d<bd){ bd=d; best=l; } }
     if(!best){ tip.hidden=true; return; }
     const pr=svg.parentElement.getBoundingClientRect();
