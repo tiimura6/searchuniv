@@ -1,0 +1,668 @@
+[
+ {
+  "name": "北見工業大学",
+  "info": {
+   "eng": {
+    "year": "2027年度入試",
+    "rows": [],
+    "summary": "確認した出典には英語外部試験の記載なし（利用しないとは限らない。募集要項で確認）",
+    "note": "一般選抜での利用有無はKei-Netで未確認のため「利用しない」とは断定していない。"
+   }
+  },
+  "sources": [
+   "https://search.keinet.ne.jp/1020/recommend/exam_rec",
+   "https://search.keinet.ne.jp/1020/recommend/exam_ao"
+  ]
+ },
+ {
+  "name": "宮城教育大学",
+  "info": {
+   "eng": {
+    "year": "2027年度入試",
+    "rows": [],
+    "summary": "確認した出典には英語外部試験の記載なし（利用しないとは限らない。募集要項で確認）",
+    "note": "学校推薦型選抜の「取得資格」欄は「有」の表示のみで資格名・基準は不明（要項で要確認）。一般選抜での利用有無は未確認。"
+   }
+  },
+  "sources": [
+   "https://search.keinet.ne.jp/1055/recommend/exam_rec",
+   "https://search.keinet.ne.jp/1055/recommend/exam_ao"
+  ]
+ },
+ {
+  "name": "小樽商科大学",
+  "info": {
+   "eng": {
+    "year": "2027年度入試",
+    "rows": [
+     {
+      "kubun": "総合型",
+      "name": "総合型選抜 グローカル総合-一般枠",
+      "use": "出願資格",
+      "level": "英語資格CEFR B1以上",
+      "tests": "英語資格（CEFR B1以上）",
+      "faculties": "商学部（昼間）",
+      "note": "1次試験は書類審査・取得資格"
+     },
+     {
+      "kubun": "総合型",
+      "name": "総合型選抜 グローカル総合-理系枠",
+      "use": "出願資格",
+      "level": "英検、ケンブリッジ英検、TOEFL iBT等（基準値はKei-Netに記載なし）",
+      "tests": "英検・ケンブリッジ英検・TOEFL iBT等",
+      "faculties": "商学部（昼間）",
+      "note": "1次試験は書類審査・取得資格"
+     }
+    ],
+    "summary": "総合型選抜グローカル総合（一般枠・理系枠）で英語資格が出願要件。一般枠はCEFR B1以上。学校推薦型選抜では英語資格の記載なし。",
+    "note": "一般選抜での利用有無は未確認。"
+   }
+  },
+  "sources": [
+   "https://search.keinet.ne.jp/1010/recommend/exam_ao",
+   "https://search.keinet.ne.jp/1010/recommend/exam_rec"
+  ]
+ },
+ {
+  "name": "山形大学",
+  "info": {
+   "eng": {
+    "year": "2027年度入試",
+    "rows": [
+     {
+      "kubun": "総合型",
+      "name": "総合型選抜Ⅰ（グローバル・スタディーズ）",
+      "use": "出願資格",
+      "level": "英検CSEスコア1700以上",
+      "cse": 1700,
+      "tests": "英検",
+      "faculties": "人文社会科学部 グローバル・スタディーズ",
+      "note": "2次試験の科目に取得資格を含む（面接と合わせて100点）"
+     }
+    ],
+    "summary": "総合型選抜Ⅰの人文社会科学部グローバル・スタディーズで英検CSE1700以上が出願要件。他学科の総合型・学校推薦型では英語資格の記載なし。",
+    "note": "一般選抜での利用有無は未確認。"
+   }
+  },
+  "sources": [
+   "https://search.keinet.ne.jp/1065/recommend/exam_ao",
+   "https://search.keinet.ne.jp/1065/recommend/exam_rec"
+  ]
+ },
+ {
+  "name": "岩手大学",
+  "info": {
+   "eng": {
+    "year": "2027年度入試",
+    "rows": [
+     {
+      "kubun": "総合型",
+      "name": "総合型選抜Ⅰ（動物科学）",
+      "use": "出願資格",
+      "level": "英検準2級以上",
+      "grade": "準2級",
+      "tests": "英検",
+      "faculties": "農学部 動物科学課程",
+      "note": "Kei-Netの取得資格欄の記載。他資格との選択制かは要項で確認"
+     }
+    ],
+    "summary": "総合型選抜Ⅰの農学部動物科学で英検準2級以上が取得資格として出願要件に記載。他学部の総合型・学校推薦型では英語資格の記載なし。",
+    "note": "一般選抜での利用有無は未確認。"
+   }
+  },
+  "sources": [
+   "https://search.keinet.ne.jp/1045/recommend/exam_ao",
+   "https://search.keinet.ne.jp/1045/recommend/exam_rec"
+  ]
+ },
+ {
+  "name": "帯広畜産大学",
+  "info": {
+   "eng": {
+    "year": "2027年度入試",
+    "rows": [],
+    "summary": "確認した出典には英語外部試験の記載なし（利用しないとは限らない。募集要項で確認）",
+    "note": "一般選抜での利用有無は未確認のため「利用しない」とは断定していない。"
+   }
+  },
+  "sources": [
+   "https://search.keinet.ne.jp/1015/recommend/exam_rec",
+   "https://search.keinet.ne.jp/1015/recommend/exam_ao"
+  ]
+ },
+ {
+  "name": "弘前大学",
+  "info": {
+   "eng": {
+    "year": "2027年度入試",
+    "rows": [],
+    "summary": "確認した出典には英語外部試験の記載なし（利用しないとは限らない。募集要項で確認）",
+    "note": "学校推薦型選抜ページはアクセス制限で未確認。一般選抜も未確認のため「利用しない」とは断定していない。"
+   }
+  },
+  "sources": [
+   "https://search.keinet.ne.jp/1040/recommend/exam_ao"
+  ]
+ },
+ {
+  "name": "旭川医科大学",
+  "info": {
+   "eng": {
+    "year": "2027年度入試",
+    "rows": [],
+    "summary": "確認した出典には英語外部試験の記載なし（利用しないとは限らない。募集要項で確認）",
+    "note": "一般選抜での利用有無は未確認のため「利用しない」とは断定していない。"
+   }
+  },
+  "sources": [
+   "https://search.keinet.ne.jp/1005/recommend/exam_rec",
+   "https://search.keinet.ne.jp/1005/recommend/exam_ao"
+  ]
+ },
+ {
+  "name": "福島大学",
+  "info": {
+   "eng": {
+    "year": "2027年度入試",
+    "rows": [
+     {
+      "kubun": "総合型",
+      "name": "総合型選抜Ⅱ（政経学類）",
+      "use": "出願資格",
+      "level": "英検CSEスコア1850点以上、TOEIC L&R480点以上、TOEFL iBT50点等",
+      "cse": 1850,
+      "tests": "英検・TOEIC L&R・TOEFL iBT等",
+      "faculties": "政経学部 政経学科（Kei-Net表記）",
+      "note": "評定3.5以上も出願要件"
+     },
+     {
+      "kubun": "総合型",
+      "name": "総合型選抜（一般枠／理系教育女性人材育成枠）",
+      "use": "出願資格",
+      "level": "英検2級以上、TOEIC L&R550点以上、TOEFL iBT42点以上等",
+      "grade": "2級",
+      "tests": "英検・TOEIC L&R・TOEFL iBT等",
+      "faculties": "理工学部 共生システム理工学科（Kei-Net表記）",
+      "note": "複数の出願要件のいずれかに該当すればよい（選択制）。理系教育女性人材育成枠は女子のみ"
+     },
+     {
+      "kubun": "総合型",
+      "name": "総合型選抜（地域社会貢献枠）",
+      "use": "出願資格",
+      "level": "英検準2級以上、IELTS3.0以上、数検2級以上等",
+      "grade": "準2級",
+      "tests": "英検・IELTS等（数検等も可）",
+      "faculties": "食農学部 食農学科（Kei-Net表記）",
+      "note": "英語以外の資格も含む取得資格要件"
+     }
+    ],
+    "summary": "総合型選抜で政経系（英検CSE1850以上等）、理工（英検2級以上等・選択制）、食農（英検準2級以上等）が英語資格を出願要件に含む。学校推薦型・教育学部の総合型には英語資格の記載なし。",
+    "note": "一般選抜での利用有無は未確認。"
+   }
+  },
+  "sources": [
+   "https://search.keinet.ne.jp/1070/recommend/exam_ao",
+   "https://search.keinet.ne.jp/1070/recommend/exam_rec"
+  ]
+ },
+ {
+  "name": "秋田大学",
+  "info": {
+   "eng": {
+    "year": "2027年度入試",
+    "rows": [],
+    "summary": "確認した出典には英語外部試験の記載なし（利用しないとは限らない。募集要項で確認）",
+    "note": "一般選抜での利用有無は未確認のため「利用しない」とは断定していない。"
+   }
+  },
+  "sources": [
+   "https://search.keinet.ne.jp/1060/recommend/exam_rec",
+   "https://search.keinet.ne.jp/1060/recommend/exam_ao"
+  ]
+ },
+ {
+  "name": "上越教育大学",
+  "info": {
+   "eng": {
+    "year": "2027年度入試",
+    "rows": [],
+    "summary": "確認した出典には英語外部試験の記載なし（利用しないとは限らない。募集要項で確認）",
+    "note": "一般選抜での利用有無は未確認のため「利用しない」とは断定していない。"
+   }
+  },
+  "sources": [
+   "https://search.keinet.ne.jp/1185/recommend/exam_rec",
+   "https://search.keinet.ne.jp/1185/recommend/exam_ao"
+  ]
+ },
+ {
+  "name": "名古屋工業大学",
+  "info": {
+   "eng": {
+    "year": "2027年度入試",
+    "rows": [
+     {
+      "kubun": "推薦",
+      "name": "学校推薦型選抜Ⅰ（創造工学教育課程）",
+      "use": "出願資格",
+      "level": "英検準2級、ケンブリッジ英検120点、TOEFL(iBT)40点 等",
+      "grade": "準2級",
+      "tests": "英検・ケンブリッジ英検・TOEFL iBT等",
+      "faculties": "工学部 創造工学教育課程（材料・エネルギー／情報・社会）",
+      "note": ""
+     }
+    ],
+    "summary": "学校推薦型選抜Ⅰの創造工学教育課程（材料・エネルギー、情報・社会）で英検準2級等が出願要件。他学科の推薦・総合型では英語資格の記載なし。",
+    "note": "一般選抜での利用有無は未確認。"
+   }
+  },
+  "sources": [
+   "https://search.keinet.ne.jp/1255/recommend/exam_rec",
+   "https://search.keinet.ne.jp/1255/recommend/exam_ao"
+  ]
+ },
+ {
+  "name": "富山大学",
+  "info": {
+   "eng": {
+    "year": "2027年度入試",
+    "rows": [
+     {
+      "kubun": "推薦",
+      "name": "学校推薦型選抜Ⅰ 女子特別推薦",
+      "use": "判定に利用",
+      "level": "基準の記載なし（1次試験の科目に取得資格を含む）",
+      "tests": "英検・ケンブリッジ英検・TOEFL(iBT)等",
+      "faculties": "工学部（電気電子工学・知能情報工学・機械工学など）",
+      "note": "配点の内訳は記載なし"
+     },
+     {
+      "kubun": "推薦",
+      "name": "学校推薦型選抜Ⅰ（A推薦）",
+      "use": "判定に利用",
+      "level": "基準の記載なし（面接で英語資格の評価を含む）",
+      "tests": "英語資格",
+      "faculties": "都市デザイン学部 材料デザイン工学科",
+      "note": ""
+     },
+     {
+      "kubun": "総合型",
+      "name": "総合型選抜Ⅰ スポーツ実技型",
+      "use": "判定に利用",
+      "level": "基準の記載なし（1次試験は書類審査・取得資格で100点）",
+      "tests": "英検・TOEIC(LR&SW)・TOEFL(iBT)等",
+      "faculties": "教育学部 共同教員養成課程",
+      "note": "Kei-Netでは取得資格欄「有」"
+     },
+     {
+      "kubun": "総合型",
+      "name": "総合型選抜Ⅰ",
+      "use": "判定に利用",
+      "level": "基準の記載なし（1次試験は書類審査・取得資格で100点）",
+      "tests": "英検・TOEIC(LR&SW)・TOEFL(iBT)等",
+      "faculties": "都市デザイン学部 都市・交通デザイン学科",
+      "note": ""
+     }
+    ],
+    "summary": "推薦・総合型の一部（工学部女子特別推薦、都市デザイン学部、教育学部スポーツ実技型）で英語資格を1次試験や面接の評価に利用。級・スコア基準はKei-Netに記載なし。",
+    "note": "一般選抜での利用有無は未確認。"
+   }
+  },
+  "sources": [
+   "https://search.keinet.ne.jp/1190/recommend/exam_rec",
+   "https://search.keinet.ne.jp/1190/recommend/exam_ao"
+  ]
+ },
+ {
+  "name": "山梨大学",
+  "info": {
+   "eng": {
+    "year": "2027年度入試",
+    "rows": [],
+    "summary": "確認した出典には英語外部試験の記載なし（利用しないとは限らない。募集要項で確認）",
+    "note": "一般選抜での利用有無は未確認のため「利用しない」とは断定していない。"
+   }
+  },
+  "sources": [
+   "https://search.keinet.ne.jp/1215/recommend/exam_rec",
+   "https://search.keinet.ne.jp/1215/recommend/exam_ao"
+  ]
+ },
+ {
+  "name": "岐阜大学",
+  "info": {
+   "eng": {
+    "year": "2027年度入試",
+    "rows": [],
+    "summary": "確認した出典には英語外部試験の記載なし（利用しないとは限らない。募集要項で確認）",
+    "note": "取得資格欄は「有」の表示のみで資格名不明。総合型選抜ページはアクセス制限で未確認。一般選抜も未確認のため「利用しない」とは断定していない。"
+   }
+  },
+  "sources": [
+   "https://search.keinet.ne.jp/1260/recommend/exam_rec"
+  ]
+ },
+ {
+  "name": "愛知教育大学",
+  "info": {
+   "eng": {
+    "year": "2027年度入試",
+    "rows": [],
+    "summary": "確認した出典には英語外部試験の記載なし（利用しないとは限らない。募集要項で確認）",
+    "note": "一般選抜での利用有無は未確認のため「利用しない」とは断定していない。"
+   }
+  },
+  "sources": [
+   "https://search.keinet.ne.jp/1240/recommend/exam_rec",
+   "https://search.keinet.ne.jp/1240/recommend/exam_ao"
+  ]
+ },
+ {
+  "name": "浜松医科大学",
+  "info": {
+   "eng": {
+    "year": "2027年度入試",
+    "rows": [],
+    "summary": "確認した出典には英語外部試験の記載なし（利用しないとは限らない。募集要項で確認）",
+    "note": "総合型選抜ページは開けず未確認。一般選抜も未確認のため「利用しない」とは断定していない。"
+   }
+  },
+  "sources": [
+   "https://search.keinet.ne.jp/1235/recommend/exam_rec"
+  ]
+ },
+ {
+  "name": "福井大学",
+  "info": {
+   "eng": {
+    "year": "2027年度入試",
+    "rows": [
+     {
+      "kubun": "推薦",
+      "name": "学校推薦型選抜Ⅱ",
+      "use": "みなし満点",
+      "level": "TOEFL iBT100点以上（共通テスト「英語」の得点が満点となる）",
+      "tests": "TOEFL iBT",
+      "faculties": "国際地域学部 国際地域学科",
+      "note": "1次試験の取得資格・共通テストに関する扱い"
+     }
+    ],
+    "summary": "学校推薦型選抜Ⅱ（国際地域学部）でTOEFL iBT100点以上なら共通テスト英語を満点とみなす。他学部の推薦・総合型では英語資格の記載なし。",
+    "note": "一般選抜での利用有無は未確認。"
+   }
+  },
+  "sources": [
+   "https://search.keinet.ne.jp/1205/recommend/exam_rec",
+   "https://search.keinet.ne.jp/1205/recommend/exam_ao"
+  ]
+ },
+ {
+  "name": "京都工芸繊維大学",
+  "info": {
+   "eng": {
+    "year": "2027年度入試",
+    "rows": [],
+    "summary": "確認した出典には英語外部試験の記載なし（利用しないとは限らない。募集要項で確認）",
+    "note": "一般選抜での利用有無は未確認のため「利用しない」とは断定していない。"
+   }
+  },
+  "sources": [
+   "https://search.keinet.ne.jp/1290/recommend/exam_rec",
+   "https://search.keinet.ne.jp/1290/recommend/exam_ao"
+  ]
+ },
+ {
+  "name": "京都教育大学",
+  "info": {
+   "eng": {
+    "year": "2027年度入試",
+    "rows": [],
+    "summary": "確認した出典には英語外部試験の記載なし（利用しないとは限らない。募集要項で確認）",
+    "note": "総合型選抜ページは開けず未確認。一般選抜も未確認のため「利用しない」とは断定していない。"
+   }
+  },
+  "sources": [
+   "https://search.keinet.ne.jp/1285/recommend/exam_rec"
+  ]
+ },
+ {
+  "name": "兵庫教育大学",
+  "info": {
+   "eng": {
+    "year": "2027年度入試",
+    "rows": [],
+    "summary": "確認した出典には英語外部試験の記載なし（利用しないとは限らない。募集要項で確認）",
+    "note": "一般選抜での利用有無は未確認のため「利用しない」とは断定していない。総合型（一般枠）の取得資格欄は「有*選*」で、注記に「各種検定試験で技能の高さを証明できる」とあるが英語試験の種類・基準は記載なし。"
+   }
+  },
+  "sources": [
+   "https://search.keinet.ne.jp/1320/recommend/exam_rec",
+   "https://search.keinet.ne.jp/1320/recommend/exam_ao"
+  ]
+ },
+ {
+  "name": "和歌山大学",
+  "info": {
+   "eng": {
+    "year": "2027年度入試",
+    "rows": [
+     {
+      "kubun": "総合型",
+      "name": "総合型選抜",
+      "use": "出願資格",
+      "level": "ケンブリッジ英検140以上、英検2級以上、TEAP(4技能)225以上等",
+      "grade": "2級",
+      "tests": "英検・ケンブリッジ英検・TEAP等",
+      "faculties": "観光学部 観光学科",
+      "note": "Kei-Netの出願要件「取得資格」欄の記載"
+     }
+    ],
+    "summary": "総合型選抜（観光学部）で英検2級以上等の英語資格が出願要件。学校推薦型では英語資格の記載なし。",
+    "note": "一般選抜での利用有無は未確認。"
+   }
+  },
+  "sources": [
+   "https://search.keinet.ne.jp/1335/recommend/exam_ao",
+   "https://search.keinet.ne.jp/1335/recommend/exam_rec"
+  ]
+ },
+ {
+  "name": "大阪教育大学",
+  "info": {
+   "eng": {
+    "year": "2027年度入試",
+    "rows": [
+     {
+      "kubun": "推薦",
+      "name": "学校推薦型選抜（共通テストを課さない・地域教員希望枠）",
+      "use": "加点",
+      "level": "英検2級以上、TOEFL iBT3.5（65）以上、IELTS5.0以上等で面接Aの満点を上限に最大50点加算",
+      "grade": "2級",
+      "tests": "英検・TOEFL iBT・IELTS等",
+      "faculties": "教育学部 教科－英語教育",
+      "note": "TOEFLの数値はKei-Net原文のまま"
+     },
+     {
+      "kubun": "推薦",
+      "name": "学校推薦型選抜（共通テストを課す）",
+      "use": "加点",
+      "level": "英検2級以上、TOEFL iBT3.5（65）以上、IELTS5.0以上等で共通テスト合計点が満点に達するまで上限50点加算",
+      "grade": "2級",
+      "tests": "英検・TOEFL iBT・IELTS等",
+      "faculties": "教育学部 教科－英語教育",
+      "note": "評定 全体3.5以上かつ英語3.8以上"
+     },
+     {
+      "kubun": "推薦",
+      "name": "学校推薦型選抜（共通テストを課さない）",
+      "use": "加点",
+      "level": "英検3級以上、TOEFL iBT40以上、IELTS3.0以上等で個別学力検査等の合計点が満点に達するまで上限50点加算",
+      "tests": "英検・TOEFL iBT・IELTS等",
+      "faculties": "教育学部 コミ－スポーツ健康",
+      "note": "基準は英検3級以上"
+     },
+     {
+      "kubun": "推薦",
+      "name": "学校推薦型選抜（共通テストを課す）",
+      "use": "加点",
+      "level": "英検CSE2100以上、TOEFL iBT3.5（60）以上、IELTS5.5以上等で満点を上限に最大100点加点",
+      "cse": 2100,
+      "tests": "英検・TOEFL iBT・IELTS等",
+      "faculties": "教育学部 グロ－国際協働英語",
+      "note": "評定 全体3.8以上かつ英語4.2以上"
+     }
+    ],
+    "summary": "学校推薦型選抜の英語教育・スポーツ健康・国際協働英語で指定英語資格（英検2級／3級／CSE2100以上等）により最大50〜100点を加点。",
+    "note": "総合型選抜ページは開けず未確認。一般選抜も未確認。"
+   }
+  },
+  "sources": [
+   "https://search.keinet.ne.jp/1305/recommend/exam_rec"
+  ]
+ },
+ {
+  "name": "奈良教育大学",
+  "info": {
+   "eng": {
+    "year": "2027年度入試",
+    "rows": [
+     {
+      "kubun": "総合型",
+      "name": "総合型選抜 意欲重視型／一般型Ⅰ",
+      "use": "加点",
+      "level": "英検2級以上（加点）",
+      "grade": "2級",
+      "tests": "英検",
+      "faculties": "教育学部 教科－英語（中）",
+      "note": "1次試験の科目に取得資格を含む。一般型Ⅰは2次で共通テストあり"
+     }
+    ],
+    "summary": "総合型選抜（意欲重視型・一般型Ⅰ）の英語（中）専修で英検2級以上を加点に利用。他コースの総合型には英語資格の記載なし。",
+    "note": "学校推薦型選抜ページは開けず未確認。一般選抜も未確認。"
+   }
+  },
+  "sources": [
+   "https://search.keinet.ne.jp/1325/recommend/exam_ao"
+  ]
+ },
+ {
+  "name": "滋賀医科大学",
+  "info": {
+   "eng": {
+    "year": "2027年度入試",
+    "rows": [],
+    "summary": "確認した出典には英語外部試験の記載なし（利用しないとは限らない。募集要項で確認）",
+    "note": "総合型選抜ページは開けず未確認。一般選抜も未確認のため「利用しない」とは断定していない。"
+   }
+  },
+  "sources": [
+   "https://search.keinet.ne.jp/1275/recommend/exam_rec"
+  ]
+ },
+ {
+  "name": "滋賀大学",
+  "info": {
+   "eng": {
+    "year": "2027年度入試",
+    "rows": [
+     {
+      "kubun": "推薦",
+      "name": "学校推薦型選抜〔A推薦〕",
+      "use": "判定に利用",
+      "level": "4技能に対応した実用英検（級・スコア基準の記載なし）",
+      "tests": "英検",
+      "faculties": "経済学部 総合経済学科",
+      "note": "1次試験（300点）の科目に取得資格（60点）。取得資格欄「有」"
+     },
+     {
+      "kubun": "総合型",
+      "name": "総合型選抜〔資格・検定型〕",
+      "use": "出願資格",
+      "level": "指定の全商検定試験のうち英検1級を含め7種目以上に合格、日商簿記1級、全経簿記上級等",
+      "tests": "全商検定（英語を含む）・簿記検定等",
+      "faculties": "経済学部 総合経済学科",
+      "note": "Kei-Net原文の「英検1級」は全商検定の種目として記載。出願資格分に加え指定資格の証明提出で1次試験の取得資格に加点"
+     }
+    ],
+    "summary": "経済学部の学校推薦型〔A推薦〕で実用英検を1次試験の取得資格（60点）として評価。総合型〔資格・検定型〕は全商検定（英語含む）等の資格が出願要件。教育学部・データサイエンス学部には英語資格の記載なし。",
+    "note": "一般選抜での利用有無は未確認。"
+   }
+  },
+  "sources": [
+   "https://search.keinet.ne.jp/1270/recommend/exam_rec",
+   "https://search.keinet.ne.jp/1270/recommend/exam_ao"
+  ]
+ },
+ {
+  "name": "山口大学",
+  "info": {
+   "eng": {
+    "year": "2027年度入試",
+    "rows": [
+     {
+      "kubun": "総合型",
+      "name": "総合型選抜（人文学部）",
+      "use": "判定に利用",
+      "level": "英語資格(英検CSEスコア1700点以上、TOEIC(L＆R)225点以上、GTEC680点以上)",
+      "cse": 1700,
+      "tests": "英検・TOEIC L&R・GTEC",
+      "faculties": "人文学部 人文学科",
+      "note": "1次試験（志願者が募集人員の3倍を超えた場合に実施）で取得資格40%"
+     },
+     {
+      "kubun": "総合型",
+      "name": "総合型選抜（経済学部）",
+      "use": "判定に利用",
+      "level": "英語資格(英検CSEスコア1700点以上、TOEIC(L＆R)225点以上、GTEC680点以上)",
+      "cse": 1700,
+      "tests": "英検・TOEIC L&R・GTEC",
+      "faculties": "経済学部（経済・経営・観光政策）",
+      "note": "1次試験の取得資格40%のうち英語資格10%、日商簿記1級30%"
+     },
+     {
+      "kubun": "総合型",
+      "name": "総合型選抜（国際総合科学部・理学部・工学部・情報学部 等）",
+      "use": "判定に利用",
+      "level": "英語資格(英検CSEスコア1700点以上、TOEIC(L＆R)225点以上、GTEC680点以上)",
+      "cse": 1700,
+      "tests": "英検・TOEIC L&R・GTEC",
+      "faculties": "国際総合科学部、教育学部（小学校総合）、理学部、工学部、情報学部",
+      "note": "1次試験で取得資格を評価（取得資格・活動実績で50%、または取得資格10%など学科により異なる）。理工系はITパスポート・数検等も対象"
+     }
+    ],
+    "summary": "総合型選抜の1次試験（志願者が募集人員の3倍超の場合）で、英語資格（英検CSE1700以上・TOEIC225以上・GTEC680以上）を取得資格として評価する学科が多い。出願要件ではない。学校推薦型には英語資格の記載なし。",
+    "note": "一般選抜での利用有無は未確認。"
+   }
+  },
+  "sources": [
+   "https://search.keinet.ne.jp/1365/recommend/exam_ao",
+   "https://search.keinet.ne.jp/1365/recommend/exam_rec"
+  ]
+ },
+ {
+  "name": "島根大学",
+  "info": {
+   "eng": {
+    "year": "2027年度入試",
+    "rows": [
+     {
+      "kubun": "総合型",
+      "name": "総合型選抜Ⅰ「へるん」特定型（グローバル英語）",
+      "use": "出願資格",
+      "level": "英検2級以上またはGTEC930点以上",
+      "grade": "2級",
+      "tests": "英検・GTEC",
+      "faculties": "法文学部（言語文化・法経・社会文化）、総合理工学部、材料エネルギー学部、生物資源科学部",
+      "note": "1次試験（330点）中、取得資格に30点を配点"
+     }
+    ],
+    "summary": "総合型選抜Ⅰ「へるん」特定型（グローバル英語）で英検2級以上またはGTEC930以上が出願要件（1次試験で30点配点）。学校推薦型、教育学部・人間科学部の総合型には英語資格の記載なし。",
+    "note": "一般選抜での利用有無は未確認。"
+   }
+  },
+  "sources": [
+   "https://search.keinet.ne.jp/1345/recommend/exam_ao",
+   "https://search.keinet.ne.jp/1345/recommend/exam_rec"
+  ]
+ }
+]
