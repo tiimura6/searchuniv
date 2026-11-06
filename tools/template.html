@@ -322,7 +322,7 @@ const D = /*CARDS*/[]/*END_CARDS*/;
 const HP = /*HP*/{}/*END_HP*/;
 function hpLink(name){ const u=HP[name]; return u?'<a class="hp" href="'+esc(u)+'" target="_blank" rel="noopener" onclick="event.stopPropagation()">公式HP ↗</a>':''; }
 const INFO = /*INFO_DATA*/{}/*END_INFO*/;
-function yen(n){ return n===0 ? "0円" : (n==null?"—":Math.round(n/1000).toLocaleString("ja-JP")+"千円"); }
+function yen(n){ return n===0 ? "0円" : (n==null?"—":(Math.round(n/1000)/10).toLocaleString("ja-JP",{maximumFractionDigits:1})+"万円"); }
 function kyotsuText(f){ const k=f&&f.kyotsu; if(!k||!k.kamoku) return ""; return esc(k.kamoku)+(k.rl_text?'<span class="sub2">（英語 '+esc(k.rl_text)+'）</span>':(k.rl&&k.rl.length?'<span class="sub2">（英語 R:L='+esc(k.rl.join("／"))+'）</span>':'')); }
 function infoBlock(name){
   const f = INFO[name]; if(!f) return "";
@@ -387,6 +387,7 @@ function similarSchools(x,n){
   return items.filter(y=>y!==x&&groupOf(y)===g&&y.name!=="電動モビリティシステム専門職大学").map(y=>({y,m:midHensachi(y.name)})).filter(o=>o.m!=null&&Math.abs(o.m-m)<=2.5)
     .sort((a,b)=>((regionOf(a.y.pref)===r?0:1)-(regionOf(b.y.pref)===r?0:1))||Math.abs(a.m-m)-Math.abs(b.m-m)).slice(0,n).map(o=>o.y);
 }
+function man(n){ const v=Math.round(n/1000)/10; return v.toLocaleString("ja-JP",{maximumFractionDigits:1})+"万円"; }
 function guideBlock(x,ctx){
   const f=INFO[x.name]||{}, e=EXAM[x.name]||{}, gd=GUIDE[x.name]||{}; const rows=[];
   if(gd.fit) rows.push(["向いている生徒",esc(gd.fit)]);
@@ -399,7 +400,7 @@ function guideBlock(x,ctx){
   if(e.format) rows.push(["入試方式",esc(e.format)]);
   if(gd.ask&&gd.ask.length) rows.push(["面談で確認",'<ul class="mini">'+gd.ask.map(a=>'<li>'+esc(a)+'</li>').join("")+'</ul>']);
   if(gd.caution) rows.push(["注意点",esc(gd.caution)]);
-  const t=f.tuition; if(t&&t.amount){ const r=t.amount/817800; rows.push(["費用感","初年度 "+yen(t.amount)+(kindOf(x)==="私立"||kindOf(x)==="専門職大学"?"（国立標準額の約"+r.toFixed(1)+"倍）":"")]); }
+  const t=f.tuition; if(t&&t.amount){ const r=t.amount/817800; rows.push(["費用感","初年度 約"+man(t.amount)+(kindOf(x)==="私立"||kindOf(x)==="専門職大学"?"（国立標準額の約"+r.toFixed(1)+"倍）":"")]); }
   else if(t&&t.amount===0) rows.push(["費用感",esc(t.label||"学費不要")]);
   const sim=similarSchools(x,3);
   if(sim.length) rows.push(["難易度が近い学校",sim.map(y=>'<a href="#" class="simlink" data-n="'+esc(y.name)+'">'+esc(y.name)+'</a>').join("・")+'<span class="sub2">（偏差値帯の中央が±2.5以内・同じ設置区分、同じ地域を優先）</span>']);
