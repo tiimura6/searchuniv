@@ -171,6 +171,10 @@ body.noscroll{overflow:hidden}
 .sdisc{margin:4px 2px 6px;font-size:12px;color:var(--ng);font-weight:600}
 #ctip{position:absolute;pointer-events:none;background:var(--panel);border:1px solid var(--line);border-radius:6px;padding:2px 7px;font-size:12px;color:var(--muted);white-space:nowrap;box-shadow:0 2px 6px rgba(0,0,0,.12);z-index:3}
 #ctip.cap{color:var(--ink)}
+#hl,#labels .clus text{pointer-events:none}
+#ctip.univ{color:var(--ink);font-weight:600;font-size:13px}
+#jmap .dot{stroke:transparent;stroke-width:10px;vector-effect:non-scaling-stroke}
+#jmap .dot:hover{opacity:1 !important}
 .munip{fill:none;stroke:var(--muted);stroke-opacity:.45;stroke-width:.7px;vector-effect:non-scaling-stroke;pointer-events:none}
 #mlabels .clbl.cap{fill:var(--ink)}
 #mlabels .clbl{fill:var(--muted);pointer-events:none;paint-order:stroke;stroke:var(--bg);stroke-width:2.5px;stroke-linejoin:round;vector-effect:non-scaling-stroke}
@@ -1337,7 +1341,13 @@ function zoomAt(px,py,f){ const [x,y,w,h]=curVB; const nw=w*f, nh=h*f; applyVB([
     tip.textContent=best[0]; tip.classList.toggle("cap",!!best[4]); tip.hidden=false;
     tip.style.left=(e.clientX-pr.left+12)+"px"; tip.style.top=(e.clientY-pr.top-28)+"px";
     clearTimeout(tipTimer); if(ms) tipTimer=setTimeout(()=>{ tip.hidden=true; },ms); };
-  svg.addEventListener("pointermove",e=>{ if(e.pointerType!=="mouse"||ptrs.size) { if(ptrs.size) tip.hidden=true; return; } showCity(e,0); });
+  // 大学の点にマウスを重ねると大学名を表示（ほかの大学を選んでいる間も）。クリックでその大学を選ぶ
+  const showUniv=(e,c)=>{ const n=c.querySelector("title"); if(!n) return false; const pr=svg.parentElement.getBoundingClientRect();
+    const x=items.find(i=>i.name===n.textContent); tip.innerHTML=(x?badge(x):"")+esc(n.textContent); tip.classList.add("univ"); tip.hidden=false;
+    tip.style.left=(e.clientX-pr.left+12)+"px"; tip.style.top=(e.clientY-pr.top-30)+"px"; return true; };
+  svg.addEventListener("pointermove",e=>{ if(ptrs.size){ tip.hidden=true; return; }
+    const c=e.target.closest&&e.target.closest(".dot"); if(c){ if(showUniv(e,c)) return; }
+    tip.classList.remove("univ"); if(e.pointerType!=="mouse") return; showCity(e,0); });
   svg.addEventListener("pointerleave",()=>{ tip.hidden=true; });
   svg.addEventListener("click",e=>{ if(e.target.closest&&e.target.closest(".dot,.ulbl,.clus")) return; if(!moved) showCity(e,2500); });
   $("zin").onclick=()=>zoomAt(curVB[0]+curVB[2]/2,curVB[1]+curVB[3]/2,0.6);
