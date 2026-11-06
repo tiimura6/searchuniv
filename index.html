@@ -114,6 +114,10 @@ details summary{cursor:pointer}
 ul.mini{margin:0;padding-left:1.1em}
 ul.mini li{font-size:12.5px;margin:2px 0}
 .hp{font-size:12.5px;font-weight:500;margin-left:10px;color:var(--accent);white-space:nowrap}
+.hints{margin-top:10px}
+.hints .btn{font-size:12.5px;padding:5px 10px}
+.hint1{font-size:13px;margin:4px 0;text-align:left}
+.hint1 b{display:inline-block;font-size:11.5px;color:var(--accent);margin-right:8px;min-width:6.5em}
 .exam{border:1px solid var(--line);border-radius:10px;padding:10px 12px;margin:4px 0 12px;font-size:13px}
 .exam-h{font-weight:700;font-size:12.5px;color:var(--accent);margin-bottom:6px}
 .et{width:100%;border-collapse:collapse}
@@ -373,6 +377,7 @@ function infoBlock(name){
   if(scale) rows.push(["規模・創立",scale]);
   if(f.access) rows.push(["アクセス",esc(f.access)]);
   if(f.faculties && f.faculties.length) rows.push(["学部",'<span class="facs">'+f.faculties.map(x=>'<span>'+esc(x)+'</span>').join("")+'</span>']);
+  if(f.research && f.research.length) rows.push(["有名な研究分野",'<span class="facs">'+f.research.map(x=>'<span>'+esc(x)+'</span>').join("")+'</span>']);
   if(f.licenses && f.licenses.length) rows.push(["取得できる資格",'<span class="facs">'+f.licenses.map(x=>'<span>'+esc(x)+'</span>').join("")+'</span>']);
   if(f.careers) rows.push(["主な進路",esc(f.careers)]);
   if(f.news && f.news.length) rows.push(["ニュース",'<ul class="mini">'+f.news.map(x=>'<li>'+esc(x)+'</li>').join("")+'</ul>']);
@@ -481,17 +486,18 @@ function render(){
     $("back").innerHTML = '<div>'+badge(x)+statusTag(x)+'</div><h2>'+esc(x.name)+hpLink(x.name)+'</h2>'+featList+cardNews(x.name)+infoBlock(x.name)+examBlock(x.name)+memo;
   } else if($("mode").value==="type"){
     const masked = x.feats.map(f=>maskName(f,x.name));
-    $("front").innerHTML = '<div>'+badge(x)+statusTag(x)+'</div><div class="qfront" style="width:100%"><ul>'+masked.map(f=>'<li>'+esc(f)+'</li>').join("")+'</ul><div class="meta">'+esc(x.type)+'｜'+esc(maskName(x.pref,x.name))+'</div>'+
+    $("front").innerHTML = '<div>'+badge(x)+statusTag(x)+'</div><div class="qfront" style="width:100%"><ul>'+masked.map(f=>'<li>'+esc(f)+'</li>').join("")+'</ul><div class="meta">'+esc(x.type)+'｜'+esc(maskName(x.pref,x.name))+'</div>'+hintHTML(x)+
       '<form id="ansForm" class="ans" onclick="event.stopPropagation()"><div class="blank">（<input id="ans" type="text" autocomplete="off" aria-label="学校名">）<span>'+esc(suffixOf(x.name))+'</span></div><div class="ansbtns"><button class="btn big" type="submit">回答</button><button class="btn big" type="button" id="giveup">パス</button></div></form></div>';
     $("back").innerHTML = '<div>'+badge(x)+statusTag(x)+'</div><div id="resultLine" class="judge" style="text-align:center"></div><div class="uname" style="text-align:center;margin-top:4px">'+esc(x.name)+'</div><div class="meta" style="text-align:center">'+esc(x.pref)+' '+hpLink(x.name)+'</div><div style="margin-top:14px">'+cardNews(x.name)+infoBlock(x.name)+examBlock(x.name)+memo+'</div>';
-    answered=false;
+    answered=false; wireHints(x);
     $("ansForm").onsubmit=e=>{e.preventDefault(); judge($("ans").value);};
     $("giveup").onclick=e=>{e.stopPropagation(); judge(null);};
     setTimeout(()=>{ const a=$("ans"); if(a) a.focus({preventScroll:true}); },60);
   } else {
     const masked = x.feats.map(f=>maskName(f,x.name));
-    $("front").innerHTML = '<div>'+badge(x)+statusTag(x)+'</div><div class="qfront"><ul>'+masked.map(f=>'<li>'+esc(f)+'</li>').join("")+'</ul><div class="meta">'+esc(x.type)+'</div></div>';
+    $("front").innerHTML = '<div>'+badge(x)+statusTag(x)+'</div><div class="qfront"><ul>'+masked.map(f=>'<li>'+esc(f)+'</li>').join("")+'</ul><div class="meta">'+esc(x.type)+'</div>'+hintHTML(x)+'</div>';
     $("back").innerHTML = '<div>'+badge(x)+statusTag(x)+'</div><div class="uname" style="text-align:center">'+esc(x.name)+'</div><div class="meta" style="text-align:center">'+esc(x.pref)+' '+hpLink(x.name)+'</div><div style="margin-top:14px">'+cardNews(x.name)+infoBlock(x.name)+examBlock(x.name)+memo+'</div>';
+    wireHints(x);
   }
 }
 // ===== 入力問題の判定 =====
@@ -535,6 +541,27 @@ function updateStat(){
   const total = items.filter(x=>activeCats.has(x.cat)).length;
   $("stat").textContent = "習得 "+known+"/"+total;
   $("barfill").style.width = total? (known/total*100)+"%" : "0";
+}
+
+
+function hintList(x){
+  const f=INFO[x.name]||{}; const h=[];
+  const m=t=>maskName(String(t),x.name);
+  if(f.faculties&&f.faculties.length) h.push(["学部",f.faculties.map(m).join("・")]);
+  if(f.research&&f.research.length) h.push(["有名な研究分野",f.research.map(m).join("／")]);
+  if(f.notable&&f.notable.length) h.push(["著名な教授",f.notable.map(m).join("／")]);
+  return h;
+}
+function hintHTML(x){
+  const h=hintList(x); if(!h.length) return "";
+  return '<div class="hints" onclick="event.stopPropagation()"><div class="hlist"></div><button class="btn" type="button" data-n="0">ヒント（'+h[0][0]+'）</button></div>';
+}
+function wireHints(x){
+  const box=document.querySelector("#front .hints"); if(!box) return; const h=hintList(x);
+  const btn=box.querySelector("button"), list=box.querySelector(".hlist");
+  btn.onclick=e=>{ e.stopPropagation(); let n=+btn.dataset.n; if(n>=h.length) return;
+    list.insertAdjacentHTML("beforeend",'<div class="hint1"><b>'+h[n][0]+'</b>'+esc(h[n][1])+'</div>'); n++; btn.dataset.n=n;
+    if(n>=h.length) btn.remove(); else btn.textContent="ヒント（"+h[n][0]+"）"; };
 }
 
 function maskName(f,name){
