@@ -411,7 +411,7 @@ function render(){
   $("front").style.justifyContent = $("mode").value==="name" ? "center" : "flex-start";
   $("pos").textContent = (idx+1)+" / "+deck.length;
   const featList = '<ul>'+x.feats.map(f=>'<li>'+esc(f)+'</li>').join("")+'</ul>';
-  const memo = '<div class="memo">'+esc(x.memo)+'</div>';
+  const memo = '';
   if($("mode").value==="name"){
     $("front").innerHTML = '<div>'+badge(x)+statusTag(x)+'</div><div class="uname">'+esc(x.name)+'</div><div class="meta">'+metaPrefix(x)+esc(x.pref)+'</div>';
     $("back").innerHTML = '<div>'+badge(x)+statusTag(x)+'</div><h2>'+esc(x.name)+hpLink(x.name)+'</h2>'+featList+cardNews(x.name)+infoBlock(x.name)+examBlock(x.name)+memo;
@@ -539,8 +539,8 @@ function maskName(f,name){
 function renderList(){
   const lv=$("listview");
   if(lv.style.display!=="block") return;
-  lv.innerHTML = '<table><thead><tr><th>学校名</th><th>所在地</th><th>特色</th><th>入試</th><th>メモ</th></tr></thead><tbody>'+
-    deck.map(x=>'<tr><td>'+badge(x)+'<br><b>'+esc(x.name)+'</b><br>'+hpLink(x.name)+'</td><td>'+esc(x.type)+'<br>'+esc(x.pref)+'</td><td>'+x.feats.map(esc).join('<br>')+'</td><td style="min-width:240px">'+examBlock(x.name,true)+'</td><td>'+esc(x.memo)+'</td></tr>').join("")+'</tbody></table>';
+  lv.innerHTML = '<table><thead><tr><th>学校名</th><th>所在地</th><th>特色</th><th>入試</th></tr></thead><tbody>'+
+    deck.map(x=>'<tr><td>'+badge(x)+'<br><b>'+esc(x.name)+'</b><br>'+hpLink(x.name)+'</td><td>'+esc(x.type)+'<br>'+esc(x.pref)+'</td><td>'+x.feats.map(esc).join('<br>')+'</td><td style="min-width:240px">'+examBlock(x.name,true)+'</td></tr>').join("")+'</tbody></table>';
 }
 
 function flip(){ if(!deck.length) return; if($("mode").value==="type" && !answered) return; $("card").classList.toggle("flipped"); $("back").scrollTop=0; $("front").scrollTop=0; }
