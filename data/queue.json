@@ -1,5 +1,4787 @@
 {
- "add": [],
+ "add": [
+  {
+   "name": "筑波技術大学",
+   "type": "国立",
+   "pref": "茨城県",
+   "hp": "http://www.tsukuba-tech.ac.jp/",
+   "cat": "national"
+  },
+  {
+   "name": "前橋工科大学",
+   "type": "公立",
+   "pref": "群馬県",
+   "hp": "http://www.maebashi-it.ac.jp/",
+   "cat": "public"
+  },
+  {
+   "name": "千葉県立保健医療大学",
+   "type": "公立",
+   "pref": "千葉県",
+   "hp": "http://www.pref.chiba.lg.jp/hoidai/",
+   "cat": "public"
+  },
+  {
+   "name": "埼玉県立大学",
+   "type": "公立",
+   "pref": "埼玉県",
+   "hp": "http://www.spu.ac.jp/",
+   "cat": "public"
+  },
+  {
+   "name": "川崎市立看護大学",
+   "type": "公立",
+   "pref": "神奈川県",
+   "hp": "https://www.kawasaki-cn.ac.jp/",
+   "cat": "public"
+  },
+  {
+   "name": "神奈川県立保健福祉大学",
+   "type": "公立",
+   "pref": "神奈川県",
+   "hp": "http://www.kuhs.ac.jp/",
+   "cat": "public"
+  },
+  {
+   "name": "群馬県立女子大学",
+   "type": "公立",
+   "pref": "群馬県",
+   "hp": "http://www.gpwu.ac.jp/",
+   "cat": "public"
+  },
+  {
+   "name": "群馬県立県民健康科学大学",
+   "type": "公立",
+   "pref": "群馬県",
+   "hp": "http://www.gchs.ac.jp/",
+   "cat": "public"
+  },
+  {
+   "name": "公立はこだて未来大学",
+   "type": "公立",
+   "pref": "北海道",
+   "hp": "http://www.fun.ac.jp/",
+   "cat": "public"
+  },
+  {
+   "name": "公立千歳科学技術大学",
+   "type": "公立",
+   "pref": "北海道",
+   "hp": "https://www.chitose.ac.jp/",
+   "cat": "public"
+  },
+  {
+   "name": "北海道教育大学",
+   "type": "国立",
+   "pref": "北海道",
+   "hp": "http://www.hokkyodai.ac.jp/",
+   "cat": "national"
+  },
+  {
+   "name": "北見工業大学",
+   "type": "国立",
+   "pref": "北海道",
+   "hp": "http://www.kitami-it.ac.jp/",
+   "cat": "national"
+  },
+  {
+   "name": "名寄市立大学",
+   "type": "公立",
+   "pref": "北海道",
+   "hp": "https://www.nayoro.ac.jp/",
+   "cat": "public"
+  },
+  {
+   "name": "室蘭工業大学",
+   "type": "国立",
+   "pref": "北海道",
+   "hp": "http://www.muroran-it.ac.jp/index-j.html",
+   "cat": "national"
+  },
+  {
+   "name": "宮城大学",
+   "type": "公立",
+   "pref": "宮城県",
+   "hp": "http://www.myu.ac.jp/",
+   "cat": "public"
+  },
+  {
+   "name": "宮城教育大学",
+   "type": "国立",
+   "pref": "宮城県",
+   "hp": "http://www.miyakyo-u.ac.jp/",
+   "cat": "national"
+  },
+  {
+   "name": "小樽商科大学",
+   "type": "国立",
+   "pref": "北海道",
+   "hp": "http://www.otaru-uc.ac.jp/",
+   "cat": "national"
+  },
+  {
+   "name": "山形大学",
+   "type": "国立",
+   "pref": "山形県",
+   "hp": "http://www.yamagata-u.ac.jp/index-j.html",
+   "cat": "national"
+  },
+  {
+   "name": "山形県立保健医療大学",
+   "type": "公立",
+   "pref": "山形県",
+   "hp": "http://www.yachts.ac.jp/",
+   "cat": "public"
+  },
+  {
+   "name": "山形県立米沢栄養大学",
+   "type": "公立",
+   "pref": "山形県",
+   "hp": "http://www.u.yone.ac.jp/",
+   "cat": "public"
+  },
+  {
+   "name": "岩手大学",
+   "type": "国立",
+   "pref": "岩手県",
+   "hp": "http://www.iwate-u.ac.jp/",
+   "cat": "national"
+  },
+  {
+   "name": "岩手県立大学",
+   "type": "公立",
+   "pref": "岩手県",
+   "hp": "http://www.iwate-pu.ac.jp/",
+   "cat": "public"
+  },
+  {
+   "name": "帯広畜産大学",
+   "type": "国立",
+   "pref": "北海道",
+   "hp": "http://www.obihiro.ac.jp/",
+   "cat": "national"
+  },
+  {
+   "name": "弘前大学",
+   "type": "国立",
+   "pref": "青森県",
+   "hp": "http://www.hirosaki-u.ac.jp/",
+   "cat": "national"
+  },
+  {
+   "name": "旭川医科大学",
+   "type": "国立",
+   "pref": "北海道",
+   "hp": "http://www.asahikawa-med.ac.jp/",
+   "cat": "national"
+  },
+  {
+   "name": "旭川市立大学",
+   "type": "公立",
+   "pref": "北海道",
+   "hp": "https://www.asahikawa-u.ac.jp/",
+   "cat": "public"
+  },
+  {
+   "name": "札幌医科大学",
+   "type": "公立",
+   "pref": "北海道",
+   "hp": "http://web.sapmed.ac.jp/",
+   "cat": "public"
+  },
+  {
+   "name": "札幌市立大学",
+   "type": "公立",
+   "pref": "北海道",
+   "hp": "http://www.scu.ac.jp/",
+   "cat": "public"
+  },
+  {
+   "name": "東北公益文科大学",
+   "type": "公立",
+   "pref": "山形県",
+   "hp": "https://www.koeki-u.ac.jp/",
+   "cat": "public"
+  },
+  {
+   "name": "東北農林専門職大学",
+   "type": "公立",
+   "pref": "山形県",
+   "hp": "https://tpuaf.ac.jp/university/",
+   "cat": "senmon"
+  },
+  {
+   "name": "福島大学",
+   "type": "国立",
+   "pref": "福島県",
+   "hp": "http://www.fukushima-u.ac.jp/",
+   "cat": "national"
+  },
+  {
+   "name": "秋田公立美術大学",
+   "type": "公立",
+   "pref": "秋田県",
+   "hp": "http://www.akibi.ac.jp/",
+   "cat": "public"
+  },
+  {
+   "name": "秋田大学",
+   "type": "国立",
+   "pref": "秋田県",
+   "hp": "http://www.akita-u.ac.jp/",
+   "cat": "national"
+  },
+  {
+   "name": "秋田県立大学",
+   "type": "公立",
+   "pref": "秋田県",
+   "hp": "http://www.akita-pu.ac.jp/",
+   "cat": "public"
+  },
+  {
+   "name": "釧路公立大学",
+   "type": "公立",
+   "pref": "北海道",
+   "hp": "http://www.kushiro-pu.ac.jp/",
+   "cat": "public"
+  },
+  {
+   "name": "青森公立大学",
+   "type": "公立",
+   "pref": "青森県",
+   "hp": "http://www.nebuta.ac.jp/",
+   "cat": "public"
+  },
+  {
+   "name": "青森県立保健大学",
+   "type": "公立",
+   "pref": "青森県",
+   "hp": "http://www.auhw.ac.jp/",
+   "cat": "public"
+  },
+  {
+   "name": "三条市立大学",
+   "type": "公立",
+   "pref": "新潟県",
+   "hp": "https://www.sanjo-u.ac.jp/",
+   "cat": "public"
+  },
+  {
+   "name": "上越教育大学",
+   "type": "国立",
+   "pref": "新潟県",
+   "hp": "http://www.juen.ac.jp/",
+   "cat": "national"
+  },
+  {
+   "name": "公立小松大学",
+   "type": "公立",
+   "pref": "石川県",
+   "hp": "https://www.komatsu-u.ac.jp/",
+   "cat": "public"
+  },
+  {
+   "name": "公立諏訪東京理科大学",
+   "type": "公立",
+   "pref": "長野県",
+   "hp": "https://www.sus.ac.jp/",
+   "cat": "public"
+  },
+  {
+   "name": "名古屋工業大学",
+   "type": "国立",
+   "pref": "愛知県",
+   "hp": "http://www.nitech.ac.jp/",
+   "cat": "national"
+  },
+  {
+   "name": "名古屋市立大学",
+   "type": "公立",
+   "pref": "愛知県",
+   "hp": "http://www.nagoya-cu.ac.jp/",
+   "cat": "public"
+  },
+  {
+   "name": "富山大学",
+   "type": "国立",
+   "pref": "富山県",
+   "hp": "https://www.u-toyama.ac.jp/",
+   "cat": "national"
+  },
+  {
+   "name": "富山県立大学",
+   "type": "公立",
+   "pref": "富山県",
+   "hp": "http://www.pu-toyama.ac.jp/",
+   "cat": "public"
+  },
+  {
+   "name": "山梨大学",
+   "type": "国立",
+   "pref": "山梨県",
+   "hp": "http://www.yamanashi.ac.jp/",
+   "cat": "national"
+  },
+  {
+   "name": "山梨県立大学",
+   "type": "公立",
+   "pref": "山梨県",
+   "hp": "http://www.yamanashi-ken.ac.jp/",
+   "cat": "public"
+  },
+  {
+   "name": "岐阜大学",
+   "type": "国立",
+   "pref": "岐阜県",
+   "hp": "http://www.gifu-u.ac.jp/index.html",
+   "cat": "national"
+  },
+  {
+   "name": "岐阜県立看護大学",
+   "type": "公立",
+   "pref": "岐阜県",
+   "hp": "http://www.gifu-cn.ac.jp/",
+   "cat": "public"
+  },
+  {
+   "name": "岐阜薬科大学",
+   "type": "公立",
+   "pref": "岐阜県",
+   "hp": "http://www.gifu-pu.ac.jp/",
+   "cat": "public"
+  },
+  {
+   "name": "愛知教育大学",
+   "type": "国立",
+   "pref": "愛知県",
+   "hp": "http://www.aichi-edu.ac.jp/",
+   "cat": "national"
+  },
+  {
+   "name": "愛知県立大学",
+   "type": "公立",
+   "pref": "愛知県",
+   "hp": "http://www.aichi-pu.ac.jp/",
+   "cat": "public"
+  },
+  {
+   "name": "愛知県立芸術大学",
+   "type": "公立",
+   "pref": "愛知県",
+   "hp": "http://www.aichi-fam-u.ac.jp/",
+   "cat": "public"
+  },
+  {
+   "name": "敦賀市立看護大学",
+   "type": "公立",
+   "pref": "福井県",
+   "hp": "http://tsuruga-nu.ac.jp/",
+   "cat": "public"
+  },
+  {
+   "name": "新潟県立大学",
+   "type": "公立",
+   "pref": "新潟県",
+   "hp": "http://www.unii.ac.jp/",
+   "cat": "public"
+  },
+  {
+   "name": "新潟県立看護大学",
+   "type": "公立",
+   "pref": "新潟県",
+   "hp": "http://www.niigata-cn.ac.jp/",
+   "cat": "public"
+  },
+  {
+   "name": "浜松医科大学",
+   "type": "国立",
+   "pref": "静岡県",
+   "hp": "http://www.hama-med.ac.jp/",
+   "cat": "national"
+  },
+  {
+   "name": "石川県立大学",
+   "type": "公立",
+   "pref": "石川県",
+   "hp": "http://www.ishikawa-pu.ac.jp/",
+   "cat": "public"
+  },
+  {
+   "name": "石川県立看護大学",
+   "type": "公立",
+   "pref": "石川県",
+   "hp": "http://www.ishikawa-nu.ac.jp/",
+   "cat": "public"
+  },
+  {
+   "name": "福井大学",
+   "type": "国立",
+   "pref": "福井県",
+   "hp": "http://www.u-fukui.ac.jp/",
+   "cat": "national"
+  },
+  {
+   "name": "福井県立大学",
+   "type": "公立",
+   "pref": "福井県",
+   "hp": "http://www.fpu.ac.jp/",
+   "cat": "public"
+  },
+  {
+   "name": "都留文科大学",
+   "type": "公立",
+   "pref": "山梨県",
+   "hp": "http://www.tsuru.ac.jp/",
+   "cat": "public"
+  },
+  {
+   "name": "金沢美術工芸大学",
+   "type": "公立",
+   "pref": "石川県",
+   "hp": "http://www.kanazawa-bidai.ac.jp/",
+   "cat": "public"
+  },
+  {
+   "name": "長岡造形大学",
+   "type": "公立",
+   "pref": "新潟県",
+   "hp": "http://www.nagaoka-id.ac.jp/",
+   "cat": "public"
+  },
+  {
+   "name": "長野大学",
+   "type": "公立",
+   "pref": "長野県",
+   "hp": "http://www.nagano.ac.jp/",
+   "cat": "public"
+  },
+  {
+   "name": "長野県看護大学",
+   "type": "公立",
+   "pref": "長野県",
+   "hp": "http://www.nagano-nurs.ac.jp/index.html",
+   "cat": "public"
+  },
+  {
+   "name": "長野県立大学",
+   "type": "公立",
+   "pref": "長野県",
+   "hp": "http://www.u-nagano.ac.jp/",
+   "cat": "public"
+  },
+  {
+   "name": "静岡文化芸術大学",
+   "type": "公立",
+   "pref": "静岡県",
+   "hp": "http://www.suac.ac.jp/",
+   "cat": "public"
+  },
+  {
+   "name": "静岡県立大学",
+   "type": "公立",
+   "pref": "静岡県",
+   "hp": "http://www.u-shizuoka-ken.ac.jp/",
+   "cat": "public"
+  },
+  {
+   "name": "三重大学",
+   "type": "国立",
+   "pref": "三重県",
+   "hp": "http://www.mie-u.ac.jp/",
+   "cat": "national"
+  },
+  {
+   "name": "三重県立看護大学",
+   "type": "公立",
+   "pref": "三重県",
+   "hp": "http://www.mcn.ac.jp/",
+   "cat": "public"
+  },
+  {
+   "name": "京都工芸繊維大学",
+   "type": "国立",
+   "pref": "京都府",
+   "hp": "http://www.kit.ac.jp/",
+   "cat": "national"
+  },
+  {
+   "name": "京都市立芸術大学",
+   "type": "公立",
+   "pref": "京都府",
+   "hp": "http://www.kcua.ac.jp/",
+   "cat": "public"
+  },
+  {
+   "name": "京都府立医科大学",
+   "type": "公立",
+   "pref": "京都府",
+   "hp": "http://www.kpu-m.ac.jp/",
+   "cat": "public"
+  },
+  {
+   "name": "京都府立大学",
+   "type": "公立",
+   "pref": "京都府",
+   "hp": "http://www.kpu.ac.jp/",
+   "cat": "public"
+  },
+  {
+   "name": "京都教育大学",
+   "type": "国立",
+   "pref": "京都府",
+   "hp": "http://www.kyokyo-u.ac.jp/",
+   "cat": "national"
+  },
+  {
+   "name": "兵庫教育大学",
+   "type": "国立",
+   "pref": "兵庫県",
+   "hp": "http://www.hyogo-u.ac.jp/",
+   "cat": "national"
+  },
+  {
+   "name": "兵庫県立大学",
+   "type": "公立",
+   "pref": "兵庫県",
+   "hp": "http://www.u-hyogo.ac.jp/",
+   "cat": "public"
+  },
+  {
+   "name": "和歌山大学",
+   "type": "国立",
+   "pref": "和歌山県",
+   "hp": "http://www.wakayama-u.ac.jp/",
+   "cat": "national"
+  },
+  {
+   "name": "和歌山県立医科大学",
+   "type": "公立",
+   "pref": "和歌山県",
+   "hp": "http://www.wakayama-med.ac.jp/",
+   "cat": "public"
+  },
+  {
+   "name": "大阪教育大学",
+   "type": "国立",
+   "pref": "大阪府",
+   "hp": "http://www.osaka-kyoiku.ac.jp/",
+   "cat": "national"
+  },
+  {
+   "name": "奈良教育大学",
+   "type": "国立",
+   "pref": "奈良県",
+   "hp": "http://www.nara-edu.ac.jp/home-jp.htm",
+   "cat": "national"
+  },
+  {
+   "name": "奈良県立医科大学",
+   "type": "公立",
+   "pref": "奈良県",
+   "hp": "http://www.naramed-u.ac.jp/",
+   "cat": "public"
+  },
+  {
+   "name": "奈良県立大学",
+   "type": "公立",
+   "pref": "奈良県",
+   "hp": "http://www.narapu.ac.jp/",
+   "cat": "public"
+  },
+  {
+   "name": "滋賀医科大学",
+   "type": "国立",
+   "pref": "滋賀県",
+   "hp": "http://www.shiga-med.ac.jp/",
+   "cat": "national"
+  },
+  {
+   "name": "滋賀大学",
+   "type": "国立",
+   "pref": "滋賀県",
+   "hp": "http://www.shiga-u.ac.jp/",
+   "cat": "national"
+  },
+  {
+   "name": "滋賀県立大学",
+   "type": "公立",
+   "pref": "滋賀県",
+   "hp": "https://www.usp.ac.jp/",
+   "cat": "public"
+  },
+  {
+   "name": "神戸市外国語大学",
+   "type": "公立",
+   "pref": "兵庫県",
+   "hp": "http://www.kobe-cufs.ac.jp/",
+   "cat": "public"
+  },
+  {
+   "name": "神戸市看護大学",
+   "type": "公立",
+   "pref": "兵庫県",
+   "hp": "http://www.kobe-ccn.ac.jp/",
+   "cat": "public"
+  },
+  {
+   "name": "福知山公立大学",
+   "type": "公立",
+   "pref": "京都府",
+   "hp": "http://www.fukuchiyama.ac.jp/",
+   "cat": "public"
+  },
+  {
+   "name": "下関市立大学",
+   "type": "公立",
+   "pref": "山口県",
+   "hp": "http://www.shimonoseki-cu.ac.jp/",
+   "cat": "public"
+  },
+  {
+   "name": "公立鳥取環境大学",
+   "type": "公立",
+   "pref": "鳥取県",
+   "hp": "http://www.kankyo-u.ac.jp/",
+   "cat": "public"
+  },
+  {
+   "name": "叡啓大学",
+   "type": "公立",
+   "pref": "広島県",
+   "hp": "https://www.pu-hiroshima.ac.jp/site/eikei-univ/",
+   "cat": "public"
+  },
+  {
+   "name": "周南公立大学",
+   "type": "公立",
+   "pref": "山口県",
+   "hp": "https://www.shunan-u.ac.jp/",
+   "cat": "public"
+  },
+  {
+   "name": "尾道市立大学",
+   "type": "公立",
+   "pref": "広島県",
+   "hp": "http://www.onomichi-u.ac.jp/",
+   "cat": "public"
+  },
+  {
+   "name": "山口大学",
+   "type": "国立",
+   "pref": "山口県",
+   "hp": "http://www.yamaguchi-u.ac.jp/",
+   "cat": "national"
+  },
+  {
+   "name": "山口県立大学",
+   "type": "公立",
+   "pref": "山口県",
+   "hp": "http://www.yamaguchi-pu.ac.jp/",
+   "cat": "public"
+  },
+  {
+   "name": "山陽小野田市立山口東京理科大学",
+   "type": "公立",
+   "pref": "山口県",
+   "hp": "http://www.socu.ac.jp/",
+   "cat": "public"
+  },
+  {
+   "name": "岡山県立大学",
+   "type": "公立",
+   "pref": "岡山県",
+   "hp": "http://www.oka-pu.ac.jp/",
+   "cat": "public"
+  },
+  {
+   "name": "島根大学",
+   "type": "国立",
+   "pref": "島根県",
+   "hp": "http://www.shimane-u.ac.jp/",
+   "cat": "national"
+  },
+  {
+   "name": "島根県立大学",
+   "type": "公立",
+   "pref": "島根県",
+   "hp": "http://www.u-shimane.ac.jp/",
+   "cat": "public"
+  },
+  {
+   "name": "広島市立大学",
+   "type": "公立",
+   "pref": "広島県",
+   "hp": "http://www.hiroshima-cu.ac.jp/",
+   "cat": "public"
+  },
+  {
+   "name": "徳島大学",
+   "type": "国立",
+   "pref": "徳島県",
+   "hp": "http://www.tokushima-u.ac.jp/",
+   "cat": "national"
+  },
+  {
+   "name": "愛媛大学",
+   "type": "国立",
+   "pref": "愛媛県",
+   "hp": "http://www.ehime-u.ac.jp/",
+   "cat": "national"
+  },
+  {
+   "name": "愛媛県立医療技術大学",
+   "type": "公立",
+   "pref": "愛媛県",
+   "hp": "http://www.epu.ac.jp/",
+   "cat": "public"
+  },
+  {
+   "name": "新見公立大学",
+   "type": "公立",
+   "pref": "岡山県",
+   "hp": "https://www.niimi-u.ac.jp/",
+   "cat": "public"
+  },
+  {
+   "name": "県立広島大学",
+   "type": "公立",
+   "pref": "広島県",
+   "hp": "http://www.pu-hiroshima.ac.jp/",
+   "cat": "public"
+  },
+  {
+   "name": "福山市立大学",
+   "type": "公立",
+   "pref": "広島県",
+   "hp": "http://www.fcu.ac.jp/",
+   "cat": "public"
+  },
+  {
+   "name": "香川大学",
+   "type": "国立",
+   "pref": "香川県",
+   "hp": "http://www.kagawa-u.ac.jp/",
+   "cat": "national"
+  },
+  {
+   "name": "香川県立保健医療大学",
+   "type": "公立",
+   "pref": "香川県",
+   "hp": "https://www.kagawa-puhs.ac.jp/",
+   "cat": "public"
+  },
+  {
+   "name": "高知大学",
+   "type": "国立",
+   "pref": "高知県",
+   "hp": "http://www.kochi-u.ac.jp/JA/",
+   "cat": "national"
+  },
+  {
+   "name": "高知工科大学",
+   "type": "公立",
+   "pref": "高知県",
+   "hp": "https://www.kochi-tech.ac.jp/",
+   "cat": "public"
+  },
+  {
+   "name": "高知県立大学",
+   "type": "公立",
+   "pref": "高知県",
+   "hp": "http://www.u-kochi.ac.jp/",
+   "cat": "public"
+  },
+  {
+   "name": "鳥取大学",
+   "type": "国立",
+   "pref": "鳥取県",
+   "hp": "http://www.tottori-u.ac.jp/",
+   "cat": "national"
+  },
+  {
+   "name": "鳴門教育大学",
+   "type": "国立",
+   "pref": "徳島県",
+   "hp": "http://www.naruto-u.ac.jp/",
+   "cat": "national"
+  },
+  {
+   "name": "九州工業大学",
+   "type": "国立",
+   "pref": "福岡県",
+   "hp": "http://www.kyutech.ac.jp/",
+   "cat": "national"
+  },
+  {
+   "name": "九州歯科大学",
+   "type": "公立",
+   "pref": "福岡県",
+   "hp": "http://www.kyu-dent.ac.jp/",
+   "cat": "public"
+  },
+  {
+   "name": "佐賀大学",
+   "type": "国立",
+   "pref": "佐賀県",
+   "hp": "http://www.saga-u.ac.jp/",
+   "cat": "national"
+  },
+  {
+   "name": "北九州市立大学",
+   "type": "公立",
+   "pref": "福岡県",
+   "hp": "http://www.kitakyu-u.ac.jp/",
+   "cat": "public"
+  },
+  {
+   "name": "名桜大学",
+   "type": "公立",
+   "pref": "沖縄県",
+   "hp": "http://www.meio-u.ac.jp/",
+   "cat": "public"
+  },
+  {
+   "name": "大分大学",
+   "type": "国立",
+   "pref": "大分県",
+   "hp": "http://www.oita-u.ac.jp/",
+   "cat": "national"
+  },
+  {
+   "name": "大分県立看護科学大学",
+   "type": "公立",
+   "pref": "大分県",
+   "hp": "http://www.oita-nhs.ac.jp/",
+   "cat": "public"
+  },
+  {
+   "name": "宮崎公立大学",
+   "type": "公立",
+   "pref": "宮崎県",
+   "hp": "http://www.miyazaki-mu.ac.jp/",
+   "cat": "public"
+  },
+  {
+   "name": "宮崎大学",
+   "type": "国立",
+   "pref": "宮崎県",
+   "hp": "http://www.miyazaki-u.ac.jp/",
+   "cat": "national"
+  },
+  {
+   "name": "宮崎県立看護大学",
+   "type": "公立",
+   "pref": "宮崎県",
+   "hp": "http://www.mpu.ac.jp/",
+   "cat": "public"
+  },
+  {
+   "name": "沖縄県立看護大学",
+   "type": "公立",
+   "pref": "沖縄県",
+   "hp": "http://www.okinawa-nurs.ac.jp/",
+   "cat": "public"
+  },
+  {
+   "name": "沖縄県立芸術大学",
+   "type": "公立",
+   "pref": "沖縄県",
+   "hp": "http://www.okigei.ac.jp/",
+   "cat": "public"
+  },
+  {
+   "name": "熊本県立大学",
+   "type": "公立",
+   "pref": "熊本県",
+   "hp": "http://www.pu-kumamoto.ac.jp/index.php",
+   "cat": "public"
+  },
+  {
+   "name": "琉球大学",
+   "type": "国立",
+   "pref": "沖縄県",
+   "hp": "http://www.u-ryukyu.ac.jp/",
+   "cat": "national"
+  },
+  {
+   "name": "福岡女子大学",
+   "type": "公立",
+   "pref": "福岡県",
+   "hp": "http://www.fwu.ac.jp/",
+   "cat": "public"
+  },
+  {
+   "name": "福岡教育大学",
+   "type": "国立",
+   "pref": "福岡県",
+   "hp": "http://www.fukuoka-edu.ac.jp/",
+   "cat": "national"
+  },
+  {
+   "name": "福岡県立大学",
+   "type": "公立",
+   "pref": "福岡県",
+   "hp": "http://www.fukuoka-pu.ac.jp/",
+   "cat": "public"
+  },
+  {
+   "name": "長崎大学",
+   "type": "国立",
+   "pref": "長崎県",
+   "hp": "http://www.nagasaki-u.ac.jp/",
+   "cat": "national"
+  },
+  {
+   "name": "長崎県立大学",
+   "type": "公立",
+   "pref": "長崎県",
+   "hp": "http://sun.ac.jp/",
+   "cat": "public"
+  },
+  {
+   "name": "鹿児島大学",
+   "type": "国立",
+   "pref": "鹿児島県",
+   "hp": "http://www.kagoshima-u.ac.jp/",
+   "cat": "national"
+  },
+  {
+   "name": "鹿屋体育大学",
+   "type": "国立",
+   "pref": "鹿児島県",
+   "hp": "http://www.nifs-k.ac.jp/",
+   "cat": "national"
+  },
+  {
+   "name": "つくば国際大学",
+   "type": "私立",
+   "pref": "茨城県",
+   "hp": "https://www.ktt.ac.jp/tiu/",
+   "cat": "private"
+  },
+  {
+   "name": "アール医療専門職大学",
+   "type": "私立",
+   "pref": "茨城県",
+   "hp": "https://a-ru.ac.jp/university/",
+   "cat": "senmon"
+  },
+  {
+   "name": "日本ウェルネススポーツ大学",
+   "type": "私立",
+   "pref": "茨城県",
+   "hp": "https://www.nihonwellness.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "日本国際学園大学",
+   "type": "私立",
+   "pref": "茨城県",
+   "hp": "https://www.japan-iu.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "SBC東京医療大学",
+   "type": "私立",
+   "pref": "千葉県",
+   "hp": "https://www.sbctmu.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "こども教育宝仙大学",
+   "type": "私立",
+   "pref": "東京都",
+   "hp": "https://hosen.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "ものつくり大学",
+   "type": "私立",
+   "pref": "埼玉県",
+   "hp": "https://www.iot.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "グローバルBiz専門職大学",
+   "type": "私立",
+   "pref": "神奈川県",
+   "hp": "https://gpu.ac.jp/",
+   "cat": "senmon"
+  },
+  {
+   "name": "デジタルハリウッド大学",
+   "type": "私立",
+   "pref": "東京都",
+   "hp": "https://www.dhw.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "ビューティ＆ウェルネス専門職大学",
+   "type": "私立",
+   "pref": "神奈川県",
+   "hp": "https://www.b-w.ac.jp/",
+   "cat": "senmon"
+  },
+  {
+   "name": "フェリス女学院大学",
+   "type": "私立",
+   "pref": "神奈川県",
+   "hp": "https://www.ferris.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "ヤマザキ動物看護大学",
+   "type": "私立",
+   "pref": "東京都",
+   "hp": "https://univ.yamazaki.ac.jp/univ/",
+   "cat": "private"
+  },
+  {
+   "name": "ルーテル学院大学",
+   "type": "私立",
+   "pref": "東京都",
+   "hp": "https://www.luther.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "三育学院大学",
+   "type": "私立",
+   "pref": "千葉県",
+   "hp": "https://www.saniku.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "上武大学",
+   "type": "私立",
+   "pref": "群馬県",
+   "hp": "https://www.jobu.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "中央学院大学",
+   "type": "私立",
+   "pref": "千葉県",
+   "hp": "https://www.cgu.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "亀田医療大学",
+   "type": "私立",
+   "pref": "千葉県",
+   "hp": "http://www.kameda.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "二松学舎大学",
+   "type": "私立",
+   "pref": "東京都",
+   "hp": "https://www.nishogakusha-u.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "亜細亜大学",
+   "type": "私立",
+   "pref": "東京都",
+   "hp": "https://www.asia-u.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "人間総合科学大学",
+   "type": "私立",
+   "pref": "埼玉県",
+   "hp": "https://www.human.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "作新学院大学",
+   "type": "私立",
+   "pref": "栃木県",
+   "hp": "https://www.sakushin-u.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "共愛学園前橋国際大学",
+   "type": "私立",
+   "pref": "群馬県",
+   "hp": "https://www.kyoai.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "共栄大学",
+   "type": "私立",
+   "pref": "埼玉県",
+   "hp": "https://www.kyoei.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "共立女子大学",
+   "type": "私立",
+   "pref": "東京都",
+   "hp": "https://www.kyoritsu-wu.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "創価大学",
+   "type": "私立",
+   "pref": "東京都",
+   "hp": "https://www.soka.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "十文字学園女子大学",
+   "type": "私立",
+   "pref": "埼玉県",
+   "hp": "https://www.jumonji-u.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "千葉商科大学",
+   "type": "私立",
+   "pref": "千葉県",
+   "hp": "https://www.cuc.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "千葉工業大学",
+   "type": "私立",
+   "pref": "千葉県",
+   "hp": "https://www.it-chiba.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "千葉科学大学",
+   "type": "私立",
+   "pref": "千葉県",
+   "hp": "https://www.cis.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "千葉経済大学",
+   "type": "私立",
+   "pref": "千葉県",
+   "hp": "https://www.cku.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "和光大学",
+   "type": "私立",
+   "pref": "東京都",
+   "hp": "https://www.wako.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "和洋女子大学",
+   "type": "私立",
+   "pref": "千葉県",
+   "hp": "https://www.wayo.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "嘉悦大学",
+   "type": "私立",
+   "pref": "東京都",
+   "hp": "https://www.kaetsu.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "国士舘大学",
+   "type": "私立",
+   "pref": "東京都",
+   "hp": "https://www.kokushikan.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "国立音楽大学",
+   "type": "私立",
+   "pref": "東京都",
+   "hp": "https://www.kunitachi.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "国際武道大学",
+   "type": "私立",
+   "pref": "千葉県",
+   "hp": "https://www.budo-u.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "城西国際大学",
+   "type": "私立",
+   "pref": "千葉県",
+   "hp": "https://www.jiu.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "城西大学",
+   "type": "私立",
+   "pref": "埼玉県",
+   "hp": "https://www.josai.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "埼玉医科大学",
+   "type": "私立",
+   "pref": "埼玉県",
+   "hp": "https://www.saitama-med.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "埼玉学園大学",
+   "type": "私立",
+   "pref": "埼玉県",
+   "hp": "https://www.saigaku.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "埼玉工業大学",
+   "type": "私立",
+   "pref": "埼玉県",
+   "hp": "https://www.sit.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "多摩大学",
+   "type": "私立",
+   "pref": "東京都",
+   "hp": "https://www.tama.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "多摩美術大学",
+   "type": "私立",
+   "pref": "東京都",
+   "hp": "https://www.tamabi.ac.jp/index_j.htm",
+   "cat": "private"
+  },
+  {
+   "name": "大妻女子大学",
+   "type": "私立",
+   "pref": "東京都",
+   "hp": "https://www.otsuma.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "大東文化大学",
+   "type": "私立",
+   "pref": "東京都",
+   "hp": "https://www.daito.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "大正大学",
+   "type": "私立",
+   "pref": "東京都",
+   "hp": "https://www.tais.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "女子栄養大学",
+   "type": "私立",
+   "pref": "埼玉県",
+   "hp": "https://www.eiyo.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "女子美術大学",
+   "type": "私立",
+   "pref": "東京都",
+   "hp": "https://www.joshibi.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "学習院女子大学",
+   "type": "私立",
+   "pref": "東京都",
+   "hp": "https://www.gwc.gakushuin.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "宇都宮共和大学",
+   "type": "私立",
+   "pref": "栃木県",
+   "hp": "http://www.kyowa-u.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "実践女子大学",
+   "type": "私立",
+   "pref": "東京都",
+   "hp": "https://www.jissen.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "尚美学園大学",
+   "type": "私立",
+   "pref": "埼玉県",
+   "hp": "https://www.shobi-u.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "川村学園女子大学",
+   "type": "私立",
+   "pref": "千葉県",
+   "hp": "https://www.kgwu.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "帝京大学",
+   "type": "私立",
+   "pref": "東京都",
+   "hp": "https://www.teikyo-u.ac.jp/index.html",
+   "cat": "private"
+  },
+  {
+   "name": "帝京平成大学",
+   "type": "私立",
+   "pref": "東京都",
+   "hp": "https://www.thu.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "帝京科学大学",
+   "type": "私立",
+   "pref": "東京都",
+   "hp": "https://www.ntu.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "平成国際大学",
+   "type": "私立",
+   "pref": "埼玉県",
+   "hp": "http://www.hiu.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "恵泉女学園大学",
+   "type": "私立",
+   "pref": "東京都",
+   "hp": "https://www.keisen.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "愛国学園大学",
+   "type": "私立",
+   "pref": "千葉県",
+   "hp": "https://aikoku-u.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "拓殖大学",
+   "type": "私立",
+   "pref": "東京都",
+   "hp": "https://www.takushoku-u.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "敬愛大学",
+   "type": "私立",
+   "pref": "千葉県",
+   "hp": "https://www.u-keiai.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "文京学院大学",
+   "type": "私立",
+   "pref": "東京都",
+   "hp": "https://www.bgu.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "文化学園大学",
+   "type": "私立",
+   "pref": "東京都",
+   "hp": "https://bwu.bunka.ac.jp/index.php",
+   "cat": "private"
+  },
+  {
+   "name": "文教大学",
+   "type": "私立",
+   "pref": "埼玉県",
+   "hp": "https://www.bunkyo.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "文星芸術大学",
+   "type": "私立",
+   "pref": "栃木県",
+   "hp": "https://geidai.bunsei.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "日本体育大学",
+   "type": "私立",
+   "pref": "東京都",
+   "hp": "https://www.nittai.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "日本保健医療大学",
+   "type": "私立",
+   "pref": "埼玉県",
+   "hp": "https://www.jhsu.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "日本医療科学大学",
+   "type": "私立",
+   "pref": "埼玉県",
+   "hp": "https://www.nims.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "日本女子体育大学",
+   "type": "私立",
+   "pref": "東京都",
+   "hp": "https://www.jwcpe.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "日本工業大学",
+   "type": "私立",
+   "pref": "埼玉県",
+   "hp": "https://www.nit.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "日本文化大学",
+   "type": "私立",
+   "pref": "東京都",
+   "hp": "https://www.nihonbunka-u.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "日本映画大学",
+   "type": "私立",
+   "pref": "神奈川県",
+   "hp": "https://www.eiga.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "日本歯科大学",
+   "type": "私立",
+   "pref": "東京都",
+   "hp": "https://www.ndu.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "日本獣医生命科学大学",
+   "type": "私立",
+   "pref": "東京都",
+   "hp": "https://www.nvlu.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "日本社会事業大学",
+   "type": "私立",
+   "pref": "東京都",
+   "hp": "https://www.jcsw.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "日本薬科大学",
+   "type": "私立",
+   "pref": "埼玉県",
+   "hp": "https://www.nichiyaku.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "日本赤十字看護大学",
+   "type": "私立",
+   "pref": "東京都",
+   "hp": "https://www.redcross.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "明星大学",
+   "type": "私立",
+   "pref": "東京都",
+   "hp": "https://www.meisei-u.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "明治薬科大学",
+   "type": "私立",
+   "pref": "東京都",
+   "hp": "https://www.my-pharm.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "明海大学",
+   "type": "私立",
+   "pref": "千葉県",
+   "hp": "https://www.meikai.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "星薬科大学",
+   "type": "私立",
+   "pref": "東京都",
+   "hp": "https://www.hoshi.ac.jp/site/index.php",
+   "cat": "private"
+  },
+  {
+   "name": "昭和大学",
+   "type": "私立",
+   "pref": "東京都",
+   "hp": "https://www.showa-u.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "昭和女子大学",
+   "type": "私立",
+   "pref": "東京都",
+   "hp": "https://www.swu.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "昭和薬科大学",
+   "type": "私立",
+   "pref": "東京都",
+   "hp": "https://www.shoyaku.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "昭和音楽大学",
+   "type": "私立",
+   "pref": "神奈川県",
+   "hp": "https://www.tosei-showa-music.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "杉野服飾大学",
+   "type": "私立",
+   "pref": "東京都",
+   "hp": "https://www.sugino-fc.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "杏林大学",
+   "type": "私立",
+   "pref": "東京都",
+   "hp": "https://www.kyorin-u.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "東京医療保健大学",
+   "type": "私立",
+   "pref": "東京都",
+   "hp": "https://www.thcu.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "東京医療学院大学",
+   "type": "私立",
+   "pref": "東京都",
+   "hp": "https://www.u-ths.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "東京医科大学",
+   "type": "私立",
+   "pref": "東京都",
+   "hp": "https://www.tokyo-med.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "東京国際大学",
+   "type": "私立",
+   "pref": "埼玉県",
+   "hp": "https://www.tiu.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "東京基督教大学",
+   "type": "私立",
+   "pref": "千葉県",
+   "hp": "https://www.tci.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "東京女子体育大学",
+   "type": "私立",
+   "pref": "東京都",
+   "hp": "https://www.twcpe.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "東京女子医科大学",
+   "type": "私立",
+   "pref": "東京都",
+   "hp": "https://www.twmu.ac.jp/univ/",
+   "cat": "private"
+  },
+  {
+   "name": "東京家政大学",
+   "type": "私立",
+   "pref": "東京都",
+   "hp": "https://www.tokyo-kasei.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "東京家政学院大学",
+   "type": "私立",
+   "pref": "東京都",
+   "hp": "https://www.kasei-gakuin.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "東京富士大学",
+   "type": "私立",
+   "pref": "東京都",
+   "hp": "https://www.fuji.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "東京工科大学",
+   "type": "私立",
+   "pref": "東京都",
+   "hp": "https://www.teu.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "東京工芸大学",
+   "type": "私立",
+   "pref": "東京都",
+   "hp": "https://www.t-kougei.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "東京情報デザイン専門職大学",
+   "type": "私立",
+   "pref": "東京都",
+   "hp": "https://www.tid.ac.jp/",
+   "cat": "senmon"
+  },
+  {
+   "name": "東京情報大学",
+   "type": "私立",
+   "pref": "千葉県",
+   "hp": "https://www.tuis.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "東京成徳大学",
+   "type": "私立",
+   "pref": "東京都",
+   "hp": "https://www.tsu.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "東京有明医療大学",
+   "type": "私立",
+   "pref": "東京都",
+   "hp": "https://www.tau.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "東京未来大学",
+   "type": "私立",
+   "pref": "東京都",
+   "hp": "https://www.tokyomirai.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "東京歯科大学",
+   "type": "私立",
+   "pref": "東京都",
+   "hp": "https://www.tdc.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "東京神学大学",
+   "type": "私立",
+   "pref": "東京都",
+   "hp": "https://www.tuts.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "東京福祉大学",
+   "type": "私立",
+   "pref": "群馬県",
+   "hp": "https://www.tokyo-fukushi.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "東京純心大学",
+   "type": "私立",
+   "pref": "東京都",
+   "hp": "https://www.t-junshin.ac.jp/univ/",
+   "cat": "private"
+  },
+  {
+   "name": "東京経済大学",
+   "type": "私立",
+   "pref": "東京都",
+   "hp": "https://www.tku.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "東京聖栄大学",
+   "type": "私立",
+   "pref": "東京都",
+   "hp": "https://www.tsc-05.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "東京薬科大学",
+   "type": "私立",
+   "pref": "東京都",
+   "hp": "https://www.toyaku.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "東京造形大学",
+   "type": "私立",
+   "pref": "東京都",
+   "hp": "https://www.zokei.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "東京音楽大学",
+   "type": "私立",
+   "pref": "東京都",
+   "hp": "https://www.tokyo-ondai.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "東洋学園大学",
+   "type": "私立",
+   "pref": "東京都",
+   "hp": "https://www.tyg.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "東洋英和女学院大学",
+   "type": "私立",
+   "pref": "神奈川県",
+   "hp": "https://www.toyoeiwa.ac.jp/daigaku/",
+   "cat": "private"
+  },
+  {
+   "name": "東海大学",
+   "type": "私立",
+   "pref": "東京都",
+   "hp": "https://www.u-tokai.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "東邦大学",
+   "type": "私立",
+   "pref": "東京都",
+   "hp": "https://www.toho-u.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "東邦音楽大学",
+   "type": "私立",
+   "pref": "埼玉県",
+   "hp": "https://www.toho-music.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "東都大学",
+   "type": "私立",
+   "pref": "埼玉県",
+   "hp": "https://www.tohto.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "松蔭大学",
+   "type": "私立",
+   "pref": "神奈川県",
+   "hp": "https://www.shoin-u.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "桐朋学園大学",
+   "type": "私立",
+   "pref": "東京都",
+   "hp": "https://www.tohomusic.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "桐生大学",
+   "type": "私立",
+   "pref": "群馬県",
+   "hp": "https://www.kiryu-u.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "桐蔭横浜大学",
+   "type": "私立",
+   "pref": "神奈川県",
+   "hp": "https://toin.ac.jp/univ/",
+   "cat": "private"
+  },
+  {
+   "name": "桜美林大学",
+   "type": "私立",
+   "pref": "東京都",
+   "hp": "https://www.obirin.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "植草学園大学",
+   "type": "私立",
+   "pref": "千葉県",
+   "hp": "https://www.uekusa.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "横浜創英大学",
+   "type": "私立",
+   "pref": "神奈川県",
+   "hp": "http://www.soei.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "横浜商科大学",
+   "type": "私立",
+   "pref": "神奈川県",
+   "hp": "https://www.shodai.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "横浜美術大学",
+   "type": "私立",
+   "pref": "神奈川県",
+   "hp": "https://www.yokohama-art.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "横浜薬科大学",
+   "type": "私立",
+   "pref": "神奈川県",
+   "hp": "https://www.hamayaku.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "武蔵野大学",
+   "type": "私立",
+   "pref": "東京都",
+   "hp": "https://www.musashino-u.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "武蔵野学院大学",
+   "type": "私立",
+   "pref": "埼玉県",
+   "hp": "https://www.musashino.ac.jp/mgu/",
+   "cat": "private"
+  },
+  {
+   "name": "武蔵野美術大学",
+   "type": "私立",
+   "pref": "東京都",
+   "hp": "https://www.musabi.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "武蔵野音楽大学",
+   "type": "私立",
+   "pref": "東京都",
+   "hp": "https://www.musashino-music.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "江戸川大学",
+   "type": "私立",
+   "pref": "千葉県",
+   "hp": "https://www.edogawa-u.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "洗足学園音楽大学",
+   "type": "私立",
+   "pref": "神奈川県",
+   "hp": "https://www.senzoku.ac.jp/music/",
+   "cat": "private"
+  },
+  {
+   "name": "浦和大学",
+   "type": "私立",
+   "pref": "埼玉県",
+   "hp": "https://www.urawa.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "淑徳大学",
+   "type": "私立",
+   "pref": "千葉県",
+   "hp": "https://www.shukutoku.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "清和大学",
+   "type": "私立",
+   "pref": "千葉県",
+   "hp": "http://www.seiwa-univ.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "清泉女子大学",
+   "type": "私立",
+   "pref": "東京都",
+   "hp": "https://www.seisen-u.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "湘南医療大学",
+   "type": "私立",
+   "pref": "神奈川県",
+   "hp": "https://sums.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "湘南工科大学",
+   "type": "私立",
+   "pref": "神奈川県",
+   "hp": "https://www.shonan-it.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "湘南鎌倉医療大学",
+   "type": "私立",
+   "pref": "神奈川県",
+   "hp": "https://www.sku.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "玉川大学",
+   "type": "私立",
+   "pref": "東京都",
+   "hp": "https://www.tamagawa.jp/university/",
+   "cat": "private"
+  },
+  {
+   "name": "産業能率大学",
+   "type": "私立",
+   "pref": "東京都",
+   "hp": "https://www.sanno.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "田園調布学園大学",
+   "type": "私立",
+   "pref": "神奈川県",
+   "hp": "https://www.dcu.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "白梅学園大学",
+   "type": "私立",
+   "pref": "東京都",
+   "hp": "https://daigaku.shiraume.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "白百合女子大学",
+   "type": "私立",
+   "pref": "東京都",
+   "hp": "https://www.shirayuri.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "白鴎大学",
+   "type": "私立",
+   "pref": "栃木県",
+   "hp": "https://hakuoh.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "目白大学",
+   "type": "私立",
+   "pref": "東京都",
+   "hp": "https://www.mejiro.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "相模女子大学",
+   "type": "私立",
+   "pref": "神奈川県",
+   "hp": "https://www.sagami-wu.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "神奈川大学",
+   "type": "私立",
+   "pref": "神奈川県",
+   "hp": "https://www.kanagawa-u.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "神奈川工科大学",
+   "type": "私立",
+   "pref": "神奈川県",
+   "hp": "https://www.kait.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "神奈川歯科大学",
+   "type": "私立",
+   "pref": "神奈川県",
+   "hp": "https://www.kdu.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "秀明大学",
+   "type": "私立",
+   "pref": "千葉県",
+   "hp": "https://www.shumei-u.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "立正大学",
+   "type": "私立",
+   "pref": "東京都",
+   "hp": "https://www.ris.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "群馬パース大学",
+   "type": "私立",
+   "pref": "群馬県",
+   "hp": "https://www.paz.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "群馬医療福祉大学",
+   "type": "私立",
+   "pref": "群馬県",
+   "hp": "https://www.shoken-gakuen.jp/university/",
+   "cat": "private"
+  },
+  {
+   "name": "聖マリアンナ医科大学",
+   "type": "私立",
+   "pref": "神奈川県",
+   "hp": "https://www.marianna-u.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "聖学院大学",
+   "type": "私立",
+   "pref": "埼玉県",
+   "hp": "https://www.seigakuin.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "聖徳大学",
+   "type": "私立",
+   "pref": "千葉県",
+   "hp": "https://www.seitoku-u.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "聖路加国際大学",
+   "type": "私立",
+   "pref": "東京都",
+   "hp": "https://university.luke.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "育英大学",
+   "type": "私立",
+   "pref": "群馬県",
+   "hp": "https://www.ikuei-g.ac.jp/university/",
+   "cat": "private"
+  },
+  {
+   "name": "西武文理大学",
+   "type": "私立",
+   "pref": "埼玉県",
+   "hp": "https://www.bunri-c.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "足利大学",
+   "type": "私立",
+   "pref": "栃木県",
+   "hp": "https://www.ashitech.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "跡見学園女子大学",
+   "type": "私立",
+   "pref": "東京都",
+   "hp": "https://www.atomi.ac.jp/univ/",
+   "cat": "private"
+  },
+  {
+   "name": "鎌倉女子大学",
+   "type": "私立",
+   "pref": "神奈川県",
+   "hp": "https://www.kamakura-u.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "開智国際大学",
+   "type": "私立",
+   "pref": "千葉県",
+   "hp": "https://www.kaichi.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "関東学園大学",
+   "type": "私立",
+   "pref": "群馬県",
+   "hp": "https://www.kanto-gakuen.ac.jp/univer2/",
+   "cat": "private"
+  },
+  {
+   "name": "関東学院大学",
+   "type": "私立",
+   "pref": "神奈川県",
+   "hp": "https://univ.kanto-gakuin.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "駒沢女子大学",
+   "type": "私立",
+   "pref": "東京都",
+   "hp": "https://www.komajo.ac.jp/uni/",
+   "cat": "private"
+  },
+  {
+   "name": "駿河台大学",
+   "type": "私立",
+   "pref": "埼玉県",
+   "hp": "https://www.surugadai.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "高千穂大学",
+   "type": "私立",
+   "pref": "東京都",
+   "hp": "https://www.takachiho.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "高崎健康福祉大学",
+   "type": "私立",
+   "pref": "群馬県",
+   "hp": "https://www.takasaki-u.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "高崎商科大学",
+   "type": "私立",
+   "pref": "群馬県",
+   "hp": "https://www.tuc.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "鶴見大学",
+   "type": "私立",
+   "pref": "神奈川県",
+   "hp": "https://www.tsurumi-u.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "麗澤大学",
+   "type": "私立",
+   "pref": "千葉県",
+   "hp": "https://www.reitaku-u.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "麻布大学",
+   "type": "私立",
+   "pref": "神奈川県",
+   "hp": "https://www.azabu-u.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "ノースアジア大学",
+   "type": "私立",
+   "pref": "秋田県",
+   "hp": "https://www.nau.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "仙台大学",
+   "type": "私立",
+   "pref": "宮城県",
+   "hp": "https://www.sendaidaigaku.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "仙台白百合女子大学",
+   "type": "私立",
+   "pref": "宮城県",
+   "hp": "https://sendai-shirayuri.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "仙台青葉学院大学",
+   "type": "私立",
+   "pref": "宮城県",
+   "hp": "https://seiyogakuin.ac.jp/university/",
+   "cat": "private"
+  },
+  {
+   "name": "八戸学院大学",
+   "type": "私立",
+   "pref": "青森県",
+   "hp": "https://www.hachinohe-u.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "八戸工業大学",
+   "type": "私立",
+   "pref": "青森県",
+   "hp": "https://www.hi-tech.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "函館大学",
+   "type": "私立",
+   "pref": "北海道",
+   "hp": "https://www.hakodate-u.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "北星学園大学",
+   "type": "私立",
+   "pref": "北海道",
+   "hp": "https://www.hokusei.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "北洋大学",
+   "type": "私立",
+   "pref": "北海道",
+   "hp": "https://hokuyo.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "北海商科大学",
+   "type": "私立",
+   "pref": "北海道",
+   "hp": "https://www.hokkai.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "北海学園大学",
+   "type": "私立",
+   "pref": "北海道",
+   "hp": "https://www.hgu.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "北海道医療大学",
+   "type": "私立",
+   "pref": "北海道",
+   "hp": "https://www.hoku-iryo-u.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "北海道千歳リハビリテーション大学",
+   "type": "私立",
+   "pref": "北海道",
+   "hp": "https://www.chitose-reha.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "北海道情報大学",
+   "type": "私立",
+   "pref": "北海道",
+   "hp": "https://www.do-johodai.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "北海道文教大学",
+   "type": "私立",
+   "pref": "北海道",
+   "hp": "https://www.do-bunkyodai.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "北海道武蔵女子大学",
+   "type": "私立",
+   "pref": "北海道",
+   "hp": "https://www.hmu.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "北海道科学大学",
+   "type": "私立",
+   "pref": "北海道",
+   "hp": "https://www.hus.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "北翔大学",
+   "type": "私立",
+   "pref": "北海道",
+   "hp": "https://www.hokusho-u.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "医療創生大学",
+   "type": "私立",
+   "pref": "福島県",
+   "hp": "https://www.isu.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "天使大学",
+   "type": "私立",
+   "pref": "北海道",
+   "hp": "https://www.tenshi.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "奥羽大学",
+   "type": "私立",
+   "pref": "福島県",
+   "hp": "https://www.ohu-u.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "宮城学院女子大学",
+   "type": "私立",
+   "pref": "宮城県",
+   "hp": "https://www.mgu.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "富士大学",
+   "type": "私立",
+   "pref": "岩手県",
+   "hp": "http://www.fuji-u.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "尚絅学院大学",
+   "type": "私立",
+   "pref": "宮城県",
+   "hp": "https://www.shokei.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "岩手保健医療大学",
+   "type": "私立",
+   "pref": "岩手県",
+   "hp": "https://www.iwate-uhms.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "岩手医科大学",
+   "type": "私立",
+   "pref": "岩手県",
+   "hp": "https://www.iwate-med.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "弘前医療福祉大学",
+   "type": "私立",
+   "pref": "青森県",
+   "hp": "https://www.hirosakiuhw.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "弘前学院大学",
+   "type": "私立",
+   "pref": "青森県",
+   "hp": "https://www.hirogaku.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "日本医療大学",
+   "type": "私立",
+   "pref": "北海道",
+   "hp": "https://www.jhu.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "日本赤十字北海道看護大学",
+   "type": "私立",
+   "pref": "北海道",
+   "hp": "https://www.rchokkaido-cn.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "日本赤十字秋田看護大学",
+   "type": "私立",
+   "pref": "秋田県",
+   "hp": "https://www.rcakita.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "星槎道都大学",
+   "type": "私立",
+   "pref": "北海道",
+   "hp": "https://www.seisadohto.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "札幌保健医療大学",
+   "type": "私立",
+   "pref": "北海道",
+   "hp": "https://www.sapporo-hokeniryou-u.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "札幌国際大学",
+   "type": "私立",
+   "pref": "北海道",
+   "hp": "https://www.siu.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "札幌大学",
+   "type": "私立",
+   "pref": "北海道",
+   "hp": "https://www.sapporo-u.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "札幌大谷大学",
+   "type": "私立",
+   "pref": "北海道",
+   "hp": "https://www.sapporo-otani.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "札幌学院大学",
+   "type": "私立",
+   "pref": "北海道",
+   "hp": "https://www.sgu.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "東北医科薬科大学",
+   "type": "私立",
+   "pref": "宮城県",
+   "hp": "https://www.tohoku-mpu.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "東北学院大学",
+   "type": "私立",
+   "pref": "宮城県",
+   "hp": "https://www.tohoku-gakuin.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "東北工業大学",
+   "type": "私立",
+   "pref": "宮城県",
+   "hp": "https://www.tohtech.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "東北文化学園大学",
+   "type": "私立",
+   "pref": "宮城県",
+   "hp": "https://www.tbgu.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "東北文教大学",
+   "type": "私立",
+   "pref": "山形県",
+   "hp": "https://www.t-bunkyo.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "東北生活文化大学",
+   "type": "私立",
+   "pref": "宮城県",
+   "hp": "https://www.mishima.ac.jp/tsb/",
+   "cat": "private"
+  },
+  {
+   "name": "東北福祉大学",
+   "type": "私立",
+   "pref": "宮城県",
+   "hp": "https://www.tfu.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "東北芸術工科大学",
+   "type": "私立",
+   "pref": "山形県",
+   "hp": "https://www.tuad.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "東日本国際大学",
+   "type": "私立",
+   "pref": "福島県",
+   "hp": "https://www.shk-ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "柴田学園大学",
+   "type": "私立",
+   "pref": "青森県",
+   "hp": "https://univ.shibata.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "盛岡大学",
+   "type": "私立",
+   "pref": "岩手県",
+   "hp": "https://morioka-u.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "石巻専修大学",
+   "type": "私立",
+   "pref": "宮城県",
+   "hp": "https://www.senshu-u.ac.jp/ishinomaki/",
+   "cat": "private"
+  },
+  {
+   "name": "福島学院大学",
+   "type": "私立",
+   "pref": "福島県",
+   "hp": "http://www.fukushima-college.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "秋田看護福祉大学",
+   "type": "私立",
+   "pref": "秋田県",
+   "hp": "https://www.well.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "育英館大学",
+   "type": "私立",
+   "pref": "北海道",
+   "hp": "https://www.ikueikan.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "藤女子大学",
+   "type": "私立",
+   "pref": "北海道",
+   "hp": "https://www.fujijoshi.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "郡山女子大学",
+   "type": "私立",
+   "pref": "福島県",
+   "hp": "https://www.koriyama-kgc.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "酪農学園大学",
+   "type": "私立",
+   "pref": "北海道",
+   "hp": "https://www.rakuno.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "青森中央学院大学",
+   "type": "私立",
+   "pref": "青森県",
+   "hp": "https://www.aomoricgu.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "青森大学",
+   "type": "私立",
+   "pref": "青森県",
+   "hp": "https://www.aomori-u.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "かなざわ食マネジメント専門職大学",
+   "type": "私立",
+   "pref": "石川県",
+   "hp": "https://kanazawa-pu.ac.jp/",
+   "cat": "senmon"
+  },
+  {
+   "name": "一宮研伸大学",
+   "type": "私立",
+   "pref": "愛知県",
+   "hp": "https://www.ikc.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "中京大学",
+   "type": "私立",
+   "pref": "愛知県",
+   "hp": "https://www.chukyo-u.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "中京学院大学",
+   "type": "私立",
+   "pref": "岐阜県",
+   "hp": "https://www.chukyogakuin-u.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "中部大学",
+   "type": "私立",
+   "pref": "愛知県",
+   "hp": "https://www.chubu.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "中部学院大学",
+   "type": "私立",
+   "pref": "岐阜県",
+   "hp": "https://www.chubu-gu.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "人間環境大学",
+   "type": "私立",
+   "pref": "愛知県",
+   "hp": "https://www.uhe.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "仁愛大学",
+   "type": "私立",
+   "pref": "福井県",
+   "hp": "https://www.jindai.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "佐久大学",
+   "type": "私立",
+   "pref": "長野県",
+   "hp": "https://www.saku.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "修文大学",
+   "type": "私立",
+   "pref": "愛知県",
+   "hp": "https://www.shubun.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "健康科学大学",
+   "type": "私立",
+   "pref": "山梨県",
+   "hp": "https://www.kenkoudai.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "北陸大学",
+   "type": "私立",
+   "pref": "石川県",
+   "hp": "https://www.hokuriku-u.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "北陸学院大学",
+   "type": "私立",
+   "pref": "石川県",
+   "hp": "https://www.hokurikugakuin.ac.jp/univ/",
+   "cat": "private"
+  },
+  {
+   "name": "同朋大学",
+   "type": "私立",
+   "pref": "愛知県",
+   "hp": "https://www.doho.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "名古屋商科大学",
+   "type": "私立",
+   "pref": "愛知県",
+   "hp": "https://www.nucba.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "名古屋外国語大学",
+   "type": "私立",
+   "pref": "愛知県",
+   "hp": "https://www.nufs.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "名古屋女子大学",
+   "type": "私立",
+   "pref": "愛知県",
+   "hp": "https://www.nagoya-wu.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "名古屋学芸大学",
+   "type": "私立",
+   "pref": "愛知県",
+   "hp": "https://www.nuas.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "名古屋学院大学",
+   "type": "私立",
+   "pref": "愛知県",
+   "hp": "https://www.ngu.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "名古屋文理大学",
+   "type": "私立",
+   "pref": "愛知県",
+   "hp": "https://www.nagoya-bunri.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "名古屋柳城女子大学",
+   "type": "私立",
+   "pref": "愛知県",
+   "hp": "https://www.ryujo-u.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "名古屋産業大学",
+   "type": "私立",
+   "pref": "愛知県",
+   "hp": "https://www.nagoya-su.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "名古屋経済大学",
+   "type": "私立",
+   "pref": "愛知県",
+   "hp": "https://www.nagoya-ku.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "名古屋芸術大学",
+   "type": "私立",
+   "pref": "愛知県",
+   "hp": "https://www.nua.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "名古屋造形大学",
+   "type": "私立",
+   "pref": "愛知県",
+   "hp": "https://www.nzu.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "名古屋音楽大学",
+   "type": "私立",
+   "pref": "愛知県",
+   "hp": "https://www.meion.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "名城大学",
+   "type": "私立",
+   "pref": "愛知県",
+   "hp": "https://www.meijo-u.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "大同大学",
+   "type": "私立",
+   "pref": "愛知県",
+   "hp": "https://www.daido-it.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "富山国際大学",
+   "type": "私立",
+   "pref": "富山県",
+   "hp": "https://www.tuins.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "山梨学院大学",
+   "type": "私立",
+   "pref": "山梨県",
+   "hp": "https://www.ygu.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "山梨英和大学",
+   "type": "私立",
+   "pref": "山梨県",
+   "hp": "https://www.yamanashi-eiwa.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "岐阜保健大学",
+   "type": "私立",
+   "pref": "岐阜県",
+   "hp": "https://www.gifuhoken.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "岐阜医療科学大学",
+   "type": "私立",
+   "pref": "岐阜県",
+   "hp": "https://www.u-gifu-ms.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "岐阜協立大学",
+   "type": "私立",
+   "pref": "岐阜県",
+   "hp": "https://www.gku.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "岐阜女子大学",
+   "type": "私立",
+   "pref": "岐阜県",
+   "hp": "https://www.gijodai.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "岐阜聖徳学園大学",
+   "type": "私立",
+   "pref": "岐阜県",
+   "hp": "https://www.shotoku.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "岡崎女子大学",
+   "type": "私立",
+   "pref": "愛知県",
+   "hp": "https://www.okazaki.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "常葉大学",
+   "type": "私立",
+   "pref": "静岡県",
+   "hp": "https://www.tokoha-u.ac.jp/index.html",
+   "cat": "private"
+  },
+  {
+   "name": "愛知みずほ大学",
+   "type": "私立",
+   "pref": "愛知県",
+   "hp": "https://www.mizuho-c.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "愛知医療学院大学",
+   "type": "私立",
+   "pref": "愛知県",
+   "hp": "https://amcr.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "愛知医科大学",
+   "type": "私立",
+   "pref": "愛知県",
+   "hp": "https://www.aichi-med-u.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "愛知大学",
+   "type": "私立",
+   "pref": "愛知県",
+   "hp": "https://www.aichi-u.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "愛知学泉大学",
+   "type": "私立",
+   "pref": "愛知県",
+   "hp": "https://www.gakusen.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "愛知学院大学",
+   "type": "私立",
+   "pref": "愛知県",
+   "hp": "https://www.agu.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "愛知工業大学",
+   "type": "私立",
+   "pref": "愛知県",
+   "hp": "https://www.ait.ac.jp/index.html",
+   "cat": "private"
+  },
+  {
+   "name": "愛知工科大学",
+   "type": "私立",
+   "pref": "愛知県",
+   "hp": "https://www.aut.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "愛知文教大学",
+   "type": "私立",
+   "pref": "愛知県",
+   "hp": "https://www.abu.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "愛知東邦大学",
+   "type": "私立",
+   "pref": "愛知県",
+   "hp": "https://www.aichi-toho.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "愛知淑徳大学",
+   "type": "私立",
+   "pref": "愛知県",
+   "hp": "https://www.aasa.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "愛知産業大学",
+   "type": "私立",
+   "pref": "愛知県",
+   "hp": "https://www.asu.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "敬和学園大学",
+   "type": "私立",
+   "pref": "新潟県",
+   "hp": "https://www.keiwa-c.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "新潟リハビリテーション大学",
+   "type": "私立",
+   "pref": "新潟県",
+   "hp": "https://nur.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "新潟医療福祉大学",
+   "type": "私立",
+   "pref": "新潟県",
+   "hp": "https://www.nuhw.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "新潟国際情報大学",
+   "type": "私立",
+   "pref": "新潟県",
+   "hp": "https://www.nuis.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "新潟工科大学",
+   "type": "私立",
+   "pref": "新潟県",
+   "hp": "https://www.niit.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "新潟産業大学",
+   "type": "私立",
+   "pref": "新潟県",
+   "hp": "https://www.nsu.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "新潟経営大学",
+   "type": "私立",
+   "pref": "新潟県",
+   "hp": "https://www.niigataum.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "新潟薬科大学",
+   "type": "私立",
+   "pref": "新潟県",
+   "hp": "https://www.nupals.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "新潟青陵大学",
+   "type": "私立",
+   "pref": "新潟県",
+   "hp": "https://www.n-seiryo.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "新潟食料農業大学",
+   "type": "私立",
+   "pref": "新潟県",
+   "hp": "https://nafu.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "日本福祉大学",
+   "type": "私立",
+   "pref": "愛知県",
+   "hp": "https://www.n-fukushi.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "日本赤十字豊田看護大学",
+   "type": "私立",
+   "pref": "愛知県",
+   "hp": "https://www.rctoyota.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "星城大学",
+   "type": "私立",
+   "pref": "愛知県",
+   "hp": "https://www.seijoh-u.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "朝日大学",
+   "type": "私立",
+   "pref": "岐阜県",
+   "hp": "https://www.asahi-u.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "東海学園大学",
+   "type": "私立",
+   "pref": "愛知県",
+   "hp": "https://www.tokaigakuen-u.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "東海学院大学",
+   "type": "私立",
+   "pref": "岐阜県",
+   "hp": "https://www.tokaigakuin-u.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "松本大学",
+   "type": "私立",
+   "pref": "長野県",
+   "hp": "https://www.matsumoto-u.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "松本歯科大学",
+   "type": "私立",
+   "pref": "長野県",
+   "hp": "https://www.mdu.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "松本看護大学",
+   "type": "私立",
+   "pref": "長野県",
+   "hp": "https://www.matsutan.jp/nursing",
+   "cat": "private"
+  },
+  {
+   "name": "桜花学園大学",
+   "type": "私立",
+   "pref": "愛知県",
+   "hp": "https://www.ohkagakuen-u.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "椙山女学園大学",
+   "type": "私立",
+   "pref": "愛知県",
+   "hp": "https://www.sugiyama-u.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "浜松学院大学",
+   "type": "私立",
+   "pref": "静岡県",
+   "hp": "https://www.hamagaku.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "清泉女学院大学",
+   "type": "私立",
+   "pref": "長野県",
+   "hp": "https://www.seisen-jc.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "福井医療大学",
+   "type": "私立",
+   "pref": "福井県",
+   "hp": "https://www.fukui-hsu.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "福井工業大学",
+   "type": "私立",
+   "pref": "福井県",
+   "hp": "https://www.fukui-ut.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "聖隷クリストファー大学",
+   "type": "私立",
+   "pref": "静岡県",
+   "hp": "https://www.seirei.ac.jp/index.php",
+   "cat": "private"
+  },
+  {
+   "name": "至学館大学",
+   "type": "私立",
+   "pref": "愛知県",
+   "hp": "https://www.sgk.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "藤田医科大学",
+   "type": "私立",
+   "pref": "愛知県",
+   "hp": "https://www.fujita-hu.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "豊橋創造大学",
+   "type": "私立",
+   "pref": "愛知県",
+   "hp": "https://www.sozo.ac.jp/index.php",
+   "cat": "private"
+  },
+  {
+   "name": "豊田工業大学",
+   "type": "私立",
+   "pref": "愛知県",
+   "hp": "https://www.toyota-ti.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "身延山大学",
+   "type": "私立",
+   "pref": "山梨県",
+   "hp": "https://www.min.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "金城大学",
+   "type": "私立",
+   "pref": "石川県",
+   "hp": "https://www.kinjo.ac.jp/ku/",
+   "cat": "private"
+  },
+  {
+   "name": "金城学院大学",
+   "type": "私立",
+   "pref": "愛知県",
+   "hp": "https://www.kinjo-u.ac.jp/pc/index.html",
+   "cat": "private"
+  },
+  {
+   "name": "金沢医科大学",
+   "type": "私立",
+   "pref": "石川県",
+   "hp": "https://www.kanazawa-med.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "金沢学院大学",
+   "type": "私立",
+   "pref": "石川県",
+   "hp": "https://www.kanazawa-gu.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "金沢工業大学",
+   "type": "私立",
+   "pref": "石川県",
+   "hp": "https://www.kanazawa-it.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "金沢星稜大学",
+   "type": "私立",
+   "pref": "石川県",
+   "hp": "https://www.seiryo-u.ac.jp/u/",
+   "cat": "private"
+  },
+  {
+   "name": "長岡大学",
+   "type": "私立",
+   "pref": "新潟県",
+   "hp": "https://www.nagaokauniv.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "長岡崇徳大学",
+   "type": "私立",
+   "pref": "新潟県",
+   "hp": "https://sutoku-u.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "長野保健医療大学",
+   "type": "私立",
+   "pref": "長野県",
+   "hp": "https://shitoku.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "静岡理工科大学",
+   "type": "私立",
+   "pref": "静岡県",
+   "hp": "https://www.sist.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "静岡産業大学",
+   "type": "私立",
+   "pref": "静岡県",
+   "hp": "https://www.ssu.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "静岡福祉大学",
+   "type": "私立",
+   "pref": "静岡県",
+   "hp": "https://www.suw.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "静岡英和学院大学",
+   "type": "私立",
+   "pref": "静岡県",
+   "hp": "https://www.shizuoka-eiwa.ac.jp/university/",
+   "cat": "private"
+  },
+  {
+   "name": "高岡法科大学",
+   "type": "私立",
+   "pref": "富山県",
+   "hp": "https://www.takaoka.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "びわこリハビリテーション専門職大学",
+   "type": "私立",
+   "pref": "滋賀県",
+   "hp": "https://aino.ac.jp/professional/",
+   "cat": "senmon"
+  },
+  {
+   "name": "びわこ学院大学",
+   "type": "私立",
+   "pref": "滋賀県",
+   "hp": "https://www.biwakogakuin.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "びわこ成蹊スポーツ大学",
+   "type": "私立",
+   "pref": "滋賀県",
+   "hp": "https://biwako-seikei.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "京都ノートルダム女子大学",
+   "type": "私立",
+   "pref": "京都府",
+   "hp": "https://www.notredame.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "京都先端科学大学",
+   "type": "私立",
+   "pref": "京都府",
+   "hp": "https://www.kuas.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "京都光華女子大学",
+   "type": "私立",
+   "pref": "京都府",
+   "hp": "https://www.koka.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "京都医療科学大学",
+   "type": "私立",
+   "pref": "京都府",
+   "hp": "https://www.kyoto-msc.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "京都外国語大学",
+   "type": "私立",
+   "pref": "京都府",
+   "hp": "https://www.kufs.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "京都女子大学",
+   "type": "私立",
+   "pref": "京都府",
+   "hp": "https://www.kyoto-wu.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "京都文教大学",
+   "type": "私立",
+   "pref": "京都府",
+   "hp": "https://www.kbu.ac.jp/kbu/",
+   "cat": "private"
+  },
+  {
+   "name": "京都橘大学",
+   "type": "私立",
+   "pref": "京都府",
+   "hp": "https://www.tachibana-u.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "京都産業大学",
+   "type": "私立",
+   "pref": "京都府",
+   "hp": "https://www.kyoto-su.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "京都看護大学",
+   "type": "私立",
+   "pref": "京都府",
+   "hp": "https://www.kyotokango.ac.jp/index.php",
+   "cat": "private"
+  },
+  {
+   "name": "京都精華大学",
+   "type": "私立",
+   "pref": "京都府",
+   "hp": "https://www.kyoto-seika.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "京都美術工芸大学",
+   "type": "私立",
+   "pref": "京都府",
+   "hp": "https://www.kyobi.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "京都芸術大学",
+   "type": "私立",
+   "pref": "京都府",
+   "hp": "https://www.kyoto-art.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "京都華頂大学",
+   "type": "私立",
+   "pref": "京都府",
+   "hp": "https://www.kyotokacho-u.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "京都薬科大学",
+   "type": "私立",
+   "pref": "京都府",
+   "hp": "https://www.kyoto-phu.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "佛教大学",
+   "type": "私立",
+   "pref": "京都府",
+   "hp": "https://www.bukkyo-u.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "兵庫医科大学",
+   "type": "私立",
+   "pref": "兵庫県",
+   "hp": "https://www.hyo-med.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "兵庫大学",
+   "type": "私立",
+   "pref": "兵庫県",
+   "hp": "https://www.hyogo-dai.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "千里金蘭大学",
+   "type": "私立",
+   "pref": "大阪府",
+   "hp": "https://www.kinran.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "同志社女子大学",
+   "type": "私立",
+   "pref": "京都府",
+   "hp": "https://www.dwc.doshisha.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "和歌山リハビリテーション専門職大学",
+   "type": "私立",
+   "pref": "和歌山県",
+   "hp": "https://wakayama.kyowa.ac.jp/",
+   "cat": "senmon"
+  },
+  {
+   "name": "和歌山信愛大学",
+   "type": "私立",
+   "pref": "和歌山県",
+   "hp": "https://www.wsu.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "四天王寺大学",
+   "type": "私立",
+   "pref": "大阪府",
+   "hp": "https://www.shitennoji.ac.jp/ibu/",
+   "cat": "private"
+  },
+  {
+   "name": "四日市大学",
+   "type": "私立",
+   "pref": "三重県",
+   "hp": "https://www.yokkaichi-u.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "四日市看護医療大学",
+   "type": "私立",
+   "pref": "三重県",
+   "hp": "https://www.y-nm.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "四條畷学園大学",
+   "type": "私立",
+   "pref": "大阪府",
+   "hp": "https://un.shijonawate-gakuen.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "園田学園女子大学",
+   "type": "私立",
+   "pref": "兵庫県",
+   "hp": "https://www.sonoda-u.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "大和大学",
+   "type": "私立",
+   "pref": "大阪府",
+   "hp": "https://www.yamato-u.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "大手前大学",
+   "type": "私立",
+   "pref": "兵庫県",
+   "hp": "https://www.otemae.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "大谷大学",
+   "type": "私立",
+   "pref": "京都府",
+   "hp": "https://www.otani.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "大阪人間科学大学",
+   "type": "私立",
+   "pref": "大阪府",
+   "hp": "https://www.ohs.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "大阪体育大学",
+   "type": "私立",
+   "pref": "大阪府",
+   "hp": "https://www.ouhs.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "大阪保健医療大学",
+   "type": "私立",
+   "pref": "大阪府",
+   "hp": "https://www.ohsu.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "大阪信愛学院大学",
+   "type": "私立",
+   "pref": "大阪府",
+   "hp": "https://www.osgu.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "大阪医科薬科大学",
+   "type": "私立",
+   "pref": "大阪府",
+   "hp": "https://www.omp.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "大阪商業大学",
+   "type": "私立",
+   "pref": "大阪府",
+   "hp": "https://ouc.daishodai.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "大阪国際大学",
+   "type": "私立",
+   "pref": "大阪府",
+   "hp": "https://www.oiu.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "大阪国際工科専門職大学",
+   "type": "私立",
+   "pref": "大阪府",
+   "hp": "https://www.iput.ac.jp/osaka",
+   "cat": "senmon"
+  },
+  {
+   "name": "大阪大谷大学",
+   "type": "私立",
+   "pref": "大阪府",
+   "hp": "https://www.osaka-ohtani.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "大阪女学院大学",
+   "type": "私立",
+   "pref": "大阪府",
+   "hp": "https://www.wilmina.ac.jp/oj/",
+   "cat": "private"
+  },
+  {
+   "name": "大阪学院大学",
+   "type": "私立",
+   "pref": "大阪府",
+   "hp": "https://www.osaka-gu.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "大阪工業大学",
+   "type": "私立",
+   "pref": "大阪府",
+   "hp": "https://www.oit.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "大阪成蹊大学",
+   "type": "私立",
+   "pref": "大阪府",
+   "hp": "https://univ.osaka-seikei.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "大阪樟蔭女子大学",
+   "type": "私立",
+   "pref": "大阪府",
+   "hp": "https://www.osaka-shoin.ac.jp/univ/",
+   "cat": "private"
+  },
+  {
+   "name": "大阪歯科大学",
+   "type": "私立",
+   "pref": "大阪府",
+   "hp": "https://www.osaka-dent.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "大阪河﨑リハビリテーション大学",
+   "type": "私立",
+   "pref": "大阪府",
+   "hp": "https://www.kawasakigakuen.ac.jp/index.html",
+   "cat": "private"
+  },
+  {
+   "name": "大阪物療大学",
+   "type": "私立",
+   "pref": "大阪府",
+   "hp": "https://www.butsuryo.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "大阪産業大学",
+   "type": "私立",
+   "pref": "大阪府",
+   "hp": "https://www.osaka-sandai.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "大阪経済大学",
+   "type": "私立",
+   "pref": "大阪府",
+   "hp": "https://www.osaka-ue.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "大阪経済法科大学",
+   "type": "私立",
+   "pref": "大阪府",
+   "hp": "https://www.keiho-u.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "大阪総合保育大学",
+   "type": "私立",
+   "pref": "大阪府",
+   "hp": "https://jonan.jp/soho/",
+   "cat": "private"
+  },
+  {
+   "name": "大阪芸術大学",
+   "type": "私立",
+   "pref": "大阪府",
+   "hp": "https://www.osaka-geidai.ac.jp/index.html",
+   "cat": "private"
+  },
+  {
+   "name": "大阪行岡医療大学",
+   "type": "私立",
+   "pref": "大阪府",
+   "hp": "http://www.yukioka-u.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "大阪観光大学",
+   "type": "私立",
+   "pref": "大阪府",
+   "hp": "https://www.tourism.ac.jp/index.html",
+   "cat": "private"
+  },
+  {
+   "name": "大阪電気通信大学",
+   "type": "私立",
+   "pref": "大阪府",
+   "hp": "https://www.osakac.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "大阪青山大学",
+   "type": "私立",
+   "pref": "大阪府",
+   "hp": "https://www.osaka-aoyama.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "大阪音楽大学",
+   "type": "私立",
+   "pref": "大阪府",
+   "hp": "https://www.daion.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "天理大学",
+   "type": "私立",
+   "pref": "奈良県",
+   "hp": "https://www.tenri-u.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "太成学院大学",
+   "type": "私立",
+   "pref": "大阪府",
+   "hp": "https://www.tgu.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "奈良大学",
+   "type": "私立",
+   "pref": "奈良県",
+   "hp": "https://www.nara-u.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "奈良学園大学",
+   "type": "私立",
+   "pref": "奈良県",
+   "hp": "https://www.naragakuen-u.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "姫路大学",
+   "type": "私立",
+   "pref": "兵庫県",
+   "hp": "https://koutoku.ac.jp/himeji/",
+   "cat": "private"
+  },
+  {
+   "name": "姫路獨協大学",
+   "type": "私立",
+   "pref": "兵庫県",
+   "hp": "https://www.himeji-du.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "宝塚医療大学",
+   "type": "私立",
+   "pref": "兵庫県",
+   "hp": "https://www.tumh.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "宝塚大学",
+   "type": "私立",
+   "pref": "大阪府",
+   "hp": "https://www.takara-univ.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "嵯峨美術大学",
+   "type": "私立",
+   "pref": "京都府",
+   "hp": "https://www.kyoto-saga.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "帝塚山大学",
+   "type": "私立",
+   "pref": "奈良県",
+   "hp": "https://www.tezukayama-u.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "帝塚山学院大学",
+   "type": "私立",
+   "pref": "大阪府",
+   "hp": "https://www.tezuka-gu.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "常磐会学園大学",
+   "type": "私立",
+   "pref": "大阪府",
+   "hp": "https://www.sftokiwakai.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "平安女学院大学",
+   "type": "私立",
+   "pref": "京都府",
+   "hp": "http://www.heian.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "成安造形大学",
+   "type": "私立",
+   "pref": "滋賀県",
+   "hp": "https://www.seian.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "摂南大学",
+   "type": "私立",
+   "pref": "大阪府",
+   "hp": "https://www.setsunan.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "明治国際医療大学",
+   "type": "私立",
+   "pref": "京都府",
+   "hp": "https://www.meiji-u.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "東大阪大学",
+   "type": "私立",
+   "pref": "大阪府",
+   "hp": "https://www.higashiosaka.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "桃山学院大学",
+   "type": "私立",
+   "pref": "大阪府",
+   "hp": "https://www.andrew.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "桃山学院教育大学",
+   "type": "私立",
+   "pref": "大阪府",
+   "hp": "https://www.andrew-edu.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "梅花女子大学",
+   "type": "私立",
+   "pref": "大阪府",
+   "hp": "https://www.baika.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "森ノ宮医療大学",
+   "type": "私立",
+   "pref": "大阪府",
+   "hp": "https://www.morinomiya-u.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "武庫川女子大学",
+   "type": "私立",
+   "pref": "兵庫県",
+   "hp": "https://www.mukogawa-u.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "流通科学大学",
+   "type": "私立",
+   "pref": "兵庫県",
+   "hp": "https://www.umds.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "滋慶医療科学大学",
+   "type": "私立",
+   "pref": "大阪府",
+   "hp": "https://www.juhs.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "甲南大学",
+   "type": "私立",
+   "pref": "兵庫県",
+   "hp": "https://www.konan-u.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "甲南女子大学",
+   "type": "私立",
+   "pref": "兵庫県",
+   "hp": "https://www.konan-wu.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "甲子園大学",
+   "type": "私立",
+   "pref": "兵庫県",
+   "hp": "https://www.koshien.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "畿央大学",
+   "type": "私立",
+   "pref": "奈良県",
+   "hp": "https://www.kio.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "皇學館大学",
+   "type": "私立",
+   "pref": "三重県",
+   "hp": "https://www.kogakkan-u.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "相愛大学",
+   "type": "私立",
+   "pref": "大阪府",
+   "hp": "https://www.soai.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "神戸医療未来大学",
+   "type": "私立",
+   "pref": "兵庫県",
+   "hp": "https://www.kinwu.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "神戸国際大学",
+   "type": "私立",
+   "pref": "兵庫県",
+   "hp": "https://www.kobe-kiu.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "神戸女子大学",
+   "type": "私立",
+   "pref": "兵庫県",
+   "hp": "https://www.yg.kobe-wu.ac.jp/wu/index.html",
+   "cat": "private"
+  },
+  {
+   "name": "神戸女学院大学",
+   "type": "私立",
+   "pref": "兵庫県",
+   "hp": "https://www.kobe-c.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "神戸学院大学",
+   "type": "私立",
+   "pref": "兵庫県",
+   "hp": "https://www.kobegakuin.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "神戸常盤大学",
+   "type": "私立",
+   "pref": "兵庫県",
+   "hp": "https://www.kobe-tokiwa.ac.jp/univ/",
+   "cat": "private"
+  },
+  {
+   "name": "神戸松蔭女子学院大学",
+   "type": "私立",
+   "pref": "兵庫県",
+   "hp": "https://www.shoin.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "神戸海星女子学院大学",
+   "type": "私立",
+   "pref": "兵庫県",
+   "hp": "https://www.kaisei.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "神戸芸術工科大学",
+   "type": "私立",
+   "pref": "兵庫県",
+   "hp": "https://www.kobe-du.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "神戸薬科大学",
+   "type": "私立",
+   "pref": "兵庫県",
+   "hp": "https://www.kobepharma-u.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "神戸親和大学",
+   "type": "私立",
+   "pref": "兵庫県",
+   "hp": "https://www.kobe-shinwa.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "種智院大学",
+   "type": "私立",
+   "pref": "京都府",
+   "hp": "http://www.shuchiin.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "羽衣国際大学",
+   "type": "私立",
+   "pref": "大阪府",
+   "hp": "https://www.hagoromo.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "聖泉大学",
+   "type": "私立",
+   "pref": "滋賀県",
+   "hp": "https://www.seisen.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "芦屋大学",
+   "type": "私立",
+   "pref": "兵庫県",
+   "hp": "https://www.ashiya-u.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "花園大学",
+   "type": "私立",
+   "pref": "京都府",
+   "hp": "https://www.hanazono.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "藍野大学",
+   "type": "私立",
+   "pref": "大阪府",
+   "hp": "https://univ.aino.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "近畿大学",
+   "type": "私立",
+   "pref": "大阪府",
+   "hp": "https://www.kindai.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "追手門学院大学",
+   "type": "私立",
+   "pref": "大阪府",
+   "hp": "https://www.otemon.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "鈴鹿医療科学大学",
+   "type": "私立",
+   "pref": "三重県",
+   "hp": "https://www.suzuka-u.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "鈴鹿大学",
+   "type": "私立",
+   "pref": "三重県",
+   "hp": "https://www.suzuka.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "長浜バイオ大学",
+   "type": "私立",
+   "pref": "滋賀県",
+   "hp": "https://www.nagahama-i-bio.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "関西医療大学",
+   "type": "私立",
+   "pref": "大阪府",
+   "hp": "https://www.kansai.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "関西医科大学",
+   "type": "私立",
+   "pref": "大阪府",
+   "hp": "https://www.kmu.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "関西国際大学",
+   "type": "私立",
+   "pref": "兵庫県",
+   "hp": "https://www.kuins.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "関西看護医療大学",
+   "type": "私立",
+   "pref": "兵庫県",
+   "hp": "https://www.kki.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "関西福祉大学",
+   "type": "私立",
+   "pref": "兵庫県",
+   "hp": "https://www.kusw.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "関西福祉科学大学",
+   "type": "私立",
+   "pref": "大阪府",
+   "hp": "https://www.fuksi-kagk-u.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "阪南大学",
+   "type": "私立",
+   "pref": "大阪府",
+   "hp": "https://www.hannan-u.ac.jp/index.html",
+   "cat": "private"
+  },
+  {
+   "name": "高野山大学",
+   "type": "私立",
+   "pref": "和歌山県",
+   "hp": "https://www.koyasan-u.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "龍谷大学",
+   "type": "私立",
+   "pref": "京都府",
+   "hp": "https://www.ryukoku.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "くらしき作陽大学",
+   "type": "私立",
+   "pref": "岡山県",
+   "hp": "https://www.ksu.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "エリザベト音楽大学",
+   "type": "私立",
+   "pref": "広島県",
+   "hp": "https://www.eum.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "ノートルダム清心女子大学",
+   "type": "私立",
+   "pref": "岡山県",
+   "hp": "https://www.ndsu.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "中国学園大学",
+   "type": "私立",
+   "pref": "岡山県",
+   "hp": "https://www.cjc.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "倉敷芸術科学大学",
+   "type": "私立",
+   "pref": "岡山県",
+   "hp": "https://www.kusa.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "吉備国際大学",
+   "type": "私立",
+   "pref": "岡山県",
+   "hp": "https://kiui.jp/pc/",
+   "cat": "private"
+  },
+  {
+   "name": "四国大学",
+   "type": "私立",
+   "pref": "徳島県",
+   "hp": "https://www.shikoku-u.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "四国学院大学",
+   "type": "私立",
+   "pref": "香川県",
+   "hp": "https://www.sg-u.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "宇部フロンティア大学",
+   "type": "私立",
+   "pref": "山口県",
+   "hp": "https://www.frontier-u.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "安田女子大学",
+   "type": "私立",
+   "pref": "広島県",
+   "hp": "https://www.yasuda-u.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "就実大学",
+   "type": "私立",
+   "pref": "岡山県",
+   "hp": "https://www.shujitsu.ac.jp/web/index.html",
+   "cat": "private"
+  },
+  {
+   "name": "山口学芸大学",
+   "type": "私立",
+   "pref": "山口県",
+   "hp": "https://www.y-gakugei.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "山陽学園大学",
+   "type": "私立",
+   "pref": "岡山県",
+   "hp": "https://www.sguc.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "岡山医療専門職大学",
+   "type": "私立",
+   "pref": "岡山県",
+   "hp": "https://opu.ac.jp/",
+   "cat": "senmon"
+  },
+  {
+   "name": "岡山商科大学",
+   "type": "私立",
+   "pref": "岡山県",
+   "hp": "https://www.osu.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "岡山学院大学",
+   "type": "私立",
+   "pref": "岡山県",
+   "hp": "https://www.owc.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "岡山理科大学",
+   "type": "私立",
+   "pref": "岡山県",
+   "hp": "https://www.ous.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "川崎医療福祉大学",
+   "type": "私立",
+   "pref": "岡山県",
+   "hp": "https://w.kawasaki-m.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "川崎医科大学",
+   "type": "私立",
+   "pref": "岡山県",
+   "hp": "https://m.kawasaki-m.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "広島修道大学",
+   "type": "私立",
+   "pref": "広島県",
+   "hp": "https://www.shudo-u.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "広島国際大学",
+   "type": "私立",
+   "pref": "広島県",
+   "hp": "https://www.hirokoku-u.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "広島女学院大学",
+   "type": "私立",
+   "pref": "広島県",
+   "hp": "https://www.hju.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "広島工業大学",
+   "type": "私立",
+   "pref": "広島県",
+   "hp": "https://www.it-hiroshima.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "広島文化学園大学",
+   "type": "私立",
+   "pref": "広島県",
+   "hp": "https://www.hbg.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "広島文教大学",
+   "type": "私立",
+   "pref": "広島県",
+   "hp": "https://www.h-bunkyo.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "広島経済大学",
+   "type": "私立",
+   "pref": "広島県",
+   "hp": "https://www.hue.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "広島都市学園大学",
+   "type": "私立",
+   "pref": "広島県",
+   "hp": "https://www.hcu.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "徳島文理大学",
+   "type": "私立",
+   "pref": "徳島県",
+   "hp": "https://www.bunri-u.ac.jp/index.html",
+   "cat": "private"
+  },
+  {
+   "name": "日本赤十字広島看護大学",
+   "type": "私立",
+   "pref": "広島県",
+   "hp": "https://www.jrchcn.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "東亜大学",
+   "type": "私立",
+   "pref": "山口県",
+   "hp": "https://www.toua-u.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "松山大学",
+   "type": "私立",
+   "pref": "愛媛県",
+   "hp": "https://www.matsuyama-u.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "松山東雲女子大学",
+   "type": "私立",
+   "pref": "愛媛県",
+   "hp": "https://college.shinonome.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "梅光学院大学",
+   "type": "私立",
+   "pref": "山口県",
+   "hp": "https://www.baiko.ac.jp/university/",
+   "cat": "private"
+  },
+  {
+   "name": "比治山大学",
+   "type": "私立",
+   "pref": "広島県",
+   "hp": "https://www.hijiyama-u.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "環太平洋大学",
+   "type": "私立",
+   "pref": "岡山県",
+   "hp": "https://www.ipu-japan.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "福山大学",
+   "type": "私立",
+   "pref": "広島県",
+   "hp": "https://www.fukuyama-u.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "福山平成大学",
+   "type": "私立",
+   "pref": "広島県",
+   "hp": "https://www.heisei-u.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "美作大学",
+   "type": "私立",
+   "pref": "岡山県",
+   "hp": "https://mimasaka.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "聖カタリナ大学",
+   "type": "私立",
+   "pref": "愛媛県",
+   "hp": "https://www.catherine.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "至誠館大学",
+   "type": "私立",
+   "pref": "山口県",
+   "hp": "https://www.shiseikan.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "高松大学",
+   "type": "私立",
+   "pref": "香川県",
+   "hp": "https://www.takamatsu-u.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "高知健康科学大学",
+   "type": "私立",
+   "pref": "高知県",
+   "hp": "https://ko-ken-k3.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "高知学園大学",
+   "type": "私立",
+   "pref": "高知県",
+   "hp": "https://kochi-gu.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "鳥取看護大学",
+   "type": "私立",
+   "pref": "鳥取県",
+   "hp": "https://www.tcn.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "中村学園大学",
+   "type": "私立",
+   "pref": "福岡県",
+   "hp": "https://www.nakamura-u.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "久留米大学",
+   "type": "私立",
+   "pref": "福岡県",
+   "hp": "https://www.kurume-u.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "久留米工業大学",
+   "type": "私立",
+   "pref": "福岡県",
+   "hp": "https://www.kurume-it.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "九州ルーテル学院大学",
+   "type": "私立",
+   "pref": "熊本県",
+   "hp": "https://www.klc.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "九州共立大学",
+   "type": "私立",
+   "pref": "福岡県",
+   "hp": "https://www.kyukyo-u.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "九州医療科学大学",
+   "type": "私立",
+   "pref": "宮崎県",
+   "hp": "https://www.phoenix.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "九州国際大学",
+   "type": "私立",
+   "pref": "福岡県",
+   "hp": "https://www.kiu.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "九州女子大学",
+   "type": "私立",
+   "pref": "福岡県",
+   "hp": "https://www.kwuc.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "九州情報大学",
+   "type": "私立",
+   "pref": "福岡県",
+   "hp": "https://www.kiis.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "九州栄養福祉大学",
+   "type": "私立",
+   "pref": "福岡県",
+   "hp": "https://www.knwu.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "九州産業大学",
+   "type": "私立",
+   "pref": "福岡県",
+   "hp": "https://www.kyusan-u.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "九州看護福祉大学",
+   "type": "私立",
+   "pref": "熊本県",
+   "hp": "https://www.kyushu-ns.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "令和健康科学大学",
+   "type": "私立",
+   "pref": "福岡県",
+   "hp": "https://www.rhs-u.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "別府大学",
+   "type": "私立",
+   "pref": "大分県",
+   "hp": "https://www.beppu-u.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "南九州大学",
+   "type": "私立",
+   "pref": "宮崎県",
+   "hp": "https://www.nankyudai.ac.jp/index.html",
+   "cat": "private"
+  },
+  {
+   "name": "宮崎国際大学",
+   "type": "私立",
+   "pref": "宮崎県",
+   "hp": "https://www.mic.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "宮崎産業経営大学",
+   "type": "私立",
+   "pref": "宮崎県",
+   "hp": "https://www.miyasankei-u.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "尚絅大学",
+   "type": "私立",
+   "pref": "熊本県",
+   "hp": "https://www.shokei-gakuen.ac.jp/univ/",
+   "cat": "private"
+  },
+  {
+   "name": "崇城大学",
+   "type": "私立",
+   "pref": "熊本県",
+   "hp": "https://www.sojo-u.ac.jp/top.html",
+   "cat": "private"
+  },
+  {
+   "name": "平成音楽大学",
+   "type": "私立",
+   "pref": "熊本県",
+   "hp": "https://www.heisei-music.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "志學館大学",
+   "type": "私立",
+   "pref": "鹿児島県",
+   "hp": "https://www.shigakukan.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "日本文理大学",
+   "type": "私立",
+   "pref": "大分県",
+   "hp": "https://www.nbu.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "日本経済大学",
+   "type": "私立",
+   "pref": "福岡県",
+   "hp": "https://www.jue.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "日本赤十字九州国際看護大学",
+   "type": "私立",
+   "pref": "福岡県",
+   "hp": "https://www.jrckicn.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "沖縄キリスト教学院大学",
+   "type": "私立",
+   "pref": "沖縄県",
+   "hp": "https://www.ocjc.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "沖縄国際大学",
+   "type": "私立",
+   "pref": "沖縄県",
+   "hp": "https://www.okiu.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "沖縄大学",
+   "type": "私立",
+   "pref": "沖縄県",
+   "hp": "https://www.okinawa-u.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "活水女子大学",
+   "type": "私立",
+   "pref": "長崎県",
+   "hp": "https://www.kwassui.ac.jp/university/",
+   "cat": "private"
+  },
+  {
+   "name": "熊本保健科学大学",
+   "type": "私立",
+   "pref": "熊本県",
+   "hp": "https://www.kumamoto-hsu.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "熊本学園大学",
+   "type": "私立",
+   "pref": "熊本県",
+   "hp": "https://www.kumagaku.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "産業医科大学",
+   "type": "私立",
+   "pref": "福岡県",
+   "hp": "https://www.uoeh-u.ac.jp/index.html",
+   "cat": "private"
+  },
+  {
+   "name": "福岡国際医療福祉大学",
+   "type": "私立",
+   "pref": "福岡県",
+   "hp": "https://fiuhw.takagigakuen.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "福岡大学",
+   "type": "私立",
+   "pref": "福岡県",
+   "hp": "https://www.fukuoka-u.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "福岡女学院大学",
+   "type": "私立",
+   "pref": "福岡県",
+   "hp": "https://www.fukujo.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "福岡女学院看護大学",
+   "type": "私立",
+   "pref": "福岡県",
+   "hp": "https://www.fukujo.ac.jp/ns/",
+   "cat": "private"
+  },
+  {
+   "name": "福岡工業大学",
+   "type": "私立",
+   "pref": "福岡県",
+   "hp": "https://www.fit.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "福岡歯科大学",
+   "type": "私立",
+   "pref": "福岡県",
+   "hp": "https://www.fdcnet.ac.jp/col/index.php",
+   "cat": "private"
+  },
+  {
+   "name": "福岡看護大学",
+   "type": "私立",
+   "pref": "福岡県",
+   "hp": "https://www.fdcnet.ac.jp/ncol/index.php",
+   "cat": "private"
+  },
+  {
+   "name": "第一工科大学",
+   "type": "私立",
+   "pref": "鹿児島県",
+   "hp": "https://www.daiichi-koudai.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "第一薬科大学",
+   "type": "私立",
+   "pref": "福岡県",
+   "hp": "https://www.daiichi-cps.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "筑紫女学園大学",
+   "type": "私立",
+   "pref": "福岡県",
+   "hp": "https://www.chikushi-u.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "純真学園大学",
+   "type": "私立",
+   "pref": "福岡県",
+   "hp": "https://www.junshin-u.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "聖マリア学院大学",
+   "type": "私立",
+   "pref": "福岡県",
+   "hp": "https://www.st-mary.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "西九州大学",
+   "type": "私立",
+   "pref": "佐賀県",
+   "hp": "https://www.nisikyu-u.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "西南女学院大学",
+   "type": "私立",
+   "pref": "福岡県",
+   "hp": "https://www.seinan-jo.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "西日本工業大学",
+   "type": "私立",
+   "pref": "福岡県",
+   "hp": "https://www3.nishitech.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "鎮西学院大学",
+   "type": "私立",
+   "pref": "長崎県",
+   "hp": "https://www.wesleyan.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "長崎国際大学",
+   "type": "私立",
+   "pref": "長崎県",
+   "hp": "https://www1.niu.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "長崎外国語大学",
+   "type": "私立",
+   "pref": "長崎県",
+   "hp": "https://www.nagasaki-gaigo.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "長崎純心大学",
+   "type": "私立",
+   "pref": "長崎県",
+   "hp": "https://www.n-junshin.ac.jp/univ/",
+   "cat": "private"
+  },
+  {
+   "name": "長崎総合科学大学",
+   "type": "私立",
+   "pref": "長崎県",
+   "hp": "https://www.nias.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "鹿児島国際大学",
+   "type": "私立",
+   "pref": "鹿児島県",
+   "hp": "https://www.iuk.ac.jp/",
+   "cat": "private"
+  },
+  {
+   "name": "鹿児島純心大学",
+   "type": "私立",
+   "pref": "鹿児島県",
+   "hp": "https://www.k-junshin.ac.jp/jundai/",
+   "cat": "private"
+  }
+ ],
  "done": [],
  "failed": [],
  "fail_count": {},
@@ -885,5 +5667,5 @@
    ]
   }
  ],
- "complete": false
+ "complete": true
 }

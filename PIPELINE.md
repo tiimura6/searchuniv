@@ -10,7 +10,7 @@ Searchuniv に全国の大学を少しずつ追加し、既存校の空欄（研
 
 ## 1回の実行でやること
 1. リポジトリ `tiimura6/searchuniv` を用意する（add_repo を access "push" で呼び、案内どおり clone）。
-2. `data/queue.json` を読み、`add` の先頭から最大 **10校**、`enrich` の先頭から最大 **8校** を選ぶ（enrich の各項目は `{name, keinet, need}`。`need` に挙がった項目だけを集める：licenses は `/outline/licential`、careers は `/outline/admission_employment`、research は `outline/department/{コード}` の概要・特色）。両方空のときは、`complete` が true なら「全件完了」と報告してこの定期実行（名前「Searchuniv データ拡充」）を update_trigger で無効化する。`complete` が false なら何も変更せず「待機中（キュー準備中）」と報告して終わる（無効化しない）。
+2. `data/queue.json` を読み（add の各項目は `{name,type,pref,hp,cat}`。cat と hp はそのまま batch に使う）、`add` の先頭から最大 **10校**、`enrich` の先頭から最大 **8校** を選ぶ（enrich の各項目は `{name, keinet, need}`。`need` に挙がった項目だけを集める：licenses は `/outline/licential`、careers は `/outline/admission_employment`、research は `outline/department/{コード}` の概要・特色）。両方空のときは、`complete` が true なら「全件完了」と報告してこの定期実行（名前「Searchuniv データ拡充」）を update_trigger で無効化する。`complete` が false なら何も変更せず「待機中（キュー準備中）」と報告して終わる（無効化しない）。
 3. 各校の情報を集める（下の「集め方」）。WebFetch は1時間あたりの上限があるので、**WebFetch は合計60回まで（目安：新規1校5回、補完1校1〜3回）**、WebSearch は合計30回まで。上限に当たったら、そこまでの分だけで先へ進む。
 4. 集めた結果を `batches/<UTC日時>.json` に保存し、`python3 tools/merge_batch.py batches/<そのファイル>` を実行。表示された「要確認」は報告に含める。
 5. 処理できた学校を `queue.json` の `add`/`enrich` から `done` へ移す（取れなかった学校は末尾に回す。同じ学校が3回失敗したら `failed` に移す）。
