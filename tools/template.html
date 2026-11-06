@@ -208,7 +208,7 @@ ul.mini li{font-size:12.5px;margin:2px 0}
 <body>
 <header>
   <h1>Searchuniv <span class="byline">designed by Takahiro Iimura</span></h1>
-  <nav class="tabs"><a href="#cards" data-v="cards">カード</a><a href="#map" data-v="map">検索</a><a href="#news" data-v="news">ニュース</a><a href="#ai" data-v="ai">AIおすすめ</a></nav>
+  <nav class="tabs"><a href="#map" data-v="map">検索</a><a href="#cards" data-v="cards">カード</a><a href="#news" data-v="news">ニュース</a><a href="#ai" data-v="ai">AIおすすめ</a></nav>
 </header>
 <main>
 <section id="v-cards">
@@ -640,8 +640,8 @@ $("card").addEventListener("touchend",e=>{ if(sx===null) return; const dx=e.chan
 
 // ===== 画面切替 =====
 function showView(){
-  const v=(location.hash||"#cards").slice(1);
-  const view=["cards","map","news","ai"].includes(v)?v:"cards";
+  const v=(location.hash||"#map").slice(1);
+  const view=["cards","map","news","ai"].includes(v)?v:"map";
   for(const id of ["cards","map","news","ai"]) $("v-"+id).hidden = id!==view;
   document.body.classList.toggle("wide", view==="map");
   document.querySelectorAll(".tabs a").forEach(a=>a.classList.toggle("on",a.dataset.v===view));
