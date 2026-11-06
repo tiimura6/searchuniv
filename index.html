@@ -82,7 +82,7 @@ details summary{cursor:pointer}
 .tabs a.on{background:var(--accent);border-color:var(--accent);color:#fff}
 @media (prefers-color-scheme: dark){.tabs a.on{color:#111}}
 .kind{display:inline-block;color:#fff;font-size:12px;font-weight:700;border-radius:6px;padding:2px 9px;letter-spacing:.05em;vertical-align:middle}
-.legend{position:absolute;left:10px;bottom:10px;display:flex;flex-wrap:wrap;gap:8px;background:color-mix(in srgb,var(--panel) 88%,transparent);border:1px solid var(--line);border-radius:8px;padding:5px 8px;font-size:11.5px}
+.legend{position:absolute;left:10px;bottom:10px;display:flex;flex-wrap:wrap;gap:8px;background:color-mix(in srgb,var(--panel) 88%,transparent);border:1px solid var(--line);border-radius:8px;padding:5px 8px;font-size:13px}
 .legend span{display:flex;align-items:center;gap:4px}
 .legend i{width:9px;height:9px;border-radius:50%;display:inline-block}
 #jmap .dot{opacity:.9 !important}
@@ -802,21 +802,27 @@ function scaleMarks(){
   const k=curVB[2]/HOME_VB[2];
   document.querySelectorAll("#jmap .dot").forEach(c=>c.setAttribute("r",(2.2*k).toFixed(3)));
   document.querySelectorAll("#jmap .hl,#jmap .pulse").forEach(c=>c.setAttribute("r",(3.4*k).toFixed(3)));
-  const l=document.querySelector("#jmap .lbl"); if(l){ l.setAttribute("font-size",(12*k).toFixed(3)); const c=document.querySelector("#jmap .hl"); l.setAttribute("x",(+c.getAttribute("cx")+5*k).toFixed(2)); l.setAttribute("y",(+c.getAttribute("cy")+3*k).toFixed(2)); }
+  const l=document.querySelector("#jmap .lbl"); if(l){ l.setAttribute("font-size",(14*k).toFixed(3)); const c=document.querySelector("#jmap .hl"); l.setAttribute("x",(+c.getAttribute("cx")+5*k).toFixed(2)); l.setAttribute("y",(+c.getAttribute("cy")+3*k).toFixed(2)); }
   placeLabels();
 }
 // 重ならない範囲で大学名を表示（優先度順・4方向の候補位置）。出せなかった点は件数の丸にまとめる（2段階配置）
 function placeLabels(){
   const g=$("labels"); if(!g) return; g.innerHTML="";
   const svg=$("jmap"); const W=svg.clientWidth||800; const ppu=W/curVB[2];
-  const fs=14/ppu, pad=2/ppu, k=curVB[2]/HOME_VB[2], r=2.2*k;
+  const fs=(innerWidth<600?16:19)/ppu, pad=2/ppu, k=curVB[2]/HOME_VB[2], r=2.2*k;
   const sel=$("mq").value; const [vx,vy,vw,vh]=curVB;
   const inView=([cx,cy])=>cx>=vx&&cx<=vx+vw&&cy>=vy&&cy<=vy+vh;
   const order=items.filter(x=>MAP.dots[x.name]&&x.name!==sel&&inView(MAP.dots[x.name])).sort((a,b)=>(PRIO[a.cat]??20)-(PRIO[b.cat]??20));
-  const cell=70/ppu;
+  const cell=(innerWidth<600?80:90)/ppu;
+  // 表示枠（はみ出し防止）と、凡例・ズームボタンの下を避ける
+  const m=svg.getScreenCTM(); const inv=m?m.inverse():null;
+  const toU=(x,y)=>{ if(!inv) return [x,y]; const pt=svg.createSVGPoint(); pt.x=x; pt.y=y; const q=pt.matrixTransform(inv); return [q.x,q.y]; };
+  const sr=svg.getBoundingClientRect(); const [bx0,by0]=toU(sr.left+4,sr.top+4), [bx1,by1]=toU(sr.right-4,sr.bottom-4);
+  const avoid=[...document.querySelectorAll("#v-map .legend,#v-map .zoomctl")].map(e=>{ const q=e.getBoundingClientRect(); if(!q.width) return null; const [x0,y0]=toU(q.left-3,q.top-3),[x1,y1]=toU(q.right+3,q.bottom+3); return [x0,y0,x1-x0,y1-y0]; }).filter(Boolean);
+  const outside=b=>b[0]<bx0||b[1]<by0||b[0]+b[2]>bx1||b[1]+b[3]>by1;
   function layout(reserved){
-    const boxes=reserved.slice(); const placed=[], hidden=[];
-    const hit=b=>boxes.some(o=>!(b[0]+b[2]<o[0]||b[0]>o[0]+o[2]||b[1]+b[3]<o[1]||b[1]>o[1]+o[3]));
+    const boxes=reserved.concat(avoid); const placed=[], hidden=[];
+    const hit=b=>outside(b)||boxes.some(o=>!(b[0]+b[2]<o[0]||b[0]>o[0]+o[2]||b[1]+b[3]<o[1]||b[1]>o[1]+o[3]));
     if(sel&&MAP.dots[sel]){ const [cx,cy]=MAP.dots[sel]; boxes.push([cx-r,cy-7/ppu,shortName(sel).length*12/ppu*1.02+6/ppu,14/ppu]); }
     for(const x of order){
       const [cx,cy]=MAP.dots[x.name]; const t=shortName(x.name); const w=t.length*fs*1.02, h=fs*1.2;
@@ -831,10 +837,23 @@ function placeLabels(){
     for(const x of hidden){ const [cx,cy]=MAP.dots[x.name]; const key=Math.floor((cx-vx)/cell)+","+Math.floor((cy-vy)/cell); if(!groups.has(key)) groups.set(key,[]); groups.get(key).push(x); }
     return [...groups.values()].filter(l=>l.length>=2).map(list=>{
       const mx=list.reduce((a,x)=>a+MAP.dots[x.name][0],0)/list.length, my=list.reduce((a,x)=>a+MAP.dots[x.name][1],0)/list.length;
-      const rr=Math.min(16,8+Math.sqrt(list.length)*1.6)/ppu; return {list,mx,my,rr}; });
+      const rr=Math.min(19,10+Math.sqrt(list.length)*1.8)/ppu; return {list,mx,my,rr}; });
+  }
+  // 丸を枠内に収め、凡例・ボタンを避け、重なる丸は1つにまとめる
+  function tidy(cl){
+    const fix=c=>{ c.rr=Math.min(19,10+Math.sqrt(c.list.length)*1.8)/ppu;
+      for(const o of avoid){ if(c.mx+c.rr>o[0]&&c.mx-c.rr<o[0]+o[2]&&c.my+c.rr>o[1]&&c.my-c.rr<o[1]+o[3]){
+        const mv=[[o[0]-c.rr-c.mx,0],[o[0]+o[2]+c.rr-c.mx,0],[0,o[1]-c.rr-c.my],[0,o[1]+o[3]+c.rr-c.my]].sort((p,q)=>Math.hypot(...p)-Math.hypot(...q))[0]; c.mx+=mv[0]; c.my+=mv[1]; } }
+      c.mx=Math.max(bx0+c.rr,Math.min(bx1-c.rr,c.mx)); c.my=Math.max(by0+c.rr,Math.min(by1-c.rr,c.my)); };
+    cl.forEach(fix);
+    for(let again=true;again;){ again=false;
+      for(let i=0;i<cl.length&&!again;i++) for(let j=i+1;j<cl.length;j++){ const A=cl[i],B=cl[j];
+        if(Math.hypot(A.mx-B.mx,A.my-B.my)<A.rr+B.rr+2/ppu){ const na=A.list.length,nb=B.list.length;
+          A.mx=(A.mx*na+B.mx*nb)/(na+nb); A.my=(A.my*na+B.my*nb)/(na+nb); A.list=A.list.concat(B.list); cl.splice(j,1); fix(A); again=true; break; } } }
+    return cl;
   }
   // 1回目：名前を並べ、出せなかった点の丸の位置を決める → 2回目：丸の位置を空けて名前を並べ直す
-  let {hidden}=layout([]); let clusters=cluster(hidden);
+  let {hidden}=layout([]); let clusters=tidy(cluster(hidden));
   const res=layout(clusters.map(c=>[c.mx-c.rr,c.my-c.rr,c.rr*2,c.rr*2]));
   // 2回目で新たに出せなくなった点は、近い丸の件数に加える
   const inCl=new Set(clusters.flatMap(c=>c.list.map(x=>x.name)));
@@ -851,7 +870,7 @@ function placeLabels(){
   for(const {list,mx,my,rr} of clusters){
     const gg=document.createElementNS(SVGNS,"g"); gg.setAttribute("class","clus");
     const c=document.createElementNS(SVGNS,"circle"); c.setAttribute("cx",mx); c.setAttribute("cy",my); c.setAttribute("r",rr);
-    const tt=document.createElementNS(SVGNS,"text"); tt.setAttribute("x",mx); tt.setAttribute("y",my+4.2/ppu); tt.setAttribute("text-anchor","middle"); tt.setAttribute("font-size",(12/ppu).toFixed(3)); tt.textContent="+"+list.length;
+    const tt=document.createElementNS(SVGNS,"text"); tt.setAttribute("x",mx); tt.setAttribute("y",my+5/ppu); tt.setAttribute("text-anchor","middle"); tt.setAttribute("font-size",(14/ppu).toFixed(3)); tt.textContent="+"+list.length;
     const ti=document.createElementNS(SVGNS,"title"); ti.textContent=list.map(x=>x.name).slice(0,20).join("、")+(list.length>20?" ほか":"");
     gg.append(c,tt,ti);
     gg.addEventListener("click",ev=>{ ev.stopPropagation(); const xs=list.map(x=>MAP.dots[x.name][0]), ys=list.map(x=>MAP.dots[x.name][1]);
