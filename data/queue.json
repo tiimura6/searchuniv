@@ -7769,6 +7769,1112 @@
    "need": [
     "eng"
    ]
+  },
+  {
+   "name": "東京大学",
+   "need": [
+    "ratios"
+   ],
+   "note": "大学公式の入試結果から過去3〜5年分に延ばす（info.ratios_replace で置き換え）"
+  },
+  {
+   "name": "京都大学",
+   "need": [
+    "ratios"
+   ],
+   "note": "大学公式の入試結果から過去3〜5年分に延ばす（info.ratios_replace で置き換え）"
+  },
+  {
+   "name": "大阪大学",
+   "need": [
+    "ratios"
+   ],
+   "note": "大学公式の入試結果から過去3〜5年分に延ばす（info.ratios_replace で置き換え）"
+  },
+  {
+   "name": "東北大学",
+   "need": [
+    "ratios"
+   ],
+   "note": "大学公式の入試結果から過去3〜5年分に延ばす（info.ratios_replace で置き換え）"
+  },
+  {
+   "name": "名古屋大学",
+   "need": [
+    "ratios"
+   ],
+   "note": "大学公式の入試結果から過去3〜5年分に延ばす（info.ratios_replace で置き換え）"
+  },
+  {
+   "name": "九州大学",
+   "need": [
+    "ratios"
+   ],
+   "note": "大学公式の入試結果から過去3〜5年分に延ばす（info.ratios_replace で置き換え）"
+  },
+  {
+   "name": "北海道大学",
+   "need": [
+    "ratios"
+   ],
+   "note": "大学公式の入試結果から過去3〜5年分に延ばす（info.ratios_replace で置き換え）"
+  },
+  {
+   "name": "一橋大学",
+   "need": [
+    "ratios"
+   ],
+   "note": "大学公式の入試結果から過去3〜5年分に延ばす（info.ratios_replace で置き換え）"
+  },
+  {
+   "name": "東京科学大学",
+   "need": [
+    "ratios"
+   ],
+   "note": "大学公式の入試結果から過去3〜5年分に延ばす（info.ratios_replace で置き換え）"
+  },
+  {
+   "name": "神戸大学",
+   "need": [
+    "ratios"
+   ],
+   "note": "大学公式の入試結果から過去3〜5年分に延ばす（info.ratios_replace で置き換え）"
+  },
+  {
+   "name": "筑波大学",
+   "need": [
+    "ratios"
+   ],
+   "note": "大学公式の入試結果から過去3〜5年分に延ばす（info.ratios_replace で置き換え）"
+  },
+  {
+   "name": "茨城大学",
+   "need": [
+    "ratios"
+   ],
+   "note": "大学公式の入試結果から過去3〜5年分に延ばす（info.ratios_replace で置き換え）"
+  },
+  {
+   "name": "千葉大学",
+   "need": [
+    "ratios"
+   ],
+   "note": "大学公式の入試結果から過去3〜5年分に延ばす（info.ratios_replace で置き換え）"
+  },
+  {
+   "name": "埼玉大学",
+   "need": [
+    "ratios"
+   ],
+   "note": "大学公式の入試結果から過去3〜5年分に延ばす（info.ratios_replace で置き換え）"
+  },
+  {
+   "name": "横浜国立大学",
+   "need": [
+    "ratios"
+   ],
+   "note": "大学公式の入試結果から過去3〜5年分に延ばす（info.ratios_replace で置き換え）"
+  },
+  {
+   "name": "東京外国語大学",
+   "need": [
+    "ratios"
+   ],
+   "note": "大学公式の入試結果から過去3〜5年分に延ばす（info.ratios_replace で置き換え）"
+  },
+  {
+   "name": "お茶の水女子大学",
+   "need": [
+    "ratios"
+   ],
+   "note": "大学公式の入試結果から過去3〜5年分に延ばす（info.ratios_replace で置き換え）"
+  },
+  {
+   "name": "東京学芸大学",
+   "need": [
+    "ratios"
+   ],
+   "note": "大学公式の入試結果から過去3〜5年分に延ばす（info.ratios_replace で置き換え）"
+  },
+  {
+   "name": "東京農工大学",
+   "need": [
+    "ratios"
+   ],
+   "note": "大学公式の入試結果から過去3〜5年分に延ばす（info.ratios_replace で置き換え）"
+  },
+  {
+   "name": "電気通信大学",
+   "need": [
+    "ratios"
+   ],
+   "note": "大学公式の入試結果から過去3〜5年分に延ばす（info.ratios_replace で置き換え）"
+  },
+  {
+   "name": "東京都立大学",
+   "need": [
+    "ratios"
+   ],
+   "note": "大学公式の入試結果から過去3〜5年分に延ばす（info.ratios_replace で置き換え）"
+  },
+  {
+   "name": "横浜市立大学",
+   "need": [
+    "ratios"
+   ],
+   "note": "大学公式の入試結果から過去3〜5年分に延ばす（info.ratios_replace で置き換え）"
+  },
+  {
+   "name": "宇都宮大学",
+   "need": [
+    "ratios"
+   ],
+   "note": "大学公式の入試結果から過去3〜5年分に延ばす（info.ratios_replace で置き換え）"
+  },
+  {
+   "name": "群馬大学",
+   "need": [
+    "ratios"
+   ],
+   "note": "大学公式の入試結果から過去3〜5年分に延ばす（info.ratios_replace で置き換え）"
+  },
+  {
+   "name": "高崎経済大学",
+   "need": [
+    "ratios"
+   ],
+   "note": "大学公式の入試結果から過去3〜5年分に延ばす（info.ratios_replace で置き換え）"
+  },
+  {
+   "name": "東京海洋大学",
+   "need": [
+    "ratios"
+   ],
+   "note": "大学公式の入試結果から過去3〜5年分に延ばす（info.ratios_replace で置き換え）"
+  },
+  {
+   "name": "東京藝術大学",
+   "need": [
+    "ratios"
+   ],
+   "note": "大学公式の入試結果から過去3〜5年分に延ばす（info.ratios_replace で置き換え）"
+  },
+  {
+   "name": "茨城県立医療大学",
+   "need": [
+    "ratios"
+   ],
+   "note": "大学公式の入試結果から過去3〜5年分に延ばす（info.ratios_replace で置き換え）"
+  },
+  {
+   "name": "大阪公立大学",
+   "need": [
+    "ratios"
+   ],
+   "note": "大学公式の入試結果から過去3〜5年分に延ばす（info.ratios_replace で置き換え）"
+  },
+  {
+   "name": "国際教養大学",
+   "need": [
+    "ratios"
+   ],
+   "note": "大学公式の入試結果から過去3〜5年分に延ばす（info.ratios_replace で置き換え）"
+  },
+  {
+   "name": "会津大学",
+   "need": [
+    "ratios"
+   ],
+   "note": "大学公式の入試結果から過去3〜5年分に延ばす（info.ratios_replace で置き換え）"
+  },
+  {
+   "name": "福島県立医科大学",
+   "need": [
+    "ratios"
+   ],
+   "note": "大学公式の入試結果から過去3〜5年分に延ばす（info.ratios_replace で置き換え）"
+  },
+  {
+   "name": "新潟大学",
+   "need": [
+    "ratios"
+   ],
+   "note": "大学公式の入試結果から過去3〜5年分に延ばす（info.ratios_replace で置き換え）"
+  },
+  {
+   "name": "金沢大学",
+   "need": [
+    "ratios"
+   ],
+   "note": "大学公式の入試結果から過去3〜5年分に延ばす（info.ratios_replace で置き換え）"
+  },
+  {
+   "name": "信州大学",
+   "need": [
+    "ratios"
+   ],
+   "note": "大学公式の入試結果から過去3〜5年分に延ばす（info.ratios_replace で置き換え）"
+  },
+  {
+   "name": "静岡大学",
+   "need": [
+    "ratios"
+   ],
+   "note": "大学公式の入試結果から過去3〜5年分に延ばす（info.ratios_replace で置き換え）"
+  },
+  {
+   "name": "広島大学",
+   "need": [
+    "ratios"
+   ],
+   "note": "大学公式の入試結果から過去3〜5年分に延ばす（info.ratios_replace で置き換え）"
+  },
+  {
+   "name": "岡山大学",
+   "need": [
+    "ratios"
+   ],
+   "note": "大学公式の入試結果から過去3〜5年分に延ばす（info.ratios_replace で置き換え）"
+  },
+  {
+   "name": "熊本大学",
+   "need": [
+    "ratios"
+   ],
+   "note": "大学公式の入試結果から過去3〜5年分に延ばす（info.ratios_replace で置き換え）"
+  },
+  {
+   "name": "奈良女子大学",
+   "need": [
+    "ratios"
+   ],
+   "note": "大学公式の入試結果から過去3〜5年分に延ばす（info.ratios_replace で置き換え）"
+  },
+  {
+   "name": "長岡技術科学大学",
+   "need": [
+    "ratios"
+   ],
+   "note": "大学公式の入試結果から過去3〜5年分に延ばす（info.ratios_replace で置き換え）"
+  },
+  {
+   "name": "豊橋技術科学大学",
+   "need": [
+    "ratios"
+   ],
+   "note": "大学公式の入試結果から過去3〜5年分に延ばす（info.ratios_replace で置き換え）"
+  },
+  {
+   "name": "早稲田大学",
+   "need": [
+    "ratios"
+   ],
+   "note": "大学公式の入試結果から過去3〜5年分に延ばす（info.ratios_replace で置き換え）"
+  },
+  {
+   "name": "慶應義塾大学",
+   "need": [
+    "ratios"
+   ],
+   "note": "大学公式の入試結果から過去3〜5年分に延ばす（info.ratios_replace で置き換え）"
+  },
+  {
+   "name": "上智大学",
+   "need": [
+    "ratios"
+   ],
+   "note": "大学公式の入試結果から過去3〜5年分に延ばす（info.ratios_replace で置き換え）"
+  },
+  {
+   "name": "東京理科大学",
+   "need": [
+    "ratios"
+   ],
+   "note": "大学公式の入試結果から過去3〜5年分に延ばす（info.ratios_replace で置き換え）"
+  },
+  {
+   "name": "国際基督教大学（ICU）",
+   "need": [
+    "ratios"
+   ],
+   "note": "大学公式の入試結果から過去3〜5年分に延ばす（info.ratios_replace で置き換え）"
+  },
+  {
+   "name": "学習院大学",
+   "need": [
+    "ratios"
+   ],
+   "note": "大学公式の入試結果から過去3〜5年分に延ばす（info.ratios_replace で置き換え）"
+  },
+  {
+   "name": "明治大学",
+   "need": [
+    "ratios"
+   ],
+   "note": "大学公式の入試結果から過去3〜5年分に延ばす（info.ratios_replace で置き換え）"
+  },
+  {
+   "name": "青山学院大学",
+   "need": [
+    "ratios"
+   ],
+   "note": "大学公式の入試結果から過去3〜5年分に延ばす（info.ratios_replace で置き換え）"
+  },
+  {
+   "name": "立教大学",
+   "need": [
+    "ratios"
+   ],
+   "note": "大学公式の入試結果から過去3〜5年分に延ばす（info.ratios_replace で置き換え）"
+  },
+  {
+   "name": "中央大学",
+   "need": [
+    "ratios"
+   ],
+   "note": "大学公式の入試結果から過去3〜5年分に延ばす（info.ratios_replace で置き換え）"
+  },
+  {
+   "name": "法政大学",
+   "need": [
+    "ratios"
+   ],
+   "note": "大学公式の入試結果から過去3〜5年分に延ばす（info.ratios_replace で置き換え）"
+  },
+  {
+   "name": "同志社大学",
+   "need": [
+    "ratios"
+   ],
+   "note": "大学公式の入試結果から過去3〜5年分に延ばす（info.ratios_replace で置き換え）"
+  },
+  {
+   "name": "関西学院大学",
+   "need": [
+    "ratios"
+   ],
+   "note": "大学公式の入試結果から過去3〜5年分に延ばす（info.ratios_replace で置き換え）"
+  },
+  {
+   "name": "関西大学",
+   "need": [
+    "ratios"
+   ],
+   "note": "大学公式の入試結果から過去3〜5年分に延ばす（info.ratios_replace で置き換え）"
+  },
+  {
+   "name": "南山大学",
+   "need": [
+    "ratios"
+   ],
+   "note": "大学公式の入試結果から過去3〜5年分に延ばす（info.ratios_replace で置き換え）"
+  },
+  {
+   "name": "西南学院大学",
+   "need": [
+    "ratios"
+   ],
+   "note": "大学公式の入試結果から過去3〜5年分に延ばす（info.ratios_replace で置き換え）"
+  },
+  {
+   "name": "成蹊大学",
+   "need": [
+    "ratios"
+   ],
+   "note": "大学公式の入試結果から過去3〜5年分に延ばす（info.ratios_replace で置き換え）"
+  },
+  {
+   "name": "成城大学",
+   "need": [
+    "ratios"
+   ],
+   "note": "大学公式の入試結果から過去3〜5年分に延ばす（info.ratios_replace で置き換え）"
+  },
+  {
+   "name": "明治学院大学",
+   "need": [
+    "ratios"
+   ],
+   "note": "大学公式の入試結果から過去3〜5年分に延ばす（info.ratios_replace で置き換え）"
+  },
+  {
+   "name": "獨協大学",
+   "need": [
+    "ratios"
+   ],
+   "note": "大学公式の入試結果から過去3〜5年分に延ばす（info.ratios_replace で置き換え）"
+  },
+  {
+   "name": "國學院大學",
+   "need": [
+    "ratios"
+   ],
+   "note": "大学公式の入試結果から過去3〜5年分に延ばす（info.ratios_replace で置き換え）"
+  },
+  {
+   "name": "武蔵大学",
+   "need": [
+    "ratios"
+   ],
+   "note": "大学公式の入試結果から過去3〜5年分に延ばす（info.ratios_replace で置き換え）"
+  },
+  {
+   "name": "日本大学",
+   "need": [
+    "ratios"
+   ],
+   "note": "大学公式の入試結果から過去3〜5年分に延ばす（info.ratios_replace で置き換え）"
+  },
+  {
+   "name": "東洋大学",
+   "need": [
+    "ratios"
+   ],
+   "note": "大学公式の入試結果から過去3〜5年分に延ばす（info.ratios_replace で置き換え）"
+  },
+  {
+   "name": "駒澤大学",
+   "need": [
+    "ratios"
+   ],
+   "note": "大学公式の入試結果から過去3〜5年分に延ばす（info.ratios_replace で置き換え）"
+  },
+  {
+   "name": "専修大学",
+   "need": [
+    "ratios"
+   ],
+   "note": "大学公式の入試結果から過去3〜5年分に延ばす（info.ratios_replace で置き換え）"
+  },
+  {
+   "name": "芝浦工業大学",
+   "need": [
+    "ratios"
+   ],
+   "note": "大学公式の入試結果から過去3〜5年分に延ばす（info.ratios_replace で置き換え）"
+  },
+  {
+   "name": "東京都市大学",
+   "need": [
+    "ratios"
+   ],
+   "note": "大学公式の入試結果から過去3〜5年分に延ばす（info.ratios_replace で置き換え）"
+  },
+  {
+   "name": "東京電機大学",
+   "need": [
+    "ratios"
+   ],
+   "note": "大学公式の入試結果から過去3〜5年分に延ばす（info.ratios_replace で置き換え）"
+  },
+  {
+   "name": "工学院大学",
+   "need": [
+    "ratios"
+   ],
+   "note": "大学公式の入試結果から過去3〜5年分に延ばす（info.ratios_replace で置き換え）"
+  },
+  {
+   "name": "東京農業大学",
+   "need": [
+    "ratios"
+   ],
+   "note": "大学公式の入試結果から過去3〜5年分に延ばす（info.ratios_replace で置き換え）"
+  },
+  {
+   "name": "北里大学",
+   "need": [
+    "ratios"
+   ],
+   "note": "大学公式の入試結果から過去3〜5年分に延ばす（info.ratios_replace で置き換え）"
+  },
+  {
+   "name": "自治医科大学",
+   "need": [
+    "ratios"
+   ],
+   "note": "大学公式の入試結果から過去3〜5年分に延ばす（info.ratios_replace で置き換え）"
+  },
+  {
+   "name": "国際医療福祉大学",
+   "need": [
+    "ratios"
+   ],
+   "note": "大学公式の入試結果から過去3〜5年分に延ばす（info.ratios_replace で置き換え）"
+  },
+  {
+   "name": "順天堂大学",
+   "need": [
+    "ratios"
+   ],
+   "note": "大学公式の入試結果から過去3〜5年分に延ばす（info.ratios_replace で置き換え）"
+  },
+  {
+   "name": "東京慈恵会医科大学",
+   "need": [
+    "ratios"
+   ],
+   "note": "大学公式の入試結果から過去3〜5年分に延ばす（info.ratios_replace で置き換え）"
+  },
+  {
+   "name": "日本医科大学",
+   "need": [
+    "ratios"
+   ],
+   "note": "大学公式の入試結果から過去3〜5年分に延ばす（info.ratios_replace で置き換え）"
+  },
+  {
+   "name": "獨協医科大学",
+   "need": [
+    "ratios"
+   ],
+   "note": "大学公式の入試結果から過去3〜5年分に延ばす（info.ratios_replace で置き換え）"
+  },
+  {
+   "name": "津田塾大学",
+   "need": [
+    "ratios"
+   ],
+   "note": "大学公式の入試結果から過去3〜5年分に延ばす（info.ratios_replace で置き換え）"
+  },
+  {
+   "name": "東京女子大学",
+   "need": [
+    "ratios"
+   ],
+   "note": "大学公式の入試結果から過去3〜5年分に延ばす（info.ratios_replace で置き換え）"
+  },
+  {
+   "name": "日本女子大学",
+   "need": [
+    "ratios"
+   ],
+   "note": "大学公式の入試結果から過去3〜5年分に延ばす（info.ratios_replace で置き換え）"
+  },
+  {
+   "name": "聖心女子大学",
+   "need": [
+    "ratios"
+   ],
+   "note": "大学公式の入試結果から過去3〜5年分に延ばす（info.ratios_replace で置き換え）"
+  },
+  {
+   "name": "立命館アジア太平洋大学（APU）",
+   "need": [
+    "ratios"
+   ],
+   "note": "大学公式の入試結果から過去3〜5年分に延ばす（info.ratios_replace で置き換え）"
+  },
+  {
+   "name": "神田外語大学",
+   "need": [
+    "ratios"
+   ],
+   "note": "大学公式の入試結果から過去3〜5年分に延ばす（info.ratios_replace で置き換え）"
+  },
+  {
+   "name": "関西外国語大学",
+   "need": [
+    "ratios"
+   ],
+   "note": "大学公式の入試結果から過去3〜5年分に延ばす（info.ratios_replace で置き換え）"
+  },
+  {
+   "name": "茨城キリスト教大学",
+   "need": [
+    "ratios"
+   ],
+   "note": "大学公式の入試結果から過去3〜5年分に延ばす（info.ratios_replace で置き換え）"
+  },
+  {
+   "name": "常磐大学",
+   "need": [
+    "ratios"
+   ],
+   "note": "大学公式の入試結果から過去3〜5年分に延ばす（info.ratios_replace で置き換え）"
+  },
+  {
+   "name": "流通経済大学",
+   "need": [
+    "ratios"
+   ],
+   "note": "大学公式の入試結果から過去3〜5年分に延ばす（info.ratios_replace で置き換え）"
+  },
+  {
+   "name": "国際ファッション専門職大学",
+   "need": [
+    "ratios"
+   ],
+   "note": "大学公式の入試結果から過去3〜5年分に延ばす（info.ratios_replace で置き換え）"
+  },
+  {
+   "name": "情報経営イノベーション専門職大学（iU）",
+   "need": [
+    "ratios"
+   ],
+   "note": "大学公式の入試結果から過去3〜5年分に延ばす（info.ratios_replace で置き換え）"
+  },
+  {
+   "name": "東京国際工科専門職大学",
+   "need": [
+    "ratios"
+   ],
+   "note": "大学公式の入試結果から過去3〜5年分に延ばす（info.ratios_replace で置き換え）"
+  },
+  {
+   "name": "開志専門職大学",
+   "need": [
+    "ratios"
+   ],
+   "note": "大学公式の入試結果から過去3〜5年分に延ばす（info.ratios_replace で置き換え）"
+  },
+  {
+   "name": "芸術文化観光専門職大学",
+   "need": [
+    "ratios"
+   ],
+   "note": "大学公式の入試結果から過去3〜5年分に延ばす（info.ratios_replace で置き換え）"
+  },
+  {
+   "name": "静岡県立農林環境専門職大学",
+   "need": [
+    "ratios"
+   ],
+   "note": "大学公式の入試結果から過去3〜5年分に延ばす（info.ratios_replace で置き換え）"
+  },
+  {
+   "name": "高知リハビリテーション専門職大学",
+   "need": [
+    "ratios"
+   ],
+   "note": "大学公式の入試結果から過去3〜5年分に延ばす（info.ratios_replace で置き換え）"
+  },
+  {
+   "name": "東京保健医療専門職大学",
+   "need": [
+    "ratios"
+   ],
+   "note": "大学公式の入試結果から過去3〜5年分に延ばす（info.ratios_replace で置き換え）"
+  },
+  {
+   "name": "名古屋国際工科専門職大学",
+   "need": [
+    "ratios"
+   ],
+   "note": "大学公式の入試結果から過去3〜5年分に延ばす（info.ratios_replace で置き換え）"
+  },
+  {
+   "name": "電動モビリティシステム専門職大学",
+   "need": [
+    "ratios"
+   ],
+   "note": "大学公式の入試結果から過去3〜5年分に延ばす（info.ratios_replace で置き換え）"
+  },
+  {
+   "name": "筑波技術大学",
+   "need": [
+    "ratios"
+   ],
+   "note": "大学公式の入試結果から過去3〜5年分に延ばす（info.ratios_replace で置き換え）"
+  },
+  {
+   "name": "前橋工科大学",
+   "need": [
+    "ratios"
+   ],
+   "note": "大学公式の入試結果から過去3〜5年分に延ばす（info.ratios_replace で置き換え）"
+  },
+  {
+   "name": "千葉県立保健医療大学",
+   "need": [
+    "ratios"
+   ],
+   "note": "大学公式の入試結果から過去3〜5年分に延ばす（info.ratios_replace で置き換え）"
+  },
+  {
+   "name": "埼玉県立大学",
+   "need": [
+    "ratios"
+   ],
+   "note": "大学公式の入試結果から過去3〜5年分に延ばす（info.ratios_replace で置き換え）"
+  },
+  {
+   "name": "川崎市立看護大学",
+   "need": [
+    "ratios"
+   ],
+   "note": "大学公式の入試結果から過去3〜5年分に延ばす（info.ratios_replace で置き換え）"
+  },
+  {
+   "name": "神奈川県立保健福祉大学",
+   "need": [
+    "ratios"
+   ],
+   "note": "大学公式の入試結果から過去3〜5年分に延ばす（info.ratios_replace で置き換え）"
+  },
+  {
+   "name": "群馬県立女子大学",
+   "need": [
+    "ratios"
+   ],
+   "note": "大学公式の入試結果から過去3〜5年分に延ばす（info.ratios_replace で置き換え）"
+  },
+  {
+   "name": "群馬県立県民健康科学大学",
+   "need": [
+    "ratios"
+   ],
+   "note": "大学公式の入試結果から過去3〜5年分に延ばす（info.ratios_replace で置き換え）"
+  },
+  {
+   "name": "公立はこだて未来大学",
+   "need": [
+    "ratios"
+   ],
+   "note": "大学公式の入試結果から過去3〜5年分に延ばす（info.ratios_replace で置き換え）"
+  },
+  {
+   "name": "公立千歳科学技術大学",
+   "need": [
+    "ratios"
+   ],
+   "note": "大学公式の入試結果から過去3〜5年分に延ばす（info.ratios_replace で置き換え）"
+  },
+  {
+   "name": "北海道教育大学",
+   "need": [
+    "ratios"
+   ],
+   "note": "大学公式の入試結果から過去3〜5年分に延ばす（info.ratios_replace で置き換え）"
+  },
+  {
+   "name": "北見工業大学",
+   "need": [
+    "ratios"
+   ],
+   "note": "大学公式の入試結果から過去3〜5年分に延ばす（info.ratios_replace で置き換え）"
+  },
+  {
+   "name": "宮城教育大学",
+   "need": [
+    "ratios"
+   ],
+   "note": "大学公式の入試結果から過去3〜5年分に延ばす（info.ratios_replace で置き換え）"
+  },
+  {
+   "name": "小樽商科大学",
+   "need": [
+    "ratios"
+   ],
+   "note": "大学公式の入試結果から過去3〜5年分に延ばす（info.ratios_replace で置き換え）"
+  },
+  {
+   "name": "山形大学",
+   "need": [
+    "ratios"
+   ],
+   "note": "大学公式の入試結果から過去3〜5年分に延ばす（info.ratios_replace で置き換え）"
+  },
+  {
+   "name": "帯広畜産大学",
+   "need": [
+    "ratios"
+   ],
+   "note": "大学公式の入試結果から過去3〜5年分に延ばす（info.ratios_replace で置き換え）"
+  },
+  {
+   "name": "弘前大学",
+   "need": [
+    "ratios"
+   ],
+   "note": "大学公式の入試結果から過去3〜5年分に延ばす（info.ratios_replace で置き換え）"
+  },
+  {
+   "name": "旭川医科大学",
+   "need": [
+    "ratios"
+   ],
+   "note": "大学公式の入試結果から過去3〜5年分に延ばす（info.ratios_replace で置き換え）"
+  },
+  {
+   "name": "福島大学",
+   "need": [
+    "ratios"
+   ],
+   "note": "大学公式の入試結果から過去3〜5年分に延ばす（info.ratios_replace で置き換え）"
+  },
+  {
+   "name": "秋田大学",
+   "need": [
+    "ratios"
+   ],
+   "note": "大学公式の入試結果から過去3〜5年分に延ばす（info.ratios_replace で置き換え）"
+  },
+  {
+   "name": "上越教育大学",
+   "need": [
+    "ratios"
+   ],
+   "note": "大学公式の入試結果から過去3〜5年分に延ばす（info.ratios_replace で置き換え）"
+  },
+  {
+   "name": "名古屋工業大学",
+   "need": [
+    "ratios"
+   ],
+   "note": "大学公式の入試結果から過去3〜5年分に延ばす（info.ratios_replace で置き換え）"
+  },
+  {
+   "name": "富山大学",
+   "need": [
+    "ratios"
+   ],
+   "note": "大学公式の入試結果から過去3〜5年分に延ばす（info.ratios_replace で置き換え）"
+  },
+  {
+   "name": "山梨大学",
+   "need": [
+    "ratios"
+   ],
+   "note": "大学公式の入試結果から過去3〜5年分に延ばす（info.ratios_replace で置き換え）"
+  },
+  {
+   "name": "岐阜大学",
+   "need": [
+    "ratios"
+   ],
+   "note": "大学公式の入試結果から過去3〜5年分に延ばす（info.ratios_replace で置き換え）"
+  },
+  {
+   "name": "愛知教育大学",
+   "need": [
+    "ratios"
+   ],
+   "note": "大学公式の入試結果から過去3〜5年分に延ばす（info.ratios_replace で置き換え）"
+  },
+  {
+   "name": "浜松医科大学",
+   "need": [
+    "ratios"
+   ],
+   "note": "大学公式の入試結果から過去3〜5年分に延ばす（info.ratios_replace で置き換え）"
+  },
+  {
+   "name": "福井大学",
+   "need": [
+    "ratios"
+   ],
+   "note": "大学公式の入試結果から過去3〜5年分に延ばす（info.ratios_replace で置き換え）"
+  },
+  {
+   "name": "京都工芸繊維大学",
+   "need": [
+    "ratios"
+   ],
+   "note": "大学公式の入試結果から過去3〜5年分に延ばす（info.ratios_replace で置き換え）"
+  },
+  {
+   "name": "京都教育大学",
+   "need": [
+    "ratios"
+   ],
+   "note": "大学公式の入試結果から過去3〜5年分に延ばす（info.ratios_replace で置き換え）"
+  },
+  {
+   "name": "兵庫教育大学",
+   "need": [
+    "ratios"
+   ],
+   "note": "大学公式の入試結果から過去3〜5年分に延ばす（info.ratios_replace で置き換え）"
+  },
+  {
+   "name": "和歌山大学",
+   "need": [
+    "ratios"
+   ],
+   "note": "大学公式の入試結果から過去3〜5年分に延ばす（info.ratios_replace で置き換え）"
+  },
+  {
+   "name": "大阪教育大学",
+   "need": [
+    "ratios"
+   ],
+   "note": "大学公式の入試結果から過去3〜5年分に延ばす（info.ratios_replace で置き換え）"
+  },
+  {
+   "name": "奈良教育大学",
+   "need": [
+    "ratios"
+   ],
+   "note": "大学公式の入試結果から過去3〜5年分に延ばす（info.ratios_replace で置き換え）"
+  },
+  {
+   "name": "滋賀医科大学",
+   "need": [
+    "ratios"
+   ],
+   "note": "大学公式の入試結果から過去3〜5年分に延ばす（info.ratios_replace で置き換え）"
+  },
+  {
+   "name": "滋賀大学",
+   "need": [
+    "ratios"
+   ],
+   "note": "大学公式の入試結果から過去3〜5年分に延ばす（info.ratios_replace で置き換え）"
+  },
+  {
+   "name": "山口大学",
+   "need": [
+    "ratios"
+   ],
+   "note": "大学公式の入試結果から過去3〜5年分に延ばす（info.ratios_replace で置き換え）"
+  },
+  {
+   "name": "島根大学",
+   "need": [
+    "ratios"
+   ],
+   "note": "大学公式の入試結果から過去3〜5年分に延ばす（info.ratios_replace で置き換え）"
+  },
+  {
+   "name": "徳島大学",
+   "need": [
+    "ratios"
+   ],
+   "note": "大学公式の入試結果から過去3〜5年分に延ばす（info.ratios_replace で置き換え）"
+  },
+  {
+   "name": "愛媛大学",
+   "need": [
+    "ratios"
+   ],
+   "note": "大学公式の入試結果から過去3〜5年分に延ばす（info.ratios_replace で置き換え）"
+  },
+  {
+   "name": "香川大学",
+   "need": [
+    "ratios"
+   ],
+   "note": "大学公式の入試結果から過去3〜5年分に延ばす（info.ratios_replace で置き換え）"
+  },
+  {
+   "name": "高知大学",
+   "need": [
+    "ratios"
+   ],
+   "note": "大学公式の入試結果から過去3〜5年分に延ばす（info.ratios_replace で置き換え）"
+  },
+  {
+   "name": "鳥取大学",
+   "need": [
+    "ratios"
+   ],
+   "note": "大学公式の入試結果から過去3〜5年分に延ばす（info.ratios_replace で置き換え）"
+  },
+  {
+   "name": "鳴門教育大学",
+   "need": [
+    "ratios"
+   ],
+   "note": "大学公式の入試結果から過去3〜5年分に延ばす（info.ratios_replace で置き換え）"
+  },
+  {
+   "name": "九州工業大学",
+   "need": [
+    "ratios"
+   ],
+   "note": "大学公式の入試結果から過去3〜5年分に延ばす（info.ratios_replace で置き換え）"
+  },
+  {
+   "name": "佐賀大学",
+   "need": [
+    "ratios"
+   ],
+   "note": "大学公式の入試結果から過去3〜5年分に延ばす（info.ratios_replace で置き換え）"
+  },
+  {
+   "name": "大分大学",
+   "need": [
+    "ratios"
+   ],
+   "note": "大学公式の入試結果から過去3〜5年分に延ばす（info.ratios_replace で置き換え）"
+  },
+  {
+   "name": "宮崎大学",
+   "need": [
+    "ratios"
+   ],
+   "note": "大学公式の入試結果から過去3〜5年分に延ばす（info.ratios_replace で置き換え）"
+  },
+  {
+   "name": "琉球大学",
+   "need": [
+    "ratios"
+   ],
+   "note": "大学公式の入試結果から過去3〜5年分に延ばす（info.ratios_replace で置き換え）"
+  },
+  {
+   "name": "福岡教育大学",
+   "need": [
+    "ratios"
+   ],
+   "note": "大学公式の入試結果から過去3〜5年分に延ばす（info.ratios_replace で置き換え）"
+  },
+  {
+   "name": "長崎大学",
+   "need": [
+    "ratios"
+   ],
+   "note": "大学公式の入試結果から過去3〜5年分に延ばす（info.ratios_replace で置き換え）"
+  },
+  {
+   "name": "鹿児島大学",
+   "need": [
+    "ratios"
+   ],
+   "note": "大学公式の入試結果から過去3〜5年分に延ばす（info.ratios_replace で置き換え）"
+  },
+  {
+   "name": "室蘭工業大学",
+   "need": [
+    "ratios"
+   ],
+   "note": "大学公式の入試結果から過去3〜5年分に延ばす（info.ratios_replace で置き換え）"
+  },
+  {
+   "name": "三重大学",
+   "need": [
+    "ratios"
+   ],
+   "note": "大学公式の入試結果から過去3〜5年分に延ばす（info.ratios_replace で置き換え）"
+  },
+  {
+   "name": "鹿屋体育大学",
+   "need": [
+    "ratios"
+   ],
+   "note": "大学公式の入試結果から過去3〜5年分に延ばす（info.ratios_replace で置き換え）"
+  },
+  {
+   "name": "政策研究大学院大学（大学院のみ）",
+   "need": [
+    "ratios"
+   ],
+   "note": "大学公式の入試結果から過去3〜5年分に延ばす（info.ratios_replace で置き換え）"
+  },
+  {
+   "name": "北陸先端科学技術大学院大学（大学院のみ）",
+   "need": [
+    "ratios"
+   ],
+   "note": "大学公式の入試結果から過去3〜5年分に延ばす（info.ratios_replace で置き換え）"
+  },
+  {
+   "name": "奈良先端科学技術大学院大学（大学院のみ）",
+   "need": [
+    "ratios"
+   ],
+   "note": "大学公式の入試結果から過去3〜5年分に延ばす（info.ratios_replace で置き換え）"
   }
  ],
  "complete": true,
