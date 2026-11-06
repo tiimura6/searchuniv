@@ -43,6 +43,10 @@ def main(path):
                     problems.append(n + ': 座標なし')
         cur = info.setdefault(n, {})
         for k, v in (r.get('info') or {}).items():
+            if k.endswith('_replace') and not empty(v):
+                # 既存の値を新しい値で置き換える（例：schedule_replace で入試日程を最新版に）
+                base = k[:-len('_replace')]; cur[base] = v; filled += 1; cur.setdefault('_checked', {})[base] = TODAY
+                continue
             if k == 'departments_full' and isinstance(v, list) and v:
                 # 専攻・コースまで含めた学部・学科一覧で置き換える
                 cur['departments'] = v; filled += 1; cur.setdefault('_checked', {})['departments'] = TODAY
