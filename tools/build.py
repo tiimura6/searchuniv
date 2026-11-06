@@ -27,7 +27,7 @@ def _raw(lam, phi):
 CX, CY = _raw(math.radians(138.5), math.radians(36 - 18/60))
 
 # ページを軽くするため、大学の詳細で開いたときに要る重いデータは別ファイルにして後から読み込む
-LAZY = ('fdiff', 'schedule', 'money', 'partners', 'sources', '_checked', 'notable', 'news', 'access', 'founded', 'students', 'methods', 'eng')
+LAZY = ('fdiff', 'schedule', 'money', 'partners', 'sources', '_checked', 'notable', 'news', 'access', 'founded', 'students', 'methods', 'eng', 'ratios')
 
 def main():
     cards = D('cards'); exam = D('exam'); info = D('info'); hp = D('hp')

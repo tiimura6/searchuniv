@@ -146,6 +146,11 @@ body.wide main,body.wide header{max-width:1320px}
 .wmlist li.on{background:color-mix(in srgb,var(--accent) 10%,transparent)}
 body.noscroll{overflow:hidden}
 @media (max-width:760px){.wmbody{grid-template-columns:1fr;grid-template-rows:1fr 38%}.wmlist{border-left:0;border-top:1px solid var(--line)}}
+.tr{font-size:11.5px;font-weight:700}.tr.up{color:var(--ng)}.tr.dn{color:#2a7f62}.tr.flat{color:var(--muted)}
+.spark polyline{fill:none;stroke:var(--accent);stroke-width:1.5}.spark circle{fill:var(--accent)}
+.rchart{width:100%;max-width:620px;height:auto;display:block}
+.rchart .gl{stroke:var(--line);stroke-width:1}.rchart .ax{font-size:11px;fill:var(--muted)}.rchart .ln{fill:none;stroke-width:2.2}
+.rleg{display:flex;flex-wrap:wrap;gap:4px 14px;font-size:12px;margin-top:4px}.rleg i{display:inline-block;width:12px;height:3px;margin-right:4px;vertical-align:middle}
 .partners{border:1px solid var(--line);border-radius:10px;padding:10px 12px;margin:8px 0}
 .wmap{width:100%;height:auto;display:block;margin:6px 0;background:color-mix(in srgb,var(--accent) 5%,transparent);border-radius:8px}
 .wbase{fill:var(--line);stroke:var(--panel);stroke-width:.3}
@@ -1068,7 +1073,46 @@ function engBlock(f){
   return '<details class="xb" open><summary>英語外部試験の利用'+(E.year?'<span class="sub2">'+esc(E.year)+'</span>':'')+'</summary>'+(E.summary?'<div class="msum">'+esc(E.summary)+'</div>':'')+'<div class="tblw"><table class="xt"><thead><tr><th>方式</th><th>使い方</th><th>基準</th><th>対象</th></tr></thead><tbody>'+
     E.rows.map(r=>'<tr><td><span class="ktag" style="background:'+(KUBUN_COLOR[r.kubun]||"#4b5563")+'">'+esc(r.kubun||"")+'</span>'+esc(r.name||"")+'</td><td>'+esc(r.use||"")+'</td><td>'+esc(r.level||"")+(r.tests?'<div class="sub2">'+esc(r.tests)+'</div>':'')+'</td><td>'+esc(r.faculties||"")+(r.note?'<div class="sub2">'+esc(r.note)+'</div>':'')+'</td></tr>').join("")+'</tbody></table></div>'+(E.note?'<div class="enote">※'+esc(E.note)+'</div>':'')+'</details>';
 }
-function extraBlocks(name){ const f=INFO[name]||{}; return fdiffBlock(f)+scheduleBlock(f)+engBlock(f)+moneyBlock(f)+sourceBlock(name); }
+
+// ===== 入試倍率の推移 =====
+// info.ratios があればそれを、無ければ EXAM の今年・前年の倍率から一般選抜の2年分を作る
+function ratioRows(name){
+  const R=(INFO[name]||{}).ratios; if(R&&(R.rows||[]).length) return {kind:R.kind||"",rows:R.rows,note:R.note||""};
+  const e=EXAM[name]; if(!e||!e.general) return null; const g=e.general, y={};
+  if(g.ratio!=null&&g.year) y[String(g.year)]=g.ratio; if(g.ratio_prev!=null&&g.year) y[String(g.year-1)]=g.ratio_prev;
+  const rows=[]; if(Object.keys(y).length) rows.push({kubun:"一般",unit:"全体",y});
+  for(const [k,lab] of [["suisen","推薦"],["sogo","総合型"]]){ const r=e[k]; if(r&&r.ratio!=null&&r.year) rows.push({kubun:lab,unit:"全体",y:{[String(r.year)]:r.ratio}}); }
+  return rows.length?{kind:"",rows,note:"河合塾 Kei-Net の入試結果（今年・前年）"}:null;
+}
+function trend(y){ const ks=Object.keys(y).sort(); if(ks.length<2) return ""; const a=y[ks[ks.length-2]], b=y[ks[ks.length-1]]; if(a==null||b==null) return ""; const d=b-a;
+  return Math.abs(d)<0.05?'<span class="tr flat">→</span>':d>0?'<span class="tr up">↑'+d.toFixed(1)+'</span>':'<span class="tr dn">↓'+Math.abs(d).toFixed(1)+'</span>'; }
+function spark(y){ const ks=Object.keys(y).sort().filter(k=>y[k]!=null); if(ks.length<2) return ""; const v=ks.map(k=>+y[k]), mn=Math.min(...v), mx=Math.max(...v), W=60, H=18;
+  const pts=v.map((x,i)=>[(i/(v.length-1))*(W-4)+2, H-2-((x-mn)/((mx-mn)||1))*(H-4)]);
+  return '<svg class="spark" viewBox="0 0 '+W+' '+H+'" width="'+W+'" height="'+H+'"><polyline points="'+pts.map(p=>p[0].toFixed(1)+","+p[1].toFixed(1)).join(" ")+'"/><circle cx="'+pts[pts.length-1][0].toFixed(1)+'" cy="'+pts[pts.length-1][1].toFixed(1)+'" r="1.8"/></svg>'; }
+function ratiosBlock(name){
+  const R=ratioRows(name); if(!R) return "";
+  const years=[...new Set(R.rows.flatMap(r=>Object.keys(r.y||{})))].sort();
+  return '<details class="xb" open><summary>入試倍率の推移'+(R.kind?'<span class="sub2">'+esc(R.kind)+'</span>':'')+'</summary><div class="tblw"><table class="xt"><thead><tr><th>区分・単位</th>'+years.map(y=>'<th>'+esc(y)+'</th>').join("")+'<th>前年比</th><th></th></tr></thead><tbody>'+
+    R.rows.map(r=>'<tr><td><span class="ktag" style="background:'+(KUBUN_COLOR[r.kubun]||"#4b5563")+'">'+esc(r.kubun||"")+'</span>'+esc(r.unit||"")+'</td>'+years.map(y=>'<td>'+(r.y&&r.y[y]!=null?esc(String(r.y[y])):'')+'</td>').join("")+'<td>'+trend(r.y||{})+'</td><td>'+spark(r.y||{})+'</td></tr>').join("")+
+    '</tbody></table></div>'+(R.note?'<div class="enote">※'+esc(R.note)+'</div>':'')+'<div class="enote">※年度は入試年度。倍率は大学・出典により「実質倍率」「志願倍率」など定義が違うので、大学どうしは同じ種類どうしで比べてください。</div></details>';
+}
+// 比較タブ：選んだ大学の一般選抜（全体）の倍率の推移を1枚のグラフに
+function ratioChart(names){
+  const series=names.map((n,i)=>{ const R=ratioRows(n); const r=R&&R.rows.find(x=>x.kubun==="一般"); return r?{n,y:r.y,i}:null; }).filter(Boolean);
+  if(!series.length) return '<div class="sub2">一般選抜の倍率データがまだありません。</div>';
+  const years=[...new Set(series.flatMap(s=>Object.keys(s.y)))].sort(); const vals=series.flatMap(s=>Object.values(s.y).filter(v=>v!=null).map(Number));
+  const mx=Math.ceil(Math.max(...vals)+0.5), W=520, H=220, L=44, B=28, T=10, Rr=26;
+  const X=i=>L+(years.length===1?0.5:i/(years.length-1))*(W-L-Rr), Y=v=>T+(1-v/mx)*(H-T-B);
+  const C=["#1f4e79","#b0532a","#2a7f62","#b8860b"];
+  let g='<svg class="rchart" viewBox="0 0 '+W+' '+H+'" role="img" aria-label="倍率の推移">';
+  for(let t=0;t<=mx;t+=Math.max(1,Math.round(mx/5))) g+='<line x1="'+L+'" x2="'+(W-Rr)+'" y1="'+Y(t)+'" y2="'+Y(t)+'" class="gl"/><text x="'+(L-6)+'" y="'+(Y(t)+4)+'" text-anchor="end" class="ax">'+t+'</text>';
+  years.forEach((y,i)=>{ g+='<text x="'+X(i)+'" y="'+(H-8)+'" text-anchor="middle" class="ax">'+y+'</text>'; });
+  for(const s of series){ const pts=years.map((y,i)=>s.y[y]!=null?[X(i),Y(+s.y[y]),s.y[y]]:null).filter(Boolean); const c=C[s.i%4];
+    g+='<polyline points="'+pts.map(p=>p[0].toFixed(1)+","+p[1].toFixed(1)).join(" ")+'" style="stroke:'+c+'" class="ln"/>'+pts.map(p=>'<circle cx="'+p[0].toFixed(1)+'" cy="'+p[1].toFixed(1)+'" r="3.5" style="fill:'+c+'"><title>'+esc(s.n)+' '+p[2]+'倍</title></circle>').join(""); }
+  g+='</svg><div class="rleg">'+series.map(s=>'<span><i style="background:'+C[s.i%4]+'"></i>'+esc(s.n)+'</span>').join("")+'</div>';
+  return g;
+}
+function extraBlocks(name){ const f=INFO[name]||{}; return fdiffBlock(f)+ratiosBlock(name)+scheduleBlock(f)+engBlock(f)+moneyBlock(f)+sourceBlock(name); }
 
 // ===== 比較タブ：横並び比較・日程・受験料・手続締切 =====
 let PLAN_SEL=null;   // 比較・日程に入れる大学（候補の中から）
@@ -1113,6 +1157,7 @@ function renderPlan(){
         case "共テ利用": return mrows(m,["共テ利用"],true);
         case "学校推薦型": return mrows(m,["推薦"],false);
         case "総合型": return mrows(m,["総合型"],false);
+        case "一般選抜の倍率の推移": { const R=ratioRows(x.name); const r=R&&R.rows.find(z=>z.kubun==="一般"); if(!r) return ""; const ks=Object.keys(r.y).sort(); return ks.map(k=>esc(k)+"："+esc(String(r.y[k]))).join("<br>")+" "+trend(r.y); }
         case "共通テストの科目": { const k=f.kyotsu||{}; return esc([k.kamoku,k.kyoka&&k.kyoka.length?("（"+(k.kyoka[0]===k.kyoka[1]?k.kyoka[0]:k.kyoka.join("〜"))+"教科）"):""].filter(Boolean).join(""))+(k.note?'<div class="sub2">'+esc(k.note)+'</div>':''); }
         case "英語外部試験": { const E=f.eng||{}; return (E.rows||[]).length?(E.rows||[]).slice(0,4).map(r=>esc(r.kubun+"・"+r.name+"："+r.use+"（"+(r.level||"")+"）")).join("<br>"):esc(E.summary||""); }
         case "卒業までの学費": return M.total4!=null?('約'+man(M.total4)):((f.tuition&&f.tuition.amount!=null)?('初年度 約'+man(f.tuition.amount)):"");
@@ -1122,9 +1167,10 @@ function renderPlan(){
         case "就職・進学": return esc(f.careers||"");
         case "向いている生徒": return esc((GUIDE[x.name]||{}).fit||"");
       } return ""; };
-    const K=["種別","難易度（河合）","学部","入試方式（概要）","一般選抜","共テ利用","学校推薦型","総合型","共通テストの科目","英語R:L","英語外部試験","卒業までの学費","大学独自の奨学金","海外協定校","取れる資格","就職・進学","向いている生徒"];
+    const K=["種別","難易度（河合）","一般選抜の倍率の推移","学部","入試方式（概要）","一般選抜","共テ利用","学校推薦型","総合型","共通テストの科目","英語R:L","英語外部試験","卒業までの学費","大学独自の奨学金","海外協定校","取れる資格","就職・進学","向いている生徒"];
     h+='<div class="msheet" style="margin-top:12px"><h2>横並び比較'+(sel.length>4?'<small class="sub2">（チェックした最初の4校）</small>':'')+'</h2><div class="tblw"><table class="xt cmp"><thead><tr><th></th>'+cmp.map(x=>'<th>'+esc(x.name)+'</th>').join("")+'</tr></thead><tbody>'+
       K.map(k=>'<tr><th>'+k+'</th>'+cmp.map(x=>'<td>'+(val(x,k)||'<span class="sub2">—</span>')+'</td>').join("")+'</tr>').join("")+'</tbody></table></div></div>';
+    h+='<div class="msheet" style="margin-top:12px"><h2>一般選抜の倍率の推移</h2>'+ratioChart(cmp.map(x=>x.name))+'<div class="enote">※倍率の種類（実質倍率・志願倍率）が大学で違う場合があります。各大学の詳細で種類を確認してください。</div></div>';
   }
   h+=hs;
   el.innerHTML=h;
