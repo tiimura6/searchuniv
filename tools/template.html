@@ -218,7 +218,7 @@ ul.mini li{font-size:12.5px;margin:2px 0}
 <body>
 <header>
   <h1>Searchuniv <span class="byline">designed by Takahiro Iimura</span></h1>
-  <nav class="tabs"><a href="#map" data-v="map">検索</a><a href="#cards" data-v="cards">カード</a><a href="#news" data-v="news">ニュース</a><a href="#ai" data-v="ai">AIおすすめ</a></nav>
+  <nav class="tabs"><a href="#map" data-v="map">検索</a><a href="#cards" data-v="cards">カード</a><a href="#news" data-v="news">ニュース</a><a href="#ai" data-v="ai">おすすめ</a></nav>
 </header>
 <main>
 <section id="v-cards">
@@ -935,7 +935,7 @@ $("nq").addEventListener("input",renderNews); $("nf").addEventListener("change",
   }catch(e){ clearTimeout(timer); newsState="off"; renderNews(); }
 })();
 
-// ===== AIおすすめ =====
+// ===== おすすめ（AI不使用）=====
 const REGION={"北海道・東北":["北海道","青森","岩手","宮城","秋田","山形","福島"],"関東":["茨城","栃木","群馬","埼玉","千葉","東京","神奈川"],"中部":["新潟","富山","石川","福井","山梨","長野","岐阜","静岡","愛知"],"近畿":["三重","滋賀","京都","大阪","兵庫","奈良","和歌山"],"中国・四国":["鳥取","島根","岡山","広島","山口","徳島","香川","愛媛","高知"],"九州・沖縄":["福岡","佐賀","長崎","熊本","大分","宮崎","鹿児島","沖縄"]};
 function regionOf(pref){ for(const [r,ps] of Object.entries(REGION)) if(ps.some(p=>pref.startsWith(p))) return r; return ""; }
 function typeKey(x){ if(x.cat==="daigakkou") return "dai"; return /国立|公立/.test(x.type)?"pub":"pri"; }
@@ -964,52 +964,92 @@ function prefilter(q,region,type,limit){
     .map(p=>{ let sc=0; for(const k of qg) if(p.g.has(k)) sc+=w.get(k); return {x:p.x,t:p.t,sc}; })
     .sort((a,b)=>b.sc-a.sc).slice(0,limit);
 }
-let aiCtl=null, sampleFn=null;
-(async()=>{ try{ sampleFn = (window.claude&&claude.use) ? await claude.use("sample") : null; }catch(e){ sampleFn=null; }
-  if(!sampleFn){ $("ai-status").textContent="この画面でAIおすすめは使えません（Claudeの公開ページで開くと使えます）。"; $("ai-go").disabled=true; } })();
-$("ai-stop").onclick=()=>aiCtl&&aiCtl.abort();
-$("ai-go").onclick=async()=>{
-  if(!sampleFn) return;
-  const job=$("ai-job").value.trim(), study=$("ai-study").value.trim();
-  if(!job&&!study){ $("ai-status").textContent="職業か学びたい学問のどちらかを入力してください。"; return; }
+// ---- AIを使わないおすすめ（キーワード照合＋条件で絞り込み）----
+const SYN={
+ "臨床心理士":["心理"],"公認心理師":["心理"],"カウンセラー":["心理","カウンセリング"],"心理":["心理"],
+ "医師":["医学","医師"],"医者":["医学","医師"],"歯科医":["歯学","歯科"],"薬剤師":["薬学","薬剤師"],"獣医":["獣医"],
+ "看護師":["看護"],"保健師":["保健師","看護"],"助産師":["助産","看護"],"理学療法士":["理学療法","リハビリ"],"作業療法士":["作業療法","リハビリ"],
+ "言語聴覚士":["言語聴覚"],"臨床検査技師":["臨床検査","検査"],"診療放射線技師":["放射線"],"管理栄養士":["栄養"],"栄養士":["栄養"],
+ "保育士":["保育","幼児"],"幼稚園":["幼児","保育","幼稚園"],"社会福祉士":["福祉"],"介護":["福祉","介護"],
+ "教員":["教育","教員","教職"],"教師":["教育","教員","教職"],"先生":["教育","教員"],"英語教員":["英語","教育","教員"],
+ "エンジニア":["工学","情報","工"],"プログラマー":["情報","コンピュータ","プログラミング"],"SE":["情報","システム"],"ゲーム":["情報","メディア","ゲーム"],
+ "AI":["情報","人工知能","データサイエンス","AI"],"人工知能":["人工知能","情報","データサイエンス"],"データ":["データサイエンス","情報","統計"],
+ "建築":["建築"],"建築士":["建築"],"土木":["土木","都市","社会基盤"],"機械":["機械"],"電気":["電気","電子"],"ロボット":["ロボット","機械","知能"],"宇宙":["宇宙","航空","物理"],
+ "弁護士":["法学","法"],"裁判官":["法学","法"],"検察":["法学","法"],"公務員":["法","行政","公共","政策"],"外交官":["国際","外国語","政治"],"国連":["国際"],
+ "経営":["経営","商"],"起業":["経営","起業","商"],"会計士":["会計","商","経済"],"税理士":["会計","税","商"],"銀行":["経済","経営","金融"],"金融":["金融","経済"],
+ "記者":["メディア","ジャーナリズム","社会","文"],"マスコミ":["メディア","社会"],"アナウンサー":["メディア"],
+ "研究者":["研究","大学院"],"農業":["農","農学"],"農家":["農","農学"],"昆虫":["昆虫","生物","農","生命"],"生物":["生物","生命"],"環境":["環境"],"海":["海洋","水産"],"水産":["水産","海洋"],
+ "パイロット":["航空","操縦"],"自衛官":["防衛","自衛"],"気象":["気象"],"海上保安":["海上保安"],"税務":["税務"],
+ "デザイナー":["デザイン","芸術"],"デザイン":["デザイン"],"音楽":["音楽","芸術"],"美術":["美術","芸術"],"アニメ":["アニメ","メディア","芸術"],
+ "スポーツ":["スポーツ","体育","健康"],"体育":["体育","スポーツ"],"観光":["観光"],"ホテル":["観光","ホスピタリティ"],"ファッション":["ファッション"],
+ "留学":["留学","国際","グローバル"],"英語":["英語","外国語","国際"],"国際":["国際","グローバル"],"歴史":["歴史","史学"],"文学":["文学"],"哲学":["哲学"],
+ "化学":["化学"],"物理":["物理"],"数学":["数学","数理"],"情報":["情報"],"医療":["医療","医学","保健"],"福祉":["福祉"],"心理学":["心理"],"教育":["教育"]};
+const FIELD_W={faculties:3,licenses:3,careers:2,research:2,feats:1.5,memo:1,methods:0.5};
+function toks(str){ return str.normalize("NFKC").split(/[\s、,，。・\/／]+|の|や|と|に関する|について/).map(t=>(t||"").trim()).filter(t=>t.length>=1); }
+function concepts(tok){ // 「英語教員」→［英語］［教員］のように、言葉の中の概念ごとに分ける
+  const keys=Object.keys(SYN).filter(k=>tok.includes(k)).sort((a,b)=>b.length-a.length); const used=[];
+  for(const k of keys) if(!used.some(u=>u.includes(k))) used.push(k);
+  if(!used.length){ const st=tok.replace(/(士|師|者|家|学|員|になりたい|を学びたい)$/,""); return [[...new Set([tok,st].filter(w=>w.length>=1))]]; }
+  if(used.length===1&&SYN[used[0]].length) return [[...new Set([tok,...SYN[used[0]]])]];
+  return used.map(k=>[...new Set([k,...SYN[k]])]);
+}
+function expand(tok){ const out=new Set([tok]); for(const [k,v] of Object.entries(SYN)) if(tok.includes(k)) v.forEach(w=>out.add(w)); const st=tok.replace(/(士|師|者|家|学|員)$/,""); if(st.length>=2) out.add(st); return [...out]; }
+function fieldsOf(x){ const f=INFO[x.name]||{}; return {faculties:f.faculties||[],licenses:f.licenses||[],careers:f.careers?[f.careers]:[],research:f.research||[],feats:x.feats||[],memo:x.memo?[x.memo]:[]}; }
+function lo(v){ const m=String(v||"").match(/[\d.]+/); return m?parseFloat(m[0]):null; }
+function hi(v){ const m=String(v||"").match(/[\d.]+/g); return m?parseFloat(m[m.length-1]):null; }
+function recommend(){
+  const job=$("ai-job").value.trim(), study=$("ai-study").value.trim(), other=$("ai-other").value.trim();
   const region=$("ai-region").value, type=$("ai-type").value;
-  const q=[job,study,$("ai-other").value].join(" ");
-  const cands=prefilter(q,region,type,90);
-  if(!cands.length){ $("ai-status").textContent="条件に合う学校がありません。"; return; }
-  const prompt=`あなたは日本の高校の進路指導を支える専門家です。以下の生徒の希望に合う進学先を、候補リストの中だけから最大8校選び、合う順に並べてください。
-候補リストにない学校は絶対に挙げないこと。候補の情報に書かれていない事実（偏差値・資格・就職先など）を作らないこと。不確かな点は caution に書くこと。
-生徒の希望:
-- 目指している職業: ${job||"未定"}
-- 学びたい学問・興味: ${study||"未定"}
-- 地域: ${region||"こだわらない"}
-- 設置区分: ${({pub:"国公立",pri:"私立",dai:"大学校"})[type]||"こだわらない"}
-- 学力の目安: ${$("ai-level").value||"不明"}
-- 学費の上限: ${$("ai-budget").value||"不明"}
-- その他: ${$("ai-other").value||"なし"}
-
-出力は次の形のJSON配列だけ:
-[{"name":"候補リストの学校名そのまま","reason":"この生徒に合う理由（2文以内）","points":["根拠となる学部・資格・進路など（候補情報から）", "..."],"caution":"注意点（学力・学費・距離・入試方式など、なければ空文字）"}]
-
-候補リスト（1行1校）:
-${cands.map(c=>c.t).join("\n")}`;
-  aiCtl=new AbortController(); $("ai-go").disabled=true; $("ai-stop").hidden=false; $("ai-out").innerHTML="";
-  $("ai-status").textContent=`${items.length}校から絞り込んだ${cands.length}校をAIが検討中…（30秒〜1分ほどかかります）`;
-  try{
-    const res=await sampleFn.json(prompt,{signal:aiCtl.signal,modelTier:"default"});
-    const list=(Array.isArray(res)?res:[]).filter(r=>r&&items.some(x=>x.name===r.name)).slice(0,8);
-    if(!list.length){ $("ai-status").textContent="おすすめを作れませんでした。条件を変えてもう一度お試しください。"; return; }
-    $("ai-status").textContent="AIの提案です。最終判断は募集要項と本人の意思で。";
-    $("ai-out").innerHTML=list.map((r,i)=>{ const x=items.find(y=>y.name===r.name);
-      return '<div class="airec"><h3><span class="rk">#'+(i+1)+'</span>'+badge(x)+esc(x.name)+'<span class="sub2">'+metaPrefix(x)+esc(x.pref)+'</span></h3><div class="why">'+esc(String(r.reason||""))+'</div>'+
-      (Array.isArray(r.points)&&r.points.length?'<ul class="pts">'+r.points.slice(0,4).map(p=>'<li>'+esc(String(p))+'</li>').join("")+'</ul>':'')+
-      (r.caution?'<div class="caut">注意：'+esc(String(r.caution))+'</div>':'')+
+  const lvTxt=$("ai-level").value.normalize("NFKC"), bdTxt=$("ai-budget").value.normalize("NFKC");
+  const hen=(lvTxt.match(/偏差値\s*([\d.]+)/)||[])[1], kt=(lvTxt.match(/([\d.]+)\s*%/)||[])[1];
+  const levelHen=hen?+hen:(!kt&&lvTxt.match(/^[\d.]+$/)?+lvTxt:null), levelKt=kt?+kt:null;
+  const bdm=bdTxt.match(/([\d.]+)\s*万/); const budget=bdm?+bdm[1]*10000:(bdTxt.match(/^[\d]{5,}$/)?+bdTxt:null);
+  const groups=[...toks(job).map(t=>({t,w:1.3})),...toks(study).map(t=>({t,w:1.2})),...toks(other).map(t=>({t,w:0.6}))].map(g=>({...g,cs:concepts(g.t)}));
+  const res=[];
+  for(const x of items){
+    if(x.name==="電動モビリティシステム専門職大学") continue;
+    if(region&&regionOf(x.pref)!==region) continue;
+    if(type&&typeKey(x)!==type) continue;
+    const f=INFO[x.name]||{}, d=f.difficulty||{}, F=fieldsOf(x);
+    let sc=0; const why=new Map();
+    const has=(item,w)=>w.length>=2?item.includes(w):item.split(/[・、\s（）()「」]/).includes(w);
+    let need=0, got=0;
+    for(const g of groups){ let gs=0, gm=0;
+      for(const words of g.cs){ let cs=0; need++;
+        // 同じ概念が学部・資格・進路など複数の欄に出てくるほど、その学校の中心的な分野とみなす
+        for(const [fld,arr] of Object.entries(F)){ const item=arr.find(it=>words.some(w=>has(it,w))); if(item){ cs+=FIELD_W[fld]; const k=fld+"|"+item; if(!why.has(k)) why.set(k,{fld,item,tok:g.t}); } }
+        if(cs>0){ gm++; got++; } gs+=cs; }
+      sc+=gs*g.w*(gm===g.cs.length?1:0.4); }
+    if(groups.length&&sc===0) continue;
+    if(got<need) sc*=0.6;
+    const caution=[];
+    if(levelHen!=null){ const l=lo(d.hensachi), h=hi(d.hensachi); if(l!=null){ if(levelHen<l-5){ sc*=0.55; caution.push("偏差値の目安（"+d.hensachi+"）に対しかなり挑戦"); } else if(levelHen<l){ sc*=0.85; caution.push("偏差値の目安（"+d.hensachi+"）の下限より少し下"); } else if(h!=null&&levelHen>h+5){ sc*=0.85; caution.push("学力に余裕あり（安全校の候補）"); } } else caution.push("偏差値の目安が未登録"); }
+    if(levelKt!=null){ const l=lo(d.kyotei); if(l!=null){ if(levelKt<l-8){ sc*=0.6; caution.push("共テ得点率の目安（"+d.kyotei+"）に対しかなり挑戦"); } else if(levelKt<l){ sc*=0.85; caution.push("共テ得点率の目安（"+d.kyotei+"）の下限より少し下"); } } }
+    if(budget!=null){ const a=f.tuition&&f.tuition.amount; if(a!=null&&a>budget) continue; if(a==null) caution.push("学費が未登録（上限内か要確認）"); }
+    if(x.cat==="daigakkou") caution.push("大学校は学位・身分・採用の扱いが大学と異なる");
+    res.push({x,sc,why:[...why.values()],caution});
+  }
+  return res.sort((a,b)=>b.sc-a.sc||(PRIO[a.x.cat]??20)-(PRIO[b.x.cat]??20));
+}
+const FLD_LABEL={faculties:"学部",licenses:"資格",careers:"進路",research:"研究",feats:"特色",memo:"メモ"};
+$("ai-stop").hidden=true;
+$("ai-go").onclick=()=>{
+  const job=$("ai-job").value.trim(), study=$("ai-study").value.trim();
+  if(!job&&!study){ $("ai-status").textContent="職業か学びたい学問のどちらかを入力してください。"; $("ai-out").innerHTML=""; return; }
+  const list=recommend(), top=list.slice(0,12);
+  if(!top.length){ $("ai-status").textContent="条件に合う学校が見つかりませんでした。言葉を変える（例：「臨床心理士」→「心理」）か、地域・区分・学費の条件をゆるめてください。"; $("ai-out").innerHTML=""; return; }
+  $("ai-status").textContent=items.length+"校の登録情報（学部・資格・進路・研究・特色）と照らし合わせて"+list.length+"校が該当。上位"+top.length+"校を表示しています。最終判断は募集要項と本人の意思で。";
+  $("ai-out").innerHTML=top.map((r,i)=>{ const x=r.x, d=(INFO[x.name]||{}).difficulty||{}, t=(INFO[x.name]||{}).tuition;
+    const facts=[d.hensachi&&("偏差値 "+d.hensachi),d.kyotei&&("共テ "+d.kyotei),t&&t.amount!=null&&("初年度 約"+man(t.amount))].filter(Boolean).join("　");
+    return '<div class="airec"><h3><span class="rk">#'+(i+1)+'</span>'+badge(x)+esc(x.name)+'<span class="sub2">'+metaPrefix(x)+esc(x.pref)+'</span></h3>'+
+      (facts?'<div class="why">'+esc(facts)+'</div>':'')+
+      (r.why.length?'<ul class="pts">'+r.why.slice(0,4).map(w=>'<li><b>'+FLD_LABEL[w.fld]+'</b>：'+esc(w.item.length>90?w.item.slice(0,90)+"…":w.item)+'<span class="sub2">（「'+esc(w.tok)+'」に一致）</span></li>').join("")+'</ul>':'')+
+      (r.caution.length?'<div class="caut">注意：'+esc(r.caution.join("／"))+'</div>':'')+
       '<div class="acts"><button class="btn" data-card="'+x.id+'">カードを見る</button><button class="btn" data-map="'+esc(x.name)+'">地図で見る</button>'+hpLink(x.name)+'</div></div>'; }).join("");
-    $("ai-out").querySelectorAll("[data-card]").forEach(b=>b.onclick=()=>openCard(+b.dataset.card));
-    $("ai-out").querySelectorAll("[data-map]").forEach(b=>b.onclick=()=>{ location.hash="#map"; setTimeout(()=>selectUniv(b.dataset.map),80); });
-  }catch(e){
-    const c=e&&e.code; $("ai-status").textContent = c==="cancelled"?"停止しました。": c==="not_granted"||c==="sampling_disabled"?"AIの利用が許可されていません。": c==="rate_limited"?"利用が集中しています。少し待ってからお試しください。":"うまく作れませんでした。もう一度お試しください。";
-  }finally{ $("ai-go").disabled=false; $("ai-stop").hidden=true; }
+  $("ai-out").querySelectorAll("[data-card]").forEach(b=>b.onclick=()=>openCard(+b.dataset.card));
+  $("ai-out").querySelectorAll("[data-map]").forEach(b=>b.onclick=()=>{ location.hash="#map"; setTimeout(()=>selectUniv(b.dataset.map),80); });
 };
+["ai-job","ai-study","ai-other","ai-level","ai-budget"].forEach(id=>$(id).addEventListener("keydown",e=>{ if(e.key==="Enter"){ e.preventDefault(); $("ai-go").click(); } }));
 
 shuffleOrder(); rebuild(); showView();
 </script>
