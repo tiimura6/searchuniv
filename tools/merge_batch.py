@@ -14,6 +14,7 @@ def empty(v): return v is None or v == '' or v == [] or v == {} or (isinstance(v
 def main(path):
     batch = json.load(open(path, encoding='utf-8'))
     cards, info, exam, hp, read, alias, coords = L('cards'), L('info'), L('exam'), L('hp'), L('readings'), L('aliases'), L('coords')
+    guide = L('guide') if os.path.exists(P('guide')) else {}
     names = {c[0] for c in cards}; added = filled = 0; problems = []
     for r in batch:
         n = r.get('name', '').strip()
@@ -38,11 +39,13 @@ def main(path):
                 cur['sources'] = list(dict.fromkeys((cur.get('sources') or []) + [u for u in v if isinstance(u, str)]))
             elif empty(cur.get(k)) and not empty(v):
                 cur[k] = v; filled += 1
+        if r.get('guide') and n not in guide:
+            guide[n] = {k: r['guide'].get(k) for k in ('fit', 'ask', 'caution') if r['guide'].get(k)}
         if r.get('exam'):
             e = exam.setdefault(n, {})
             for k, v in r['exam'].items():
                 if empty(e.get(k)) and not empty(v): e[k] = v
-    for n, o in [('cards', cards), ('info', info), ('exam', exam), ('hp', hp), ('readings', read), ('aliases', alias), ('coords', coords)]:
+    for n, o in [('cards', cards), ('info', info), ('exam', exam), ('hp', hp), ('readings', read), ('aliases', alias), ('coords', coords), ('guide', guide)]:
         W(n, o)
     print('追加 %d校 / 既存校の空欄を %d 項目補完 / 合計 %d校' % (added, filled, len(cards)))
     for p in problems: print('  要確認:', p)

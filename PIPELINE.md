@@ -56,9 +56,11 @@ Searchuniv に全国の大学を少しずつ追加し、既存校の空欄（研
     "notable": [], "news": [],
     "sources": ["https://search.keinet.ne.jp/1010", "..."]
   },
+  "guide": {"fit": "向いている生徒像1〜2文", "ask": ["面談で生徒に確認したいこと（40字以内）", "…（2〜3個）"], "caution": "注意点1文（なければ空）"},
   "exam": {"general": {"year": 2026, "applicants": 0, "examinees": 0, "passers": 0, "ratio": 0.0},
            "format": "前期・後期を実施。…", "sources": ["..."]}
 }]
 ```
 - `features` は2〜3個、`memo` は必須（新規追加のとき）。
+- `guide` は新規追加のとき必須。集めたデータ（学部・特色・入試方式・学費・進路）だけを根拠に、担任が面談で使う形で書く（断定的な評価語は使わない）。
 - `enrich` の既存校は、`name` と埋めたい `info` の項目だけでよい（既存の値は上書きされない）。

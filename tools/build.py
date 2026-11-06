@@ -29,6 +29,7 @@ CX, CY = _raw(math.radians(138.5), math.radians(36 - 18/60))
 def main():
     cards = D('cards'); exam = D('exam'); info = D('info'); hp = D('hp')
     read = D('readings'); alias = D('aliases'); coords = D('coords'); prefs = D('map_prefs')
+    guide = D('guide') if os.path.exists(os.path.join(ROOT, 'data', 'guide.json')) else {}
     names = [c[0] for c in cards]
     if len(set(names)) != len(names):
         dup = sorted({n for n in names if names.count(n) > 1}); sys.exit('重複: %s' % dup)
@@ -43,6 +44,7 @@ def main():
         'HP': ('/*HP*/', '/*END_HP*/', J({n: hp[n] for n in names if hp.get(n)})),
         'READ': ('/*READ*/', '/*END_READ*/', J({n: read[n] for n in names if n in read})),
         'ALIAS': ('/*ALIAS*/', '/*END_ALIAS*/', J(alias)),
+        'GUIDE': ('/*GUIDE*/', '/*END_GUIDE*/', J({n: guide[n] for n in names if n in guide})),
     }
     for k, (a, b, v) in rep.items():
         pat = re.escape(a) + r'.*?' + re.escape(b)
