@@ -475,7 +475,7 @@ function render(){
   } else if($("mode").value==="type"){
     const masked = x.feats.map(f=>maskName(f,x.name));
     $("front").innerHTML = '<div>'+badge(x)+statusTag(x)+'</div>'+'<form id="ansForm" class="ans" onclick="event.stopPropagation()"><div class="blank">（<input id="ans" type="text" autocomplete="off" aria-label="学校名">）<span>'+esc(suffixOf(x.name))+'</span></div><div class="ansbtns"><button class="btn big" type="submit">回答</button><button class="btn big" type="button" id="giveup">パス</button></div></form>'+'<div class="qfront" style="width:100%"><ul>'+masked.map(f=>'<li>'+esc(f)+'</li>').join("")+'</ul><div class="meta">'+metaPrefix(x)+esc(maskName(x.pref,x.name))+'</div>'+frontFacts(x)+hintHTML(x)+'</div>';
-    $("back").innerHTML = '<div>'+badge(x)+statusTag(x)+'</div><div id="resultLine" class="judge" style="text-align:center"></div><div class="uname" style="text-align:center;margin-top:4px">'+esc(x.name)+'</div><div class="meta" style="text-align:center">'+esc(x.pref)+' '+hpLink(x.name)+'</div><div style="margin-top:14px">'+cardNews(x.name)+infoBlock(x.name)+examBlock(x.name)+memo+'</div>';
+    $("back").innerHTML = '<div>'+badge(x)+statusTag(x)+'</div><div id="resultLine" class="judge" style="text-align:center"></div><div class="uname" style="text-align:center;margin-top:4px">'+esc(x.name)+'</div><div class="meta" style="text-align:center">'+esc(x.pref)+' '+hpLink(x.name)+'</div><div style="margin-top:14px">'+memo+cardNews(x.name)+infoBlock(x.name)+examBlock(x.name)+'</div>';
     answered=false; wireHints(x);
     $("ansForm").onsubmit=e=>{e.preventDefault(); judge($("ans").value);};
     $("giveup").onclick=e=>{e.stopPropagation(); judge(null);};
@@ -483,7 +483,7 @@ function render(){
   } else {
     const masked = x.feats.map(f=>maskName(f,x.name));
     $("front").innerHTML = '<div>'+badge(x)+statusTag(x)+'</div><div class="qfront"><ul>'+masked.map(f=>'<li>'+esc(f)+'</li>').join("")+'</ul><div class="meta">'+esc(x.type)+'</div>'+frontFacts(x)+hintHTML(x)+'</div>';
-    $("back").innerHTML = '<div>'+badge(x)+statusTag(x)+'</div><div class="uname" style="text-align:center">'+esc(x.name)+'</div><div class="meta" style="text-align:center">'+esc(x.pref)+' '+hpLink(x.name)+'</div><div style="margin-top:14px">'+cardNews(x.name)+infoBlock(x.name)+examBlock(x.name)+memo+'</div>';
+    $("back").innerHTML = '<div>'+badge(x)+statusTag(x)+'</div><div class="uname" style="text-align:center">'+esc(x.name)+'</div><div class="meta" style="text-align:center">'+esc(x.pref)+' '+hpLink(x.name)+'</div><div style="margin-top:14px">'+memo+cardNews(x.name)+infoBlock(x.name)+examBlock(x.name)+'</div>';
     wireHints(x);
   }
 }
