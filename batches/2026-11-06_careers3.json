@@ -1,0 +1,492 @@
+[
+ {
+  "name": "関西大学",
+  "info": {
+   "licenses": [
+    "教員免許（小・中・高 各教科）",
+    "学芸員",
+    "司書・学校図書館司書教諭",
+    "社会福祉士受験資格",
+    "公認心理師受験資格",
+    "一級建築士受験資格"
+   ],
+   "careers": "文系学部は就職率8〜9割台（2024年度卒、政策創造93.4%・人間健康94.3%など）。理工系は進学が多く、化学生命工学部は60.3%、システム理工学部は41.8%が大学院などへ進学。",
+   "sources": [
+    "https://search.keinet.ne.jp/2533/outline/licential",
+    "https://search.keinet.ne.jp/2533/outline/admission_employment"
+   ]
+  }
+ },
+ {
+  "name": "南山大学",
+  "info": {
+   "licenses": [
+    "教員免許（中・高 英語・独仏中西語・国語・社会・宗教ほか）",
+    "学芸員",
+    "司書",
+    "学校図書館司書教諭",
+    "公認心理師受験資格"
+   ],
+   "careers": "2024年度卒の就職率は全学部で8割台後半〜9割台（経済92.9%、経営92.1%）。理工学部は15.8%が大学院などへ進学。",
+   "sources": [
+    "https://search.keinet.ne.jp/2460/outline/licential",
+    "https://search.keinet.ne.jp/2460/outline/admission_employment"
+   ]
+  }
+ },
+ {
+  "name": "西南学院大学",
+  "info": {
+   "licenses": [
+    "教員免許（幼・小・中・高 英語・社会・宗教・商業ほか）",
+    "保育士",
+    "社会福祉士受験資格",
+    "精神保健福祉士受験資格",
+    "公認心理師受験資格",
+    "学芸員"
+   ],
+   "careers": "2024年度卒の就職率は主要学部で85〜93%台（経済93.5%、商91.5%、人間科学90.4%）。進学は各学部1〜4%程度。",
+   "sources": [
+    "https://search.keinet.ne.jp/2705/outline/licential",
+    "https://search.keinet.ne.jp/2705/outline/admission_employment"
+   ]
+  }
+ },
+ {
+  "name": "成蹊大学",
+  "info": {
+   "licenses": [
+    "教員免許（中・高 英語・国語・社会・数学・理科ほか）",
+    "学校図書館司書教諭",
+    "社会調査士",
+    "社会福祉主事"
+   ],
+   "careers": "2024年度卒の就職率は文系学部で9割前後（経営94.2%、文92.0%）。理工学部は22.0%が大学院などへ進学。",
+   "sources": [
+    "https://search.keinet.ne.jp/2228/outline/licential",
+    "https://search.keinet.ne.jp/2228/outline/admission_employment"
+   ]
+  }
+ },
+ {
+  "name": "成城大学",
+  "info": {
+   "licenses": [
+    "教員免許（中・高 国語・英語・社会・独仏語）",
+    "学芸員",
+    "社会調査士",
+    "認定心理士",
+    "社会福祉主事"
+   ],
+   "careers": "2024年度卒の就職率は社会イノベーション94.2%、経済93.4%、法88.5%、文芸82.2%。進学は文芸学部の8.4%が最多。",
+   "sources": [
+    "https://search.keinet.ne.jp/2229/outline/licential",
+    "https://search.keinet.ne.jp/2229/outline/admission_employment"
+   ]
+  }
+ },
+ {
+  "name": "明治学院大学",
+  "info": {
+   "licenses": [
+    "教員免許（幼・小・中・高・特別支援）",
+    "社会福祉士受験資格",
+    "精神保健福祉士受験資格",
+    "公認心理師受験資格",
+    "学芸員",
+    "社会調査士"
+   ],
+   "careers": "2024年度卒の就職率は社会92.5%、経済90.6%、法87.5%など8〜9割台。心理学部は9.4%が大学院などへ進学。",
+   "sources": [
+    "https://search.keinet.ne.jp/2287/outline/licential",
+    "https://search.keinet.ne.jp/2287/outline/admission_employment"
+   ]
+  }
+ },
+ {
+  "name": "獨協大学",
+  "info": {
+   "licenses": [
+    "教員免許（中・高 英語・独仏語・社会ほか）",
+    "司書",
+    "学校図書館司書教諭"
+   ],
+   "careers": "2024年度卒の就職率は法89.2%、経済88.5%、外国語81.0%、国際教養81.7%。進学は各学部1〜2%程度。",
+   "sources": [
+    "https://search.keinet.ne.jp/2156/outline/licential",
+    "https://search.keinet.ne.jp/2156/outline/admission_employment"
+   ]
+  }
+ },
+ {
+  "name": "國學院大學",
+  "info": {
+   "licenses": [
+    "教員免許（幼・小・中・高・特別支援）",
+    "保育士",
+    "学芸員",
+    "司書",
+    "学校図書館司書教諭"
+   ],
+   "careers": "2024年度卒の就職率は人間開発92.1%、経済90.6%、法84.1%、文80.3%など。文学部は7.7%が大学院などへ進学。",
+   "sources": [
+    "https://search.keinet.ne.jp/2213/outline/licential",
+    "https://search.keinet.ne.jp/2213/outline/admission_employment"
+   ]
+  }
+ },
+ {
+  "name": "武蔵大学",
+  "info": {
+   "licenses": [
+    "教員免許（中・高 英語・国語・社会・商業ほか）",
+    "学芸員"
+   ],
+   "careers": "2024年度卒の就職率は社会93.5%、経済90.2%、人文88.9%。進学は1〜4%程度。",
+   "sources": [
+    "https://search.keinet.ne.jp/2281/outline/licential",
+    "https://search.keinet.ne.jp/2281/outline/admission_employment"
+   ]
+  }
+ },
+ {
+  "name": "日本大学",
+  "info": {
+   "licenses": [
+    "医師・歯科医師・薬剤師・獣医師 国家試験受験資格",
+    "一級建築士受験資格",
+    "教員免許（中・高 各教科）",
+    "社会福祉士受験資格",
+    "公認心理師受験資格",
+    "学芸員・司書"
+   ],
+   "careers": "2024年度卒の就職率は文系学部で8割台（経済87.1%、危機管理90.0%）、薬学部96.1%。理工学部は27.5%が大学院などへ進学。医学部卒業者は進路統計上全員「その他」に分類（医師国家試験受験資格を得る課程）。",
+   "sources": [
+    "https://search.keinet.ne.jp/2267/outline/licential",
+    "https://search.keinet.ne.jp/2267/outline/admission_employment"
+   ]
+  }
+ },
+ {
+  "name": "東洋大学",
+  "info": {
+   "licenses": [
+    "教員免許（幼・小・中・高・特別支援・栄養・養護）",
+    "管理栄養士受験資格",
+    "社会福祉士受験資格",
+    "公認心理師受験資格",
+    "臨床工学技士受験資格",
+    "一級建築士受験資格"
+   ],
+   "careers": "2024年度卒の就職率は国際観光92.0%、情報連携89.4%、法87.2%など昼間部で7〜9割台。生命科学部25.7%・理工学部22.4%が大学院などへ進学。",
+   "sources": [
+    "https://search.keinet.ne.jp/2265/outline/licential",
+    "https://search.keinet.ne.jp/2265/outline/admission_employment"
+   ]
+  }
+ },
+ {
+  "name": "駒澤大学",
+  "info": {
+   "licenses": [
+    "教員免許（中・高 国語・英語・社会・宗教・商業ほか）",
+    "学芸員",
+    "社会福祉士受験資格",
+    "精神保健福祉士受験資格",
+    "公認心理師受験資格",
+    "診療放射線技師受験資格"
+   ],
+   "careers": "2024年度卒の就職率は経済88.6%、経営87.2%、法84.0%など8割台が中心。医療健康科学部は13.2%が進学。",
+   "sources": [
+    "https://search.keinet.ne.jp/2216/outline/licential",
+    "https://search.keinet.ne.jp/2216/outline/admission_employment"
+   ]
+  }
+ },
+ {
+  "name": "専修大学",
+  "info": {
+   "licenses": [
+    "教員免許（中・高 国語・英語・社会・数学・商業・情報ほか）",
+    "司書",
+    "学芸員",
+    "公認心理師受験資格",
+    "社会調査士"
+   ],
+   "careers": "2024年度卒の就職率は経済89.8%、経営89.5%、国際コミュニケーション89.2%など昼間部で8割台中心。進学は人間科学部7.4%が最多。",
+   "sources": [
+    "https://search.keinet.ne.jp/2233/outline/licential",
+    "https://search.keinet.ne.jp/2233/outline/admission_employment"
+   ]
+  }
+ },
+ {
+  "name": "芝浦工業大学",
+  "info": {
+   "licenses": [
+    "教員免許（中・高 数学・理科・技術、高 工業・情報）",
+    "一級建築士受験資格",
+    "臨床工学技士受験資格",
+    "測量士"
+   ],
+   "careers": "2024年度卒は大学院などへの進学が多く、建築学部57.5%、システム理工学部50.6%、工学部48.4%が進学。デザイン工学部は61.4%が就職。",
+   "sources": [
+    "https://search.keinet.ne.jp/2219/outline/licential",
+    "https://search.keinet.ne.jp/2219/outline/admission_employment"
+   ]
+  }
+ },
+ {
+  "name": "東京都市大学",
+  "info": {
+   "licenses": [
+    "教員免許（中・高 数学・理科・技術、高 工業・情報）",
+    "一級建築士受験資格",
+    "臨床工学技士受験資格",
+    "測量士",
+    "保育士・幼稚園教諭",
+    "技術士補（一部試験免除）"
+   ],
+   "careers": "2024年度卒は理工学部の44.1%が大学院などへ進学（就職51.5%）。人間科学97.0%、メディア情報90.6%、環境88.0%は就職が中心。",
+   "sources": [
+    "https://search.keinet.ne.jp/2282/outline/licential",
+    "https://search.keinet.ne.jp/2282/outline/admission_employment"
+   ]
+  }
+ },
+ {
+  "name": "東京電機大学",
+  "info": {
+   "licenses": [
+    "教員免許（中・高 数学・理科・技術、高 工業・情報）",
+    "一級建築士受験資格",
+    "測量士",
+    "技術士補（試験一部免除）"
+   ],
+   "careers": "2024年度卒は未来科学部41.7%、工学部35.4%、理工学部33.3%が大学院などへ進学。システムデザイン工学部は就職79.0%。",
+   "sources": [
+    "https://search.keinet.ne.jp/2259/outline/licential",
+    "https://search.keinet.ne.jp/2259/outline/admission_employment"
+   ]
+  }
+ },
+ {
+  "name": "工学院大学",
+  "info": {
+   "licenses": [
+    "教員免許（中・高 数学・理科・技術、高 工業・情報）",
+    "一級建築士受験資格",
+    "操縦士受験資格（航空理工学）",
+    "学芸員"
+   ],
+   "careers": "2024年度卒の就職率は57〜71%、大学院などへの進学は24〜39%（先進工学部39.0%、工学部31.6%、建築学部30.5%）。",
+   "sources": [
+    "https://search.keinet.ne.jp/2212/outline/licential",
+    "https://search.keinet.ne.jp/2212/outline/admission_employment"
+   ]
+  }
+ },
+ {
+  "name": "東京農業大学",
+  "info": {
+   "licenses": [
+    "教員免許（中・高 理科、高 農業ほか）",
+    "管理栄養士受験資格",
+    "食品衛生監視員",
+    "学芸員",
+    "司書",
+    "測量士補"
+   ],
+   "careers": "2024年度卒の就職率は国際食料情報83.8%、地域環境科学82.7%、応用生物科学81.9%など8割前後。生命科学部は36.9%が大学院などへ進学。",
+   "sources": [
+    "https://search.keinet.ne.jp/2260/outline/licential",
+    "https://search.keinet.ne.jp/2260/outline/admission_employment"
+   ]
+  }
+ },
+ {
+  "name": "北里大学",
+  "info": {
+   "licenses": [
+    "医師・薬剤師・獣医師 国家試験受験資格",
+    "看護師・保健師・助産師受験資格",
+    "臨床検査技師受験資格",
+    "理学療法士・作業療法士受験資格",
+    "診療放射線技師受験資格",
+    "教員免許（中・高 理科）"
+   ],
+   "careers": "2024年度卒の就職率は看護93.4%、獣医89.0%、薬82.1%、医療衛生80.1%。理学部は57.0%が大学院などへ進学。医学部卒業者は進路統計上全員「その他」に分類（医師国家試験受験資格を得る課程）。",
+   "sources": [
+    "https://search.keinet.ne.jp/2205/outline/licential",
+    "https://search.keinet.ne.jp/2205/outline/admission_employment"
+   ]
+  }
+ },
+ {
+  "name": "自治医科大学",
+  "info": {
+   "licenses": [
+    "医師国家試験受験資格",
+    "看護師国家試験受験資格",
+    "保健師国家試験受験資格",
+    "助産師国家試験受験資格",
+    "養護教諭二種"
+   ],
+   "careers": "2024年度卒の看護学部は94.4%が就職。医学部卒業者は進路統計上全員「その他」に分類（医師国家試験受験資格を得る課程）。",
+   "sources": [
+    "https://search.keinet.ne.jp/2122/outline/licential",
+    "https://search.keinet.ne.jp/2122/outline/admission_employment"
+   ]
+  }
+ },
+ {
+  "name": "国際医療福祉大学",
+  "info": {
+   "licenses": [
+    "医師・薬剤師 国家試験受験資格",
+    "看護師・保健師受験資格",
+    "理学療法士・作業療法士受験資格",
+    "臨床検査技師・診療放射線技師受験資格",
+    "社会福祉士・精神保健福祉士受験資格",
+    "公認心理師受験資格"
+   ],
+   "careers": "2024年度卒の就職率は小田原保健医療97.1%、福岡保健医療94.1%、医療福祉93.3%、保健医療91.3%、薬90.4%と高い。",
+   "sources": [
+    "https://search.keinet.ne.jp/2125/outline/licential",
+    "https://search.keinet.ne.jp/2125/outline/admission_employment"
+   ]
+  }
+ },
+ {
+  "name": "順天堂大学",
+  "info": {
+   "licenses": [
+    "医師・薬剤師 国家試験受験資格",
+    "看護師・保健師・助産師受験資格",
+    "理学療法士受験資格",
+    "臨床検査技師・臨床工学技士受験資格",
+    "診療放射線技師受験資格",
+    "教員免許（中・高 保健体育・英語）"
+   ],
+   "careers": "2024年度卒の就職率は医療看護96.4%、保健看護94.9%、スポーツ健康科学85.8%、保健医療84.8%。医学部卒業者は進路統計上全員「その他」に分類（医師国家試験受験資格を得る課程）。",
+   "sources": [
+    "https://search.keinet.ne.jp/2220/outline/licential",
+    "https://search.keinet.ne.jp/2220/outline/admission_employment"
+   ]
+  }
+ },
+ {
+  "name": "東京慈恵会医科大学",
+  "info": {
+   "licenses": [
+    "医師国家試験受験資格",
+    "看護師国家試験受験資格",
+    "保健師国家試験受験資格",
+    "養護教諭二種"
+   ],
+   "careers": "医学科で医師国家試験、看護学科で看護師・保健師国家試験の受験資格を得る。Kei-Netの2024年度卒データ（学士165人）は進学4.2%・就職32.1%・その他63.7%。",
+   "sources": [
+    "https://search.keinet.ne.jp/2253/outline/licential",
+    "https://search.keinet.ne.jp/2253/outline/admission_employment"
+   ]
+  }
+ },
+ {
+  "name": "日本医科大学",
+  "info": {
+   "licenses": [
+    "医師国家試験受験資格",
+    "看護師国家試験受験資格",
+    "保健師国家試験受験資格",
+    "養護教諭二種"
+   ],
+   "careers": "医学部卒業者は進路統計上全員「その他」に分類（医師国家試験受験資格を得る課程）。看護学科（医療健康科学部）では看護師・保健師国家試験の受験資格を得る。",
+   "sources": [
+    "https://search.keinet.ne.jp/2268/outline/licential",
+    "https://search.keinet.ne.jp/2268/outline/admission_employment"
+   ]
+  }
+ },
+ {
+  "name": "獨協医科大学",
+  "info": {
+   "licenses": [
+    "医師国家試験受験資格",
+    "看護師国家試験受験資格",
+    "保健師国家試験受験資格",
+    "助産師国家試験受験資格",
+    "養護教諭一種・二種"
+   ],
+   "careers": "2024年度卒の看護学部は91.8%が就職、7.2%が進学。医学部卒業者は進路統計上全員「その他」に分類（医師国家試験受験資格を得る課程）。",
+   "sources": [
+    "https://search.keinet.ne.jp/2123/outline/licential",
+    "https://search.keinet.ne.jp/2123/outline/admission_employment"
+   ]
+  }
+ },
+ {
+  "name": "津田塾大学",
+  "info": {
+   "licenses": [
+    "教員免許（中・高 英語・数学・社会、高 情報）"
+   ],
+   "careers": "2024年度卒の就職率は学芸学部85.3%、総合政策学部79.7%。進学は7.2%・6.5%。",
+   "sources": [
+    "https://search.keinet.ne.jp/2243/outline/licential",
+    "https://search.keinet.ne.jp/2243/outline/admission_employment"
+   ]
+  }
+ },
+ {
+  "name": "東京女子大学",
+  "info": {
+   "licenses": [
+    "教員免許（中・高 国語・英語・社会・数学・宗教、高 情報）",
+    "学芸員",
+    "公認心理師受験資格",
+    "社会調査士",
+    "認定心理士"
+   ],
+   "careers": "2024年度卒（現代教養学部）は90.0%が就職、5.0%が大学院などへ進学。",
+   "sources": [
+    "https://search.keinet.ne.jp/2254/outline/licential",
+    "https://search.keinet.ne.jp/2254/outline/admission_employment"
+   ]
+  }
+ },
+ {
+  "name": "日本女子大学",
+  "info": {
+   "licenses": [
+    "教員免許（小・中・高・栄養）",
+    "保育士・幼稚園教諭",
+    "管理栄養士受験資格",
+    "一級建築士受験資格",
+    "社会福祉士受験資格",
+    "公認心理師受験資格"
+   ],
+   "careers": "2024年度卒の就職率は人間社会90.8%、文88.3%、家政85.1%。理学部は28.0%が大学院などへ進学。",
+   "sources": [
+    "https://search.keinet.ne.jp/2272/outline/licential",
+    "https://search.keinet.ne.jp/2272/outline/admission_employment"
+   ]
+  }
+ },
+ {
+  "name": "聖心女子大学",
+  "info": {
+   "licenses": [
+    "教員免許（幼・小・中・高 英語・国語・社会・宗教）",
+    "保育士",
+    "学芸員",
+    "公認心理師受験資格",
+    "社会調査士"
+   ],
+   "careers": "2024年度卒（現代教養学部）は85.6%が就職、7.0%が大学院などへ進学。",
+   "sources": [
+    "https://search.keinet.ne.jp/2230/outline/licential",
+    "https://search.keinet.ne.jp/2230/outline/admission_employment"
+   ]
+  }
+ }
+]
