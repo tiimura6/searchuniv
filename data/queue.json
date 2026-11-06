@@ -15,25 +15,11 @@
    "cat": "national"
   },
   {
-   "name": "名寄市立大学",
-   "type": "公立",
-   "pref": "北海道",
-   "hp": "https://www.nayoro.ac.jp/",
-   "cat": "public"
-  },
-  {
    "name": "室蘭工業大学",
    "type": "国立",
    "pref": "北海道",
    "hp": "http://www.muroran-it.ac.jp/index-j.html",
    "cat": "national"
-  },
-  {
-   "name": "宮城大学",
-   "type": "公立",
-   "pref": "宮城県",
-   "hp": "http://www.myu.ac.jp/",
-   "cat": "public"
   },
   {
    "name": "宮城教育大学",
@@ -57,32 +43,11 @@
    "cat": "national"
   },
   {
-   "name": "山形県立保健医療大学",
-   "type": "公立",
-   "pref": "山形県",
-   "hp": "http://www.yachts.ac.jp/",
-   "cat": "public"
-  },
-  {
-   "name": "山形県立米沢栄養大学",
-   "type": "公立",
-   "pref": "山形県",
-   "hp": "http://www.u.yone.ac.jp/",
-   "cat": "public"
-  },
-  {
    "name": "岩手大学",
    "type": "国立",
    "pref": "岩手県",
    "hp": "http://www.iwate-u.ac.jp/",
    "cat": "national"
-  },
-  {
-   "name": "岩手県立大学",
-   "type": "公立",
-   "pref": "岩手県",
-   "hp": "http://www.iwate-pu.ac.jp/",
-   "cat": "public"
   },
   {
    "name": "帯広畜産大学",
@@ -104,6 +69,325 @@
    "pref": "北海道",
    "hp": "http://www.asahikawa-med.ac.jp/",
    "cat": "national"
+  },
+  {
+   "name": "福島大学",
+   "type": "国立",
+   "pref": "福島県",
+   "hp": "http://www.fukushima-u.ac.jp/",
+   "cat": "national"
+  },
+  {
+   "name": "秋田大学",
+   "type": "国立",
+   "pref": "秋田県",
+   "hp": "http://www.akita-u.ac.jp/",
+   "cat": "national"
+  },
+  {
+   "name": "上越教育大学",
+   "type": "国立",
+   "pref": "新潟県",
+   "hp": "http://www.juen.ac.jp/",
+   "cat": "national"
+  },
+  {
+   "name": "名古屋工業大学",
+   "type": "国立",
+   "pref": "愛知県",
+   "hp": "http://www.nitech.ac.jp/",
+   "cat": "national"
+  },
+  {
+   "name": "富山大学",
+   "type": "国立",
+   "pref": "富山県",
+   "hp": "https://www.u-toyama.ac.jp/",
+   "cat": "national"
+  },
+  {
+   "name": "山梨大学",
+   "type": "国立",
+   "pref": "山梨県",
+   "hp": "http://www.yamanashi.ac.jp/",
+   "cat": "national"
+  },
+  {
+   "name": "岐阜大学",
+   "type": "国立",
+   "pref": "岐阜県",
+   "hp": "http://www.gifu-u.ac.jp/index.html",
+   "cat": "national"
+  },
+  {
+   "name": "愛知教育大学",
+   "type": "国立",
+   "pref": "愛知県",
+   "hp": "http://www.aichi-edu.ac.jp/",
+   "cat": "national"
+  },
+  {
+   "name": "浜松医科大学",
+   "type": "国立",
+   "pref": "静岡県",
+   "hp": "http://www.hama-med.ac.jp/",
+   "cat": "national"
+  },
+  {
+   "name": "福井大学",
+   "type": "国立",
+   "pref": "福井県",
+   "hp": "http://www.u-fukui.ac.jp/",
+   "cat": "national"
+  },
+  {
+   "name": "三重大学",
+   "type": "国立",
+   "pref": "三重県",
+   "hp": "http://www.mie-u.ac.jp/",
+   "cat": "national"
+  },
+  {
+   "name": "京都工芸繊維大学",
+   "type": "国立",
+   "pref": "京都府",
+   "hp": "http://www.kit.ac.jp/",
+   "cat": "national"
+  },
+  {
+   "name": "京都教育大学",
+   "type": "国立",
+   "pref": "京都府",
+   "hp": "http://www.kyokyo-u.ac.jp/",
+   "cat": "national"
+  },
+  {
+   "name": "兵庫教育大学",
+   "type": "国立",
+   "pref": "兵庫県",
+   "hp": "http://www.hyogo-u.ac.jp/",
+   "cat": "national"
+  },
+  {
+   "name": "和歌山大学",
+   "type": "国立",
+   "pref": "和歌山県",
+   "hp": "http://www.wakayama-u.ac.jp/",
+   "cat": "national"
+  },
+  {
+   "name": "大阪教育大学",
+   "type": "国立",
+   "pref": "大阪府",
+   "hp": "http://www.osaka-kyoiku.ac.jp/",
+   "cat": "national"
+  },
+  {
+   "name": "奈良教育大学",
+   "type": "国立",
+   "pref": "奈良県",
+   "hp": "http://www.nara-edu.ac.jp/home-jp.htm",
+   "cat": "national"
+  },
+  {
+   "name": "滋賀医科大学",
+   "type": "国立",
+   "pref": "滋賀県",
+   "hp": "http://www.shiga-med.ac.jp/",
+   "cat": "national"
+  },
+  {
+   "name": "滋賀大学",
+   "type": "国立",
+   "pref": "滋賀県",
+   "hp": "http://www.shiga-u.ac.jp/",
+   "cat": "national"
+  },
+  {
+   "name": "山口大学",
+   "type": "国立",
+   "pref": "山口県",
+   "hp": "http://www.yamaguchi-u.ac.jp/",
+   "cat": "national"
+  },
+  {
+   "name": "島根大学",
+   "type": "国立",
+   "pref": "島根県",
+   "hp": "http://www.shimane-u.ac.jp/",
+   "cat": "national"
+  },
+  {
+   "name": "徳島大学",
+   "type": "国立",
+   "pref": "徳島県",
+   "hp": "http://www.tokushima-u.ac.jp/",
+   "cat": "national"
+  },
+  {
+   "name": "愛媛大学",
+   "type": "国立",
+   "pref": "愛媛県",
+   "hp": "http://www.ehime-u.ac.jp/",
+   "cat": "national"
+  },
+  {
+   "name": "香川大学",
+   "type": "国立",
+   "pref": "香川県",
+   "hp": "http://www.kagawa-u.ac.jp/",
+   "cat": "national"
+  },
+  {
+   "name": "高知大学",
+   "type": "国立",
+   "pref": "高知県",
+   "hp": "http://www.kochi-u.ac.jp/JA/",
+   "cat": "national"
+  },
+  {
+   "name": "鳥取大学",
+   "type": "国立",
+   "pref": "鳥取県",
+   "hp": "http://www.tottori-u.ac.jp/",
+   "cat": "national"
+  },
+  {
+   "name": "鳴門教育大学",
+   "type": "国立",
+   "pref": "徳島県",
+   "hp": "http://www.naruto-u.ac.jp/",
+   "cat": "national"
+  },
+  {
+   "name": "九州工業大学",
+   "type": "国立",
+   "pref": "福岡県",
+   "hp": "http://www.kyutech.ac.jp/",
+   "cat": "national"
+  },
+  {
+   "name": "佐賀大学",
+   "type": "国立",
+   "pref": "佐賀県",
+   "hp": "http://www.saga-u.ac.jp/",
+   "cat": "national"
+  },
+  {
+   "name": "大分大学",
+   "type": "国立",
+   "pref": "大分県",
+   "hp": "http://www.oita-u.ac.jp/",
+   "cat": "national"
+  },
+  {
+   "name": "宮崎大学",
+   "type": "国立",
+   "pref": "宮崎県",
+   "hp": "http://www.miyazaki-u.ac.jp/",
+   "cat": "national"
+  },
+  {
+   "name": "琉球大学",
+   "type": "国立",
+   "pref": "沖縄県",
+   "hp": "http://www.u-ryukyu.ac.jp/",
+   "cat": "national"
+  },
+  {
+   "name": "福岡教育大学",
+   "type": "国立",
+   "pref": "福岡県",
+   "hp": "http://www.fukuoka-edu.ac.jp/",
+   "cat": "national"
+  },
+  {
+   "name": "長崎大学",
+   "type": "国立",
+   "pref": "長崎県",
+   "hp": "http://www.nagasaki-u.ac.jp/",
+   "cat": "national"
+  },
+  {
+   "name": "鹿児島大学",
+   "type": "国立",
+   "pref": "鹿児島県",
+   "hp": "http://www.kagoshima-u.ac.jp/",
+   "cat": "national"
+  },
+  {
+   "name": "鹿屋体育大学",
+   "type": "国立",
+   "pref": "鹿児島県",
+   "hp": "http://www.nifs-k.ac.jp/",
+   "cat": "national"
+  },
+  {
+   "name": "政策研究大学院大学（大学院のみ）",
+   "type": "国立",
+   "pref": "東京都",
+   "hp": "https://www.grips.ac.jp/",
+   "cat": "national",
+   "note": "高校からの通常の進学先ではない（括弧内の理由）。カードの memo にもその旨を書く。"
+  },
+  {
+   "name": "総合研究大学院大学（大学院のみ）",
+   "type": "国立",
+   "pref": "神奈川県",
+   "hp": "https://www.soken.ac.jp/",
+   "cat": "national",
+   "note": "高校からの通常の進学先ではない（括弧内の理由）。カードの memo にもその旨を書く。"
+  },
+  {
+   "name": "北陸先端科学技術大学院大学（大学院のみ）",
+   "type": "国立",
+   "pref": "石川県",
+   "hp": "https://www.jaist.ac.jp/",
+   "cat": "national",
+   "note": "高校からの通常の進学先ではない（括弧内の理由）。カードの memo にもその旨を書く。"
+  },
+  {
+   "name": "奈良先端科学技術大学院大学（大学院のみ）",
+   "type": "国立",
+   "pref": "奈良県",
+   "hp": "https://www.naist.jp/",
+   "cat": "national",
+   "note": "高校からの通常の進学先ではない（括弧内の理由）。カードの memo にもその旨を書く。"
+  },
+  {
+   "name": "名寄市立大学",
+   "type": "公立",
+   "pref": "北海道",
+   "hp": "https://www.nayoro.ac.jp/",
+   "cat": "public"
+  },
+  {
+   "name": "宮城大学",
+   "type": "公立",
+   "pref": "宮城県",
+   "hp": "http://www.myu.ac.jp/",
+   "cat": "public"
+  },
+  {
+   "name": "山形県立保健医療大学",
+   "type": "公立",
+   "pref": "山形県",
+   "hp": "http://www.yachts.ac.jp/",
+   "cat": "public"
+  },
+  {
+   "name": "山形県立米沢栄養大学",
+   "type": "公立",
+   "pref": "山形県",
+   "hp": "http://www.u.yone.ac.jp/",
+   "cat": "public"
+  },
+  {
+   "name": "岩手県立大学",
+   "type": "公立",
+   "pref": "岩手県",
+   "hp": "http://www.iwate-pu.ac.jp/",
+   "cat": "public"
   },
   {
    "name": "旭川市立大学",
@@ -141,25 +425,11 @@
    "cat": "senmon"
   },
   {
-   "name": "福島大学",
-   "type": "国立",
-   "pref": "福島県",
-   "hp": "http://www.fukushima-u.ac.jp/",
-   "cat": "national"
-  },
-  {
    "name": "秋田公立美術大学",
    "type": "公立",
    "pref": "秋田県",
    "hp": "http://www.akibi.ac.jp/",
    "cat": "public"
-  },
-  {
-   "name": "秋田大学",
-   "type": "国立",
-   "pref": "秋田県",
-   "hp": "http://www.akita-u.ac.jp/",
-   "cat": "national"
   },
   {
    "name": "秋田県立大学",
@@ -197,13 +467,6 @@
    "cat": "public"
   },
   {
-   "name": "上越教育大学",
-   "type": "国立",
-   "pref": "新潟県",
-   "hp": "http://www.juen.ac.jp/",
-   "cat": "national"
-  },
-  {
    "name": "公立小松大学",
    "type": "公立",
    "pref": "石川県",
@@ -218,25 +481,11 @@
    "cat": "public"
   },
   {
-   "name": "名古屋工業大学",
-   "type": "国立",
-   "pref": "愛知県",
-   "hp": "http://www.nitech.ac.jp/",
-   "cat": "national"
-  },
-  {
    "name": "名古屋市立大学",
    "type": "公立",
    "pref": "愛知県",
    "hp": "http://www.nagoya-cu.ac.jp/",
    "cat": "public"
-  },
-  {
-   "name": "富山大学",
-   "type": "国立",
-   "pref": "富山県",
-   "hp": "https://www.u-toyama.ac.jp/",
-   "cat": "national"
   },
   {
    "name": "富山県立大学",
@@ -246,25 +495,11 @@
    "cat": "public"
   },
   {
-   "name": "山梨大学",
-   "type": "国立",
-   "pref": "山梨県",
-   "hp": "http://www.yamanashi.ac.jp/",
-   "cat": "national"
-  },
-  {
    "name": "山梨県立大学",
    "type": "公立",
    "pref": "山梨県",
    "hp": "http://www.yamanashi-ken.ac.jp/",
    "cat": "public"
-  },
-  {
-   "name": "岐阜大学",
-   "type": "国立",
-   "pref": "岐阜県",
-   "hp": "http://www.gifu-u.ac.jp/index.html",
-   "cat": "national"
   },
   {
    "name": "岐阜県立看護大学",
@@ -279,13 +514,6 @@
    "pref": "岐阜県",
    "hp": "http://www.gifu-pu.ac.jp/",
    "cat": "public"
-  },
-  {
-   "name": "愛知教育大学",
-   "type": "国立",
-   "pref": "愛知県",
-   "hp": "http://www.aichi-edu.ac.jp/",
-   "cat": "national"
   },
   {
    "name": "愛知県立大学",
@@ -323,13 +551,6 @@
    "cat": "public"
   },
   {
-   "name": "浜松医科大学",
-   "type": "国立",
-   "pref": "静岡県",
-   "hp": "http://www.hama-med.ac.jp/",
-   "cat": "national"
-  },
-  {
    "name": "石川県立大学",
    "type": "公立",
    "pref": "石川県",
@@ -342,13 +563,6 @@
    "pref": "石川県",
    "hp": "http://www.ishikawa-nu.ac.jp/",
    "cat": "public"
-  },
-  {
-   "name": "福井大学",
-   "type": "国立",
-   "pref": "福井県",
-   "hp": "http://www.u-fukui.ac.jp/",
-   "cat": "national"
   },
   {
    "name": "福井県立大学",
@@ -414,25 +628,11 @@
    "cat": "public"
   },
   {
-   "name": "三重大学",
-   "type": "国立",
-   "pref": "三重県",
-   "hp": "http://www.mie-u.ac.jp/",
-   "cat": "national"
-  },
-  {
    "name": "三重県立看護大学",
    "type": "公立",
    "pref": "三重県",
    "hp": "http://www.mcn.ac.jp/",
    "cat": "public"
-  },
-  {
-   "name": "京都工芸繊維大学",
-   "type": "国立",
-   "pref": "京都府",
-   "hp": "http://www.kit.ac.jp/",
-   "cat": "national"
   },
   {
    "name": "京都市立芸術大学",
@@ -456,20 +656,6 @@
    "cat": "public"
   },
   {
-   "name": "京都教育大学",
-   "type": "国立",
-   "pref": "京都府",
-   "hp": "http://www.kyokyo-u.ac.jp/",
-   "cat": "national"
-  },
-  {
-   "name": "兵庫教育大学",
-   "type": "国立",
-   "pref": "兵庫県",
-   "hp": "http://www.hyogo-u.ac.jp/",
-   "cat": "national"
-  },
-  {
    "name": "兵庫県立大学",
    "type": "公立",
    "pref": "兵庫県",
@@ -477,32 +663,11 @@
    "cat": "public"
   },
   {
-   "name": "和歌山大学",
-   "type": "国立",
-   "pref": "和歌山県",
-   "hp": "http://www.wakayama-u.ac.jp/",
-   "cat": "national"
-  },
-  {
    "name": "和歌山県立医科大学",
    "type": "公立",
    "pref": "和歌山県",
    "hp": "http://www.wakayama-med.ac.jp/",
    "cat": "public"
-  },
-  {
-   "name": "大阪教育大学",
-   "type": "国立",
-   "pref": "大阪府",
-   "hp": "http://www.osaka-kyoiku.ac.jp/",
-   "cat": "national"
-  },
-  {
-   "name": "奈良教育大学",
-   "type": "国立",
-   "pref": "奈良県",
-   "hp": "http://www.nara-edu.ac.jp/home-jp.htm",
-   "cat": "national"
   },
   {
    "name": "奈良県立医科大学",
@@ -517,20 +682,6 @@
    "pref": "奈良県",
    "hp": "http://www.narapu.ac.jp/",
    "cat": "public"
-  },
-  {
-   "name": "滋賀医科大学",
-   "type": "国立",
-   "pref": "滋賀県",
-   "hp": "http://www.shiga-med.ac.jp/",
-   "cat": "national"
-  },
-  {
-   "name": "滋賀大学",
-   "type": "国立",
-   "pref": "滋賀県",
-   "hp": "http://www.shiga-u.ac.jp/",
-   "cat": "national"
   },
   {
    "name": "滋賀県立大学",
@@ -596,13 +747,6 @@
    "cat": "public"
   },
   {
-   "name": "山口大学",
-   "type": "国立",
-   "pref": "山口県",
-   "hp": "http://www.yamaguchi-u.ac.jp/",
-   "cat": "national"
-  },
-  {
    "name": "山口県立大学",
    "type": "公立",
    "pref": "山口県",
@@ -624,13 +768,6 @@
    "cat": "public"
   },
   {
-   "name": "島根大学",
-   "type": "国立",
-   "pref": "島根県",
-   "hp": "http://www.shimane-u.ac.jp/",
-   "cat": "national"
-  },
-  {
    "name": "島根県立大学",
    "type": "公立",
    "pref": "島根県",
@@ -643,20 +780,6 @@
    "pref": "広島県",
    "hp": "http://www.hiroshima-cu.ac.jp/",
    "cat": "public"
-  },
-  {
-   "name": "徳島大学",
-   "type": "国立",
-   "pref": "徳島県",
-   "hp": "http://www.tokushima-u.ac.jp/",
-   "cat": "national"
-  },
-  {
-   "name": "愛媛大学",
-   "type": "国立",
-   "pref": "愛媛県",
-   "hp": "http://www.ehime-u.ac.jp/",
-   "cat": "national"
   },
   {
    "name": "愛媛県立医療技術大学",
@@ -687,25 +810,11 @@
    "cat": "public"
   },
   {
-   "name": "香川大学",
-   "type": "国立",
-   "pref": "香川県",
-   "hp": "http://www.kagawa-u.ac.jp/",
-   "cat": "national"
-  },
-  {
    "name": "香川県立保健医療大学",
    "type": "公立",
    "pref": "香川県",
    "hp": "https://www.kagawa-puhs.ac.jp/",
    "cat": "public"
-  },
-  {
-   "name": "高知大学",
-   "type": "国立",
-   "pref": "高知県",
-   "hp": "http://www.kochi-u.ac.jp/JA/",
-   "cat": "national"
   },
   {
    "name": "高知工科大学",
@@ -722,39 +831,11 @@
    "cat": "public"
   },
   {
-   "name": "鳥取大学",
-   "type": "国立",
-   "pref": "鳥取県",
-   "hp": "http://www.tottori-u.ac.jp/",
-   "cat": "national"
-  },
-  {
-   "name": "鳴門教育大学",
-   "type": "国立",
-   "pref": "徳島県",
-   "hp": "http://www.naruto-u.ac.jp/",
-   "cat": "national"
-  },
-  {
-   "name": "九州工業大学",
-   "type": "国立",
-   "pref": "福岡県",
-   "hp": "http://www.kyutech.ac.jp/",
-   "cat": "national"
-  },
-  {
    "name": "九州歯科大学",
    "type": "公立",
    "pref": "福岡県",
    "hp": "http://www.kyu-dent.ac.jp/",
    "cat": "public"
-  },
-  {
-   "name": "佐賀大学",
-   "type": "国立",
-   "pref": "佐賀県",
-   "hp": "http://www.saga-u.ac.jp/",
-   "cat": "national"
   },
   {
    "name": "北九州市立大学",
@@ -771,13 +852,6 @@
    "cat": "public"
   },
   {
-   "name": "大分大学",
-   "type": "国立",
-   "pref": "大分県",
-   "hp": "http://www.oita-u.ac.jp/",
-   "cat": "national"
-  },
-  {
    "name": "大分県立看護科学大学",
    "type": "公立",
    "pref": "大分県",
@@ -790,13 +864,6 @@
    "pref": "宮崎県",
    "hp": "http://www.miyazaki-mu.ac.jp/",
    "cat": "public"
-  },
-  {
-   "name": "宮崎大学",
-   "type": "国立",
-   "pref": "宮崎県",
-   "hp": "http://www.miyazaki-u.ac.jp/",
-   "cat": "national"
   },
   {
    "name": "宮崎県立看護大学",
@@ -827,25 +894,11 @@
    "cat": "public"
   },
   {
-   "name": "琉球大学",
-   "type": "国立",
-   "pref": "沖縄県",
-   "hp": "http://www.u-ryukyu.ac.jp/",
-   "cat": "national"
-  },
-  {
    "name": "福岡女子大学",
    "type": "公立",
    "pref": "福岡県",
    "hp": "http://www.fwu.ac.jp/",
    "cat": "public"
-  },
-  {
-   "name": "福岡教育大学",
-   "type": "国立",
-   "pref": "福岡県",
-   "hp": "http://www.fukuoka-edu.ac.jp/",
-   "cat": "national"
   },
   {
    "name": "福岡県立大学",
@@ -855,32 +908,11 @@
    "cat": "public"
   },
   {
-   "name": "長崎大学",
-   "type": "国立",
-   "pref": "長崎県",
-   "hp": "http://www.nagasaki-u.ac.jp/",
-   "cat": "national"
-  },
-  {
    "name": "長崎県立大学",
    "type": "公立",
    "pref": "長崎県",
    "hp": "http://sun.ac.jp/",
    "cat": "public"
-  },
-  {
-   "name": "鹿児島大学",
-   "type": "国立",
-   "pref": "鹿児島県",
-   "hp": "http://www.kagoshima-u.ac.jp/",
-   "cat": "national"
-  },
-  {
-   "name": "鹿屋体育大学",
-   "type": "国立",
-   "pref": "鹿児島県",
-   "hp": "http://www.nifs-k.ac.jp/",
-   "cat": "national"
   },
   {
    "name": "つくば国際大学",
@@ -4757,38 +4789,6 @@
    "pref": "福岡県",
    "hp": "https://www.cyber-u.ac.jp/",
    "cat": "private",
-   "note": "高校からの通常の進学先ではない（括弧内の理由）。カードの memo にもその旨を書く。"
-  },
-  {
-   "name": "政策研究大学院大学（大学院のみ）",
-   "type": "国立",
-   "pref": "東京都",
-   "hp": "https://www.grips.ac.jp/",
-   "cat": "national",
-   "note": "高校からの通常の進学先ではない（括弧内の理由）。カードの memo にもその旨を書く。"
-  },
-  {
-   "name": "総合研究大学院大学（大学院のみ）",
-   "type": "国立",
-   "pref": "神奈川県",
-   "hp": "https://www.soken.ac.jp/",
-   "cat": "national",
-   "note": "高校からの通常の進学先ではない（括弧内の理由）。カードの memo にもその旨を書く。"
-  },
-  {
-   "name": "北陸先端科学技術大学院大学（大学院のみ）",
-   "type": "国立",
-   "pref": "石川県",
-   "hp": "https://www.jaist.ac.jp/",
-   "cat": "national",
-   "note": "高校からの通常の進学先ではない（括弧内の理由）。カードの memo にもその旨を書く。"
-  },
-  {
-   "name": "奈良先端科学技術大学院大学（大学院のみ）",
-   "type": "国立",
-   "pref": "奈良県",
-   "hp": "https://www.naist.jp/",
-   "cat": "national",
    "note": "高校からの通常の進学先ではない（括弧内の理由）。カードの memo にもその旨を書く。"
   },
   {
