@@ -42,7 +42,7 @@ input[type=search]{flex:1;min-width:160px}
 @media (prefers-color-scheme: dark){.face::before{opacity:.22;filter:invert(1)}}
 .face>*{position:relative;z-index:1}
 .back::before{opacity:.08}
-.front{align-items:center;justify-content:center;text-align:center}
+.front{align-items:center;justify-content:safe center;text-align:center}
 .back{transform:rotateY(180deg)}
 .badge{display:inline-block;font-size:11.5px;font-weight:500;color:#fff;border-radius:6px;padding:2px 8px;margin-right:6px}
 .meta{font-size:12.5px;color:var(--muted);margin-top:10px}
@@ -119,6 +119,12 @@ details summary{cursor:pointer}
 ul.mini{margin:0;padding-left:1.1em}
 ul.mini li{font-size:12.5px;margin:2px 0}
 .hp{font-size:12.5px;font-weight:500;margin-left:10px;color:var(--accent);white-space:nowrap}
+.ff{width:100%;border-collapse:collapse;margin-top:10px;font-size:12.5px;background:color-mix(in srgb,var(--panel) 85%,transparent);border-radius:8px}
+.ff th{width:6.8em;text-align:left;font-weight:500;color:var(--muted);padding:4px 8px 4px 0;vertical-align:top;white-space:nowrap}
+.ff td{padding:4px 0;border-bottom:1px dashed var(--line)}
+.ff tr:last-child td{border-bottom:0}
+.ff .facs span{font-size:11.5px}
+.qfront{max-width:680px!important}
 .hints{margin-top:10px}
 .hints .btn{font-size:12.5px;padding:5px 10px}
 .hint1{font-size:13px;margin:4px 0;text-align:left}
@@ -495,7 +501,7 @@ function render(){
     $("back").innerHTML = '<div>'+badge(x)+statusTag(x)+'</div><h2>'+esc(x.name)+hpLink(x.name)+'</h2>'+featList+cardNews(x.name)+infoBlock(x.name)+examBlock(x.name)+memo;
   } else if($("mode").value==="type"){
     const masked = x.feats.map(f=>maskName(f,x.name));
-    $("front").innerHTML = '<div>'+badge(x)+statusTag(x)+'</div><div class="qfront" style="width:100%"><ul>'+masked.map(f=>'<li>'+esc(f)+'</li>').join("")+'</ul><div class="meta">'+esc(x.type)+'｜'+esc(maskName(x.pref,x.name))+'</div>'+hintHTML(x)+
+    $("front").innerHTML = '<div>'+badge(x)+statusTag(x)+'</div><div class="qfront" style="width:100%"><ul>'+masked.map(f=>'<li>'+esc(f)+'</li>').join("")+'</ul><div class="meta">'+esc(x.type)+'｜'+esc(maskName(x.pref,x.name))+'</div>'+frontFacts(x)+hintHTML(x)+
       '<form id="ansForm" class="ans" onclick="event.stopPropagation()"><div class="blank">（<input id="ans" type="text" autocomplete="off" aria-label="学校名">）<span>'+esc(suffixOf(x.name))+'</span></div><div class="ansbtns"><button class="btn big" type="submit">回答</button><button class="btn big" type="button" id="giveup">パス</button></div></form></div>';
     $("back").innerHTML = '<div>'+badge(x)+statusTag(x)+'</div><div id="resultLine" class="judge" style="text-align:center"></div><div class="uname" style="text-align:center;margin-top:4px">'+esc(x.name)+'</div><div class="meta" style="text-align:center">'+esc(x.pref)+' '+hpLink(x.name)+'</div><div style="margin-top:14px">'+cardNews(x.name)+infoBlock(x.name)+examBlock(x.name)+memo+'</div>';
     answered=false; wireHints(x);
@@ -504,7 +510,7 @@ function render(){
     setTimeout(()=>{ const a=$("ans"); if(a) a.focus({preventScroll:true}); },60);
   } else {
     const masked = x.feats.map(f=>maskName(f,x.name));
-    $("front").innerHTML = '<div>'+badge(x)+statusTag(x)+'</div><div class="qfront"><ul>'+masked.map(f=>'<li>'+esc(f)+'</li>').join("")+'</ul><div class="meta">'+esc(x.type)+'</div>'+hintHTML(x)+'</div>';
+    $("front").innerHTML = '<div>'+badge(x)+statusTag(x)+'</div><div class="qfront"><ul>'+masked.map(f=>'<li>'+esc(f)+'</li>').join("")+'</ul><div class="meta">'+esc(x.type)+'</div>'+frontFacts(x)+hintHTML(x)+'</div>';
     $("back").innerHTML = '<div>'+badge(x)+statusTag(x)+'</div><div class="uname" style="text-align:center">'+esc(x.name)+'</div><div class="meta" style="text-align:center">'+esc(x.pref)+' '+hpLink(x.name)+'</div><div style="margin-top:14px">'+cardNews(x.name)+infoBlock(x.name)+examBlock(x.name)+memo+'</div>';
     wireHints(x);
   }
@@ -573,10 +579,21 @@ function updateStat(){
 }
 
 
+
+function frontFacts(x){
+  const f=INFO[x.name]||{}; const m=t=>maskName(String(t),x.name); const rows=[];
+  if(f.faculties&&f.faculties.length) rows.push(["学部",'<span class="facs">'+f.faculties.map(t=>'<span>'+esc(m(t))+'</span>').join("")+'</span>']);
+  if(f.founded) rows.push(["創立",esc(m(f.founded))]);
+  if(f.students&&f.students.count) rows.push(["学生数","約"+Number(f.students.count).toLocaleString("ja-JP")+"人"]);
+  const d=f.difficulty; if(d&&(d.hensachi||d.kyotei)) rows.push(["難易度",[d.hensachi?"偏差値 "+esc(d.hensachi):"",d.kyotei?"共テ "+esc(d.kyotei):""].filter(Boolean).join("／")]);
+  const t=f.tuition; if(t&&t.amount!=null) rows.push(["初年度納付金",yen(t.amount)]);
+  const e=EXAM[x.name]; if(e&&e.general&&e.general.ratio!=null) rows.push(["一般選抜倍率",Number(e.general.ratio).toFixed(1)+"倍"]);
+  if(!rows.length) return "";
+  return '<table class="ff">'+rows.map(r=>'<tr><th>'+r[0]+'</th><td>'+r[1]+'</td></tr>').join("")+'</table>';
+}
 function hintList(x){
   const f=INFO[x.name]||{}; const h=[];
   const m=t=>maskName(String(t),x.name);
-  if(f.faculties&&f.faculties.length) h.push(["学部",f.faculties.map(m).join("・")]);
   if(f.research&&f.research.length) h.push(["有名な研究分野",f.research.map(m).join("／")]);
   if(f.notable&&f.notable.length) h.push(["著名な教授",f.notable.map(m).join("／")]);
   return h;
