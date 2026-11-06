@@ -103,6 +103,8 @@ body.wide main,body.wide header{max-width:1320px}
 .sfilt{display:flex;flex-wrap:wrap;gap:6px;align-items:center}
 .sfilt select{font-family:inherit;font-size:12.5px;border:1px solid var(--line);border-radius:8px;padding:6px 8px;background:var(--panel);color:var(--ink)}
 .chk{font-size:12.5px;display:flex;align-items:center;gap:4px;cursor:pointer}
+.kchk{display:flex;flex-wrap:wrap;gap:4px 12px;width:100%}
+.kchk i{display:inline-block;width:9px;height:9px;border-radius:50%}
 .mcount{font-size:12px;color:var(--muted)}
 .mresults{display:flex;flex-direction:column;gap:4px;max-height:min(60vh,520px);overflow-y:auto;overscroll-behavior:contain}
 .ritem{display:flex;align-items:center;gap:8px;text-align:left;border:1px solid var(--line);background:var(--panel);color:var(--ink);border-radius:8px;padding:7px 10px;cursor:pointer;font-family:inherit}
@@ -253,7 +255,7 @@ ul.mini li{font-size:12.5px;margin:2px 0}
       <div class="sfilt">
         <select id="f-kyoka" aria-label="共通テスト科目数"><option value="">共テ教科数：すべて</option><option value="le3">3教科以下</option><option value="4-5">4〜5教科</option><option value="ge6">6教科以上</option><option value="none">共テ利用なし</option></select>
         <select id="f-rl" aria-label="英語R:L比率"><option value="">英語R:L：すべて</option><option value="1:1">1:1（均等）</option><option value="r">リーディング重視（3:1・4:1など）</option><option value="other">その他の比率</option></select>
-        <label class="chk"><input type="checkbox" id="f-nopri"> 私立を除く</label>
+        <div class="kchk" role="group" aria-label="種別で表示を切り替え"><label class="chk"><input type="checkbox" class="fk" value="国立" checked><i style="background:#1f4e79"></i>国立</label><label class="chk"><input type="checkbox" class="fk" value="公立" checked><i style="background:#2a7f62"></i>公立</label><label class="chk"><input type="checkbox" class="fk" value="私立" checked><i style="background:#b0532a"></i>私立</label><label class="chk"><input type="checkbox" class="fk" value="その他" checked><i style="background:#4b5563"></i>その他（大学校・専門職大学）</label></div>
       </div>
       <div id="mcount" class="mcount"></div>
       <div id="mresults" class="mresults"></div>
@@ -927,9 +929,8 @@ function openCard(id){
   location.hash="#cards";
 }
 function passFilters(x){
-  const kf=$("f-kyoka").value, rf=$("f-rl").value, np=$("f-nopri").checked;
-  if(np && kindOf(x)==="私立") return false;
-  if(np && kindOf(x)==="専門職大学" && !/公立/.test(x.type)) return false;
+  const kf=$("f-kyoka").value, rf=$("f-rl").value;
+  const on=kindsOn(); if(on.size<4){ const k=kindOf(x); const g=(k==="国立"||k==="公立"||k==="私立")?k:"その他"; if(!on.has(g)) return false; }
   const k=(INFO[x.name]||{}).kyotsu;
   if(kf){ if(!k||!k.kamoku) return false; const ky=k.kyoka||[];
     if(kf==="none"){ if(ky.length) return false; }
@@ -942,7 +943,8 @@ function passFilters(x){
     if(rf==="other"&&!rl.some(t=>{const r=ratio(t); return r!=null&&r!==1&&r<2;})) return false; }
   return true;
 }
-function filtersActive(){ return $("f-kyoka").value||$("f-rl").value||$("f-nopri").checked; }
+function kindsOn(){ return new Set([...document.querySelectorAll(".fk:checked")].map(e=>e.value)); }
+function filtersActive(){ return $("f-kyoka").value||$("f-rl").value||kindsOn().size<4; }
 const KIND_Q={"国立":["国立"],"国立大学":["国立"],"公立":["公立"],"公立大学":["公立"],"国公立":["国立","公立"],"国公立大学":["国立","公立"],"私立":["私立"],"私立大学":["私立"],"大学校":["大学校"],"専門職大学":["専門職大学"],"専門職":["専門職大学"]};
 function searchUnivs(q){
   q=q.trim();
@@ -979,12 +981,12 @@ function renderResults(){
   MATCH=set.size?set:null; if($("labels")&&$("labels").childNodes.length+document.querySelectorAll("#jmap .dot").length) placeLabels();
 }
 $("mq").addEventListener("input",()=>{ $("mpanel").innerHTML=""; renderResults(); });
-["f-kyoka","f-rl","f-nopri"].forEach(id=>$(id).addEventListener("change",()=>{
+[$("f-kyoka"),$("f-rl"),...document.querySelectorAll(".fk")].forEach(el=>el.addEventListener("change",()=>{
   // 学校を選んだ後は検索欄にその校名が入っているので、絞り込みを変えたら校名を消して一覧に戻す
   if($("mpanel").innerHTML&&items.some(x=>x.name===$("mq").value)) $("mq").value="";
   $("mpanel").innerHTML=""; renderResults(); }));
 $("mq").addEventListener("keydown",e=>{ if(e.key==="Enter"){ const l=searchUnivs($("mq").value); if(l.length) selectUniv(l[0].name); } });
-$("mreset").onclick=()=>{ MATCH=null; $("f-kyoka").value=""; $("f-rl").value=""; $("f-nopri").checked=false; $("hl").innerHTML=""; $("mpanel").innerHTML=""; $("mresults").innerHTML=""; $("mcount").textContent=""; $("mq").value=""; document.querySelectorAll("#jmap .dot.dim").forEach(c=>c.classList.remove("dim")); setVB(HOME_VB); };
+$("mreset").onclick=()=>{ MATCH=null; $("f-kyoka").value=""; $("f-rl").value=""; document.querySelectorAll(".fk").forEach(e=>e.checked=true); $("hl").innerHTML=""; $("mpanel").innerHTML=""; $("mresults").innerHTML=""; $("mcount").textContent=""; $("mq").value=""; document.querySelectorAll("#jmap .dot.dim").forEach(c=>c.classList.remove("dim")); setVB(HOME_VB); };
 window.addEventListener("hashchange",()=>{ if(location.hash==="#map") requestAnimationFrame(()=>scaleMarks()); });
 
 
