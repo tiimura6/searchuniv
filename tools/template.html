@@ -1000,7 +1000,7 @@ function placeLabels(){
   const fs=(innerWidth<600?16:19)/ppu, pad=2/ppu, k=curVB[2]/HOME_VB[2], r=2.2*k;
   const sel=$("mq").value; const [vx,vy,vw,vh]=curVB;
   const inView=([cx,cy])=>cx>=vx&&cx<=vx+vw&&cy>=vy&&cy<=vy+vh;
-  const order=items.filter(x=>MAP.dots[x.name]&&x.name!==sel&&inView(MAP.dots[x.name])&&kindVisible(x)&&(!MATCH||MATCH.has(x.name))).sort((a,b)=>(PRIO[a.cat]??20)-(PRIO[b.cat]??20));
+  const order=items.filter(x=>MAP.dots[x.name]&&x.name!==sel&&inView(MAP.dots[x.name])&&kindVisible(x)&&(!MATCH||MATCH.has(x.name))&&!CUR_SEL).sort((a,b)=>(PRIO[a.cat]??20)-(PRIO[b.cat]??20));
   const cell=(innerWidth<600?80:90)/ppu;
   // 表示枠（はみ出し防止）と、凡例・ズームボタンの下を避ける
   const m=svg.getScreenCTM(); const inv=m?m.inverse():null;
@@ -1211,7 +1211,7 @@ function searchUnivs(q){
     return {x,sc};
   }).filter(o=>o.sc>0&&passFilters(o.x)).sort((p,q2)=>q2.sc-p.sc||(PRIO[p.x.cat]??20)-(PRIO[q2.x.cat]??20)).map(o=>o.x);
 }
-let LAST_LIST=[], CUR_SEL=null;
+var LAST_LIST=[], CUR_SEL=null;
 function renderResults(){
   const list=searchUnivs($("mq").value);
   const qv=$("mq").value.trim(), kyF=$("f-kyoka").value||$("f-rl").value;
@@ -1233,7 +1233,7 @@ function renderResults(){
   document.querySelectorAll("#jmap .dot").forEach(c=>{ const n=c.querySelector("title").textContent; c.classList.toggle("dim", set.size>0 && !set.has(n)); });
   applyKindDots(); MATCH=set.size?set:(filtersActive()?new Set():null); if($("labels")&&$("labels").childNodes.length+document.querySelectorAll("#jmap .dot").length) placeLabels();
 }
-$("mq").addEventListener("input",()=>{ CUR_SEL=null; $("mpanel").innerHTML=""; renderResults(); });
+$("mq").addEventListener("input",()=>{ CUR_SEL=null; $("hl").innerHTML=""; $("mpanel").innerHTML=""; renderResults(); });
 [$("f-kei"),$("f-kyoka"),$("f-rl"),$("f-meth"),...document.querySelectorAll(".fk")].forEach(el=>el.addEventListener("change",()=>{
   // 学校を選んだ後は検索欄にその校名が入っているので、絞り込みを変えたら校名を消して一覧に戻す
   if($("mpanel").innerHTML&&items.some(x=>x.name===$("mq").value)) $("mq").value="";
