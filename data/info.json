@@ -1507,8 +1507,14 @@
 "https://search.keinet.ne.jp/1521/outline/expense",
 "https://search.keinet.ne.jp/1521/outline/campus",
 "https://search.keinet.ne.jp/1521/outline/department",
-"https://web.aiu.ac.jp/wp-content/uploads/2025/09/Commencement-Address_President.pdf"
-]
+"https://web.aiu.ac.jp/wp-content/uploads/2025/09/Commencement-Address_President.pdf",
+"https://search.keinet.ne.jp/1521/outline/licential",
+"https://search.keinet.ne.jp/1521/outline/admission_employment"
+],
+"licenses": [
+"高等学校教諭一種（英語）"
+],
+"careers": "2024年度卒業者は就職が中心で、就職率は国際教養学科82.5%、グローバル・スタディズ領域81.2%、グローバル・ビジネス領域91.1%。"
 },
 "会津大学": {
 "difficulty": {

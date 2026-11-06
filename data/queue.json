@@ -3,120 +3,887 @@
  "done": [],
  "failed": [],
  "fail_count": {},
- "enrich_inprogress_elsewhere": [
-  "東京大学",
-  "京都大学",
-  "大阪大学",
-  "東北大学",
-  "名古屋大学",
-  "九州大学",
-  "北海道大学",
-  "一橋大学",
-  "東京科学大学",
-  "神戸大学",
-  "筑波大学",
-  "茨城大学",
-  "千葉大学",
-  "埼玉大学",
-  "横浜国立大学",
-  "東京外国語大学",
-  "お茶の水女子大学",
-  "東京学芸大学",
-  "東京農工大学",
-  "電気通信大学",
-  "東京都立大学",
-  "横浜市立大学",
-  "宇都宮大学",
-  "群馬大学",
-  "高崎経済大学",
-  "東京海洋大学",
-  "東京藝術大学",
-  "茨城県立医療大学",
-  "大阪公立大学",
-  "国際教養大学",
-  "会津大学",
-  "福島県立医科大学",
-  "新潟大学",
-  "金沢大学",
-  "信州大学",
-  "静岡大学",
-  "広島大学",
-  "岡山大学",
-  "熊本大学",
-  "奈良女子大学",
-  "長岡技術科学大学",
-  "豊橋技術科学大学",
-  "早稲田大学",
-  "慶應義塾大学",
-  "上智大学",
-  "東京理科大学",
-  "国際基督教大学（ICU）",
-  "学習院大学",
-  "明治大学",
-  "青山学院大学",
-  "立教大学",
-  "中央大学",
-  "法政大学",
-  "同志社大学",
-  "立命館大学",
-  "関西学院大学",
-  "関西大学",
-  "南山大学",
-  "西南学院大学",
-  "成蹊大学",
-  "成城大学",
-  "明治学院大学",
-  "獨協大学",
-  "國學院大學",
-  "武蔵大学",
-  "日本大学",
-  "東洋大学",
-  "駒澤大学",
-  "専修大学",
-  "芝浦工業大学",
-  "東京都市大学",
-  "東京電機大学",
-  "工学院大学",
-  "東京農業大学",
-  "北里大学",
-  "自治医科大学",
-  "国際医療福祉大学",
-  "順天堂大学",
-  "東京慈恵会医科大学",
-  "日本医科大学",
-  "獨協医科大学",
-  "津田塾大学",
-  "東京女子大学",
-  "日本女子大学",
-  "聖心女子大学",
-  "立命館アジア太平洋大学（APU）",
-  "神田外語大学",
-  "関西外国語大学",
-  "茨城キリスト教大学",
-  "常磐大学",
-  "流通経済大学",
-  "防衛大学校",
-  "防衛医科大学校",
-  "気象大学校",
-  "海上保安大学校",
-  "水産大学校",
-  "国立看護大学校",
-  "職業能力開発総合大学校",
-  "航空保安大学校",
-  "茨城県立農業大学校",
-  "航空大学校",
-  "職業能力開発大学校（ポリテクカレッジ）",
-  "税務大学校",
-  "国際ファッション専門職大学",
-  "情報経営イノベーション専門職大学（iU）",
-  "東京国際工科専門職大学",
-  "開志専門職大学",
-  "芸術文化観光専門職大学",
-  "静岡県立農林環境専門職大学",
-  "高知リハビリテーション専門職大学",
-  "東京保健医療専門職大学",
-  "名古屋国際工科専門職大学"
+ "enrich": [
+  {
+   "name": "東京大学",
+   "keinet": "1120",
+   "need": [
+    "research"
+   ]
+  },
+  {
+   "name": "京都大学",
+   "keinet": "1280",
+   "need": [
+    "research"
+   ]
+  },
+  {
+   "name": "大阪大学",
+   "keinet": "1295",
+   "need": [
+    "research"
+   ]
+  },
+  {
+   "name": "東北大学",
+   "keinet": "1050",
+   "need": [
+    "research"
+   ]
+  },
+  {
+   "name": "名古屋大学",
+   "keinet": "1250",
+   "need": [
+    "research"
+   ]
+  },
+  {
+   "name": "九州大学",
+   "keinet": "1405",
+   "need": [
+    "research"
+   ]
+  },
+  {
+   "name": "北海道大学",
+   "keinet": "1025",
+   "need": [
+    "research"
+   ]
+  },
+  {
+   "name": "一橋大学",
+   "keinet": "1165",
+   "need": [
+    "research"
+   ]
+  },
+  {
+   "name": "東京科学大学",
+   "keinet": "1150",
+   "need": [
+    "research"
+   ]
+  },
+  {
+   "name": "神戸大学",
+   "keinet": "1310",
+   "need": [
+    "research"
+   ]
+  },
+  {
+   "name": "筑波大学",
+   "keinet": "1085",
+   "need": [
+    "research"
+   ]
+  },
+  {
+   "name": "茨城大学",
+   "keinet": "1075",
+   "need": [
+    "research"
+   ]
+  },
+  {
+   "name": "千葉大学",
+   "keinet": "1105",
+   "need": [
+    "research"
+   ]
+  },
+  {
+   "name": "埼玉大学",
+   "keinet": "1100",
+   "need": [
+    "research"
+   ]
+  },
+  {
+   "name": "横浜国立大学",
+   "keinet": "1170",
+   "need": [
+    "research"
+   ]
+  },
+  {
+   "name": "東京外国語大学",
+   "keinet": "1130",
+   "need": [
+    "research"
+   ]
+  },
+  {
+   "name": "お茶の水女子大学",
+   "keinet": "1110",
+   "need": [
+    "research"
+   ]
+  },
+  {
+   "name": "東京学芸大学",
+   "keinet": "1135",
+   "need": [
+    "research"
+   ]
+  },
+  {
+   "name": "東京農工大学",
+   "keinet": "1160",
+   "need": [
+    "research"
+   ]
+  },
+  {
+   "name": "電気通信大学",
+   "keinet": "1115",
+   "need": [
+    "research"
+   ]
+  },
+  {
+   "name": "東京都立大学",
+   "keinet": "1532",
+   "need": [
+    "research"
+   ]
+  },
+  {
+   "name": "横浜市立大学",
+   "keinet": "1540",
+   "need": [
+    "research"
+   ]
+  },
+  {
+   "name": "宇都宮大学",
+   "keinet": "1090",
+   "need": [
+    "research"
+   ]
+  },
+  {
+   "name": "群馬大学",
+   "keinet": "1095",
+   "need": [
+    "research"
+   ]
+  },
+  {
+   "name": "高崎経済大学",
+   "keinet": "1520",
+   "need": [
+    "research"
+   ]
+  },
+  {
+   "name": "東京海洋大学",
+   "keinet": "1152",
+   "need": [
+    "research"
+   ]
+  },
+  {
+   "name": "東京藝術大学",
+   "keinet": "1140",
+   "need": [
+    "research"
+   ]
+  },
+  {
+   "name": "茨城県立医療大学",
+   "keinet": "1519",
+   "need": [
+    "research"
+   ]
+  },
+  {
+   "name": "大阪公立大学",
+   "keinet": "1615",
+   "need": [
+    "research"
+   ]
+  },
+  {
+   "name": "国際教養大学",
+   "keinet": "1521",
+   "need": [
+    "research"
+   ]
+  },
+  {
+   "name": "会津大学",
+   "keinet": "1518",
+   "need": [
+    "licenses",
+    "careers",
+    "research"
+   ]
+  },
+  {
+   "name": "福島県立医科大学",
+   "keinet": "1515",
+   "need": [
+    "licenses",
+    "careers",
+    "research"
+   ]
+  },
+  {
+   "name": "新潟大学",
+   "keinet": "1180",
+   "need": [
+    "licenses",
+    "careers",
+    "research"
+   ]
+  },
+  {
+   "name": "金沢大学",
+   "keinet": "1200",
+   "need": [
+    "licenses",
+    "careers",
+    "research"
+   ]
+  },
+  {
+   "name": "信州大学",
+   "keinet": "1225",
+   "need": [
+    "licenses",
+    "careers",
+    "research"
+   ]
+  },
+  {
+   "name": "静岡大学",
+   "keinet": "1230",
+   "need": [
+    "licenses",
+    "careers",
+    "research"
+   ]
+  },
+  {
+   "name": "広島大学",
+   "keinet": "1360",
+   "need": [
+    "licenses",
+    "careers",
+    "research"
+   ]
+  },
+  {
+   "name": "岡山大学",
+   "keinet": "1355",
+   "need": [
+    "licenses",
+    "careers",
+    "research"
+   ]
+  },
+  {
+   "name": "熊本大学",
+   "keinet": "1440",
+   "need": [
+    "licenses",
+    "careers",
+    "research"
+   ]
+  },
+  {
+   "name": "奈良女子大学",
+   "keinet": "1330",
+   "need": [
+    "licenses",
+    "careers",
+    "research"
+   ]
+  },
+  {
+   "name": "長岡技術科学大学",
+   "keinet": "1175",
+   "need": [
+    "licenses",
+    "careers",
+    "research"
+   ]
+  },
+  {
+   "name": "豊橋技術科学大学",
+   "keinet": "1245",
+   "need": [
+    "licenses",
+    "careers",
+    "research"
+   ]
+  },
+  {
+   "name": "早稲田大学",
+   "keinet": "2293",
+   "need": [
+    "research"
+   ]
+  },
+  {
+   "name": "慶應義塾大学",
+   "keinet": "2210",
+   "need": [
+    "licenses",
+    "careers",
+    "research"
+   ]
+  },
+  {
+   "name": "上智大学",
+   "keinet": "2221",
+   "need": [
+    "licenses",
+    "careers",
+    "research"
+   ]
+  },
+  {
+   "name": "東京理科大学",
+   "keinet": "2262",
+   "need": [
+    "licenses",
+    "careers",
+    "research"
+   ]
+  },
+  {
+   "name": "国際基督教大学（ICU）",
+   "keinet": "2214",
+   "need": [
+    "licenses",
+    "careers",
+    "research"
+   ]
+  },
+  {
+   "name": "学習院大学",
+   "keinet": "2204",
+   "need": [
+    "licenses",
+    "careers",
+    "research"
+   ]
+  },
+  {
+   "name": "明治大学",
+   "keinet": "2286",
+   "need": [
+    "licenses",
+    "careers",
+    "research"
+   ]
+  },
+  {
+   "name": "青山学院大学",
+   "keinet": "2200",
+   "need": [
+    "licenses",
+    "careers",
+    "research"
+   ]
+  },
+  {
+   "name": "立教大学",
+   "keinet": "2290",
+   "need": [
+    "licenses",
+    "careers",
+    "research"
+   ]
+  },
+  {
+   "name": "中央大学",
+   "keinet": "2242",
+   "need": [
+    "licenses",
+    "careers",
+    "research"
+   ]
+  },
+  {
+   "name": "法政大学",
+   "keinet": "2279",
+   "need": [
+    "licenses",
+    "careers",
+    "research"
+   ]
+  },
+  {
+   "name": "同志社大学",
+   "keinet": "2498",
+   "need": [
+    "licenses",
+    "careers",
+    "research"
+   ]
+  },
+  {
+   "name": "立命館大学",
+   "keinet": "2504",
+   "need": [
+    "licenses",
+    "careers",
+    "research"
+   ]
+  },
+  {
+   "name": "関西学院大学",
+   "keinet": "2558",
+   "need": [
+    "licenses",
+    "careers",
+    "research"
+   ]
+  },
+  {
+   "name": "関西大学",
+   "keinet": "2533",
+   "need": [
+    "research"
+   ]
+  },
+  {
+   "name": "南山大学",
+   "keinet": "2460",
+   "need": [
+    "research"
+   ]
+  },
+  {
+   "name": "西南学院大学",
+   "keinet": "2705",
+   "need": [
+    "research"
+   ]
+  },
+  {
+   "name": "成蹊大学",
+   "keinet": "2228",
+   "need": [
+    "research"
+   ]
+  },
+  {
+   "name": "成城大学",
+   "keinet": "2229",
+   "need": [
+    "research"
+   ]
+  },
+  {
+   "name": "明治学院大学",
+   "keinet": "2287",
+   "need": [
+    "research"
+   ]
+  },
+  {
+   "name": "獨協大学",
+   "keinet": "2156",
+   "need": [
+    "research"
+   ]
+  },
+  {
+   "name": "國學院大學",
+   "keinet": "2213",
+   "need": [
+    "research"
+   ]
+  },
+  {
+   "name": "武蔵大学",
+   "keinet": "2281",
+   "need": [
+    "research"
+   ]
+  },
+  {
+   "name": "日本大学",
+   "keinet": "2267",
+   "need": [
+    "research"
+   ]
+  },
+  {
+   "name": "東洋大学",
+   "keinet": "2265",
+   "need": [
+    "research"
+   ]
+  },
+  {
+   "name": "駒澤大学",
+   "keinet": "2216",
+   "need": [
+    "research"
+   ]
+  },
+  {
+   "name": "専修大学",
+   "keinet": "2233",
+   "need": [
+    "research"
+   ]
+  },
+  {
+   "name": "芝浦工業大学",
+   "keinet": "2219",
+   "need": [
+    "research"
+   ]
+  },
+  {
+   "name": "東京都市大学",
+   "keinet": "2282",
+   "need": [
+    "research"
+   ]
+  },
+  {
+   "name": "東京電機大学",
+   "keinet": "2259",
+   "need": [
+    "research"
+   ]
+  },
+  {
+   "name": "工学院大学",
+   "keinet": "2212",
+   "need": [
+    "research"
+   ]
+  },
+  {
+   "name": "東京農業大学",
+   "keinet": "2260",
+   "need": [
+    "research"
+   ]
+  },
+  {
+   "name": "北里大学",
+   "keinet": "2205",
+   "need": [
+    "research"
+   ]
+  },
+  {
+   "name": "自治医科大学",
+   "keinet": "2122",
+   "need": [
+    "research"
+   ]
+  },
+  {
+   "name": "国際医療福祉大学",
+   "keinet": "2125",
+   "need": [
+    "research"
+   ]
+  },
+  {
+   "name": "順天堂大学",
+   "keinet": "2220",
+   "need": [
+    "research"
+   ]
+  },
+  {
+   "name": "東京慈恵会医科大学",
+   "keinet": "2253",
+   "need": [
+    "research"
+   ]
+  },
+  {
+   "name": "日本医科大学",
+   "keinet": "2268",
+   "need": [
+    "research"
+   ]
+  },
+  {
+   "name": "獨協医科大学",
+   "keinet": "2123",
+   "need": [
+    "research"
+   ]
+  },
+  {
+   "name": "津田塾大学",
+   "keinet": "2243",
+   "need": [
+    "research"
+   ]
+  },
+  {
+   "name": "東京女子大学",
+   "keinet": "2254",
+   "need": [
+    "research"
+   ]
+  },
+  {
+   "name": "日本女子大学",
+   "keinet": "2272",
+   "need": [
+    "research"
+   ]
+  },
+  {
+   "name": "聖心女子大学",
+   "keinet": "2230",
+   "need": [
+    "research"
+   ]
+  },
+  {
+   "name": "立命館アジア太平洋大学（APU）",
+   "keinet": "2766",
+   "need": [
+    "licenses",
+    "careers",
+    "research"
+   ]
+  },
+  {
+   "name": "神田外語大学",
+   "keinet": "2172",
+   "need": [
+    "research"
+   ]
+  },
+  {
+   "name": "関西外国語大学",
+   "keinet": "2535",
+   "need": [
+    "research"
+   ]
+  },
+  {
+   "name": "茨城キリスト教大学",
+   "keinet": "2107",
+   "need": [
+    "research"
+   ]
+  },
+  {
+   "name": "常磐大学",
+   "keinet": "2108",
+   "need": [
+    "careers",
+    "research"
+   ]
+  },
+  {
+   "name": "流通経済大学",
+   "keinet": "2109",
+   "need": [
+    "careers",
+    "research"
+   ]
+  },
+  {
+   "name": "防衛大学校",
+   "keinet": "5010",
+   "need": [
+    "licenses",
+    "careers",
+    "research"
+   ]
+  },
+  {
+   "name": "防衛医科大学校",
+   "keinet": "5060",
+   "need": [
+    "licenses",
+    "careers",
+    "research"
+   ]
+  },
+  {
+   "name": "気象大学校",
+   "keinet": "",
+   "need": [
+    "licenses",
+    "careers",
+    "research"
+   ]
+  },
+  {
+   "name": "海上保安大学校",
+   "keinet": "",
+   "need": [
+    "licenses",
+    "careers",
+    "research"
+   ]
+  },
+  {
+   "name": "水産大学校",
+   "keinet": "5030",
+   "need": [
+    "licenses",
+    "careers",
+    "research"
+   ]
+  },
+  {
+   "name": "国立看護大学校",
+   "keinet": "",
+   "need": [
+    "licenses",
+    "careers",
+    "research"
+   ]
+  },
+  {
+   "name": "職業能力開発総合大学校",
+   "keinet": "5040",
+   "need": [
+    "licenses",
+    "careers",
+    "research"
+   ]
+  },
+  {
+   "name": "航空保安大学校",
+   "keinet": "",
+   "need": [
+    "licenses",
+    "careers",
+    "research"
+   ]
+  },
+  {
+   "name": "茨城県立農業大学校",
+   "keinet": "",
+   "need": [
+    "licenses",
+    "careers",
+    "research"
+   ]
+  },
+  {
+   "name": "航空大学校",
+   "keinet": "",
+   "need": [
+    "licenses",
+    "careers",
+    "research"
+   ]
+  },
+  {
+   "name": "職業能力開発大学校（ポリテクカレッジ）",
+   "keinet": "",
+   "need": [
+    "licenses",
+    "careers",
+    "research"
+   ]
+  },
+  {
+   "name": "税務大学校",
+   "keinet": "",
+   "need": [
+    "licenses",
+    "careers",
+    "research"
+   ]
+  },
+  {
+   "name": "国際ファッション専門職大学",
+   "keinet": "2102",
+   "need": [
+    "licenses",
+    "careers",
+    "research"
+   ]
+  },
+  {
+   "name": "情報経営イノベーション専門職大学（iU）",
+   "keinet": "2106",
+   "need": [
+    "licenses",
+    "careers",
+    "research"
+   ]
+  },
+  {
+   "name": "東京国際工科専門職大学",
+   "keinet": "2113",
+   "need": [
+    "licenses",
+    "careers",
+    "research"
+   ]
+  },
+  {
+   "name": "開志専門職大学",
+   "keinet": "2343",
+   "need": [
+    "licenses",
+    "careers",
+    "research"
+   ]
+  },
+  {
+   "name": "芸術文化観光専門職大学",
+   "keinet": "1628",
+   "need": [
+    "licenses",
+    "careers",
+    "research"
+   ]
+  },
+  {
+   "name": "静岡県立農林環境専門職大学",
+   "keinet": "1572",
+   "need": [
+    "licenses",
+    "careers",
+    "research"
+   ]
+  },
+  {
+   "name": "高知リハビリテーション専門職大学",
+   "keinet": "2690",
+   "need": [
+    "licenses",
+    "careers",
+    "research"
+   ]
+  },
+  {
+   "name": "東京保健医療専門職大学",
+   "keinet": "2114",
+   "need": [
+    "licenses",
+    "careers",
+    "research"
+   ]
+  },
+  {
+   "name": "名古屋国際工科専門職大学",
+   "keinet": "2113",
+   "need": [
+    "licenses",
+    "careers",
+    "research"
+   ]
+  }
  ],
- "enrich": [],
  "complete": false
 }
