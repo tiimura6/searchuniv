@@ -37,6 +37,9 @@ input[type=search]{flex:1;min-width:160px}
 .stage{perspective:1400px;margin:14px 0}
 .card{position:relative;width:100%;height:min(74vh,700px);min-height:420px;transform-style:preserve-3d;transition:transform .5s cubic-bezier(.2,.7,.2,1);cursor:pointer}
 .card.flipped{transform:rotateY(180deg)}
+.card.flipped .front{pointer-events:none;visibility:hidden;transition:visibility 0s .25s}
+.card:not(.flipped) .back{pointer-events:none;visibility:hidden;transition:visibility 0s .25s}
+.face{overscroll-behavior:contain;-webkit-overflow-scrolling:touch}
 .face{position:absolute;inset:0;backface-visibility:hidden;-webkit-backface-visibility:hidden;background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:26px 28px;display:flex;flex-direction:column;box-shadow:0 1px 2px rgba(0,0,0,.04),0 8px 24px rgba(0,0,0,.05);overflow:auto}
 .face::before{content:"";position:absolute;left:0;right:0;bottom:0;height:46%;background:var(--art) no-repeat center bottom/min(100%,560px) auto;opacity:.16;pointer-events:none;z-index:0}
 @media (prefers-color-scheme: dark){.face::before{opacity:.22;filter:invert(1)}}
@@ -589,7 +592,7 @@ function judge(input){
   saveMarks();
   const yours = input===null?"パス":esc(input||"未入力");
   $("resultLine").innerHTML = ok ? '<span class="good">⭕</span>' : '<span class="bad">❌</span><span class="yours">'+yours+'</span>';
-  $("card").classList.add("flipped");
+  $("card").classList.add("flipped"); $("back").scrollTop=0; if(document.activeElement) document.activeElement.blur();
   updateScore(); updateStat();
 }
 function updateScore(){ const t=score.ok+score.ng; $("score").textContent = t? ("正答 "+score.ok+"/"+t) : ""; }
@@ -650,7 +653,7 @@ function renderList(){
     deck.map(x=>'<tr><td>'+badge(x)+'<br><b>'+esc(x.name)+'</b><br>'+hpLink(x.name)+'</td><td>'+esc(x.type)+'<br>'+esc(x.pref)+'</td><td>'+x.feats.map(esc).join('<br>')+'</td><td style="min-width:240px">'+examBlock(x.name,true)+'</td><td>'+esc(x.memo)+'</td></tr>').join("")+'</tbody></table>';
 }
 
-function flip(){ if(!deck.length) return; if($("mode").value==="type" && !answered) return; $("card").classList.toggle("flipped"); }
+function flip(){ if(!deck.length) return; if($("mode").value==="type" && !answered) return; $("card").classList.toggle("flipped"); $("back").scrollTop=0; $("front").scrollTop=0; }
 function go(d){ if(!deck.length) return; if(d>0 && idx===deck.length-1){ shuffleOrder(); rebuild(); return; } idx=(idx+d+deck.length)%deck.length; render(); }
 function mark(v){ if(!deck.length) return; const x=deck[idx]; marks[x.id]=v; saveMarks();
   const f=$("filt").value;
