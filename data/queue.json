@@ -1,76 +1,6 @@
 {
  "add": [
   {
-   "name": "福島大学",
-   "type": "国立",
-   "pref": "福島県",
-   "hp": "http://www.fukushima-u.ac.jp/",
-   "cat": "national"
-  },
-  {
-   "name": "秋田大学",
-   "type": "国立",
-   "pref": "秋田県",
-   "hp": "http://www.akita-u.ac.jp/",
-   "cat": "national"
-  },
-  {
-   "name": "上越教育大学",
-   "type": "国立",
-   "pref": "新潟県",
-   "hp": "http://www.juen.ac.jp/",
-   "cat": "national"
-  },
-  {
-   "name": "名古屋工業大学",
-   "type": "国立",
-   "pref": "愛知県",
-   "hp": "http://www.nitech.ac.jp/",
-   "cat": "national"
-  },
-  {
-   "name": "富山大学",
-   "type": "国立",
-   "pref": "富山県",
-   "hp": "https://www.u-toyama.ac.jp/",
-   "cat": "national"
-  },
-  {
-   "name": "山梨大学",
-   "type": "国立",
-   "pref": "山梨県",
-   "hp": "http://www.yamanashi.ac.jp/",
-   "cat": "national"
-  },
-  {
-   "name": "岐阜大学",
-   "type": "国立",
-   "pref": "岐阜県",
-   "hp": "http://www.gifu-u.ac.jp/index.html",
-   "cat": "national"
-  },
-  {
-   "name": "愛知教育大学",
-   "type": "国立",
-   "pref": "愛知県",
-   "hp": "http://www.aichi-edu.ac.jp/",
-   "cat": "national"
-  },
-  {
-   "name": "浜松医科大学",
-   "type": "国立",
-   "pref": "静岡県",
-   "hp": "http://www.hama-med.ac.jp/",
-   "cat": "national"
-  },
-  {
-   "name": "福井大学",
-   "type": "国立",
-   "pref": "福井県",
-   "hp": "http://www.u-fukui.ac.jp/",
-   "cat": "national"
-  },
-  {
    "name": "三重大学",
    "type": "国立",
    "pref": "三重県",
@@ -4869,6 +4799,46 @@
   {
    "name": "旭川医科大学",
    "op": "add"
+  },
+  {
+   "name": "福島大学",
+   "op": "add"
+  },
+  {
+   "name": "秋田大学",
+   "op": "add"
+  },
+  {
+   "name": "上越教育大学",
+   "op": "add"
+  },
+  {
+   "name": "名古屋工業大学",
+   "op": "add"
+  },
+  {
+   "name": "富山大学",
+   "op": "add"
+  },
+  {
+   "name": "山梨大学",
+   "op": "add"
+  },
+  {
+   "name": "岐阜大学",
+   "op": "add"
+  },
+  {
+   "name": "愛知教育大学",
+   "op": "add"
+  },
+  {
+   "name": "浜松医科大学",
+   "op": "add"
+  },
+  {
+   "name": "福井大学",
+   "op": "add"
   }
  ],
  "failed": [],
@@ -6406,6 +6376,76 @@
     "careers",
     "kyotsu",
     "methods"
+   ]
+  },
+  {
+   "name": "福島大学",
+   "keinet": "1070",
+   "need": [
+    "methods_gap"
+   ]
+  },
+  {
+   "name": "秋田大学",
+   "keinet": "1060",
+   "need": [
+    "methods_gap"
+   ]
+  },
+  {
+   "name": "上越教育大学",
+   "keinet": "1185",
+   "need": [
+    "methods_gap"
+   ]
+  },
+  {
+   "name": "名古屋工業大学",
+   "keinet": "1255",
+   "need": [
+    "methods_gap"
+   ]
+  },
+  {
+   "name": "富山大学",
+   "keinet": "1190",
+   "need": [
+    "methods_gap"
+   ]
+  },
+  {
+   "name": "山梨大学",
+   "keinet": "1215",
+   "need": [
+    "methods_gap"
+   ]
+  },
+  {
+   "name": "岐阜大学",
+   "keinet": "1260",
+   "need": [
+    "methods_gap"
+   ]
+  },
+  {
+   "name": "愛知教育大学",
+   "keinet": "1240",
+   "need": [
+    "methods_gap"
+   ]
+  },
+  {
+   "name": "浜松医科大学",
+   "keinet": "1235",
+   "need": [
+    "methods_gap"
+   ]
+  },
+  {
+   "name": "福井大学",
+   "keinet": "1205",
+   "need": [
+    "methods_gap"
    ]
   }
  ],

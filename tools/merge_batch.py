@@ -43,15 +43,15 @@ def main(path):
         for k, v in (r.get('info') or {}).items():
             if k == 'methods_add' and isinstance(v, dict):
                 # 既存の入試方式に足りない行を足す（同じ区分・方式名の行は新しい内容で置き換える）
-                m = cur.setdefault('methods', {'list': []}); L = m.setdefault('list', [])
+                m = cur.setdefault('methods', {'list': []}); ML = m.setdefault('list', [])
                 for row in v.get('list') or []:
                     key = (row.get('kubun'), row.get('name'))
-                    idx = next((i for i, x in enumerate(L) if (x.get('kubun'), x.get('name')) == key), None)
-                    if idx is None: L.append(row)
-                    else: L[idx] = row
+                    idx = next((i for i, x in enumerate(ML) if (x.get('kubun'), x.get('name')) == key), None)
+                    if idx is None: ML.append(row)
+                    else: ML[idx] = row
                     filled += 1
                 order = {'一般': 0, '共テ利用': 1, '推薦': 2, '総合型': 3, 'その他': 4}
-                L.sort(key=lambda x: order.get(x.get('kubun'), 9))
+                ML.sort(key=lambda x: order.get(x.get('kubun'), 9))
                 for kk in ('summary', 'note', 'year'):
                     if v.get(kk): m[kk] = v[kk]
                 continue
