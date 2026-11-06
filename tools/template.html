@@ -77,6 +77,11 @@ details summary{cursor:pointer}
 .tabs a{font-size:13px;padding:6px 14px;border:1px solid var(--line);border-radius:999px;color:var(--ink);text-decoration:none;background:var(--panel)}
 .tabs a.on{background:var(--accent);border-color:var(--accent);color:#fff}
 @media (prefers-color-scheme: dark){.tabs a.on{color:#111}}
+.kind{display:inline-block;color:#fff;font-size:12px;font-weight:700;border-radius:6px;padding:2px 9px;letter-spacing:.05em;vertical-align:middle}
+.legend{position:absolute;left:10px;bottom:10px;display:flex;flex-wrap:wrap;gap:8px;background:color-mix(in srgb,var(--panel) 88%,transparent);border:1px solid var(--line);border-radius:8px;padding:5px 8px;font-size:11.5px}
+.legend span{display:flex;align-items:center;gap:4px}
+.legend i{width:9px;height:9px;border-radius:50%;display:inline-block}
+#jmap .dot{opacity:.9 !important}
 .zoomctl{position:absolute;right:10px;top:10px;display:flex;flex-direction:column;gap:6px}
 .zoomctl .btn{width:34px;height:34px;padding:0;font-size:18px;line-height:1}
 #jmap{touch-action:none;cursor:grab;user-select:none;-webkit-user-select:none}
@@ -182,6 +187,7 @@ ul.mini li{font-size:12.5px;margin:2px 0}
       <option value="name">大学名→特色</option>
       <option value="feat">特色→大学名</option>
     </select>
+    <select id="kindf" aria-label="種別"><option value="">全種別</option><option>国立</option><option>公立</option><option>私立</option><option>大学校</option><option>専門職大学</option></select>
     <select id="filt" aria-label="学習状況">
       <option value="all">すべて</option>
       <option value="unknown">まだ</option>
@@ -215,7 +221,7 @@ ul.mini li{font-size:12.5px;margin:2px 0}
   </div>
   <datalist id="unames"></datalist>
   <div class="mapwrap"><svg id="jmap" viewBox="170 0 490 450" role="img" aria-label="日本地図"><g id="prefs"></g><g id="dots"></g><g id="labels"></g><g id="hl"></g></svg>
-    <div class="zoomctl"><button class="btn" id="zin" title="拡大">＋</button><button class="btn" id="zout" title="縮小">−</button></div></div>
+    <div class="legend"><span><i style="background:#1f4e79"></i>国立</span><span><i style="background:#2a7f62"></i>公立</span><span><i style="background:#b0532a"></i>私立</span><span><i style="background:#4b5563"></i>大学校</span><span><i style="background:#b8860b"></i>専門職大学</span></div><div class="zoomctl"><button class="btn" id="zin" title="拡大">＋</button><button class="btn" id="zout" title="縮小">−</button></div></div>
   <div id="mpanel" class="mpanel"></div>
 </section>
 
@@ -361,6 +367,7 @@ function rebuild(keepPos){
   const f = $("filt").value;
   deck = order.map(i=>items[i]).filter(x=>{
     if(!activeCats.has(x.cat)) return false;
+    const kf=$("kindf").value; if(kf && kindOf(x)!==kf) return false;
     if(f==="unknown" && marks[x.id]!=="u") return false;
     if(f==="unseen" && marks[x.id]) return false;
     if(q){ const hay=(x.name+x.pref+x.type+x.feats.join("")+x.memo+CATS[x.cat].label).toLowerCase(); if(!hay.includes(q)) return false; }
@@ -371,7 +378,14 @@ function rebuild(keepPos){
   render(); renderList();
 }
 
-function badge(x){ return ''; }
+const KIND_COLOR={"国立":"#1f4e79","公立":"#2a7f62","私立":"#b0532a","大学校":"#4b5563","専門職大学":"#b8860b"};
+function kindOf(x){
+  if(x.cat==="daigakkou") return "大学校";
+  if(x.cat==="senmon"||/専門職大学/.test(x.name)) return "専門職大学";
+  if(/国立/.test(x.type)) return "国立"; if(/公立/.test(x.type)) return "公立"; return "私立";
+}
+function kindDetail(x){ const k=kindOf(x); if(k==="専門職大学") return /公立/.test(x.type)?"公立":"私立"; if(k==="大学校") return x.type; return ""; }
+function badge(x){ const k=kindOf(x); const d=kindDetail(x); return '<span class="kind" style="background:'+KIND_COLOR[k]+'">'+k+(k==="専門職大学"&&d?'（'+d+'）':'')+'</span>'; }
 function statusTag(x){ return marks[x.id]==="k"?'<span class="status k">✓ 覚えた</span>':marks[x.id]==="u"?'<span class="status u">● まだ</span>':''; }
 
 function render(){
@@ -519,7 +533,7 @@ function renderList(){
   const lv=$("listview");
   if(lv.style.display!=="block") return;
   lv.innerHTML = '<table><thead><tr><th>学校名</th><th>所在地</th><th>特色</th><th>入試</th><th>メモ</th></tr></thead><tbody>'+
-    deck.map(x=>'<tr><td><b>'+esc(x.name)+'</b><br>'+hpLink(x.name)+'</td><td>'+esc(x.type)+'<br>'+esc(x.pref)+'</td><td>'+x.feats.map(esc).join('<br>')+'</td><td style="min-width:240px">'+examBlock(x.name,true)+'</td><td>'+esc(x.memo)+'</td></tr>').join("")+'</tbody></table>';
+    deck.map(x=>'<tr><td>'+badge(x)+'<br><b>'+esc(x.name)+'</b><br>'+hpLink(x.name)+'</td><td>'+esc(x.type)+'<br>'+esc(x.pref)+'</td><td>'+x.feats.map(esc).join('<br>')+'</td><td style="min-width:240px">'+examBlock(x.name,true)+'</td><td>'+esc(x.memo)+'</td></tr>').join("")+'</tbody></table>';
 }
 
 function flip(){ if(!deck.length) return; if($("mode").value==="type" && !answered) return; $("card").classList.toggle("flipped"); }
@@ -531,7 +545,7 @@ function mark(v){ if(!deck.length) return; const x=deck[idx]; marks[x.id]=v; sav
 $("card").onclick=flip;
 $("next").onclick=()=>go(1); $("prev").onclick=()=>go(-1);
 $("markK").onclick=()=>mark("k"); $("markU").onclick=()=>mark("u");
-$("q").oninput=()=>rebuild(); $("filt").onchange=()=>rebuild(); $("mode").onchange=()=>render();
+$("q").oninput=()=>rebuild(); $("kindf").onchange=()=>rebuild(); $("filt").onchange=()=>rebuild(); $("mode").onchange=()=>render();
 function shuffleOrder(){ for(let i=order.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[order[i],order[j]]=[order[j],order[i]];} }
 $("toggleList").onclick=()=>{ const lv=$("listview"), cw=$("cardwrap"); const on = lv.style.display!=="block";
   lv.style.display=on?"block":"none"; cw.style.display=on?"none":"block"; $("toggleList").textContent=on?"カード":"一覧"; renderList(); };
@@ -569,7 +583,7 @@ function initMap(){
   const g=$("prefs"); g.innerHTML=MAP.prefs.map(p=>'<path d="'+p.d+'"/>').join("");
   const dg=$("dots");
   for(const x of items){ const pt=MAP.dots[x.name]; if(!pt) continue;
-    const c=document.createElementNS(SVGNS,"circle"); c.setAttribute("cx",pt[0]); c.setAttribute("cy",pt[1]); c.setAttribute("r",1.6); c.setAttribute("class","dot");
+    const c=document.createElementNS(SVGNS,"circle"); c.setAttribute("cx",pt[0]); c.setAttribute("cy",pt[1]); c.setAttribute("r",1.6); c.setAttribute("class","dot"); c.style.fill=KIND_COLOR[kindOf(x)];
     const t=document.createElementNS(SVGNS,"title"); t.textContent=x.name; c.appendChild(t);
     c.addEventListener("click",()=>selectUniv(x.name)); dg.appendChild(c); }
   requestAnimationFrame(()=>scaleMarks());
@@ -647,7 +661,7 @@ function selectUniv(name){
   hl.append(ring,dot,lb); scaleMarks();
   setVB([pt[0]-60,pt[1]-45,120,90]);
   const f=INFO[name]||{};
-  $("mpanel").innerHTML='<div class="box"><h3>'+esc(x.name)+'</h3><div class="meta">'+esc(x.type)+'｜'+esc(x.pref)+'</div>'+(f.access?'<div style="font-size:13px;margin-top:6px">'+esc(f.access)+'</div>':'')+'<div style="margin-top:8px;display:flex;gap:10px;align-items:center"><button class="btn" id="tocard">カードを見る</button>'+hpLink(x.name)+'</div></div>';
+  $("mpanel").innerHTML='<div class="box"><h3>'+badge(x)+' '+esc(x.name)+'</h3><div class="meta">'+esc(x.type)+'｜'+esc(x.pref)+'</div>'+(f.access?'<div style="font-size:13px;margin-top:6px">'+esc(f.access)+'</div>':'')+'<div style="margin-top:8px;display:flex;gap:10px;align-items:center"><button class="btn" id="tocard">カードを見る</button>'+hpLink(x.name)+'</div></div>';
   $("tocard").onclick=()=>openCard(x.id);
 }
 function openCard(id){
@@ -756,7 +770,7 @@ ${cands.map(c=>c.t).join("\n")}`;
     if(!list.length){ $("ai-status").textContent="おすすめを作れませんでした。条件を変えてもう一度お試しください。"; return; }
     $("ai-status").textContent="AIの提案です。最終判断は募集要項と本人の意思で。";
     $("ai-out").innerHTML=list.map((r,i)=>{ const x=items.find(y=>y.name===r.name);
-      return '<div class="airec"><h3><span class="rk">#'+(i+1)+'</span>'+esc(x.name)+'<span class="sub2">'+esc(x.type)+'｜'+esc(x.pref)+'</span></h3><div class="why">'+esc(String(r.reason||""))+'</div>'+
+      return '<div class="airec"><h3><span class="rk">#'+(i+1)+'</span>'+badge(x)+esc(x.name)+'<span class="sub2">'+esc(x.type)+'｜'+esc(x.pref)+'</span></h3><div class="why">'+esc(String(r.reason||""))+'</div>'+
       (Array.isArray(r.points)&&r.points.length?'<ul class="pts">'+r.points.slice(0,4).map(p=>'<li>'+esc(String(p))+'</li>').join("")+'</ul>':'')+
       (r.caution?'<div class="caut">注意：'+esc(String(r.caution))+'</div>':'')+
       '<div class="acts"><button class="btn" data-card="'+x.id+'">カードを見る</button><button class="btn" data-map="'+esc(x.name)+'">地図で見る</button>'+hpLink(x.name)+'</div></div>'; }).join("");
