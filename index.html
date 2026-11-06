@@ -104,7 +104,7 @@ body.wide main,body.wide header{max-width:1320px}
 .sfilt select{font-family:inherit;font-size:12.5px;border:1px solid var(--line);border-radius:8px;padding:6px 8px;background:var(--panel);color:var(--ink)}
 .chk{font-size:12.5px;display:flex;align-items:center;gap:4px;cursor:pointer}
 .mcount{font-size:12px;color:var(--muted)}
-.mresults{display:flex;flex-direction:column;gap:4px}
+.mresults{display:flex;flex-direction:column;gap:4px;max-height:min(60vh,520px);overflow-y:auto;overscroll-behavior:contain}
 .ritem{display:flex;align-items:center;gap:8px;text-align:left;border:1px solid var(--line);background:var(--panel);color:var(--ink);border-radius:8px;padding:7px 10px;cursor:pointer;font-family:inherit}
 .ritem:hover{border-color:var(--accent)}
 .ritem .rn{font-weight:700;font-size:14px}
@@ -806,13 +806,14 @@ function scaleMarks(){
   placeLabels();
 }
 // 重ならない範囲で大学名を表示（優先度順・4方向の候補位置）。出せなかった点は件数の丸にまとめる（2段階配置）
+let MATCH=null;
 function placeLabels(){
   const g=$("labels"); if(!g) return; g.innerHTML="";
   const svg=$("jmap"); const W=svg.clientWidth||800; const ppu=W/curVB[2];
   const fs=(innerWidth<600?16:19)/ppu, pad=2/ppu, k=curVB[2]/HOME_VB[2], r=2.2*k;
   const sel=$("mq").value; const [vx,vy,vw,vh]=curVB;
   const inView=([cx,cy])=>cx>=vx&&cx<=vx+vw&&cy>=vy&&cy<=vy+vh;
-  const order=items.filter(x=>MAP.dots[x.name]&&x.name!==sel&&inView(MAP.dots[x.name])).sort((a,b)=>(PRIO[a.cat]??20)-(PRIO[b.cat]??20));
+  const order=items.filter(x=>MAP.dots[x.name]&&x.name!==sel&&inView(MAP.dots[x.name])&&(!MATCH||MATCH.has(x.name))).sort((a,b)=>(PRIO[a.cat]??20)-(PRIO[b.cat]??20));
   const cell=(innerWidth<600?80:90)/ppu;
   // 表示枠（はみ出し防止）と、凡例・ズームボタンの下を避ける
   const m=svg.getScreenCTM(); const inv=m?m.inverse():null;
@@ -915,6 +916,7 @@ function selectUniv(name){
   hl.append(ring,dot,lb); scaleMarks();
   setVB([pt[0]-60,pt[1]-45,120,90]);
   $("mpanel").innerHTML='<div class="box"><div class="ph"><h3>'+badge(x)+' '+esc(x.name)+'</h3>'+hpLink(x.name)+'</div><div class="meta">'+metaPrefix(x)+esc(x.pref)+'</div><ul class="pfeat">'+x.feats.map(f=>'<li>'+esc(f)+'</li>').join("")+'</ul>'+guideBlock(x)+cardNews(x.name)+infoBlock(x.name)+examBlock(x.name)+'<div style="margin-top:8px"><button class="btn" id="tocard">カードで見る</button></div></div>';
+  MATCH=null;
   $("mresults").innerHTML=""; $("mcount").textContent=""; document.querySelectorAll("#jmap .dot.dim").forEach(c=>c.classList.remove("dim"));
   if(window.matchMedia("(max-width: 860px)").matches) $("mpanel").scrollIntoView({behavior:"smooth",block:"start"});
   $("tocard").onclick=()=>openCard(x.id);
@@ -941,8 +943,11 @@ function passFilters(x){
   return true;
 }
 function filtersActive(){ return $("f-kyoka").value||$("f-rl").value||$("f-nopri").checked; }
+const KIND_Q={"国立":["国立"],"国立大学":["国立"],"公立":["公立"],"公立大学":["公立"],"国公立":["国立","公立"],"国公立大学":["国立","公立"],"私立":["私立"],"私立大学":["私立"],"大学校":["大学校"],"専門職大学":["専門職大学"],"専門職":["専門職大学"]};
 function searchUnivs(q){
   q=q.trim();
+  const kq=KIND_Q[q.normalize("NFKC").replace(/\s/g,"")];
+  if(kq) return items.filter(x=>kq.includes(kindOf(x))&&passFilters(x)).sort((a,b)=>(PRIO[a.cat]??20)-(PRIO[b.cat]??20)||a.pref.localeCompare(b.pref,"ja"));
   if(!q){ return filtersActive()? items.filter(passFilters).sort((a,b)=>(PRIO[a.cat]??20)-(PRIO[b.cat]??20)) : []; }
   const a=nz(q), h=toHira(q.normalize("NFKC")).replace(/\s/g,"");
   return items.map(x=>{
@@ -960,17 +965,26 @@ function searchUnivs(q){
 }
 function renderResults(){
   const list=searchUnivs($("mq").value);
-  $("mcount").textContent=($("mq").value.trim()||filtersActive())?(list.length?list.length+"件":"該当なし"):"";
-  $("mresults").innerHTML=list.slice(0,40).map(x=>'<button class="ritem" data-n="'+esc(x.name)+'">'+badge(x)+'<span class="rn">'+esc(x.name)+'</span><span class="rp">'+esc(x.pref)+'</span></button>').join("");
+  const qv=$("mq").value.trim(), kyF=$("f-kyoka").value||$("f-rl").value;
+  const noK=kyF?items.filter(x=>!((INFO[x.name]||{}).kyotsu||{}).kamoku).length:0;
+  let msg=(qv||filtersActive())?(list.length?list.length+"件"+(list.length>200?"（上位200件を表示）":""):"該当なし"):"";
+  if(!list.length&&qv&&filtersActive()) msg+="：検索語「"+qv+"」と絞り込みの両方に合う学校がありません。検索語を消すと絞り込みだけで探せます。";
+  if(noK) msg+="（共テ情報が未登録の"+noK+"校は対象外）";
+  $("mcount").textContent=msg;
+  $("mresults").innerHTML=list.slice(0,200).map(x=>'<button class="ritem" data-n="'+esc(x.name)+'">'+badge(x)+'<span class="rn">'+esc(x.name)+'</span><span class="rp">'+esc(x.pref)+'</span></button>').join("");
   $("mresults").querySelectorAll(".ritem").forEach(b=>b.onclick=()=>selectUniv(b.dataset.n));
   // 地図上で候補の点を強調
   const set=new Set(list.map(x=>x.name));
   document.querySelectorAll("#jmap .dot").forEach(c=>{ const n=c.querySelector("title").textContent; c.classList.toggle("dim", set.size>0 && !set.has(n)); });
+  MATCH=set.size?set:null; if($("labels")&&$("labels").childNodes.length+document.querySelectorAll("#jmap .dot").length) placeLabels();
 }
 $("mq").addEventListener("input",()=>{ $("mpanel").innerHTML=""; renderResults(); });
-["f-kyoka","f-rl","f-nopri"].forEach(id=>$(id).addEventListener("change",()=>{ $("mpanel").innerHTML=""; renderResults(); }));
+["f-kyoka","f-rl","f-nopri"].forEach(id=>$(id).addEventListener("change",()=>{
+  // 学校を選んだ後は検索欄にその校名が入っているので、絞り込みを変えたら校名を消して一覧に戻す
+  if($("mpanel").innerHTML&&items.some(x=>x.name===$("mq").value)) $("mq").value="";
+  $("mpanel").innerHTML=""; renderResults(); }));
 $("mq").addEventListener("keydown",e=>{ if(e.key==="Enter"){ const l=searchUnivs($("mq").value); if(l.length) selectUniv(l[0].name); } });
-$("mreset").onclick=()=>{ $("f-kyoka").value=""; $("f-rl").value=""; $("f-nopri").checked=false; $("hl").innerHTML=""; $("mpanel").innerHTML=""; $("mresults").innerHTML=""; $("mcount").textContent=""; $("mq").value=""; document.querySelectorAll("#jmap .dot.dim").forEach(c=>c.classList.remove("dim")); setVB(HOME_VB); };
+$("mreset").onclick=()=>{ MATCH=null; $("f-kyoka").value=""; $("f-rl").value=""; $("f-nopri").checked=false; $("hl").innerHTML=""; $("mpanel").innerHTML=""; $("mresults").innerHTML=""; $("mcount").textContent=""; $("mq").value=""; document.querySelectorAll("#jmap .dot.dim").forEach(c=>c.classList.remove("dim")); setVB(HOME_VB); };
 window.addEventListener("hashchange",()=>{ if(location.hash==="#map") requestAnimationFrame(()=>scaleMarks()); });
 
 
