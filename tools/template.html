@@ -107,6 +107,19 @@ body.wide main,body.wide header{max-width:1320px}
 .kchk i{display:inline-block;width:9px;height:9px;border-radius:50%}
 .mcount{font-size:12px;color:var(--muted)}
 .nocards .cardtab,.nocards [data-card],.nocards #tocard{display:none !important}
+.partners{border:1px solid var(--line);border-radius:10px;padding:10px 12px;margin:8px 0}
+.wmap{width:100%;height:auto;display:block;margin:6px 0;background:color-mix(in srgb,var(--accent) 5%,transparent);border-radius:8px}
+.wbase{fill:var(--line);stroke:var(--panel);stroke-width:.3}
+.wf path{fill:var(--accent);stroke:var(--panel);stroke-width:3}
+.wl{fill:none;stroke:var(--accent);stroke-opacity:.35;stroke-width:.6}
+.wd{fill:#b0532a;fill-opacity:.85;stroke:#fff;stroke-width:.6}
+.wjp{fill:var(--ng);stroke:#fff;stroke-width:1}
+.plist{margin:4px 0;padding-left:1.1em;font-size:12.5px;columns:2;column-gap:18px}
+.plist li{break-inside:avoid;margin:1px 0}
+.pex{font-size:12.5px;margin:4px 0}
+@media (max-width:600px){.plist{columns:1}}
+.depts div{margin:1px 0}
+.depts b{font-weight:600}
 .ritem .rf{display:block;font-size:11px;color:var(--muted);font-weight:400}
 .mresults{display:flex;flex-direction:column;gap:4px;max-height:min(60vh,520px);overflow-y:auto;overscroll-behavior:contain}
 .ritem{display:flex;align-items:center;gap:8px;text-align:left;border:1px solid var(--line);background:var(--panel);color:var(--ink);border-radius:8px;padding:7px 10px;cursor:pointer;font-family:inherit}
@@ -117,9 +130,11 @@ body.wide main,body.wide header{max-width:1320px}
 .mpanel .ph{display:flex;align-items:baseline;justify-content:space-between;gap:8px;flex-wrap:wrap}
 .pfeat{margin:8px 0;padding-left:1.2em;font-size:13.5px}
 #jmap .dot.off{display:none}
-#munip{fill:none;stroke:var(--muted);stroke-opacity:.45;stroke-width:.7px;vector-effect:non-scaling-stroke;pointer-events:none}
+#jmap.moving .ulbl,#jmap.moving .clus,#jmap.moving #mlabels{opacity:.35}
+.munip{fill:none;stroke:var(--muted);stroke-opacity:.45;stroke-width:.7px;vector-effect:non-scaling-stroke;pointer-events:none}
+#mlabels .clbl.cap{font-weight:700;fill:var(--ink)}
 #mlabels .clbl{fill:var(--muted);pointer-events:none;paint-order:stroke;stroke:var(--bg);stroke-width:2.5px;stroke-linejoin:round;vector-effect:non-scaling-stroke}
-.dot.dim{opacity:.15 !important}
+.dot.dim{display:none}
 #jmap{max-height:calc(100vh - 150px)}
 @media (max-width:860px){.sgrid{grid-template-columns:1fr}.sleft{max-height:none;overflow:visible}.sright{position:static}}
 .mapwrap{position:relative;background:var(--panel);border:1px solid var(--line);border-radius:16px;overflow:hidden;margin-top:6px}
@@ -297,7 +312,7 @@ ul.mini li{font-size:12.5px;margin:2px 0}
       <div id="mpanel" class="mpanel"></div>
     </div>
     <div class="sright">
-      <div class="mapwrap"><svg id="jmap" viewBox="170 0 490 450" role="img" aria-label="日本地図"><g id="prefs"></g><g id="muni" transform="scale(0.1)"><path id="munip"/></g><g id="mlabels"></g><g id="dots"></g><g id="labels"></g><g id="hl"></g></svg>
+      <div class="mapwrap"><svg id="jmap" viewBox="170 0 490 450" role="img" aria-label="日本地図"><g id="prefs"></g><g id="muni" transform="scale(0.1)"></g><g id="mlabels"></g><g id="dots"></g><g id="labels"></g><g id="hl"></g></svg>
         <div class="legend"><span><i style="background:#1f4e79"></i>国立</span><span><i style="background:#2a7f62"></i>公立</span><span><i style="background:#b0532a"></i>私立</span><span><i style="background:#4b5563"></i>大学校</span><span><i style="background:#b8860b"></i>専門職大学</span></div><div class="zoomctl"><button class="btn" id="zin" title="拡大">＋</button><button class="btn" id="zout" title="縮小">−</button></div></div>
     </div>
   </div>
@@ -373,7 +388,8 @@ function infoBlock(name){
   const scale=[st&&st.count?("学生 約"+Number(st.count).toLocaleString("ja-JP")+"人"+(st.note?"（"+esc(st.note)+"）":"")):"", f.founded?esc(f.founded):""].filter(Boolean).join("／");
   if(scale) rows.push(["規模・創立",scale]);
   if(f.access) rows.push(["アクセス",esc(f.access)]);
-  if(f.faculties && f.faculties.length) rows.push(["学部",'<span class="facs">'+f.faculties.map(x=>'<span>'+esc(x)+'</span>').join("")+'</span>']);
+  if(Array.isArray(f.departments)&&f.departments.length) rows.push(["学部・学科",'<div class="depts">'+f.departments.map(g=>'<div><b>'+esc(g.f)+'</b>'+((g.d||[]).length?'：'+(g.d||[]).map(esc).join("、"):'')+'</div>').join("")+'</div>']);
+  else if(f.faculties && f.faculties.length) rows.push(["学部",'<span class="facs">'+f.faculties.map(x=>'<span>'+esc(x)+'</span>').join("")+'</span>']);
   if(f.research && f.research.length) rows.push(["有名な研究分野",'<span class="facs">'+f.research.map(x=>'<span>'+esc(x)+'</span>').join("")+'</span>']);
   if(f.licenses && f.licenses.length) rows.push(["取得できる資格",'<span class="facs">'+f.licenses.map(x=>'<span>'+esc(x)+'</span>').join("")+'</span>']);
   if(f.careers) rows.push(["主な進路",esc(f.careers)]);
@@ -477,6 +493,8 @@ let order = items.map(x=>x.id);
 let deck = []; let idx = 0;
 
 const $ = id => document.getElementById(id);
+// 学部・学科の文字列一覧（学科データがあれば「学部 学科」、なければ学部名）
+function facList(f){ const D=f.departments; if(Array.isArray(D)&&D.length){ const out=[]; for(const g of D){ const ds=g.d||[]; if(!ds.length) out.push(g.f); else for(const d of ds) out.push(g.f+" "+d); } return out; } return f.faculties||[]; }
 function esc(s){ return String(s??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c])); }
 
 function buildChips(){
@@ -541,11 +559,11 @@ function render(){
   const memo = guideBlock(x);
   if($("mode").value==="name"){
     $("front").innerHTML = '<div>'+badge(x)+statusTag(x)+'</div><div class="uname">'+esc(x.name)+'</div><div class="meta">'+metaPrefix(x)+esc(x.pref)+'</div>';
-    $("back").innerHTML = '<div>'+badge(x)+statusTag(x)+'</div><h2>'+esc(x.name)+hpLink(x.name)+'</h2>'+featList+memo+cardNews(x.name)+infoBlock(x.name)+examBlock(x.name);
+    $("back").innerHTML = '<div>'+badge(x)+statusTag(x)+'</div><h2>'+esc(x.name)+hpLink(x.name)+'</h2>'+featList+memo+cardNews(x.name)+infoBlock(x.name)+partnerBlock(x.name)+examBlock(x.name);
   } else if($("mode").value==="type"){
     const masked = x.feats.map(f=>maskName(f,x.name));
     $("front").innerHTML = '<div>'+badge(x)+statusTag(x)+'</div>'+'<form id="ansForm" class="ans" onclick="event.stopPropagation()"><div class="blank">（<input id="ans" type="text" autocomplete="off" aria-label="学校名">）<span>'+esc(suffixOf(x.name))+'</span></div><div class="ansbtns"><button class="btn big" type="submit">回答</button><button class="btn big" type="button" id="giveup">パス</button></div></form>'+'<div class="qfront" style="width:100%"><ul>'+masked.map(f=>'<li>'+esc(f)+'</li>').join("")+'</ul><div class="meta">'+metaPrefix(x)+esc(maskName(x.pref,x.name))+'</div>'+frontFacts(x)+hintHTML(x)+'</div>';
-    $("back").innerHTML = '<div>'+badge(x)+statusTag(x)+'</div><div id="resultLine" class="judge" style="text-align:center"></div><div class="uname" style="text-align:center;margin-top:4px">'+esc(x.name)+'</div><div class="meta" style="text-align:center">'+esc(x.pref)+' '+hpLink(x.name)+'</div><div style="margin-top:14px">'+memo+cardNews(x.name)+infoBlock(x.name)+examBlock(x.name)+'</div>';
+    $("back").innerHTML = '<div>'+badge(x)+statusTag(x)+'</div><div id="resultLine" class="judge" style="text-align:center"></div><div class="uname" style="text-align:center;margin-top:4px">'+esc(x.name)+'</div><div class="meta" style="text-align:center">'+esc(x.pref)+' '+hpLink(x.name)+'</div><div style="margin-top:14px">'+memo+cardNews(x.name)+infoBlock(x.name)+partnerBlock(x.name)+examBlock(x.name)+'</div>';
     answered=false; wireHints(x);
     $("ansForm").onsubmit=e=>{e.preventDefault(); judge($("ans").value);};
     $("giveup").onclick=e=>{e.stopPropagation(); judge(null);};
@@ -553,7 +571,7 @@ function render(){
   } else {
     const masked = x.feats.map(f=>maskName(f,x.name));
     $("front").innerHTML = '<div>'+badge(x)+statusTag(x)+'</div><div class="qfront"><ul>'+masked.map(f=>'<li>'+esc(f)+'</li>').join("")+'</ul><div class="meta">'+esc(x.type)+'</div>'+frontFacts(x)+hintHTML(x)+'</div>';
-    $("back").innerHTML = '<div>'+badge(x)+statusTag(x)+'</div><div class="uname" style="text-align:center">'+esc(x.name)+'</div><div class="meta" style="text-align:center">'+esc(x.pref)+' '+hpLink(x.name)+'</div><div style="margin-top:14px">'+memo+cardNews(x.name)+infoBlock(x.name)+examBlock(x.name)+'</div>';
+    $("back").innerHTML = '<div>'+badge(x)+statusTag(x)+'</div><div class="uname" style="text-align:center">'+esc(x.name)+'</div><div class="meta" style="text-align:center">'+esc(x.pref)+' '+hpLink(x.name)+'</div><div style="margin-top:14px">'+memo+cardNews(x.name)+infoBlock(x.name)+partnerBlock(x.name)+examBlock(x.name)+'</div>';
     wireHints(x);
   }
 }
@@ -740,16 +758,50 @@ function scaleMarks(){
   document.querySelectorAll("#jmap .dot").forEach(c=>c.setAttribute("r",(2.2*k).toFixed(3)));
   document.querySelectorAll("#jmap .hl,#jmap .pulse").forEach(c=>c.setAttribute("r",(3.4*k).toFixed(3)));
   const l=document.querySelector("#jmap .lbl"); if(l){ l.setAttribute("font-size",(14*k).toFixed(3)); const c=document.querySelector("#jmap .hl"); l.setAttribute("x",(+c.getAttribute("cx")+5*k).toFixed(2)); l.setAttribute("y",(+c.getAttribute("cy")+3*k).toFixed(2)); }
-  placeLabels();
+  scheduleLabels();
 }
+// 拡大・移動の最中は名前を並べ直さず、止まってから1回だけ並べ直す（軽くするため）
+let labelTimer=0;
+function scheduleLabels(){ clearTimeout(labelTimer); $("jmap").classList.add("moving"); labelTimer=setTimeout(()=>{ $("jmap").classList.remove("moving"); placeLabels(); },110); }
 // 重ならない範囲で大学名を表示（優先度順・4方向の候補位置）。出せなかった点は件数の丸にまとめる（2段階配置）
 let MATCH=null;
+
+// ===== 海外協定校（世界地図）=====
+const WORLD=/*WORLD*/null/*END_WORLD*/;
+let WORLD_READY=false;
+function worldDefs(){ if(WORLD_READY||!WORLD) return; WORLD_READY=true;
+  const d=document.createElement("div"); d.style.cssText="position:absolute;width:0;height:0;overflow:hidden";
+  d.innerHTML='<svg><defs><g id="worldbase" transform="scale(0.1)">'+WORLD.c.map(c=>'<path d="'+c[2]+'"/>').join("")+'</g></defs></svg>';
+  document.body.appendChild(d); }
+const WPATH=WORLD?Object.fromEntries(WORLD.c.map(c=>[c[0],c[2]])):{};
+function isoOf(name){ if(!WORLD) return null; const n=String(name||"").normalize("NFKC").trim(); return WORLD.ja[n]||WORLD.ja[n.replace(/(合衆国|共和国|王国|連邦|人民共和国)$/,"")]||null; }
+function partnerBlock(name){
+  const P=(INFO[name]||{}).partners; if(!P||!(P.countries||[]).length||!WORLD) return "";
+  worldDefs();
+  const cs=P.countries.map(c=>({...c,iso:isoOf(c.c)})).sort((a,b)=>(b.n||0)-(a.n||0));
+  const mx=Math.max(...cs.map(c=>c.n||1)), jp=WORLD.cent.JPN;
+  let fills="", lines="", dots="";
+  for(const c of cs){ if(!c.iso) continue; const pt=WORLD.cent[c.iso]; const a=0.25+0.6*Math.sqrt((c.n||1)/mx);
+    if(WPATH[c.iso]) fills+='<path transform="scale(0.1)" d="'+WPATH[c.iso]+'" style="fill-opacity:'+a.toFixed(2)+'"><title>'+esc(c.c)+' '+(c.n||"")+'校</title></path>';
+    if(pt){ const r=2+5*Math.sqrt((c.n||1)/mx); const mxp=(pt[0]+jp[0])/2, myp=Math.min(pt[1],jp[1])-Math.abs(pt[0]-jp[0])*0.18;
+      lines+='<path class="wl" d="M'+jp[0]+' '+jp[1]+'Q'+mxp.toFixed(1)+' '+myp.toFixed(1)+' '+pt[0]+' '+pt[1]+'"/>';
+      dots+='<circle class="wd" cx="'+pt[0]+'" cy="'+pt[1]+'" r="'+r.toFixed(1)+'"><title>'+esc(c.c)+' '+(c.n||"")+'校'+((c.u||[]).length?'：'+esc(c.u.join("、")):'')+'</title></circle>'; } }
+  const svg='<svg class="wmap" viewBox="0 0 '+WORLD.w+' '+WORLD.h+'" role="img" aria-label="協定校のある国"><use href="#worldbase" class="wbase"/><g class="wf">'+fills+'</g><g>'+lines+'</g>'+dots+'<circle class="wjp" cx="'+jp[0]+'" cy="'+jp[1]+'" r="3.5"><title>'+esc(name)+'</title></circle></svg>';
+  const nC=cs.length, top=cs.slice(0,8);
+  const list='<ul class="plist">'+top.map(c=>'<li><b>'+esc(c.c)+'</b> '+(c.n?c.n+'校':'')+((c.u||[]).length?'<span class="sub2">（'+esc(c.u.slice(0,3).join("、"))+(c.u.length>3||((c.n||0)>3)?' など':'')+'）</span>':'')+'</li>').join("")+'</ul>'+(nC>8?'<details><summary>ほか'+(nC-8)+'か国・地域</summary><ul class="plist">'+cs.slice(8).map(c=>'<li><b>'+esc(c.c)+'</b> '+(c.n?c.n+'校':'')+'</li>').join("")+'</ul></details>':'');
+  const head=[P.total?('協定校 '+P.total+'校'):'', nC+'か国・地域', P.kind||'', P.asof?('（'+P.asof+'時点）'):''].filter(Boolean).join('　');
+  return '<div class="partners"><div class="exam-h">海外の協定校（留学先）</div><div class="sub2">'+esc(head)+'</div>'+svg+(P.exchange?'<div class="pex">'+esc(P.exchange)+'</div>':'')+list+(P.note?'<div class="enote">※'+esc(P.note)+'</div>':'')+'</div>';
+}
 // ===== 市町村（拡大したときに境界線と名前を出す）=====
 const MUNI=/*MUNI*/null/*END_MUNI*/;
 function placeCities(boxes, ppu, inView, outside){
   const g=$("mlabels"); g.innerHTML=""; const w=curVB[2];
-  const mp=$("munip"); if(MUNI&&mp&&!mp.getAttribute("d")) mp.setAttribute("d",MUNI.mesh);
-  $("muni").style.display=(MUNI&&w<=260)?"":"none";
+  const mg=$("muni"), show=MUNI&&w<=260; mg.style.display=show?"":"none";
+  if(show){ const [vx,vy,vw,vh]=curVB;
+    for(const m of MUNI.mesh){ const on=!(m.b[2]<vx||m.b[0]>vx+vw||m.b[3]<vy||m.b[1]>vy+vh);
+      let el=mg.querySelector('[data-p="'+m.p+'"]');
+      if(on&&!el){ el=document.createElementNS(SVGNS,"path"); el.setAttribute("data-p",m.p); el.setAttribute("class","munip"); el.setAttribute("d",m.d); mg.appendChild(el); }
+      if(el) el.style.display=on?"":"none"; } }
   if(!MUNI||w>140) return;
   // 拡大するほど多く、人口の多い市町村から
   const limit=w>90?25:w>45?70:w>20?150:260;
@@ -757,12 +809,15 @@ function placeCities(boxes, ppu, inView, outside){
   for(const x of items){ const pt=MAP.dots[x.name]; if(pt&&inView(pt)&&kindVisible(x)) B.push([pt[0]-3/ppu,pt[1]-3/ppu,6/ppu,6/ppu]); }
   const hit=b=>outside(b)||B.some(o=>!(b[0]+b[2]<o[0]||b[0]>o[0]+o[2]||b[1]+b[3]<o[1]||b[1]>o[1]+o[3]));
   let n=0;
-  for(const [name,cx,cy] of MUNI.labels){
+  for(const [name,cx,cy,,cap] of MUNI.labels){
     if(n>=limit) break; if(!inView([cx,cy])) continue;
-    const tw=name.length*fs*1.02, th=fs*1.2, b=[cx-tw/2,cy-th/2,tw,th];
-    if(hit(b)) continue; B.push(b); n++;
-    const el=document.createElementNS(SVGNS,"text"); el.setAttribute("x",cx.toFixed(2)); el.setAttribute("y",(cy+fs*0.35).toFixed(2));
-    el.setAttribute("text-anchor","middle"); el.setAttribute("font-size",fs.toFixed(3)); el.setAttribute("class","clbl"); el.textContent=name; g.appendChild(el);
+    const f2=cap?fs*1.15:fs, tw=name.length*f2*1.05, th=f2*1.2;
+    // 中央に置けなければ（大学名と重なるなど）、県庁所在地は上下左右にずらして置く
+    const offs=cap?[[0,0],[0,th*1.1],[0,-th*1.1],[tw*0.6,0],[-tw*0.6,0],[0,th*2.2],[0,-th*2.2]]:[[0,0],[0,th*1.1]];
+    let pos=null; for(const [ox,oy] of offs){ const b=[cx+ox-tw/2,cy+oy-th/2,tw,th]; if(!hit(b)){ pos=[cx+ox,cy+oy]; B.push(b); break; } }
+    if(!pos) continue; n++;
+    const el=document.createElementNS(SVGNS,"text"); el.setAttribute("x",pos[0].toFixed(2)); el.setAttribute("y",(pos[1]+f2*0.35).toFixed(2));
+    el.setAttribute("text-anchor","middle"); el.setAttribute("font-size",fs.toFixed(3)); el.setAttribute("class","clbl"+(cap?" cap":"")); if(cap) el.setAttribute("font-size",(fs*1.15).toFixed(3)); el.textContent=name; g.appendChild(el);
   }
 }
 function placeLabels(){
@@ -874,9 +929,9 @@ function selectUniv(name){
   const lb=document.createElementNS(SVGNS,"text"); lb.setAttribute("x",pt[0]+4); lb.setAttribute("y",pt[1]+1.8); lb.setAttribute("class","lbl"); lb.textContent=x.name;
   hl.append(ring,dot,lb); scaleMarks();
   setVB([pt[0]-60,pt[1]-45,120,90]);
-  $("mpanel").innerHTML='<div class="box"><div class="ph"><h3>'+badge(x)+' '+esc(x.name)+'</h3>'+hpLink(x.name)+'</div><div class="meta">'+metaPrefix(x)+esc(x.pref)+'</div><ul class="pfeat">'+x.feats.map(f=>'<li>'+esc(f)+'</li>').join("")+'</ul>'+guideBlock(x)+'<div class="newsslot">'+cardNews(x.name)+'</div>'+infoBlock(x.name)+examBlock(x.name)+'<div style="margin-top:8px"><button class="btn" id="tocard">カードで見る</button></div></div>';
+  $("mpanel").innerHTML='<div class="box"><div class="ph"><h3>'+badge(x)+' '+esc(x.name)+'</h3>'+hpLink(x.name)+'</div><div class="meta">'+metaPrefix(x)+esc(x.pref)+'</div><ul class="pfeat">'+x.feats.map(f=>'<li>'+esc(f)+'</li>').join("")+'</ul>'+guideBlock(x)+'<div class="newsslot">'+cardNews(x.name)+'</div>'+infoBlock(x.name)+partnerBlock(x.name)+examBlock(x.name)+'<div style="margin-top:8px"><button class="btn" id="tocard">カードで見る</button></div></div>';
   MATCH=null; LAST_LIST=[]; CUR_SEL=name; renderSearchNews();
-  $("mresults").innerHTML=""; $("mcount").textContent=""; document.querySelectorAll("#jmap .dot.dim").forEach(c=>c.classList.remove("dim"));
+  $("mresults").innerHTML=""; $("mcount").textContent=""; if(!filtersActive()) document.querySelectorAll("#jmap .dot.dim").forEach(c=>c.classList.remove("dim"));
   if(window.matchMedia("(max-width: 860px)").matches) $("mpanel").scrollIntoView({behavior:"smooth",block:"start"});
   $("tocard").onclick=()=>openCard(x.id);
 }
@@ -933,7 +988,7 @@ const KEI={
  "福祉":/福祉/,
  "大学校（防衛・公務など）":/防衛|海上保安|気象|航空|税務|職業能力|水産大学校|看護大学校/};
 function keiHits(x,label){ const re=KEI[label], f=INFO[x.name]||{};
-  const fac=(f.faculties||[]).filter(t=>re.test(t));
+  const fac=facList(f).filter(t=>re.test(t));
   if(fac.length) return fac;
   // 学部名に出ない学科・課程（例：心理学類）は、資格・研究分野の記載から拾う
   const sub=[...(f.licenses||[]).filter(t=>!/^(教員免許|教職|中・高|学芸員|司書)/.test(t)),...(f.research||[])].filter(t=>re.test(t));
@@ -959,8 +1014,9 @@ function searchUnivs(q){
     if((ALIASES[x.name]||[]).some(al=>nz(al).includes(a))) sc+=30;
     if(x.pref.includes(q)) sc+=20;
     if(kindOf(x)===q) sc+=15;
-    if((f.faculties||[]).some(t=>t.includes(q))) sc+=12;
-    else if(words.length&&(f.faculties||[]).some(t=>words.some(w=>w.length>=2&&t.includes(w)))) sc+=9;
+    const FL=facList(f);
+    if(FL.some(t=>t.includes(q))) sc+=12;
+    else if(words.length&&FL.some(t=>words.some(w=>w.length>=2&&t.includes(w)))) sc+=9;
     const etc=(f.research||[]).join("")+(f.licenses||[]).join("")+(f.careers||"");
     if(etc.includes(q)) sc+=6; else if(words.some(w=>w.length>=2&&etc.includes(w))) sc+=4;
     const kl=Object.keys(KEI).find(k=>k.split(/[・（）]/).includes(q)); if(kl&&keiHits(x,kl).length) sc+=8;
@@ -979,8 +1035,8 @@ function renderResults(){
   if(noM) msg+="（入試方式が未登録の"+noM+"校は対象外）";
   $("mcount").textContent=msg;
   const kv=$("f-kei").value;
-  const facHit=x=>{ const f=INFO[x.name]||{}; let h=kv?keiHits(x,kv):[]; if(!h.length&&qv&&!isCorrect(qv,x.name)&&!nz(x.name).includes(nz(qv))){ const ws=[qv,...(typeof concepts==="function"?concepts(qv).flat():[])].filter(w=>w.length>=2); h=(f.faculties||[]).filter(t=>ws.some(w=>t.includes(w))); }
-    return h.length?'<span class="rf">'+esc(h.slice(0,2).map(t=>/学部|学群|学域|学環|学院|学類$/.test(t.replace(/（.*$/,""))?t.replace(/（.*$/,""):t).join("・"))+'</span>':""; };
+  const facHit=x=>{ const f=INFO[x.name]||{}; let h=kv?keiHits(x,kv):[]; if(!h.length&&qv&&!isCorrect(qv,x.name)&&!nz(x.name).includes(nz(qv))){ const ws=[qv,...(typeof concepts==="function"?concepts(qv).flat():[])].filter(w=>w.length>=2); h=facList(f).filter(t=>ws.some(w=>t.includes(w))); }
+    return h.length?'<span class="rf">'+esc(h.slice(0,3).map(t=>/学部|学群|学域|学環|学院|学類$/.test(t.replace(/（.*$/,""))?t.replace(/（.*$/,""):t).join("・")+(h.length>3?" ほか":""))+'</span>':""; };
   $("mresults").innerHTML=list.slice(0,200).map(x=>'<button class="ritem" data-n="'+esc(x.name)+'">'+badge(x)+'<span class="rn">'+esc(x.name)+facHit(x)+'</span><span class="rp">'+esc(x.pref)+'</span></button>').join("");
   $("mresults").querySelectorAll(".ritem").forEach(b=>b.onclick=()=>selectUniv(b.dataset.n));
   LAST_LIST=(qv||filtersActive())?list:[]; renderSearchNews();
@@ -1092,7 +1148,7 @@ function concepts(tok){ // 「英語教員」→［英語］［教員］のよ�
   return used.map(k=>[...new Set([k,...SYN[k]])]);
 }
 function expand(tok){ const out=new Set([tok]); for(const [k,v] of Object.entries(SYN)) if(tok.includes(k)) v.forEach(w=>out.add(w)); const st=tok.replace(/(士|師|者|家|学|員)$/,""); if(st.length>=2) out.add(st); return [...out]; }
-function fieldsOf(x){ const f=INFO[x.name]||{}; return {faculties:f.faculties||[],licenses:f.licenses||[],careers:f.careers?[f.careers]:[],research:f.research||[],feats:x.feats||[],memo:x.memo?[x.memo]:[]}; }
+function fieldsOf(x){ const f=INFO[x.name]||{}; return {faculties:facList(f),licenses:f.licenses||[],careers:f.careers?[f.careers]:[],research:f.research||[],feats:x.feats||[],memo:x.memo?[x.memo]:[]}; }
 function lo(v){ const m=String(v||"").match(/[\d.]+/); return m?parseFloat(m[0]):null; }
 function hi(v){ const m=String(v||"").match(/[\d.]+/g); return m?parseFloat(m[m.length-1]):null; }
 function studentInput(){
