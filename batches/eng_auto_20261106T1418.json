@@ -1,0 +1,238 @@
+[
+ {
+  "name": "茨城県立医療大学",
+  "info": {
+   "eng": {
+    "year": "2027年度入試",
+    "rows": [],
+    "summary": "記載なし（利用しないとは限らない）",
+    "note": "旺文社パスナビの英検等利用入試ページで保健医療学部は「情報がありません」。最新の募集要項で確認"
+   },
+   "sources": [
+    "https://passnavi.obunsha.co.jp/univ/1035/eiken/"
+   ]
+  }
+ },
+ {
+  "name": "大阪公立大学",
+  "info": {
+   "eng": {
+    "year": "2027年度入試",
+    "rows": [
+     {
+      "kubun": "推薦",
+      "name": "学校推薦型選抜",
+      "use": "出願資格",
+      "level": "英検2級",
+      "grade": "2級",
+      "tests": "英検",
+      "faculties": "現代システム科学域 心理学類",
+      "note": ""
+     },
+     {
+      "kubun": "推薦",
+      "name": "学校推薦型選抜",
+      "use": "出願資格",
+      "level": "英検2級",
+      "grade": "2級",
+      "tests": "英検",
+      "faculties": "獣医学部 獣医学科",
+      "note": "出願・加点の両方の表記あり。書類で優遇"
+     },
+     {
+      "kubun": "総合型",
+      "name": "総合型選抜",
+      "use": "加点",
+      "level": "英検3級（級に応じて評価）",
+      "grade": "3級",
+      "tests": "英検",
+      "faculties": "工学部 海洋システム工学科",
+      "note": "個別試験で英検の級に応じて評価（100と表記）"
+     }
+    ],
+    "summary": "推薦・総合型の一部学科（心理学類・獣医学科・海洋システム工学科）で英検を出願資格や加点に使う。他の学部は掲載なし。",
+    "note": "パスナビ掲載分。一般選抜の外部試験利用は掲載なし"
+   },
+   "sources": [
+    "https://passnavi.obunsha.co.jp/univ/1205/eiken/"
+   ]
+  }
+ },
+ {
+  "name": "国際教養大学",
+  "info": {
+   "eng": {
+    "year": "2026年度入試（パスナビ掲載）",
+    "rows": [
+     {
+      "kubun": "一般",
+      "name": "一般選抜（A・B・C日程）",
+      "use": "みなし満点",
+      "level": "英検準1級／TEAP 360／TEAP CBT 760／IELTS 6.5",
+      "grade": "準1級",
+      "tests": "英検・TEAP・TEAP CBT・IELTS",
+      "faculties": "国際教養学部",
+      "note": "共通テストの英語を満点に換算（パスナビ表記「換算満点」）"
+     },
+     {
+      "kubun": "推薦",
+      "name": "学校推薦型選抜",
+      "use": "出願資格",
+      "level": "英検2級／TEAP 230／TEAP CBT 430／IELTS 5.5",
+      "grade": "2級",
+      "tests": "英検・TEAP・TEAP CBT・IELTS",
+      "faculties": "国際教養学部",
+      "note": ""
+     },
+     {
+      "kubun": "総合型",
+      "name": "総合選抜型Ⅰ",
+      "use": "出願資格",
+      "level": "英検準1級／TEAP 300／TEAP CBT 700／IELTS 6.0",
+      "grade": "準1級",
+      "tests": "英検・TEAP・TEAP CBT・IELTS",
+      "faculties": "国際教養学部",
+      "note": ""
+     }
+    ],
+    "summary": "一般選抜は英検準1級等で共テ英語を満点換算。推薦は英検2級等、総合選抜型Ⅰは準1級等が出願資格。",
+    "note": "TEAP CBTは成績有効期限2026年3月31日まで。最新の募集要項で確認"
+   },
+   "sources": [
+    "https://passnavi.obunsha.co.jp/univ/1025/eiken/"
+   ]
+  }
+ },
+ {
+  "name": "会津大学",
+  "info": {
+   "eng": {
+    "year": "2027年度入試",
+    "rows": [],
+    "summary": "記載なし（利用しないとは限らない）",
+    "note": "旺文社パスナビの英検等利用入試ページでコンピュータ理工学部は「情報がありません」。最新の募集要項で確認"
+   },
+   "sources": [
+    "https://passnavi.obunsha.co.jp/univ/1028/eiken/"
+   ]
+  }
+ },
+ {
+  "name": "福島県立医科大学",
+  "info": {
+   "eng": {
+    "year": "2027年度入試",
+    "rows": [],
+    "summary": "記載なし（利用しないとは限らない）",
+    "note": "旺文社パスナビの英検等利用入試ページで医・看護・保健科学部とも「情報がありません」。最新の募集要項で確認"
+   },
+   "sources": [
+    "https://passnavi.obunsha.co.jp/univ/1030/eiken/"
+   ]
+  }
+ },
+ {
+  "name": "新潟大学",
+  "info": {
+   "eng": {
+    "year": "2027年度入試",
+    "rows": [
+     {
+      "kubun": "総合型",
+      "name": "総合型選抜",
+      "use": "出願資格",
+      "level": "英検準2級／TEAP 135／IELTS 4.0",
+      "grade": "準2級",
+      "tests": "英検・TEAP・IELTS",
+      "faculties": "工学部 工学科",
+      "note": ""
+     }
+    ],
+    "summary": "パスナビ掲載は工学部の総合型（英検準2級等が出願基準）のみ。他学部は掲載なし。",
+    "note": "最新の募集要項で確認"
+   },
+   "sources": [
+    "https://passnavi.obunsha.co.jp/univ/0350/eiken/"
+   ]
+  }
+ },
+ {
+  "name": "金沢大学",
+  "info": {
+   "eng": {
+    "year": "2027年度入試（一般選抜は2026年度の情報）",
+    "rows": [
+     {
+      "kubun": "一般",
+      "name": "一般選抜（前期）",
+      "use": "得点換算",
+      "level": "英検CSE 1950（2級以上のCSEスコアで判定）／TEAP 225（RLWS）／IELTS 4.0",
+      "cse": 1950,
+      "grade": "2級",
+      "tests": "英検・TEAP・IELTS",
+      "faculties": "全学域・学類（文系・理系一括を含む）",
+      "note": "共テ英語の得点に換算して優遇。共テ「英語」の受験は必須。2026年度の情報"
+     },
+     {
+      "kubun": "総合型",
+      "name": "総合型選抜Ⅱ・学校推薦型選抜Ⅱほか",
+      "use": "得点換算",
+      "level": "英検CSE 1950（2級以上のCSEスコアで判定）／TEAP 225／IELTS 4.0",
+      "cse": 1950,
+      "grade": "2級",
+      "tests": "英検・TEAP・IELTS",
+      "faculties": "多数の学類（融合・人間社会・理工・医薬保健）",
+      "note": "共テ英語の得点に換算して優遇"
+     },
+     {
+      "kubun": "総合型",
+      "name": "総合型選抜Ⅰ",
+      "use": "得点換算",
+      "level": "スコア指定なし（英検は2級以上のCSEスコアで判定）",
+      "tests": "英検・TEAP・IELTS",
+      "faculties": "人間社会学域 経済学類",
+      "note": "換算欄「100」"
+     },
+     {
+      "kubun": "総合型",
+      "name": "総合型選抜Ⅰ",
+      "use": "加点",
+      "level": "スコア指定なし",
+      "tests": "英検・TEAP・IELTS",
+      "faculties": "人間社会学域 国際学類",
+      "note": "出願書類で優遇"
+     }
+    ],
+    "summary": "一般前期と共テを課す推薦・総合型で、英検CSE1950等以上を共テ英語の得点に換算して優遇する。",
+    "note": "最新の募集要項で確認"
+   },
+   "sources": [
+    "https://passnavi.obunsha.co.jp/univ/0400/eiken/"
+   ]
+  }
+ },
+ {
+  "name": "信州大学",
+  "info": {
+   "eng": {
+    "year": "2026年度入試（パスナビ掲載）",
+    "rows": [
+     {
+      "kubun": "推薦",
+      "name": "学校推薦型選抜Ⅰ",
+      "use": "出願資格",
+      "level": "CEFR B2相当以上",
+      "tests": "英検・英検CSE・TEAP・TEAP CBT・IELTS",
+      "faculties": "経法学部（応用経済学科・総合法律学科）",
+      "note": "CEFRの詳細は募集要項参照"
+     }
+    ],
+    "summary": "パスナビ掲載は経法学部の推薦Ⅰ（CEFR B2相当以上が出願資格）のみ。他学部は掲載なし。",
+    "note": "最新の募集要項で確認"
+   },
+   "sources": [
+    "https://passnavi.obunsha.co.jp/univ/0450/eiken/"
+   ]
+  }
+ }
+]

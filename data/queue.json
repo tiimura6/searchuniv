@@ -1,57 +1,12 @@
 {
  "add": [
   {
-   "name": "鹿屋体育大学",
-   "type": "国立",
-   "pref": "鹿児島県",
-   "hp": "http://www.nifs-k.ac.jp/",
-   "cat": "national"
-  },
-  {
-   "name": "政策研究大学院大学（大学院のみ）",
-   "type": "国立",
-   "pref": "東京都",
-   "hp": "https://www.grips.ac.jp/",
-   "cat": "national",
-   "note": "高校からの通常の進学先ではない（括弧内の理由）。カードの memo にもその旨を書く。"
-  },
-  {
    "name": "総合研究大学院大学（大学院のみ）",
    "type": "国立",
    "pref": "神奈川県",
    "hp": "https://www.soken.ac.jp/",
    "cat": "national",
    "note": "高校からの通常の進学先ではない（括弧内の理由）。カードの memo にもその旨を書く。"
-  },
-  {
-   "name": "北陸先端科学技術大学院大学（大学院のみ）",
-   "type": "国立",
-   "pref": "石川県",
-   "hp": "https://www.jaist.ac.jp/",
-   "cat": "national",
-   "note": "高校からの通常の進学先ではない（括弧内の理由）。カードの memo にもその旨を書く。"
-  },
-  {
-   "name": "奈良先端科学技術大学院大学（大学院のみ）",
-   "type": "国立",
-   "pref": "奈良県",
-   "hp": "https://www.naist.jp/",
-   "cat": "national",
-   "note": "高校からの通常の進学先ではない（括弧内の理由）。カードの memo にもその旨を書く。"
-  },
-  {
-   "name": "室蘭工業大学",
-   "type": "国立",
-   "pref": "北海道",
-   "hp": "http://www.muroran-it.ac.jp/index-j.html",
-   "cat": "national"
-  },
-  {
-   "name": "三重大学",
-   "type": "国立",
-   "pref": "三重県",
-   "hp": "http://www.mie-u.ac.jp/",
-   "cat": "national"
   },
   {
    "name": "名寄市立大学",
@@ -4807,6 +4762,62 @@
   {
    "name": "東京藝術大学",
    "op": "enrich"
+  },
+  {
+   "name": "鹿屋体育大学",
+   "op": "add"
+  },
+  {
+   "name": "政策研究大学院大学（大学院のみ）",
+   "op": "add"
+  },
+  {
+   "name": "北陸先端科学技術大学院大学（大学院のみ）",
+   "op": "add"
+  },
+  {
+   "name": "奈良先端科学技術大学院大学（大学院のみ）",
+   "op": "add"
+  },
+  {
+   "name": "室蘭工業大学",
+   "op": "add"
+  },
+  {
+   "name": "三重大学",
+   "op": "add"
+  },
+  {
+   "name": "茨城県立医療大学",
+   "op": "enrich"
+  },
+  {
+   "name": "大阪公立大学",
+   "op": "enrich"
+  },
+  {
+   "name": "国際教養大学",
+   "op": "enrich"
+  },
+  {
+   "name": "会津大学",
+   "op": "enrich"
+  },
+  {
+   "name": "福島県立医科大学",
+   "op": "enrich"
+  },
+  {
+   "name": "新潟大学",
+   "op": "enrich"
+  },
+  {
+   "name": "金沢大学",
+   "op": "enrich"
+  },
+  {
+   "name": "信州大学",
+   "op": "enrich"
   }
  ],
  "failed": [],
@@ -4823,65 +4834,10 @@
   "三重大学": 1,
   "国立看護大学校": 1,
   "電動モビリティシステム専門職大学": 1,
-  "北海道教育大学": 1
+  "北海道教育大学": 1,
+  "総合研究大学院大学（大学院のみ）": 1
  },
  "enrich": [
-  {
-   "name": "茨城県立医療大学",
-   "keinet": "1519",
-   "need": [
-    "eng"
-   ]
-  },
-  {
-   "name": "大阪公立大学",
-   "keinet": "1615",
-   "need": [
-    "eng"
-   ]
-  },
-  {
-   "name": "国際教養大学",
-   "keinet": "1521",
-   "need": [
-    "eng"
-   ]
-  },
-  {
-   "name": "会津大学",
-   "keinet": "1518",
-   "need": [
-    "eng"
-   ]
-  },
-  {
-   "name": "福島県立医科大学",
-   "keinet": "1515",
-   "need": [
-    "eng"
-   ]
-  },
-  {
-   "name": "新潟大学",
-   "keinet": "1180",
-   "need": [
-    "eng"
-   ]
-  },
-  {
-   "name": "金沢大学",
-   "keinet": "1200",
-   "need": [
-    "eng"
-   ]
-  },
-  {
-   "name": "信州大学",
-   "keinet": "1225",
-   "need": [
-    "eng"
-   ]
-  },
   {
    "name": "静岡大学",
    "keinet": "1230",
@@ -7741,6 +7697,75 @@
   {
    "name": "鹿児島大学",
    "keinet": "1465",
+   "need": [
+    "eng"
+   ]
+  },
+  {
+   "name": "室蘭工業大学",
+   "keinet": "1035",
+   "need": [
+    "kyotsu",
+    "methods"
+   ]
+  },
+  {
+   "name": "室蘭工業大学",
+   "keinet": "1035",
+   "need": [
+    "partners",
+    "extra"
+   ]
+  },
+  {
+   "name": "室蘭工業大学",
+   "keinet": "1035",
+   "need": [
+    "eng"
+   ]
+  },
+  {
+   "name": "三重大学",
+   "keinet": "1265",
+   "need": [
+    "kyotsu",
+    "methods"
+   ]
+  },
+  {
+   "name": "三重大学",
+   "keinet": "1265",
+   "need": [
+    "partners",
+    "extra"
+   ]
+  },
+  {
+   "name": "三重大学",
+   "keinet": "1265",
+   "need": [
+    "eng"
+   ]
+  },
+  {
+   "name": "鹿屋体育大学",
+   "keinet": "1470",
+   "need": [
+    "kyotsu",
+    "methods"
+   ]
+  },
+  {
+   "name": "鹿屋体育大学",
+   "keinet": "1470",
+   "need": [
+    "partners",
+    "extra"
+   ]
+  },
+  {
+   "name": "鹿屋体育大学",
+   "keinet": "1470",
    "need": [
     "eng"
    ]

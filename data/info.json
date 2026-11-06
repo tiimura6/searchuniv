@@ -14101,7 +14101,8 @@
 "https://search.keinet.ne.jp/1519/outline/department",
 "https://search.keinet.ne.jp/1519/outline/licential",
 "https://search.keinet.ne.jp/1519/outline/admission_employment",
-"https://search.keinet.ne.jp/1519/general/exam_subject"
+"https://search.keinet.ne.jp/1519/general/exam_subject",
+"https://passnavi.obunsha.co.jp/univ/1035/eiken/"
 ],
 "licenses": [
 "看護師国家試験受験資格",
@@ -14200,7 +14201,8 @@
 "fdiff": "2026-11-06",
 "schedule": "2026-11-06",
 "money": "2026-11-06",
-"departments": "2026-11-06"
+"departments": "2026-11-06",
+"eng": "2026-11-06"
 },
 "schedule": {
 "year": "2027年度入試（出典に年度明記なし。共通テスト1/16・17の日程による）",
@@ -14222,6 +14224,12 @@
 "admission": 282000,
 "annual": 553500,
 "note": "入学金は県内者282,000円・県外者564,000円（県外者の4年合計2,778,000円）。学外実習費・保険料・抗体価検査/ワクチン費用等が別途必要"
+},
+"eng": {
+"year": "2027年度入試",
+"rows": [],
+"summary": "記載なし（利用しないとは限らない）",
+"note": "旺文社パスナビの英検等利用入試ページで保健医療学部は「情報がありません」。最新の募集要項で確認"
 }
 },
 "大阪公立大学": {
@@ -14272,7 +14280,8 @@
 "https://search.keinet.ne.jp/1615/outline/licential",
 "https://search.keinet.ne.jp/1615/outline/admission_employment",
 "https://www.omu.ac.jp/info/news/entry-05767.html",
-"https://search.keinet.ne.jp/1615/general/exam_subject"
+"https://search.keinet.ne.jp/1615/general/exam_subject",
+"https://passnavi.obunsha.co.jp/univ/1205/eiken/"
 ],
 "licenses": [
 "教員免許（中・高 各教科）",
@@ -14906,7 +14915,8 @@
 "fdiff": "2026-11-06",
 "schedule": "2026-11-06",
 "money": "2026-11-06",
-"departments": "2026-11-06"
+"departments": "2026-11-06",
+"eng": "2026-11-06"
 },
 "schedule": {
 "year": "2027年度入試",
@@ -14969,6 +14979,43 @@
 "what": "給付。経済的理由で十分に勉学できない学生に10万円を1回、約50名"
 }
 ]
+},
+"eng": {
+"year": "2027年度入試",
+"rows": [
+{
+"kubun": "推薦",
+"name": "学校推薦型選抜",
+"use": "出願資格",
+"level": "英検2級",
+"grade": "2級",
+"tests": "英検",
+"faculties": "現代システム科学域 心理学類",
+"note": ""
+},
+{
+"kubun": "推薦",
+"name": "学校推薦型選抜",
+"use": "出願資格",
+"level": "英検2級",
+"grade": "2級",
+"tests": "英検",
+"faculties": "獣医学部 獣医学科",
+"note": "出願・加点の両方の表記あり。書類で優遇"
+},
+{
+"kubun": "総合型",
+"name": "総合型選抜",
+"use": "加点",
+"level": "英検3級（級に応じて評価）",
+"grade": "3級",
+"tests": "英検",
+"faculties": "工学部 海洋システム工学科",
+"note": "個別試験で英検の級に応じて評価（100と表記）"
+}
+],
+"summary": "推薦・総合型の一部学科（心理学類・獣医学科・海洋システム工学科）で英検を出願資格や加点に使う。他の学部は掲載なし。",
+"note": "パスナビ掲載分。一般選抜の外部試験利用は掲載なし"
 }
 },
 "国際教養大学": {
@@ -15005,7 +15052,8 @@
 "https://web.aiu.ac.jp/wp-content/uploads/2025/09/Commencement-Address_President.pdf",
 "https://search.keinet.ne.jp/1521/outline/licential",
 "https://search.keinet.ne.jp/1521/outline/admission_employment",
-"https://search.keinet.ne.jp/1521/general/exam_subject"
+"https://search.keinet.ne.jp/1521/general/exam_subject",
+"https://passnavi.obunsha.co.jp/univ/1025/eiken/"
 ],
 "licenses": [
 "高等学校教諭一種（英語）"
@@ -15113,7 +15161,8 @@
 "fdiff": "2026-11-06",
 "schedule": "2026-11-06",
 "money": "2026-11-06",
-"departments": "2026-11-06"
+"departments": "2026-11-06",
+"eng": "2026-11-06"
 },
 "schedule": {
 "year": "2027年度入試",
@@ -15166,6 +15215,43 @@
 "what": "給付。国内外の国際会議・研究発表で発表する学生に国内2万円・海外5万円以内"
 }
 ]
+},
+"eng": {
+"year": "2026年度入試（パスナビ掲載）",
+"rows": [
+{
+"kubun": "一般",
+"name": "一般選抜（A・B・C日程）",
+"use": "みなし満点",
+"level": "英検準1級／TEAP 360／TEAP CBT 760／IELTS 6.5",
+"grade": "準1級",
+"tests": "英検・TEAP・TEAP CBT・IELTS",
+"faculties": "国際教養学部",
+"note": "共通テストの英語を満点に換算（パスナビ表記「換算満点」）"
+},
+{
+"kubun": "推薦",
+"name": "学校推薦型選抜",
+"use": "出願資格",
+"level": "英検2級／TEAP 230／TEAP CBT 430／IELTS 5.5",
+"grade": "2級",
+"tests": "英検・TEAP・TEAP CBT・IELTS",
+"faculties": "国際教養学部",
+"note": ""
+},
+{
+"kubun": "総合型",
+"name": "総合選抜型Ⅰ",
+"use": "出願資格",
+"level": "英検準1級／TEAP 300／TEAP CBT 700／IELTS 6.0",
+"grade": "準1級",
+"tests": "英検・TEAP・TEAP CBT・IELTS",
+"faculties": "国際教養学部",
+"note": ""
+}
+],
+"summary": "一般選抜は英検準1級等で共テ英語を満点換算。推薦は英検2級等、総合選抜型Ⅰは準1級等が出願資格。",
+"note": "TEAP CBTは成績有効期限2026年3月31日まで。最新の募集要項で確認"
 }
 },
 "会津大学": {
@@ -15200,7 +15286,8 @@
 "https://search.keinet.ne.jp/1518/outline/campus",
 "https://search.keinet.ne.jp/1518/outline/department",
 "https://u-aizu.ac.jp/files/2025jigyouhouokusyo.pdf",
-"https://search.keinet.ne.jp/1518/general/exam_subject"
+"https://search.keinet.ne.jp/1518/general/exam_subject",
+"https://passnavi.obunsha.co.jp/univ/1028/eiken/"
 ],
 "kyotsu": {
 "kamoku": "コンピュータ理工Aは1教科1科目（理科か情報）、Bは理型（6教科8科目相当）",
@@ -15419,7 +15506,8 @@
 "fdiff": "2026-11-06",
 "schedule": "2026-11-06",
 "money": "2026-11-06",
-"departments": "2026-11-06"
+"departments": "2026-11-06",
+"eng": "2026-11-06"
 },
 "fdiff": {
 "year": "2027年度入試用",
@@ -15462,6 +15550,12 @@
 "admission": 282000,
 "annual": 520800,
 "note": "入学金は県内者282,000円・県外者564,000円。初年度は別に設備/実習/諸会費等73,130円・保険料3,300円"
+},
+"eng": {
+"year": "2027年度入試",
+"rows": [],
+"summary": "記載なし（利用しないとは限らない）",
+"note": "旺文社パスナビの英検等利用入試ページでコンピュータ理工学部は「情報がありません」。最新の募集要項で確認"
 }
 },
 "福島県立医科大学": {
@@ -15498,7 +15592,8 @@
 "https://search.keinet.ne.jp/1515/outline/campus",
 "https://search.keinet.ne.jp/1515/outline/department",
 "https://www.fmu.ac.jp/en/news/",
-"https://search.keinet.ne.jp/1515/general/exam_subject"
+"https://search.keinet.ne.jp/1515/general/exam_subject",
+"https://passnavi.obunsha.co.jp/univ/1030/eiken/"
 ],
 "kyotsu": {
 "kamoku": "医学科・看護学科は理型、保健科学部は5教科7科目・4〜5教科5科目",
@@ -15657,7 +15752,8 @@
 "fdiff": "2026-11-06",
 "schedule": "2026-11-06",
 "money": "2026-11-06",
-"departments": "2026-11-06"
+"departments": "2026-11-06",
+"eng": "2026-11-06"
 },
 "schedule": {
 "year": "2027年度入試",
@@ -15697,6 +15793,12 @@
 "admission": 282000,
 "annual": 535800,
 "note": "入学金は県内者282,000円、県外者は医846,000円・保健科学/看護564,000円。初年度は別に設備/実習/諸会費等・保険料・後援会費（医：52,000円・72,000円・300,000円、保健科学：7,000円・52,000円・150,000円、看護：5,000円・52,000円・100,000円）。テキスト代・実習経費等別途"
+},
+"eng": {
+"year": "2027年度入試",
+"rows": [],
+"summary": "記載なし（利用しないとは限らない）",
+"note": "旺文社パスナビの英検等利用入試ページで医・看護・保健科学部とも「情報がありません」。最新の募集要項で確認"
 }
 },
 "新潟大学": {
@@ -15740,7 +15842,8 @@
 "https://search.keinet.ne.jp/1180/outline/campus",
 "https://search.keinet.ne.jp/1180/outline/department",
 "https://www.jsps.go.jp/file/storage/j-press-releases_2024/20250124_PressRelease.pdf",
-"https://search.keinet.ne.jp/1180/general/exam_subject"
+"https://search.keinet.ne.jp/1180/general/exam_subject",
+"https://passnavi.obunsha.co.jp/univ/0350/eiken/"
 ],
 "kyotsu": {
 "kamoku": "6教科8科目（多くの学部）、教育学部の一部は6教科7科目・6教科6科目・選択型",
@@ -16177,7 +16280,8 @@
 "fdiff": "2026-11-06",
 "schedule": "2026-11-06",
 "money": "2026-11-06",
-"departments": "2026-11-06"
+"departments": "2026-11-06",
+"eng": "2026-11-06"
 },
 "fdiff": {
 "year": "2027年度入試用",
@@ -16527,6 +16631,23 @@
 "what": "貸与（無利子）。家計事情で一時的に学資支払いが困難な学生に5万〜10万円を1回"
 }
 ]
+},
+"eng": {
+"year": "2027年度入試",
+"rows": [
+{
+"kubun": "総合型",
+"name": "総合型選抜",
+"use": "出願資格",
+"level": "英検準2級／TEAP 135／IELTS 4.0",
+"grade": "準2級",
+"tests": "英検・TEAP・IELTS",
+"faculties": "工学部 工学科",
+"note": ""
+}
+],
+"summary": "パスナビ掲載は工学部の総合型（英検準2級等が出願基準）のみ。他学部は掲載なし。",
+"note": "最新の募集要項で確認"
 }
 },
 "金沢大学": {
@@ -16567,7 +16688,8 @@
 "https://search.keinet.ne.jp/1200/outline/department",
 "https://www.eurekalert.org/news-releases/1104866",
 "https://ridb.kanazawa-u.ac.jp/public/detail.php?id=1983",
-"https://search.keinet.ne.jp/1200/general/exam_subject"
+"https://search.keinet.ne.jp/1200/general/exam_subject",
+"https://passnavi.obunsha.co.jp/univ/0400/eiken/"
 ],
 "kyotsu": {
 "kamoku": "多くの学類は文型・理型、文系一括は2〜3教科3〜4科目、理系一括は2教科3科目",
@@ -16952,7 +17074,8 @@
 "fdiff": "2026-11-06",
 "schedule": "2026-11-06",
 "money": "2026-11-06",
-"departments": "2026-11-06"
+"departments": "2026-11-06",
+"eng": "2026-11-06"
 },
 "schedule": {
 "year": "2027年度入試",
@@ -16981,6 +17104,53 @@
 "what": "給付。大学公式海外派遣プログラム等で海外の大学に留学する学生に月額8万〜12万円（1〜12か月）"
 }
 ]
+},
+"eng": {
+"year": "2027年度入試（一般選抜は2026年度の情報）",
+"rows": [
+{
+"kubun": "一般",
+"name": "一般選抜（前期）",
+"use": "得点換算",
+"level": "英検CSE 1950（2級以上のCSEスコアで判定）／TEAP 225（RLWS）／IELTS 4.0",
+"cse": 1950,
+"grade": "2級",
+"tests": "英検・TEAP・IELTS",
+"faculties": "全学域・学類（文系・理系一括を含む）",
+"note": "共テ英語の得点に換算して優遇。共テ「英語」の受験は必須。2026年度の情報"
+},
+{
+"kubun": "総合型",
+"name": "総合型選抜Ⅱ・学校推薦型選抜Ⅱほか",
+"use": "得点換算",
+"level": "英検CSE 1950（2級以上のCSEスコアで判定）／TEAP 225／IELTS 4.0",
+"cse": 1950,
+"grade": "2級",
+"tests": "英検・TEAP・IELTS",
+"faculties": "多数の学類（融合・人間社会・理工・医薬保健）",
+"note": "共テ英語の得点に換算して優遇"
+},
+{
+"kubun": "総合型",
+"name": "総合型選抜Ⅰ",
+"use": "得点換算",
+"level": "スコア指定なし（英検は2級以上のCSEスコアで判定）",
+"tests": "英検・TEAP・IELTS",
+"faculties": "人間社会学域 経済学類",
+"note": "換算欄「100」"
+},
+{
+"kubun": "総合型",
+"name": "総合型選抜Ⅰ",
+"use": "加点",
+"level": "スコア指定なし",
+"tests": "英検・TEAP・IELTS",
+"faculties": "人間社会学域 国際学類",
+"note": "出願書類で優遇"
+}
+],
+"summary": "一般前期と共テを課す推薦・総合型で、英検CSE1950等以上を共テ英語の得点に換算して優遇する。",
+"note": "最新の募集要項で確認"
 }
 },
 "信州大学": {
@@ -17026,7 +17196,8 @@
 "https://search.keinet.ne.jp/1225/outline/department",
 "https://www.shinshu-u.ac.jp/school/sc/pdf/学環説明会_信学会長野校.pdf",
 "https://endomoribu.shinshu-u.ac.jp/profile.html",
-"https://search.keinet.ne.jp/1225/general/exam_subject"
+"https://search.keinet.ne.jp/1225/general/exam_subject",
+"https://passnavi.obunsha.co.jp/univ/0450/eiken/"
 ],
 "kyotsu": {
 "kamoku": "人文学部前期は3〜4教科3〜4科目、経法学部は5〜6教科7科目、教育学部は選択型",
@@ -17630,7 +17801,8 @@
 "fdiff": "2026-11-06",
 "schedule": "2026-11-06",
 "money": "2026-11-06",
-"departments": "2026-11-06"
+"departments": "2026-11-06",
+"eng": "2026-11-06"
 },
 "schedule": {
 "year": "2027年度入試",
@@ -17667,6 +17839,22 @@
 "what": "給付・予約採用型。世帯年収基準内で学校推薦型・総合型・一般前期に合格した場合に入学を確約できる高校生に10万〜40万円を1回、20名"
 }
 ]
+},
+"eng": {
+"year": "2026年度入試（パスナビ掲載）",
+"rows": [
+{
+"kubun": "推薦",
+"name": "学校推薦型選抜Ⅰ",
+"use": "出願資格",
+"level": "CEFR B2相当以上",
+"tests": "英検・英検CSE・TEAP・TEAP CBT・IELTS",
+"faculties": "経法学部（応用経済学科・総合法律学科）",
+"note": "CEFRの詳細は募集要項参照"
+}
+],
+"summary": "パスナビ掲載は経法学部の推薦Ⅰ（CEFR B2相当以上が出願資格）のみ。他学部は掲載なし。",
+"note": "最新の募集要項で確認"
 }
 },
 "静岡大学": {
@@ -70474,6 +70662,317 @@
 "https://search.keinet.ne.jp/1465",
 "https://search.keinet.ne.jp/1465/outline/department",
 "https://search.keinet.ne.jp/1465/general/border_rate"
+]
+},
+"室蘭工業大学": {
+"difficulty": {
+"hensachi": "35.0",
+"kyotei": "35%〜56%",
+"year": "2027年度入試用"
+},
+"_checked": {
+"difficulty": "2026-11-06",
+"faculties": "2026-11-06",
+"departments": "2026-11-06",
+"students": "2026-11-06",
+"founded": "2026-11-06",
+"access": "2026-11-06",
+"research": "2026-11-06",
+"licenses": "2026-11-06",
+"careers": "2026-11-06"
+},
+"faculties": [
+"理工学部（昼間）",
+"理工学部（夜間主）"
+],
+"departments": [
+{
+"f": "理工学部（昼間）",
+"d": [
+"創造工学科 建築土木工学コース",
+"創造工学科 機械ロボット工学コース",
+"創造工学科 航空宇宙工学コース",
+"創造工学科 電気電子工学コース",
+"システム理化学科 物理物質システムコース",
+"システム理化学科 化学生物システムコース",
+"システム理化学科 数理情報システムコース"
+]
+},
+{
+"f": "理工学部（夜間主）",
+"d": [
+"創造工学科 機械系コース",
+"創造工学科 電気系コース"
+]
+}
+],
+"students": {
+"count": 2753,
+"year": 2025
+},
+"founded": "1949年 大学設置（前身は1887年の札幌農学校工学科）",
+"access": "北海道室蘭市水元町27番1号",
+"research": [
+"建築土木・機械ロボット・航空宇宙・電気電子工学（創造工学科）",
+"物理物質・化学生物・数理情報の各システム（システム理化学科）"
+],
+"licenses": [
+"高等学校教諭一種（工業・数学・理科）",
+"測量士・測量士補",
+"一級・二級・木造建築士受験資格",
+"技術士補（試験一部免除）"
+],
+"careers": "2024年度卒業者：創造工学科（昼間）は進学47.2%・就職50.5%、システム理化学科は進学46.1%・就職49.3%、夜間主は進学46.7%・就職50.0%。",
+"sources": [
+"https://search.keinet.ne.jp/1035",
+"https://search.keinet.ne.jp/1035/outline/department",
+"https://search.keinet.ne.jp/1035/outline/licential",
+"https://search.keinet.ne.jp/1035/outline/admission_employment",
+"https://search.keinet.ne.jp/1035/general/border_rate"
+]
+},
+"三重大学": {
+"difficulty": {
+"hensachi": "45.0〜65.0",
+"kyotei": "46%〜86%",
+"year": "2027年度入試用"
+},
+"_checked": {
+"difficulty": "2026-11-06",
+"faculties": "2026-11-06",
+"departments": "2026-11-06",
+"students": "2026-11-06",
+"founded": "2026-11-06",
+"access": "2026-11-06",
+"research": "2026-11-06",
+"licenses": "2026-11-06",
+"careers": "2026-11-06"
+},
+"faculties": [
+"人文学部",
+"教育学部",
+"工学部",
+"生物資源学部",
+"医学部"
+],
+"departments": [
+{
+"f": "人文学部",
+"d": [
+"文化学科",
+"法律経済学科"
+]
+},
+{
+"f": "教育学部",
+"d": [
+"学校教育教員養成課程 国語（初等）",
+"学校教育教員養成課程 国語（中等）",
+"学校教育教員養成課程 社会科（初等）",
+"学校教育教員養成課程 社会科（中等）",
+"学校教育教員養成課程 数学（初等）",
+"学校教育教員養成課程 数学（中等）",
+"学校教育教員養成課程 理科（初等）",
+"学校教育教員養成課程 理科（中等）",
+"学校教育教員養成課程 音楽（初等）",
+"学校教育教員養成課程 音楽（中等）",
+"学校教育教員養成課程 美術（初等）",
+"学校教育教員養成課程 美術（中等）",
+"学校教育教員養成課程 保健体育（初等）",
+"学校教育教員養成課程 保健体育（中等）",
+"学校教育教員養成課程 技術・ものづくり（初等）",
+"学校教育教員養成課程 技術・ものづくり（中等）",
+"学校教育教員養成課程 家政（初等）",
+"学校教育教員養成課程 家政（中等）",
+"学校教育教員養成課程 英語（初等）",
+"学校教育教員養成課程 英語（中等）",
+"学校教育教員養成課程 特別支援教育",
+"学校教育教員養成課程 幼児教育",
+"学校教育教員養成課程 教育学",
+"学校教育教員養成課程 教育心理学"
+]
+},
+{
+"f": "工学部",
+"d": [
+"総合工学科 機械工学コース",
+"総合工学科 電気電子工学コース",
+"総合工学科 電子情報工学コース",
+"総合工学科 応用化学コース",
+"総合工学科 建築学コース",
+"総合工学科 情報工学コース"
+]
+},
+{
+"f": "生物資源学部",
+"d": [
+"生物資源学科 生物資源総合科学コース",
+"生物資源学科 農林環境科学コース",
+"生物資源学科 海洋生物資源学コース",
+"生物資源学科 生命化学コース"
+]
+},
+{
+"f": "医学部",
+"d": [
+"医学科",
+"看護学科"
+]
+}
+],
+"students": {
+"count": 5988,
+"year": 2025
+},
+"founded": "1949年 大学設置（前身校に1874年設置の度会県師範学校など）",
+"access": "三重県津市栗真町屋町1577",
+"research": [
+"文化資源学・国際言語文化学・社会文化行動学（人文学部文化学科）",
+"半導体工学・デジタル工学（工学部電子情報工学コース）",
+"建築計画・建築構造・地域防災（工学部建築学コース）",
+"生物資源の開発・利用、循環型社会、地球環境問題（生物資源学部）"
+],
+"licenses": [
+"教員免許（幼・小・中・高・特別支援）",
+"保育士",
+"養護教諭二種",
+"学校図書館司書教諭",
+"司書",
+"学芸員",
+"測量士補",
+"食品衛生監視員",
+"技術士補（試験一部免除）",
+"一級・二級・木造建築士受験資格",
+"医師国家試験受験資格",
+"看護師・保健師・助産師国家試験受験資格"
+],
+"careers": "2024年度卒業者：法律経済学科は就職94.3%、文化学科は就職81.6%、教育学部は就職90.8%、看護学科は就職97.3%。工学部総合工学科は進学69.1%、生物資源学部は進学が約4〜6割。",
+"sources": [
+"https://search.keinet.ne.jp/1265",
+"https://search.keinet.ne.jp/1265/outline/department",
+"https://search.keinet.ne.jp/1265/outline/licential",
+"https://search.keinet.ne.jp/1265/outline/admission_employment",
+"https://search.keinet.ne.jp/1265/general/border_rate"
+]
+},
+"鹿屋体育大学": {
+"difficulty": {
+"hensachi": "",
+"kyotei": "47%〜61%",
+"year": "2027年度入試用"
+},
+"_checked": {
+"difficulty": "2026-11-06",
+"faculties": "2026-11-06",
+"departments": "2026-11-06",
+"students": "2026-11-06",
+"founded": "2026-11-06",
+"access": "2026-11-06",
+"research": "2026-11-06",
+"licenses": "2026-11-06",
+"careers": "2026-11-06"
+},
+"faculties": [
+"体育学部"
+],
+"departments": [
+{
+"f": "体育学部",
+"d": [
+"スポーツ総合課程 アスリート・コーチング系",
+"スポーツ総合課程 生涯スポーツ系",
+"武道課程"
+]
+}
+],
+"students": {
+"count": 774,
+"year": 2025
+},
+"founded": "1981年 設置",
+"access": "白水キャンパス：鹿児島県鹿屋市白水町1番地",
+"research": [
+"競技スポーツ・生涯スポーツ・武道の振興",
+"健康の保持増進"
+],
+"licenses": [
+"中学校・高等学校教諭一種（保健体育）",
+"健康運動実践指導者受験資格"
+],
+"careers": "2024年度卒業者：スポーツ総合課程は就職75.8%・進学19.9%、武道課程は就職82.4%・進学13.7%。",
+"sources": [
+"https://search.keinet.ne.jp/1470",
+"https://search.keinet.ne.jp/1470/outline/department",
+"https://search.keinet.ne.jp/1470/outline/licential",
+"https://search.keinet.ne.jp/1470/outline/admission_employment",
+"https://search.keinet.ne.jp/1470/general/border_rate"
+]
+},
+"政策研究大学院大学（大学院のみ）": {
+"students": {
+"count": 426,
+"year": 2026
+},
+"_checked": {
+"students": "2026-11-06",
+"founded": "2026-11-06",
+"access": "2026-11-06"
+},
+"founded": "1997年 設置（前身は1977年設置の埼玉大学大学院政策科学研究科）",
+"access": "東京都港区六本木7-22-1",
+"sources": [
+"https://www.grips.ac.jp/jp/about/facts/",
+"https://www.grips.ac.jp/en/about/history/"
+]
+},
+"北陸先端科学技術大学院大学（大学院のみ）": {
+"students": {
+"count": 1132,
+"year": 2026
+},
+"_checked": {
+"students": "2026-11-06",
+"founded": "2026-11-06",
+"access": "2026-11-06",
+"research": "2026-11-06"
+},
+"founded": "1990年 開学（2016年に3研究科を先端科学技術研究科に統合）",
+"access": "本学：石川県能美市。東京サテライト：東京都港区港南（JR品川駅港南口から徒歩3分）",
+"research": [
+"創造社会デザイン",
+"トランスフォーマティブ知識経営",
+"共創インテリジェンス",
+"コンピューティング科学",
+"次世代デジタル社会基盤",
+"人間情報学",
+"サスティナブルイノベーション",
+"物質化学フロンティア",
+"ナノマテリアル・デバイス",
+"バイオ機能医工学"
+],
+"sources": [
+"https://www.jaist.ac.jp/about/history/",
+"https://www.jaist.ac.jp/about/outline/student.html",
+"https://www.jaist.ac.jp/about/data/jaist-2024.pdf"
+]
+},
+"奈良先端科学技術大学院大学（大学院のみ）": {
+"founded": "1991年 設置（2018年に3研究科を先端科学技術研究科に統合）",
+"_checked": {
+"founded": "2026-11-06",
+"access": "2026-11-06",
+"research": "2026-11-06"
+},
+"access": "奈良県生駒市高山町8916番地の5（けいはんな学研都市）：近鉄学研北生駒駅からバス約5分、学研奈良登美ヶ丘駅からバス約10分",
+"research": [
+"情報科学領域",
+"バイオサイエンス領域",
+"物質創成科学領域"
+],
+"sources": [
+"https://www.naist.jp/about/",
+"https://www.naist.jp/about/history.html",
+"https://www.naist.jp/accessmap/"
 ]
 }
 }
