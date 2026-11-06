@@ -173,7 +173,7 @@ body.noscroll{overflow:hidden}
 #ctip.cap{color:var(--ink)}
 #hl,#labels .clus text{pointer-events:none}
 #ctip.univ{color:var(--ink);font-weight:600;font-size:13px}
-#jmap .dot{stroke:transparent;stroke-width:10px;vector-effect:non-scaling-stroke}
+#jmap .dot{stroke:transparent;stroke-width:14px;vector-effect:non-scaling-stroke}
 #jmap .dot:hover{opacity:1 !important}
 .munip{fill:none;stroke:var(--muted);stroke-opacity:.45;stroke-width:.7px;vector-effect:non-scaling-stroke;pointer-events:none}
 #mlabels .clbl.cap{fill:var(--ink)}
@@ -981,9 +981,11 @@ function setVB(target){
 }
 const PRIO={teidai:0,kanto:1,souke:2,march:3,chiho:4,kankan:5,chuken:6,iryo:7,rikou:8,joshi:9,kokusai:10,ibaraki:1,daigakkou:11,senmon:12,national:13,public:14,private:15};
 function shortName(n){ return n.replace(/（.*?）/g,""); }
+// 大学の点の半径：地図の縮尺に合わせつつ、画面上で直径9px以上（スマホでも押しやすく）
+function dotR(){ const k=curVB[2]/HOME_VB[2]; const m=$("jmap").getScreenCTM(); const ppu=(m&&m.a)||1; return Math.max(3.2*k, 4.6/ppu); }
 function scaleMarks(){
   const k=curVB[2]/HOME_VB[2];
-  document.querySelectorAll("#jmap .dot").forEach(c=>c.setAttribute("r",(2.2*k).toFixed(3)));
+  document.querySelectorAll("#jmap .dot").forEach(c=>c.setAttribute("r",dotR().toFixed(3)));
   document.querySelectorAll("#jmap .hl,#jmap .pulse").forEach(c=>c.setAttribute("r",(3.4*k).toFixed(3)));
   const l=document.querySelector("#jmap .lbl"); if(l){ l.setAttribute("font-size",(14*k).toFixed(3)); const c=document.querySelector("#jmap .hl"); l.setAttribute("x",(+c.getAttribute("cx")+5*k).toFixed(2)); l.setAttribute("y",(+c.getAttribute("cy")+3*k).toFixed(2)); }
   scheduleLabels();
@@ -1248,7 +1250,7 @@ function placeCities(boxes, ppu, inView, outside){
 function placeLabels(){
   const g=$("labels"); if(!g) return; g.innerHTML="";
   const svg=$("jmap"); const W=svg.clientWidth||800; const ctm=svg.getScreenCTM(); const ppu=(ctm&&ctm.a)||W/curVB[2];
-  const fs=(innerWidth<600?16:19)/ppu, pad=2/ppu, k=curVB[2]/HOME_VB[2], r=2.2*k;
+  const fs=(innerWidth<600?16:19)/ppu, pad=2/ppu, k=curVB[2]/HOME_VB[2], r=dotR();
   const sel=$("mq").value; const [vx,vy,vw,vh]=curVB;
   const inView=([cx,cy])=>cx>=vx&&cx<=vx+vw&&cy>=vy&&cy<=vy+vh;
   const order=items.filter(x=>MAP.dots[x.name]&&x.name!==sel&&inView(MAP.dots[x.name])&&kindVisible(x)&&(!MATCH||MATCH.has(x.name))&&!CUR_SEL).sort((a,b)=>(PRIO[a.cat]??20)-(PRIO[b.cat]??20));
@@ -1356,7 +1358,9 @@ function zoomAt(px,py,f){ const [x,y,w,h]=curVB; const nw=w*f, nh=h*f; applyVB([
     const c=e.target.closest&&e.target.closest(".dot"); if(c){ if(showUniv(e,c)) return; }
     tip.classList.remove("univ"); if(e.pointerType!=="mouse") return; showCity(e,0); });
   svg.addEventListener("pointerleave",()=>{ tip.hidden=true; });
-  svg.addEventListener("click",e=>{ if(e.target.closest&&e.target.closest(".dot,.ulbl,.clus")) return; if(!moved) showCity(e,2500); });
+  // 大学の点・名前・まとまりの丸以外（地図の何もない所）をクリックしたら、選んでいる大学を解除する
+  svg.addEventListener("click",e=>{ if(e.target.closest&&e.target.closest(".dot,.ulbl,.clus,#zin,#zout")) return; if(moved) return;
+    if(CUR_SEL) clearSelection(); else showCity(e,2500); });
   $("zin").onclick=()=>zoomAt(curVB[0]+curVB[2]/2,curVB[1]+curVB[3]/2,0.6);
   $("zout").onclick=()=>zoomAt(curVB[0]+curVB[2]/2,curVB[1]+curVB[3]/2,1/0.6);
   window.addEventListener("resize",()=>{ if(!$("v-map").hidden) placeLabels(); });
@@ -1365,6 +1369,12 @@ function findUniv(q){
   if(!q) return null; const a=nz(q);
   return items.find(x=>nz(x.name)===a) || items.find(x=>isCorrect(q,x.name)) || items.find(x=>nz(x.name).includes(a)) || null;
 }
+function clearSelection(){
+  CUR_SEL=null; $("hl").innerHTML=""; $("mpanel").innerHTML=""; $("mq").value=""; tipHide();
+  renderResults();   // 絞り込み中ならその一覧に戻る。地図の位置はそのまま
+  if(!filtersActive()) placeLabels();
+}
+function tipHide(){ const t=$("ctip"); if(t) t.hidden=true; }
 function selectUniv(name,keepView){
   const x=items.find(i=>i.name===name); const pt=MAP.dots[name]; if(!x||!pt) return;
   $("mq").value=name;
