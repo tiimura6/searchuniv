@@ -121,7 +121,9 @@ body.wide main,body.wide header{max-width:1320px}
 .pwarn{color:var(--ng);font-size:11.5px}
 .ptotal{font-weight:700;margin:6px 0}
 .xt.cmp th[scope],.xt.cmp tbody th{white-space:nowrap;color:var(--muted);font-weight:500}
-.xt.cmp td{min-width:9em}
+.xt.cmp td{min-width:11em}
+.xt.cmp .cm{margin-bottom:4px}
+.xt.cmp .cm b{font-weight:600}
 .clist{display:flex;flex-wrap:wrap;gap:4px 6px;align-items:center}
 .xbtn{border:0;background:none;color:var(--muted);cursor:pointer;margin-right:8px}
 .oldmark{color:var(--ng) !important;font-weight:700}
@@ -303,7 +305,7 @@ ul.mini li{font-size:12.5px;margin:2px 0}
 <body>
 <header>
   <h1>Searchuniv <span class="byline">designed by Takahiro Iimura</span></h1>
-  <nav class="tabs"><a href="#map" data-v="map">検索</a><a href="#cards" data-v="cards" class="cardtab">カード</a><a href="#ai" data-v="ai">面談</a><a href="#plan" data-v="plan">併願<span id="ccount" class="ccount"></span></a></nav>
+  <nav class="tabs"><a href="#map" data-v="map">検索</a><a href="#cards" data-v="cards" class="cardtab">カード</a><a href="#ai" data-v="ai">面談</a><a href="#plan" data-v="plan">比較<span id="ccount" class="ccount"></span></a></nav>
 </header>
 <main>
 <section id="v-cards">
@@ -363,7 +365,7 @@ ul.mini li{font-size:12.5px;margin:2px 0}
 </section>
 
 <section id="v-plan" hidden>
-  <p class="mintro">検索・面談の「☆候補」で選んだ大学の<b>入試日程・受験料・手続締切</b>をまとめ、<b>横並びで比較</b>します。候補はこの端末のブラウザにだけ保存されます（個人名は保存しません）。</p>
+  <p class="mintro">検索・面談の「☆候補」で選んだ大学を<b>横並びで比較</b>し（一般・共テ利用・推薦・総合型の入試方式、共通テストの科目、費用など）、<b>入試日程・受験料・手続締切</b>もまとめます。候補はこの端末のブラウザにだけ保存されます（個人名は保存しません）。</p>
   <div id="plan-out"></div>
 </section>
 <section id="v-ai" hidden>
@@ -846,7 +848,7 @@ const detailPromise=Promise.all([
 // この端末のブラウザにだけ保存（個人名は扱わない）。保存できない環境では画面を開いている間だけ保持。
 let CANDS=[]; try{ CANDS=JSON.parse(localStorage.getItem("su_cands")||"[]").filter(n=>items.some(x=>x.name===n)); }catch(e){ CANDS=[]; }
 function saveCands(){ try{ localStorage.setItem("su_cands",JSON.stringify(CANDS)); }catch(e){} const c=$("ccount"); if(c) c.textContent=CANDS.length?"（"+CANDS.length+"）":""; }
-function starBtn(name){ const on=CANDS.includes(name); return '<button type="button" class="star'+(on?' on':'')+'" data-star="'+esc(name)+'" title="併願の候補に'+(on?'入っています（押すと外す）':'追加')+'">'+(on?'★候補':'☆候補')+'</button>'; }
+function starBtn(name){ const on=CANDS.includes(name); return '<button type="button" class="star'+(on?' on':'')+'" data-star="'+esc(name)+'" title="比較の候補に'+(on?'入っています（押すと外す）':'追加')+'">'+(on?'★候補':'☆候補')+'</button>'; }
 function toggleCand(name){ const i=CANDS.indexOf(name); if(i>=0) CANDS.splice(i,1); else CANDS.push(name); saveCands();
   document.querySelectorAll('[data-star]').forEach(b=>{ if(b.dataset.star===name){ const on=CANDS.includes(name); b.classList.toggle("on",on); b.textContent=on?'★候補':'☆候補'; } }); }
 function bindStars(root){ (root||document).querySelectorAll('[data-star]').forEach(b=>b.onclick=e=>{ e.stopPropagation(); toggleCand(b.dataset.star); }); }
@@ -902,8 +904,11 @@ function engBlock(f){
 }
 function extraBlocks(name){ const f=INFO[name]||{}; return fdiffBlock(f)+scheduleBlock(f)+engBlock(f)+moneyBlock(f)+sourceBlock(name); }
 
-// ===== 併願タブ：日程・受験料・手続締切・比較 =====
+// ===== 比較タブ：横並び比較・日程・受験料・手続締切 =====
 let PLAN_SEL=null;   // 比較・日程に入れる大学（候補の中から）
+// 比較表の入試方式の欄：区分に合う方式を並べる（一般・共テ利用は共テ科目・個別試験・配点、推薦・総合型は選考内容・共テの有無・条件）
+function mrows(m,kinds,isGen){ const L=((m||{}).list||[]).filter(r=>kinds.includes(r.kubun)); if(!L.length) return (m&&m.list)?'<span class="sub2">なし／未確認</span>':'';
+  return L.slice(0,4).map(r=>'<div class="cm"><b>'+esc(r.name||"")+'</b>'+(isGen?[r.kyotsu&&("共テ "+r.kyotsu),r.niji&&("個別 "+r.niji),r.haiten&&("配点 "+r.haiten)]:[r.content&&("選考 "+r.content),r.kyotsu&&("共テ "+r.kyotsu),r.req&&("条件 "+r.req)]).filter(Boolean).map(t=>'<div class="sub2">'+esc(t)+'</div>').join("")+'</div>').join("")+(L.length>4?'<div class="sub2">ほか'+(L.length-4)+'方式</div>':''); }
 function renderPlan(){
   const el=$("plan-out"); if(!el) return;
   if(!CANDS.length){ el.innerHTML='<div class="msheet">まだ候補がありません。検索で大学を選んで「☆候補」を押すか、面談タブの結果から追加してください。</div>'; return; }
@@ -917,17 +922,17 @@ function renderPlan(){
   rows.sort((a,b)=>(a.ex??99999)-(b.ex??99999));
   const byDay=new Map(); for(const o of rows){ if(o.ex==null) continue; for(let d=o.ex; d<=(o.exL??o.ex); d++){ if(!byDay.has(d)) byDay.set(d,new Set()); byDay.get(d).add(o.x.name); } }
   const clash=o=>{ if(o.ex==null) return []; const others=new Set(); for(let d=o.ex; d<=(o.exL??o.ex); d++) for(const n of byDay.get(d)||[]) if(n!==o.x.name) others.add(n); return [...others]; };
-  h+='<div class="msheet" style="margin-top:12px"><h2>入試日程（試験日順）</h2>';
+  let hs='<div class="msheet" style="margin-top:12px"><h2>入試日程（試験日順）</h2>';
   if(rows.length){
-    h+='<div class="tblw"><table class="xt plan"><thead><tr><th>受ける</th><th>大学</th><th>方式</th><th>出願</th><th>試験日</th><th>発表</th><th>手続締切</th><th>検定料</th><th>注意</th></tr></thead><tbody>'+
+    hs+='<div class="tblw"><table class="xt plan"><thead><tr><th>受ける</th><th>大学</th><th>方式</th><th>出願</th><th>試験日</th><th>発表</th><th>手続締切</th><th>検定料</th><th>注意</th></tr></thead><tbody>'+
       rows.map((o,i)=>{ const c=clash(o); const warn=[]; if(c.length) warn.push('試験日が重なる：'+c.join("、"));
         if(o.proc!=null){ const later=rows.filter(p=>p.x.name!==o.x.name&&p.res!=null&&p.res>o.proc).map(p=>p.x.name); if(later.length) warn.push('手続締切が '+[...new Set(later)].slice(0,3).join("、")+' の発表より前（入学金の二重払いに注意）'); }
         if(staleYear(o.year)) warn.push('前年度の日程');
         return '<tr class="'+(c.length?'clash':'')+'"><td><input type="checkbox" class="prow" data-i="'+i+'" checked></td><td>'+esc(o.x.name)+'</td><td><span class="ktag" style="background:'+(KUBUN_COLOR[o.r.kubun]||"#4b5563")+'">'+esc(o.r.kubun||"")+'</span>'+esc(o.r.name||"")+'</td><td>'+esc(o.r.apply||"")+'</td><td>'+esc(o.r.exam||"")+'</td><td>'+esc(o.r.result||"")+'</td><td>'+esc(o.r.proc||"")+'</td><td>'+(o.r.fee!=null?yen0(o.r.fee):"")+'</td><td class="pwarn">'+esc(warn.join("／"))+'</td></tr>'; }).join("")+
       '</tbody></table></div><div class="ptotal" id="ptotal"></div>';
-  } else h+='<div class="sub2">選んだ大学の入試日程がまだ登録されていません。</div>';
-  if(noS.length) h+='<div class="enote">※日程が未登録：'+esc(noS.join("、"))+'</div>';
-  h+='<div class="enote">※日程・検定料は代表的な学部の値です。学部で異なる場合があるので、必ず募集要項で確認してください。</div></div>';
+  } else hs+='<div class="sub2">選んだ大学の入試日程がまだ登録されていません。</div>';
+  if(noS.length) hs+='<div class="enote">※日程が未登録：'+esc(noS.join("、"))+'</div>';
+  hs+='<div class="enote">※日程・検定料は代表的な学部の値です。学部で異なる場合があるので、必ず募集要項で確認してください。</div></div>';
   // 比較表
   if(sel.length){
     const cmp=sel.slice(0,4);
@@ -936,9 +941,14 @@ function renderPlan(){
         case "種別": return badge(x)+esc(x.pref);
         case "難易度（河合）": return esc([d.hensachi&&("偏差値 "+d.hensachi),d.kyotei&&("共テ "+d.kyotei)].filter(Boolean).join(" / "));
         case "学部": return esc((f.faculties||[]).join("、"));
-        case "共通テスト": return esc((f.kyotsu||{}).kamoku||"");
         case "英語R:L": return esc((f.kyotsu||{}).rl_text||((f.kyotsu||{}).rl||[]).join("・"));
-        case "入試方式": return esc(m.summary||"");
+        case "入試方式（概要）": return esc(m.summary||"");
+        case "一般選抜": return mrows(m,["一般"],true);
+        case "共テ利用": return mrows(m,["共テ利用"],true);
+        case "学校推薦型": return mrows(m,["推薦"],false);
+        case "総合型": return mrows(m,["総合型"],false);
+        case "共通テストの科目": { const k=f.kyotsu||{}; return esc([k.kamoku,k.kyoka&&k.kyoka.length?("（"+(k.kyoka[0]===k.kyoka[1]?k.kyoka[0]:k.kyoka.join("〜"))+"教科）"):""].filter(Boolean).join(""))+(k.note?'<div class="sub2">'+esc(k.note)+'</div>':''); }
+        case "英語外部試験": { const E=f.eng||{}; return (E.rows||[]).length?(E.rows||[]).slice(0,4).map(r=>esc(r.kubun+"・"+r.name+"："+r.use+"（"+(r.level||"")+"）")).join("<br>"):esc(E.summary||""); }
         case "卒業までの学費": return M.total4!=null?('約'+man(M.total4)):((f.tuition&&f.tuition.amount!=null)?('初年度 約'+man(f.tuition.amount)):"");
         case "大学独自の奨学金": return esc((M.scholarships||[]).map(s=>s.name).join("、"));
         case "海外協定校": return esc([P.total&&(P.total+"校"),(P.countries||[]).length&&((P.countries||[]).length+"か国・地域")].filter(Boolean).join(" / "));
@@ -946,10 +956,11 @@ function renderPlan(){
         case "就職・進学": return esc(f.careers||"");
         case "向いている生徒": return esc((GUIDE[x.name]||{}).fit||"");
       } return ""; };
-    const K=["種別","難易度（河合）","学部","共通テスト","英語R:L","入試方式","卒業までの学費","大学独自の奨学金","海外協定校","取れる資格","就職・進学","向いている生徒"];
+    const K=["種別","難易度（河合）","学部","入試方式（概要）","一般選抜","共テ利用","学校推薦型","総合型","共通テストの科目","英語R:L","英語外部試験","卒業までの学費","大学独自の奨学金","海外協定校","取れる資格","就職・進学","向いている生徒"];
     h+='<div class="msheet" style="margin-top:12px"><h2>横並び比較'+(sel.length>4?'<small class="sub2">（チェックした最初の4校）</small>':'')+'</h2><div class="tblw"><table class="xt cmp"><thead><tr><th></th>'+cmp.map(x=>'<th>'+esc(x.name)+'</th>').join("")+'</tr></thead><tbody>'+
       K.map(k=>'<tr><th>'+k+'</th>'+cmp.map(x=>'<td>'+(val(x,k)||'<span class="sub2">—</span>')+'</td>').join("")+'</tr>').join("")+'</tbody></table></div></div>';
   }
+  h+=hs;
   el.innerHTML=h;
   el.querySelectorAll(".psel").forEach(c=>c.onchange=()=>{ if(c.checked) PLAN_SEL.add(c.value); else PLAN_SEL.delete(c.value); renderPlan(); });
   el.querySelectorAll(".xbtn").forEach(b=>b.onclick=()=>{ toggleCand(b.dataset.star); renderPlan(); });
