@@ -7,7 +7,7 @@ Searchuniv に全国の大学を少しずつ追加し、既存校の空欄（研
 ## 全体像
 - `data/master_list.json`：全国の大学の一覧（名前・設置区分・都道府県・公式サイト）。
 - `data/queue.json`：これから処理する学校。`add` は新規追加、`enrich` は既存校の空欄補完。処理したら `done` に移す。
-- `data/*.json`：ページのデータ本体。`tools/merge_batch.py` で取り込み、`tools/build.py` で `index.html` を作る。
+- `data/*.json`：ページのデータ本体。`tools/merge_batch.py` で取り込み、`tools/build.py` で `index.html` と、後から読み込む `detail.json`・`world.json`・`muni.json` を作る。
 - 公開ページ：Claude のアーティファクト（slug `8174544a-a178-4a35-a835-6e4a0156f302`、タイトル Searchuniv）。
 
 ## 1回の実行でやること
@@ -18,7 +18,7 @@ Searchuniv に全国の大学を少しずつ追加し、既存校の空欄（研
 5. 処理できた学校を `queue.json` の `add`/`enrich` から `done` へ移す（取れなかった学校は末尾に回す。同じ学校が3回失敗したら `failed` に移す）。
 6. `python3 tools/build.py` で `index.html` を作り、`node --check` 相当のエラーがないことを確認（`python3 -c "s=open('index.html').read();open('/tmp/t.js','w').write(s.split('<script>')[1].split('</script>')[0])" && node --check /tmp/t.js`）。
 7. コミットして main にプッシュ（コミットメッセージ例「データ拡充: 〇校追加・〇校補完」）。
-8. 公開ページを更新：mcp__claude-artifacts__get_artifact で現在の version を確認 → list_files → publish_files（slug、base_version、files=[{"as":"index.html","path":"<clone先>/index.html"}]、mode "patch"）。
+8. 公開ページを更新：mcp__claude-artifacts__get_artifact で現在の version を確認 → list_files → publish_files（slug、base_version、files=[{"as":"index.html","path":"<clone先>/index.html"},{"as":"detail.json","path":"<clone先>/detail.json"},{"as":"world.json","path":"<clone先>/world.json"},{"as":"muni.json","path":"<clone先>/muni.json"}]（4ファイルとも必ず送る。detail.json を送らないと詳細データが古いままになる）、mode "patch"）。
 9. 追加・補完した件数と、残りの件数を短く報告。
 
 ## 集め方（1校あたり）

@@ -347,7 +347,7 @@ ul.mini li{font-size:12.5px;margin:2px 0}
   <div id="plan-out"></div>
 </section>
 <section id="v-ai" hidden>
-  <p class="mintro">生徒の希望と成績を入れると、登録データから<b>挑戦校・実力相応校・安全校</b>に分けて候補と面談の話題を出します（AIは使いません）。印刷して面談シートとして使えます。氏名などの個人情報は入力しない設計です（入力内容は保存されません）。</p>
+  <p class="mintro">生徒の希望と成績を入れると、登録データから<b>挑戦校・実力相応校・安全校</b>に分けて候補と面談の話題を出します（AIは使いません）。氏名などの個人情報は入力しない設計です（入力内容は保存されません）。</p>
   <form id="aiform" class="aiform" onsubmit="return false">
     <div class="airow">
       <label>目指している職業<input id="ai-job" placeholder="例：臨床心理士、英語教員"></label>
@@ -367,7 +367,7 @@ ul.mini li{font-size:12.5px;margin:2px 0}
       <fieldset class="mways"><legend>考えている入試方式</legend><label class="chk"><input type="checkbox" class="aiw" value="一般">一般</label><label class="chk"><input type="checkbox" class="aiw" value="推薦">推薦</label><label class="chk"><input type="checkbox" class="aiw" value="総合型">総合型</label></fieldset>
     </div>
     <label>その他の条件<input id="ai-other" placeholder="例：自宅から通いたい、留学したい、奨学金重視"></label>
-    <div class="aibtns"><button class="btn big" id="ai-go" type="button">候補を出す</button><button class="btn" id="ai-print" type="button" hidden>印刷する</button><button class="btn" id="ai-clear" type="button">入力を消す</button></div>
+    <div class="aibtns"><button class="btn big" id="ai-go" type="button">候補を出す</button><button class="btn" id="ai-clear" type="button">入力を消す</button></div>
   </form>
   <div id="ai-status" class="aistatus"></div>
   <div id="ai-out" class="aiout"></div>
@@ -809,6 +809,17 @@ function scheduleLabels(){ clearTimeout(labelTimer); $("jmap").classList.add("mo
 let MATCH=null;
 
 
+// ===== 詳細データ（学部別難易度・日程・費用・協定校・出典）は別ファイルから読み込む =====
+let DETAIL_READY=false;
+const detailPromise=Promise.all([
+  fetch("detail.json").then(r=>r.ok?r.json():{}).catch(()=>({})),
+  fetch("world.json").then(r=>r.ok?r.json():null).catch(()=>null)
+]).then(([d,w])=>{ for(const [n,v] of Object.entries(d||{})) INFO[n]=Object.assign(INFO[n]||{},v);
+  if(w){ WORLD=w; WPATH=Object.fromEntries(WORLD.c.map(c=>[c[0],c[2]])); }
+  DETAIL_READY=true;
+  if(CUR_SEL&&$("mpanel").innerHTML) selectUniv(CUR_SEL,true);
+  else if(!$("v-map").hidden&&($("f-meth").value||$("f-eng").value)) renderResults();
+  if(!$("v-plan").hidden) renderPlan(); });
 // ===== 候補リスト（☆）=====
 // この端末のブラウザにだけ保存（個人名は扱わない）。保存できない環境では画面を開いている間だけ保持。
 let CANDS=[]; try{ CANDS=JSON.parse(localStorage.getItem("su_cands")||"[]").filter(n=>items.some(x=>x.name===n)); }catch(e){ CANDS=[]; }
@@ -877,7 +888,7 @@ function renderPlan(){
   if(!PLAN_SEL) PLAN_SEL=new Set(CANDS); for(const n of [...PLAN_SEL]) if(!CANDS.includes(n)) PLAN_SEL.delete(n);
   const sel=CANDS.filter(n=>PLAN_SEL.has(n)).map(n=>items.find(x=>x.name===n)).filter(Boolean);
   // 候補一覧
-  let h='<div class="msheet"><h2>候補（'+CANDS.length+'校）</h2><div class="clist">'+CANDS.map(n=>{ const x=items.find(y=>y.name===n); return '<label class="chk"><input type="checkbox" class="psel" value="'+esc(n)+'"'+(PLAN_SEL.has(n)?' checked':'')+'>'+badge(x)+esc(n)+'</label><button class="xbtn" data-star="'+esc(n)+'" title="候補から外す">×</button>'; }).join("")+'</div><div class="aibtns" style="margin-top:6px"><button class="btn" id="plan-print" type="button">印刷する</button></div></div>';
+  let h='<div class="msheet"><h2>候補（'+CANDS.length+'校）</h2><div class="clist">'+CANDS.map(n=>{ const x=items.find(y=>y.name===n); return '<label class="chk"><input type="checkbox" class="psel" value="'+esc(n)+'"'+(PLAN_SEL.has(n)?' checked':'')+'>'+badge(x)+esc(n)+'</label><button class="xbtn" data-star="'+esc(n)+'" title="候補から外す">×</button>'; }).join("")+'</div></div>';
   // 日程表
   const rows=[]; for(const x of sel){ const S=(INFO[x.name]||{}).schedule; for(const r of (S&&S.rows)||[]) rows.push({x,r,ex:md(r.exam),exL:mdLast(r.exam),res:md(r.result),proc:md(r.proc),year:S.year}); }
   const noS=sel.filter(x=>!((((INFO[x.name]||{}).schedule)||{}).rows||[]).length).map(x=>x.name);
@@ -922,11 +933,11 @@ function renderPlan(){
   el.querySelectorAll(".xbtn").forEach(b=>b.onclick=()=>{ toggleCand(b.dataset.star); renderPlan(); });
   const upd=()=>{ let fee=0,n=0; el.querySelectorAll(".prow").forEach(c=>{ if(c.checked){ const o=rows[+c.dataset.i]; if(o.r.fee!=null){ fee+=o.r.fee; n++; } } }); const t=$("ptotal"); if(t) t.textContent="チェックした "+n+" 件の検定料合計："+yen0(fee); };
   el.querySelectorAll(".prow").forEach(c=>c.onchange=upd); upd();
-  const pp=$("plan-print"); if(pp) pp.onclick=()=>window.print();
 }
 
 // ===== 共テ自己採点モード =====
-$("kt-go").onclick=()=>{
+$("kt-go").onclick=async()=>{
+  if(!DETAIL_READY){ $("kt-out").innerHTML='<div class="aistatus">データを読み込み中…</div>'; await detailPromise; }
   const sc=parseFloat(($("kt-score").value||"").normalize("NFKC")); const out=$("kt-out");
   if(!(sc>0&&sc<=100)){ out.innerHTML='<div class="aistatus">得点率（0〜100）を入力してください。</div>'; return; }
   const m=$("kt-m").value, region=$("kt-region").value, word=($("kt-word").value||"").trim();
@@ -948,13 +959,13 @@ $("kt-go").onclick=()=>{
   out.innerHTML=h; bindStars(out);
 };
 // ===== 海外協定校（世界地図）=====
-const WORLD=/*WORLD*/null/*END_WORLD*/;
+let WORLD=null;
 let WORLD_READY=false;
 function worldDefs(){ if(WORLD_READY||!WORLD) return; WORLD_READY=true;
   const d=document.createElement("div"); d.style.cssText="position:absolute;width:0;height:0;overflow:hidden";
   d.innerHTML='<svg><defs><g id="worldbase" transform="scale(0.1)">'+WORLD.c.map(c=>'<path d="'+c[2]+'"/>').join("")+'</g></defs></svg>';
   document.body.appendChild(d); }
-const WPATH=WORLD?Object.fromEntries(WORLD.c.map(c=>[c[0],c[2]])):{};
+let WPATH={};
 function isoOf(name){ if(!WORLD) return null; const n=String(name||"").normalize("NFKC").trim(); return WORLD.ja[n]||WORLD.ja[n.replace(/(合衆国|共和国|王国|連邦|人民共和国)$/,"")]||null; }
 function partnerBlock(name){
   const P=(INFO[name]||{}).partners; if(!P) return "";
@@ -977,9 +988,13 @@ function partnerBlock(name){
   return '<div class="partners"><div class="exam-h">海外の協定校（留学先）</div><div class="sub2">'+esc(head)+'</div>'+svg+(P.exchange?'<div class="pex">'+esc(P.exchange)+'</div>':'')+list+(P.note?'<div class="enote">※'+esc(P.note)+'</div>':'')+'</div>';
 }
 // ===== 市町村（拡大したときに境界線と名前を出す）=====
-const MUNI=/*MUNI*/null/*END_MUNI*/;
+let MUNI=null, muniLoading=false;
+// 市町村の境界・名前は、拡大したときに初めて読み込む
+function loadMuni(){ if(MUNI||muniLoading) return; muniLoading=true;
+  fetch("muni.json").then(r=>r.ok?r.json():null).then(d=>{ if(d){ MUNI=d; placeLabels(); } }).catch(()=>{}); }
 function placeCities(boxes, ppu, inView, outside){
   const g=$("mlabels"); g.innerHTML=""; const w=curVB[2];
+  if(!MUNI&&w<=260) loadMuni();
   const mg=$("muni"), show=MUNI&&w<=260; mg.style.display=show?"":"none";
   if(show){ const [vx,vy,vw,vh]=curVB;
     for(const m of MUNI.mesh){ const on=!(m.b[2]<vx||m.b[0]>vx+vw||m.b[3]<vy||m.b[1]>vy+vh);
@@ -1119,7 +1134,7 @@ function findUniv(q){
   if(!q) return null; const a=nz(q);
   return items.find(x=>nz(x.name)===a) || items.find(x=>isCorrect(q,x.name)) || items.find(x=>nz(x.name).includes(a)) || null;
 }
-function selectUniv(name){
+function selectUniv(name,keepView){
   const x=items.find(i=>i.name===name); const pt=MAP.dots[name]; if(!x||!pt) return;
   $("mq").value=name;
   const hl=$("hl"); hl.innerHTML="";
@@ -1127,11 +1142,11 @@ function selectUniv(name){
   const dot=document.createElementNS(SVGNS,"circle"); dot.setAttribute("cx",pt[0]); dot.setAttribute("cy",pt[1]); dot.setAttribute("r",2.4); dot.setAttribute("class","hl"); dot.setAttribute("stroke-width",.6);
   const lb=document.createElementNS(SVGNS,"text"); lb.setAttribute("x",pt[0]+4); lb.setAttribute("y",pt[1]+1.8); lb.setAttribute("class","lbl"); lb.textContent=x.name;
   hl.append(ring,dot,lb); scaleMarks();
-  setVB([pt[0]-60,pt[1]-45,120,90]);
+  if(!keepView) setVB([pt[0]-60,pt[1]-45,120,90]);
   $("mpanel").innerHTML='<div class="box"><div class="ph"><h3>'+badge(x)+' '+esc(x.name)+'</h3>'+starBtn(x.name)+hpLink(x.name)+'</div><div class="meta">'+metaPrefix(x)+esc(x.pref)+'</div><ul class="pfeat">'+x.feats.map(f=>'<li>'+esc(f)+'</li>').join("")+'</ul>'+guideBlock(x)+'<div class="newsslot">'+cardNews(x.name)+'</div>'+infoBlock(x.name)+partnerBlock(x.name)+examBlock(x.name)+extraBlocks(x.name)+'<div style="margin-top:8px"><button class="btn" id="tocard">カードで見る</button></div></div>';
   MATCH=null; LAST_LIST=[]; CUR_SEL=name; renderSearchNews();
   $("mresults").innerHTML=""; $("mcount").textContent=""; if(!filtersActive()) document.querySelectorAll("#jmap .dot.dim").forEach(c=>c.classList.remove("dim"));
-  if(window.matchMedia("(max-width: 860px)").matches) $("mpanel").scrollIntoView({behavior:"smooth",block:"start"});
+  if(!keepView&&window.matchMedia("(max-width: 860px)").matches) $("mpanel").scrollIntoView({behavior:"smooth",block:"start"});
   $("tocard").onclick=()=>openCard(x.id); bindStars($("mpanel"));
 }
 function openCard(id){
@@ -1237,6 +1252,7 @@ function renderResults(){
   if(noK) msg+="（共テ情報が未登録の"+noK+"校は対象外）";
   if(noM) msg+="（入試方式が未登録の"+noM+"校は対象外）";
   const noE=$("f-eng").value?items.filter(x=>!(((INFO[x.name]||{}).eng)||{}).rows).length:0; if(noE) msg+="（英語外部試験が未登録の"+noE+"校は対象外）";
+  if(!DETAIL_READY&&($("f-meth").value||$("f-eng").value)) msg="入試方式・英語外部試験のデータを読み込み中…";
   $("mcount").textContent=msg;
   const kv=$("f-kei").value;
   const facHit=x=>{ const f=INFO[x.name]||{}; let h=kv?keiHits(x,kv):[]; if(!h.length&&qv&&!isCorrect(qv,x.name)&&!nz(x.name).includes(nz(qv))){ const ws=[qv,...(typeof concepts==="function"?concepts(qv).flat():[])].filter(w=>w.length>=2); h=facList(f).filter(t=>ws.some(w=>t.includes(w))); }
@@ -1457,11 +1473,12 @@ function checklist(S,list){
   c.push("出願書類・日程の最終確認は各大学の募集要項で");
   return c;
 }
-$("ai-go").onclick=()=>{
+$("ai-go").onclick=async()=>{
+  if(!DETAIL_READY){ $("ai-status").textContent="データを読み込み中…"; await detailPromise; }
   const S=studentInput();
-  if(!S.job&&!S.study){ $("ai-status").textContent="職業か学びたい学問のどちらかを入力してください。"; $("ai-out").innerHTML=""; $("ai-print").hidden=true; return; }
+  if(!S.job&&!S.study){ $("ai-status").textContent="職業か学びたい学問のどちらかを入力してください。"; $("ai-out").innerHTML=""; return; }
   const list=recommend(S);
-  if(!list.length){ $("ai-status").textContent="条件に合う学校が見つかりませんでした。言葉を変える（例：「臨床心理士」→「心理」）か、地域・区分・学費・入試方式の条件をゆるめてください。"; $("ai-out").innerHTML=""; $("ai-print").hidden=true; return; }
+  if(!list.length){ $("ai-status").textContent="条件に合う学校が見つかりませんでした。言葉を変える（例：「臨床心理士」→「心理」）か、地域・区分・学費・入試方式の条件をゆるめてください。"; $("ai-out").innerHTML=""; return; }
   $("ai-status").textContent=items.length+"校の登録情報と照らし合わせて"+list.length+"校が該当。各区分の上位を表示しています。最終判断は募集要項と本人の意思で。";
   const cond=[S.job&&("職業："+S.job),S.study&&("学問："+S.study),S.hen!=null&&(S.moshi==="shinken"?("進研模試 偏差値 "+S.rawHen+"（河合換算 約"+S.hen+"）"):("河合模試 偏差値 "+S.hen)),S.kt!=null&&("共テ "+S.kt+"%"),S.engTxt&&("英検 "+S.engTxt),S.kyoka&&("共テ "+({3:"3教科まで",5:"4〜5教科",6:"6教科以上"})[S.kyoka]),S.budget&&("学費 "+man(S.budget)+"まで"),S.region&&("地域："+S.region),S.type&&("区分："+({pub:"国公立",pri:"私立",dai:"大学校"})[S.type]),S.ways.length&&("方式："+S.ways.join("・")),S.other&&("その他："+S.other)].filter(Boolean);
   let h='<div class="msheet"><h2>面談シート</h2><div class="sub2">'+new Date().toLocaleDateString("ja-JP")+'　'+esc(cond.join("／"))+'</div></div>';
@@ -1471,13 +1488,12 @@ $("ai-go").onclick=()=>{
   }
   h+='<div class="msheet" style="margin-top:12px"><h2>面談で確認すること</h2><ul>'+checklist(S,list).map(t=>'<li>'+esc(t)+'</li>').join("")+'</ul><div class="sub2">メモ：</div><div style="height:4em;border-bottom:1px dashed var(--line)"></div></div>';
   if(S.moshi==="shinken"&&S.rawHen!=null) h+='<div class="enote" style="margin-top:8px">※難易度は河合塾（Kei-Net）の偏差値です。進研模試の偏差値は河合の尺度へ目安で換算しています（例：進研67≒河合60）。境目の学校は進研模試の合格可能性判定（志望校判定）で確かめてください。</div>';
-  $("ai-out").innerHTML=h; $("ai-print").hidden=false;
+  $("ai-out").innerHTML=h;
   $("ai-out").querySelectorAll("[data-card]").forEach(b=>b.onclick=()=>openCard(+b.dataset.card));
   $("ai-out").querySelectorAll("[data-map]").forEach(b=>b.onclick=()=>{ location.hash="#map"; setTimeout(()=>selectUniv(b.dataset.map),80); });
   bindStars($("ai-out"));
 };
-$("ai-print").onclick=()=>window.print();
-$("ai-clear").onclick=()=>{ $("aiform").reset(); $("ai-out").innerHTML=""; $("ai-status").textContent=""; $("ai-print").hidden=true; };
+$("ai-clear").onclick=()=>{ $("aiform").reset(); $("ai-out").innerHTML=""; $("ai-status").textContent=""; };
 ["ai-job","ai-study","ai-other","ai-level","ai-kt"].forEach(id=>$(id).addEventListener("keydown",e=>{ if(e.key==="Enter"){ e.preventDefault(); $("ai-go").click(); } }));
 
 shuffleOrder(); rebuild(); showView();
