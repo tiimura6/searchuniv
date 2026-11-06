@@ -1,0 +1,766 @@
+[
+ {
+  "name": "岡山大学",
+  "info": {
+   "kyotsu": {
+    "kamoku": "6教科8科目（全学部）",
+    "kyoka": [
+     6
+    ],
+    "rl": [
+     "4:1"
+    ],
+    "rl_text": "全学部でR:L=4:1（医・農はR80/L20、他はR160/L40）",
+    "note": "医学部医学科は二段階選抜あり（約3倍）",
+    "year": "2027年度入試"
+   }
+  },
+  "sources": [
+   "https://search.keinet.ne.jp/1355/general/exam_subject"
+  ]
+ },
+ {
+  "name": "熊本大学",
+  "info": {
+   "kyotsu": {
+    "kamoku": "6教科8科目（前期・後期とも）〜6教科7科目（教育）",
+    "kyoka": [
+     6
+    ],
+    "rl": [
+     "4:1",
+     "1:1"
+    ],
+    "rl_text": "多くの学部R:L=4:1、工学部土木建築学科はR:L=1:1",
+    "note": "工学部後期など一部はページ上で確認できず",
+    "year": "2027年度入試"
+   }
+  },
+  "sources": [
+   "https://search.keinet.ne.jp/1440/general/exam_subject"
+  ]
+ },
+ {
+  "name": "奈良女子大学",
+  "info": {
+   "kyotsu": {
+    "kamoku": "6教科8科目（前期）〜5教科7科目（文学部後期）",
+    "kyoka": [
+     5,
+     6
+    ],
+    "rl": [
+     "4:1"
+    ],
+    "rl_text": "全学部でR:L=4:1",
+    "note": "",
+    "year": "2027年度入試"
+   }
+  },
+  "sources": [
+   "https://search.keinet.ne.jp/1330/general/exam_subject"
+  ]
+ },
+ {
+  "name": "長岡技術科学大学",
+  "info": {
+   "kyotsu": {
+    "kamoku": "6教科8科目（工学部前期）",
+    "kyoka": [
+     6
+    ],
+    "rl": [
+     "1:1"
+    ],
+    "rl_text": "R:L=1:1（R100・L100）",
+    "note": "",
+    "year": "2027年度入試"
+   }
+  },
+  "sources": [
+   "https://search.keinet.ne.jp/1175/general/exam_subject"
+  ]
+ },
+ {
+  "name": "豊橋技術科学大学",
+  "info": {
+   "kyotsu": {
+    "kamoku": "6教科8科目（工学部学際共創課程前期）",
+    "kyoka": [
+     6
+    ],
+    "rl": [
+     "1:1"
+    ],
+    "rl_text": "R:L=1:1（R150・L150）",
+    "note": "Kei-Netには学際共創課程前期のみ掲載",
+    "year": "2027年度入試"
+   }
+  },
+  "sources": [
+   "https://search.keinet.ne.jp/1245/general/exam_subject"
+  ]
+ },
+ {
+  "name": "早稲田大学",
+  "info": {
+   "kyotsu": {
+    "kamoku": "1教科1科目（文学部併用方式）〜3教科5科目（教育学部D方式）など",
+    "kyoka": [
+     1,
+     3
+    ],
+    "rl": [
+     "1:1"
+    ],
+    "rl_text": "確認できた方式はR:L=1:1（教育学部C方式R9・L9、D方式R15・L15）",
+    "note": "Kei-Netページが途中で切れ、文・教育学部以外は未確認",
+    "year": "2027年度入試"
+   }
+  },
+  "sources": [
+   "https://search.keinet.ne.jp/2293/general/exam_subject"
+  ]
+ },
+ {
+  "name": "慶應義塾大学",
+  "info": {
+   "kyotsu": {
+    "kamoku": "共通テスト利用なし",
+    "kyoka": [],
+    "rl": [],
+    "rl_text": "",
+    "note": "Kei-Netの入試科目ページに共通テストを使う方式の掲載なし",
+    "year": "2027年度入試"
+   }
+  },
+  "sources": [
+   "https://search.keinet.ne.jp/2210/general/exam_subject"
+  ]
+ },
+ {
+  "name": "上智大学",
+  "info": {
+   "kyotsu": {
+    "kamoku": "3教科3科目（併用方式・3教科型）〜4教科4科目（4教科型）",
+    "kyoka": [
+     3,
+     4
+    ],
+    "rl": [
+     "1:1",
+     "3:2"
+    ],
+    "rl_text": "多くはR:L=1:1、文学部哲学科の併用方式のみR36・L24（3:2）",
+    "note": "ページが途中で切れ、文学部・新聞学科以外は未確認",
+    "year": "2027年度入試"
+   }
+  },
+  "sources": [
+   "https://search.keinet.ne.jp/2221/general/exam_subject"
+  ]
+ },
+ {
+  "name": "東京理科大学",
+  "info": {
+   "kyotsu": {
+    "kamoku": "2教科2〜3科目（2教科英）〜4教科5科目（4教科型）",
+    "kyoka": [
+     2,
+     4
+    ],
+    "rl": [
+     "1:1"
+    ],
+    "rl_text": "4教科型・3教科型はR:L=1:1",
+    "note": "ページ上は経営・理学部のみ確認。2教科英のR・L配点は記載なし",
+    "year": "2027年度入試"
+   }
+  },
+  "sources": [
+   "https://search.keinet.ne.jp/2262/general/exam_subject"
+  ]
+ },
+ {
+  "name": "国際基督教大学（ICU）",
+  "info": {},
+  "sources": [
+   "https://search.keinet.ne.jp/2214/general/exam_subject"
+  ]
+ },
+ {
+  "name": "学習院大学",
+  "info": {
+   "kyotsu": {
+    "kamoku": "3教科3科目（多くの学科）〜5教科6科目（経済学部6科目型など）",
+    "kyoka": [
+     3,
+     5
+    ],
+    "rl": [
+     "1:1",
+     "4:1"
+    ],
+    "rl_text": "多くの学科R:L=1:1、経済学部はR160・L40（4:1）",
+    "note": "日本語日本文・心理・国際文化交流・経営・物理・数学などは共テ利用方式なし",
+    "year": "2027年度入試"
+   }
+  },
+  "sources": [
+   "https://search.keinet.ne.jp/2204/general/exam_subject"
+  ]
+ },
+ {
+  "name": "明治大学",
+  "info": {
+   "kyotsu": {
+    "kamoku": "1教科1科目（国際日本学部併用）〜6教科7科目（政経7科目型）",
+    "kyoka": [
+     1,
+     6
+    ],
+    "rl": [
+     "1:1"
+    ],
+    "rl_text": "確認できた方式はすべてR:L=1:1",
+    "note": "ページが途中で切れ、文・法・政経・国際日本以外は未確認",
+    "year": "2027年度入試"
+   }
+  },
+  "sources": [
+   "https://search.keinet.ne.jp/2286/general/exam_subject"
+  ]
+ },
+ {
+  "name": "青山学院大学",
+  "info": {
+   "kyotsu": {
+    "kamoku": "1教科1科目（個別学部B方式）〜5教科6科目（史学科6科目型）",
+    "kyoka": [
+     1,
+     5
+    ],
+    "rl": [
+     "1:1"
+    ],
+    "rl_text": "全方式でR:L=1:1（R100・L100またはR50・L50）",
+    "note": "ページ上は文学部・教育人間科学部のみ確認",
+    "year": "2027年度入試"
+   }
+  },
+  "sources": [
+   "https://search.keinet.ne.jp/2200/general/exam_subject"
+  ]
+ },
+ {
+  "name": "立教大学",
+  "info": {
+   "kyotsu": {
+    "kamoku": "3教科3科目（3科目型）〜4教科6科目（6科目型）",
+    "kyoka": [
+     3,
+     4
+    ],
+    "rl": [
+     "1:1"
+    ],
+    "rl_text": "全学科でR:L=1:1",
+    "note": "ページ上は文学部・現代心理学部のみ確認",
+    "year": "2027年度入試"
+   }
+  },
+  "sources": [
+   "https://search.keinet.ne.jp/2290/general/exam_subject"
+  ]
+ },
+ {
+  "name": "中央大学",
+  "info": {
+   "kyotsu": {
+    "kamoku": "3教科3科目（単独3教科型）〜5教科6科目（法学部単独5教科型）",
+    "kyoka": [
+     3,
+     5
+    ],
+    "rl": [
+     "4:1",
+     "1:1"
+    ],
+    "rl_text": "ほとんどの方式でR:L=4:1、法学部の学部別併用のみ1:1",
+    "note": "ページ上は文学部・法学部のみ確認",
+    "year": "2027年度入試"
+   }
+  },
+  "sources": [
+   "https://search.keinet.ne.jp/2242/general/exam_subject"
+  ]
+ },
+ {
+  "name": "法政大学",
+  "info": {
+   "kyotsu": {
+    "kamoku": "2教科2科目（グローバル教養B方式）〜6教科7科目（C方式）",
+    "kyoka": [
+     2,
+     6
+    ],
+    "rl": [
+     "4:1",
+     "1:1"
+    ],
+    "rl_text": "C方式は全学科R:L=4:1、B方式は学科によりR:L=4:1または1:1",
+    "note": "国際文化学部はC方式なし",
+    "year": "2027年度入試"
+   }
+  },
+  "sources": [
+   "https://search.keinet.ne.jp/2279/general/exam_subject"
+  ]
+ },
+ {
+  "name": "同志社大学",
+  "info": {
+   "kyotsu": {
+    "kamoku": "1教科1科目（神学部・英文A方式）〜5教科5科目（哲学科）",
+    "kyoka": [
+     1,
+     5
+    ],
+    "rl": [
+     "2:1"
+    ],
+    "rl_text": "全学部で英語はR:L=2:1（英語200点）",
+    "note": "ページ上は文・心理・神・グローバル系・社会学部のみ確認",
+    "year": "2027年度入試"
+   }
+  },
+  "sources": [
+   "https://search.keinet.ne.jp/2498/general/exam_subject"
+  ]
+ },
+ {
+  "name": "立命館大学",
+  "info": {
+   "kyotsu": {
+    "kamoku": "2教科2科目（併用3教科型）〜6教科7科目（7科目型）",
+    "kyoka": [
+     2,
+     6
+    ],
+    "rl": [
+     "4:1"
+    ],
+    "rl_text": "共テ方式はR:L=4:1（R160・L40）",
+    "note": "ページ上は文学部のみ確認",
+    "year": "2027年度入試"
+   }
+  },
+  "sources": [
+   "https://search.keinet.ne.jp/2504/general/exam_subject"
+  ]
+ },
+ {
+  "name": "関西学院大学",
+  "info": {
+   "kyotsu": {
+    "kamoku": "1〜2教科2科目（併用日程英語）〜8科目（1月8科目型・文型指定）",
+    "kyoka": [
+     1,
+     6
+    ],
+    "rl": [
+     "4:1"
+    ],
+    "rl_text": "全方式でR:L=4:1（R160・L40など）",
+    "note": "ページ上は文学部のみ確認。8科目型の教科数はページ上明記なし",
+    "year": "2027年度入試"
+   }
+  },
+  "sources": [
+   "https://search.keinet.ne.jp/2558/general/exam_subject"
+  ]
+ },
+ {
+  "name": "関西大学",
+  "info": {
+   "kyotsu": {
+    "kamoku": "1教科1科目（社会学部併用）〜8科目（前期8科目型）",
+    "kyoka": [
+     1,
+     6
+    ],
+    "rl": [
+     "1:1",
+     "3:1"
+    ],
+    "rl_text": "文・外国語・社会学部はR:L=1:1、社会安全・法・政策創造学部はR:L=3:1",
+    "note": "ページ上は文・外国語・社会・社会安全・法・政策創造学部のみ確認",
+    "year": "2027年度入試"
+   }
+  },
+  "sources": [
+   "https://search.keinet.ne.jp/2533/general/exam_subject"
+  ]
+ },
+ {
+  "name": "南山大学",
+  "info": {
+   "kyotsu": {
+    "kamoku": "2教科2科目（全学統一テ併用）〜5教科5科目（前期5教科型）",
+    "kyoka": [
+     2,
+     5
+    ],
+    "rl": [
+     "1:1"
+    ],
+    "rl_text": "全方式でR:L=1:1",
+    "note": "ページ上は外国語学部のみ確認",
+    "year": "2027年度入試"
+   }
+  },
+  "sources": [
+   "https://search.keinet.ne.jp/2460/general/exam_subject"
+  ]
+ },
+ {
+  "name": "西南学院大学",
+  "info": {
+   "kyotsu": {
+    "kamoku": "1〜2教科2科目（併用型）〜5教科5科目（法学部前期）",
+    "kyoka": [
+     1,
+     5
+    ],
+    "rl": [
+     "1:1"
+    ],
+    "rl_text": "全方式でR:L=1:1",
+    "note": "神学部は共テ利用方式なし。ページは経済学部までで、以降の学部は未確認",
+    "year": "2027年度入試"
+   }
+  },
+  "sources": [
+   "https://search.keinet.ne.jp/2705/general/exam_subject"
+  ]
+ },
+ {
+  "name": "成蹊大学",
+  "info": {
+   "kyotsu": {
+    "kamoku": "3教科3〜4科目（3教科型）〜4〜5教科5科目（5科目国公併願）",
+    "kyoka": [
+     3,
+     5
+    ],
+    "rl": [
+     "1:1"
+    ],
+    "rl_text": "全方式でR:L=1:1（R200・L200またはR100・L100）",
+    "note": "理工学部は5科目国公併願方式なし",
+    "year": "2027年度入試"
+   }
+  },
+  "sources": [
+   "https://search.keinet.ne.jp/2228/general/exam_subject"
+  ]
+ },
+ {
+  "name": "成城大学",
+  "info": {
+   "kyotsu": {
+    "kamoku": "2教科2科目（英文学科後期）〜4教科4科目（国公併願）",
+    "kyoka": [
+     2,
+     4
+    ],
+    "rl": [
+     "1:1",
+     "2:1",
+     "4:1",
+     "3:1"
+    ],
+    "rl_text": "学科・方式で異なる（国文1:1、英文2:1、芸術4:1、マスコミ3:1など）",
+    "note": "ページ上は文芸学部のみ確認。一部方式はLの配点記載なし",
+    "year": "2027年度入試"
+   }
+  },
+  "sources": [
+   "https://search.keinet.ne.jp/2229/general/exam_subject"
+  ]
+ },
+ {
+  "name": "明治学院大学",
+  "info": {
+   "kyotsu": {
+    "kamoku": "3教科3科目（多くの学科）〜5教科5科目（心理学科5教科型）",
+    "kyoka": [
+     3,
+     5
+    ],
+    "rl": [
+     "4:1"
+    ],
+    "rl_text": "全方式でR:L=4:1（R160・L40）",
+    "note": "ページは国際学部の途中まで",
+    "year": "2027年度入試"
+   }
+  },
+  "sources": [
+   "https://search.keinet.ne.jp/2287/general/exam_subject"
+  ]
+ },
+ {
+  "name": "獨協大学",
+  "info": {
+   "kyotsu": {
+    "kamoku": "1教科1科目（後期1科目型）〜3教科3科目",
+    "kyoka": [
+     1,
+     3
+    ],
+    "rl": [
+     "4:1"
+    ],
+    "rl_text": "全方式でR:L=4:1（R160・L40）",
+    "note": "ページ上は外国語・国際教養学部のみ確認",
+    "year": "2027年度入試"
+   }
+  },
+  "sources": [
+   "https://search.keinet.ne.jp/2156/general/exam_subject"
+  ]
+ },
+ {
+  "name": "國學院大學",
+  "info": {
+   "kyotsu": {
+    "kamoku": "3教科3科目〜5教科5科目（V方式）",
+    "kyoka": [
+     3,
+     5
+    ],
+    "rl": [
+     "1:1"
+    ],
+    "rl_text": "全方式でR:L=1:1",
+    "note": "人間開発学部初等教育学科は英語が選択科目。ページ上は文・人間開発学部の一部のみ確認",
+    "year": "2027年度入試"
+   }
+  },
+  "sources": [
+   "https://search.keinet.ne.jp/2213/general/exam_subject"
+  ]
+ },
+ {
+  "name": "武蔵大学",
+  "info": {
+   "kyotsu": {
+    "kamoku": "2教科2科目（後期）〜4教科5科目（前期5科目型）",
+    "kyoka": [
+     2,
+     4
+    ],
+    "rl": [
+     "3:1"
+    ],
+    "rl_text": "全方式でR:L=3:1（R150・L50またはR75・L25）",
+    "note": "",
+    "year": "2027年度入試"
+   }
+  },
+  "sources": [
+   "https://search.keinet.ne.jp/2281/general/exam_subject"
+  ]
+ },
+ {
+  "name": "日本大学",
+  "info": {
+   "kyotsu": {
+    "kamoku": "3教科3科目（多くの学科）〜4教科4科目（社会学科）（C方式）",
+    "kyoka": [
+     3,
+     4
+    ],
+    "rl": [
+     "1:1"
+    ],
+    "rl_text": "全学科でR:L=1:1（R100・L100またはR50・L50）",
+    "note": "ページ上は文理学部のみ確認",
+    "year": "2027年度入試"
+   }
+  },
+  "sources": [
+   "https://search.keinet.ne.jp/2267/general/exam_subject"
+  ]
+ },
+ {
+  "name": "東洋大学",
+  "info": {
+   "kyotsu": {
+    "kamoku": "3教科3科目〜5教科5科目（前期5科目）",
+    "kyoka": [
+     3,
+     5
+    ],
+    "rl": [
+     "1:1"
+    ],
+    "rl_text": "全方式でR:L=1:1",
+    "note": "ページ上は文学部の一部のみ確認",
+    "year": "2027年度入試"
+   }
+  },
+  "sources": [
+   "https://search.keinet.ne.jp/2265/general/exam_subject"
+  ]
+ },
+ {
+  "name": "駒澤大学",
+  "info": {
+   "kyotsu": {
+    "kamoku": "3教科3科目（前期－共テ）",
+    "kyoka": [
+     3
+    ],
+    "rl": [
+     "4:1"
+    ],
+    "rl_text": "R:L=4:1（R160・L40）",
+    "note": "ページ上は文学部のみ確認",
+    "year": "2027年度入試"
+   }
+  },
+  "sources": [
+   "https://search.keinet.ne.jp/2216/general/exam_subject"
+  ]
+ },
+ {
+  "name": "専修大学",
+  "info": {
+   "kyotsu": {
+    "kamoku": "1教科1科目（併用・英語単独）〜4教科4科目（前期4科目）",
+    "kyoka": [
+     1,
+     4
+    ],
+    "rl": [
+     "4:1",
+     "1:1",
+     "3:1"
+    ],
+    "rl_text": "学科で異なる（文学部の多くと国際コミュ日本語4:1、英語英米文・異文化1:1、法・経済3:1）",
+    "note": "ページは経済学部の途中まで",
+    "year": "2027年度入試"
+   }
+  },
+  "sources": [
+   "https://search.keinet.ne.jp/2233/general/exam_subject"
+  ]
+ },
+ {
+  "name": "芝浦工業大学",
+  "info": {
+   "kyotsu": {
+    "kamoku": "3教科4科目型〜6教科8科目型",
+    "kyoka": [
+     3,
+     6
+    ],
+    "rl": [
+     "1:1"
+    ],
+    "rl_text": "全学科でR:L=1:1",
+    "note": "ページ上は工学部・システム理工学部の一部のみ確認",
+    "year": "2027年度入試"
+   }
+  },
+  "sources": [
+   "https://search.keinet.ne.jp/2219/general/exam_subject"
+  ]
+ },
+ {
+  "name": "東京都市大学",
+  "info": {
+   "kyotsu": {
+    "kamoku": "2教科3科目（探究併用型）〜6教科7科目（6教科型）",
+    "kyoka": [
+     2,
+     6
+    ],
+    "rl": [
+     "7:3"
+    ],
+    "rl_text": "R:L=7:3（R140・L60）",
+    "note": "3教科型などは英語が他教科との選択。ページ上は都市生活・理工学部のみ確認",
+    "year": "2027年度入試"
+   }
+  },
+  "sources": [
+   "https://search.keinet.ne.jp/2282/general/exam_subject"
+  ]
+ },
+ {
+  "name": "東京電機大学",
+  "info": {
+   "kyotsu": {
+    "kamoku": "3教科3〜4科目（3教科型）〜4教科4〜5科目（4教科国語・4教科情報型）",
+    "kyoka": [
+     3,
+     4
+    ],
+    "rl": [
+     "3:1"
+    ],
+    "rl_text": "全学科でR:L=3:1（R150・L50）",
+    "note": "ページ上は未来科学部・工学部の一部のみ確認",
+    "year": "2027年度入試"
+   }
+  },
+  "sources": [
+   "https://search.keinet.ne.jp/2259/general/exam_subject"
+  ]
+ },
+ {
+  "name": "工学院大学",
+  "info": {
+   "kyotsu": {
+    "kamoku": "3教科3〜4科目（前期3教科型・後期）〜4教科4〜5科目（前期4教科型）",
+    "kyoka": [
+     3,
+     4
+    ],
+    "rl": [
+     "3:1"
+    ],
+    "rl_text": "全学科でR:L=3:1（R150・L50）",
+    "note": "後期は英語が他教科との選択。ページ上は工学部・建築学部のみ確認",
+    "year": "2027年度入試"
+   }
+  },
+  "sources": [
+   "https://search.keinet.ne.jp/2212/general/exam_subject"
+  ]
+ },
+ {
+  "name": "東京農業大学",
+  "info": {
+   "kyotsu": {
+    "kamoku": "1〜2教科2科目（2科目型）〜4教科4科目（4科目型）",
+    "kyoka": [
+     1,
+     4
+    ],
+    "rl": [
+     "1:1"
+    ],
+    "rl_text": "全方式でR:L=1:1（R100・L100）",
+    "note": "学科により英語は必須または選択。ページ上は農・応用生物科学・地域環境科学部の一部のみ確認",
+    "year": "2027年度入試"
+   }
+  },
+  "sources": [
+   "https://search.keinet.ne.jp/2260/general/exam_subject"
+  ]
+ }
+]

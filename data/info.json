@@ -46,7 +46,8 @@
 "https://www.mext.go.jp/b_menu/activity/detail/2025/20251219.html",
 "https://www.ehime-u.ac.jp/wp-content/uploads/2026/06/pr_20260625_pias.pdf",
 "https://search.keinet.ne.jp/1120/outline/licential",
-"https://search.keinet.ne.jp/1120/outline/admission_employment"
+"https://search.keinet.ne.jp/1120/outline/admission_employment",
+"https://search.keinet.ne.jp/1120/general/exam_subject"
 ],
 "licenses": [
 "医師国家試験受験資格（医学科）",
@@ -64,7 +65,21 @@
 "工学部：16学科で課題解決型プロジェクトと卒業研究",
 "農学部：分子から群集レベルの生命科学、環境資源、獣医学（6年制）",
 "医学部：研究医養成を重視する医学科、健康総合科学（環境生命・公共健康・看護）"
-]
+],
+"kyotsu": {
+"kamoku": "6教科8科目（全科類）",
+"kyoka": [
+6,
+6
+],
+"rl": [
+"7:3",
+"1:1"
+],
+"rl_text": "文科・理科各類はR140:L60（7:3）、College of DesignはR100:L100（1:1）",
+"note": "前期のみ（後期なし）。科類ごとに二段階選抜あり（2.3〜3倍）。共通テスト1000点を110点に換算",
+"year": "2027年度入試"
+}
 },
 "京都大学": {
 "difficulty": {
@@ -114,7 +129,8 @@
 "https://www.nedo.go.jp/news/other/ZZKH_100122.html",
 "https://www.kyoto-u.ac.jp/ja/about/history/honor/award_b/nobel.html",
 "https://search.keinet.ne.jp/1280/outline/licential",
-"https://search.keinet.ne.jp/1280/outline/admission_employment"
+"https://search.keinet.ne.jp/1280/outline/admission_employment",
+"https://search.keinet.ne.jp/1280/general/exam_subject"
 ],
 "licenses": [
 "医師国家試験受験資格（医学科）",
@@ -132,7 +148,21 @@
 "薬学部：医薬品の設計・合成と生体分子との相互作用の研究",
 "総合人間学部：文理を横断する「人間の学」（学術越境）",
 "教育学部：教育哲学・教育史、教育・認知・臨床心理学、教育と社会"
-]
+],
+"kyotsu": {
+"kamoku": "6教科8科目（多くの学部）、経済学部理系は6教科7科目も可",
+"kyoka": [
+6,
+6
+],
+"rl": [
+"3:1",
+"1:1"
+],
+"rl_text": "多くの学部でR:L=3:1、工学部はR25:L25（1:1）",
+"note": "全学部で二段階選抜あり（3〜3.5倍）。法学部は日本史か世界史を含むこと。掲載は前期のみ確認",
+"year": "2027年度入試"
+}
 },
 "大阪大学": {
 "difficulty": {
@@ -179,7 +209,8 @@
 "https://www.mext.go.jp/b_menu/activity/detail/2025/20251006.html",
 "https://www.kyoto-u.ac.jp/ja/about/history/honor/award_b/nobel.html",
 "https://search.keinet.ne.jp/1295/outline/licential",
-"https://search.keinet.ne.jp/1295/outline/admission_employment"
+"https://search.keinet.ne.jp/1295/outline/admission_employment",
+"https://search.keinet.ne.jp/1295/general/exam_subject"
 ],
 "licenses": [
 "医師国家試験受験資格（医学科）",
@@ -197,7 +228,20 @@
 "基礎工学部：電子・光デバイス、合成化学・化学工学、知能システム、計算機科学・数理科学",
 "医学部：基礎医学研究者を育てるMD研究者育成プログラム",
 "人間科学部：行動学・社会学・教育学・共生学"
-]
+],
+"kyotsu": {
+"kamoku": "6教科8科目（文学部・外国語学部）",
+"kyoka": [
+6,
+6
+],
+"rl": [
+"3:1"
+],
+"rl_text": "確認できた学部（文・外国語）はR:L=3:1",
+"note": "外国語学部は二段階選抜あり（2.3倍）。理科は理科基礎2科目で代替可。他学部は出典ページで未確認",
+"year": "2027年度入試"
+}
 },
 "東北大学": {
 "difficulty": {
@@ -245,7 +289,8 @@
 "https://www.watch.impress.co.jp/docs/news/1587784.html",
 "https://mypage.atpress.ne.jp/smart/news/5101596",
 "https://search.keinet.ne.jp/1050/outline/licential",
-"https://search.keinet.ne.jp/1050/outline/admission_employment"
+"https://search.keinet.ne.jp/1050/outline/admission_employment",
+"https://search.keinet.ne.jp/1050/general/exam_subject"
 ],
 "licenses": [
 "医師国家試験受験資格（医学科）",
@@ -263,7 +308,20 @@
 "農学部：分子・遺伝子レベルからフィールド・農業経済までの食料研究",
 "経済学部：経済学と経営学の融合教育とデータサイエンス",
 "歯学部：口腔の健康管理を通じた全身の健康への貢献"
-]
+],
+"kyotsu": {
+"kamoku": "6教科8科目（確認できた全学部・方式）",
+"kyoka": [
+6,
+6
+],
+"rl": [
+"3:1"
+],
+"rl_text": "確認できた学部はR:L=3:1（例 R150:L50）",
+"note": "二段階選抜あり（前期3〜5.8倍、後期10〜14倍）。後期の一部教科は第1段階のみ使用",
+"year": "2027年度入試"
+}
 },
 "名古屋大学": {
 "difficulty": {
@@ -309,7 +367,8 @@
 "https://profs.provost.nagoya-u.ac.jp/html/100014894_ja.html",
 "https://www.itmedia.co.jp/keywords/nagoya_univ.html",
 "https://search.keinet.ne.jp/1250/outline/licential",
-"https://search.keinet.ne.jp/1250/outline/admission_employment"
+"https://search.keinet.ne.jp/1250/outline/admission_employment",
+"https://search.keinet.ne.jp/1250/general/exam_subject"
 ],
 "licenses": [
 "医師国家試験受験資格（医学科）",
@@ -327,7 +386,20 @@
 "情報学部：数理情報（最適化・量子情報）、複雑システム（計算科学・生命情報学）、機械学習",
 "教育学部：生涯教育・学校教育情報・国際社会文化・心理社会行動・発達教育臨床",
 "経済学部：経済学史・財政・金融・計量経済、マーケティング・会計・ファイナンス"
-]
+],
+"kyotsu": {
+"kamoku": "6教科8科目（確認できた全学部）",
+"kyoka": [
+6,
+6
+],
+"rl": [
+"3:1"
+],
+"rl_text": "確認できた学部はR:L=3:1（例 R150:L50、工学部R75:L25）",
+"note": "医学部医学科は二段階選抜あり、他の確認学部はなし。工学部は理科に物理・化学必須",
+"year": "2027年度入試"
+}
 },
 "九州大学": {
 "difficulty": {
@@ -376,7 +448,8 @@
 "https://search.keinet.ne.jp/1405/outline/campus",
 "https://www.kyushu-u.ac.jp/en/university/president/message/2601nentou",
 "https://search.keinet.ne.jp/1405/outline/licential",
-"https://search.keinet.ne.jp/1405/outline/admission_employment"
+"https://search.keinet.ne.jp/1405/outline/admission_employment",
+"https://search.keinet.ne.jp/1405/general/exam_subject"
 ],
 "licenses": [
 "医師国家試験受験資格（医学科）",
@@ -394,7 +467,20 @@
 "芸術工学部：環境設計、インダストリアルデザイン、メディアデザイン、音響設計",
 "農学部：生命科学・環境科学・食の科学（地球森林科学・動物生産科学など）",
 "医学部生命科学科：分子細胞生物学・高次機能制御学・生体情報科学"
-]
+],
+"kyotsu": {
+"kamoku": "6教科8科目（多くの学部）〜5教科6科目（理学部物理学科後期）",
+"kyoka": [
+5,
+6
+],
+"rl": [
+"1:1"
+],
+"rl_text": "確認できた全学部・方式でR:L=1:1",
+"note": "全学部で二段階選抜あり（前期4倍、後期5〜10倍）。共創学部は英語資格・検定試験の換算あり",
+"year": "2027年度入試"
+}
 },
 "北海道大学": {
 "difficulty": {
@@ -443,7 +529,8 @@
 "https://www.icredd.hokudai.ac.jp/list-pf/?p=57",
 "https://www.global.hokudai.ac.jp/blog/dr-benjamin-list-a-specially-appointed-professor-at-hokkaido-university-was-awarded-the-nobel-prize-in-chemistry",
 "https://search.keinet.ne.jp/1025/outline/licential",
-"https://search.keinet.ne.jp/1025/outline/admission_employment"
+"https://search.keinet.ne.jp/1025/outline/admission_employment",
+"https://search.keinet.ne.jp/1025/general/exam_subject"
 ],
 "licenses": [
 "医師国家試験受験資格（医学科）",
@@ -461,7 +548,20 @@
 "工学部：ロボット・宇宙工学・量子ビーム工学、AI・半導体を含む情報エレクトロニクス",
 "理学部：代数・幾何・解析、宇宙・素粒子、地球深部から惑星・宇宙まで",
 "薬学部：天然物化学・有機合成化学による創薬科学、薬物送達・薬物動態"
-]
+],
+"kyotsu": {
+"kamoku": "6教科8科目（確認できた全学部・方式）",
+"kyoka": [
+6,
+6
+],
+"rl": [
+"1:1"
+],
+"rl_text": "確認できた全学部・方式でR:L=1:1（R30:L30等）",
+"note": "二段階選抜あり（前期4倍、後期6〜10倍）。総合入試（文系・理系）あり",
+"year": "2027年度入試"
+}
 },
 "一橋大学": {
 "difficulty": {
@@ -499,7 +599,8 @@
 "https://search.keinet.ne.jp/1165/outline/campus",
 "https://www.hit-u.ac.jp/hq-mag/innovation/569_20241002/",
 "https://search.keinet.ne.jp/1165/outline/licential",
-"https://search.keinet.ne.jp/1165/outline/admission_employment"
+"https://search.keinet.ne.jp/1165/outline/admission_employment",
+"https://search.keinet.ne.jp/1165/general/exam_subject"
 ],
 "licenses": [
 "教員免許（中・高 社会・地理歴史・公民、社会学部）",
@@ -513,7 +614,20 @@
 "経済学部：入門から大学院科目まで段階的に履修、学部と修士の5年一貫教育",
 "商学部：経営・会計・マーケティング・金融の4領域を少人数ゼミで研究",
 "ソーシャル・データサイエンス学部：統計学・情報・AIと社会科学を融合したPBL演習"
-]
+],
+"kyotsu": {
+"kamoku": "6教科8科目（前期）〜6教科7科目（後期）",
+"kyoka": [
+6,
+6
+],
+"rl": [
+"1:1"
+],
+"rl_text": "全学部・方式でR:L=1:1",
+"note": "全学部で二段階選抜あり（前期3倍、後期6倍）。ソーシャル・データサイエンス学部前期は理科・地歴公民が選択型",
+"year": "2027年度入試"
+}
 },
 "東京科学大学": {
 "difficulty": {
@@ -557,7 +671,8 @@
 "https://www.mext.go.jp/b_menu/activity/detail/2025/20251219.html",
 "https://www.kyoto-u.ac.jp/ja/about/history/honor/award_b/nobel.html",
 "https://search.keinet.ne.jp/1150/outline/licential",
-"https://search.keinet.ne.jp/1150/outline/admission_employment"
+"https://search.keinet.ne.jp/1150/outline/admission_employment",
+"https://search.keinet.ne.jp/1150/general/exam_subject"
 ],
 "licenses": [
 "医師国家試験受験資格（医学科）",
@@ -567,7 +682,20 @@
 "教員免許（中・高 数学・理科、高 工業・情報）",
 "一級建築士受験資格（建築学系）"
 ],
-"careers": "理工系の各学院は8〜9割が大学院に進学（物質理工学院90.3%、情報理工学院87.2%）。医学部保健衛生学科63.5%、歯学部口腔保健学科64.1%は就職（2024年度卒）。"
+"careers": "理工系の各学院は8〜9割が大学院に進学（物質理工学院90.3%、情報理工学院87.2%）。医学部保健衛生学科63.5%、歯学部口腔保健学科64.1%は就職（2024年度卒）。",
+"kyotsu": {
+"kamoku": "6教科8科目（前期の多く）〜5教科7科目（医・歯・検査技術学の後期）",
+"kyoka": [
+5,
+6
+],
+"rl": [
+"3:1"
+],
+"rl_text": "医療系（医・歯・保健・口腔）はR150:L50（3:1）。理工系学院はR・L配点の記載なし",
+"note": "理工系学院は共通テストを第1段階選抜のみに利用（3.5倍）。医学科・歯学科は二段階選抜あり",
+"year": "2027年度入試"
+}
 },
 "神戸大学": {
 "difficulty": {
@@ -615,7 +743,8 @@
 "https://www.kobe-u.ac.jp/ja/about/public-relations/press/2024",
 "https://www.research.kobe-u.ac.jp/gksh-web/iar/faculty/honorary.html",
 "https://search.keinet.ne.jp/1310/outline/licential",
-"https://search.keinet.ne.jp/1310/outline/admission_employment"
+"https://search.keinet.ne.jp/1310/outline/admission_employment",
+"https://search.keinet.ne.jp/1310/general/exam_subject"
 ],
 "licenses": [
 "医師国家試験受験資格（医学科）",
@@ -625,7 +754,20 @@
 "一級建築士受験資格（建築学科）",
 "公認心理師受験資格（発達コミュニティ学科）"
 ],
-"careers": "文系は就職が中心（経営学部93.4%、文学部85.0%、国際人間科学部グローバル文化学科87.8%）。工・理・農は大学院進学が多い（工学部情報知能工学科89.1%、応用化学科87.1%）（2024年度卒）。"
+"careers": "文系は就職が中心（経営学部93.4%、文学部85.0%、国際人間科学部グローバル文化学科87.8%）。工・理・農は大学院進学が多い（工学部情報知能工学科89.1%、応用化学科87.1%）（2024年度卒）。",
+"kyotsu": {
+"kamoku": "6教科8科目（多くの学部）、経済学部は選択型",
+"kyoka": [
+6,
+6
+],
+"rl": [
+"4:1"
+],
+"rl_text": "確認できた全学部・方式でR:L=4:1（例 R80:L20）",
+"note": "全学部で二段階選抜あり（前期4.5倍、後期10倍）。経済学部は理科・地歴公民が選択型",
+"year": "2027年度入試"
+}
 },
 "筑波大学": {
 "difficulty": {
@@ -672,7 +814,8 @@
 "https://search.keinet.ne.jp/1085/outline/admission_employment",
 "https://wun.ac.uk/article/wun-welcomes-university-of-tsukuba-to-the-network/",
 "https://nrid.nii.ac.jp/nrid/1000020202369/",
-"https://www.amed.go.jp/news/topics/20230926.html"
+"https://www.amed.go.jp/news/topics/20230926.html",
+"https://search.keinet.ne.jp/1085/general/exam_subject"
 ],
 "licenses": [
 "教員免許（小・中・高 各教科、特別支援）",
@@ -682,7 +825,20 @@
 "公認心理師受験資格（心理学類）",
 "学芸員・司書"
 ],
-"careers": "理工・生命環境・情報系は大学院進学が中心（化学類91.2%、応用理工学類91.4%、情報科学類82.9%が進学）。人文・社会系や体育専門学群は就職が6〜8割、看護学類は75.0%が就職（2024年度卒）。"
+"careers": "理工・生命環境・情報系は大学院進学が中心（化学類91.2%、応用理工学類91.4%、情報科学類82.9%が進学）。人文・社会系や体育専門学群は就職が6〜8割、看護学類は75.0%が就職（2024年度卒）。",
+"kyotsu": {
+"kamoku": "6教科8科目（多くの学類）〜6教科6科目（社会学類）",
+"kyoka": [
+6,
+6
+],
+"rl": [
+"4:1"
+],
+"rl_text": "確認できた全学類でR:L=4:1（例 R160:L40）",
+"note": "多くの学類で二段階選抜あり（4〜10倍）。人文学類・日本語・日本文化学類はなし。情報Ⅰは全方式必須",
+"year": "2027年度入試"
+}
 },
 "茨城大学": {
 "difficulty": {
@@ -721,7 +877,8 @@
 "https://search.keinet.ne.jp/1075/outline/campus",
 "https://univ-journal.net/243252/",
 "https://search.keinet.ne.jp/1075/outline/licential",
-"https://search.keinet.ne.jp/1075/outline/admission_employment"
+"https://search.keinet.ne.jp/1075/outline/admission_employment",
+"https://search.keinet.ne.jp/1075/general/exam_subject"
 ],
 "licenses": [
 "教員免許（幼・小・中・高、特別支援）",
@@ -731,7 +888,21 @@
 "一級建築士受験資格（都市システム工学科）",
 "測量士（理学部の一部・都市システム工学科）"
 ],
-"careers": "人文社会科学部は就職が9割前後（法律経済学科92.6%）、教育学部学校教育教員養成課程は87.3%が就職。工学部は大学院進学が6〜8割（物質科学工学科81.0%）（2024年度卒）。"
+"careers": "人文社会科学部は就職が9割前後（法律経済学科92.6%）、教育学部学校教育教員養成課程は87.3%が就職。工学部は大学院進学が6〜8割（物質科学工学科81.0%）（2024年度卒）。",
+"kyotsu": {
+"kamoku": "6教科7科目・6教科6科目など（学科により文型・理型・選択型）",
+"kyoka": [
+6,
+6
+],
+"rl": [
+"1:1",
+"4:1"
+],
+"rl_text": "ほとんどの学科でR:L=1:1、人文社会科学部人間文化学科後期のみR240:L60（4:1）",
+"note": "確認できた学科・方式では二段階選抜なし",
+"year": "2027年度入試"
+}
 },
 "千葉大学": {
 "difficulty": {
@@ -781,7 +952,8 @@
 "https://www.eurekalert.org/newsportal/japan/home?page=25",
 "https://www.chiba-u.ac.jp/news/award/post_113.html",
 "https://search.keinet.ne.jp/1105/outline/licential",
-"https://search.keinet.ne.jp/1105/outline/admission_employment"
+"https://search.keinet.ne.jp/1105/outline/admission_employment",
+"https://search.keinet.ne.jp/1105/general/exam_subject"
 ],
 "licenses": [
 "医師国家試験受験資格（医学科）",
@@ -791,7 +963,20 @@
 "一級建築士受験資格（建築学科）",
 "学芸員・司書"
 ],
-"careers": "文系・教育系は就職が中心（法政経学部84.6%、教育学部学校教員養成課程83.4%）。看護学部89.4%、薬学科94.0%が就職。理・工は大学院進学が多い（工学部総合工学科77.2%）（2024年度卒）。"
+"careers": "文系・教育系は就職が中心（法政経学部84.6%、教育学部学校教員養成課程83.4%）。看護学部89.4%、薬学科94.0%が就職。理・工は大学院進学が多い（工学部総合工学科77.2%）（2024年度卒）。",
+"kyotsu": {
+"kamoku": "6教科8科目（確認できた全学部）",
+"kyoka": [
+6,
+6
+],
+"rl": [
+"4:1"
+],
+"rl_text": "確認できた全学部でR:L=4:1（例 R80:L20）",
+"note": "法政経学部は二段階選抜あり（前期3.5倍、後期13倍）。教育学部の一部は理科・地歴公民が選択型",
+"year": "2027年度入試"
+}
 },
 "埼玉大学": {
 "difficulty": {
@@ -829,7 +1014,8 @@
 "https://search.keinet.ne.jp/1100/outline/campus",
 "https://www.eurekalert.org/newsportal/japan/home?page=25",
 "https://search.keinet.ne.jp/1100/outline/licential",
-"https://search.keinet.ne.jp/1100/outline/admission_employment"
+"https://search.keinet.ne.jp/1100/outline/admission_employment",
+"https://search.keinet.ne.jp/1100/general/exam_subject"
 ],
 "licenses": [
 "教員免許（幼・小・中・高、特別支援）",
@@ -839,7 +1025,21 @@
 "一級建築士受験資格（環境社会デザイン学科）",
 "測量士（環境社会デザイン学科）"
 ],
-"careers": "経済学部（昼間）89.3%、教養学部84.4%、教育学部学校教育教員養成課程86.6%が就職。理・工は大学院進学が中心（応用化学科86.4%、物理学科82.1%）（2024年度卒）。"
+"careers": "経済学部（昼間）89.3%、教養学部84.4%、教育学部学校教育教員養成課程86.6%が就職。理・工は大学院進学が中心（応用化学科86.4%、物理学科82.1%）（2024年度卒）。",
+"kyotsu": {
+"kamoku": "6教科8科目程度（多くの学科）、教育学部の一部は選択型、経済学部国際プログラム枠は3教科3〜4科目",
+"kyoka": [
+3,
+6
+],
+"rl": [
+"4:1",
+"3:1"
+],
+"rl_text": "教養学部・教育学部はR:L=4:1（R160:L40等）、経済学部はR:L=3:1（R150:L50等）",
+"note": "確認できた全方式で二段階選抜なし。教科・科目数の多くは出典ページで「文型・理型・選択型」表記",
+"year": "2027年度入試"
+}
 },
 "横浜国立大学": {
 "difficulty": {
@@ -882,7 +1082,8 @@
 "https://www.ripo.ynu.ac.jp/about/ynu_research/haishin/",
 "https://www.ynu.ac.jp/hus/jinji/31706/detail.html",
 "https://search.keinet.ne.jp/1170/outline/licential",
-"https://search.keinet.ne.jp/1170/outline/admission_employment"
+"https://search.keinet.ne.jp/1170/outline/admission_employment",
+"https://search.keinet.ne.jp/1170/general/exam_subject"
 ],
 "licenses": [
 "教員免許（小・中・高、特別支援）",
@@ -891,7 +1092,20 @@
 "教員免許（中・高 数学・理科・情報、理工学部）",
 "社会調査士（都市社会共生学科）"
 ],
-"careers": "経営学部89.3%、経済学部84.0%、教育学部学校教員養成課程86.8%が就職。理工学部は大学院進学が中心（化学・生命系学科86.3%）（2024年度卒）。"
+"careers": "経営学部89.3%、経済学部84.0%、教育学部学校教員養成課程86.8%が就職。理工学部は大学院進学が中心（化学・生命系学科86.3%）（2024年度卒）。",
+"kyotsu": {
+"kamoku": "6教科7科目（経営学部、経済学部後期）、経済学部前期・教育学部は選択型",
+"kyoka": [
+6,
+6
+],
+"rl": [
+"4:1"
+],
+"rl_text": "確認できた学部（経済・経営・教育）でR:L=4:1（R160:L40等）",
+"note": "確認できた方式で二段階選抜なし。理工学部・都市科学部は出典ページで未確認",
+"year": "2027年度入試"
+}
 },
 "東京外国語大学": {
 "difficulty": {
@@ -927,7 +1141,8 @@
 "https://search.keinet.ne.jp/1130/outline/department",
 "https://www.tufs.ac.jp/research/researcher/remarkable.html",
 "https://search.keinet.ne.jp/1130/outline/licential",
-"https://search.keinet.ne.jp/1130/outline/admission_employment"
+"https://search.keinet.ne.jp/1130/outline/admission_employment",
+"https://search.keinet.ne.jp/1130/general/exam_subject"
 ],
 "licenses": [
 "教員免許（中・高 英語）",
@@ -935,7 +1150,20 @@
 "教員免許（中 社会・高 地理歴史、国際社会学部）",
 "教員免許（中・高 国語、国際日本学部）"
 ],
-"careers": "就職が中心で、言語文化学部81.1%、国際社会学部75.3%、国際日本学部67.1%が就職（2024年度卒）。"
+"careers": "就職が中心で、言語文化学部81.1%、国際社会学部75.3%、国際日本学部67.1%が就職（2024年度卒）。",
+"kyotsu": {
+"kamoku": "5教科6〜7科目（前期）、国際社会学部後期は3教科3科目",
+"kyoka": [
+3,
+5
+],
+"rl": [
+"1:1"
+],
+"rl_text": "確認できた全学部・方式でR:L=1:1（R75:L75、後期R100:L100）",
+"note": "二段階選抜なし。国際社会学部後期は英文出題の小論文あり",
+"year": "2027年度入試"
+}
 },
 "お茶の水女子大学": {
 "difficulty": {
@@ -971,7 +1199,8 @@
 "https://search.keinet.ne.jp/1110/outline/expense",
 "https://search.keinet.ne.jp/1110/outline/department",
 "https://search.keinet.ne.jp/1110/outline/licential",
-"https://search.keinet.ne.jp/1110/outline/admission_employment"
+"https://search.keinet.ne.jp/1110/outline/admission_employment",
+"https://search.keinet.ne.jp/1110/general/exam_subject"
 ],
 "licenses": [
 "教員免許（幼・小・中・高 各教科）",
@@ -981,7 +1210,20 @@
 "一級建築士受験資格（人間環境工学科）",
 "学芸員"
 ],
-"careers": "文教育学部は就職が約7割（人文科学科72.9%）。理学部は大学院進学が中心（生物学科82.8%、化学科80.0%）、食物栄養学科も66.7%が進学（2024年度卒）。"
+"careers": "文教育学部は就職が約7割（人文科学科72.9%）。理学部は大学院進学が中心（生物学科82.8%、化学科80.0%）、食物栄養学科も66.7%が進学（2024年度卒）。",
+"kyotsu": {
+"kamoku": "前期は文型・理型・選択型（6教科7科目等）、後期は3教科3科目〜5教科7科目など",
+"kyoka": [
+3,
+6
+],
+"rl": [
+"1:1"
+],
+"rl_text": "全学部・方式でR:L=1:1",
+"note": "全方式で二段階選抜なし。理学部数学科・物理学科の後期は二次試験なし",
+"year": "2027年度入試"
+}
 },
 "東京学芸大学": {
 "difficulty": {
@@ -1012,7 +1254,8 @@
 "https://search.keinet.ne.jp/1135/outline/expense",
 "https://search.keinet.ne.jp/1135/outline/department",
 "https://search.keinet.ne.jp/1135/outline/licential",
-"https://search.keinet.ne.jp/1135/outline/admission_employment"
+"https://search.keinet.ne.jp/1135/outline/admission_employment",
+"https://search.keinet.ne.jp/1135/general/exam_subject"
 ],
 "licenses": [
 "教員免許（幼・小・中・高 各教科、特別支援）",
@@ -1022,7 +1265,20 @@
 "社会福祉士受験資格（ソーシャルワーク）",
 "学芸員・司書"
 ],
-"careers": "初等教育専攻は82.0%が就職。教員養成課程の卒業者812人のうち教員就職は54.1%（正規採用359人・臨時的任用80人）、大学院等進学は14.2%（2024年度卒）。"
+"careers": "初等教育専攻は82.0%が就職。教員養成課程の卒業者812人のうち教員就職は54.1%（正規採用359人・臨時的任用80人）、大学院等進学は14.2%（2024年度卒）。",
+"kyotsu": {
+"kamoku": "6教科6科目（音楽・美術・保健体育）、他は理型・選択型",
+"kyoka": [
+6,
+6
+],
+"rl": [
+"1:1"
+],
+"rl_text": "確認できた全専攻でR:L=1:1（R100:L100）",
+"note": "二段階選抜なし。出典ページで確認できたのは初等教育課程のみ",
+"year": "2027年度入試"
+}
 },
 "東京農工大学": {
 "difficulty": {
@@ -1057,7 +1313,8 @@
 "https://search.keinet.ne.jp/1160/outline/department",
 "https://phys.org/rss-feed/partners/tokyo-university-of-agriculture-and-technology/",
 "https://search.keinet.ne.jp/1160/outline/licential",
-"https://search.keinet.ne.jp/1160/outline/admission_employment"
+"https://search.keinet.ne.jp/1160/outline/admission_employment",
+"https://search.keinet.ne.jp/1160/general/exam_subject"
 ],
 "licenses": [
 "獣医師国家試験受験資格（共同獣医学科）",
@@ -1067,7 +1324,20 @@
 "測量士（地域生態システム学科）",
 "学芸員"
 ],
-"careers": "工学部は8〜9割が大学院に進学（生体医用システム工学科92.7%、機械システム工学科88.5%）。農学部も進学が中心で、共同獣医学科は66.6%が就職（2024年度卒）。"
+"careers": "工学部は8〜9割が大学院に進学（生体医用システム工学科92.7%、機械システム工学科88.5%）。農学部も進学が中心で、共同獣医学科は66.6%が就職（2024年度卒）。",
+"kyotsu": {
+"kamoku": "6教科8科目（確認できた全学科）",
+"kyoka": [
+6,
+6
+],
+"rl": [
+"13:7"
+],
+"rl_text": "全学科でR:L=13:7（R130:L70、工学部後期はR65:L35）",
+"note": "二段階選抜なし",
+"year": "2027年度入試"
+}
 },
 "電気通信大学": {
 "difficulty": {
@@ -1105,14 +1375,28 @@
 "https://phys.org/rss-feed/partners/university-of-electro-communications/",
 "https://www.uec.ac.jp/research/members/distinguished_honorary_professor.html",
 "https://search.keinet.ne.jp/1115/outline/licential",
-"https://search.keinet.ne.jp/1115/outline/admission_employment"
+"https://search.keinet.ne.jp/1115/outline/admission_employment",
+"https://search.keinet.ne.jp/1115/general/exam_subject"
 ],
 "licenses": [
 "教員免許（中・高 数学）",
 "教員免許（中・高 理科）",
 "教員免許（高 情報）"
 ],
-"careers": "昼間学域は7割以上が大学院に進学（Ⅰ類74.4%、Ⅱ類70.5%、Ⅲ類76.3%）、就職は2割台。夜間主の先端工学基礎課程は57.7%が就職（2024年度卒）。"
+"careers": "昼間学域は7割以上が大学院に進学（Ⅰ類74.4%、Ⅱ類70.5%、Ⅲ類76.3%）、就職は2割台。夜間主の先端工学基礎課程は57.7%が就職（2024年度卒）。",
+"kyotsu": {
+"kamoku": "6教科8科目（全類・前後期）",
+"kyoka": [
+6,
+6
+],
+"rl": [
+"3:1"
+],
+"rl_text": "全類でR:L=3:1（前期R75:L25）",
+"note": "後期のみ二段階選抜あり（8倍）",
+"year": "2027年度入試"
+}
 },
 "東京都立大学": {
 "difficulty": {
@@ -1149,7 +1433,8 @@
 "https://search.keinet.ne.jp/1532/outline/expense",
 "https://search.keinet.ne.jp/1532/outline/department",
 "https://search.keinet.ne.jp/1532/outline/licential",
-"https://search.keinet.ne.jp/1532/outline/admission_employment"
+"https://search.keinet.ne.jp/1532/outline/admission_employment",
+"https://search.keinet.ne.jp/1532/general/exam_subject"
 ],
 "licenses": [
 "看護師・保健師国家試験受験資格（看護学科）",
@@ -1159,7 +1444,24 @@
 "一級建築士受験資格（建築学科）",
 "学芸員"
 ],
-"careers": "文系は就職が中心（経済経営学部92.8%、人文社会学部約9割）。健康福祉学部も看護学科・理学療法学科92.3%が就職。理・工系は大学院進学が多い（化学科87.0%、航空宇宙システム工学科83.7%）（2024年度卒）。"
+"careers": "文系は就職が中心（経済経営学部92.8%、人文社会学部約9割）。健康福祉学部も看護学科・理学療法学科92.3%が就職。理・工系は大学院進学が多い（化学科87.0%、航空宇宙システム工学科83.7%）（2024年度卒）。",
+"kyotsu": {
+"kamoku": "6教科7科目・文型・理型が中心、法学部前期は3教科3科目、都市環境学部の一部は5教科6〜7科目",
+"kyoka": [
+3,
+6
+],
+"rl": [
+"4:1",
+"3:1",
+"2:1",
+"3:2",
+"1:1"
+],
+"rl_text": "学科・方式で大きく異なる。人文社会・法・経済経営・理・情報科学などはR:L=4:1、地理環境・建築・都市政策は2:1、都市基盤環境は1:1、観光科学は3:2（前期）・3:1（後期）",
+"note": "全学部で二段階選抜あり（前期6倍、後期14倍）。都市環境学部の一部で英語資格・検定試験の利用あり",
+"year": "2027年度入試"
+}
 },
 "横浜市立大学": {
 "difficulty": {
@@ -1203,7 +1505,8 @@
 "https://www.yokohama-cu.ac.jp/news/2025/cduaom000002go73-att/20251126kaishoshiki.pdf",
 "https://digitalpr.jp/pdf.php?r=140543",
 "https://search.keinet.ne.jp/1540/outline/licential",
-"https://search.keinet.ne.jp/1540/outline/admission_employment"
+"https://search.keinet.ne.jp/1540/outline/admission_employment",
+"https://search.keinet.ne.jp/1540/general/exam_subject"
 ],
 "licenses": [
 "医師国家試験受験資格（医学科）",
@@ -1211,7 +1514,21 @@
 "教員免許（中・高 英語、国際教養学部）",
 "教員免許（中・高 理科、理学部）"
 ],
-"careers": "国際商学部94.1%、国際教養学部89.0%、看護学科87.7%が就職。理学部は70.5%が大学院に進学（2024年度卒）。"
+"careers": "国際商学部94.1%、国際教養学部89.0%、看護学科87.7%が就職。理学部は70.5%が大学院に進学（2024年度卒）。",
+"kyotsu": {
+"kamoku": "文型・理型（A方式）と3教科3科目（B方式）を同時判定、看護・データサイエンスは5〜6教科6〜7科目",
+"kyoka": [
+3,
+6
+],
+"rl": [
+"4:1",
+"3:1"
+],
+"rl_text": "多くの学部・方式でR:L=4:1（R240:L60等）、看護A方式とデータサイエンス後期はR300:L100（3:1）",
+"note": "医学部医学科は二段階選抜あり（3倍）、理学部後期・データサイエンス学部後期は15倍。前期A方式はB方式でも同時判定",
+"year": "2027年度入試"
+}
 },
 "宇都宮大学": {
 "difficulty": {
@@ -1250,7 +1567,8 @@
 "https://search.keinet.ne.jp/1090/outline/expense",
 "https://search.keinet.ne.jp/1090/outline/department",
 "https://search.keinet.ne.jp/1090/outline/licential",
-"https://search.keinet.ne.jp/1090/outline/admission_employment"
+"https://search.keinet.ne.jp/1090/outline/admission_employment",
+"https://search.keinet.ne.jp/1090/general/exam_subject"
 ],
 "licenses": [
 "教員免許（幼・小・中・高、特別支援）",
@@ -1260,7 +1578,20 @@
 "食品衛生監視員（フロンティア食品科学科）",
 "社会教育主事"
 ],
-"careers": "共同教育学部92.8%、国際学部84.1%、コミュニティデザイン学科92.3%が就職。工学部基盤工学科は69.0%が大学院に進学（2024年度卒）。"
+"careers": "共同教育学部92.8%、国際学部84.1%、コミュニティデザイン学科92.3%が就職。工学部基盤工学科は69.0%が大学院に進学（2024年度卒）。",
+"kyotsu": {
+"kamoku": "6教科7科目・6教科6科目のほか文型・理型・選択型",
+"kyoka": [
+6,
+6
+],
+"rl": [
+"3:1"
+],
+"rl_text": "確認できた全学部・方式でR:L=3:1（R150:L50等）",
+"note": "確認できた方式で二段階選抜なし",
+"year": "2027年度入試"
+}
 },
 "群馬大学": {
 "difficulty": {
@@ -1297,7 +1628,8 @@
 "https://search.keinet.ne.jp/1095/outline/department",
 "https://www.giar.gunma-u.ac.jp/eng/?p=2905",
 "https://search.keinet.ne.jp/1095/outline/licential",
-"https://search.keinet.ne.jp/1095/outline/admission_employment"
+"https://search.keinet.ne.jp/1095/outline/admission_employment",
+"https://search.keinet.ne.jp/1095/general/exam_subject"
 ],
 "licenses": [
 "医師国家試験受験資格（医学科）",
@@ -1307,7 +1639,20 @@
 "測量士（理工学部 物質・環境類）",
 "学芸員"
 ],
-"careers": "共同教育学部91.8%、保健学科80.7%、情報学部74.3%が就職。理工学部は大学院進学が中心（電子・機械類77.3%、物質・環境類62.3%）（2024年度卒）。"
+"careers": "共同教育学部91.8%、保健学科80.7%、情報学部74.3%が就職。理工学部は大学院進学が中心（電子・機械類77.3%、物質・環境類62.3%）（2024年度卒）。",
+"kyotsu": {
+"kamoku": "6教科7科目・6教科6科目（共同教育学部）、理工学部・医学部は理型",
+"kyoka": [
+6,
+6
+],
+"rl": [
+"4:1"
+],
+"rl_text": "確認できた全学部でR:L=4:1（R160:L40、医学科R80:L20）",
+"note": "医学部医学科は二段階選抜あり（3倍）、共同教育学部・理工学部はなし",
+"year": "2027年度入試"
+}
 },
 "高崎経済大学": {
 "difficulty": {
@@ -1339,7 +1684,8 @@
 "https://search.keinet.ne.jp/1520/outline/expense",
 "https://search.keinet.ne.jp/1520/outline/department",
 "https://search.keinet.ne.jp/1520/outline/licential",
-"https://search.keinet.ne.jp/1520/outline/admission_employment"
+"https://search.keinet.ne.jp/1520/outline/admission_employment",
+"https://search.keinet.ne.jp/1520/general/exam_subject"
 ],
 "licenses": [
 "教員免許（中 社会・高 地理歴史・公民）",
@@ -1348,7 +1694,20 @@
 "社会福祉主事（地域政策学部）",
 "学芸員（地域政策学部）"
 ],
-"careers": "ほとんどが就職し、各学科の就職率は約87〜94%（地域政策学科93.7%、国際学科93.4%、経営学科92.7%）、大学院進学は2%前後（2024年度卒）。"
+"careers": "ほとんどが就職し、各学科の就職率は約87〜94%（地域政策学科93.7%、国際学科93.4%、経営学科92.7%）、大学院進学は2%前後（2024年度卒）。",
+"kyotsu": {
+"kamoku": "地域政策学部は5教科5科目・3教科3科目、経済学部は4教科4科目（前期）・3教科3科目（中期）",
+"kyoka": [
+3,
+5
+],
+"rl": [
+"1:1"
+],
+"rl_text": "全学部・方式でR:L=1:1",
+"note": "二段階選抜なし。地域政策学部の5教科5科目方式は3教科3科目の判定も同時に実施。経済学部は中期日程あり",
+"year": "2027年度入試"
+}
 },
 "東京海洋大学": {
 "difficulty": {
@@ -1386,7 +1745,8 @@
 "https://www.kaiyodai.ac.jp/faculty/s/news/detail/post_36.html",
 "https://www.kaiyodai.ac.jp/faculty/r/news/detail/_2023_1.html",
 "https://search.keinet.ne.jp/1152/outline/licential",
-"https://search.keinet.ne.jp/1152/outline/admission_employment"
+"https://search.keinet.ne.jp/1152/outline/admission_employment",
+"https://search.keinet.ne.jp/1152/general/exam_subject"
 ],
 "licenses": [
 "教員免許（高 水産・理科）",
@@ -1395,7 +1755,21 @@
 "食品衛生監視員（食品生産科学科）",
 "学芸員"
 ],
-"careers": "海洋生命科学部・海洋資源環境学部は大学院進学が中心（海洋生物資源学科86.4%、海洋環境科学科82.6%）。海洋工学部流通情報工学科は80.9%が就職（2024年度卒）。"
+"careers": "海洋生命科学部・海洋資源環境学部は大学院進学が中心（海洋生物資源学科86.4%、海洋環境科学科82.6%）。海洋工学部流通情報工学科は80.9%が就職（2024年度卒）。",
+"kyotsu": {
+"kamoku": "前期は理型・選択型、後期は3教科3科目〜4教科6科目",
+"kyoka": [
+3,
+4
+],
+"rl": [
+"4:1",
+"2:1"
+],
+"rl_text": "多くの学科・方式でR:L=4:1（R160:L40、R200:L50等）、海洋生物資源学科はR:L=2:1",
+"note": "二段階選抜なし",
+"year": "2027年度入試"
+}
 },
 "東京藝術大学": {
 "difficulty": {
@@ -1430,7 +1804,8 @@
 "https://search.keinet.ne.jp/1140/outline/department",
 "https://www.geidai.ac.jp/wp-content/uploads/2023/09/yakuinjoukyou2025.pdf",
 "https://search.keinet.ne.jp/1140/outline/licential",
-"https://search.keinet.ne.jp/1140/outline/admission_employment"
+"https://search.keinet.ne.jp/1140/outline/admission_employment",
+"https://search.keinet.ne.jp/1140/general/exam_subject"
 ],
 "licenses": [
 "教員免許（中・高 美術、高 工芸）",
@@ -1438,7 +1813,20 @@
 "学芸員",
 "一級建築士受験資格（建築科）"
 ],
-"careers": "大学院進学と就職が拮抗し、美術学部デザイン科76.1%・工芸科74.1%は進学、建築科64.3%・音楽学部声楽科62.1%・邦楽科68.7%は就職（2024年度卒）。"
+"careers": "大学院進学と就職が拮抗し、美術学部デザイン科76.1%・工芸科74.1%は進学、建築科64.3%・音楽学部声楽科62.1%・邦楽科68.7%は就職（2024年度卒）。",
+"kyotsu": {
+"kamoku": "美術学部は3教科3科目中心（デザイン科4教科4科目、建築科5教科6科目）、音楽学部は2〜3教科2〜3科目",
+"kyoka": [
+2,
+5
+],
+"rl": [
+"4:1"
+],
+"rl_text": "全学科でR:L=4:1（R160:L40）",
+"note": "二段階選抜なし。音楽学部は英語資格・検定試験の換算あり（器楽科は弦楽専攻以外）",
+"year": "2027年度入試"
+}
 },
 "茨城県立医療大学": {
 "difficulty": {
@@ -1469,7 +1857,8 @@
 "https://search.keinet.ne.jp/1519/outline/expense",
 "https://search.keinet.ne.jp/1519/outline/department",
 "https://search.keinet.ne.jp/1519/outline/licential",
-"https://search.keinet.ne.jp/1519/outline/admission_employment"
+"https://search.keinet.ne.jp/1519/outline/admission_employment",
+"https://search.keinet.ne.jp/1519/general/exam_subject"
 ],
 "licenses": [
 "看護師国家試験受験資格",
@@ -1478,7 +1867,20 @@
 "作業療法士国家試験受験資格",
 "診療放射線技師国家試験受験資格"
 ],
-"careers": "ほぼ全員が就職し、理学療法学科100.0%、作業療法学科94.8%、看護学科90.6%、放射線技術科学科87.8%が就職（2024年度卒）。"
+"careers": "ほぼ全員が就職し、理学療法学科100.0%、作業療法学科94.8%、看護学科90.6%、放射線技術科学科87.8%が就職（2024年度卒）。",
+"kyotsu": {
+"kamoku": "5〜6教科6科目（放射線技術科学科は5教科6科目）",
+"kyoka": [
+5,
+6
+],
+"rl": [
+"7:3"
+],
+"rl_text": "全学科でR:L=7:3（R70:L30）",
+"note": "前期のみ掲載。二段階選抜なし",
+"year": "2027年度入試"
+}
 },
 "大阪公立大学": {
 "difficulty": {
@@ -1527,7 +1929,8 @@
 "https://www.omu.ac.jp/assets/pr_20251016_kaisetukinenibento.pdf",
 "https://search.keinet.ne.jp/1615/outline/licential",
 "https://search.keinet.ne.jp/1615/outline/admission_employment",
-"https://www.omu.ac.jp/info/news/entry-05767.html"
+"https://www.omu.ac.jp/info/news/entry-05767.html",
+"https://search.keinet.ne.jp/1615/general/exam_subject"
 ],
 "licenses": [
 "教員免許（中・高 各教科）",
@@ -1537,7 +1940,20 @@
 "管理栄養士国家試験受験資格",
 "一級建築士受験資格（建築学科・居住環境学科）"
 ],
-"careers": "学部全体の就職率・就職先はKei-Netに未掲載。看護学部は2026年度看護師国家試験で受験者135名全員合格、工学研究科機械系専攻の修士修了者は98.9%が就職（2024年度）。"
+"careers": "学部全体の就職率・就職先はKei-Netに未掲載。看護学部は2026年度看護師国家試験で受験者135名全員合格、工学研究科機械系専攻の修士修了者は98.9%が就職（2024年度）。",
+"kyotsu": {
+"kamoku": "6教科8科目（前期の多く）、後期は3教科4科目〜5教科7科目など",
+"kyoka": [
+3,
+6
+],
+"rl": [
+"3:1"
+],
+"rl_text": "確認できた全学部・方式でR:L=3:1（R75:L25等）",
+"note": "多くの前期で二段階選抜あり（6倍、後期11〜17倍）。経済学部後期・商学部後期は二次試験なし。文・商学部は地理・日本史・世界史のいずれかを含むこと",
+"year": "2027年度入試"
+}
 },
 "国際教養大学": {
 "difficulty": {
@@ -1572,12 +1988,26 @@
 "https://search.keinet.ne.jp/1521/outline/department",
 "https://web.aiu.ac.jp/wp-content/uploads/2025/09/Commencement-Address_President.pdf",
 "https://search.keinet.ne.jp/1521/outline/licential",
-"https://search.keinet.ne.jp/1521/outline/admission_employment"
+"https://search.keinet.ne.jp/1521/outline/admission_employment",
+"https://search.keinet.ne.jp/1521/general/exam_subject"
 ],
 "licenses": [
 "高等学校教諭一種（英語）"
 ],
-"careers": "2024年度卒業者は就職が中心で、就職率は国際教養学科82.5%、グローバル・スタディズ領域81.2%、グローバル・ビジネス領域91.1%。"
+"careers": "2024年度卒業者は就職が中心で、就職率は国際教養学科82.5%、グローバル・スタディズ領域81.2%、グローバル・ビジネス領域91.1%。",
+"kyotsu": {
+"kamoku": "A日程6教科6科目、B日程3教科3科目",
+"kyoka": [
+3,
+6
+],
+"rl": [
+"4:1"
+],
+"rl_text": "両日程でR:L=4:1（R80:L20）",
+"note": "二段階選抜なし。英語資格・検定試験の換算（100点）あり",
+"year": "2027年度入試"
+}
 },
 "会津大学": {
 "difficulty": {
@@ -1610,8 +2040,22 @@
 "https://search.keinet.ne.jp/1518/outline/expense",
 "https://search.keinet.ne.jp/1518/outline/campus",
 "https://search.keinet.ne.jp/1518/outline/department",
-"https://u-aizu.ac.jp/files/2025jigyouhouokusyo.pdf"
-]
+"https://u-aizu.ac.jp/files/2025jigyouhouokusyo.pdf",
+"https://search.keinet.ne.jp/1518/general/exam_subject"
+],
+"kyotsu": {
+"kamoku": "コンピュータ理工Aは1教科1科目（理科か情報）、Bは理型（6教科8科目相当）",
+"kyoka": [
+1,
+6
+],
+"rl": [
+"1:1"
+],
+"rl_text": "B方式でR:L=1:1（R100:L100）。A方式は英語配点の記載なし",
+"note": "前期のみ掲載。二段階選抜なし",
+"year": "2027年度入試"
+}
 },
 "福島県立医科大学": {
 "difficulty": {
@@ -1646,8 +2090,22 @@
 "https://search.keinet.ne.jp/1515/outline/expense",
 "https://search.keinet.ne.jp/1515/outline/campus",
 "https://search.keinet.ne.jp/1515/outline/department",
-"https://www.fmu.ac.jp/en/news/"
-]
+"https://www.fmu.ac.jp/en/news/",
+"https://search.keinet.ne.jp/1515/general/exam_subject"
+],
+"kyotsu": {
+"kamoku": "医学科・看護学科は理型、保健科学部は5教科7科目・4〜5教科5科目",
+"kyoka": [
+4,
+6
+],
+"rl": [
+"3:2"
+],
+"rl_text": "全学部でR:L=3:2（例 医学科R90:L60）",
+"note": "医学部・保健科学部は二段階選抜あり（4倍）、看護学部はなし",
+"year": "2027年度入試"
+}
 },
 "新潟大学": {
 "difficulty": {
@@ -1689,8 +2147,22 @@
 "https://search.keinet.ne.jp/1180/outline/expense",
 "https://search.keinet.ne.jp/1180/outline/campus",
 "https://search.keinet.ne.jp/1180/outline/department",
-"https://www.jsps.go.jp/file/storage/j-press-releases_2024/20250124_PressRelease.pdf"
-]
+"https://www.jsps.go.jp/file/storage/j-press-releases_2024/20250124_PressRelease.pdf",
+"https://search.keinet.ne.jp/1180/general/exam_subject"
+],
+"kyotsu": {
+"kamoku": "6教科8科目（多くの学部）、教育学部の一部は6教科7科目・6教科6科目・選択型",
+"kyoka": [
+6,
+6
+],
+"rl": [
+"4:1"
+],
+"rl_text": "全学部・方式でR:L=4:1（例 R80:L20、R160:L40）",
+"note": "医学部医学科のみ二段階選抜あり（4倍）。人文学部は地理・日本史・世界史のいずれかを含むこと",
+"year": "2027年度入試"
+}
 },
 "金沢大学": {
 "difficulty": {
@@ -1729,8 +2201,22 @@
 "https://search.keinet.ne.jp/1200/outline/campus",
 "https://search.keinet.ne.jp/1200/outline/department",
 "https://www.eurekalert.org/news-releases/1104866",
-"https://ridb.kanazawa-u.ac.jp/public/detail.php?id=1983"
-]
+"https://ridb.kanazawa-u.ac.jp/public/detail.php?id=1983",
+"https://search.keinet.ne.jp/1200/general/exam_subject"
+],
+"kyotsu": {
+"kamoku": "多くの学類は文型・理型、文系一括は2〜3教科3〜4科目、理系一括は2教科3科目",
+"kyoka": [
+2,
+6
+],
+"rl": [
+"1:1"
+],
+"rl_text": "確認できた全学類でR:L=1:1",
+"note": "医薬保健学域医学類のみ二段階選抜あり（3倍）。掲載は前期のみ確認",
+"year": "2027年度入試"
+}
 },
 "信州大学": {
 "difficulty": {
@@ -1774,8 +2260,22 @@
 "https://search.keinet.ne.jp/1225/outline/campus",
 "https://search.keinet.ne.jp/1225/outline/department",
 "https://www.shinshu-u.ac.jp/school/sc/pdf/学環説明会_信学会長野校.pdf",
-"https://endomoribu.shinshu-u.ac.jp/profile.html"
-]
+"https://endomoribu.shinshu-u.ac.jp/profile.html",
+"https://search.keinet.ne.jp/1225/general/exam_subject"
+],
+"kyotsu": {
+"kamoku": "人文学部前期は3〜4教科3〜4科目、経法学部は5〜6教科7科目、教育学部は選択型",
+"kyoka": [
+3,
+6
+],
+"rl": [
+"4:1"
+],
+"rl_text": "確認できた全学部でR:L=4:1（R160:L40等）",
+"note": "確認できた方式で二段階選抜なし。理・工・農・医・繊維学部は出典ページで未確認",
+"year": "2027年度入試"
+}
 },
 "静岡大学": {
 "difficulty": {
@@ -1814,8 +2314,22 @@
 "https://search.keinet.ne.jp/1230/outline/expense",
 "https://search.keinet.ne.jp/1230/outline/campus",
 "https://search.keinet.ne.jp/1230/outline/department",
-"https://tdb.shizuoka.ac.jp/rdb/public/Default2.aspx?id=11268&l=0&t=35"
-]
+"https://tdb.shizuoka.ac.jp/rdb/public/Default2.aspx?id=11268&l=0&t=35",
+"https://search.keinet.ne.jp/1230/general/exam_subject"
+],
+"kyotsu": {
+"kamoku": "人文社会科学部は文型（6教科8科目程度）、教育学部は選択型（6教科7〜8科目）",
+"kyoka": [
+6,
+6
+],
+"rl": [
+"3:1"
+],
+"rl_text": "確認できた学部でR:L=3:1（R150:L50）",
+"note": "確認できた方式で二段階選抜なし。理・工・農・情報学部は出典ページで未確認",
+"year": "2027年度入試"
+}
 },
 "広島大学": {
 "difficulty": {
@@ -1865,8 +2379,22 @@
 "https://search.keinet.ne.jp/1360/outline/department",
 "https://www.hiroshima-u.ac.jp/index.php/en/research/news?page=2",
 "https://www.hiroshima-u.ac.jp/news/97228",
-"https://www.hiroshima-u.ac.jp/news/93738"
-]
+"https://www.hiroshima-u.ac.jp/news/93738",
+"https://search.keinet.ne.jp/1360/general/exam_subject"
+],
+"kyotsu": {
+"kamoku": "前期は文型・理型・6教科7科目など、後期は3教科4科目〜5教科7科目",
+"kyoka": [
+3,
+6
+],
+"rl": [
+"1:1"
+],
+"rl_text": "確認できた全学部・方式でR:L=1:1（R100:L100等）",
+"note": "確認できた方式で二段階選抜なし。英語資格・検定試験の換算あり",
+"year": "2027年度入試"
+}
 },
 "岡山大学": {
 "difficulty": {
@@ -1913,7 +2441,19 @@
 "https://search.keinet.ne.jp/1355/outline/department",
 "https://phys.org/rss-feed/partners/okayama-university/",
 "https://www.okayama-u.ac.jp/tp/news/news_id11577.html"
-]
+],
+"kyotsu": {
+"kamoku": "6教科8科目（全学部）",
+"kyoka": [
+6
+],
+"rl": [
+"4:1"
+],
+"rl_text": "全学部でR:L=4:1（医・農はR80/L20、他はR160/L40）",
+"note": "医学部医学科は二段階選抜あり（約3倍）",
+"year": "2027年度入試"
+}
 },
 "熊本大学": {
 "difficulty": {
@@ -1962,7 +2502,20 @@
 "https://www.jsps.go.jp/file/storage/j-press-releases_2024/20250124_PressRelease.pdf",
 "https://kaken.nii.ac.jp/ja/grant/KAKENHI-PROJECT-25H00807",
 "https://www.kumamoto-u.ac.jp/whatsnew/sizen/170508"
-]
+],
+"kyotsu": {
+"kamoku": "6教科8科目（前期・後期とも）〜6教科7科目（教育）",
+"kyoka": [
+6
+],
+"rl": [
+"4:1",
+"1:1"
+],
+"rl_text": "多くの学部R:L=4:1、工学部土木建築学科はR:L=1:1",
+"note": "工学部後期など一部はページ上で確認できず",
+"year": "2027年度入試"
+}
 },
 "奈良女子大学": {
 "difficulty": {
@@ -1996,7 +2549,20 @@
 "https://search.keinet.ne.jp/1330/outline/expense",
 "https://search.keinet.ne.jp/1330/outline/campus",
 "https://search.keinet.ne.jp/1330/outline/department"
-]
+],
+"kyotsu": {
+"kamoku": "6教科8科目（前期）〜5教科7科目（文学部後期）",
+"kyoka": [
+5,
+6
+],
+"rl": [
+"4:1"
+],
+"rl_text": "全学部でR:L=4:1",
+"note": "",
+"year": "2027年度入試"
+}
 },
 "長岡技術科学大学": {
 "difficulty": {
@@ -2030,7 +2596,19 @@
 "https://search.keinet.ne.jp/1175/outline/campus",
 "https://search.keinet.ne.jp/1175/outline/department",
 "https://www.jsps.go.jp/file/storage/j-press-releases_2024/20250124_PressRelease.pdf"
-]
+],
+"kyotsu": {
+"kamoku": "6教科8科目（工学部前期）",
+"kyoka": [
+6
+],
+"rl": [
+"1:1"
+],
+"rl_text": "R:L=1:1（R100・L100）",
+"note": "",
+"year": "2027年度入試"
+}
 },
 "豊橋技術科学大学": {
 "difficulty": {
@@ -2064,7 +2642,19 @@
 "https://search.keinet.ne.jp/1245/outline/campus",
 "https://search.keinet.ne.jp/1245/outline/department",
 "https://phys.org/rss-feed/partners/toyohashi-university-of-technology/"
-]
+],
+"kyotsu": {
+"kamoku": "6教科8科目（工学部学際共創課程前期）",
+"kyoka": [
+6
+],
+"rl": [
+"1:1"
+],
+"rl_text": "R:L=1:1（R150・L150）",
+"note": "Kei-Netには学際共創課程前期のみ掲載",
+"year": "2027年度入試"
+}
 },
 "早稲田大学": {
 "difficulty": {
@@ -2127,7 +2717,20 @@
 "社会福祉士受験資格（人間科学部）",
 "一級建築士受験資格（建築学科）"
 ],
-"careers": "2024年度の学部卒業者約8,600人のうち就職約69%・進学約21%。理工系3学部は進学率65〜77%で大学院進学が中心、文系学部は就職が8割前後。"
+"careers": "2024年度の学部卒業者約8,600人のうち就職約69%・進学約21%。理工系3学部は進学率65〜77%で大学院進学が中心、文系学部は就職が8割前後。",
+"kyotsu": {
+"kamoku": "1教科1科目（文学部併用方式）〜3教科5科目（教育学部D方式）など",
+"kyoka": [
+1,
+3
+],
+"rl": [
+"1:1"
+],
+"rl_text": "確認できた方式はR:L=1:1（教育学部C方式R9・L9、D方式R15・L15）",
+"note": "Kei-Netページが途中で切れ、文・教育学部以外は未確認",
+"year": "2027年度入試"
+}
 },
 "慶應義塾大学": {
 "difficulty": {
@@ -2176,7 +2779,15 @@
 "https://www.keio.ac.jp/ja/press-release/20260722-press-02/",
 "https://www.keio.ac.jp/ja/press-releases/",
 "https://mypage.atpress.ne.jp/smart/news/5101596"
-]
+],
+"kyotsu": {
+"kamoku": "共通テスト利用なし",
+"kyoka": [],
+"rl": [],
+"rl_text": "",
+"note": "Kei-Netの入試科目ページに共通テストを使う方式の掲載なし",
+"year": "2027年度入試"
+}
 },
 "上智大学": {
 "difficulty": {
@@ -2219,7 +2830,21 @@
 "https://search.keinet.ne.jp/2221/outline/expense",
 "https://search.keinet.ne.jp/2221/outline/department",
 "https://www.service-js.jp/news/upload/getsureiken_20261007.pdf"
-]
+],
+"kyotsu": {
+"kamoku": "3教科3科目（併用方式・3教科型）〜4教科4科目（4教科型）",
+"kyoka": [
+3,
+4
+],
+"rl": [
+"1:1",
+"3:2"
+],
+"rl_text": "多くはR:L=1:1、文学部哲学科の併用方式のみR36・L24（3:2）",
+"note": "ページが途中で切れ、文学部・新聞学科以外は未確認",
+"year": "2027年度入試"
+}
 },
 "東京理科大学": {
 "difficulty": {
@@ -2265,7 +2890,20 @@
 "https://search.keinet.ne.jp/2262/outline/department",
 "https://www.tus.ac.jp/about/awards-and-honors/",
 "https://www.tus.ac.jp/today/archive/20261007_3541.html"
-]
+],
+"kyotsu": {
+"kamoku": "2教科2〜3科目（2教科英）〜4教科5科目（4教科型）",
+"kyoka": [
+2,
+4
+],
+"rl": [
+"1:1"
+],
+"rl_text": "4教科型・3教科型はR:L=1:1",
+"note": "ページ上は経営・理学部のみ確認。2教科英のR・L配点は記載なし",
+"year": "2027年度入試"
+}
 },
 "国際基督教大学（ICU）": {
 "difficulty": {
@@ -2344,7 +2982,21 @@
 "https://search.keinet.ne.jp/2204/outline/department",
 "https://digitalpr.jp/c/666/2",
 "https://haltasaki.github.io/indexJ.html"
-]
+],
+"kyotsu": {
+"kamoku": "3教科3科目（多くの学科）〜5教科6科目（経済学部6科目型など）",
+"kyoka": [
+3,
+5
+],
+"rl": [
+"1:1",
+"4:1"
+],
+"rl_text": "多くの学科R:L=1:1、経済学部はR160・L40（4:1）",
+"note": "日本語日本文・心理・国際文化交流・経営・物理・数学などは共テ利用方式なし",
+"year": "2027年度入試"
+}
 },
 "明治大学": {
 "difficulty": {
@@ -2390,7 +3042,20 @@
 "https://search.keinet.ne.jp/2286/outline/department",
 "https://www.meiji.ac.jp/cip/english/news/2025/index_2025.html",
 "https://www.city.numazu.shizuoka.jp/shisei/pr/press/pdf/2024/20240830_1.pdf"
-]
+],
+"kyotsu": {
+"kamoku": "1教科1科目（国際日本学部併用）〜6教科7科目（政経7科目型）",
+"kyoka": [
+1,
+6
+],
+"rl": [
+"1:1"
+],
+"rl_text": "確認できた方式はすべてR:L=1:1",
+"note": "ページが途中で切れ、文・法・政経・国際日本以外は未確認",
+"year": "2027年度入試"
+}
 },
 "青山学院大学": {
 "difficulty": {
@@ -2436,7 +3101,20 @@
 "https://search.keinet.ne.jp/2200/outline/department",
 "https://raweb1.jm.aoyama.ac.jp/aguhp/k05/resid/S001464/868",
 "https://www.suntory.co.jp/sfnd/prize_ssah/detail/2007sf1.html"
-]
+],
+"kyotsu": {
+"kamoku": "1教科1科目（個別学部B方式）〜5教科6科目（史学科6科目型）",
+"kyoka": [
+1,
+5
+],
+"rl": [
+"1:1"
+],
+"rl_text": "全方式でR:L=1:1（R100・L100またはR50・L50）",
+"note": "ページ上は文学部・教育人間科学部のみ確認",
+"year": "2027年度入試"
+}
 },
 "立教大学": {
 "difficulty": {
@@ -2482,7 +3160,20 @@
 "https://search.keinet.ne.jp/2290/outline/expense",
 "https://search.keinet.ne.jp/2290/outline/department",
 "https://nrid.nii.ac.jp/nrid/1000000342618/"
-]
+],
+"kyotsu": {
+"kamoku": "3教科3科目（3科目型）〜4教科6科目（6科目型）",
+"kyoka": [
+3,
+4
+],
+"rl": [
+"1:1"
+],
+"rl_text": "全学科でR:L=1:1",
+"note": "ページ上は文学部・現代心理学部のみ確認",
+"year": "2027年度入試"
+}
 },
 "中央大学": {
 "difficulty": {
@@ -2528,7 +3219,21 @@
 "https://search.keinet.ne.jp/2242/outline/expense",
 "https://search.keinet.ne.jp/2242/outline/department",
 "https://nrid.nii.ac.jp/ja/nrid/1000090191337"
-]
+],
+"kyotsu": {
+"kamoku": "3教科3科目（単独3教科型）〜5教科6科目（法学部単独5教科型）",
+"kyoka": [
+3,
+5
+],
+"rl": [
+"4:1",
+"1:1"
+],
+"rl_text": "ほとんどの方式でR:L=4:1、法学部の学部別併用のみ1:1",
+"note": "ページ上は文学部・法学部のみ確認",
+"year": "2027年度入試"
+}
 },
 "法政大学": {
 "difficulty": {
@@ -2575,7 +3280,21 @@
 "https://search.keinet.ne.jp/2279/outline/expense",
 "https://search.keinet.ne.jp/2279/outline/department",
 "https://nrid.nii.ac.jp/ja/nrid/1000070143352"
-]
+],
+"kyotsu": {
+"kamoku": "2教科2科目（グローバル教養B方式）〜6教科7科目（C方式）",
+"kyoka": [
+2,
+6
+],
+"rl": [
+"4:1",
+"1:1"
+],
+"rl_text": "C方式は全学科R:L=4:1、B方式は学科によりR:L=4:1または1:1",
+"note": "国際文化学部はC方式なし",
+"year": "2027年度入試"
+}
 },
 "同志社大学": {
 "difficulty": {
@@ -2624,7 +3343,20 @@
 "https://search.keinet.ne.jp/2498/outline/department",
 "https://phys.org/rss-feed/partners/doshisha-university/",
 "https://researchmap.jp/read0201310"
-]
+],
+"kyotsu": {
+"kamoku": "1教科1科目（神学部・英文A方式）〜5教科5科目（哲学科）",
+"kyoka": [
+1,
+5
+],
+"rl": [
+"2:1"
+],
+"rl_text": "全学部で英語はR:L=2:1（英語200点）",
+"note": "ページ上は文・心理・神・グローバル系・社会学部のみ確認",
+"year": "2027年度入試"
+}
 },
 "立命館大学": {
 "difficulty": {
@@ -2676,7 +3408,20 @@
 "https://search.keinet.ne.jp/2504/outline/expense",
 "https://search.keinet.ne.jp/2504/outline/department",
 "https://www.ritsumei.ac.jp/news/detail?id=4104"
-]
+],
+"kyotsu": {
+"kamoku": "2教科2科目（併用3教科型）〜6教科7科目（7科目型）",
+"kyoka": [
+2,
+6
+],
+"rl": [
+"4:1"
+],
+"rl_text": "共テ方式はR:L=4:1（R160・L40）",
+"note": "ページ上は文学部のみ確認",
+"year": "2027年度入試"
+}
 },
 "関西学院大学": {
 "difficulty": {
@@ -2722,7 +3467,20 @@
 "https://search.keinet.ne.jp/2558/outline/expense",
 "https://search.keinet.ne.jp/2558/outline/department",
 "https://nrid.nii.ac.jp/ja/nrid/1000090410232"
-]
+],
+"kyotsu": {
+"kamoku": "1〜2教科2科目（併用日程英語）〜8科目（1月8科目型・文型指定）",
+"kyoka": [
+1,
+6
+],
+"rl": [
+"4:1"
+],
+"rl_text": "全方式でR:L=4:1（R160・L40など）",
+"note": "ページ上は文学部のみ確認。8科目型の教科数はページ上明記なし",
+"year": "2027年度入試"
+}
 },
 "関西大学": {
 "difficulty": {
@@ -2783,7 +3541,21 @@
 "公認心理師受験資格",
 "一級建築士受験資格"
 ],
-"careers": "文系学部は就職率8〜9割台（2024年度卒、政策創造93.4%・人間健康94.3%など）。理工系は進学が多く、化学生命工学部は60.3%、システム理工学部は41.8%が大学院などへ進学。"
+"careers": "文系学部は就職率8〜9割台（2024年度卒、政策創造93.4%・人間健康94.3%など）。理工系は進学が多く、化学生命工学部は60.3%、システム理工学部は41.8%が大学院などへ進学。",
+"kyotsu": {
+"kamoku": "1教科1科目（社会学部併用）〜8科目（前期8科目型）",
+"kyoka": [
+1,
+6
+],
+"rl": [
+"1:1",
+"3:1"
+],
+"rl_text": "文・外国語・社会学部はR:L=1:1、社会安全・法・政策創造学部はR:L=3:1",
+"note": "ページ上は文・外国語・社会・社会安全・法・政策創造学部のみ確認",
+"year": "2027年度入試"
+}
 },
 "南山大学": {
 "difficulty": {
@@ -2831,7 +3603,20 @@
 "学校図書館司書教諭",
 "公認心理師受験資格"
 ],
-"careers": "2024年度卒の就職率は全学部で8割台後半〜9割台（経済92.9%、経営92.1%）。理工学部は15.8%が大学院などへ進学。"
+"careers": "2024年度卒の就職率は全学部で8割台後半〜9割台（経済92.9%、経営92.1%）。理工学部は15.8%が大学院などへ進学。",
+"kyotsu": {
+"kamoku": "2教科2科目（全学統一テ併用）〜5教科5科目（前期5教科型）",
+"kyoka": [
+2,
+5
+],
+"rl": [
+"1:1"
+],
+"rl_text": "全方式でR:L=1:1",
+"note": "ページ上は外国語学部のみ確認",
+"year": "2027年度入試"
+}
 },
 "西南学院大学": {
 "difficulty": {
@@ -2878,7 +3663,20 @@
 "公認心理師受験資格",
 "学芸員"
 ],
-"careers": "2024年度卒の就職率は主要学部で85〜93%台（経済93.5%、商91.5%、人間科学90.4%）。進学は各学部1〜4%程度。"
+"careers": "2024年度卒の就職率は主要学部で85〜93%台（経済93.5%、商91.5%、人間科学90.4%）。進学は各学部1〜4%程度。",
+"kyotsu": {
+"kamoku": "1〜2教科2科目（併用型）〜5教科5科目（法学部前期）",
+"kyoka": [
+1,
+5
+],
+"rl": [
+"1:1"
+],
+"rl_text": "全方式でR:L=1:1",
+"note": "神学部は共テ利用方式なし。ページは経済学部までで、以降の学部は未確認",
+"year": "2027年度入試"
+}
 },
 "成蹊大学": {
 "difficulty": {
@@ -2929,7 +3727,20 @@
 "社会調査士",
 "社会福祉主事"
 ],
-"careers": "2024年度卒の就職率は文系学部で9割前後（経営94.2%、文92.0%）。理工学部は22.0%が大学院などへ進学。"
+"careers": "2024年度卒の就職率は文系学部で9割前後（経営94.2%、文92.0%）。理工学部は22.0%が大学院などへ進学。",
+"kyotsu": {
+"kamoku": "3教科3〜4科目（3教科型）〜4〜5教科5科目（5科目国公併願）",
+"kyoka": [
+3,
+5
+],
+"rl": [
+"1:1"
+],
+"rl_text": "全方式でR:L=1:1（R200・L200またはR100・L100）",
+"note": "理工学部は5科目国公併願方式なし",
+"year": "2027年度入試"
+}
 },
 "成城大学": {
 "difficulty": {
@@ -2975,7 +3786,23 @@
 "認定心理士",
 "社会福祉主事"
 ],
-"careers": "2024年度卒の就職率は社会イノベーション94.2%、経済93.4%、法88.5%、文芸82.2%。進学は文芸学部の8.4%が最多。"
+"careers": "2024年度卒の就職率は社会イノベーション94.2%、経済93.4%、法88.5%、文芸82.2%。進学は文芸学部の8.4%が最多。",
+"kyotsu": {
+"kamoku": "2教科2科目（英文学科後期）〜4教科4科目（国公併願）",
+"kyoka": [
+2,
+4
+],
+"rl": [
+"1:1",
+"2:1",
+"4:1",
+"3:1"
+],
+"rl_text": "学科・方式で異なる（国文1:1、英文2:1、芸術4:1、マスコミ3:1など）",
+"note": "ページ上は文芸学部のみ確認。一部方式はLの配点記載なし",
+"year": "2027年度入試"
+}
 },
 "明治学院大学": {
 "difficulty": {
@@ -3027,7 +3854,20 @@
 "学芸員",
 "社会調査士"
 ],
-"careers": "2024年度卒の就職率は社会92.5%、経済90.6%、法87.5%など8〜9割台。心理学部は9.4%が大学院などへ進学。"
+"careers": "2024年度卒の就職率は社会92.5%、経済90.6%、法87.5%など8〜9割台。心理学部は9.4%が大学院などへ進学。",
+"kyotsu": {
+"kamoku": "3教科3科目（多くの学科）〜5教科5科目（心理学科5教科型）",
+"kyoka": [
+3,
+5
+],
+"rl": [
+"4:1"
+],
+"rl_text": "全方式でR:L=4:1（R160・L40）",
+"note": "ページは国際学部の途中まで",
+"year": "2027年度入試"
+}
 },
 "獨協大学": {
 "difficulty": {
@@ -3068,7 +3908,20 @@
 "司書",
 "学校図書館司書教諭"
 ],
-"careers": "2024年度卒の就職率は法89.2%、経済88.5%、外国語81.0%、国際教養81.7%。進学は各学部1〜2%程度。"
+"careers": "2024年度卒の就職率は法89.2%、経済88.5%、外国語81.0%、国際教養81.7%。進学は各学部1〜2%程度。",
+"kyotsu": {
+"kamoku": "1教科1科目（後期1科目型）〜3教科3科目",
+"kyoka": [
+1,
+3
+],
+"rl": [
+"4:1"
+],
+"rl_text": "全方式でR:L=4:1（R160・L40）",
+"note": "ページ上は外国語・国際教養学部のみ確認",
+"year": "2027年度入試"
+}
 },
 "國學院大學": {
 "difficulty": {
@@ -3116,7 +3969,20 @@
 "司書",
 "学校図書館司書教諭"
 ],
-"careers": "2024年度卒の就職率は人間開発92.1%、経済90.6%、法84.1%、文80.3%など。文学部は7.7%が大学院などへ進学。"
+"careers": "2024年度卒の就職率は人間開発92.1%、経済90.6%、法84.1%、文80.3%など。文学部は7.7%が大学院などへ進学。",
+"kyotsu": {
+"kamoku": "3教科3科目〜5教科5科目（V方式）",
+"kyoka": [
+3,
+5
+],
+"rl": [
+"1:1"
+],
+"rl_text": "全方式でR:L=1:1",
+"note": "人間開発学部初等教育学科は英語が選択科目。ページ上は文・人間開発学部の一部のみ確認",
+"year": "2027年度入試"
+}
 },
 "武蔵大学": {
 "difficulty": {
@@ -3159,7 +4025,20 @@
 "教員免許（中・高 英語・国語・社会・商業ほか）",
 "学芸員"
 ],
-"careers": "2024年度卒の就職率は社会93.5%、経済90.2%、人文88.9%。進学は1〜4%程度。"
+"careers": "2024年度卒の就職率は社会93.5%、経済90.2%、人文88.9%。進学は1〜4%程度。",
+"kyotsu": {
+"kamoku": "2教科2科目（後期）〜4教科5科目（前期5科目型）",
+"kyoka": [
+2,
+4
+],
+"rl": [
+"3:1"
+],
+"rl_text": "全方式でR:L=3:1（R150・L50またはR75・L25）",
+"note": "",
+"year": "2027年度入試"
+}
 },
 "日本大学": {
 "difficulty": {
@@ -3218,7 +4097,20 @@
 "公認心理師受験資格",
 "学芸員・司書"
 ],
-"careers": "2024年度卒の就職率は文系学部で8割台（経済87.1%、危機管理90.0%）、薬学部96.1%。理工学部は27.5%が大学院などへ進学。医学部卒業者は進路統計上全員「その他」に分類（医師国家試験受験資格を得る課程）。"
+"careers": "2024年度卒の就職率は文系学部で8割台（経済87.1%、危機管理90.0%）、薬学部96.1%。理工学部は27.5%が大学院などへ進学。医学部卒業者は進路統計上全員「その他」に分類（医師国家試験受験資格を得る課程）。",
+"kyotsu": {
+"kamoku": "3教科3科目（多くの学科）〜4教科4科目（社会学科）（C方式）",
+"kyoka": [
+3,
+4
+],
+"rl": [
+"1:1"
+],
+"rl_text": "全学科でR:L=1:1（R100・L100またはR50・L50）",
+"note": "ページ上は文理学部のみ確認",
+"year": "2027年度入試"
+}
 },
 "東洋大学": {
 "difficulty": {
@@ -3277,7 +4169,20 @@
 "臨床工学技士受験資格",
 "一級建築士受験資格"
 ],
-"careers": "2024年度卒の就職率は国際観光92.0%、情報連携89.4%、法87.2%など昼間部で7〜9割台。生命科学部25.7%・理工学部22.4%が大学院などへ進学。"
+"careers": "2024年度卒の就職率は国際観光92.0%、情報連携89.4%、法87.2%など昼間部で7〜9割台。生命科学部25.7%・理工学部22.4%が大学院などへ進学。",
+"kyotsu": {
+"kamoku": "3教科3科目〜5教科5科目（前期5科目）",
+"kyoka": [
+3,
+5
+],
+"rl": [
+"1:1"
+],
+"rl_text": "全方式でR:L=1:1",
+"note": "ページ上は文学部の一部のみ確認",
+"year": "2027年度入試"
+}
 },
 "駒澤大学": {
 "difficulty": {
@@ -3324,7 +4229,19 @@
 "公認心理師受験資格",
 "診療放射線技師受験資格"
 ],
-"careers": "2024年度卒の就職率は経済88.6%、経営87.2%、法84.0%など8割台が中心。医療健康科学部は13.2%が進学。"
+"careers": "2024年度卒の就職率は経済88.6%、経営87.2%、法84.0%など8割台が中心。医療健康科学部は13.2%が進学。",
+"kyotsu": {
+"kamoku": "3教科3科目（前期－共テ）",
+"kyoka": [
+3
+],
+"rl": [
+"4:1"
+],
+"rl_text": "R:L=4:1（R160・L40）",
+"note": "ページ上は文学部のみ確認",
+"year": "2027年度入試"
+}
 },
 "専修大学": {
 "difficulty": {
@@ -3374,7 +4291,22 @@
 "公認心理師受験資格",
 "社会調査士"
 ],
-"careers": "2024年度卒の就職率は経済89.8%、経営89.5%、国際コミュニケーション89.2%など昼間部で8割台中心。進学は人間科学部7.4%が最多。"
+"careers": "2024年度卒の就職率は経済89.8%、経営89.5%、国際コミュニケーション89.2%など昼間部で8割台中心。進学は人間科学部7.4%が最多。",
+"kyotsu": {
+"kamoku": "1教科1科目（併用・英語単独）〜4教科4科目（前期4科目）",
+"kyoka": [
+1,
+4
+],
+"rl": [
+"4:1",
+"1:1",
+"3:1"
+],
+"rl_text": "学科で異なる（文学部の多くと国際コミュ日本語4:1、英語英米文・異文化1:1、法・経済3:1）",
+"note": "ページは経済学部の途中まで",
+"year": "2027年度入試"
+}
 },
 "芝浦工業大学": {
 "difficulty": {
@@ -3419,7 +4351,20 @@
 "臨床工学技士受験資格",
 "測量士"
 ],
-"careers": "2024年度卒は大学院などへの進学が多く、建築学部57.5%、システム理工学部50.6%、工学部48.4%が進学。デザイン工学部は61.4%が就職。"
+"careers": "2024年度卒は大学院などへの進学が多く、建築学部57.5%、システム理工学部50.6%、工学部48.4%が進学。デザイン工学部は61.4%が就職。",
+"kyotsu": {
+"kamoku": "3教科4科目型〜6教科8科目型",
+"kyoka": [
+3,
+6
+],
+"rl": [
+"1:1"
+],
+"rl_text": "全学科でR:L=1:1",
+"note": "ページ上は工学部・システム理工学部の一部のみ確認",
+"year": "2027年度入試"
+}
 },
 "東京都市大学": {
 "difficulty": {
@@ -3476,7 +4421,20 @@
 "保育士・幼稚園教諭",
 "技術士補（一部試験免除）"
 ],
-"careers": "2024年度卒は理工学部の44.1%が大学院などへ進学（就職51.5%）。人間科学97.0%、メディア情報90.6%、環境88.0%は就職が中心。"
+"careers": "2024年度卒は理工学部の44.1%が大学院などへ進学（就職51.5%）。人間科学97.0%、メディア情報90.6%、環境88.0%は就職が中心。",
+"kyotsu": {
+"kamoku": "2教科3科目（探究併用型）〜6教科7科目（6教科型）",
+"kyoka": [
+2,
+6
+],
+"rl": [
+"7:3"
+],
+"rl_text": "R:L=7:3（R140・L60）",
+"note": "3教科型などは英語が他教科との選択。ページ上は都市生活・理工学部のみ確認",
+"year": "2027年度入試"
+}
 },
 "東京電機大学": {
 "difficulty": {
@@ -3520,7 +4478,20 @@
 "測量士",
 "技術士補（試験一部免除）"
 ],
-"careers": "2024年度卒は未来科学部41.7%、工学部35.4%、理工学部33.3%が大学院などへ進学。システムデザイン工学部は就職79.0%。"
+"careers": "2024年度卒は未来科学部41.7%、工学部35.4%、理工学部33.3%が大学院などへ進学。システムデザイン工学部は就職79.0%。",
+"kyotsu": {
+"kamoku": "3教科3〜4科目（3教科型）〜4教科4〜5科目（4教科国語・4教科情報型）",
+"kyoka": [
+3,
+4
+],
+"rl": [
+"3:1"
+],
+"rl_text": "全学科でR:L=3:1（R150・L50）",
+"note": "ページ上は未来科学部・工学部の一部のみ確認",
+"year": "2027年度入試"
+}
 },
 "工学院大学": {
 "difficulty": {
@@ -3565,7 +4536,20 @@
 "操縦士受験資格（航空理工学）",
 "学芸員"
 ],
-"careers": "2024年度卒の就職率は57〜71%、大学院などへの進学は24〜39%（先進工学部39.0%、工学部31.6%、建築学部30.5%）。"
+"careers": "2024年度卒の就職率は57〜71%、大学院などへの進学は24〜39%（先進工学部39.0%、工学部31.6%、建築学部30.5%）。",
+"kyotsu": {
+"kamoku": "3教科3〜4科目（前期3教科型・後期）〜4教科4〜5科目（前期4教科型）",
+"kyoka": [
+3,
+4
+],
+"rl": [
+"3:1"
+],
+"rl_text": "全学科でR:L=3:1（R150・L50）",
+"note": "後期は英語が他教科との選択。ページ上は工学部・建築学部のみ確認",
+"year": "2027年度入試"
+}
 },
 "東京農業大学": {
 "difficulty": {
@@ -3619,7 +4603,20 @@
 "司書",
 "測量士補"
 ],
-"careers": "2024年度卒の就職率は国際食料情報83.8%、地域環境科学82.7%、応用生物科学81.9%など8割前後。生命科学部は36.9%が大学院などへ進学。"
+"careers": "2024年度卒の就職率は国際食料情報83.8%、地域環境科学82.7%、応用生物科学81.9%など8割前後。生命科学部は36.9%が大学院などへ進学。",
+"kyotsu": {
+"kamoku": "1〜2教科2科目（2科目型）〜4教科4科目（4科目型）",
+"kyoka": [
+1,
+4
+],
+"rl": [
+"1:1"
+],
+"rl_text": "全方式でR:L=1:1（R100・L100）",
+"note": "学科により英語は必須または選択。ページ上は農・応用生物科学・地域環境科学部の一部のみ確認",
+"year": "2027年度入試"
+}
 },
 "北里大学": {
 "difficulty": {
@@ -3675,7 +4672,20 @@
 "診療放射線技師受験資格",
 "教員免許（中・高 理科）"
 ],
-"careers": "2024年度卒の就職率は看護93.4%、獣医89.0%、薬82.1%、医療衛生80.1%。理学部は57.0%が大学院などへ進学。医学部卒業者は進路統計上全員「その他」に分類（医師国家試験受験資格を得る課程）。"
+"careers": "2024年度卒の就職率は看護93.4%、獣医89.0%、薬82.1%、医療衛生80.1%。理学部は57.0%が大学院などへ進学。医学部卒業者は進路統計上全員「その他」に分類（医師国家試験受験資格を得る課程）。",
+"kyotsu": {
+"kamoku": "2教科2科目〜5教科7科目（獣医学科前期5教科型）",
+"kyoka": [
+2,
+5
+],
+"rl": [
+"1:1"
+],
+"rl_text": "全方式でR:L=1:1（海洋生命科学部は内訳記載なし）",
+"note": "掲載は海洋生命科学部の途中まで",
+"year": "2027年度入試"
+}
 },
 "自治医科大学": {
 "difficulty": {
@@ -3719,7 +4729,15 @@
 "助産師国家試験受験資格",
 "養護教諭二種"
 ],
-"careers": "2024年度卒の看護学部は94.4%が就職。医学部卒業者は進路統計上全員「その他」に分類（医師国家試験受験資格を得る課程）。"
+"careers": "2024年度卒の看護学部は94.4%が就職。医学部卒業者は進路統計上全員「その他」に分類（医師国家試験受験資格を得る課程）。",
+"kyotsu": {
+"kamoku": "共通テスト利用なし",
+"kyoka": [],
+"rl": [],
+"rl_text": "",
+"note": "一般選抜は個別学力検査のみ掲載",
+"year": "2027年度入試"
+}
 },
 "国際医療福祉大学": {
 "difficulty": {
@@ -3773,7 +4791,20 @@
 "社会福祉士・精神保健福祉士受験資格",
 "公認心理師受験資格"
 ],
-"careers": "2024年度卒の就職率は小田原保健医療97.1%、福岡保健医療94.1%、医療福祉93.3%、保健医療91.3%、薬90.4%と高い。"
+"careers": "2024年度卒の就職率は小田原保健医療97.1%、福岡保健医療94.1%、医療福祉93.3%、保健医療91.3%、薬90.4%と高い。",
+"kyotsu": {
+"kamoku": "2教科2科目（医療福祉・心理等）〜5教科7科目（医学部）",
+"kyoka": [
+2,
+5
+],
+"rl": [
+"1:1"
+],
+"rl_text": "医学部はR:L=1:1。他学部はR・L内訳の記載なし（薬学部はR100のみ記載）",
+"note": "掲載は成田看護学部の途中まで",
+"year": "2027年度入試"
+}
 },
 "順天堂大学": {
 "difficulty": {
@@ -3828,7 +4859,20 @@
 "診療放射線技師受験資格",
 "教員免許（中・高 保健体育・英語）"
 ],
-"careers": "2024年度卒の就職率は医療看護96.4%、保健看護94.9%、スポーツ健康科学85.8%、保健医療84.8%。医学部卒業者は進路統計上全員「その他」に分類（医師国家試験受験資格を得る課程）。"
+"careers": "2024年度卒の就職率は医療看護96.4%、保健看護94.9%、スポーツ健康科学85.8%、保健医療84.8%。医学部卒業者は進路統計上全員「その他」に分類（医師国家試験受験資格を得る課程）。",
+"kyotsu": {
+"kamoku": "1教科1科目（薬学部併用）〜5教科7科目（医学部）",
+"kyoka": [
+1,
+5
+],
+"rl": [
+"4:1"
+],
+"rl_text": "全方式でR:L=4:1",
+"note": "医学部A方式・地域枠・B方式、薬学部A・B日程は共テ不使用。掲載途中までのため他学部は未確認",
+"year": "2027年度入試"
+}
 },
 "東京慈恵会医科大学": {
 "difficulty": {
@@ -3870,7 +4914,15 @@
 "保健師国家試験受験資格",
 "養護教諭二種"
 ],
-"careers": "医学科で医師国家試験、看護学科で看護師・保健師国家試験の受験資格を得る。Kei-Netの2024年度卒データ（学士165人）は進学4.2%・就職32.1%・その他63.7%。"
+"careers": "医学科で医師国家試験、看護学科で看護師・保健師国家試験の受験資格を得る。Kei-Netの2024年度卒データ（学士165人）は進学4.2%・就職32.1%・その他63.7%。",
+"kyotsu": {
+"kamoku": "共通テスト利用なし",
+"kyoka": [],
+"rl": [],
+"rl_text": "",
+"note": "一般選抜は個別学力検査のみ掲載",
+"year": "2027年度入試"
+}
 },
 "日本医科大学": {
 "difficulty": {
@@ -3910,7 +4962,20 @@
 "保健師国家試験受験資格",
 "養護教諭二種"
 ],
-"careers": "医学部卒業者は進路統計上全員「その他」に分類（医師国家試験受験資格を得る課程）。看護学科（医療健康科学部）では看護師・保健師国家試験の受験資格を得る。"
+"careers": "医学部卒業者は進路統計上全員「その他」に分類（医師国家試験受験資格を得る課程）。看護学科（医療健康科学部）では看護師・保健師国家試験の受験資格を得る。",
+"kyotsu": {
+"kamoku": "1教科1科目（医学部グローバル特別：国語のみ）〜3教科3科目（看護学科）",
+"kyoka": [
+1,
+3
+],
+"rl": [
+"1:1"
+],
+"rl_text": "看護学科の共テ方式でR:L=1:1（医学部グローバル特別は英語なし）",
+"note": "医学部一般選抜・地域枠と看護学科一般選抜は共テ利用方式なし（看護学科は数学・国語を共テで代替可）",
+"year": "2027年度入試"
+}
 },
 "獨協医科大学": {
 "difficulty": {
@@ -3991,7 +5056,22 @@
 "licenses": [
 "教員免許（中・高 英語・数学・社会、高 情報）"
 ],
-"careers": "2024年度卒の就職率は学芸学部85.3%、総合政策学部79.7%。進学は7.2%・6.5%。"
+"careers": "2024年度卒の就職率は学芸学部85.3%、総合政策学部79.7%。進学は7.2%・6.5%。",
+"kyotsu": {
+"kamoku": "2教科2科目〜5教科5科目",
+"kyoka": [
+2,
+5
+],
+"rl": [
+"3:2",
+"1:1",
+"4:1"
+],
+"rl_text": "英語英文・総合政策はR:L=3:2（英語英文B方式は1:1）、国際関係・多文化・情報科学は4:1、数学科は1:1",
+"note": "A方式・A方式英語外部は共テ不使用",
+"year": "2027年度入試"
+}
 },
 "東京女子大学": {
 "difficulty": {
@@ -4034,7 +5114,20 @@
 "社会調査士",
 "認定心理士"
 ],
-"careers": "2024年度卒（現代教養学部）は90.0%が就職、5.0%が大学院などへ進学。"
+"careers": "2024年度卒（現代教養学部）は90.0%が就職、5.0%が大学院などへ進学。",
+"kyotsu": {
+"kamoku": "1教科1科目（後期併用型）〜5教科5科目",
+"kyoka": [
+1,
+5
+],
+"rl": [
+"1:1"
+],
+"rl_text": "全方式でR:L=1:1",
+"note": "掲載は経済経営学科の途中まで",
+"year": "2027年度入試"
+}
 },
 "日本女子大学": {
 "difficulty": {
@@ -4085,7 +5178,24 @@
 "社会福祉士受験資格",
 "公認心理師受験資格"
 ],
-"careers": "2024年度卒の就職率は人間社会90.8%、文88.3%、家政85.1%。理学部は28.0%が大学院などへ進学。"
+"careers": "2024年度卒の就職率は人間社会90.8%、文88.3%、家政85.1%。理学部は28.0%が大学院などへ進学。",
+"kyotsu": {
+"kamoku": "2〜3教科3科目〜5教科5科目",
+"kyoka": [
+2,
+5
+],
+"rl": [
+"1:1",
+"4:1",
+"6:1",
+"2:1",
+"3:1"
+],
+"rl_text": "学科・方式で異なる（日本文・歴史文化1:1、英文4:1〜6:1、国際文化2:1、経済3:1または1:1、理学部4:1）",
+"note": "掲載は理学部化学生命科学科の途中まで（家政学部等は未確認）",
+"year": "2027年度入試"
+}
 },
 "聖心女子大学": {
 "difficulty": {
@@ -4125,7 +5235,20 @@
 "公認心理師受験資格",
 "社会調査士"
 ],
-"careers": "2024年度卒（現代教養学部）は85.6%が就職、7.0%が大学院などへ進学。"
+"careers": "2024年度卒（現代教養学部）は85.6%が就職、7.0%が大学院などへ進学。",
+"kyotsu": {
+"kamoku": "2教科2科目",
+"kyoka": [
+2,
+2
+],
+"rl": [
+"1:1"
+],
+"rl_text": "R:L=1:1（R50・L50）",
+"note": "共テ利用は現代教養学部「共通テスト」方式のみ",
+"year": "2027年度入試"
+}
 },
 "立命館アジア太平洋大学（APU）": {
 "difficulty": {
@@ -4167,7 +5290,20 @@
 "https://www.apu.ac.jp/home/about/content46/R2023_12_4.pdf",
 "https://www.apu.ac.jp/home/about/content46/R2025_05_14.pdf",
 "https://www.apu.ac.jp/home/about/content46/R2025_11_14.pdf"
-]
+],
+"kyotsu": {
+"kamoku": "1教科1科目〜6教科8科目",
+"kyoka": [
+1,
+6
+],
+"rl": [
+"7:3"
+],
+"rl_text": "全方式でR:L=7:3",
+"note": "国際経営学部の一部方式は未確認。スタンダード3・英語重視・後期は共テ不使用",
+"year": "2027年度入試"
+}
 },
 "神田外語大学": {
 "difficulty": {
@@ -4209,7 +5345,20 @@
 "教員免許（高 中国語）",
 "教員免許（高 韓国語・スペイン語）"
 ],
-"careers": "2024年度卒業者は外国語学部で就職者比率80.8%、進学1.1%。グローバル・リベラルアーツ学部は就職77.1%、進学8.6%。"
+"careers": "2024年度卒業者は外国語学部で就職者比率80.8%、進学1.1%。グローバル・リベラルアーツ学部は就職77.1%、進学8.6%。",
+"kyotsu": {
+"kamoku": "2教科2科目〜5教科5科目",
+"kyoka": [
+2,
+5
+],
+"rl": [
+"3:2"
+],
+"rl_text": "全方式でR:L=3:2（R150・L100）",
+"note": "掲載はタイ語専攻以降が途切れ未確認。英語資格の換算あり",
+"year": "2027年度入試"
+}
 },
 "関西外国語大学": {
 "difficulty": {
@@ -4253,7 +5402,20 @@
 "学校図書館司書教諭",
 "司書"
 ],
-"careers": "2024年度卒業者の就職者比率は外国語学部83.1%、英語国際学部83.9%、英語キャリア学部90.7%。大学院進学は各学部とも2%前後。"
+"careers": "2024年度卒業者の就職者比率は外国語学部83.1%、英語国際学部83.9%、英語キャリア学部90.7%。大学院進学は各学部とも2%前後。",
+"kyotsu": {
+"kamoku": "1〜2教科2科目〜5教科5科目",
+"kyoka": [
+1,
+5
+],
+"rl": [
+"1:1"
+],
+"rl_text": "前期3科目型・5科目型・後期2科目型でR:L=1:1",
+"note": "「共通テスト＋」方式は英語を個別試験で課す",
+"year": "2027年度入試"
+}
 },
 "茨城キリスト教大学": {
 "difficulty": {
@@ -4298,7 +5460,20 @@
 "社会福祉士受験資格",
 "公認心理師受験資格"
 ],
-"careers": "2024年度卒業者の就職率は文学部92.9%、経営学部94.4%、看護学部95.2%、生活科学部91.8%と、どの学部も9割超が就職。"
+"careers": "2024年度卒業者の就職率は文学部92.9%、経営学部94.4%、看護学部95.2%、生活科学部91.8%と、どの学部も9割超が就職。",
+"kyotsu": {
+"kamoku": "2〜3教科3科目",
+"kyoka": [
+2,
+3
+],
+"rl": [
+"1:1"
+],
+"rl_text": "全学科でR:L=1:1",
+"note": "英語必須は現代英語学科・未来教養学環のみ。他学科は英語選択",
+"year": "2027年度入試"
+}
 },
 "常磐大学": {
 "difficulty": {
@@ -4339,7 +5514,20 @@
 "公認心理師受験資格",
 "司書",
 "社会調査士"
-]
+],
+"kyotsu": {
+"kamoku": "3教科3科目",
+"kyoka": [
+3,
+3
+],
+"rl": [
+"1:1"
+],
+"rl_text": "全学科でR:L=1:1",
+"note": "",
+"year": "2027年度入試"
+}
 },
 "流通経済大学": {
 "difficulty": {
@@ -4382,7 +5570,18 @@
 "保育士",
 "社会福祉主事",
 "認定心理士"
-]
+],
+"kyotsu": {
+"kamoku": "2教科2科目〜3教科3科目",
+"kyoka": [
+2,
+3
+],
+"rl": [],
+"rl_text": "英語はR100のみ記載（リスニング配点なし）",
+"note": "",
+"year": "2027年度入試"
+}
 },
 "防衛大学校": {
 "difficulty": {
@@ -4632,7 +5831,15 @@
 "https://search.keinet.ne.jp/2102/outline/expense",
 "https://search.keinet.ne.jp/2102/outline/campus",
 "https://search.keinet.ne.jp/2102"
-]
+],
+"kyotsu": {
+"kamoku": "共通テスト利用なし",
+"kyoka": [],
+"rl": [],
+"rl_text": "",
+"note": "一般選抜は個別試験（小論文・面接）のみ",
+"year": "2027年度入試"
+}
 },
 "情報経営イノベーション専門職大学（iU）": {
 "difficulty": {
@@ -4662,7 +5869,15 @@
 "https://search.keinet.ne.jp/2106/outline/expense",
 "https://search.keinet.ne.jp/2106/outline/campus",
 "https://search.keinet.ne.jp/2106"
-]
+],
+"kyotsu": {
+"kamoku": "共通テスト利用なし",
+"kyoka": [],
+"rl": [],
+"rl_text": "",
+"note": "一般選抜は個別学力検査のみ掲載",
+"year": "2027年度入試"
+}
 },
 "東京国際工科専門職大学": {
 "difficulty": {
@@ -4691,7 +5906,15 @@
 "https://search.keinet.ne.jp/2113/outline/expense",
 "https://search.keinet.ne.jp/2113/outline/campus",
 "https://search.keinet.ne.jp/2113"
-]
+],
+"kyotsu": {
+"kamoku": "共通テスト利用なし",
+"kyoka": [],
+"rl": [],
+"rl_text": "",
+"note": "Kei-Netでは国際工科専門職大学（東京・大阪・名古屋）として掲載。一般選抜は小論文・面接",
+"year": "2027年度入試"
+}
 },
 "開志専門職大学": {
 "difficulty": {
@@ -4720,7 +5943,18 @@
 "https://search.keinet.ne.jp/2343/outline/expense",
 "https://search.keinet.ne.jp/2343/outline/campus",
 "https://search.keinet.ne.jp/2343"
-]
+],
+"kyotsu": {
+"kamoku": "1〜2教科2科目",
+"kyoka": [
+1,
+2
+],
+"rl": [],
+"rl_text": "英語R100のみ記載（L記載なし）",
+"note": "英語資格・検定の換算あり",
+"year": "2027年度入試"
+}
 },
 "芸術文化観光専門職大学": {
 "difficulty": {
@@ -4753,7 +5987,20 @@
 "https://search.keinet.ne.jp/1628/outline/campus",
 "https://search.keinet.ne.jp/1628",
 "https://www.kobe-np.co.jp/news/sougou/202205/0015300027.shtml"
-]
+],
+"kyotsu": {
+"kamoku": "3教科3科目",
+"kyoka": [
+3,
+3
+],
+"rl": [
+"4:1"
+],
+"rl_text": "R:L=4:1（R120・L30）",
+"note": "二段階選抜あり（約10倍）",
+"year": "2027年度入試"
+}
 },
 "静岡県立農林環境専門職大学": {
 "difficulty": {
@@ -4780,7 +6027,20 @@
 "https://search.keinet.ne.jp/1572/outline/campus",
 "https://search.keinet.ne.jp/1572",
 "https://digitalpr.jp/r/35452"
-]
+],
+"kyotsu": {
+"kamoku": "3教科3科目（英・数・理）",
+"kyoka": [
+3,
+3
+],
+"rl": [
+"4:1"
+],
+"rl_text": "R:L=4:1（R80・L20）",
+"note": "",
+"year": "2027年度入試"
+}
 },
 "高知リハビリテーション専門職大学": {
 "difficulty": {
@@ -4810,7 +6070,18 @@
 "https://search.keinet.ne.jp/2690/outline/expense",
 "https://search.keinet.ne.jp/2690/outline/campus",
 "https://search.keinet.ne.jp/2690"
-]
+],
+"kyotsu": {
+"kamoku": "2教科2科目",
+"kyoka": [
+2,
+2
+],
+"rl": [],
+"rl_text": "英語R・Lの配点記載なし",
+"note": "",
+"year": "2027年度入試"
+}
 },
 "東京保健医療専門職大学": {
 "difficulty": {
@@ -4840,7 +6111,20 @@
 "https://search.keinet.ne.jp/2114/outline/expense",
 "https://search.keinet.ne.jp/2114/outline/campus",
 "https://search.keinet.ne.jp/2114"
-]
+],
+"kyotsu": {
+"kamoku": "2教科2科目（国語必須）",
+"kyoka": [
+2,
+2
+],
+"rl": [
+"1:1"
+],
+"rl_text": "R:L=1:1（R50・L50）",
+"note": "",
+"year": "2027年度入試"
+}
 },
 "名古屋国際工科専門職大学": {
 "difficulty": {
@@ -4869,7 +6153,15 @@
 "https://search.keinet.ne.jp/2113/outline/expense",
 "https://search.keinet.ne.jp/2113/outline/campus",
 "https://search.keinet.ne.jp/2113"
-]
+],
+"kyotsu": {
+"kamoku": "共通テスト利用なし",
+"kyoka": [],
+"rl": [],
+"rl_text": "",
+"note": "Kei-Netでは国際工科専門職大学（名古屋キャンパス）として掲載。一般選抜は小論文・面接",
+"year": "2027年度入試"
+}
 },
 "電動モビリティシステム専門職大学": {
 "difficulty": null,
@@ -4919,7 +6211,20 @@
 "https://search.keinet.ne.jp/1080/outline/department",
 "https://search.keinet.ne.jp/1080/outline/licential",
 "https://search.keinet.ne.jp/1080/outline/admission_employment"
-]
+],
+"kyotsu": {
+"kamoku": "2教科2科目",
+"kyoka": [
+2,
+2
+],
+"rl": [
+"1:1"
+],
+"rl_text": "視覚障害コース・保健科学部はR:L=1:1。聴覚障害系は内訳記載なし（英語150点）",
+"note": "前期のみ",
+"year": "2027年度入試"
+}
 },
 "前橋工科大学": {
 "faculties": [
@@ -4944,7 +6249,20 @@
 "https://search.keinet.ne.jp/1523",
 "https://search.keinet.ne.jp/1523/outline/department",
 "https://search.keinet.ne.jp/1523/outline/admission_employment"
-]
+],
+"kyotsu": {
+"kamoku": "5教科7科目",
+"kyoka": [
+5,
+5
+],
+"rl": [
+"3:1"
+],
+"rl_text": "全学科でR:L=3:1（R150・L50）",
+"note": "中期は二段階選抜あり（25倍）",
+"year": "2027年度入試"
+}
 },
 "千葉県立保健医療大学": {
 "faculties": [
@@ -4989,7 +6307,20 @@
 "sources": [
 "https://search.keinet.ne.jp/outline/department/1526",
 "https://search.keinet.ne.jp/1526/outline/admission_employment"
-]
+],
+"kyotsu": {
+"kamoku": "4教科5科目〜5教科5科目",
+"kyoka": [
+4,
+5
+],
+"rl": [
+"3:1"
+],
+"rl_text": "全学科でR:L=3:1（R75・L25）",
+"note": "前期のみ。二段階選抜（5倍）",
+"year": "2027年度入試"
+}
 },
 "川崎市立看護大学": {
 "faculties": [
@@ -5110,7 +6441,20 @@
 "https://search.keinet.ne.jp/1507/outline/department",
 "https://search.keinet.ne.jp/1507/outline/admission_employment",
 "https://www.mext.go.jp/a_menu/koutou/kouritsu/04093001/015.htm"
-]
+],
+"kyotsu": {
+"kamoku": "5教科6科目",
+"kyoka": [
+5,
+5
+],
+"rl": [
+"1:1"
+],
+"rl_text": "R:L=1:1（R50・L50）",
+"note": "後期は個別学力検査なし",
+"year": "2027年度入試"
+}
 },
 "公立千歳科学技術大学": {
 "faculties": [
