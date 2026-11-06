@@ -32,7 +32,13 @@ def main(path):
         if n not in coords:
             c = r.get('latlng') or (geocode(r.get('pref_name', ''), r.get('city', '')) if r.get('city') else None)
             if c: coords[n] = c
-            else: problems.append(n + ': 座標なし')
+            else:
+                caps = json.load(open(P('pref_capitals'), encoding='utf-8')) if os.path.exists(P('pref_capitals')) else {}
+                pn = r.get('pref_name') or next((k for k in caps if (r.get('pref') or '').startswith(k)), '')
+                if caps.get(pn):
+                    coords[n] = caps[pn]; problems.append(n + ': 市区町村が不明のため県庁所在地に仮置き（要修正）')
+                else:
+                    problems.append(n + ': 座標なし')
         cur = info.setdefault(n, {})
         for k, v in (r.get('info') or {}).items():
             if k == 'sources':

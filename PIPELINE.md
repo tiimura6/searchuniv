@@ -25,6 +25,7 @@ Searchuniv に全国の大学を少しずつ追加し、既存校の空欄（研
 - `https://search.keinet.ne.jp/outline/department/{コード}`（学部・学科、学生数、概要・特色）
 - `https://search.keinet.ne.jp/{コード}/outline/licential`（取得可能資格）
 - `https://search.keinet.ne.jp/{コード}/outline/admission_employment`（進学・就職実績）
+- `https://search.keinet.ne.jp/{コード}/general/exam_subject`（共通テストの教科・科目数と英語リーディング:リスニングの配点 → info.kyotsu。R:Lは整数比に約分、例 100:100→"1:1"、160:40→"4:1"）
 - 余裕があれば `https://search.keinet.ne.jp/{コード}/general/exam_result`（一般選抜の「大学計」）とボーダー（偏差値・共テ得点率）
 大学校・専門職大学で Kei-Net に無いものは、公式サイトから。
 
@@ -45,7 +46,7 @@ Searchuniv に全国の大学を少しずつ追加し、既存校の空欄（研
   "cat": "national",            // national|public|private|daigakkou|senmon（既存校の enrich では省略可）
   "type": "国立",               // 国立|公立|私立|大学校の所管 など、カード表示用
   "pref": "青森県弘前市",        // カード表示用の所在地
-  "pref_name": "青森県", "city": "弘前市",   // 座標用（本部キャンパスの市区町村）
+  "pref_name": "青森県", "city": "弘前市",   // 座標用（本部キャンパスの市区町村）。必須。政令市は区まで（例「さいたま市浦和区」）。pref も「県＋市区町村」で書く
   "features": ["特色1（1文）", "特色2", "特色3"],
   "memo": "担任向けメモ1〜2文（入試方式の特徴、地元枠、学費の安さなど出典で確認できたこと）",
   "reading": "ひろさき",        // 「大学」「大学校」「専門職大学」を除いた読み（ひらがな）
@@ -59,6 +60,7 @@ Searchuniv に全国の大学を少しずつ追加し、既存校の空欄（研
     "access": "文京町キャンパス：JR弘前駅からバス約15分",
     "tuition": {"amount": 817800, "label": "入学金＋授業料", "year": 2026},
     "research": ["白神山地の生態系研究", "..."],
+    "kyotsu": {"kamoku": "5教科7科目〜6教科8科目", "kyoka": [5, 6], "rl": ["1:1"], "rl_text": "全学部でR:L=1:1", "note": "", "year": "2027年度入試"},
     "licenses": ["教員免許（中・高）", "看護師国家試験受験資格"],
     "careers": "公務員・教員・医療職が多い。",
     "notable": [], "news": [],
@@ -69,6 +71,6 @@ Searchuniv に全国の大学を少しずつ追加し、既存校の空欄（研
            "format": "前期・後期を実施。…", "sources": ["..."]}
 }]
 ```
-- `features` は2〜3個、`memo` は必須（新規追加のとき）。
+- `features` は2〜3個、`memo` と `city` は必須（新規追加のとき）。
 - `guide` は新規追加のとき必須。集めたデータ（学部・特色・入試方式・学費・進路）だけを根拠に、担任が面談で使う形で書く（断定的な評価語は使わない）。
 - `enrich` の既存校は、`name` と埋めたい `info` の項目だけでよい（既存の値は上書きされない）。

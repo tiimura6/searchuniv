@@ -21,6 +21,7 @@
 *{box-sizing:border-box}
 body{margin:0;font-family:"Noto Sans JP",system-ui,sans-serif;background:var(--bg);color:var(--ink);line-height:1.6}
 header{padding:20px 20px 8px;max-width:880px;margin:0 auto}
+.byline{font-size:12px;font-weight:500;color:var(--muted);letter-spacing:.02em;margin-left:6px}
 h1{font-size:20px;margin:0 0 4px;font-weight:700;letter-spacing:.02em}
 .sub{font-size:12.5px;color:var(--muted);margin:0}
 main{max-width:880px;margin:0 auto;padding:8px 20px 40px}
@@ -99,6 +100,9 @@ body.wide main,body.wide header{max-width:1320px}
 .sright{position:sticky;top:10px}
 .sbar{display:flex;gap:8px}
 .sbar input{flex:1;font-family:inherit;font-size:14px;border:1px solid var(--line);border-radius:8px;padding:9px 10px;background:var(--panel);color:var(--ink)}
+.sfilt{display:flex;flex-wrap:wrap;gap:6px;align-items:center}
+.sfilt select{font-family:inherit;font-size:12.5px;border:1px solid var(--line);border-radius:8px;padding:6px 8px;background:var(--panel);color:var(--ink)}
+.chk{font-size:12.5px;display:flex;align-items:center;gap:4px;cursor:pointer}
 .mcount{font-size:12px;color:var(--muted)}
 .mresults{display:flex;flex-direction:column;gap:4px}
 .ritem{display:flex;align-items:center;gap:8px;text-align:left;border:1px solid var(--line);background:var(--panel);color:var(--ink);border-radius:8px;padding:7px 10px;cursor:pointer;font-family:inherit}
@@ -203,7 +207,7 @@ ul.mini li{font-size:12.5px;margin:2px 0}
 </head>
 <body>
 <header>
-  <h1>Searchuniv</h1>
+  <h1>Searchuniv <span class="byline">designed by Takahiro Iimura</span></h1>
   <nav class="tabs"><a href="#cards" data-v="cards">カード</a><a href="#map" data-v="map">検索</a><a href="#news" data-v="news">ニュース</a><a href="#ai" data-v="ai">AIおすすめ</a></nav>
 </header>
 <main>
@@ -215,7 +219,7 @@ ul.mini li{font-size:12.5px;margin:2px 0}
       <option value="name">大学名→特色</option>
       <option value="feat">特色→大学名</option>
     </select>
-    <select id="kindf" aria-label="種別"><option value="">全種別</option><option>国立</option><option>公立</option><option>私立</option><option>大学校</option><option>専門職大学</option></select>
+    <select id="kindf" aria-label="種別"><option value="">全種別</option><option value="pub">国公立（私立を除く）</option><option>国立</option><option>公立</option><option>私立</option><option>大学校</option><option>専門職大学</option></select>
     <select id="filt" aria-label="学習状況">
       <option value="all">すべて</option>
       <option value="unknown">まだ</option>
@@ -246,6 +250,11 @@ ul.mini li{font-size:12.5px;margin:2px 0}
   <div class="sgrid">
     <div class="sleft">
       <div class="sbar"><input type="search" id="mq" placeholder="大学名・読み・学部・地域で検索" autocomplete="off"><button class="btn" id="mreset">全国</button></div>
+      <div class="sfilt">
+        <select id="f-kyoka" aria-label="共通テスト科目数"><option value="">共テ教科数：すべて</option><option value="le3">3教科以下</option><option value="4-5">4〜5教科</option><option value="ge6">6教科以上</option><option value="none">共テ利用なし</option></select>
+        <select id="f-rl" aria-label="英語R:L比率"><option value="">英語R:L：すべて</option><option value="1:1">1:1（均等）</option><option value="r">リーディング重視（3:1・4:1など）</option><option value="other">その他の比率</option></select>
+        <label class="chk"><input type="checkbox" id="f-nopri"> 私立を除く</label>
+      </div>
       <div id="mcount" class="mcount"></div>
       <div id="mresults" class="mresults"></div>
       <div id="mpanel" class="mpanel"></div>
@@ -263,7 +272,7 @@ ul.mini li{font-size:12.5px;margin:2px 0}
     <label>学びたい学問・興味<input id="ai-study" placeholder="例：心理学、AI、国際関係、昆虫の生態"></label>
     <div class="airow">
       <label>地域<select id="ai-region"><option value="">こだわらない</option><option>北海道・東北</option><option>関東</option><option>中部</option><option>近畿</option><option>中国・四国</option><option>九州・沖縄</option></select></label>
-      <label>設置区分<select id="ai-type"><option value="">こだわらない</option><option value="pub">国公立</option><option value="pri">私立</option><option value="dai">大学校</option></select></label>
+      <label>設置区分<select id="ai-type"><option value="">こだわらない</option><option value="pub">国公立（私立を除く）</option><option value="pri">私立</option><option value="dai">大学校</option></select></label>
       <label>学力の目安<input id="ai-level" placeholder="例：共テ75%、偏差値60"></label>
       <label>学費の上限<input id="ai-budget" placeholder="例：初年度150万円まで"></label>
     </div>
@@ -312,10 +321,12 @@ const HP = /*HP*/{}/*END_HP*/;
 function hpLink(name){ const u=HP[name]; return u?'<a class="hp" href="'+esc(u)+'" target="_blank" rel="noopener" onclick="event.stopPropagation()">公式HP ↗</a>':''; }
 const INFO = /*INFO_DATA*/{}/*END_INFO*/;
 function yen(n){ return n===0 ? "0円" : (n==null?"—":Math.round(n/1000).toLocaleString("ja-JP")+"千円"); }
+function kyotsuText(f){ const k=f&&f.kyotsu; if(!k||!k.kamoku) return ""; return esc(k.kamoku)+(k.rl_text?'<span class="sub2">（英語 '+esc(k.rl_text)+'）</span>':(k.rl&&k.rl.length?'<span class="sub2">（英語 R:L='+esc(k.rl.join("／"))+'）</span>':'')); }
 function infoBlock(name){
   const f = INFO[name]; if(!f) return "";
   const rows=[];
   const d=f.difficulty;
+  if(f.kyotsu&&f.kyotsu.kamoku) rows.push(["共通テスト",kyotsuText(f)+(f.kyotsu.note?'<div class="sub2">'+esc(f.kyotsu.note)+'</div>':'')]);
   if(d && (d.hensachi||d.kyotei)) rows.push(["難易度",[d.hensachi?"偏差値 "+esc(d.hensachi):"",d.kyotei?"共テ "+esc(d.kyotei):""].filter(Boolean).join("／")]);
   const t=f.tuition;
   if(t && t.amount!=null) rows.push(["初年度納付金", "<b>"+yen(t.amount)+"</b>"+(t.label?'<span class="sub2">（'+esc(t.label)+'）</span>':"")]);
@@ -430,7 +441,7 @@ function rebuild(keepPos){
   const f = $("filt").value;
   deck = order.map(i=>items[i]).filter(x=>{
     if(!activeCats.has(x.cat)) return false;
-    const kf=$("kindf").value; if(kf && kindOf(x)!==kf) return false;
+    const kf=$("kindf").value; if(kf==="pub"){ if(!["国立","公立"].includes(kindOf(x)) && !(kindOf(x)==="専門職大学"&&/公立/.test(x.type))) return false; } else if(kf && kindOf(x)!==kf) return false;
     if(f==="unknown" && marks[x.id]!=="u") return false;
     if(f==="unseen" && marks[x.id]) return false;
     if(q){ const hay=(x.name+x.pref+x.type+x.feats.join("")+x.memo+CATS[x.cat].label).toLowerCase(); if(!hay.includes(q)) return false; }
@@ -558,6 +569,7 @@ function frontFacts(x){
   if(f.founded) rows.push(["創立",esc(m(f.founded))]);
   if(f.students&&f.students.count) rows.push(["学生数","約"+Number(f.students.count).toLocaleString("ja-JP")+"人"]);
   const d=f.difficulty; if(d&&(d.hensachi||d.kyotei)) rows.push(["難易度",[d.hensachi?"偏差値 "+esc(d.hensachi):"",d.kyotei?"共テ "+esc(d.kyotei):""].filter(Boolean).join("／")]);
+  if(f.kyotsu&&f.kyotsu.kamoku) rows.push(["共通テスト",kyotsuText(f)]);
   const t=f.tuition; if(t&&t.amount!=null) rows.push(["初年度納付金",yen(t.amount)]);
   const e=EXAM[x.name]; if(e&&e.general&&e.general.ratio!=null) rows.push(["一般選抜倍率",Number(e.general.ratio).toFixed(1)+"倍"]);
   if(f.research&&f.research.length) rows.push(["有名な研究分野",esc(f.research.map(m).join("／"))]);
@@ -769,8 +781,26 @@ function openCard(id){
   const i=deck.findIndex(d=>d.id===id); if(i>=0){ idx=i; render(); }
   location.hash="#cards";
 }
+function passFilters(x){
+  const kf=$("f-kyoka").value, rf=$("f-rl").value, np=$("f-nopri").checked;
+  if(np && kindOf(x)==="私立") return false;
+  if(np && kindOf(x)==="専門職大学" && !/公立/.test(x.type)) return false;
+  const k=(INFO[x.name]||{}).kyotsu;
+  if(kf){ if(!k||!k.kamoku) return false; const ky=k.kyoka||[];
+    if(kf==="none"){ if(ky.length) return false; }
+    else { if(!ky.length) return false; const mn=Math.min(...ky), mx=Math.max(...ky);
+      if(kf==="le3"&&mn>3) return false; if(kf==="4-5"&&(mx<4||mn>5)) return false; if(kf==="ge6"&&mx<6) return false; } }
+  if(rf){ const rl=(k&&k.rl)||[]; if(!rl.length) return false;
+    const ratio=t=>{ const m=String(t).match(/(\d+(?:\.\d+)?)\s*:\s*(\d+(?:\.\d+)?)/); return m?Number(m[1])/Number(m[2]):null; };
+    if(rf==="1:1"&&!rl.some(t=>ratio(t)===1)) return false;
+    if(rf==="r"&&!rl.some(t=>(ratio(t)||0)>=2)) return false;
+    if(rf==="other"&&!rl.some(t=>{const r=ratio(t); return r!=null&&r!==1&&r<2;})) return false; }
+  return true;
+}
+function filtersActive(){ return $("f-kyoka").value||$("f-rl").value||$("f-nopri").checked; }
 function searchUnivs(q){
-  q=q.trim(); if(!q) return [];
+  q=q.trim();
+  if(!q){ return filtersActive()? items.filter(passFilters).sort((a,b)=>(PRIO[a.cat]??20)-(PRIO[b.cat]??20)) : []; }
   const a=nz(q), h=toHira(q.normalize("NFKC")).replace(/\s/g,"");
   return items.map(x=>{
     const f=INFO[x.name]||{}; let sc=0;
@@ -783,11 +813,11 @@ function searchUnivs(q){
     if((f.faculties||[]).some(t=>t.includes(q))) sc+=10;
     if(((f.research||[]).join("")+(f.licenses||[]).join("")).includes(q)) sc+=6;
     return {x,sc};
-  }).filter(o=>o.sc>0).sort((p,q2)=>q2.sc-p.sc||(PRIO[p.x.cat]??20)-(PRIO[q2.x.cat]??20)).map(o=>o.x);
+  }).filter(o=>o.sc>0&&passFilters(o.x)).sort((p,q2)=>q2.sc-p.sc||(PRIO[p.x.cat]??20)-(PRIO[q2.x.cat]??20)).map(o=>o.x);
 }
 function renderResults(){
   const list=searchUnivs($("mq").value);
-  $("mcount").textContent=$("mq").value.trim()?(list.length?list.length+"件":"該当なし"):"";
+  $("mcount").textContent=($("mq").value.trim()||filtersActive())?(list.length?list.length+"件":"該当なし"):"";
   $("mresults").innerHTML=list.slice(0,40).map(x=>'<button class="ritem" data-n="'+esc(x.name)+'">'+badge(x)+'<span class="rn">'+esc(x.name)+'</span><span class="rp">'+esc(x.pref)+'</span></button>').join("");
   $("mresults").querySelectorAll(".ritem").forEach(b=>b.onclick=()=>selectUniv(b.dataset.n));
   // 地図上で候補の点を強調
@@ -795,8 +825,9 @@ function renderResults(){
   document.querySelectorAll("#jmap .dot").forEach(c=>{ const n=c.querySelector("title").textContent; c.classList.toggle("dim", set.size>0 && !set.has(n)); });
 }
 $("mq").addEventListener("input",()=>{ $("mpanel").innerHTML=""; renderResults(); });
+["f-kyoka","f-rl","f-nopri"].forEach(id=>$(id).addEventListener("change",()=>{ $("mpanel").innerHTML=""; renderResults(); }));
 $("mq").addEventListener("keydown",e=>{ if(e.key==="Enter"){ const l=searchUnivs($("mq").value); if(l.length) selectUniv(l[0].name); } });
-$("mreset").onclick=()=>{ $("hl").innerHTML=""; $("mpanel").innerHTML=""; $("mresults").innerHTML=""; $("mcount").textContent=""; $("mq").value=""; document.querySelectorAll("#jmap .dot.dim").forEach(c=>c.classList.remove("dim")); setVB(HOME_VB); };
+$("mreset").onclick=()=>{ $("f-kyoka").value=""; $("f-rl").value=""; $("f-nopri").checked=false; $("hl").innerHTML=""; $("mpanel").innerHTML=""; $("mresults").innerHTML=""; $("mcount").textContent=""; $("mq").value=""; document.querySelectorAll("#jmap .dot.dim").forEach(c=>c.classList.remove("dim")); setVB(HOME_VB); };
 window.addEventListener("hashchange",()=>{ if(location.hash==="#map") requestAnimationFrame(()=>scaleMarks()); });
 
 
