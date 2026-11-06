@@ -1,76 +1,6 @@
 {
  "add": [
   {
-   "name": "筑波技術大学",
-   "type": "国立",
-   "pref": "茨城県",
-   "hp": "http://www.tsukuba-tech.ac.jp/",
-   "cat": "national"
-  },
-  {
-   "name": "前橋工科大学",
-   "type": "公立",
-   "pref": "群馬県",
-   "hp": "http://www.maebashi-it.ac.jp/",
-   "cat": "public"
-  },
-  {
-   "name": "千葉県立保健医療大学",
-   "type": "公立",
-   "pref": "千葉県",
-   "hp": "http://www.pref.chiba.lg.jp/hoidai/",
-   "cat": "public"
-  },
-  {
-   "name": "埼玉県立大学",
-   "type": "公立",
-   "pref": "埼玉県",
-   "hp": "http://www.spu.ac.jp/",
-   "cat": "public"
-  },
-  {
-   "name": "川崎市立看護大学",
-   "type": "公立",
-   "pref": "神奈川県",
-   "hp": "https://www.kawasaki-cn.ac.jp/",
-   "cat": "public"
-  },
-  {
-   "name": "神奈川県立保健福祉大学",
-   "type": "公立",
-   "pref": "神奈川県",
-   "hp": "http://www.kuhs.ac.jp/",
-   "cat": "public"
-  },
-  {
-   "name": "群馬県立女子大学",
-   "type": "公立",
-   "pref": "群馬県",
-   "hp": "http://www.gpwu.ac.jp/",
-   "cat": "public"
-  },
-  {
-   "name": "群馬県立県民健康科学大学",
-   "type": "公立",
-   "pref": "群馬県",
-   "hp": "http://www.gchs.ac.jp/",
-   "cat": "public"
-  },
-  {
-   "name": "公立はこだて未来大学",
-   "type": "公立",
-   "pref": "北海道",
-   "hp": "http://www.fun.ac.jp/",
-   "cat": "public"
-  },
-  {
-   "name": "公立千歳科学技術大学",
-   "type": "公立",
-   "pref": "北海道",
-   "hp": "https://www.chitose.ac.jp/",
-   "cat": "public"
-  },
-  {
    "name": "北海道教育大学",
    "type": "国立",
    "pref": "北海道",
@@ -4870,66 +4800,107 @@
    "note": "高校からの通常の進学先ではない（括弧内の理由）。カードの memo にもその旨を書く。"
   }
  ],
- "done": [],
- "failed": [],
- "fail_count": {},
- "enrich": [
+ "done": [
+  {
+   "name": "筑波技術大学",
+   "op": "add"
+  },
+  {
+   "name": "前橋工科大学",
+   "op": "add"
+  },
+  {
+   "name": "千葉県立保健医療大学",
+   "op": "add"
+  },
+  {
+   "name": "埼玉県立大学",
+   "op": "add"
+  },
+  {
+   "name": "川崎市立看護大学",
+   "op": "add"
+  },
+  {
+   "name": "神奈川県立保健福祉大学",
+   "op": "add"
+  },
+  {
+   "name": "群馬県立女子大学",
+   "op": "add"
+  },
+  {
+   "name": "群馬県立県民健康科学大学",
+   "op": "add"
+  },
+  {
+   "name": "公立はこだて未来大学",
+   "op": "add"
+  },
+  {
+   "name": "公立千歳科学技術大学",
+   "op": "add"
+  },
   {
    "name": "東京大学",
-   "keinet": "1120",
+   "op": "enrich",
    "need": [
     "research"
    ]
   },
   {
    "name": "京都大学",
-   "keinet": "1280",
+   "op": "enrich",
    "need": [
     "research"
    ]
   },
   {
    "name": "大阪大学",
-   "keinet": "1295",
+   "op": "enrich",
    "need": [
     "research"
    ]
   },
   {
    "name": "東北大学",
-   "keinet": "1050",
+   "op": "enrich",
    "need": [
     "research"
    ]
   },
   {
    "name": "名古屋大学",
-   "keinet": "1250",
+   "op": "enrich",
    "need": [
     "research"
    ]
   },
   {
    "name": "九州大学",
-   "keinet": "1405",
+   "op": "enrich",
    "need": [
     "research"
    ]
   },
   {
    "name": "北海道大学",
-   "keinet": "1025",
+   "op": "enrich",
    "need": [
     "research"
    ]
   },
   {
    "name": "一橋大学",
-   "keinet": "1165",
+   "op": "enrich",
    "need": [
     "research"
    ]
-  },
+  }
+ ],
+ "failed": [],
+ "fail_count": {},
+ "enrich": [
   {
    "name": "東京科学大学",
    "keinet": "1150",
