@@ -1320,7 +1320,7 @@ function renderResults(){
   if(!DETAIL_READY&&($("f-meth").value||$("f-eng").value)) msg="入試方式・英語外部試験のデータを読み込み中…";
   $("mcount").textContent=msg;
   const kv=$("f-kei").value;
-  const facHit=x=>{ const f=INFO[x.name]||{}; let h=kv?keiHits(x,kv):[]; if(!h.length&&qv&&!isCorrect(qv,x.name)&&!nz(x.name).includes(nz(qv))){ const ws=[qv,...(typeof concepts==="function"?concepts(qv).flat():[])].filter(w=>w.length>=2); h=facList(f).filter(t=>ws.some(w=>t.includes(w))); }
+  const facHit=x=>{ const f=INFO[x.name]||{}; let h=kv?keiHits(x,kv):[]; if(!h.length&&qv&&!isCorrect(qv,x.name)&&!nz(x.name).includes(nz(qv))){ const ws=[qv,...(typeof concepts==="function"?concepts(qv).flat():[])].filter(w=>w.length>=2); const ex=facList(f).filter(t=>t.includes(qv)); h=ex.length?ex:facList(f).filter(t=>ws.some(w=>t.includes(w))); }
     return h.length?'<span class="rf">'+esc(h.slice(0,3).map(t=>/学部|学群|学域|学環|学院|学類$/.test(t.replace(/（.*$/,""))?t.replace(/（.*$/,""):t).join("・")+(h.length>3?" ほか":""))+'</span>':""; };
   $("mresults").innerHTML=list.slice(0,200).map(x=>'<button class="ritem" data-n="'+esc(x.name)+'">'+badge(x)+'<span class="rn">'+esc(x.name)+facHit(x)+'</span><span class="rp">'+esc(x.pref)+'</span></button>').join("");
   $("mresults").querySelectorAll(".ritem").forEach(b=>b.onclick=()=>selectUniv(b.dataset.n));

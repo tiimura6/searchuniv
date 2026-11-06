@@ -1,0 +1,925 @@
+[
+ {
+  "name": "獨協医科大学",
+  "info": {
+   "departments_full": [
+    {
+     "f": "医",
+     "d": [
+      "医"
+     ]
+    },
+    {
+     "f": "看護",
+     "d": [
+      "看護"
+     ]
+    }
+   ]
+  },
+  "sources": [
+   "https://search.keinet.ne.jp/2123/outline/department"
+  ]
+ },
+ {
+  "name": "津田塾大学",
+  "info": {
+   "departments_full": [
+    {
+     "f": "学芸学部",
+     "d": [
+      "英語英文",
+      "国際関係",
+      "多文化・国際協力",
+      "数学",
+      "情報科学"
+     ]
+    },
+    {
+     "f": "総合政策学部",
+     "d": [
+      "総合政策"
+     ]
+    }
+   ]
+  },
+  "sources": [
+   "https://search.keinet.ne.jp/2243/outline/department"
+  ]
+ },
+ {
+  "name": "東京女子大学",
+  "info": {
+   "departments_full": [
+    {
+     "f": "現代教養学部",
+     "d": [
+      "人文 哲学",
+      "人文 日本文学文化",
+      "人文 英語圏文化",
+      "人文 歴史文化",
+      "国際社会",
+      "経済経営",
+      "心理",
+      "社会コミュニケーション",
+      "情報数理科学"
+     ]
+    }
+   ]
+  },
+  "sources": [
+   "https://search.keinet.ne.jp/2254/outline/department"
+  ]
+ },
+ {
+  "name": "日本女子大学",
+  "info": {
+   "departments_full": [
+    {
+     "f": "文学部",
+     "d": [
+      "日本語日本文",
+      "英文",
+      "歴史文化"
+     ]
+    },
+    {
+     "f": "国際文化学部",
+     "d": [
+      "国際文化"
+     ]
+    },
+    {
+     "f": "経済学部",
+     "d": [
+      "経済"
+     ]
+    },
+    {
+     "f": "理学部",
+     "d": [
+      "数物情報科学",
+      "化学生命科学"
+     ]
+    },
+    {
+     "f": "食科学部",
+     "d": [
+      "食科学",
+      "栄養"
+     ]
+    },
+    {
+     "f": "家政学部",
+     "d": [
+      "児童",
+      "被服"
+     ]
+    },
+    {
+     "f": "建築デザイン学部",
+     "d": [
+      "建築デザイン"
+     ]
+    },
+    {
+     "f": "人間社会学部",
+     "d": [
+      "現代社会",
+      "社会福祉",
+      "教育",
+      "心理"
+     ]
+    }
+   ]
+  },
+  "sources": [
+   "https://search.keinet.ne.jp/2272/outline/department"
+  ]
+ },
+ {
+  "name": "聖心女子大学",
+  "info": {
+   "departments_full": [
+    {
+     "f": "現代教養学部",
+     "d": [
+      "英語文化コミュニケーション",
+      "日本語日本文",
+      "哲",
+      "史",
+      "人間関係",
+      "国際交流",
+      "心理",
+      "教育"
+     ]
+    }
+   ]
+  },
+  "sources": [
+   "https://search.keinet.ne.jp/2230/outline/department"
+  ]
+ },
+ {
+  "name": "立命館アジア太平洋大学（APU）",
+  "info": {
+   "departments_full": [
+    {
+     "f": "サステイナビリティ観光学部",
+     "d": [
+      "サステイナビリティ観光"
+     ]
+    },
+    {
+     "f": "アジア太平洋学部",
+     "d": [
+      "アジア太平洋"
+     ]
+    },
+    {
+     "f": "国際経営学部",
+     "d": [
+      "国際経営"
+     ]
+    }
+   ]
+  },
+  "sources": [
+   "https://search.keinet.ne.jp/2766/outline/department"
+  ]
+ },
+ {
+  "name": "神田外語大学",
+  "info": {
+   "departments_full": [
+    {
+     "f": "外国語学部",
+     "d": [
+      "英米語",
+      "アジ 中国語",
+      "アジ 韓国語",
+      "アジ インドネシア語",
+      "アジ ベトナム語",
+      "アジ タイ語",
+      "イベ スペイン語",
+      "イベ ブラジル・ポルトガル語",
+      "国コ 国際コミュニケーション",
+      "国コ 国際ビジネスキャリア"
+     ]
+    },
+    {
+     "f": "グローバル・リベラルアーツ学部",
+     "d": [
+      "グローバル・リベラルアーツ"
+     ]
+    }
+   ]
+  },
+  "sources": [
+   "https://search.keinet.ne.jp/2172/outline/department"
+  ]
+ },
+ {
+  "name": "関西外国語大学",
+  "info": {
+   "departments_full": [
+    {
+     "f": "外国語学部",
+     "d": [
+      "英米語",
+      "英語・デジタルコミュニケーション",
+      "国際日本",
+      "スペイン語"
+     ]
+    },
+    {
+     "f": "英語キャリア学部",
+     "d": [
+      "英語キャリア",
+      "英語 小学校教員"
+     ]
+    },
+    {
+     "f": "英語国際学部",
+     "d": [
+      "英語 国際関係学",
+      "英語 グローバル・コミュニケーション学",
+      "アジア共創"
+     ]
+    },
+    {
+     "f": "国際共生学部",
+     "d": [
+      "国際共生"
+     ]
+    }
+   ]
+  },
+  "sources": [
+   "https://search.keinet.ne.jp/2535/outline/department"
+  ]
+ },
+ {
+  "name": "茨城キリスト教大学",
+  "info": {
+   "departments_full": [
+    {
+     "f": "文学部",
+     "d": [
+      "現代英語",
+      "児童 児童教育",
+      "児童 幼児保育",
+      "文化交流"
+     ]
+    },
+    {
+     "f": "経営学部",
+     "d": [
+      "経営"
+     ]
+    },
+    {
+     "f": "看護学部",
+     "d": [
+      "看護"
+     ]
+    },
+    {
+     "f": "生活科学部",
+     "d": [
+      "心理福祉",
+      "食物健康科学"
+     ]
+    },
+    {
+     "f": "未来教養",
+     "d": []
+    }
+   ]
+  },
+  "sources": [
+   "https://search.keinet.ne.jp/2107/outline/department"
+  ]
+ },
+ {
+  "name": "常磐大学",
+  "info": {
+   "departments_full": [
+    {
+     "f": "看護学部",
+     "d": [
+      "看護"
+     ]
+    },
+    {
+     "f": "総合政策学部",
+     "d": [
+      "経営",
+      "法律行政",
+      "総合政策"
+     ]
+    },
+    {
+     "f": "人間科学部",
+     "d": [
+      "心理",
+      "教育 初等教育",
+      "教育 中等教育",
+      "現代社会",
+      "コミュニケーション",
+      "健康栄養"
+     ]
+    }
+   ]
+  },
+  "sources": [
+   "https://search.keinet.ne.jp/2108/outline/department"
+  ]
+ },
+ {
+  "name": "流通経済大学",
+  "info": {
+   "departments_full": [
+    {
+     "f": "共創社会学部",
+     "d": [
+      "地域人間科学",
+      "国際文化ツーリズム"
+     ]
+    },
+    {
+     "f": "法学部",
+     "d": [
+      "法律",
+      "自治行政"
+     ]
+    },
+    {
+     "f": "経済学部",
+     "d": [
+      "経済",
+      "経営"
+     ]
+    },
+    {
+     "f": "流通情報学部",
+     "d": [
+      "流通情報"
+     ]
+    },
+    {
+     "f": "スポーツ健康科学部",
+     "d": [
+      "スポーツ健康科学",
+      "スポーツコミュニケーション"
+     ]
+    }
+   ]
+  },
+  "sources": [
+   "https://search.keinet.ne.jp/2109/outline/department"
+  ]
+ },
+ {
+  "name": "防衛大学校",
+  "info": {
+   "departments_full": [
+    {
+     "f": "人文・社会科学",
+     "d": [
+      "人間文化学科",
+      "公共政策学科",
+      "国際関係学科"
+     ]
+    },
+    {
+     "f": "理工学",
+     "d": [
+      "応用物理学科",
+      "応用化学科",
+      "地球海洋学科",
+      "電気電子工学科",
+      "通信工学科",
+      "サイバー・情報工学科",
+      "機能材料工学科",
+      "機械工学科",
+      "機械システム工学科",
+      "航空宇宙工学科",
+      "建設環境工学科"
+     ]
+    }
+   ]
+  },
+  "sources": [
+   "https://search.keinet.ne.jp/5010/outline/department"
+  ]
+ },
+ {
+  "name": "水産大学校",
+  "info": {
+   "departments_full": [
+    {
+     "f": "水産大学校",
+     "d": [
+      "水産流通経営",
+      "海洋生産管理",
+      "海洋機械工",
+      "食品科学",
+      "生物生産"
+     ]
+    }
+   ]
+  },
+  "sources": [
+   "https://search.keinet.ne.jp/5030/outline/department"
+  ]
+ },
+ {
+  "name": "職業能力開発総合大学校",
+  "info": {
+   "departments_full": [
+    {
+     "f": "職業能力開発総合大学校",
+     "d": [
+      "機械工学",
+      "電気工学",
+      "電子情報工学",
+      "建築工学"
+     ]
+    }
+   ]
+  },
+  "sources": [
+   "https://search.keinet.ne.jp/5040/outline/department"
+  ]
+ },
+ {
+  "name": "国際ファッション専門職大学",
+  "info": {
+   "departments_full": [
+    {
+     "f": "国際ファッション",
+     "d": [
+      "ファッションクリエイション",
+      "ファッションビジネス"
+     ]
+    },
+    {
+     "f": "国際ファッション（大阪）",
+     "d": [
+      "大阪ファッションクリエイションビジネス"
+     ]
+    },
+    {
+     "f": "国際ファッション（愛知）",
+     "d": [
+      "名古屋ファッションクリエイションビジネス"
+     ]
+    }
+   ]
+  },
+  "sources": [
+   "https://search.keinet.ne.jp/2102/outline/department"
+  ]
+ },
+ {
+  "name": "情報経営イノベーション専門職大学（iU）",
+  "info": {
+   "departments_full": [
+    {
+     "f": "情報経営イノベーション学部",
+     "d": [
+      "情報経営イノベーション"
+     ]
+    }
+   ]
+  },
+  "sources": [
+   "https://search.keinet.ne.jp/2106/outline/department"
+  ]
+ },
+ {
+  "name": "東京国際工科専門職大学",
+  "info": {
+   "departments_full": [
+    {
+     "f": "工科学",
+     "d": [
+      "情報工（東京）",
+      "デジタルエンタテインメント（東京）",
+      "情報工（大阪）",
+      "デジタルエンタテインメント（大阪）",
+      "情報工（名古屋）",
+      "デジタルエンタテインメント（名古屋）"
+     ]
+    }
+   ]
+  },
+  "sources": [
+   "https://search.keinet.ne.jp/2113/outline/department"
+  ]
+ },
+ {
+  "name": "名古屋国際工科専門職大学",
+  "info": {
+   "departments_full": [
+    {
+     "f": "工科学",
+     "d": [
+      "情報工（名古屋）",
+      "デジタルエンタテインメント（名古屋）"
+     ]
+    }
+   ]
+  },
+  "sources": [
+   "https://search.keinet.ne.jp/2113/outline/department"
+  ]
+ },
+ {
+  "name": "開志専門職大学",
+  "info": {
+   "departments_full": [
+    {
+     "f": "事業創造",
+     "d": [
+      "事業創造"
+     ]
+    },
+    {
+     "f": "アニメ・マンガ",
+     "d": [
+      "アニメ・マンガ"
+     ]
+    },
+    {
+     "f": "情報",
+     "d": [
+      "情報"
+     ]
+    }
+   ]
+  },
+  "sources": [
+   "https://search.keinet.ne.jp/2343/outline/department"
+  ]
+ },
+ {
+  "name": "芸術文化観光専門職大学",
+  "info": {
+   "departments_full": [
+    {
+     "f": "芸術文化・観光学部",
+     "d": [
+      "芸術文化・観光"
+     ]
+    }
+   ]
+  },
+  "sources": [
+   "https://search.keinet.ne.jp/1628/outline/department"
+  ]
+ },
+ {
+  "name": "静岡県立農林環境専門職大学",
+  "info": {
+   "departments_full": [
+    {
+     "f": "生産環境経営学部",
+     "d": [
+      "生産環境経営学科 栽培",
+      "生産環境経営学科 林業",
+      "生産環境経営学科 畜産"
+     ]
+    }
+   ]
+  },
+  "sources": [
+   "https://search.keinet.ne.jp/1572/outline/department"
+  ]
+ },
+ {
+  "name": "高知リハビリテーション専門職大学",
+  "info": {
+   "departments_full": [
+    {
+     "f": "リハビリテーション学部",
+     "d": [
+      "理学療法学",
+      "作業療法学",
+      "言語聴覚学"
+     ]
+    }
+   ]
+  },
+  "sources": [
+   "https://search.keinet.ne.jp/2690/outline/department"
+  ]
+ },
+ {
+  "name": "東京保健医療専門職大学",
+  "info": {
+   "departments_full": [
+    {
+     "f": "リハビリテーション学部",
+     "d": [
+      "理学療法",
+      "作業療法"
+     ]
+    }
+   ]
+  },
+  "sources": [
+   "https://search.keinet.ne.jp/2114/outline/department"
+  ]
+ },
+ {
+  "name": "筑波技術大学",
+  "info": {
+   "departments_full": [
+    {
+     "f": "共生社会創成学部",
+     "d": [
+      "共生社会創成 視覚障害コース",
+      "共生社会創成 聴覚障害コース"
+     ]
+    },
+    {
+     "f": "産業技術学部",
+     "d": [
+      "産業情報",
+      "総合デザイン"
+     ]
+    },
+    {
+     "f": "保健科学部",
+     "d": [
+      "保健",
+      "情報システム"
+     ]
+    }
+   ]
+  },
+  "sources": [
+   "https://search.keinet.ne.jp/1080/outline/department"
+  ]
+ },
+ {
+  "name": "前橋工科大学",
+  "info": {
+   "departments_full": [
+    {
+     "f": "工学部",
+     "d": [
+      "建築 土木・環境",
+      "建築 建築都市",
+      "建築 工学デザイン",
+      "情報 情報システム",
+      "情報 医工学",
+      "情報 生物応用"
+     ]
+    }
+   ]
+  },
+  "sources": [
+   "https://search.keinet.ne.jp/1523/outline/department"
+  ]
+ },
+ {
+  "name": "千葉県立保健医療大学",
+  "info": {
+   "departments_full": [
+    {
+     "f": "健康科学部",
+     "d": [
+      "看護学科",
+      "栄養学科",
+      "歯科衛生学科",
+      "リハビリテーション学科 理学療法学専攻",
+      "リハビリテーション学科 作業療法学専攻"
+     ]
+    }
+   ]
+  },
+  "sources": [
+   "https://search.keinet.ne.jp/1528/outline/department"
+  ]
+ },
+ {
+  "name": "埼玉県立大学",
+  "info": {
+   "departments_full": [
+    {
+     "f": "保健医療福祉学部",
+     "d": [
+      "看護学科",
+      "理学療法学科",
+      "作業療法学科",
+      "社会福祉子ども学科 社会福祉学専攻",
+      "社会福祉子ども学科 福祉子ども学専攻",
+      "健康開発学科 健康情報学専攻",
+      "健康開発学科 検査技術科学専攻",
+      "健康開発学科 口腔保健科学専攻"
+     ]
+    }
+   ]
+  },
+  "sources": [
+   "https://search.keinet.ne.jp/1526/outline/department"
+  ]
+ },
+ {
+  "name": "川崎市立看護大学",
+  "info": {
+   "departments_full": [
+    {
+     "f": "看護学部",
+     "d": [
+      "看護学科"
+     ]
+    }
+   ]
+  },
+  "sources": [
+   "https://search.keinet.ne.jp/1541/outline/department"
+  ]
+ },
+ {
+  "name": "神奈川県立保健福祉大学",
+  "info": {
+   "departments_full": [
+    {
+     "f": "保健福祉学部",
+     "d": [
+      "看護学科",
+      "栄養学科",
+      "社会福祉学科",
+      "リハビリテーション学科 理学療法学専攻",
+      "リハビリテーション学科 作業療法学専攻"
+     ]
+    }
+   ]
+  },
+  "sources": [
+   "https://search.keinet.ne.jp/1542/outline/department"
+  ]
+ },
+ {
+  "name": "群馬県立女子大学",
+  "info": {
+   "departments_full": [
+    {
+     "f": "文学部",
+     "d": [
+      "国文",
+      "英米文化",
+      "美学美術史",
+      "文化情報"
+     ]
+    },
+    {
+     "f": "国際コミュニケーション学部",
+     "d": [
+      "グローバル・コミュニケーション",
+      "グローバル社会システム"
+     ]
+    }
+   ]
+  },
+  "sources": [
+   "https://search.keinet.ne.jp/1525/outline/department"
+  ]
+ },
+ {
+  "name": "群馬県立県民健康科学大学",
+  "info": {
+   "departments_full": [
+    {
+     "f": "診療放射線学部",
+     "d": [
+      "診療放射線学科"
+     ]
+    },
+    {
+     "f": "看護学部",
+     "d": [
+      "看護学科"
+     ]
+    }
+   ]
+  },
+  "sources": [
+   "https://search.keinet.ne.jp/1524/outline/department"
+  ]
+ },
+ {
+  "name": "公立はこだて未来大学",
+  "info": {
+   "departments_full": [
+    {
+     "f": "システム情報科学部",
+     "d": [
+      "情報アーキテクチャ学科 情報システム",
+      "情報アーキテクチャ学科 高度ICT",
+      "情報アーキテクチャ学科 情報デザイン",
+      "複雑系知能学科 複雑系",
+      "複雑系知能学科 知能システム"
+     ]
+    }
+   ]
+  },
+  "sources": [
+   "https://search.keinet.ne.jp/1507/outline/department"
+  ]
+ },
+ {
+  "name": "防衛医科大学校",
+  "info": {
+   "departments_full": [
+    {
+     "f": "防衛医科大学校",
+     "d": [
+      "医学科",
+      "看護学科 自衛官",
+      "看護学科 技官"
+     ]
+    }
+   ]
+  },
+  "sources": [
+   "https://search.keinet.ne.jp/5060/outline/department"
+  ]
+ },
+ {
+  "name": "茨城県立農業大学校",
+  "info": {
+   "departments_full": [
+    {
+     "f": "養成課程",
+     "d": [
+      "農学科 普通作コース",
+      "農学科 露地野菜コース",
+      "農学科 果樹コース",
+      "畜産学科",
+      "園芸学科 施設野菜コース",
+      "園芸学科 花きコース"
+     ]
+    }
+   ]
+  },
+  "sources": [
+   "https://www.pref.ibaraki.jp/nourinsuisan/nodai/gakkougaiyou.html"
+  ]
+ },
+ {
+  "name": "航空保安大学校",
+  "info": {
+   "departments_full": [
+    {
+     "f": "本科",
+     "d": [
+      "航空情報科",
+      "航空電子科"
+     ]
+    }
+   ]
+  },
+  "sources": [
+   "https://shingakunet.com/gakko/SC003777/"
+  ]
+ },
+ {
+  "name": "海上保安大学校",
+  "info": {
+   "departments_full": [
+    {
+     "f": "本科",
+     "d": [
+      "航海専攻",
+      "機関専攻",
+      "情報通信専攻"
+     ]
+    }
+   ]
+  },
+  "sources": [
+   "https://shingakunet.com/gakko/SC001147/"
+  ]
+ },
+ {
+  "name": "国立看護大学校",
+  "info": {
+   "departments_full": [
+    {
+     "f": "看護学部",
+     "d": [
+      "看護学科"
+     ]
+    }
+   ]
+  },
+  "sources": [
+   "https://telemail.jp/shingaku/university/10003532/faculty/01/department/01"
+  ]
+ }
+]
