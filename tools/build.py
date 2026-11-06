@@ -41,6 +41,7 @@ def main():
         'EXAM': ('/*EXAM_DATA*/', '/*END_EXAM*/', J({n: exam[n] for n in names if n in exam})),
         'INFO': ('/*INFO_DATA*/', '/*END_INFO*/', J({n: info[n] for n in names if n in info})),
         'MAP': ('/*MAP_DATA*/', '/*END_MAP*/', J({'prefs': prefs, 'dots': dots})),
+        'MUNI': ('/*MUNI*/', '/*END_MUNI*/', J(D('map_muni')) if os.path.exists(os.path.join(ROOT, 'data', 'map_muni.json')) else 'null'),
         'HP': ('/*HP*/', '/*END_HP*/', J({n: hp[n] for n in names if hp.get(n)})),
         'READ': ('/*READ*/', '/*END_READ*/', J({n: read[n] for n in names if n in read})),
         'ALIAS': ('/*ALIAS*/', '/*END_ALIAS*/', J(alias)),
