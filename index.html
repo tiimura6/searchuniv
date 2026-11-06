@@ -85,6 +85,9 @@ details summary{cursor:pointer}
 .legend span{display:flex;align-items:center;gap:4px}
 .legend i{width:9px;height:9px;border-radius:50%;display:inline-block}
 #jmap .dot{opacity:.9 !important}
+#jmap .clus{cursor:pointer}
+#jmap .clus circle{fill:var(--accent);opacity:.85;stroke:var(--panel);stroke-width:2px;vector-effect:non-scaling-stroke}
+#jmap .clus text{fill:#fff;font-weight:700;pointer-events:none}
 .zoomctl{position:absolute;right:10px;top:10px;display:flex;flex-direction:column;gap:6px}
 .zoomctl .btn{width:34px;height:34px;padding:0;font-size:18px;line-height:1}
 #jmap{touch-action:none;cursor:grab;user-select:none;-webkit-user-select:none}
@@ -502,6 +505,7 @@ function kindOf(x){
   if(/国立/.test(x.type)) return "国立"; if(/公立/.test(x.type)) return "公立"; return "私立";
 }
 function kindDetail(x){ const k=kindOf(x); if(k==="専門職大学") return /公立/.test(x.type)?"公立":"私立"; if(k==="大学校") return x.type; return ""; }
+function metaPrefix(x){ const k=kindOf(x); return (k==="国立"||k==="公立"||k==="私立")?"":esc(x.type)+'｜'; }
 function badge(x){ const k=kindOf(x); const d=kindDetail(x); return '<span class="kind" style="background:'+KIND_COLOR[k]+'">'+k+(k==="専門職大学"&&d?'（'+d+'）':'')+'</span>'; }
 function statusTag(x){ return marks[x.id]==="k"?'<span class="status k">✓ 覚えた</span>':marks[x.id]==="u"?'<span class="status u">● まだ</span>':''; }
 
@@ -518,15 +522,16 @@ function render(){
   }
   const x = deck[idx];
   setArt(x);
+  $("front").style.justifyContent = $("mode").value==="name" ? "center" : "flex-start";
   $("pos").textContent = (idx+1)+" / "+deck.length;
   const featList = '<ul>'+x.feats.map(f=>'<li>'+esc(f)+'</li>').join("")+'</ul>';
   const memo = '<div class="memo">'+esc(x.memo)+'</div>';
   if($("mode").value==="name"){
-    $("front").innerHTML = '<div>'+badge(x)+statusTag(x)+'</div><div class="uname">'+esc(x.name)+'</div><div class="meta">'+esc(x.type)+'｜'+esc(x.pref)+'</div>';
+    $("front").innerHTML = '<div>'+badge(x)+statusTag(x)+'</div><div class="uname">'+esc(x.name)+'</div><div class="meta">'+metaPrefix(x)+esc(x.pref)+'</div>';
     $("back").innerHTML = '<div>'+badge(x)+statusTag(x)+'</div><h2>'+esc(x.name)+hpLink(x.name)+'</h2>'+featList+cardNews(x.name)+infoBlock(x.name)+examBlock(x.name)+memo;
   } else if($("mode").value==="type"){
     const masked = x.feats.map(f=>maskName(f,x.name));
-    $("front").innerHTML = '<div>'+badge(x)+statusTag(x)+'</div>'+'<form id="ansForm" class="ans" onclick="event.stopPropagation()"><div class="blank">（<input id="ans" type="text" autocomplete="off" aria-label="学校名">）<span>'+esc(suffixOf(x.name))+'</span></div><div class="ansbtns"><button class="btn big" type="submit">回答</button><button class="btn big" type="button" id="giveup">パス</button></div></form>'+'<div class="qfront" style="width:100%"><ul>'+masked.map(f=>'<li>'+esc(f)+'</li>').join("")+'</ul><div class="meta">'+esc(x.type)+'｜'+esc(maskName(x.pref,x.name))+'</div>'+frontFacts(x)+hintHTML(x)+'</div>';
+    $("front").innerHTML = '<div>'+badge(x)+statusTag(x)+'</div>'+'<form id="ansForm" class="ans" onclick="event.stopPropagation()"><div class="blank">（<input id="ans" type="text" autocomplete="off" aria-label="学校名">）<span>'+esc(suffixOf(x.name))+'</span></div><div class="ansbtns"><button class="btn big" type="submit">回答</button><button class="btn big" type="button" id="giveup">パス</button></div></form>'+'<div class="qfront" style="width:100%"><ul>'+masked.map(f=>'<li>'+esc(f)+'</li>').join("")+'</ul><div class="meta">'+metaPrefix(x)+esc(maskName(x.pref,x.name))+'</div>'+frontFacts(x)+hintHTML(x)+'</div>';
     $("back").innerHTML = '<div>'+badge(x)+statusTag(x)+'</div><div id="resultLine" class="judge" style="text-align:center"></div><div class="uname" style="text-align:center;margin-top:4px">'+esc(x.name)+'</div><div class="meta" style="text-align:center">'+esc(x.pref)+' '+hpLink(x.name)+'</div><div style="margin-top:14px">'+cardNews(x.name)+infoBlock(x.name)+examBlock(x.name)+memo+'</div>';
     answered=false; wireHints(x);
     $("ansForm").onsubmit=e=>{e.preventDefault(); judge($("ans").value);};
@@ -720,25 +725,59 @@ function scaleMarks(){
   const l=document.querySelector("#jmap .lbl"); if(l){ l.setAttribute("font-size",(12*k).toFixed(3)); const c=document.querySelector("#jmap .hl"); l.setAttribute("x",(+c.getAttribute("cx")+5*k).toFixed(2)); l.setAttribute("y",(+c.getAttribute("cy")+3*k).toFixed(2)); }
   placeLabels();
 }
-// 重ならない範囲で大学名を表示（優先度順に配置）
+// 重ならない範囲で大学名を表示（優先度順・4方向の候補位置）。出せなかった点は件数の丸にまとめる（2段階配置）
 function placeLabels(){
   const g=$("labels"); if(!g) return; g.innerHTML="";
-  const svg=$("jmap"); const W=svg.clientWidth||800; const pxPerUnit=W/curVB[2];
-  const fs=14/pxPerUnit; const boxes=[];
-  const sel=$("mq").value;
-  const order=items.filter(x=>MAP.dots[x.name] && x.name!==sel).sort((a,b)=>(PRIO[a.cat]??20)-(PRIO[b.cat]??20));
-  const [vx,vy,vw,vh]=curVB;
-  for(const x of order){
-    const [cx,cy]=MAP.dots[x.name];
-    if(cx<vx||cx>vx+vw||cy<vy||cy>vy+vh) continue;
-    const t=shortName(x.name); const w=t.length*fs*1.02, h=fs*1.25;
-    const bx=cx+3*curVB[2]/HOME_VB[2], by=cy-h/2;
-    const hit=boxes.some(b=>!(bx+w<b[0]||bx>b[0]+b[2]||by+h<b[1]||by>b[1]+b[3]));
-    if(hit) continue;
-    boxes.push([bx,by,w,h]);
-    const el=document.createElementNS(SVGNS,"text"); el.setAttribute("x",bx.toFixed(2)); el.setAttribute("y",(cy+fs*0.38).toFixed(2));
+  const svg=$("jmap"); const W=svg.clientWidth||800; const ppu=W/curVB[2];
+  const fs=14/ppu, pad=2/ppu, k=curVB[2]/HOME_VB[2], r=2.2*k;
+  const sel=$("mq").value; const [vx,vy,vw,vh]=curVB;
+  const inView=([cx,cy])=>cx>=vx&&cx<=vx+vw&&cy>=vy&&cy<=vy+vh;
+  const order=items.filter(x=>MAP.dots[x.name]&&x.name!==sel&&inView(MAP.dots[x.name])).sort((a,b)=>(PRIO[a.cat]??20)-(PRIO[b.cat]??20));
+  const cell=70/ppu;
+  function layout(reserved){
+    const boxes=reserved.slice(); const placed=[], hidden=[];
+    const hit=b=>boxes.some(o=>!(b[0]+b[2]<o[0]||b[0]>o[0]+o[2]||b[1]+b[3]<o[1]||b[1]>o[1]+o[3]));
+    if(sel&&MAP.dots[sel]){ const [cx,cy]=MAP.dots[sel]; boxes.push([cx-r,cy-7/ppu,shortName(sel).length*12/ppu*1.02+6/ppu,14/ppu]); }
+    for(const x of order){
+      const [cx,cy]=MAP.dots[x.name]; const t=shortName(x.name); const w=t.length*fs*1.02, h=fs*1.2;
+      const cands=[[cx+r+pad,cy-h/2,"start"],[cx-r-pad-w,cy-h/2,"end"],[cx-w/2,cy-r-pad-h,"middle"],[cx-w/2,cy+r+pad,"middle"]];
+      let ok=null; for(const c of cands){ const b=[c[0],c[1],w,h]; if(!hit(b)){ ok=c; boxes.push(b); break; } }
+      if(ok) placed.push([x,t,w,h,ok]); else hidden.push(x);
+    }
+    return {placed,hidden};
+  }
+  function cluster(hidden){
+    const groups=new Map();
+    for(const x of hidden){ const [cx,cy]=MAP.dots[x.name]; const key=Math.floor((cx-vx)/cell)+","+Math.floor((cy-vy)/cell); if(!groups.has(key)) groups.set(key,[]); groups.get(key).push(x); }
+    return [...groups.values()].filter(l=>l.length>=2).map(list=>{
+      const mx=list.reduce((a,x)=>a+MAP.dots[x.name][0],0)/list.length, my=list.reduce((a,x)=>a+MAP.dots[x.name][1],0)/list.length;
+      const rr=Math.min(16,8+Math.sqrt(list.length)*1.6)/ppu; return {list,mx,my,rr}; });
+  }
+  // 1回目：名前を並べ、出せなかった点の丸の位置を決める → 2回目：丸の位置を空けて名前を並べ直す
+  let {hidden}=layout([]); let clusters=cluster(hidden);
+  const res=layout(clusters.map(c=>[c.mx-c.rr,c.my-c.rr,c.rr*2,c.rr*2]));
+  // 2回目で新たに出せなくなった点は、近い丸の件数に加える
+  const inCl=new Set(clusters.flatMap(c=>c.list.map(x=>x.name)));
+  for(const x of res.hidden){ if(inCl.has(x.name)) continue; const [cx,cy]=MAP.dots[x.name];
+    let best=null,bd=Infinity; for(const c of clusters){ const d=Math.hypot(c.mx-cx,c.my-cy); if(d<bd){bd=d;best=c;} }
+    if(best&&bd<cell*1.5) best.list.push(x); }
+  for(const [x,t,w,h,pl] of res.placed){
+    const el=document.createElementNS(SVGNS,"text");
+    const tx=pl[2]==="start"?pl[0]:pl[2]==="end"?pl[0]+w:pl[0]+w/2;
+    el.setAttribute("x",tx.toFixed(2)); el.setAttribute("y",(pl[1]+h*0.8).toFixed(2)); el.setAttribute("text-anchor",pl[2]);
     el.setAttribute("font-size",fs.toFixed(3)); el.setAttribute("class","ulbl"); el.textContent=t;
-    el.addEventListener("click",()=>selectUniv(x.name)); g.appendChild(el);
+    el.addEventListener("click",ev=>{ ev.stopPropagation(); selectUniv(x.name); }); g.appendChild(el);
+  }
+  for(const {list,mx,my,rr} of clusters){
+    const gg=document.createElementNS(SVGNS,"g"); gg.setAttribute("class","clus");
+    const c=document.createElementNS(SVGNS,"circle"); c.setAttribute("cx",mx); c.setAttribute("cy",my); c.setAttribute("r",rr);
+    const tt=document.createElementNS(SVGNS,"text"); tt.setAttribute("x",mx); tt.setAttribute("y",my+4.2/ppu); tt.setAttribute("text-anchor","middle"); tt.setAttribute("font-size",(12/ppu).toFixed(3)); tt.textContent="+"+list.length;
+    const ti=document.createElementNS(SVGNS,"title"); ti.textContent=list.map(x=>x.name).slice(0,20).join("、")+(list.length>20?" ほか":"");
+    gg.append(c,tt,ti);
+    gg.addEventListener("click",ev=>{ ev.stopPropagation(); const xs=list.map(x=>MAP.dots[x.name][0]), ys=list.map(x=>MAP.dots[x.name][1]);
+      const ar=HOME_VB[3]/HOME_VB[2]; const w=Math.max(16,(Math.max(...xs)-Math.min(...xs))*1.8,(Math.max(...ys)-Math.min(...ys))*1.8/ar);
+      setVB([mx-w/2,my-w*ar/2,w,w*ar]); });
+    g.appendChild(gg);
   }
 }
 // ===== パン・ズーム =====
@@ -777,7 +816,7 @@ function selectUniv(name){
   hl.append(ring,dot,lb); scaleMarks();
   setVB([pt[0]-60,pt[1]-45,120,90]);
   const f=INFO[name]||{};
-  $("mpanel").innerHTML='<div class="box"><h3>'+badge(x)+' '+esc(x.name)+'</h3><div class="meta">'+esc(x.type)+'｜'+esc(x.pref)+'</div>'+(f.access?'<div style="font-size:13px;margin-top:6px">'+esc(f.access)+'</div>':'')+'<div style="margin-top:8px;display:flex;gap:10px;align-items:center"><button class="btn" id="tocard">カードを見る</button>'+hpLink(x.name)+'</div></div>';
+  $("mpanel").innerHTML='<div class="box"><h3>'+badge(x)+' '+esc(x.name)+'</h3><div class="meta">'+metaPrefix(x)+esc(x.pref)+'</div>'+(f.access?'<div style="font-size:13px;margin-top:6px">'+esc(f.access)+'</div>':'')+'<div style="margin-top:8px;display:flex;gap:10px;align-items:center"><button class="btn" id="tocard">カードを見る</button>'+hpLink(x.name)+'</div></div>';
   $("tocard").onclick=()=>openCard(x.id);
 }
 function openCard(id){
@@ -844,10 +883,15 @@ function profile(x){
   return parts.join("｜");
 }
 function grams(t){ const s=new Set(); const c=t.replace(/[\s、。・,./／()（）「」]/g,""); for(let i=0;i<c.length-1;i++) s.add(c.substr(i,2)); return s; }
+let PROFILE_CACHE=null;
+function profiles(){ if(!PROFILE_CACHE){ PROFILE_CACHE=items.map(x=>{ const t=profile(x); return {x,t,g:grams(t)}; });
+  const df=new Map(); for(const p of PROFILE_CACHE) for(const k of p.g) df.set(k,(df.get(k)||0)+1); PROFILE_CACHE.df=df; } return PROFILE_CACHE; }
 function prefilter(q,region,type,limit){
-  const g=grams(q);
-  return items.filter(x=>(!region||regionOf(x.pref)===region||x.cat==="daigakkou"&&!type)&&(!type||typeKey(x)===type)&&x.name!=="電動モビリティシステム専門職大学")
-    .map(x=>{ const t=profile(x); let sc=0; for(const k of g) if(t.includes(k)) sc++; return {x,t,sc}; })
+  const P=profiles(), N=P.length, qg=[...grams(q)];
+  // 多くの学校に出てくる文字の組み合わせほど軽く（IDF）
+  const w=new Map(qg.map(k=>[k,Math.log((N+1)/((P.df.get(k)||0)+1))]));
+  return P.filter(({x})=>(!region||regionOf(x.pref)===region)&&(!type||typeKey(x)===type)&&x.name!=="電動モビリティシステム専門職大学")
+    .map(p=>{ let sc=0; for(const k of qg) if(p.g.has(k)) sc+=w.get(k); return {x:p.x,t:p.t,sc}; })
     .sort((a,b)=>b.sc-a.sc).slice(0,limit);
 }
 let aiCtl=null, sampleFn=null;
@@ -886,7 +930,7 @@ ${cands.map(c=>c.t).join("\n")}`;
     if(!list.length){ $("ai-status").textContent="おすすめを作れませんでした。条件を変えてもう一度お試しください。"; return; }
     $("ai-status").textContent="AIの提案です。最終判断は募集要項と本人の意思で。";
     $("ai-out").innerHTML=list.map((r,i)=>{ const x=items.find(y=>y.name===r.name);
-      return '<div class="airec"><h3><span class="rk">#'+(i+1)+'</span>'+badge(x)+esc(x.name)+'<span class="sub2">'+esc(x.type)+'｜'+esc(x.pref)+'</span></h3><div class="why">'+esc(String(r.reason||""))+'</div>'+
+      return '<div class="airec"><h3><span class="rk">#'+(i+1)+'</span>'+badge(x)+esc(x.name)+'<span class="sub2">'+metaPrefix(x)+esc(x.pref)+'</span></h3><div class="why">'+esc(String(r.reason||""))+'</div>'+
       (Array.isArray(r.points)&&r.points.length?'<ul class="pts">'+r.points.slice(0,4).map(p=>'<li>'+esc(String(p))+'</li>').join("")+'</ul>':'')+
       (r.caution?'<div class="caut">注意：'+esc(String(r.caution))+'</div>':'')+
       '<div class="acts"><button class="btn" data-card="'+x.id+'">カードを見る</button><button class="btn" data-map="'+esc(x.name)+'">地図で見る</button>'+hpLink(x.name)+'</div></div>'; }).join("");
