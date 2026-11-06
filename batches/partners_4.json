@@ -1,0 +1,1438 @@
+[
+ {
+  "name": "岩手大学",
+  "info": {
+   "partners": {
+    "asof": "2024年7月",
+    "total": 37,
+    "kind": "大学間協定（全学）",
+    "countries": [
+     {
+      "c": "中国",
+      "n": 10,
+      "u": [
+       "Dalian University of Technology",
+       "Northwest University",
+       "Ningbo University",
+       "Shanghai Ocean University",
+       "South China University of Technology"
+      ]
+     },
+     {
+      "c": "タイ",
+      "n": 8,
+      "u": [
+       "Chiang Mai University",
+       "King Mongkut's University of Technology, Thonburi",
+       "King Mongkut's Institute of Technology Ladkrabang",
+       "Naresuan University",
+       "Siam University"
+      ]
+     },
+     {
+      "c": "韓国",
+      "n": 4,
+      "u": [
+       "Chonnam National University",
+       "Myongji University",
+       "Hanbat National University",
+       "Kunsan National University"
+      ]
+     },
+     {
+      "c": "アメリカ",
+      "n": 4,
+      "u": [
+       "The University of Texas at Austin",
+       "Auburn University",
+       "University of Alaska Anchorage",
+       "Earlham College"
+      ]
+     },
+     {
+      "c": "モンゴル",
+      "n": 3,
+      "u": [
+       "National University of Mongolia",
+       "Mongolian University of Science and Technology",
+       "New Mongol Academy"
+      ]
+     },
+     {
+      "c": "カナダ",
+      "n": 2,
+      "u": [
+       "University of Saskatchewan",
+       "Saint Mary's University"
+      ]
+     },
+     {
+      "c": "ミャンマー",
+      "n": 1,
+      "u": [
+       "Pathein University"
+      ]
+     },
+     {
+      "c": "マレーシア",
+      "n": 1,
+      "u": [
+       "Universiti Malaysia Pahang Al-Sultan Abdullah"
+      ]
+     },
+     {
+      "c": "台湾",
+      "n": 1,
+      "u": [
+       "National Kaohsiung Normal University"
+      ]
+     },
+     {
+      "c": "アイスランド",
+      "n": 1,
+      "u": [
+       "University of Iceland"
+      ]
+     },
+     {
+      "c": "ロシア",
+      "n": 1,
+      "u": [
+       "St. Petersburg State University of Culture and Arts"
+      ]
+     },
+     {
+      "c": "イギリス",
+      "n": 1,
+      "u": [
+       "The University of Stirling"
+      ]
+     }
+    ],
+    "exchange": "大学間協定37校中30校と学生交流（交換留学）協定あり。大学ポートレートでは学生交流協定に基づく海外大学67校。",
+    "note": "このほか部局間協定22校（インドネシア、タイ、ドイツ、フランス、スウェーデン等）。"
+   }
+  },
+  "sources": [
+   "https://www.iwate-u.ac.jp/iuic/english/about/promoting-the-internationalization/partner-universities.html",
+   "https://jpcup.niad.ac.jp/cn/institute/0128.html"
+  ]
+ },
+ {
+  "name": "福島大学",
+  "info": {
+   "partners": {
+    "asof": "",
+    "total": 60,
+    "kind": "大学間協定（全学）",
+    "countries": [
+     {
+      "c": "アメリカ",
+      "n": 9,
+      "u": [
+       "コロラド州立大学",
+       "ニューヨーク州立大学　アルバニー校",
+       "サンフランシスコ州立大学",
+       "ルイジアナ州立大学",
+       "ジョージア大学"
+      ]
+     },
+     {
+      "c": "中国",
+      "n": 6,
+      "u": [
+       "北京師範大学",
+       "華東師範大学",
+       "河北大学",
+       "西南交通大学",
+       "重慶理工大学"
+      ]
+     },
+     {
+      "c": "イギリス",
+      "n": 5,
+      "u": [
+       "グラスゴー大学",
+       "スターリング大学",
+       "ポーツマス大学",
+       "ノーサンブリア大学",
+       "ウィンチェスター大学"
+      ]
+     },
+     {
+      "c": "韓国",
+      "n": 4,
+      "u": [
+       "韓国外国語大学校",
+       "ソウル市立大学校",
+       "中央大学校",
+       "培材大学校"
+      ]
+     },
+     {
+      "c": "ベトナム",
+      "n": 4,
+      "u": [
+       "ベトナム国家大学　ハノイ人文社会科学大学",
+       "ベトナム国家大学　ハノイ自然科学大学",
+       "ホアセン大学",
+       "トゥイロイ大学"
+      ]
+     },
+     {
+      "c": "ドイツ",
+      "n": 4,
+      "u": [
+       "ルール大学ボーフム",
+       "ハノーファー大学",
+       "ルードヴィヒスハーフェン経済大学",
+       "ミュンスター応用科学大学"
+      ]
+     },
+     {
+      "c": "台湾",
+      "n": 3,
+      "u": [
+       "国立台北大学",
+       "文藻外語大学",
+       "靜宜大学"
+      ]
+     },
+     {
+      "c": "カナダ",
+      "n": 3,
+      "u": [
+       "ブリティッシュコロンビア大学",
+       "マクマスター大学",
+       "ランガラ大学"
+      ]
+     },
+     {
+      "c": "ウクライナ",
+      "n": 3,
+      "u": [
+       "ウクライナ国立生命環境科学大学",
+       "チェルニーヒウ国立工科大学",
+       "オデッサ国立環境大学"
+      ]
+     },
+     {
+      "c": "トルコ",
+      "n": 3,
+      "u": [
+       "アンカラ大学",
+       "中東工科大学",
+       "エーゲ大学"
+      ]
+     },
+     {
+      "c": "フィリピン",
+      "n": 2,
+      "u": [
+       "アテネオ・デ・マニラ大学",
+       "サン・カルロス大学"
+      ]
+     },
+     {
+      "c": "インドネシア",
+      "n": 1,
+      "u": [
+       "シアクアラ大学"
+      ]
+     },
+     {
+      "c": "マレーシア",
+      "n": 1,
+      "u": [
+       "マレーシア国際イスラム大学"
+      ]
+     },
+     {
+      "c": "モンゴル",
+      "n": 1,
+      "u": [
+       "モンゴル生命科学大学"
+      ]
+     },
+     {
+      "c": "オーストラリア",
+      "n": 1,
+      "u": [
+       "クイーンズランド大学"
+      ]
+     },
+     {
+      "c": "オランダ",
+      "n": 1,
+      "u": [
+       "ハンザUAS・フローニンゲン大学"
+      ]
+     },
+     {
+      "c": "スウェーデン",
+      "n": 1,
+      "u": [
+       "リンネ大学"
+      ]
+     },
+     {
+      "c": "スペイン",
+      "n": 1,
+      "u": [
+       "サラゴサ大学"
+      ]
+     },
+     {
+      "c": "スロベニア",
+      "n": 1,
+      "u": [
+       "リュブリャナ大学"
+      ]
+     },
+     {
+      "c": "セルビア",
+      "n": 1,
+      "u": [
+       "ベオグラード大学"
+      ]
+     },
+     {
+      "c": "ノルウェー",
+      "n": 1,
+      "u": [
+       "ノルウェー生命科学大学"
+      ]
+     },
+     {
+      "c": "ハンガリー",
+      "n": 1,
+      "u": [
+       "カーロリ・ガーシュパール・カルビン派大学"
+      ]
+     },
+     {
+      "c": "ベラルーシ",
+      "n": 1,
+      "u": [
+       "ベラルーシ国立大学"
+      ]
+     },
+     {
+      "c": "ルーマニア",
+      "n": 1,
+      "u": [
+       "ブカレスト大学"
+      ]
+     },
+     {
+      "c": "ロシア",
+      "n": 1,
+      "u": [
+       "極東国立交通大学"
+      ]
+     }
+    ],
+    "exchange": "協定60校中38校と学生交流協定あり（交換留学先）。",
+    "note": "25か国・地域。一覧ページに日付記載なし。"
+   }
+  },
+  "sources": [
+   "https://kokusai.adb.fukushima-u.ac.jp/statistics/agreement.html"
+  ]
+ },
+ {
+  "name": "岐阜大学",
+  "info": {
+   "partners": {
+    "asof": "2018年9月",
+    "total": 48,
+    "kind": "大学間協定（全学）",
+    "countries": [
+     {
+      "c": "中国",
+      "n": 11,
+      "u": [
+       "浙江大学",
+       "吉林大学",
+       "同済大学",
+       "電子科技大学",
+       "西南交通大学"
+      ]
+     },
+     {
+      "c": "アメリカ",
+      "n": 5,
+      "u": [
+       "サンディエゴ州立大学",
+       "ノーザンケンタッキー大学",
+       "ユタ大学",
+       "ユタ州立大学",
+       "ウエストバージニア大学"
+      ]
+     },
+     {
+      "c": "インドネシア",
+      "n": 5,
+      "u": [
+       "ガジャマダ大学",
+       "ボゴール農科大学",
+       "アンダラス大学",
+       "ランポン大学",
+       "スブラス・マレット大学"
+      ]
+     },
+     {
+      "c": "タイ",
+      "n": 4,
+      "u": [
+       "カセサート大学",
+       "チェンマイ大学",
+       "モンクット王トンブリ工科大学"
+      ]
+     },
+     {
+      "c": "韓国",
+      "n": 3,
+      "u": [
+       "高麗大学校",
+       "ソウル科学技術大学校",
+       "木浦大学校"
+      ]
+     },
+     {
+      "c": "カナダ",
+      "n": 3,
+      "u": [
+       "マギル大学",
+       "アルバータ大学",
+       "レイクヘッド大学"
+      ]
+     },
+     {
+      "c": "リトアニア",
+      "n": 2,
+      "u": [
+       "カウナス工科大学",
+       "ヴィータウタス・マグヌス大学"
+      ]
+     },
+     {
+      "c": "バングラデシュ",
+      "n": 2,
+      "u": [
+       "バングラデシュ農業大学",
+       "ダッカ大学"
+      ]
+     },
+     {
+      "c": "オーストラリア",
+      "n": 2,
+      "u": [
+       "グリフィス大学",
+       "シドニー工科大学"
+      ]
+     },
+     {
+      "c": "ドイツ",
+      "n": 2,
+      "u": [
+       "エルフルト大学",
+       "バイロイト大学"
+      ]
+     },
+     {
+      "c": "ベトナム",
+      "n": 1,
+      "u": [
+       "ハノイ工科大学"
+      ]
+     },
+     {
+      "c": "ブラジル",
+      "n": 1,
+      "u": [
+       "カンピーナス大学"
+      ]
+     },
+     {
+      "c": "スウェーデン",
+      "n": 1,
+      "u": [
+       "ルンド大学"
+      ]
+     },
+     {
+      "c": "エジプト",
+      "n": 1,
+      "u": [
+       "ベンハー大学"
+      ]
+     },
+     {
+      "c": "フランス",
+      "n": 1,
+      "u": [
+       "パリ第11大学"
+      ]
+     },
+     {
+      "c": "インド",
+      "n": 1,
+      "u": [
+       "インド工科大学グワハティ校"
+      ]
+     },
+     {
+      "c": "ハンガリー",
+      "n": 1,
+      "u": [
+       "パンノン大学"
+      ]
+     },
+     {
+      "c": "マレーシア",
+      "n": 1,
+      "u": [
+       "マレーシア国民大学"
+      ]
+     },
+     {
+      "c": "フィリピン",
+      "n": 1,
+      "u": [
+       "マリアノ・マルコス州立大学"
+      ]
+     }
+    ],
+    "exchange": "協定大学への交換留学制度あり。2025年6月時点で過去10年に派遣実績のある協定大学はサンディエゴ州立大学、ユタ州立大学、グリフィス大学、高麗大学校、同済大学など9校。",
+    "note": "国別内訳は2018年9月時点の一覧（47大学＋タイ教育省基礎教育委員会1機関）。現在は変わっている可能性あり。"
+   }
+  },
+  "sources": [
+   "https://www.gifu-u.ac.jp/MAPJPN910.pdf",
+   "https://www.glocal.gifu-u.ac.jp/docs/2-2_R7(2025)_2nd.pdf"
+  ]
+ },
+ {
+  "name": "秋田大学",
+  "info": {
+   "partners": {
+    "asof": "2026年1月",
+    "total": 56,
+    "kind": "大学間学生交流協定校（交換留学協定校のみ）",
+    "countries": [
+     {
+      "c": "中国",
+      "n": 13,
+      "u": [
+       "吉林大学",
+       "蘭州大学",
+       "東北大学",
+       "華中科技大学",
+       "中南大学"
+      ]
+     },
+     {
+      "c": "台湾",
+      "n": 6,
+      "u": [
+       "国立台湾大学",
+       "国立成功大学",
+       "国立台北科技大学",
+       "国立彰化師範大学",
+       "長榮大学"
+      ]
+     },
+     {
+      "c": "インドネシア",
+      "n": 3,
+      "u": [
+       "バンドン工科大学",
+       "ガジャマダ大学",
+       "プルタミナ大学"
+      ]
+     },
+     {
+      "c": "韓国",
+      "n": 3,
+      "u": [
+       "国立ハンバット大学校",
+       "圓光大学校",
+       "国立江原大学校"
+      ]
+     },
+     {
+      "c": "フィリピン",
+      "n": 3,
+      "u": [
+       "フィリピン大学デリマン校",
+       "フィリピン大学マニラ校",
+       "フィリピン大学ロスバニョス校"
+      ]
+     },
+     {
+      "c": "インド",
+      "n": 2,
+      "u": [
+       "インド工科大学マドラス校",
+       "ベロール工科大学"
+      ]
+     },
+     {
+      "c": "タイ",
+      "n": 2,
+      "u": [
+       "チュラロンコン大学",
+       "スラナリー工科大学"
+      ]
+     },
+     {
+      "c": "ベトナム",
+      "n": 2,
+      "u": [
+       "ハノイ工科大学",
+       "ハノイ交通・通信大学"
+      ]
+     },
+     {
+      "c": "ボツワナ",
+      "n": 2,
+      "u": [
+       "ボツワナ大学",
+       "ボツワナ国際科学技術大学"
+      ]
+     },
+     {
+      "c": "モザンビーク",
+      "n": 2,
+      "u": [
+       "エドゥアルド・モンドラーネ大学",
+       "テテ工科大学"
+      ]
+     },
+     {
+      "c": "アメリカ",
+      "n": 2,
+      "u": [
+       "セント・クラウド州立大学",
+       "グアム大学"
+      ]
+     },
+     {
+      "c": "イタリア",
+      "n": 2,
+      "u": [
+       "カリアリ大学",
+       "フェラーラ大学"
+      ]
+     },
+     {
+      "c": "フィンランド",
+      "n": 2,
+      "u": [
+       "ラップランド応用科学大学",
+       "カヤーニ応用科学大学"
+      ]
+     },
+     {
+      "c": "マレーシア",
+      "n": 1,
+      "u": [
+       "マラヤ大学"
+      ]
+     },
+     {
+      "c": "モンゴル",
+      "n": 1,
+      "u": [
+       "モンゴル科学技術大学"
+      ]
+     },
+     {
+      "c": "ケニア",
+      "n": 1,
+      "u": [
+       "ケニヤッタ大学"
+      ]
+     },
+     {
+      "c": "カナダ",
+      "n": 1,
+      "u": [
+       "ニューファンドランドメモリアル大学"
+      ]
+     },
+     {
+      "c": "チリ",
+      "n": 1,
+      "u": [
+       "サンチアゴ大学"
+      ]
+     },
+     {
+      "c": "イスラエル",
+      "n": 1,
+      "u": [
+       "ハイファ大学"
+      ]
+     },
+     {
+      "c": "カザフスタン",
+      "n": 1,
+      "u": [
+       "東カザフスタン工科大学"
+      ]
+     },
+     {
+      "c": "スウェーデン",
+      "n": 1,
+      "u": [
+       "ルレオ工科大学"
+      ]
+     },
+     {
+      "c": "ドイツ",
+      "n": 1,
+      "u": [
+       "フライベルク工科大学"
+      ]
+     },
+     {
+      "c": "ポーランド",
+      "n": 1,
+      "u": [
+       "クラクフ経済大学"
+      ]
+     },
+     {
+      "c": "ルーマニア",
+      "n": 1,
+      "u": [
+       "ブカレスト大学"
+      ]
+     },
+     {
+      "c": "ウクライナ",
+      "n": 1,
+      "u": [
+       "ボリス・グリンチェンコ記念キーウ市立大学"
+      ]
+     }
+    ],
+    "exchange": "大学間学生交流協定に基づく交換留学（相互受入・派遣）あり。",
+    "note": "一覧は大学間学生交流協定校（交換留学生の受入対象校）。学術交流のみの協定校は含まない。"
+   }
+  },
+  "sources": [
+   "https://www.akita-u.ac.jp/honbu/global/en/eventa/img/pro20009_02_dl.pdf"
+  ]
+ },
+ {
+  "name": "京都工芸繊維大学",
+  "info": {
+   "partners": {
+    "asof": "2026年1月",
+    "total": 94,
+    "kind": "大学間＋部局間",
+    "countries": [
+     {
+      "c": "フランス",
+      "n": 9,
+      "u": [
+       "Sorbonne University",
+       "Université d'Orléans",
+       "IMT Nord Europe",
+       "Ecole Nationale Supérieure d'Architecture de Paris la Villette",
+       "Université de Haute-Alsace"
+      ]
+     },
+     {
+      "c": "イタリア",
+      "n": 9,
+      "u": [
+       "Politecnico di Milano",
+       "Politecnico di Torino",
+       "University of Padova",
+       "Ca' Foscari University of Venice",
+       "University of Udine"
+      ]
+     },
+     {
+      "c": "タイ",
+      "n": 8,
+      "u": [
+       "Chulalongkorn University",
+       "Mahidol University",
+       "Chiang Mai University",
+       "Kasetsart University",
+       "King Mongkut's University of Technology Thonburi"
+      ]
+     },
+     {
+      "c": "ベトナム",
+      "n": 6,
+      "u": [
+       "Hanoi University of Science and Technology",
+       "Can Tho University",
+       "Vietnam National University-Ho Chi Minh City, University of Technology",
+       "Hanoi Medical University"
+      ]
+     },
+     {
+      "c": "スイス",
+      "n": 5,
+      "u": [
+       "Swiss Federal Institute of Technology Zurich",
+       "University of Basel",
+       "Geneva School of Art and Design",
+       "Lucerne University of Applied Sciences and Arts"
+      ]
+     },
+     {
+      "c": "イギリス",
+      "n": 5,
+      "u": [
+       "University of Leeds",
+       "The Glasgow School of Art",
+       "University of the Arts London",
+       "Kingston University",
+       "St George's, University of London"
+      ]
+     },
+     {
+      "c": "アメリカ",
+      "n": 5,
+      "u": [
+       "Arizona State University",
+       "North Carolina State University",
+       "The University of Akron"
+      ]
+     },
+     {
+      "c": "ドイツ",
+      "n": 4,
+      "u": [
+       "Justus Liebig University Giessen",
+       "TH Köln – University of Applied Sciences",
+       "Stuttgart University of Applied Sciences",
+       "RWTH Aachen University, Faculty of Mechanical Engineering"
+      ]
+     },
+     {
+      "c": "中国",
+      "n": 3,
+      "u": [
+       "Donghua University",
+       "Zhejiang Sci-Tech University",
+       "Tiangong University"
+      ]
+     },
+     {
+      "c": "マレーシア",
+      "n": 3,
+      "u": [
+       "University of Malaya",
+       "University of Science-Malaysia",
+       "University Kuala Lumpur"
+      ]
+     },
+     {
+      "c": "韓国",
+      "n": 3,
+      "u": [
+       "Kyungpook National University",
+       "Yeungnam University",
+       "The University of Suwon"
+      ]
+     },
+     {
+      "c": "台湾",
+      "n": 3,
+      "u": [
+       "National Yang Ming Chiao Tung University",
+       "National Taiwan University of Science and Technology",
+       "Tatung University"
+      ]
+     },
+     {
+      "c": "ベルギー",
+      "n": 3,
+      "u": [
+       "Ghent University",
+       "University of Liege",
+       "University of Mons"
+      ]
+     },
+     {
+      "c": "カンボジア",
+      "n": 2,
+      "u": [
+       "Royal University of Phnom Penh",
+       "National Polytechnic Institute of Cambodia"
+      ]
+     },
+     {
+      "c": "シンガポール",
+      "n": 2,
+      "u": [
+       "National University of Singapore, College of Design and Engineering",
+       "Singapore University of Technology and Design"
+      ]
+     },
+     {
+      "c": "トルコ",
+      "n": 2,
+      "u": [
+       "Mimar Sinan Fine Arts University",
+       "Pamukkale University"
+      ]
+     },
+     {
+      "c": "デンマーク",
+      "n": 2,
+      "u": [
+       "Royal Danish Academy – Architecture, Design, Conservation"
+      ]
+     },
+     {
+      "c": "フィンランド",
+      "n": 2,
+      "u": [
+       "Aalto Univerity School of Arts, Design and Architecture",
+       "LAB University of Applied Sciences"
+      ]
+     },
+     {
+      "c": "カザフスタン",
+      "n": 2,
+      "u": [
+       "Al-Farabi Kazakh National University",
+       "Kazakh-British Technical University"
+      ]
+     },
+     {
+      "c": "オランダ",
+      "n": 2,
+      "u": [
+       "Delft University of Technology (Faculty of Architecture and the Built Environment)",
+       "Design Academy Eindhoven"
+      ]
+     },
+     {
+      "c": "スペイン",
+      "n": 2,
+      "u": [
+       "Polytechnic University of Catalonia",
+       "University of Valencia"
+      ]
+     },
+     {
+      "c": "香港",
+      "n": 1,
+      "u": [
+       "School of Fashion and Textiles, The Hong Kong Polytechnic University"
+      ]
+     },
+     {
+      "c": "インド",
+      "n": 1,
+      "u": [
+       "Indian Institute of Technology Guwahati"
+      ]
+     },
+     {
+      "c": "インドネシア",
+      "n": 1,
+      "u": [
+       "Institut Teknologi Bandung"
+      ]
+     },
+     {
+      "c": "モンゴル",
+      "n": 1,
+      "u": [
+       "Mongolian University of Science and Technology"
+      ]
+     },
+     {
+      "c": "エジプト",
+      "n": 1,
+      "u": [
+       "Galala University"
+      ]
+     },
+     {
+      "c": "オーストリア",
+      "n": 1,
+      "u": [
+       "Vienna University of Technology"
+      ]
+     },
+     {
+      "c": "チェコ",
+      "n": 1,
+      "u": [
+       "Czech Technical University of Liberec"
+      ]
+     },
+     {
+      "c": "ギリシャ",
+      "n": 1,
+      "u": [
+       "University of West Attica"
+      ]
+     },
+     {
+      "c": "ハンガリー",
+      "n": 1,
+      "u": [
+       "Budapest University of Technology and Economics"
+      ]
+     },
+     {
+      "c": "スロベニア",
+      "n": 1,
+      "u": [
+       "University of Ljubljana"
+      ]
+     },
+     {
+      "c": "スウェーデン",
+      "n": 1,
+      "u": [
+       "University of Borås"
+      ]
+     },
+     {
+      "c": "カナダ",
+      "n": 1,
+      "u": [
+       "University of Manitoba"
+      ]
+     }
+    ],
+    "exchange": "94協定中71協定で学生交流（交換留学）あり。チェンマイ大学との建築学ジョイント修士、トリノ工科大学・カフォスカリ大学・ウーディネ大学・ロンドン芸術大学とのダブルディグリー（修士）あり。",
+    "note": "一覧94件のうち大学間84件、部局間10件。英文大学概要2026の表に基づく。"
+   }
+  },
+  "sources": [
+   "https://www.kit.ac.jp/wp/wp-content/uploads/2026/03/eibungaiyou_2026.pdf"
+  ]
+ },
+ {
+  "name": "福井大学",
+  "info": {
+   "partners": {
+    "asof": "2026年5月",
+    "total": 180,
+    "kind": "大学間＋部局間",
+    "countries": [
+     {
+      "c": "中国",
+      "n": 21,
+      "u": [
+       "Tiangong University",
+       "College of Chemistry, Fuzhou University"
+      ]
+     },
+     {
+      "c": "タイ",
+      "n": 18,
+      "u": [
+       "Thammasat University",
+       "Bangkok University"
+      ]
+     },
+     {
+      "c": "韓国",
+      "n": 16,
+      "u": [
+       "Pukyong National University",
+       "Kyungpook National University",
+       "Dongguk University",
+       "Busan University of Foreign Studies"
+      ]
+     },
+     {
+      "c": "台湾",
+      "n": 16,
+      "u": [
+       "Ming Chuan University",
+       "Soochow University"
+      ]
+     },
+     {
+      "c": "ベトナム",
+      "n": 15,
+      "u": [
+       "University of Economics and Finance (UEF)",
+       "USSH-VNUHCMC"
+      ]
+     },
+     {
+      "c": "インドネシア",
+      "n": 11,
+      "u": []
+     },
+     {
+      "c": "アメリカ",
+      "n": 9,
+      "u": [
+       "Texas A&M University-Kingsville"
+      ]
+     },
+     {
+      "c": "フランス",
+      "n": 5,
+      "u": []
+     },
+     {
+      "c": "ルーマニア",
+      "n": 5,
+      "u": []
+     },
+     {
+      "c": "ロシア",
+      "n": 5,
+      "u": [
+       "Irkutsk State Medical University"
+      ]
+     },
+     {
+      "c": "マレーシア",
+      "n": 4,
+      "u": [
+       "Universiti Kebangsaan Malaysia (UKM)"
+      ]
+     },
+     {
+      "c": "フィリピン",
+      "n": 4,
+      "u": [
+       "University of the Philippines Diliman"
+      ]
+     },
+     {
+      "c": "カンボジア",
+      "n": 4,
+      "u": []
+     },
+     {
+      "c": "イギリス",
+      "n": 4,
+      "u": []
+     },
+     {
+      "c": "インド",
+      "n": 3,
+      "u": []
+     },
+     {
+      "c": "ブータン",
+      "n": 3,
+      "u": []
+     },
+     {
+      "c": "オーストラリア",
+      "n": 3,
+      "u": []
+     },
+     {
+      "c": "バングラデシュ",
+      "n": 2,
+      "u": [
+       "Dhaka University of Engineering & Technology, Gazipur"
+      ]
+     },
+     {
+      "c": "香港",
+      "n": 2,
+      "u": []
+     },
+     {
+      "c": "トルコ",
+      "n": 2,
+      "u": []
+     },
+     {
+      "c": "メキシコ",
+      "n": 2,
+      "u": []
+     },
+     {
+      "c": "ドイツ",
+      "n": 2,
+      "u": []
+     },
+     {
+      "c": "イタリア",
+      "n": 2,
+      "u": []
+     },
+     {
+      "c": "ポーランド",
+      "n": 2,
+      "u": [
+       "Jagiellonian University"
+      ]
+     },
+     {
+      "c": "リトアニア",
+      "n": 2,
+      "u": [
+       "Vilnius University"
+      ]
+     },
+     {
+      "c": "パキスタン",
+      "n": 1,
+      "u": []
+     },
+     {
+      "c": "シンガポール",
+      "n": 1,
+      "u": []
+     },
+     {
+      "c": "モンゴル",
+      "n": 1,
+      "u": []
+     },
+     {
+      "c": "ブルネイ",
+      "n": 1,
+      "u": []
+     },
+     {
+      "c": "マカオ",
+      "n": 1,
+      "u": []
+     },
+     {
+      "c": "エジプト",
+      "n": 1,
+      "u": []
+     },
+     {
+      "c": "ウガンダ",
+      "n": 1,
+      "u": []
+     },
+     {
+      "c": "マラウイ",
+      "n": 1,
+      "u": []
+     },
+     {
+      "c": "ニュージーランド",
+      "n": 1,
+      "u": []
+     },
+     {
+      "c": "カナダ",
+      "n": 1,
+      "u": []
+     },
+     {
+      "c": "ペルー",
+      "n": 1,
+      "u": []
+     },
+     {
+      "c": "ベルギー",
+      "n": 1,
+      "u": []
+     },
+     {
+      "c": "スペイン",
+      "n": 1,
+      "u": []
+     },
+     {
+      "c": "チェコ",
+      "n": 1,
+      "u": []
+     },
+     {
+      "c": "ハンガリー",
+      "n": 1,
+      "u": []
+     },
+     {
+      "c": "ブルガリア",
+      "n": 1,
+      "u": []
+     },
+     {
+      "c": "カザフスタン",
+      "n": 1,
+      "u": []
+     }
+    ],
+    "exchange": "協定校へのセメスター交換留学と短期プログラムあり（2025年度は短期178名、セメスター交換留学8名を派遣）。",
+    "note": "大学間100・部局間80の合計180（うち1件はUMAP＝コンソーシアムで国別に含めない）。国別校数は国際交流概要ページの表。代表校名は大学公式英文ニュースの協定締結記事から。"
+   }
+  },
+  "sources": [
+   "https://www.u-fukui.ac.jp/eng/internarionalizaiton/international-at-a-glance/",
+   "https://www.u-fukui.ac.jp/en-news/49927/",
+   "https://www.u-fukui.ac.jp/en-news/32239/",
+   "https://www.u-fukui.ac.jp/en-news/64252/",
+   "https://www.u-fukui.ac.jp/en-news/35615/",
+   "https://www.u-fukui.ac.jp/en-news/64467/"
+  ]
+ },
+ {
+  "name": "島根大学",
+  "info": {
+   "partners": {
+    "asof": "2025年5月",
+    "total": 94,
+    "kind": "大学間協定（全学）",
+    "countries": [
+     {
+      "c": "中国",
+      "n": 25,
+      "u": []
+     },
+     {
+      "c": "韓国",
+      "n": 11,
+      "u": []
+     },
+     {
+      "c": "タイ",
+      "n": 11,
+      "u": []
+     },
+     {
+      "c": "インド",
+      "n": 7,
+      "u": []
+     },
+     {
+      "c": "アメリカ",
+      "n": 7,
+      "u": []
+     },
+     {
+      "c": "台湾",
+      "n": 5,
+      "u": []
+     },
+     {
+      "c": "インドネシア",
+      "n": 3,
+      "u": []
+     },
+     {
+      "c": "モンゴル",
+      "n": 2,
+      "u": []
+     },
+     {
+      "c": "フランス",
+      "n": 2,
+      "u": []
+     },
+     {
+      "c": "イタリア",
+      "n": 2,
+      "u": []
+     },
+     {
+      "c": "ポーランド",
+      "n": 2,
+      "u": []
+     },
+     {
+      "c": "スウェーデン",
+      "n": 2,
+      "u": []
+     },
+     {
+      "c": "バングラデシュ",
+      "n": 1,
+      "u": []
+     },
+     {
+      "c": "ネパール",
+      "n": 1,
+      "u": []
+     },
+     {
+      "c": "スリランカ",
+      "n": 1,
+      "u": []
+     },
+     {
+      "c": "ベトナム",
+      "n": 1,
+      "u": []
+     },
+     {
+      "c": "ドイツ",
+      "n": 1,
+      "u": []
+     },
+     {
+      "c": "ギリシャ",
+      "n": 1,
+      "u": []
+     },
+     {
+      "c": "ハンガリー",
+      "n": 1,
+      "u": []
+     },
+     {
+      "c": "アイスランド",
+      "n": 1,
+      "u": []
+     },
+     {
+      "c": "アイルランド",
+      "n": 1,
+      "u": []
+     },
+     {
+      "c": "カザフスタン",
+      "n": 1,
+      "u": []
+     },
+     {
+      "c": "スイス",
+      "n": 1,
+      "u": []
+     },
+     {
+      "c": "カナダ",
+      "n": 1,
+      "u": []
+     },
+     {
+      "c": "ブラジル",
+      "n": 1,
+      "u": []
+     },
+     {
+      "c": "ニュージーランド",
+      "n": 1,
+      "u": []
+     },
+     {
+      "c": "エチオピア",
+      "n": 1,
+      "u": []
+     }
+    ],
+    "exchange": "協定校との交換留学制度あり（学生交流・共同研究を目的とした学術交流協定）。",
+    "note": "国別校数は英文大学案内PROSPECTUS2025の国別表（合計94）。同資料の統計欄は海外協定機関104、国際交流センターページは2025年7月時点で27か国93機関と記載。大学名は出典に記載がなく未記入。"
+   }
+  },
+  "sources": [
+   "https://www.shimane-u.ac.jp/_files/00394802/PROSPECTUS2025.pdf",
+   "https://kokusai.shimane-u.ac.jp/english/about/"
+  ]
+ }
+]

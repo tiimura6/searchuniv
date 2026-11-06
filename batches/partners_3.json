@@ -1,0 +1,3140 @@
+[
+ {
+  "name": "北里大学",
+  "info": {
+   "partners": {
+    "asof": "",
+    "total": 29,
+    "kind": "学部・研究科・病院ごとの主な海外交流先（大学間＋部局間）",
+    "countries": [
+     {
+      "c": "アメリカ",
+      "n": 6,
+      "u": [
+       "University of Kentucky, College of Pharmacy",
+       "University of California, Los Angeles",
+       "Purdue University",
+       "University of Tennessee",
+       "Thomas Jefferson University"
+      ]
+     },
+     {
+      "c": "中国",
+      "n": 5,
+      "u": [
+       "Jilin University",
+       "Jilin Agricultural University",
+       "Southwest University",
+       "Huazhong Agricultural University",
+       "Fudan University Huashan Hospital"
+      ]
+     },
+     {
+      "c": "タイ",
+      "n": 4,
+      "u": [
+       "Mahidol University",
+       "Kasetsart University",
+       "Burapha University Institute of Marine Science",
+       "Mahanakorn University of Technology"
+      ]
+     },
+     {
+      "c": "台湾",
+      "n": 2,
+      "u": [
+       "National Cheng Kung University",
+       "Chang Gung University College of Medicine"
+      ]
+     },
+     {
+      "c": "イギリス",
+      "n": 2,
+      "u": [
+       "University of Warwick",
+       "Kingston University"
+      ]
+     },
+     {
+      "c": "オーストリア",
+      "n": 1,
+      "u": [
+       "Hochschule Campus Wien"
+      ]
+     },
+     {
+      "c": "カナダ",
+      "n": 1,
+      "u": [
+       "McMaster University"
+      ]
+     },
+     {
+      "c": "ガーナ",
+      "n": 1,
+      "u": [
+       "Noguchi Memorial Institute for Medical Research, University of Ghana"
+      ]
+     },
+     {
+      "c": "インドネシア",
+      "n": 1,
+      "u": [
+       "Universitas Gadjah Mada"
+      ]
+     },
+     {
+      "c": "マレーシア",
+      "n": 1,
+      "u": [
+       "University of Science-Malaysia"
+      ]
+     },
+     {
+      "c": "モンゴル",
+      "n": 1,
+      "u": [
+       "Mongolian National University of Medical Sciences"
+      ]
+     },
+     {
+      "c": "ミャンマー",
+      "n": 1,
+      "u": [
+       "University of Medical Technology, Yangon"
+      ]
+     },
+     {
+      "c": "ノルウェー",
+      "n": 1,
+      "u": [
+       "University of Inland Norway"
+      ]
+     },
+     {
+      "c": "シンガポール",
+      "n": 1,
+      "u": [
+       "National University of Singapore (Lee Kong Chian Natural History Museum)"
+      ]
+     },
+     {
+      "c": "ベナン",
+      "n": 1,
+      "u": [
+       "University of Abomey-Calavi"
+      ]
+     }
+    ],
+    "exchange": "学部ごとに海外の大学と交流（看護学部のUCLA・マクマスター大学、医療衛生学部の成功大学など）。",
+    "note": "英語版国際交流ページ（学部別の交流先紹介）を数えた。大学以外の機関（パリ水族館、中央研究院ICOB、メイヨークリニック）は除外。Harvard（現在計画なし）・Kingston（休止中）を含む。全学の協定校一覧は未確認。"
+   }
+  },
+  "sources": [
+   "https://tmp.kitasato-u.ac.jp/cypochi/cms/preview/page/page=12392/device=5/sitekey=6:kitasatoen"
+  ]
+ },
+ {
+  "name": "自治医科大学",
+  "info": {
+   "partners": {
+    "asof": "2022年5月",
+    "total": 11,
+    "kind": "医学研究科・医学部の交流大学（協定書等締結）",
+    "countries": [
+     {
+      "c": "中国",
+      "n": 3,
+      "u": [
+       "北京医学院（現 北京大学医学部）",
+       "中国医科大学",
+       "河北医科大学"
+      ]
+     },
+     {
+      "c": "タイ",
+      "n": 2,
+      "u": [
+       "チュラロンコン大学（医学部）",
+       "マヒドール大学（医学部）"
+      ]
+     },
+     {
+      "c": "インドネシア",
+      "n": 2,
+      "u": [
+       "アンダラス大学（医学部）",
+       "ハムカ大学"
+      ]
+     },
+     {
+      "c": "アメリカ",
+      "n": 1,
+      "u": [
+       "コーネル大学"
+      ]
+     },
+     {
+      "c": "カナダ",
+      "n": 1,
+      "u": [
+       "ブリティッシュ・コロンビア大学（医学部）"
+      ]
+     },
+     {
+      "c": "モンゴル",
+      "n": 1,
+      "u": [
+       "モンゴル国立医科大学"
+      ]
+     },
+     {
+      "c": "イギリス",
+      "n": 1,
+      "u": [
+       "レスター大学（医学部）"
+      ]
+     }
+    ],
+    "exchange": "",
+    "note": "asofはページの更新日（メタデータ）。看護学部の交流先は含まない。"
+   }
+  },
+  "sources": [
+   "https://www.jichi.ac.jp/international/partner/"
+  ]
+ },
+ {
+  "name": "国際医療福祉大学",
+  "info": {
+   "partners": {
+    "asof": "",
+    "total": 15,
+    "kind": "大田原キャンパス国際交流ページの記事で協定締結が確認できた大学（一部）",
+    "countries": [
+     {
+      "c": "シンガポール",
+      "n": 2,
+      "u": [
+       "ナンヤンポリテクニック",
+       "シンガポール工科大学(SIT)"
+      ]
+     },
+     {
+      "c": "ベトナム",
+      "n": 2,
+      "u": [
+       "ハノイ医科大学",
+       "ホーチミン市医科薬科大学"
+      ]
+     },
+     {
+      "c": "タイ",
+      "n": 2,
+      "u": [
+       "マヒドン大学",
+       "クリスチャン大学(CTU)"
+      ]
+     },
+     {
+      "c": "カンボジア",
+      "n": 1,
+      "u": [
+       "国立医療技術学校"
+      ]
+     },
+     {
+      "c": "ラオス",
+      "n": 1,
+      "u": [
+       "ラオス国立健康科学大学"
+      ]
+     },
+     {
+      "c": "モンゴル",
+      "n": 1,
+      "u": [
+       "モンゴル国立医療科学大学"
+      ]
+     },
+     {
+      "c": "マレーシア",
+      "n": 1,
+      "u": [
+       "マネージメント&サイエンス大学(MSU)"
+      ]
+     },
+     {
+      "c": "インドネシア",
+      "n": 1,
+      "u": [
+       "ウダヤナ大学"
+      ]
+     },
+     {
+      "c": "フィリピン",
+      "n": 1,
+      "u": [
+       "フィリピン大学マニラ校医学部"
+      ]
+     },
+     {
+      "c": "ハンガリー",
+      "n": 1,
+      "u": [
+       "センメルワイス大学"
+      ]
+     },
+     {
+      "c": "イギリス",
+      "n": 1,
+      "u": [
+       "イーストアングリア大学(UEA)"
+      ]
+     },
+     {
+      "c": "オーストラリア",
+      "n": 1,
+      "u": [
+       "グリフィス大学"
+      ]
+     }
+    ],
+    "exchange": "総合教育科目「海外保健福祉事情」で協定校へ学生を派遣する海外研修あり。協定校からの短期研修生も受け入れている。",
+    "note": "公式の「海外学術交流協定提携先一覧」ページは取得不可（robots制限）。大田原キャンパスの記事（主に2013〜2019年）から協定締結が明記された大学のみ数えたため、全体の一部。病院・政府機関は除外。"
+   }
+  },
+  "sources": [
+   "https://otawara.iuhw.ac.jp/kokusai/index.html"
+  ]
+ },
+ {
+  "name": "順天堂大学",
+  "info": {
+   "partners": {
+    "asof": "",
+    "total": 95,
+    "kind": "協定機関（大学・病院・研究機関等を含む）",
+    "countries": [
+     {
+      "c": "中国",
+      "n": 23,
+      "u": [
+       "Peking University",
+       "Fudan University",
+       "Sichuan University",
+       "China Medical University",
+       "Beijing Sport University"
+      ]
+     },
+     {
+      "c": "アメリカ",
+      "n": 13,
+      "u": [
+       "Johns Hopkins University",
+       "Stanford University",
+       "University of Hawaii",
+       "University of California, Davis",
+       "Vanderbilt University"
+      ]
+     },
+     {
+      "c": "タイ",
+      "n": 8,
+      "u": [
+       "Mahidol University",
+       "Chulalongkorn University",
+       "Thammasat University",
+       "Kasetsart University",
+       "Chiang Mai University"
+      ]
+     },
+     {
+      "c": "台湾",
+      "n": 7,
+      "u": [
+       "National Taiwan University",
+       "Kaohsiung Medical University",
+       "Taipei Medical University",
+       "China Medical University",
+       "Chang Gung University"
+      ]
+     },
+     {
+      "c": "韓国",
+      "n": 6,
+      "u": [
+       "Hanyang University",
+       "Korea National Sport University",
+       "Inje University",
+       "Dongseo University",
+       "Yong In University"
+      ]
+     },
+     {
+      "c": "インドネシア",
+      "n": 5,
+      "u": [
+       "University of Indonesia",
+       "Gadjah Mada University",
+       "Airlangga University",
+       "Universitas Padjadjaran",
+       "Udayana University"
+      ]
+     },
+     {
+      "c": "ベトナム",
+      "n": 4,
+      "u": [
+       "Vietnam Military Medical University",
+       "108 Military Central Hospital"
+      ]
+     },
+     {
+      "c": "フランス",
+      "n": 3,
+      "u": [
+       "University of Strasbourg",
+       "Institut National des Langues et Civilisations Orientales",
+       "Brain and Spine Institute"
+      ]
+     },
+     {
+      "c": "ミャンマー",
+      "n": 2,
+      "u": [
+       "University of Medicine (1), Yangon",
+       "National Health Laboratory"
+      ]
+     },
+     {
+      "c": "ドイツ",
+      "n": 2,
+      "u": [
+       "Charite-Universitatsmedizin Berlin",
+       "Ludwig-Maximilians-University (LMU) Munich"
+      ]
+     },
+     {
+      "c": "スペイン",
+      "n": 2,
+      "u": [
+       "Universidad Carlos III de Madrid",
+       "University of Salamanca"
+      ]
+     },
+     {
+      "c": "イギリス",
+      "n": 2,
+      "u": [
+       "De Montfort University",
+       "Canterbury Christ Church University"
+      ]
+     },
+     {
+      "c": "香港",
+      "n": 1,
+      "u": [
+       "University of Hong Kong"
+      ]
+     },
+     {
+      "c": "カンボジア",
+      "n": 1,
+      "u": [
+       "University of Puthisastra"
+      ]
+     },
+     {
+      "c": "マレーシア",
+      "n": 1,
+      "u": [
+       "University of Malaya"
+      ]
+     },
+     {
+      "c": "フィリピン",
+      "n": 1,
+      "u": [
+       "University of Perpetual Help System Dalta"
+      ]
+     },
+     {
+      "c": "シンガポール",
+      "n": 1,
+      "u": [
+       "National University of Singapore"
+      ]
+     },
+     {
+      "c": "ウズベキスタン",
+      "n": 1,
+      "u": [
+       "Ministry of Health"
+      ]
+     },
+     {
+      "c": "ベルギー",
+      "n": 1,
+      "u": [
+       "Vrije Universiteit Brussel"
+      ]
+     },
+     {
+      "c": "デンマーク",
+      "n": 1,
+      "u": [
+       "Aalborg University"
+      ]
+     },
+     {
+      "c": "フィンランド",
+      "n": 1,
+      "u": [
+       "JAMK University of Applied Sciences"
+      ]
+     },
+     {
+      "c": "ハンガリー",
+      "n": 1,
+      "u": [
+       "Semmelweis University"
+      ]
+     },
+     {
+      "c": "ポーランド",
+      "n": 1,
+      "u": [
+       "Poznan University of Medical Sciences"
+      ]
+     },
+     {
+      "c": "ロシア",
+      "n": 1,
+      "u": [
+       "Kazan Federal University"
+      ]
+     },
+     {
+      "c": "バーレーン",
+      "n": 1,
+      "u": [
+       "Arabian Gulf University"
+      ]
+     },
+     {
+      "c": "イラン",
+      "n": 1,
+      "u": [
+       "Tehran University of Medical Sciences"
+      ]
+     },
+     {
+      "c": "トルコ",
+      "n": 1,
+      "u": [
+       "Acibadem University"
+      ]
+     },
+     {
+      "c": "オーストラリア",
+      "n": 1,
+      "u": [
+       "Western Sydney University"
+      ]
+     },
+     {
+      "c": "ニュージーランド",
+      "n": 1,
+      "u": [
+       "University of Otago"
+      ]
+     },
+     {
+      "c": "ブラジル",
+      "n": 1,
+      "u": [
+       "Federal University of Pernambuco"
+      ]
+     }
+    ],
+    "exchange": "学部ごとに海外研修あり（医学部6年次の海外臨床実習2〜8週間、看護系の英・米・タイ研修、スポーツ健康科学部の交流プログラム等）。",
+    "note": "英語版Partner Institutionsの掲載95機関を数えた（病院・省庁・協会を含む）。日本語の国際交流ページには「27か国／地域、71校と大学交流協定」とある（日付なし）。原表で中国に含まれる香港大学は香港に分けた。"
+   }
+  },
+  "sources": [
+   "https://en.juntendo.ac.jp/about/partner-institutions.html",
+   "https://www.juntendo.ac.jp/academics/international/"
+  ]
+ },
+ {
+  "name": "東京慈恵会医科大学",
+  "info": {
+   "partners": {
+    "asof": "",
+    "total": 15,
+    "kind": "海外協定機関（全学の数）／国別は看護学科の交流先のみ",
+    "countries": [
+     {
+      "c": "イギリス",
+      "n": 1,
+      "u": [
+       "King's College London"
+      ]
+     },
+     {
+      "c": "シンガポール",
+      "n": 1,
+      "u": [
+       "National University of Singapore"
+      ]
+     },
+     {
+      "c": "台湾",
+      "n": 1,
+      "u": [
+       "国立台湾大学"
+      ]
+     },
+     {
+      "c": "アメリカ",
+      "n": 1,
+      "u": [
+       "ポートランド州立大学"
+      ]
+     }
+    ],
+    "exchange": "看護学科でKing's College London・シンガポール国立大学・国立台湾大学との交換留学、ポートランド州立大学での海外研修あり。",
+    "note": "totalは「海外の15の機関と協定」（数字で見る慈恵大学）。15機関の国別内訳は確認できず、countriesは看護学科ページ記載の4校のみ。医学科の留学制度ページは取得不可（robots制限）。"
+   }
+  },
+  "sources": [
+   "https://www.jikei.ac.jp/about/data/",
+   "https://kango-juken.jikei.ac.jp/campus-life/international/"
+  ]
+ },
+ {
+  "name": "日本医科大学",
+  "info": {
+   "partners": {
+    "asof": "2026年3月",
+    "total": 16,
+    "kind": "協定校一覧（大学・医学部レベル混在）",
+    "countries": [
+     {
+      "c": "中国",
+      "n": 6,
+      "u": [
+       "ハルビン医科大学",
+       "西安交通大学",
+       "中国医科大学",
+       "上海大学",
+       "浙江大学"
+      ]
+     },
+     {
+      "c": "アメリカ",
+      "n": 4,
+      "u": [
+       "ジョージワシントン大学医学部",
+       "ハワイ大学 ジョンA.バーンズ医学校",
+       "南カリフォルニア大学 ケック医学校",
+       "ジョンズホプキンス大学医学部"
+      ]
+     },
+     {
+      "c": "タイ",
+      "n": 4,
+      "u": [
+       "チェンマイ大学医学部",
+       "タマサート大学医学部",
+       "マヒドン大学ラマティボディ病院医学部",
+       "タイ王国救急医療庁"
+      ]
+     },
+     {
+      "c": "イギリス",
+      "n": 1,
+      "u": [
+       "サウサンプトン大学"
+      ]
+     },
+     {
+      "c": "オーストラリア",
+      "n": 1,
+      "u": [
+       "シドニー大学"
+      ]
+     }
+    ],
+    "exchange": "医学部で海外選択クリニカル・クラークシップ（海外臨床実習）制度あり。",
+    "note": "asofはページの最終更新日（メタデータ）。タイ王国救急医療庁（大学以外）を含む。"
+   }
+  },
+  "sources": [
+   "https://iec.nms.ac.jp/kokusai/kyoteiko"
+  ]
+ },
+ {
+  "name": "獨協医科大学",
+  "info": {
+   "partners": {
+    "asof": "2021年8月",
+    "total": 18,
+    "kind": "国際学術交流協定（大学・研究/医療機関、部局間を含む）",
+    "countries": [
+     {
+      "c": "中国",
+      "n": 5,
+      "u": [
+       "同済大学",
+       "北京大学深圳医院",
+       "西安交通大学医学部",
+       "同済大学附属同済医院",
+       "同済明月山国際健康医学センター"
+      ]
+     },
+     {
+      "c": "ドイツ",
+      "n": 2,
+      "u": [
+       "ヴェストファーレン・ヴィルヘルムス大学（ミュンスター大学）医学部",
+       "レーゲンスブルク大学"
+      ]
+     },
+     {
+      "c": "フィリピン",
+      "n": 2,
+      "u": [
+       "国立フィリピン大学マニラ校",
+       "サント・トマス大学"
+      ]
+     },
+     {
+      "c": "ウクライナ",
+      "n": 2,
+      "u": [
+       "ジトーミル国立農業生態学大学",
+       "ウクライナ国立医学アカデミー オーエムマルゼーエフ公衆衛生学研究所"
+      ]
+     },
+     {
+      "c": "アメリカ",
+      "n": 1,
+      "u": [
+       "カリフォルニア大学サンディエゴ校"
+      ]
+     },
+     {
+      "c": "モンゴル",
+      "n": 1,
+      "u": [
+       "モンゴル国立医療科学大学"
+      ]
+     },
+     {
+      "c": "タイ",
+      "n": 1,
+      "u": [
+       "チェンマイ大学（医学部・看護学部）"
+      ]
+     },
+     {
+      "c": "台湾",
+      "n": 1,
+      "u": [
+       "台北医科大学雙和病院"
+      ]
+     },
+     {
+      "c": "ベラルーシ",
+      "n": 1,
+      "u": [
+       "ベラルーシ国立卒後教育医学アカデミー"
+      ]
+     },
+     {
+      "c": "マダガスカル",
+      "n": 1,
+      "u": [
+       "マダガスカル・パスツール研究所"
+      ]
+     },
+     {
+      "c": "ブラジル",
+      "n": 1,
+      "u": [
+       "アルフェナス国立大学"
+      ]
+     },
+     {
+      "c": "フィンランド",
+      "n": 1,
+      "u": [
+       "JAMK応用科学大学"
+      ]
+     }
+    ],
+    "exchange": "医学部の授業科目として第3・4学年でフィリピン、第5学年でドイツでの海外研修あり。",
+    "note": "資料は「令和3年8月現在有効なもの」で「12か国18施設」と記載（total=18）。国別は施設名ごとに数えたため合計19（同一機関の扱いの差）。アルフェナス大学は大学ニュースの表記によりブラジル。"
+   }
+  },
+  "sources": [
+   "https://www.dokkyomed.ac.jp/files/dmu/dokuisai/international_exchange_01.pdf",
+   "https://www.dokkyomed.ac.jp/dmu/academy/news/1134"
+  ]
+ },
+ {
+  "name": "津田塾大学",
+  "info": {
+   "partners": {
+    "asof": "",
+    "total": 38,
+    "kind": "学生交流協定校35＋包括・学術交流協定校3",
+    "countries": [
+     {
+      "c": "アメリカ",
+      "n": 9,
+      "u": [
+       "ブリンマー大学",
+       "カリフォルニア大学デービス校",
+       "カンザス大学",
+       "スペルマン大学",
+       "ウエスタン・ワシントン大学"
+      ]
+     },
+     {
+      "c": "イギリス",
+      "n": 6,
+      "u": [
+       "ロンドン大学アジア・アフリカ研究学院（SOAS）",
+       "エディンバラ大学",
+       "ブリストル大学",
+       "ヨーク大学",
+       "リーズ大学"
+      ]
+     },
+     {
+      "c": "ドイツ",
+      "n": 2,
+      "u": [
+       "ハインリッヒ・ハイネ大学デュッセルドルフ",
+       "ブレーメン応用科学大学"
+      ]
+     },
+     {
+      "c": "オーストラリア",
+      "n": 2,
+      "u": [
+       "オーストラリア国立大学",
+       "ディーキン大学"
+      ]
+     },
+     {
+      "c": "タイ",
+      "n": 2,
+      "u": [
+       "チュラロンコン大学",
+       "コンケン大学"
+      ]
+     },
+     {
+      "c": "インドネシア",
+      "n": 2,
+      "u": [
+       "インドネシア大学",
+       "ハサヌディン大学"
+      ]
+     },
+     {
+      "c": "韓国",
+      "n": 2,
+      "u": [
+       "梨花女子大学校",
+       "国民大学校"
+      ]
+     },
+     {
+      "c": "カナダ",
+      "n": 2,
+      "u": [
+       "ブリティッシュ・コロンビア大学（Asian Studies学部）",
+       "マギル大学"
+      ]
+     },
+     {
+      "c": "中国",
+      "n": 1,
+      "u": [
+       "南京大学海外教育学院"
+      ]
+     },
+     {
+      "c": "香港",
+      "n": 1,
+      "u": [
+       "香港樹仁大学"
+      ]
+     },
+     {
+      "c": "スウェーデン",
+      "n": 1,
+      "u": [
+       "ブレーキンゲ工科大学"
+      ]
+     },
+     {
+      "c": "アイスランド",
+      "n": 1,
+      "u": [
+       "アイスランド大学"
+      ]
+     },
+     {
+      "c": "フランス",
+      "n": 1,
+      "u": [
+       "CY セルジー・パリ大学"
+      ]
+     },
+     {
+      "c": "オーストリア",
+      "n": 1,
+      "u": [
+       "アッパーオーストリア応用科学大学"
+      ]
+     },
+     {
+      "c": "フィリピン",
+      "n": 1,
+      "u": [
+       "フィリピン大学"
+      ]
+     },
+     {
+      "c": "ベトナム",
+      "n": 1,
+      "u": [
+       "ハノイ国家大学外国語大学"
+      ]
+     },
+     {
+      "c": "台湾",
+      "n": 1,
+      "u": [
+       "淡江大学"
+      ]
+     },
+     {
+      "c": "メキシコ",
+      "n": 1,
+      "u": [
+       "メトロポリタン自治大学"
+      ]
+     },
+     {
+      "c": "アイルランド",
+      "n": 1,
+      "u": [
+       "アイルランド国立大学ダブリン校（UCD）"
+      ]
+     }
+    ],
+    "exchange": "協定校への交換留学は多くが留学先授業料免除（寮費・食費は自己負担）。派遣留学は学費含め自己負担の大学が多い。",
+    "note": "カナダ2校・アイルランド1校は包括・学術交流協定（協定校留学なし、短期プログラム等）。香港樹仁大学はページでは中国の項に掲載。"
+   }
+  },
+  "sources": [
+   "https://cie.tsuda.ac.jp/studyabroad/kyotei/list/"
+  ]
+ },
+ {
+  "name": "東京女子大学",
+  "info": {
+   "partners": {
+    "asof": "",
+    "total": 29,
+    "kind": "協定校留学の協定校",
+    "countries": [
+     {
+      "c": "アメリカ",
+      "n": 7,
+      "u": [
+       "スクリップス大学",
+       "テンプル大学",
+       "カリフォルニア大学デービス校",
+       "カリフォルニア州立大学フラトン校",
+       "セントマイケルズ大学"
+      ]
+     },
+     {
+      "c": "オーストラリア",
+      "n": 6,
+      "u": [
+       "フリンダース大学",
+       "ウーロンゴン大学",
+       "グリフィス大学",
+       "ラ・トローブ大学",
+       "オーストラリアンカソリック大学"
+      ]
+     },
+     {
+      "c": "イギリス",
+      "n": 4,
+      "u": [
+       "ヨーク大学",
+       "ランカスター大学",
+       "エジンバラ大学",
+       "リーズ大学"
+      ]
+     },
+     {
+      "c": "台湾",
+      "n": 3,
+      "u": [
+       "東海大学",
+       "輔仁大学",
+       "国立台湾師範大学文学院"
+      ]
+     },
+     {
+      "c": "韓国",
+      "n": 2,
+      "u": [
+       "梨花女子大学",
+       "誠信女子大学校"
+      ]
+     },
+     {
+      "c": "カナダ",
+      "n": 2,
+      "u": [
+       "アルバータ大学",
+       "フレーザーバレー大学"
+      ]
+     },
+     {
+      "c": "ニュージーランド",
+      "n": 2,
+      "u": [
+       "カンタベリー大学",
+       "ヴィクトリア大学ウェリントン"
+      ]
+     },
+     {
+      "c": "中国",
+      "n": 1,
+      "u": [
+       "上海外国語大学"
+      ]
+     },
+     {
+      "c": "タイ",
+      "n": 1,
+      "u": [
+       "シーナカリンウィロート大学"
+      ]
+     },
+     {
+      "c": "アイルランド",
+      "n": 1,
+      "u": [
+       "ダブリンシティ大学"
+      ]
+     }
+    ],
+    "exchange": "協定に基づく協定校留学あり（学内選考後、協定校が受入れを決定）。",
+    "note": ""
+   }
+  },
+  "sources": [
+   "https://www.twcu.ac.jp/main/features/english/international/study-abroad/about/pact.html"
+  ]
+ },
+ {
+  "name": "日本女子大学",
+  "info": {
+   "partners": {
+    "asof": "2025年10月",
+    "total": 39,
+    "kind": "大学間＋箇所間（学術交流協定・学生交流協定）",
+    "countries": [
+     {
+      "c": "イギリス",
+      "n": 6,
+      "u": [
+       "ノッティンガム大学",
+       "ウォリック大学",
+       "ランカスター大学",
+       "ヨーク大学",
+       "ブリストル大学"
+      ]
+     },
+     {
+      "c": "アメリカ",
+      "n": 5,
+      "u": [
+       "ウェルズリー・カレッジ",
+       "マウント・ホリヨーク・カレッジ",
+       "オレゴン大学",
+       "ノックス・カレッジ",
+       "シラキュース大学"
+      ]
+     },
+     {
+      "c": "ニュージーランド",
+      "n": 5,
+      "u": [
+       "オークランド大学",
+       "オタゴ大学",
+       "マッセイ大学",
+       "リンカーン大学",
+       "ワイカト大学"
+      ]
+     },
+     {
+      "c": "ベトナム",
+      "n": 4,
+      "u": [
+       "フエ大学外国語大学",
+       "ハノイ土木大学",
+       "ハノイ建築大学",
+       "ホーチミン市建築大学"
+      ]
+     },
+     {
+      "c": "タイ",
+      "n": 3,
+      "u": [
+       "チュラロンコン大学",
+       "コンケン大学",
+       "シラパコーン大学"
+      ]
+     },
+     {
+      "c": "台湾",
+      "n": 3,
+      "u": [
+       "逢甲大学",
+       "静宜大学",
+       "淡江大学"
+      ]
+     },
+     {
+      "c": "韓国",
+      "n": 2,
+      "u": [
+       "梨花女子大学",
+       "誠信女子大学"
+      ]
+     },
+     {
+      "c": "スウェーデン",
+      "n": 1,
+      "u": [
+       "ウプサラ大学教育学部"
+      ]
+     },
+     {
+      "c": "オランダ",
+      "n": 1,
+      "u": [
+       "ライデン大学人文学部"
+      ]
+     },
+     {
+      "c": "スロベニア",
+      "n": 1,
+      "u": [
+       "リュブリャナ大学文学部"
+      ]
+     },
+     {
+      "c": "リトアニア",
+      "n": 1,
+      "u": [
+       "カウナス工科大学"
+      ]
+     },
+     {
+      "c": "中国",
+      "n": 1,
+      "u": [
+       "河南師範大学"
+      ]
+     },
+     {
+      "c": "フィリピン",
+      "n": 1,
+      "u": [
+       "フィリピン大学ディリマン校"
+      ]
+     },
+     {
+      "c": "ベルギー",
+      "n": 1,
+      "u": [
+       "ブリュッセル自由大学"
+      ]
+     },
+     {
+      "c": "イタリア",
+      "n": 1,
+      "u": [
+       "ミラノ工科大学"
+      ]
+     },
+     {
+      "c": "マレーシア",
+      "n": 1,
+      "u": [
+       "アジアパシフィック大学"
+      ]
+     },
+     {
+      "c": "アフガニスタン",
+      "n": 1,
+      "u": [
+       "カブール大学"
+      ]
+     },
+     {
+      "c": "トルコ",
+      "n": 1,
+      "u": [
+       "カッパドキア大学"
+      ]
+     }
+    ],
+    "exchange": "39大学のうち31大学と1学期以上の交換・派遣留学や留学生受け入れを実施。",
+    "note": "18カ国39大学のうち8大学は学術交流協定のみ（シラキュース大、オックスフォードブルックス大、ベトナム3校、シラパコーン大、カブール大、カッパドキア大）。"
+   }
+  },
+  "sources": [
+   "https://www.jwu.ac.jp/unv/abroad/college/college.html"
+  ]
+ },
+ {
+  "name": "聖心女子大学",
+  "info": {
+   "partners": {
+    "asof": "2025年12月",
+    "total": 22,
+    "kind": "長期留学の協定校（交換留学＋推薦留学）",
+    "countries": [
+     {
+      "c": "アメリカ",
+      "n": 4,
+      "u": [
+       "シアトル大学",
+       "サンフランシスコ大学",
+       "カリフォルニア大学デイビス校",
+       "ハワイ大学カピオラニ・コミュニティ・カレッジ"
+      ]
+     },
+     {
+      "c": "韓国",
+      "n": 3,
+      "u": [
+       "韓国カトリック大学",
+       "ソウル女子大学",
+       "東国大学"
+      ]
+     },
+     {
+      "c": "台湾",
+      "n": 3,
+      "u": [
+       "輔仁大学",
+       "文藻外語大学",
+       "静宜大学"
+      ]
+     },
+     {
+      "c": "フランス",
+      "n": 3,
+      "u": [
+       "フランス国立東洋言語文化大学",
+       "リヨン・カトリック大学",
+       "パリ・カトリック大学"
+      ]
+     },
+     {
+      "c": "カナダ",
+      "n": 3,
+      "u": [
+       "モントリオール大学",
+       "ラバル大学",
+       "マギル大学"
+      ]
+     },
+     {
+      "c": "イギリス",
+      "n": 2,
+      "u": [
+       "ローハンプトン大学",
+       "リーズ・トリニティ大学"
+      ]
+     },
+     {
+      "c": "オーストラリア",
+      "n": 1,
+      "u": [
+       "オーストラリア・カトリック大学"
+      ]
+     },
+     {
+      "c": "スペイン",
+      "n": 1,
+      "u": [
+       "サンティアゴ・デ・コンポステーラ大学"
+      ]
+     },
+     {
+      "c": "イタリア",
+      "n": 1,
+      "u": [
+       "ヴェネツィア・カ・フォスカリ大学"
+      ]
+     },
+     {
+      "c": "タイ",
+      "n": 1,
+      "u": [
+       "アサンプション大学"
+      ]
+     }
+    ],
+    "exchange": "交換留学は留学先授業料免除（本学授業料のみ納付）、推薦留学は審査成績により本学授業料の全額・一部免除あり。期間は1学期〜1年、単位認定あり。",
+    "note": ""
+   }
+  },
+  "sources": [
+   "https://www.u-sacred-heart.ac.jp/academics/faculty/long-studyabroad/"
+  ]
+ },
+ {
+  "name": "立命館アジア太平洋大学（APU）",
+  "info": {
+   "partners": {
+    "asof": "",
+    "total": 178,
+    "kind": "留学プログラム派遣先の協定校（国・地域から探す）",
+    "countries": [
+     {
+      "c": "アメリカ",
+      "n": 20,
+      "u": [
+       "アメリカン大学",
+       "インカーネット・ワード大学",
+       "ウィスコンシン大学 - ラ・クロス"
+      ]
+     },
+     {
+      "c": "フランス",
+      "n": 15,
+      "u": [
+       "EMストラスブールビジネススクール",
+       "IESEG経営大学",
+       "IMTビジネススクール"
+      ]
+     },
+     {
+      "c": "中国",
+      "n": 14,
+      "u": [
+       "上海交通大学",
+       "マカオ大学",
+       "マカオ旅遊大学"
+      ]
+     },
+     {
+      "c": "韓国",
+      "n": 11,
+      "u": [
+       "延世大学",
+       "国民大学校",
+       "ウソン大学SolBridge国際スクールオブビジネス"
+      ]
+     },
+     {
+      "c": "カナダ",
+      "n": 9,
+      "u": [
+       "ウォータールー大学",
+       "HECモントリオール",
+       "オタワ大学Telfer School of Management"
+      ]
+     },
+     {
+      "c": "ドイツ",
+      "n": 8,
+      "u": [
+       "ツェッペリン大学",
+       "SRHハイデルベルク専門大学",
+       "カール学院国際大学"
+      ]
+     },
+     {
+      "c": "台湾",
+      "n": 7,
+      "u": [
+       "国立台湾師範大学",
+       "国立政治大学",
+       "元智大学"
+      ]
+     },
+     {
+      "c": "イギリス",
+      "n": 7,
+      "u": [
+       "オックスフォード・ブルックス大学",
+       "ノッティンガム・トレント大学",
+       "ウエストミンスター・ビジネス・スクール"
+      ]
+     },
+     {
+      "c": "オーストラリア",
+      "n": 6,
+      "u": [
+       "ディーキン大学",
+       "ジェームス・クック大学",
+       "チャールズ・スタート大学"
+      ]
+     },
+     {
+      "c": "インドネシア",
+      "n": 5,
+      "u": [
+       "インドネシア大学",
+       "ガジャマダ大学",
+       "パラヒャンガン・カトリック大学"
+      ]
+     },
+     {
+      "c": "ノルウェー",
+      "n": 5,
+      "u": [
+       "ノルウェー科学技術大学",
+       "ノルウェー経済高等学院(NHH)",
+       "アグダー大学"
+      ]
+     },
+     {
+      "c": "マレーシア",
+      "n": 4,
+      "u": [
+       "マラヤ大学",
+       "マレーシア国民大学",
+       "テイラーズ大学"
+      ]
+     },
+     {
+      "c": "イタリア",
+      "n": 4,
+      "u": [
+       "サクロクオーレカトリック大学",
+       "ベネチア・カ・フォスカリ大学",
+       "グイド・カルリ社会科学国際自由大学"
+      ]
+     },
+     {
+      "c": "オーストリア",
+      "n": 4,
+      "u": [
+       "インスブルック・マネジメントセンター",
+       "ウィーン応用科学大学",
+       "ザルツブルク応用科学大学"
+      ]
+     },
+     {
+      "c": "ベルギー",
+      "n": 4,
+      "u": [
+       "アントワープ大学",
+       "リエージュ大学",
+       "HOWEST応用科学大学"
+      ]
+     },
+     {
+      "c": "ポーランド",
+      "n": 4,
+      "u": [
+       "ワルシャワ大学",
+       "アダム・ミツキェヴィチ大学",
+       "コズミンスキー大学"
+      ]
+     },
+     {
+      "c": "フィリピン",
+      "n": 3,
+      "u": [
+       "フィリピン大学",
+       "アテネオ・デ・マニラ大学",
+       "デ・ラ・サール大学"
+      ]
+     },
+     {
+      "c": "スイス",
+      "n": 3,
+      "u": [
+       "チューリッヒ応用科学大学",
+       "スイス北西部応用科学芸術大学"
+      ]
+     },
+     {
+      "c": "スウェーデン",
+      "n": 3,
+      "u": [
+       "リンネ大学",
+       "セーデルテルン大学",
+       "ハルムスタード大学"
+      ]
+     },
+     {
+      "c": "スペイン",
+      "n": 3,
+      "u": [
+       "IE大学",
+       "アリカンテ大学",
+       "ロビライビルジリ大学"
+      ]
+     },
+     {
+      "c": "フィンランド",
+      "n": 3,
+      "u": [
+       "ヘルシンキ大学",
+       "タンペレ応用科学大学",
+       "ローリア応用科学大学"
+      ]
+     },
+     {
+      "c": "タイ",
+      "n": 2,
+      "u": [
+       "タマサート大学",
+       "マヒドン大学"
+      ]
+     },
+     {
+      "c": "モロッコ",
+      "n": 2,
+      "u": [
+       "アル・アハウェイニ大学",
+       "ラバト国際大学"
+      ]
+     },
+     {
+      "c": "ペルー",
+      "n": 2,
+      "u": [
+       "太平洋大学",
+       "サンイグナシオデロヨラ大学"
+      ]
+     },
+     {
+      "c": "メキシコ",
+      "n": 2,
+      "u": [
+       "モンテレー工科大学",
+       "モンテレー大学"
+      ]
+     },
+     {
+      "c": "オランダ",
+      "n": 2,
+      "u": [
+       "ライデン大学",
+       "ハーグ応用科学大学"
+      ]
+     },
+     {
+      "c": "デンマーク",
+      "n": 2,
+      "u": [
+       "コペンハーゲン商科大学",
+       "オーフス・スクール・オブ・ビジネス"
+      ]
+     },
+     {
+      "c": "トルコ",
+      "n": 2,
+      "u": [
+       "サバンチ大学",
+       "オジエギン大学"
+      ]
+     },
+     {
+      "c": "ポルトガル",
+      "n": 2,
+      "u": [
+       "ISEG – リスボン経済経営学部 – リスボン大学",
+       "リスボン大学インスティチュートISCTEビジネス・スクール"
+      ]
+     },
+     {
+      "c": "インド",
+      "n": 1,
+      "u": [
+       "O.P.ジンダルグローバル大学"
+      ]
+     },
+     {
+      "c": "シンガポール",
+      "n": 1,
+      "u": [
+       "シンガポール・マネジメント大学"
+      ]
+     },
+     {
+      "c": "ブルネイ",
+      "n": 1,
+      "u": [
+       "ブルネイダルサラーム大学"
+      ]
+     },
+     {
+      "c": "エジプト",
+      "n": 1,
+      "u": [
+       "アメリカン大学カイロ校"
+      ]
+     },
+     {
+      "c": "チュニジア",
+      "n": 1,
+      "u": [
+       "メディテレーニアンスクールオブビジネス"
+      ]
+     },
+     {
+      "c": "ボツワナ",
+      "n": 1,
+      "u": [
+       "ボツワナ大学"
+      ]
+     },
+     {
+      "c": "ニュージーランド",
+      "n": 1,
+      "u": [
+       "カンタベリー大学UCビジネススクール"
+      ]
+     },
+     {
+      "c": "アルゼンチン",
+      "n": 1,
+      "u": [
+       "アルゼンティナ・デ・ラ・エンプレサ大学"
+      ]
+     },
+     {
+      "c": "アイスランド",
+      "n": 1,
+      "u": [
+       "アイスランド大学"
+      ]
+     },
+     {
+      "c": "アゼルバイジャン",
+      "n": 1,
+      "u": [
+       "アゼルバイジャン外交大学"
+      ]
+     },
+     {
+      "c": "キルギス",
+      "n": 1,
+      "u": [
+       "中央アジア・アメリカ大学"
+      ]
+     },
+     {
+      "c": "ギリシャ",
+      "n": 1,
+      "u": [
+       "アメリカンカレッジオブギリシャ"
+      ]
+     },
+     {
+      "c": "クロアチア",
+      "n": 1,
+      "u": [
+       "ザグレブ経済経営大学"
+      ]
+     },
+     {
+      "c": "スロバキア",
+      "n": 1,
+      "u": [
+       "ブラチスラバ経済大学"
+      ]
+     },
+     {
+      "c": "チェコ",
+      "n": 1,
+      "u": [
+       "メトロポリタン大学プラハ"
+      ]
+     },
+     {
+      "c": "ハンガリー",
+      "n": 1,
+      "u": [
+       "ブダペスト商科大学"
+      ]
+     },
+     {
+      "c": "ブルガリア",
+      "n": 1,
+      "u": [
+       "ブルガリア・アメリカン大学"
+      ]
+     },
+     {
+      "c": "モナコ",
+      "n": 1,
+      "u": [
+       "モナコ国際大学"
+      ]
+     },
+     {
+      "c": "リトアニア",
+      "n": 1,
+      "u": [
+       "ビリニュス大学"
+      ]
+     },
+     {
+      "c": "ルーマニア",
+      "n": 1,
+      "u": [
+       "ルーマニア・アメリカ大学"
+      ]
+     }
+    ],
+    "exchange": "交換留学のほか、FIRST・Language in Action・Field Study等の短期〜セメスタープログラム、SEU・SUAS・NBSとのダブルディグリーあり。",
+    "note": "公式「協定大学・機関一覧」は取得不可（robots制限）。留学サイト「国・地域から探す」の掲載校を数えた。中国14校にはマカオの大学を含む。"
+   }
+  },
+  "sources": [
+   "https://www.apu.ac.jp/abroad/search-country_region/"
+  ]
+ },
+ {
+  "name": "神田外語大学",
+  "info": {
+   "partners": {
+    "asof": "",
+    "total": 123,
+    "kind": "国際協定校・提携校（区別なし）",
+    "countries": [
+     {
+      "c": "アメリカ",
+      "n": 20,
+      "u": [
+       "Bowling Green State University",
+       "Dartmouth College",
+       "Edmonds College",
+       "Everett Community College",
+       "Fairleigh Dickinson University"
+      ]
+     },
+     {
+      "c": "韓国",
+      "n": 19,
+      "u": [
+       "Chung-Ang University",
+       "Dongseo University",
+       "Duksung Women's University",
+       "Geumgang University",
+       "Hankuk University of Foreign Studies"
+      ]
+     },
+     {
+      "c": "メキシコ",
+      "n": 7,
+      "u": [
+       "Universidad Autónoma de Guadalajara",
+       "Universidad de Guadalajara",
+       "Benemérita Universidad Autónoma de Puebla",
+       "Universidad de Guanajuato",
+       "Universidad de Monterrey"
+      ]
+     },
+     {
+      "c": "スペイン",
+      "n": 7,
+      "u": [
+       "Universidad de Alcalá",
+       "Universidad de Alicante",
+       "Universitat Autònoma de Barcelona",
+       "Universidad de Huelva",
+       "Universidad de Las Palmas de Gran Canaria"
+      ]
+     },
+     {
+      "c": "中国",
+      "n": 6,
+      "u": [
+       "Beijing International Studies University",
+       "Beijing Language and Culture University",
+       "Dalian University",
+       "Northeast Normal University",
+       "Shanghai International Studies University"
+      ]
+     },
+     {
+      "c": "マレーシア",
+      "n": 6,
+      "u": [
+       "Universiti Malaya",
+       "Universiti Putra Malaysia (UPM)",
+       "Universiti Malaysia Sarawak",
+       "Swinburne University of Technology Sarawak Campus",
+       "Infrastructure University Kuala Lumpur"
+      ]
+     },
+     {
+      "c": "台湾",
+      "n": 6,
+      "u": [
+       "National Taiwan Normal University",
+       "Chinese Culture University",
+       "Providence University",
+       "Shih Chien University",
+       "Kainan University"
+      ]
+     },
+     {
+      "c": "ベトナム",
+      "n": 6,
+      "u": [
+       "Hanoi University",
+       "Foreign Trade University",
+       "Ho Chi Minh City University of Education",
+       "Ton Duc Thang University",
+       "University of Social Sciences and Humanities, Viet Nam National University Ho Chi Minh City"
+      ]
+     },
+     {
+      "c": "ブラジル",
+      "n": 5,
+      "u": [
+       "Universidade de São Paulo",
+       "Universidade de Brasília",
+       "Universidade Estadual de Londrina",
+       "Universidade Federal de Juiz de Fora",
+       "Universidade Federal de Goiás"
+      ]
+     },
+     {
+      "c": "インドネシア",
+      "n": 5,
+      "u": [
+       "Universitas Katolik Indonesia Atma Jaya",
+       "Universitas Buddhi Dharma",
+       "Institut Seni Indonesia Denpasar",
+       "Universitas LIA",
+       "STIE Malangkucecwara"
+      ]
+     },
+     {
+      "c": "カナダ",
+      "n": 4,
+      "u": [
+       "Acadia University",
+       "Centennial College",
+       "University of Quebec at Montreal",
+       "University of the Fraser Valley"
+      ]
+     },
+     {
+      "c": "タイ",
+      "n": 4,
+      "u": [
+       "Chulalongkorn University",
+       "Chiang Mai University",
+       "Burapha University",
+       "Srinakharinwirot University"
+      ]
+     },
+     {
+      "c": "ポルトガル",
+      "n": 3,
+      "u": [
+       "Universidade de Lisboa",
+       "Universidade do Minho",
+       "Politécnico do Porto"
+      ]
+     },
+     {
+      "c": "イギリス",
+      "n": 3,
+      "u": [
+       "Keele University",
+       "University of Central Lancashire",
+       "University of the Highlands and Islands Perth College"
+      ]
+     },
+     {
+      "c": "ハンガリー",
+      "n": 2,
+      "u": [
+       "University of Pécs",
+       "Budapest Business School"
+      ]
+     },
+     {
+      "c": "インド",
+      "n": 2,
+      "u": [
+       "Symbiosis International University",
+       "Tilak Maharashtra University"
+      ]
+     },
+     {
+      "c": "ニュージーランド",
+      "n": 2,
+      "u": [
+       "Auckland University of Technology",
+       "Nelson Marlborough Institute of Technology"
+      ]
+     },
+     {
+      "c": "アルゼンチン",
+      "n": 1,
+      "u": [
+       "Universidad Nacional de la Plata"
+      ]
+     },
+     {
+      "c": "オーストラリア",
+      "n": 1,
+      "u": [
+       "Queensland University of Technology"
+      ]
+     },
+     {
+      "c": "キューバ",
+      "n": 1,
+      "u": [
+       "Universidad de la Habana"
+      ]
+     },
+     {
+      "c": "クロアチア",
+      "n": 1,
+      "u": [
+       "Juraj Dobrila University of Pula"
+      ]
+     },
+     {
+      "c": "チェコ",
+      "n": 1,
+      "u": [
+       "Metropolitan University Prague"
+      ]
+     },
+     {
+      "c": "デンマーク",
+      "n": 1,
+      "u": [
+       "Aarhus University"
+      ]
+     },
+     {
+      "c": "フィンランド",
+      "n": 1,
+      "u": [
+       "University of Jyväskylä"
+      ]
+     },
+     {
+      "c": "イスラエル",
+      "n": 1,
+      "u": [
+       "The Hebrew University of Jerusalem"
+      ]
+     },
+     {
+      "c": "イタリア",
+      "n": 1,
+      "u": [
+       "Università per Stranieri di Perugia"
+      ]
+     },
+     {
+      "c": "リトアニア",
+      "n": 1,
+      "u": [
+       "Vytautas Magnus University"
+      ]
+     },
+     {
+      "c": "パラグアイ",
+      "n": 1,
+      "u": [
+       "Universidad Nacional de Asunción"
+      ]
+     },
+     {
+      "c": "フィリピン",
+      "n": 1,
+      "u": [
+       "Lapulapu-Cebu International College"
+      ]
+     },
+     {
+      "c": "ポーランド",
+      "n": 1,
+      "u": [
+       "Adam Mickiewicz University"
+      ]
+     },
+     {
+      "c": "ルーマニア",
+      "n": 1,
+      "u": [
+       "Romanian-American University"
+      ]
+     },
+     {
+      "c": "南アフリカ",
+      "n": 1,
+      "u": [
+       "Stellenbosch University"
+      ]
+     },
+     {
+      "c": "スウェーデン",
+      "n": 1,
+      "u": [
+       "Dalarna University"
+      ]
+     }
+    ],
+    "exchange": "協定校への留学（セメスター・1年）や海外短期研修プログラムあり。",
+    "note": "一覧の掲載校を数えた（33か国・地域）。本文には「30ヵ国・地域」「120以上」と記載。"
+   }
+  },
+  "sources": [
+   "https://www.kandagaigo.ac.jp/kuis/main/exchange/affiliation/"
+  ]
+ },
+ {
+  "name": "関西外国語大学",
+  "info": {
+   "partners": {
+    "asof": "2025年3月",
+    "total": 419,
+    "kind": "協定締結校（全学）",
+    "countries": [
+     {
+      "c": "アメリカ",
+      "n": 194,
+      "u": [
+       "Arizona State University",
+       "Alfred University",
+       "Adrian College"
+      ]
+     },
+     {
+      "c": "カナダ",
+      "n": 38,
+      "u": [
+       "Carleton University",
+       "Brock University",
+       "Bishop's University"
+      ]
+     },
+     {
+      "c": "中国",
+      "n": 27,
+      "u": [
+       "Nankai University",
+       "Jilin University",
+       "Beijing Forestry University"
+      ]
+     },
+     {
+      "c": "オーストラリア",
+      "n": 18,
+      "u": [
+       "Deakin University",
+       "Flinders University",
+       "Adelaide University"
+      ]
+     },
+     {
+      "c": "韓国",
+      "n": 16,
+      "u": [
+       "Ewha Womans University",
+       "Hanyang University",
+       "Daejin University"
+      ]
+     }
+    ],
+    "exchange": "",
+    "note": "英語版International Affiliationsに「419 institutions of higher learning covering 55 countries and regions」（March, 2025）。取得できた一覧は上位5か国のみ（他の国は校名を取得できず）。"
+   }
+  },
+  "sources": [
+   "https://www.kansaigaidai.ac.jp/en/international/affiliations/"
+  ]
+ },
+ {
+  "name": "茨城キリスト教大学",
+  "info": {
+   "partners": {
+    "asof": "",
+    "total": 20,
+    "kind": "交換留学協定校のみ",
+    "countries": [
+     {
+      "c": "韓国",
+      "n": 4,
+      "u": [
+       "明知大学校",
+       "韓瑞大学校",
+       "江西大学校",
+       "新羅大学校"
+      ]
+     },
+     {
+      "c": "アメリカ",
+      "n": 4,
+      "u": [
+       "オクラホマ・クリスチャン大学",
+       "ウェストアラバマ大学",
+       "グアム大学",
+       "イースタン・ワシントン大学"
+      ]
+     },
+     {
+      "c": "ベトナム",
+      "n": 3,
+      "u": [
+       "ホーチミン市外国語情報技術大学",
+       "フエ大学外国語大学",
+       "ホーチミン市テクノロジー大学"
+      ]
+     },
+     {
+      "c": "中国",
+      "n": 2,
+      "u": [
+       "天津師範大学",
+       "広東海洋大学"
+      ]
+     },
+     {
+      "c": "台湾",
+      "n": 1,
+      "u": [
+       "南華大学"
+      ]
+     },
+     {
+      "c": "インドネシア",
+      "n": 1,
+      "u": [
+       "リアウ大学"
+      ]
+     },
+     {
+      "c": "キルギス",
+      "n": 1,
+      "u": [
+       "カラサエフ記念ビシケク国立大学"
+      ]
+     },
+     {
+      "c": "カナダ",
+      "n": 1,
+      "u": [
+       "ファンショーカレッジ"
+      ]
+     },
+     {
+      "c": "スウェーデン",
+      "n": 1,
+      "u": [
+       "リンネ大学"
+      ]
+     },
+     {
+      "c": "イタリア",
+      "n": 1,
+      "u": [
+       "ミラノ大学"
+      ]
+     },
+     {
+      "c": "ウクライナ",
+      "n": 1,
+      "u": [
+       "イワン・フランコ記念リヴィウ国立大学"
+      ]
+     }
+    ],
+    "exchange": "6ヵ月〜1年の交換留学（休学不要、留学先授業料は協定に基づき全額免除または減額）。海外語学研修・セメスター留学・デュアル・ディグリープログラムもあり。",
+    "note": "ページ表記は「11ヵ国・20大学」。グアム大学はアメリカに含めた。"
+   }
+  },
+  "sources": [
+   "https://www.icc.ac.jp/inter/long/index.html"
+  ]
+ },
+ {
+  "name": "常磐大学",
+  "info": {
+   "partners": {
+    "asof": "",
+    "total": 16,
+    "kind": "海外学術連携協定校（全学）",
+    "countries": [
+     {
+      "c": "台湾",
+      "n": 4,
+      "u": [
+       "国立台北教育大学",
+       "国立中正大学",
+       "敏實科技大学",
+       "大葉大学"
+      ]
+     },
+     {
+      "c": "アメリカ",
+      "n": 2,
+      "u": [
+       "カリフォルニア州立大学フレズノ校",
+       "ハワイ・カピオラニ・カレッジ"
+      ]
+     },
+     {
+      "c": "タイ",
+      "n": 2,
+      "u": [
+       "チェンマイ・ラチャパット大学",
+       "コンケン大学"
+      ]
+     },
+     {
+      "c": "カナダ",
+      "n": 1,
+      "u": [
+       "ランガラ・カレッジ"
+      ]
+     },
+     {
+      "c": "ポーランド",
+      "n": 1,
+      "u": [
+       "グダニスク大学"
+      ]
+     },
+     {
+      "c": "ルーマニア",
+      "n": 1,
+      "u": [
+       "アルバ・ユリア大学"
+      ]
+     },
+     {
+      "c": "韓国",
+      "n": 1,
+      "u": [
+       "大邱カトリック大学"
+      ]
+     },
+     {
+      "c": "中国",
+      "n": 1,
+      "u": [
+       "山西師範大学"
+      ]
+     },
+     {
+      "c": "ベトナム",
+      "n": 1,
+      "u": [
+       "フエ外国語大学"
+      ]
+     },
+     {
+      "c": "フィリピン",
+      "n": 1,
+      "u": [
+       "バゴ市立大学"
+      ]
+     },
+     {
+      "c": "モンゴル",
+      "n": 1,
+      "u": [
+       "モンゴル文化教育大学"
+      ]
+     }
+    ],
+    "exchange": "交換留学（派遣）・海外研修の制度あり。",
+    "note": "常磐大学の協定校数（常磐短期大学は15校）。"
+   }
+  },
+  "sources": [
+   "https://www.tokiwa.ac.jp/international/exchange-school/"
+  ]
+ },
+ {
+  "name": "国際ファッション専門職大学",
+  "info": {
+   "partners": {
+    "asof": "",
+    "total": 6,
+    "kind": "友好交流協定校＋姉妹校",
+    "countries": [
+     {
+      "c": "フランス",
+      "n": 3,
+      "u": [
+       "モードスペ（パリ）",
+       "CREAPOLE（パリ校、姉妹校）",
+       "ESMOD（パリ校、姉妹校）"
+      ]
+     },
+     {
+      "c": "中国",
+      "n": 1,
+      "u": [
+       "上海国際ファッション教育センター"
+      ]
+     },
+     {
+      "c": "オーストラリア",
+      "n": 1,
+      "u": [
+       "ボックスヒル・インスティチュート"
+      ]
+     },
+     {
+      "c": "台湾",
+      "n": 1,
+      "u": [
+       "崑山科技大学"
+      ]
+     }
+    ],
+    "exchange": "校費留学制度（海外有名大学への入学手続きと渡航費・入学金・学費1年分を大学負担）あり。全学生が海外実習・インターンシップ（パリ、ミラノ、ニューヨーク等）を体験。",
+    "note": "友好交流協定4校＋姉妹校2校（CREAPOLE・ESMOD）。校費留学の留学先（Central Saint Martins、FIT等）は協定校の明記がないため含めない。"
+   }
+  },
+  "sources": [
+   "https://www.piif.ac.jp/about/global/"
+  ]
+ },
+ {
+  "name": "東京国際工科専門職大学",
+  "info": {
+   "partners": {
+    "asof": "",
+    "total": 3,
+    "kind": "姉妹校（協定校の一覧なし）",
+    "countries": [
+     {
+      "c": "フランス",
+      "n": 2,
+      "u": [
+       "CREAPOLE（パリ校）",
+       "ESMOD（パリ校）"
+      ]
+     },
+     {
+      "c": "アメリカ",
+      "n": 1,
+      "u": [
+       "LIMカレッジ（ニューヨーク校）"
+      ]
+     }
+    ],
+    "exchange": "海外実習・海外インターンシップ（ニューヨーク等）、RMITでの語学研修、卒業後の海外進学を支援する校費留学制度あり。",
+    "note": "「協定」「提携」の語はなく、「姉妹校」とされる3校のみ数えた。グルノーブル・アルプ大学（連携）、IHK Export Akademie・SFUVET（国際アライアンス）、ワシントン大学・スタンフォード大学等（交流）は含めない。"
+   }
+  },
+  "sources": [
+   "https://www.iput.ac.jp/tokyo/about/global/"
+  ]
+ },
+ {
+  "name": "開志専門職大学",
+  "info": {
+   "partners": {
+    "asof": "2024年7月",
+    "total": 1,
+    "kind": "連携協定（国際交流活動ページで確認できたもの）",
+    "countries": [
+     {
+      "c": "オーストラリア",
+      "n": 1,
+      "u": [
+       "TAFE Queensland"
+      ]
+     }
+    ],
+    "exchange": "TAFE Queenslandでのオーストラリア海外留学プログラム、希望制の海外研修プログラム（韓国・東西大学での短期研修など）あり。",
+    "note": "協定と明記されたのはTAFE Queenslandのみ。東西大学（韓国）・国立高雄餐旅大学（台湾）・サラマンカ大学（スペイン）・ベルガモ大学（イタリア）とは交流・研修の記事のみで協定の明記なし。asofは記事の更新日。"
+   }
+  },
+  "sources": [
+   "https://kaishi-pu.ac.jp/social/with-category/global/"
+  ]
+ },
+ {
+  "name": "芸術文化観光専門職大学",
+  "info": {
+   "partners": {
+    "asof": "",
+    "total": 12,
+    "kind": "交換留学・海外実習・海外語学研修の協定先＋大学間交流協定",
+    "countries": [
+     {
+      "c": "台湾",
+      "n": 3,
+      "u": [
+       "建国科技大学",
+       "嶺東科技大学",
+       "修平科技大学"
+      ]
+     },
+     {
+      "c": "韓国",
+      "n": 3,
+      "u": [
+       "ソウル芸術大学校",
+       "中央大学校",
+       "京畿大学校"
+      ]
+     },
+     {
+      "c": "アメリカ",
+      "n": 2,
+      "u": [
+       "ワシントン大学",
+       "ハワイ大学"
+      ]
+     },
+     {
+      "c": "ドイツ",
+      "n": 1,
+      "u": [
+       "トリア大学"
+      ]
+     },
+     {
+      "c": "イギリス",
+      "n": 1,
+      "u": [
+       "サセックス大学"
+      ]
+     },
+     {
+      "c": "カナダ",
+      "n": 1,
+      "u": [
+       "ヴィクトリア大学"
+      ]
+     },
+     {
+      "c": "チェコ",
+      "n": 1,
+      "u": [
+       "プラハ芸術アカデミー"
+      ]
+     }
+    ],
+    "exchange": "台湾・韓国・ドイツの協定大学との交換留学（半年または1年）、教員同行の海外実習（ドイツ・台湾、約3週間）、全学生対象の海外語学研修（約3〜4週間）あり。",
+    "note": "米・英・加の4校は海外語学研修先。プラハ芸術アカデミーは大学ニュース「大学間交流協定を締結」（見出し）による。"
+   }
+  },
+  "sources": [
+   "https://www.at-hyogo.jp/international/fromcattoabroad/",
+   "https://www.at-hyogo.jp/news/14673/"
+  ]
+ },
+ {
+  "name": "静岡県立農林環境専門職大学",
+  "info": {
+   "partners": {
+    "asof": "",
+    "total": 2,
+    "kind": "沿革に記載の海外協定（短期大学部前身校時代を含む）",
+    "countries": [
+     {
+      "c": "インドネシア",
+      "n": 1,
+      "u": [
+       "ボゴール農科大学"
+      ]
+     },
+     {
+      "c": "オランダ",
+      "n": 1,
+      "u": [
+       "ウエラントカレッジ"
+      ]
+     }
+    ],
+    "exchange": "",
+    "note": "ボゴール農科大学とは2023年3月に「大学間交流に関する覚書」。ウエラントカレッジとは2004年10月に「教育提携姉妹校協定書」（前身校時代）。現在も有効かは未確認。"
+   }
+  },
+  "sources": [
+   "https://shizuoka-norin-u.ac.jp/overview/history/"
+  ]
+ },
+ {
+  "name": "名古屋国際工科専門職大学",
+  "info": {
+   "partners": {
+    "asof": "",
+    "total": 3,
+    "kind": "姉妹校（協定校の一覧なし）",
+    "countries": [
+     {
+      "c": "フランス",
+      "n": 2,
+      "u": [
+       "CREAPOLE（パリ校）",
+       "ESMOD（パリ校）"
+      ]
+     },
+     {
+      "c": "アメリカ",
+      "n": 1,
+      "u": [
+       "LIMカレッジ（ニューヨーク校）"
+      ]
+     }
+    ],
+    "exchange": "海外実習・海外インターンシップ、RMITでの語学研修、卒業後の海外進学を支援する校費留学制度あり。",
+    "note": "出典は東京・大阪・名古屋共通の国際教育ページ（名古屋単独の記載ではない）。「協定」の語はなく「姉妹校」3校のみ数えた。連携・交流・国際アライアンス先は含めない。"
+   }
+  },
+  "sources": [
+   "https://www.iput.ac.jp/about/global/"
+  ]
+ },
+ {
+  "name": "筑波技術大学",
+  "info": {
+   "partners": {
+    "asof": "",
+    "total": 14,
+    "kind": "大学間交流協定締結校・機関",
+    "countries": [
+     {
+      "c": "アメリカ",
+      "n": 3,
+      "u": [
+       "ロチェスター工科大学・国立聾工科大学",
+       "ギャローデット大学",
+       "アイオワ大学"
+      ]
+     },
+     {
+      "c": "中国",
+      "n": 3,
+      "u": [
+       "天津理工大学・聾工学院",
+       "北京連合大学・特殊教育学院",
+       "長春大学"
+      ]
+     },
+     {
+      "c": "韓国",
+      "n": 2,
+      "u": [
+       "韓京国立大学校",
+       "韓国ナザレ大学校"
+      ]
+     },
+     {
+      "c": "インドネシア",
+      "n": 2,
+      "u": [
+       "インドネシア教育大学",
+       "SLB NEGERI CICENDO"
+      ]
+     },
+     {
+      "c": "オーストリア",
+      "n": 1,
+      "u": [
+       "ヨハネス・ケプラー大学（リンツ）・統合教育機構"
+      ]
+     },
+     {
+      "c": "ロシア",
+      "n": 1,
+      "u": [
+       "バウマンモスクワ工科大学"
+      ]
+     },
+     {
+      "c": "タイ",
+      "n": 1,
+      "u": [
+       "マヒドン大学ラマティボディ病院医学部ラチャスダ校"
+      ]
+     },
+     {
+      "c": "フィリピン",
+      "n": 1,
+      "u": [
+       "デ・ラ・サール・カレッジ・オブ・セント・ベニルデ"
+      ]
+     }
+    ],
+    "exchange": "",
+    "note": "最新の締結は2026年3月（SLB NEGERI CICENDO、特別支援学校）。"
+   }
+  },
+  "sources": [
+   "https://www.tsukuba-tech.ac.jp/international/international_relationships.html"
+  ]
+ },
+ {
+  "name": "前橋工科大学",
+  "info": {
+   "partners": {
+    "asof": "",
+    "total": 5,
+    "kind": "沿革に記載の海外協定（大学間＋部局間）",
+    "countries": [
+     {
+      "c": "中国",
+      "n": 2,
+      "u": [
+       "北京工業大学",
+       "吉林建筑工程学院城建学院"
+      ]
+     },
+     {
+      "c": "タイ",
+      "n": 1,
+      "u": [
+       "カセサート大学工学部"
+      ]
+     },
+     {
+      "c": "ベトナム",
+      "n": 1,
+      "u": [
+       "ダナン工科大学"
+      ]
+     },
+     {
+      "c": "フィリピン",
+      "n": 1,
+      "u": [
+       "デ・ラ・サール大学"
+      ]
+     }
+    ],
+    "exchange": "北京工業大学への短期留学を支援する国際交流支援事業あり。",
+    "note": "沿革ページの締結記録（2003〜2024年）から数えた。現在も有効かは未確認。"
+   }
+  },
+  "sources": [
+   "https://www.maebashi-it.ac.jp/about/post_18.html",
+   "https://www.maebashi-it.ac.jp/regional/info/news/post_79.html"
+  ]
+ },
+ {
+  "name": "埼玉県立大学",
+  "info": {
+   "partners": {
+    "asof": "",
+    "total": 4,
+    "kind": "国際交流ページに記載の海外交流先（短期留学先）",
+    "countries": [
+     {
+      "c": "中国",
+      "n": 2,
+      "u": [
+       "山西医科大学",
+       "北京大学医学部公衆衛生学院"
+      ]
+     },
+     {
+      "c": "オーストラリア",
+      "n": 1,
+      "u": [
+       "クイーンズランド大学UQカレッジ"
+      ]
+     },
+     {
+      "c": "スイス",
+      "n": 1,
+      "u": [
+       "チューリッヒアプライドサイエンス大学"
+      ]
+     }
+    ],
+    "exchange": "約2〜3週間の短期留学（UQカレッジは単位認定・ホームステイ、チューリッヒは看護系）。海外協定校への留学を支援する海外留学奨励金あり。中国2校との交流は現在休止中。",
+    "note": "一覧表はなく本文記載の4校を数えた。協定締結日が明記されたのはUQカレッジ（2025年3月）のみ。"
+   }
+  },
+  "sources": [
+   "https://www.spu.ac.jp/about/disclosure/tabid1182.html"
+  ]
+ },
+ {
+  "name": "神奈川県立保健福祉大学",
+  "info": {
+   "partners": {
+    "asof": "",
+    "total": 10,
+    "kind": "主な協定締結先（海外、大学・病院・研究機関）",
+    "countries": [
+     {
+      "c": "ベトナム",
+      "n": 3,
+      "u": [
+       "ハノイ医科大学",
+       "ベトナム国立栄養研究所",
+       "セントポール病院"
+      ]
+     },
+     {
+      "c": "タイ",
+      "n": 2,
+      "u": [
+       "マヒドン大学",
+       "コンケン大学看護学部"
+      ]
+     },
+     {
+      "c": "アメリカ",
+      "n": 1,
+      "u": [
+       "カリフォルニア大学サンディエゴ校"
+      ]
+     },
+     {
+      "c": "オーストラリア",
+      "n": 1,
+      "u": [
+       "ニューカッスル大学"
+      ]
+     },
+     {
+      "c": "韓国",
+      "n": 1,
+      "u": [
+       "昌信大学社会福祉学科"
+      ]
+     },
+     {
+      "c": "カンボジア",
+      "n": 1,
+      "u": [
+       "プノンペン大学"
+      ]
+     },
+     {
+      "c": "中国",
+      "n": 1,
+      "u": [
+       "大連医科大学"
+      ]
+     }
+    ],
+    "exchange": "ニューカッスル大学（オーストラリア）との連携など。",
+    "note": "「主な協定締結先一覧（海外）」の11件（協定数）を相手機関ごとに数えた（ハノイ医科大学は複数協定に重複）。網羅とは限らない。"
+   }
+  },
+  "sources": [
+   "https://www.kuhs.ac.jp/cooperation/international/agreement/"
+  ]
+ },
+ {
+  "name": "北海道教育大学",
+  "info": {
+   "partners": {
+    "asof": "2026年10月",
+    "total": 33,
+    "kind": "交流協定校（全学）",
+    "countries": [
+     {
+      "c": "中国",
+      "n": 5,
+      "u": [
+       "瀋陽師範大学",
+       "哈爾濱師範大学",
+       "山東師範大学",
+       "四川大学",
+       "天津外国語大学"
+      ]
+     },
+     {
+      "c": "韓国",
+      "n": 4,
+      "u": [
+       "釜山大学校師範大学",
+       "ソウル教育大学校",
+       "釜山教育大学校",
+       "漢城大学校"
+      ]
+     },
+     {
+      "c": "イギリス",
+      "n": 4,
+      "u": [
+       "ロンドン大学アジア・アフリカ学院（SOAS）",
+       "ロンドン大学バークベックカレッジ",
+       "ヨークセント・ジョン大学",
+       "オックスフォードブルックス大学"
+      ]
+     },
+     {
+      "c": "台湾",
+      "n": 2,
+      "u": [
+       "台北市立大学",
+       "世新大学"
+      ]
+     },
+     {
+      "c": "香港",
+      "n": 1,
+      "u": [
+       "香港大学"
+      ]
+     },
+     {
+      "c": "オーストラリア",
+      "n": 1,
+      "u": [
+       "シドニー工科大学"
+      ]
+     },
+     {
+      "c": "アメリカ",
+      "n": 1,
+      "u": [
+       "アラスカ大学フェアバンクス校"
+      ]
+     },
+     {
+      "c": "カナダ",
+      "n": 1,
+      "u": [
+       "セント・メリーズ大学"
+      ]
+     },
+     {
+      "c": "ドイツ",
+      "n": 1,
+      "u": [
+       "ヴュルツブルク音楽大学"
+      ]
+     },
+     {
+      "c": "ノルウェー",
+      "n": 1,
+      "u": [
+       "ベルゲン大学"
+      ]
+     },
+     {
+      "c": "フィンランド",
+      "n": 1,
+      "u": [
+       "シベリウス音楽院"
+      ]
+     },
+     {
+      "c": "キルギス",
+      "n": 1,
+      "u": [
+       "ビシケク国立大学"
+      ]
+     },
+     {
+      "c": "ベトナム",
+      "n": 1,
+      "u": [
+       "フエ大学"
+      ]
+     }
+    ],
+    "exchange": "交流協定校への交換留学あり（漢城大学校語学コースの2学期目は有償など、条件は大学ごとに異なる）。",
+    "note": "totalはページ記載の「14か国・地域、33大学」。国別は一覧に掲載された24大学のみ（残り9大学は未掲載）。香港大学は原表で中国の項。"
+   }
+  },
+  "sources": [
+   "https://www.hokkyodai.ac.jp/international/center/exchange/partner_universities.html"
+  ]
+ },
+ {
+  "name": "公立はこだて未来大学",
+  "info": {
+   "partners": {
+    "asof": "",
+    "total": 24,
+    "kind": "学術交流協定等（大学間＋部局間）",
+    "countries": [
+     {
+      "c": "台湾",
+      "n": 7,
+      "u": [
+       "国立陽明交通大学",
+       "国立高雄大学",
+       "国立東華大学",
+       "国立台北科技大学",
+       "国立台湾海洋大学"
+      ]
+     },
+     {
+      "c": "中国",
+      "n": 3,
+      "u": [
+       "西安電子科技大学",
+       "上海交通大学電子工学科",
+       "北京理工大学芸術デザイン学部"
+      ]
+     },
+     {
+      "c": "韓国",
+      "n": 2,
+      "u": [
+       "檀国大学",
+       "弘益大学"
+      ]
+     },
+     {
+      "c": "タイ",
+      "n": 2,
+      "u": [
+       "タンマサート大学シリントーン国際工学部",
+       "チェンマイ大学"
+      ]
+     },
+     {
+      "c": "フランス",
+      "n": 2,
+      "u": [
+       "グルノーブル理工科大学",
+       "ギュスターブ・エッフェル大学"
+      ]
+     },
+     {
+      "c": "インドネシア",
+      "n": 1,
+      "u": [
+       "スラバヤ工科大学"
+      ]
+     },
+     {
+      "c": "フィリピン",
+      "n": 1,
+      "u": [
+       "デ・ラ・サール大学"
+      ]
+     },
+     {
+      "c": "シンガポール",
+      "n": 1,
+      "u": [
+       "ナンヤン・ポリテクニックデザイン学部"
+      ]
+     },
+     {
+      "c": "スリランカ",
+      "n": 1,
+      "u": [
+       "スリランカ日本情報科学大学"
+      ]
+     },
+     {
+      "c": "イギリス",
+      "n": 1,
+      "u": [
+       "サセックス大学工学・情報科学部"
+      ]
+     },
+     {
+      "c": "カナダ",
+      "n": 1,
+      "u": [
+       "ブリティッシュコロンビア大学応用科学部"
+      ]
+     },
+     {
+      "c": "アメリカ",
+      "n": 1,
+      "u": [
+       "コロラド大学ATLAS研究所"
+      ]
+     },
+     {
+      "c": "ウガンダ",
+      "n": 1,
+      "u": [
+       "マケレレ大学健康科学カレッジ"
+      ]
+     }
+    ],
+    "exchange": "国立高雄大学と交換留学協定あり。海外留学助成制度あり。",
+    "note": "サセックス大学はページではフランスの欄に掲載されているが、イギリスとして数えた。最新の海外協定は2025年2月（スリランカ日本情報科学大学）。"
+   }
+  },
+  "sources": [
+   "https://www.fun.ac.jp/academic-cooperation"
+  ]
+ },
+ {
+  "name": "公立千歳科学技術大学",
+  "info": {
+   "partners": {
+    "asof": "",
+    "total": 6,
+    "kind": "大学ニュースで締結が確認できた海外協定（包括連携協定・MOU、一部）",
+    "countries": [
+     {
+      "c": "台湾",
+      "n": 2,
+      "u": [
+       "国立台北科技大学",
+       "国立台湾科技大学"
+      ]
+     },
+     {
+      "c": "タイ",
+      "n": 1,
+      "u": [
+       "モンクット王工科大学北バンコク校"
+      ]
+     },
+     {
+      "c": "オーストラリア",
+      "n": 1,
+      "u": [
+       "シドニー工科大学"
+      ]
+     },
+     {
+      "c": "フィリピン",
+      "n": 1,
+      "u": [
+       "ライシウム・オブ・ザ・フィリピン大学"
+      ]
+     },
+     {
+      "c": "カンボジア",
+      "n": 1,
+      "u": [
+       "カンボジア工科大学"
+      ]
+     }
+    ],
+    "exchange": "",
+    "note": "協定校一覧ページは見つからず、大学公式ニュースの見出し（協定締結・再締結）で確認できた6校のみ。全体の一部の可能性あり。デ・ラ・サール大学とは会議の記事のみで協定は未確認。"
+   }
+  },
+  "sources": [
+   "https://www.chitose.ac.jp/news/1225",
+   "https://www.chitose.ac.jp/news/1089",
+   "https://www.chitose.ac.jp/news/1131",
+   "https://www.chitose.ac.jp/news/989",
+   "https://www.chitose.ac.jp/news/919",
+   "https://www.chitose.ac.jp/news/1002"
+  ]
+ },
+ {
+  "name": "群馬県立女子大学",
+  "info": {
+   "partners": {
+    "asof": "",
+    "total": 7,
+    "kind": "海外提携大学（交換留学協定校6＋特別留学生派遣協定校1）",
+    "countries": [
+     {
+      "c": "中国",
+      "n": 2,
+      "u": [
+       "蘇州大学",
+       "大連外国語大学"
+      ]
+     },
+     {
+      "c": "韓国",
+      "n": 1,
+      "u": [
+       "高麗大学校"
+      ]
+     },
+     {
+      "c": "台湾",
+      "n": 1,
+      "u": [
+       "国立高雄科技大学"
+      ]
+     },
+     {
+      "c": "フィリピン",
+      "n": 1,
+      "u": [
+       "デ・ラ・サール大学"
+      ]
+     },
+     {
+      "c": "マレーシア",
+      "n": 1,
+      "u": [
+       "マラヤ大学"
+      ]
+     },
+     {
+      "c": "アメリカ",
+      "n": 1,
+      "u": [
+       "ハワイ大学ヒロ校"
+      ]
+     }
+    ],
+    "exchange": "交換留学は留学先授業料免除（本学授業料を納付）。ハワイ大学ヒロ校への特別留学生派遣は本学授業料免除で留学先に授業料を納付。海外留学支援プログラムあり。",
+    "note": ""
+   }
+  },
+  "sources": [
+   "https://www.gpwu.ac.jp/abr/sister/"
+  ]
+ },
+ {
+  "name": "千葉県立保健医療大学",
+  "info": {
+   "partners": {
+    "asof": "",
+    "total": 1,
+    "kind": "学術交流協定（国際交流ページで確認できたもの）",
+    "countries": [
+     {
+      "c": "韓国",
+      "n": 1,
+      "u": [
+       "仁済（インジェ）大学"
+      ]
+     }
+    ],
+    "exchange": "",
+    "note": "2016年8月23日に仁済大学と協定調印。他の海外協定校の記載は確認できず。"
+   }
+  },
+  "sources": [
+   "https://www.pref.chiba.lg.jp/hoidai/kokusaikouryu/inje.html"
+  ]
+ }
+]
