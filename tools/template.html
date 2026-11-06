@@ -154,9 +154,9 @@ body.wide main,body.wide header{max-width:1320px}
 #jmap.moving .ulbl,#jmap.moving .clus,#jmap.moving #mlabels{opacity:.35}
 .sdisc{margin:4px 2px 6px;font-size:12px;color:var(--ng);font-weight:600}
 #ctip{position:absolute;pointer-events:none;background:var(--panel);border:1px solid var(--line);border-radius:6px;padding:2px 7px;font-size:12px;color:var(--muted);white-space:nowrap;box-shadow:0 2px 6px rgba(0,0,0,.12);z-index:3}
-#ctip.cap{color:var(--ink);font-weight:700}
+#ctip.cap{color:var(--ink)}
 .munip{fill:none;stroke:var(--muted);stroke-opacity:.45;stroke-width:.7px;vector-effect:non-scaling-stroke;pointer-events:none}
-#mlabels .clbl.cap{font-weight:700;fill:var(--ink)}
+#mlabels .clbl.cap{fill:var(--ink)}
 #mlabels .clbl{fill:var(--muted);pointer-events:none;paint-order:stroke;stroke:var(--bg);stroke-width:2.5px;stroke-linejoin:round;vector-effect:non-scaling-stroke}
 .dot.dim{display:none}
 #jmap{max-height:calc(100vh - 150px)}
@@ -985,13 +985,13 @@ function placeCities(boxes, ppu, inView, outside){
   for(const [name,cx,cy,,cap] of MUNI.labels){
     if(!cap) break;   // 県庁所在地だけ常に表示（それ以外の市町村名はマウスを重ねたときに出す）
     if(n>=limit) break; if(!inView([cx,cy])) continue;
-    const f2=cap?fs*1.15:fs, tw=name.length*f2*1.05, th=f2*1.2;
+    const f2=fs, tw=name.length*f2*1.05, th=f2*1.2;
     // 中央に置けなければ（大学名と重なるなど）、県庁所在地は上下左右にずらして置く
     const offs=cap?[[0,0],[0,th*1.1],[0,-th*1.1],[tw*0.6,0],[-tw*0.6,0],[0,th*2.2],[0,-th*2.2]]:[[0,0],[0,th*1.1]];
     let pos=null; for(const [ox,oy] of offs){ const b=[cx+ox-tw/2,cy+oy-th/2,tw,th]; if(!hit(b)){ pos=[cx+ox,cy+oy]; B.push(b); break; } }
     if(!pos) continue; n++;
     const el=document.createElementNS(SVGNS,"text"); el.setAttribute("x",pos[0].toFixed(2)); el.setAttribute("y",(pos[1]+f2*0.35).toFixed(2));
-    el.setAttribute("text-anchor","middle"); el.setAttribute("font-size",fs.toFixed(3)); el.setAttribute("class","clbl"+(cap?" cap":"")); if(cap) el.setAttribute("font-size",(fs*1.15).toFixed(3)); el.textContent=name; g.appendChild(el);
+    el.setAttribute("text-anchor","middle"); el.setAttribute("font-size",fs.toFixed(3)); el.setAttribute("class","clbl"+(cap?" cap":"")); el.textContent=name; g.appendChild(el);
   }
 }
 function placeLabels(){
