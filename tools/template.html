@@ -319,14 +319,14 @@ ul.mini li{font-size:12.5px;margin:2px 0}
 </section>
 
 <section id="v-ai" hidden>
-  <p class="mintro">生徒の希望と成績を入れると、登録データから<b>挑戦校・実力相応校・安全校</b>に分けて候補と面談の話題を出します（AIは使いません）。印刷して面談シートとして使えます。</p>
+  <p class="mintro">生徒の希望と成績を入れると、登録データから<b>挑戦校・実力相応校・安全校</b>に分けて候補と面談の話題を出します（AIは使いません）。印刷して面談シートとして使えます。氏名などの個人情報は入力しない設計です（入力内容は保存されません）。</p>
   <form id="aiform" class="aiform" onsubmit="return false">
     <div class="airow">
-      <label>生徒名（任意・印刷用）<input id="ai-name" placeholder="例：3年1組 〇〇"></label>
       <label>目指している職業<input id="ai-job" placeholder="例：臨床心理士、英語教員"></label>
       <label>学びたい学問・興味<input id="ai-study" placeholder="例：心理学、AI、昆虫の生態"></label>
     </div>
     <div class="airow">
+      <label>模試の種類<select id="ai-moshi"><option value="kawai">河合塾 全統記述模試</option><option value="shinken">ベネッセ 進研模試</option></select></label>
       <label>模試の偏差値<input id="ai-level" inputmode="decimal" placeholder="例：58"></label>
       <label>共テ得点率（％）<input id="ai-kt" inputmode="decimal" placeholder="例：72"></label>
       <label>共テで受ける教科数<select id="ai-kyoka"><option value="">未定・共テなし</option><option value="3">3教科まで</option><option value="5">4〜5教科</option><option value="6">6教科以上</option></select></label>
@@ -1151,10 +1151,15 @@ function expand(tok){ const out=new Set([tok]); for(const [k,v] of Object.entrie
 function fieldsOf(x){ const f=INFO[x.name]||{}; return {faculties:facList(f),licenses:f.licenses||[],careers:f.careers?[f.careers]:[],research:f.research||[],feats:x.feats||[],memo:x.memo?[x.memo]:[]}; }
 function lo(v){ const m=String(v||"").match(/[\d.]+/); return m?parseFloat(m[0]):null; }
 function hi(v){ const m=String(v||"").match(/[\d.]+/g); return m?parseFloat(m[m.length-1]):null; }
+// 進研模試の偏差値を河合塾（全統記述）の尺度へおおまかに換算する。
+// 進研模試は浪人生がほぼ受けず母集団が広いため高めに出る（例：明治大法学部 進研67・河合60）。
+// 上位ほど差が大きく、中位以下では差が小さくなる傾向をおおまかに置いた目安で、公式の換算表ではない。
+function shinkenToKawai(v){ const gap=v>=65?7:v>=50?3+(v-50)*(4/15):3; return Math.round((v-gap)*2)/2; }
 function studentInput(){
   const num=v=>{ const m=String(v||"").normalize("NFKC").match(/[\d.]+/); return m?+m[0]:null; };
-  return {name:$("ai-name").value.trim(), job:$("ai-job").value.trim(), study:$("ai-study").value.trim(), other:$("ai-other").value.trim(),
-    region:$("ai-region").value, type:$("ai-type").value, hen:num($("ai-level").value), kt:num($("ai-kt").value),
+  const raw=num($("ai-level").value), moshi=$("ai-moshi").value;
+  return {moshi, rawHen:raw, hen:raw==null?null:(moshi==="shinken"?shinkenToKawai(raw):raw), job:$("ai-job").value.trim(), study:$("ai-study").value.trim(), other:$("ai-other").value.trim(),
+    region:$("ai-region").value, type:$("ai-type").value, kt:num($("ai-kt").value),
     kyoka:+$("ai-kyoka").value||null, budget:+$("ai-budget").value||null, ways:[...document.querySelectorAll(".aiw:checked")].map(e=>e.value)};
 }
 function recommend(S){
@@ -1235,20 +1240,21 @@ $("ai-go").onclick=()=>{
   const list=recommend(S);
   if(!list.length){ $("ai-status").textContent="条件に合う学校が見つかりませんでした。言葉を変える（例：「臨床心理士」→「心理」）か、地域・区分・学費・入試方式の条件をゆるめてください。"; $("ai-out").innerHTML=""; $("ai-print").hidden=true; return; }
   $("ai-status").textContent=items.length+"校の登録情報と照らし合わせて"+list.length+"校が該当。各区分の上位を表示しています。最終判断は募集要項と本人の意思で。";
-  const cond=[S.job&&("職業："+S.job),S.study&&("学問："+S.study),S.hen!=null&&("偏差値 "+S.hen),S.kt!=null&&("共テ "+S.kt+"%"),S.kyoka&&("共テ "+({3:"3教科まで",5:"4〜5教科",6:"6教科以上"})[S.kyoka]),S.budget&&("学費 "+man(S.budget)+"まで"),S.region&&("地域："+S.region),S.type&&("区分："+({pub:"国公立",pri:"私立",dai:"大学校"})[S.type]),S.ways.length&&("方式："+S.ways.join("・")),S.other&&("その他："+S.other)].filter(Boolean);
-  let h='<div class="msheet"><h2>面談シート'+(S.name?'　'+esc(S.name):'')+'</h2><div class="sub2">'+new Date().toLocaleDateString("ja-JP")+'　'+esc(cond.join("／"))+'</div></div>';
+  const cond=[S.job&&("職業："+S.job),S.study&&("学問："+S.study),S.hen!=null&&(S.moshi==="shinken"?("進研模試 偏差値 "+S.rawHen+"（河合換算 約"+S.hen+"）"):("河合模試 偏差値 "+S.hen)),S.kt!=null&&("共テ "+S.kt+"%"),S.kyoka&&("共テ "+({3:"3教科まで",5:"4〜5教科",6:"6教科以上"})[S.kyoka]),S.budget&&("学費 "+man(S.budget)+"まで"),S.region&&("地域："+S.region),S.type&&("区分："+({pub:"国公立",pri:"私立",dai:"大学校"})[S.type]),S.ways.length&&("方式："+S.ways.join("・")),S.other&&("その他："+S.other)].filter(Boolean);
+  let h='<div class="msheet"><h2>面談シート</h2><div class="sub2">'+new Date().toLocaleDateString("ja-JP")+'　'+esc(cond.join("／"))+'</div></div>';
   for(const [k,label,desc] of BANDS){
     const L=list.filter(r=>r.band===k).slice(0,k==="unk"?8:5); if(!L.length) continue;
     h+='<div class="mgrp '+k+'"><h2>'+label+'<small>'+desc+'・'+list.filter(r=>r.band===k).length+'校中 上位'+L.length+'校</small></h2><div class="aiout">'+L.map(recCard).join("")+'</div></div>';
   }
   h+='<div class="msheet" style="margin-top:12px"><h2>面談で確認すること</h2><ul>'+checklist(S,list).map(t=>'<li>'+esc(t)+'</li>').join("")+'</ul><div class="sub2">メモ：</div><div style="height:4em;border-bottom:1px dashed var(--line)"></div></div>';
+  if(S.moshi==="shinken"&&S.rawHen!=null) h+='<div class="enote" style="margin-top:8px">※難易度は河合塾（Kei-Net）の偏差値です。進研模試の偏差値は河合の尺度へ目安で換算しています（例：進研67≒河合60）。境目の学校は進研模試の合格可能性判定（志望校判定）で確かめてください。</div>';
   $("ai-out").innerHTML=h; $("ai-print").hidden=false;
   $("ai-out").querySelectorAll("[data-card]").forEach(b=>b.onclick=()=>openCard(+b.dataset.card));
   $("ai-out").querySelectorAll("[data-map]").forEach(b=>b.onclick=()=>{ location.hash="#map"; setTimeout(()=>selectUniv(b.dataset.map),80); });
 };
 $("ai-print").onclick=()=>window.print();
 $("ai-clear").onclick=()=>{ $("aiform").reset(); $("ai-out").innerHTML=""; $("ai-status").textContent=""; $("ai-print").hidden=true; };
-["ai-name","ai-job","ai-study","ai-other","ai-level","ai-kt"].forEach(id=>$(id).addEventListener("keydown",e=>{ if(e.key==="Enter"){ e.preventDefault(); $("ai-go").click(); } }));
+["ai-job","ai-study","ai-other","ai-level","ai-kt"].forEach(id=>$(id).addEventListener("keydown",e=>{ if(e.key==="Enter"){ e.preventDefault(); $("ai-go").click(); } }));
 
 shuffleOrder(); rebuild(); showView();
 </script>
