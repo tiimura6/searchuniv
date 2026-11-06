@@ -836,7 +836,7 @@ function passFilters(x){
   const kf=$("f-kyoka").value, rf=$("f-rl").value;
   const mf=$("f-meth").value; if(mf){ const L=(((INFO[x.name]||{}).methods)||{}).list||[]; if(!L.length) return false;
     const ok={kouki:()=>L.some(r=>/後期/.test(r.name)), nijiH:()=>L.some(r=>r.kubun==="一般"&&r.kn&&r.kn[1]>r.kn[0]), ktH:()=>L.some(r=>r.kubun==="一般"&&r.kn&&r.kn[0]>r.kn[1]),
-      suisen:()=>L.some(r=>r.kubun==="推薦"&&/公募|学校推薦型/.test(r.name)&&!/指定校/.test(r.name)), sk_nokt:()=>L.some(r=>(r.kubun==="推薦"||r.kubun==="総合型")&&/課さない|不要|なし/.test(r.kyotsu||"")),
+      suisen:()=>L.some(r=>r.kubun==="推薦"&&/公募|学校推薦型/.test(r.name)&&!/指定校/.test(r.name)), sk_nokt:()=>L.some(r=>(r.kubun==="推薦"||r.kubun==="総合型")&&/課さない|不要|^なし|共テなし|利用しない/.test(r.kyotsu||"")&&!/記載なし|未確認/.test(r.kyotsu||"")),
       sogo:()=>L.some(r=>r.kubun==="総合型"), ktriyo:()=>L.some(r=>r.kubun==="共テ利用")}[mf]; if(ok&&!ok()) return false; }
   const on=kindsOn(); if(on.size<4){ const k=kindOf(x); const g=(k==="国立"||k==="公立"||k==="私立")?k:"その他"; if(!on.has(g)) return false; }
   const k=(INFO[x.name]||{}).kyotsu;

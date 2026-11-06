@@ -6,7 +6,7 @@
 1. 河合塾 Kei-Net 大学検索システム（`https://search.keinet.ne.jp/{コード}/...`）
    - 一般選抜の科目・配点：`/general/exam_subject`（共通テストと個別試験＝二次の科目・配点。国公立は前期・中期・後期、私立は一般方式と共テ利用方式）
    - 一般選抜の日程・方式：`/general/schedule`（あれば）
-   - 推薦・総合型：`/recommend/exam_subject`、`/recommend/schedule`、`/recommend/exam_result`（あるものだけ。URLが無ければ `/recommend` のトップから辿る）
+   - 推薦・総合型：`/recommend/exam_rec`（学校推薦型）、`/recommend/exam_ao`（総合型）、`/recommend/exam_result`（あるものだけ。そのページが無い大学は「許可リスト外」エラーになる＝その方式の掲載なし）
 2. 旺文社パスナビ、ベネッセ マナビジョン（公開ページ）
 3. 大学公式の入試ページ・募集要項（学生募集要項、入学者選抜要項）
 大学校は各校の公式「採用試験・入学試験」ページを使う（一次試験・二次試験の内容）。

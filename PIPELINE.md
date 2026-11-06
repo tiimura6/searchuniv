@@ -28,7 +28,8 @@ Searchuniv に全国の大学を少しずつ追加し、既存校の空欄（研
 - `https://search.keinet.ne.jp/{コード}/outline/licential`（取得可能資格）
 - `https://search.keinet.ne.jp/{コード}/outline/admission_employment`（進学・就職実績）
 - `https://search.keinet.ne.jp/{コード}/general/exam_subject`（共通テストの教科・科目数と英語リーディング:リスニングの配点 → info.kyotsu。R:Lは整数比に約分、例 100:100→"1:1"、160:40→"4:1"）
-- **入試方式（info.methods）**：`tools/METHODS_SPEC.md` の形で、一般選抜（国公立は前期・後期の共テ科目・二次科目・共テ:二次の配点比）、私立の共テ利用、学校推薦型（公募・指定校）、総合型をまとめる。`/general/exam_subject` と `/recommend/exam_subject`（または `/recommend` トップ）を使う。取れなかったら enrich に `{name, keinet, need:["methods"]}` で積んで後回しにしてよい。enrich の need に methods があるときも同じ手順。
+- **入試方式（info.methods）**：`tools/METHODS_SPEC.md` の形で、一般選抜（国公立は前期・後期の共テ科目・二次科目・共テ:二次の配点比）、私立の共テ利用、学校推薦型（公募・指定校）、総合型をまとめる。`/general/exam_subject`、`/recommend/exam_rec`（推薦）、`/recommend/exam_ao`（総合型）を使う。ページが途中で切れたら大学公式の募集要項やマナビジョンで補う。取れなかったら enrich に `{name, keinet, need:["methods"]}` で積んで後回しにしてよい。enrich の need に methods があるときも同じ手順。
+  - need に **methods_gap** があるとき：data/info.json のその校の methods（list と note）を読み、「未確認」「切れて確認できず」と書かれた方式・学部や、無い推薦（公募）・総合型を、大学公式の入試ページ・募集要項（PDF可）、マナビジョン、パスナビで確認する。batch では `info.methods_add` に {"list": [足す・直す行だけ], "note": "直した後の note 全文", "summary": "必要なら新しい要約"} を書く（同じ区分・方式名の行は置き換わる）。確認できたものだけ書き、確認できなければ何も書かず done に移す。
 - 余裕があれば `https://search.keinet.ne.jp/{コード}/general/exam_result`（一般選抜の「大学計」）とボーダー（偏差値・共テ得点率）
 大学校・専門職大学で Kei-Net に無いものは、公式サイトから。
 
