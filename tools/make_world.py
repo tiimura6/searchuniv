@@ -15,14 +15,18 @@ arcs = []
 for a in t['arcs']:
     x = y = 0; pts = []
     for dx, dy in a:
-        x += dx; y += dy; pts.append(proj(x * sx + tx, y * sy + ty))
+        x += dx; y += dy; pts.append((x * sx + tx, y * sy + ty))
     arcs.append(pts)
 def ring(r):
     pts = []
     for i in r:
         seg = arcs[i] if i >= 0 else arcs[~i][::-1]
         pts.extend(seg if not pts else seg[1:])
-    return pts
+    # 日付変更線をまたぐ輪（ロシア東端・フィジーなど）は、西経側の点を180度に寄せて横一文字の線が出ないようにする
+    if any(lon > 150 for lon, _ in pts) and any(lon < -150 for lon, _ in pts):
+        east = sum(1 for lon, _ in pts if lon > 0) >= len(pts) / 2
+        pts = [((180 if east else -180) if (lon < 0) == east else lon, lat) for lon, lat in pts]
+    return [proj(lon, lat) for lon, lat in pts]
 X0 = proj(-180, 0)[0]; Y0 = proj(0, 85)[1]
 codes = {c[2]: c for c in json.load(open(codes_p))}
 jan = json.load(open(ja_p))['countries']

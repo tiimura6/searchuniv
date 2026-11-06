@@ -128,6 +128,22 @@ body.wide main,body.wide header{max-width:1320px}
 .ktbox{margin-top:16px;border:1px solid var(--line);border-radius:12px;padding:10px 14px;background:var(--panel)}
 .ktbox>summary{cursor:pointer;font-weight:700}
 @media print{ #v-plan .mintro,.xbtn,.psel,.prow,#plan-print,.star{display:none !important} }
+.wmapwrap{position:relative;cursor:zoom-in}
+.wzoomhint{position:absolute;right:6px;top:6px;font-size:11px;background:var(--panel);border:1px solid var(--line);border-radius:6px;padding:1px 6px;color:var(--muted);pointer-events:none}
+#wmodal{position:fixed;inset:0;background:rgba(0,0,0,.45);z-index:50;display:flex;align-items:center;justify-content:center;padding:12px}
+#wmodal[hidden]{display:none}
+.wmbox{background:var(--bg);border-radius:14px;width:min(1200px,100%);height:min(820px,100%);display:flex;flex-direction:column;overflow:hidden;box-shadow:0 10px 30px rgba(0,0,0,.25)}
+.wmhead{display:flex;align-items:center;gap:10px;flex-wrap:wrap;padding:10px 14px;border-bottom:1px solid var(--line)}
+.wmbtns{margin-left:auto;display:flex;gap:6px}
+.wmbody{flex:1;display:grid;grid-template-columns:1fr 280px;min-height:0}
+.wmmap{min-height:0;display:flex}
+.wmap.big{width:100%;height:100%;margin:0;border-radius:0;cursor:grab;touch-action:none}
+.wlab{fill:var(--ink);font-weight:600;paint-order:stroke;stroke:var(--bg);stroke-width:2px;stroke-linejoin:round;vector-effect:non-scaling-stroke;pointer-events:none}
+.wmlist{list-style:none;margin:0;padding:8px 12px;overflow-y:auto;border-left:1px solid var(--line);font-size:12.5px}
+.wmlist li{padding:5px 4px;border-bottom:1px dashed var(--line);cursor:pointer}
+.wmlist li.on{background:color-mix(in srgb,var(--accent) 10%,transparent)}
+body.noscroll{overflow:hidden}
+@media (max-width:760px){.wmbody{grid-template-columns:1fr;grid-template-rows:1fr 38%}.wmlist{border-left:0;border-top:1px solid var(--line)}}
 .partners{border:1px solid var(--line);border-radius:10px;padding:10px 12px;margin:8px 0}
 .wmap{width:100%;height:auto;display:block;margin:6px 0;background:color-mix(in srgb,var(--accent) 5%,transparent);border-radius:8px}
 .wbase{fill:var(--line);stroke:var(--panel);stroke-width:.3}
@@ -981,12 +997,49 @@ function partnerBlock(name){
     if(pt){ const r=2+5*Math.sqrt((c.n||1)/mx); const mxp=(pt[0]+jp[0])/2, myp=Math.min(pt[1],jp[1])-Math.abs(pt[0]-jp[0])*0.18;
       lines+='<path class="wl" d="M'+jp[0]+' '+jp[1]+'Q'+mxp.toFixed(1)+' '+myp.toFixed(1)+' '+pt[0]+' '+pt[1]+'"/>';
       dots+='<circle class="wd" cx="'+pt[0]+'" cy="'+pt[1]+'" r="'+r.toFixed(1)+'"><title>'+esc(c.c)+' '+(c.n||"")+'校'+((c.u||[]).length?'：'+esc(c.u.join("、")):'')+'</title></circle>'; } }
-  const svg='<svg class="wmap" viewBox="0 0 '+WORLD.w+' '+WORLD.h+'" role="img" aria-label="協定校のある国"><use href="#worldbase" class="wbase"/><g class="wf">'+fills+'</g><g>'+lines+'</g>'+dots+'<circle class="wjp" cx="'+jp[0]+'" cy="'+jp[1]+'" r="3.5"><title>'+esc(name)+'</title></circle></svg>';
+  const svg='<div class="wmapwrap" data-wname="'+esc(name)+'" title="クリックで拡大"><span class="wzoomhint">⤢ クリックで拡大</span><svg class="wmap" viewBox="0 0 '+WORLD.w+' '+WORLD.h+'" role="img" aria-label="協定校のある国"><use href="#worldbase" class="wbase"/><g class="wf">'+fills+'</g><g>'+lines+'</g>'+dots+'<circle class="wjp" cx="'+jp[0]+'" cy="'+jp[1]+'" r="3.5"><title>'+esc(name)+'</title></circle></svg></div>';
   const nC=cs.length, top=cs.slice(0,8);
   const list='<ul class="plist">'+top.map(c=>'<li><b>'+esc(c.c)+'</b> '+(c.n?c.n+'校':'')+((c.u||[]).length?'<span class="sub2">（'+esc(c.u.slice(0,3).join("、"))+(c.u.length>3||((c.n||0)>3)?' など':'')+'）</span>':'')+'</li>').join("")+'</ul>'+(nC>8?'<details><summary>ほか'+(nC-8)+'か国・地域</summary><ul class="plist">'+cs.slice(8).map(c=>'<li><b>'+esc(c.c)+'</b> '+(c.n?c.n+'校':'')+'</li>').join("")+'</ul></details>':'');
   const head=[P.total?('協定校 '+P.total+'校'):'', nC+'か国・地域', P.kind||'', P.asof?('（'+P.asof+'時点）'):''].filter(Boolean).join('　');
   return '<div class="partners"><div class="exam-h">海外の協定校（留学先）</div><div class="sub2">'+esc(head)+'</div>'+svg+(P.exchange?'<div class="pex">'+esc(P.exchange)+'</div>':'')+list+(P.note?'<div class="enote">※'+esc(P.note)+'</div>':'')+'</div>';
 }
+
+// ===== 協定校の世界地図を大きく表示（クリックで開く。ホイール・ドラッグ・ピンチ・ボタンで拡大縮小）=====
+function openWorldModal(name){
+  const P=(INFO[name]||{}).partners; if(!P||!WORLD) return;
+  const cs=P.countries.map(c=>({...c,iso:isoOf(c.c)})).filter(c=>c.iso&&WORLD.cent[c.iso]).sort((a,b)=>(b.n||0)-(a.n||0));
+  const src=document.querySelector('.wmapwrap[data-wname="'+CSS.escape(name)+'"] svg'); if(!src) return;
+  let m=$("wmodal"); if(!m){ m=document.createElement("div"); m.id="wmodal"; document.body.appendChild(m); }
+  const labels=cs.map(c=>{ const pt=WORLD.cent[c.iso]; return '<text class="wlab" x="'+pt[0]+'" y="'+(pt[1]-4)+'" text-anchor="middle">'+esc(c.c)+' '+(c.n||"")+'</text>'; }).join("");
+  m.innerHTML='<div class="wmbox" role="dialog" aria-label="'+esc(name)+'の協定校"><div class="wmhead"><b>'+esc(name)+'　海外の協定校</b><span class="sub2">'+cs.length+'か国・地域'+(P.total?'・'+P.total+'校':'')+'</span><span class="wmbtns"><button type="button" class="btn" data-z="in">＋</button><button type="button" class="btn" data-z="out">－</button><button type="button" class="btn" data-z="reset">全体</button><button type="button" class="btn" data-z="close">閉じる</button></span></div>'+
+    '<div class="wmbody"><div class="wmmap">'+src.outerHTML.replace('class="wmap"','class="wmap big"').replace('</svg>','<g class="wlabs">'+labels+'</g></svg>')+'</div>'+
+    '<ul class="wmlist">'+cs.map(c=>'<li data-iso="'+c.iso+'"><b>'+esc(c.c)+'</b> '+(c.n?c.n+'校':'')+((c.u||[]).length?'<div class="sub2">'+esc(c.u.join("、"))+'</div>':'')+'</li>').join("")+'</ul></div></div>';
+  m.hidden=false; document.body.classList.add("noscroll");
+  const svg=m.querySelector("svg"), W0=WORLD.w, H0=WORLD.h; let vb=[0,0,W0,H0];
+  // 国名ラベルは重ならないものだけ表示（校数の多い国から）。拡大すると増える
+  const lab=()=>{ const sc=Math.min(svg.clientWidth/vb[2], svg.clientHeight/vb[3])||1, fs=12/sc, boxes=[];
+    svg.querySelectorAll(".wlab").forEach(t=>{ t.setAttribute("font-size",fs.toFixed(2)); const x=+t.getAttribute("x"), y=+t.getAttribute("y"), w=t.textContent.length*fs*0.95, h=fs*1.2, bx=[x-w/2,y-h,w,h];
+      const hit=boxes.some(o=>!(bx[0]+bx[2]<o[0]||bx[0]>o[0]+o[2]||bx[1]+bx[3]<o[1]||bx[1]>o[1]+o[3]));
+      t.style.display=hit?"none":""; if(!hit) boxes.push(bx); }); };
+  const set=v=>{ const w=Math.max(W0/12,Math.min(W0,v[2])), h=w*H0/W0; vb=[Math.max(-W0*0.1,Math.min(W0*1.1-w,v[0])),Math.max(-H0*0.1,Math.min(H0*1.1-h,v[1])),w,h]; svg.setAttribute("viewBox",vb.join(" ")); lab(); };
+  const pt=e=>{ const r=svg.getBoundingClientRect(), k=Math.min(r.width/vb[2], r.height/vb[3]); const ox=(r.width-vb[2]*k)/2, oy=(r.height-vb[3]*k)/2; return [vb[0]+(e.clientX-r.left-ox)/k, vb[1]+(e.clientY-r.top-oy)/k, k]; };
+  const zoom=(f,cx,cy)=>{ if(cx==null){ cx=vb[0]+vb[2]/2; cy=vb[1]+vb[3]/2; } set([cx-(cx-vb[0])*f, cy-(cy-vb[1])*f, vb[2]*f]); };
+  svg.addEventListener("wheel",e=>{ e.preventDefault(); const [x,y]=pt(e); zoom(Math.exp(e.deltaY*0.0015),x,y); },{passive:false});
+  const ptrs=new Map(); let last=null, pd=null;
+  svg.addEventListener("pointerdown",e=>{ ptrs.set(e.pointerId,e); svg.setPointerCapture(e.pointerId); last=[e.clientX,e.clientY]; if(ptrs.size===2){ const [a,b]=[...ptrs.values()]; pd=Math.hypot(a.clientX-b.clientX,a.clientY-b.clientY); } });
+  svg.addEventListener("pointermove",e=>{ if(!ptrs.has(e.pointerId)) return; ptrs.set(e.pointerId,e);
+    if(ptrs.size===2&&pd){ const [a,b]=[...ptrs.values()]; const d=Math.hypot(a.clientX-b.clientX,a.clientY-b.clientY); const [x,y]=pt({clientX:(a.clientX+b.clientX)/2,clientY:(a.clientY+b.clientY)/2}); zoom(pd/d,x,y); pd=d; return; }
+    if(last){ const k=pt(e)[2]; set([vb[0]-(e.clientX-last[0])/k, vb[1]-(e.clientY-last[1])/k, vb[2]]); last=[e.clientX,e.clientY]; } });
+  const up=e=>{ ptrs.delete(e.pointerId); if(ptrs.size<2) pd=null; if(!ptrs.size) last=null; };
+  svg.addEventListener("pointerup",up); svg.addEventListener("pointercancel",up);
+  m.querySelectorAll("[data-z]").forEach(b=>b.onclick=()=>{ const z=b.dataset.z; if(z==="in") zoom(0.6); else if(z==="out") zoom(1/0.6); else if(z==="reset") set([0,0,W0,H0]); else closeWorldModal(); });
+  m.querySelectorAll(".wmlist li").forEach(li=>li.onclick=()=>{ const c=WORLD.cent[li.dataset.iso]; if(c){ const w=W0/5; set([c[0]-w/2,c[1]-w*H0/W0/2,w]); m.querySelectorAll(".wmlist li").forEach(x=>x.classList.toggle("on",x===li)); } });
+  m.onclick=e=>{ if(e.target===m) closeWorldModal(); };
+  requestAnimationFrame(lab);
+}
+function closeWorldModal(){ const m=$("wmodal"); if(m){ m.hidden=true; m.innerHTML=""; } document.body.classList.remove("noscroll"); }
+document.addEventListener("keydown",e=>{ if(e.key==="Escape") closeWorldModal(); });
+document.addEventListener("click",e=>{ const w=e.target.closest&&e.target.closest(".wmapwrap"); if(w&&!e.target.closest("#wmodal")) openWorldModal(w.dataset.wname); });
 // ===== 市町村（拡大したときに境界線と名前を出す）=====
 let MUNI=null, muniLoading=false;
 // 市町村の境界・名前は、拡大したときに初めて読み込む
@@ -1002,6 +1055,7 @@ function placeCities(boxes, ppu, inView, outside){
       if(on&&!el){ el=document.createElementNS(SVGNS,"path"); el.setAttribute("data-p",m.p); el.setAttribute("class","munip"); el.setAttribute("d",m.d); mg.appendChild(el); }
       if(el) el.style.display=on?"":"none"; } }
   if(!MUNI||w>140) return;
+  return;   // 市町村名（県庁所在地も含む）はマウスを重ねたときだけ表示する（常時表示に戻すならこの行を消す）
   // 拡大するほど多く、人口の多い市町村から
   const limit=w>90?25:w>45?70:w>20?150:260;
   const fs=(innerWidth<600?11:12)/ppu, B=boxes.slice();

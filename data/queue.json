@@ -5846,13 +5846,6 @@
    ]
   },
   {
-   "name": "税務大学校",
-   "keinet": null,
-   "need": [
-    "methods_gap"
-   ]
-  },
-  {
    "name": "国際ファッション専門職大学",
    "keinet": "2102",
    "need": [
@@ -6577,15 +6570,6 @@
   },
   {
    "name": "職業能力開発大学校（ポリテクカレッジ）",
-   "keinet": "",
-   "need": [
-    "licenses",
-    "careers",
-    "research"
-   ]
-  },
-  {
-   "name": "税務大学校",
    "keinet": "",
    "need": [
     "licenses",
@@ -7642,5 +7626,11 @@
    ]
   }
  ],
- "complete": true
+ "complete": true,
+ "excluded": [
+  {
+   "name": "税務大学校",
+   "reason": "税務職員採用試験の合格者が入る研修機関で、高校生の入試がないため（2026-11-06 先生の判断で除外）"
+  }
+ ]
 }

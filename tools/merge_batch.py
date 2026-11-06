@@ -43,6 +43,10 @@ def main(path):
                     problems.append(n + ': 座標なし')
         cur = info.setdefault(n, {})
         for k, v in (r.get('info') or {}).items():
+            if k == 'departments_full' and isinstance(v, list) and v:
+                # 専攻・コースまで含めた学部・学科一覧で置き換える
+                cur['departments'] = v; filled += 1; cur.setdefault('_checked', {})['departments'] = TODAY
+                continue
             if k == 'methods_add' and isinstance(v, dict):
                 # 既存の入試方式に足りない行を足す（同じ区分・方式名の行は新しい内容で置き換える）
                 m = cur.setdefault('methods', {'list': []}); ML = m.setdefault('list', [])

@@ -10,6 +10,8 @@ Searchuniv に全国の大学を少しずつ追加し、既存校の空欄（研
 - `data/*.json`：ページのデータ本体。`tools/merge_batch.py` で取り込み、`tools/build.py` で `index.html` と、後から読み込む `detail.json`・`world.json`・`muni.json` を作る。
 - 公開ページ：Claude のアーティファクト（slug `8174544a-a178-4a35-a835-6e4a0156f302`、タイトル Searchuniv）。
 
+> `queue.json` の `excluded` にある学校は追加しない（先生の判断で除外したもの）。
+
 ## 1回の実行でやること
 1. リポジトリ `tiimura6/searchuniv` を用意する（add_repo を access "push" で呼び、案内どおり clone）。
 2. `data/queue.json` を読み（add の各項目は `{name,type,pref,hp,cat}`。cat と hp はそのまま batch に使う。名前に括弧付きの区分（例「（通信制のみ）」「（大学院のみ）」）がある学校は、その名前をそのまま batch の name に使い、項目に note があれば従う）、`add` の先頭から最大 **7校**、`enrich` の先頭から最大 **8校** を選ぶ（enrich の各項目は `{name, keinet, need}`。`need` に挙がった項目だけを集める：licenses は `/outline/licential`、careers は `/outline/admission_employment`、research は `outline/department/{コード}` の概要・特色）。両方空のときは、`complete` が true なら「全件完了」と報告してこの定期実行（名前「Searchuniv データ拡充」）を update_trigger で無効化する。`complete` が false なら何も変更せず「待機中（キュー準備中）」と報告して終わる（無効化しない）。
@@ -28,7 +30,7 @@ Searchuniv に全国の大学を少しずつ追加し、既存校の空欄（研
 - `https://search.keinet.ne.jp/{コード}/outline/licential`（取得可能資格）
 - `https://search.keinet.ne.jp/{コード}/outline/admission_employment`（進学・就職実績）
 - `https://search.keinet.ne.jp/{コード}/general/exam_subject`（共通テストの教科・科目数と英語リーディング:リスニングの配点 → info.kyotsu。R:Lは整数比に約分、例 100:100→"1:1"、160:40→"4:1"）
-- **学部・学科（info.departments）**：`tools/DEPT_SPEC.md` の形で、学部ごとの学科・課程・専攻を Kei-Net `/outline/department` から集める。enrich の need に departments があるときも同じ手順。
+- **学部・学科（info.departments）**：`tools/DEPT_SPEC.md` の形で、学部ごとの学科・課程と、その下の専攻・コース・言語別まで Kei-Net `/outline/department` から集める（batch のキーは departments_full）。enrich の need に departments があるときも同じ手順。
 - **学部別難易度・入試日程・費用（info.fdiff / info.schedule / info.money）**：`tools/EXTRA_SPEC.md` の形。新規追加の回では集めず、追加した学校を enrich に `{name, keinet, need:["extra","partners"]}` で積んでおき、enrich の回で集める（need に extra があるとき）。
 - **英語外部試験（info.eng）**：`tools/ENG_SPEC.md` の形。enrich の need に eng があるとき集める。旺文社パスナビの `https://passnavi.obunsha.co.jp/univ/{passnavi}/eiken/` が1回でほぼ全学部取れて最も効率がよい（enrich 項目に passnavi があればそのIDを使う。無ければ WebSearch「大学名 英検 利用入試 パスナビ」）。Kei-Net の科目ページは外部試験の詳細がポップアップで読めない。記載が無いときは rows を空にし summary に「記載なし（利用しないとは限らない）」と書く。
 - **海外協定校（info.partners）**：`tools/PARTNER_SPEC.md` の形で、大学公式の協定校一覧から国ごとの校数と代表校を数える（大学校は不要）。新規追加の回では集めず enrich（need に partners）で集める。
