@@ -185,6 +185,14 @@ ul.mini li{font-size:12.5px;margin:2px 0}
 .simlink{color:var(--accent)}
 .exam{border:1px solid var(--line);border-radius:10px;padding:10px 12px;margin:4px 0 12px;font-size:13px}
 .exam-h{font-weight:700;font-size:12.5px;color:var(--accent);margin-bottom:6px}
+.meth{margin-top:10px}
+.msum{font-size:12.5px;margin-bottom:6px}
+.mrow{border-top:1px dashed var(--line);padding:6px 0}
+.mh{font-weight:700;font-size:13px}
+.ktag{display:inline-block;color:#fff;font-size:10.5px;font-weight:700;border-radius:5px;padding:1px 6px;margin-right:6px;vertical-align:1px}
+.md{display:flex;flex-wrap:wrap;gap:2px 12px;font-size:12.5px;margin-top:2px}
+.md b{color:var(--muted);font-weight:500;margin-right:2px}
+.mn{font-size:11.5px;color:var(--muted);margin-top:2px}
 .et{width:100%;border-collapse:collapse}
 .et th{font-weight:500;color:var(--muted);font-size:11.5px;text-align:left;padding:2px 6px 4px 0;border-bottom:1px solid var(--line)}
 .et td{padding:4px 6px 4px 0;border-bottom:1px dashed var(--line);font-variant-numeric:tabular-nums}
@@ -254,7 +262,7 @@ ul.mini li{font-size:12.5px;margin:2px 0}
       <div class="sbar"><input type="search" id="mq" placeholder="大学名・読み・学部・地域で検索" autocomplete="off"><button class="btn" id="mreset">全国</button></div>
       <div class="sfilt">
         <select id="f-kyoka" aria-label="共通テスト科目数"><option value="">共テ教科数：すべて</option><option value="le3">3教科以下</option><option value="4-5">4〜5教科</option><option value="ge6">6教科以上</option><option value="none">共テ利用なし</option></select>
-        <select id="f-rl" aria-label="英語R:L比率"><option value="">英語R:L：すべて</option><option value="1:1">1:1（均等）</option><option value="r">リーディング重視（3:1・4:1など）</option><option value="other">その他の比率</option></select>
+        <select id="f-meth" aria-label="入試方式"><option value="">入試方式：すべて</option><option value="kouki">後期日程あり</option><option value="nijiH">二次（個別）重視</option><option value="ktH">共テ重視</option><option value="suisen">公募推薦あり</option><option value="sk_nokt">推薦・総合型で共テ不要あり</option><option value="sogo">総合型あり</option><option value="ktriyo">共テ利用方式あり（私立）</option></select><select id="f-rl" aria-label="英語R:L比率"><option value="">英語R:L：すべて</option><option value="1:1">1:1（均等）</option><option value="r">リーディング重視（3:1・4:1など）</option><option value="other">その他の比率</option></select>
         <div class="kchk" role="group" aria-label="種別で表示を切り替え"><label class="chk"><input type="checkbox" class="fk" value="国立" checked><i style="background:#1f4e79"></i>国立</label><label class="chk"><input type="checkbox" class="fk" value="公立" checked><i style="background:#2a7f62"></i>公立</label><label class="chk"><input type="checkbox" class="fk" value="私立" checked><i style="background:#b0532a"></i>私立</label><label class="chk"><input type="checkbox" class="fk" value="その他" checked><i style="background:#4b5563"></i>その他（大学校・専門職大学）</label></div>
       </div>
       <div id="mcount" class="mcount"></div>
@@ -476,8 +484,26 @@ const EXAM = /*EXAM_DATA*/{"東京大学":{"general":{"year":2026,"applicants":8
 
 function fmtN(n){ return (n===null||n===undefined||n==="")?"—":Number(n).toLocaleString("ja-JP"); }
 function fmtR(r){ return (r===null||r===undefined||r==="")?"—":Number(r).toFixed(1)+"倍"; }
+const KUBUN_COLOR={"一般":"#1f4e79","共テ利用":"#5b4b8a","推薦":"#2a7f62","総合型":"#b0532a","その他":"#4b5563"};
+function methodsHTML(name){
+  const m=(INFO[name]||{}).methods; if(!m||!(m.list||[]).length) return "";
+  let h='<div class="meth"><div class="exam-h">入試方式'+(m.year?'<span class="yr">（'+esc(m.year)+'）</span>':'')+'</div>';
+  if(m.summary) h+='<div class="msum">'+esc(m.summary)+'</div>';
+  for(const r of m.list){
+    const parts=[];
+    if(r.kyotsu) parts.push('<span><b>共テ</b> '+esc(r.kyotsu)+'</span>');
+    if(r.niji) parts.push('<span><b>'+(/国立|公立/.test((items.find(x=>x.name===name)||{}).type||"")?"二次":"個別")+'</b> '+esc(r.niji)+'</span>');
+    if(r.content) parts.push('<span><b>選考</b> '+esc(r.content)+'</span>');
+    if(r.haiten) parts.push('<span><b>配点</b> '+esc(r.haiten)+'</span>');
+    if(r.req) parts.push('<span><b>条件</b> '+esc(r.req)+'</span>');
+    h+='<div class="mrow"><div class="mh"><span class="ktag" style="background:'+(KUBUN_COLOR[r.kubun]||"#4b5563")+'">'+esc(r.kubun||"")+'</span>'+esc(r.name||"")+'</div>'+(parts.length?'<div class="md">'+parts.join("")+'</div>':'')+(r.note?'<div class="mn">'+esc(r.note)+'</div>':'')+'</div>';
+  }
+  if(m.note) h+='<div class="enote">※'+esc(m.note)+'</div>';
+  return h+'</div>';
+}
 function examBlock(name, compact){
-  const e = EXAM[name]; if(!e) return "";
+  const e = EXAM[name], mh=methodsHTML(name);
+  if(!e) return mh?'<div class="exam">'+mh+'</div>':"";
   const rows = [["一般選抜",e.general],["学校推薦型",e.suisen],["総合型",e.sogo]].filter(r=>r[1]);
   let h = '<div class="exam">';
   if(rows.length){
@@ -490,7 +516,8 @@ function examBlock(name, compact){
   } else {
     h += '<div class="na">倍率データなし</div>';
   }
-  if(e.format) h += '<div class="fmt">'+esc(e.format)+'</div>';
+  if(e.format && !mh) h += '<div class="fmt">'+esc(e.format)+'</div>';
+  h += mh;
   if(!compact){
     if(e.note) h += '<div class="enote">※'+esc(e.note)+'</div>';
     if(e.sources && e.sources.length) h += '<div class="src">出典：'+e.sources.slice(0,3).map((u,i)=>'<a href="'+esc(u)+'" target="_blank" rel="noopener" onclick="event.stopPropagation()">'+srcLabel(u)+'</a>').join("／")+'</div>';
@@ -521,7 +548,7 @@ function guideBlock(x,ctx){
   if(e.suisen&&e.suisen.ratio!=null) mk.push("推薦 "+Number(e.suisen.ratio).toFixed(1)+"倍");
   if(e.sogo&&e.sogo.ratio!=null) mk.push("総合型 "+Number(e.sogo.ratio).toFixed(1)+"倍");
   if(mk.length) rows.push(["入試の目安",mk.join("／")]);
-  if(e.format) rows.push(["入試方式",esc(e.format)]);
+  { const ms=((INFO[x.name]||{}).methods||{}).summary; if(ms) rows.push(["入試方式",esc(ms)]); else if(e.format) rows.push(["入試方式",esc(e.format)]); }
   if(gd.ask&&gd.ask.length) rows.push(["面談で確認",'<ul class="mini">'+gd.ask.map(a=>'<li>'+esc(a)+'</li>').join("")+'</ul>']);
   if(gd.caution) rows.push(["注意点",esc(gd.caution)]);
   const t=f.tuition; if(t&&t.amount){ const r=t.amount/817800; rows.push(["費用感","初年度 約"+man(t.amount)+(kindOf(x)==="私立"||kindOf(x)==="専門職大学"?"（国立標準額の約"+r.toFixed(1)+"倍）":"")]); }
@@ -931,6 +958,10 @@ function openCard(id){
 }
 function passFilters(x){
   const kf=$("f-kyoka").value, rf=$("f-rl").value;
+  const mf=$("f-meth").value; if(mf){ const L=(((INFO[x.name]||{}).methods)||{}).list||[]; if(!L.length) return false;
+    const ok={kouki:()=>L.some(r=>/後期/.test(r.name)), nijiH:()=>L.some(r=>r.kubun==="一般"&&r.kn&&r.kn[1]>r.kn[0]), ktH:()=>L.some(r=>r.kubun==="一般"&&r.kn&&r.kn[0]>r.kn[1]),
+      suisen:()=>L.some(r=>r.kubun==="推薦"&&/公募|学校推薦型/.test(r.name)&&!/指定校/.test(r.name)), sk_nokt:()=>L.some(r=>(r.kubun==="推薦"||r.kubun==="総合型")&&/課さない|不要|なし/.test(r.kyotsu||"")),
+      sogo:()=>L.some(r=>r.kubun==="総合型"), ktriyo:()=>L.some(r=>r.kubun==="共テ利用")}[mf]; if(ok&&!ok()) return false; }
   const on=kindsOn(); if(on.size<4){ const k=kindOf(x); const g=(k==="国立"||k==="公立"||k==="私立")?k:"その他"; if(!on.has(g)) return false; }
   const k=(INFO[x.name]||{}).kyotsu;
   if(kf){ if(!k||!k.kamoku) return false; const ky=k.kyoka||[];
@@ -945,7 +976,7 @@ function passFilters(x){
   return true;
 }
 function kindsOn(){ return new Set([...document.querySelectorAll(".fk:checked")].map(e=>e.value)); }
-function filtersActive(){ return $("f-kyoka").value||$("f-rl").value||kindsOn().size<4; }
+function filtersActive(){ return $("f-kyoka").value||$("f-rl").value||$("f-meth").value||kindsOn().size<4; }
 const KIND_Q={"国立":["国立"],"国立大学":["国立"],"公立":["公立"],"公立大学":["公立"],"国公立":["国立","公立"],"国公立大学":["国立","公立"],"私立":["私立"],"私立大学":["私立"],"大学校":["大学校"],"専門職大学":["専門職大学"],"専門職":["専門職大学"]};
 function searchUnivs(q){
   q=q.trim();
@@ -970,9 +1001,11 @@ function renderResults(){
   const list=searchUnivs($("mq").value);
   const qv=$("mq").value.trim(), kyF=$("f-kyoka").value||$("f-rl").value;
   const noK=kyF?items.filter(x=>!((INFO[x.name]||{}).kyotsu||{}).kamoku).length:0;
+  const noM=$("f-meth").value?items.filter(x=>!((((INFO[x.name]||{}).methods)||{}).list||[]).length).length:0;
   let msg=(qv||filtersActive())?(list.length?list.length+"件"+(list.length>200?"（上位200件を表示）":""):"該当なし"):"";
   if(!list.length&&qv&&filtersActive()) msg+="：検索語「"+qv+"」と絞り込みの両方に合う学校がありません。検索語を消すと絞り込みだけで探せます。";
   if(noK) msg+="（共テ情報が未登録の"+noK+"校は対象外）";
+  if(noM) msg+="（入試方式が未登録の"+noM+"校は対象外）";
   $("mcount").textContent=msg;
   $("mresults").innerHTML=list.slice(0,200).map(x=>'<button class="ritem" data-n="'+esc(x.name)+'">'+badge(x)+'<span class="rn">'+esc(x.name)+'</span><span class="rp">'+esc(x.pref)+'</span></button>').join("");
   $("mresults").querySelectorAll(".ritem").forEach(b=>b.onclick=()=>selectUniv(b.dataset.n));
@@ -982,12 +1015,12 @@ function renderResults(){
   MATCH=set.size?set:null; if($("labels")&&$("labels").childNodes.length+document.querySelectorAll("#jmap .dot").length) placeLabels();
 }
 $("mq").addEventListener("input",()=>{ $("mpanel").innerHTML=""; renderResults(); });
-[$("f-kyoka"),$("f-rl"),...document.querySelectorAll(".fk")].forEach(el=>el.addEventListener("change",()=>{
+[$("f-kyoka"),$("f-rl"),$("f-meth"),...document.querySelectorAll(".fk")].forEach(el=>el.addEventListener("change",()=>{
   // 学校を選んだ後は検索欄にその校名が入っているので、絞り込みを変えたら校名を消して一覧に戻す
   if($("mpanel").innerHTML&&items.some(x=>x.name===$("mq").value)) $("mq").value="";
   $("mpanel").innerHTML=""; renderResults(); }));
 $("mq").addEventListener("keydown",e=>{ if(e.key==="Enter"){ const l=searchUnivs($("mq").value); if(l.length) selectUniv(l[0].name); } });
-$("mreset").onclick=()=>{ MATCH=null; $("f-kyoka").value=""; $("f-rl").value=""; document.querySelectorAll(".fk").forEach(e=>e.checked=true); $("hl").innerHTML=""; $("mpanel").innerHTML=""; $("mresults").innerHTML=""; $("mcount").textContent=""; $("mq").value=""; document.querySelectorAll("#jmap .dot.dim").forEach(c=>c.classList.remove("dim")); setVB(HOME_VB); };
+$("mreset").onclick=()=>{ MATCH=null; $("f-kyoka").value=""; $("f-rl").value=""; $("f-meth").value=""; document.querySelectorAll(".fk").forEach(e=>e.checked=true); $("hl").innerHTML=""; $("mpanel").innerHTML=""; $("mresults").innerHTML=""; $("mcount").textContent=""; $("mq").value=""; document.querySelectorAll("#jmap .dot.dim").forEach(c=>c.classList.remove("dim")); setVB(HOME_VB); };
 window.addEventListener("hashchange",()=>{ if(location.hash==="#map") requestAnimationFrame(()=>scaleMarks()); });
 
 
