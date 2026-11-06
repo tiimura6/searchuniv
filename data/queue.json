@@ -4780,6 +4780,94 @@
    "pref": "鹿児島県",
    "hp": "https://www.k-junshin.ac.jp/jundai/",
    "cat": "private"
+  },
+  {
+   "name": "放送大学（通信制のみ）",
+   "type": "私立",
+   "pref": "千葉県",
+   "hp": "https://www.ouj.ac.jp/",
+   "cat": "private",
+   "note": "高校からの通常の進学先ではない（括弧内の理由）。カードの memo にもその旨を書く。"
+  },
+  {
+   "name": "星槎大学（通信制のみ）",
+   "type": "私立",
+   "pref": "北海道",
+   "hp": "https://www.seisa.ac.jp/",
+   "cat": "private",
+   "note": "高校からの通常の進学先ではない（括弧内の理由）。カードの memo にもその旨を書く。"
+  },
+  {
+   "name": "八洲学園大学（通信制のみ）",
+   "type": "私立",
+   "pref": "神奈川県",
+   "hp": "https://www.yashima.ac.jp/",
+   "cat": "private",
+   "note": "高校からの通常の進学先ではない（括弧内の理由）。カードの memo にもその旨を書く。"
+  },
+  {
+   "name": "東京通信大学（通信制のみ）",
+   "type": "私立",
+   "pref": "東京都",
+   "hp": "https://www.internet.ac.jp/",
+   "cat": "private",
+   "note": "高校からの通常の進学先ではない（括弧内の理由）。カードの memo にもその旨を書く。"
+  },
+  {
+   "name": "ビジネス・ブレークスルー大学（通信制のみ）",
+   "type": "私立",
+   "pref": "東京都",
+   "hp": "",
+   "cat": "private",
+   "note": "高校からの通常の進学先ではない（括弧内の理由）。カードの memo にもその旨を書く。"
+  },
+  {
+   "name": "サイバー大学（通信制のみ）",
+   "type": "私立",
+   "pref": "福岡県",
+   "hp": "https://www.cyber-u.ac.jp/",
+   "cat": "private",
+   "note": "高校からの通常の進学先ではない（括弧内の理由）。カードの memo にもその旨を書く。"
+  },
+  {
+   "name": "政策研究大学院大学（大学院のみ）",
+   "type": "国立",
+   "pref": "東京都",
+   "hp": "https://www.grips.ac.jp/",
+   "cat": "national",
+   "note": "高校からの通常の進学先ではない（括弧内の理由）。カードの memo にもその旨を書く。"
+  },
+  {
+   "name": "総合研究大学院大学（大学院のみ）",
+   "type": "国立",
+   "pref": "神奈川県",
+   "hp": "https://www.soken.ac.jp/",
+   "cat": "national",
+   "note": "高校からの通常の進学先ではない（括弧内の理由）。カードの memo にもその旨を書く。"
+  },
+  {
+   "name": "北陸先端科学技術大学院大学（大学院のみ）",
+   "type": "国立",
+   "pref": "石川県",
+   "hp": "https://www.jaist.ac.jp/",
+   "cat": "national",
+   "note": "高校からの通常の進学先ではない（括弧内の理由）。カードの memo にもその旨を書く。"
+  },
+  {
+   "name": "奈良先端科学技術大学院大学（大学院のみ）",
+   "type": "国立",
+   "pref": "奈良県",
+   "hp": "https://www.naist.jp/",
+   "cat": "national",
+   "note": "高校からの通常の進学先ではない（括弧内の理由）。カードの memo にもその旨を書く。"
+  },
+  {
+   "name": "国際大学（大学院のみ）",
+   "type": "私立",
+   "pref": "新潟県",
+   "hp": "https://www.iuj.ac.jp/",
+   "cat": "private",
+   "note": "高校からの通常の進学先ではない（括弧内の理由）。カードの memo にもその旨を書く。"
   }
  ],
  "done": [],
