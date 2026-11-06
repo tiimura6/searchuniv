@@ -131,6 +131,8 @@ body.wide main,body.wide header{max-width:1320px}
 .pfeat{margin:8px 0;padding-left:1.2em;font-size:13.5px}
 #jmap .dot.off{display:none}
 #jmap.moving .ulbl,#jmap.moving .clus,#jmap.moving #mlabels{opacity:.35}
+#ctip{position:absolute;pointer-events:none;background:var(--panel);border:1px solid var(--line);border-radius:6px;padding:2px 7px;font-size:12px;color:var(--muted);white-space:nowrap;box-shadow:0 2px 6px rgba(0,0,0,.12);z-index:3}
+#ctip.cap{color:var(--ink);font-weight:700}
 .munip{fill:none;stroke:var(--muted);stroke-opacity:.45;stroke-width:.7px;vector-effect:non-scaling-stroke;pointer-events:none}
 #mlabels .clbl.cap{font-weight:700;fill:var(--ink)}
 #mlabels .clbl{fill:var(--muted);pointer-events:none;paint-order:stroke;stroke:var(--bg);stroke-width:2.5px;stroke-linejoin:round;vector-effect:non-scaling-stroke}
@@ -810,6 +812,7 @@ function placeCities(boxes, ppu, inView, outside){
   const hit=b=>outside(b)||B.some(o=>!(b[0]+b[2]<o[0]||b[0]>o[0]+o[2]||b[1]+b[3]<o[1]||b[1]>o[1]+o[3]));
   let n=0;
   for(const [name,cx,cy,,cap] of MUNI.labels){
+    if(!cap) break;   // 県庁所在地だけ常に表示（それ以外の市町村名はマウスを重ねたときに出す）
     if(n>=limit) break; if(!inView([cx,cy])) continue;
     const f2=cap?fs*1.15:fs, tw=name.length*f2*1.05, th=f2*1.2;
     // 中央に置けなければ（大学名と重なるなど）、県庁所在地は上下左右にずらして置く
@@ -912,6 +915,20 @@ function zoomAt(px,py,f){ const [x,y,w,h]=curVB; const nw=w*f, nh=h*f; applyVB([
   const up=e=>{ ptrs.delete(e.pointerId); if(ptrs.size<2) pinch=null; if(!ptrs.size){ last=null; svg.classList.remove("drag"); } };
   svg.addEventListener("pointerup",up); svg.addEventListener("pointercancel",up);
   svg.addEventListener("click",e=>{ if(moved){ e.stopPropagation(); e.preventDefault(); moved=false; } },true);
+  // 市町村名：マウスを重ねた位置にいちばん近い市町村（役所の位置）を表示。スマホは地図をタップ
+  const tip=document.createElement("div"); tip.id="ctip"; tip.hidden=true; svg.parentElement.appendChild(tip);
+  let tipTimer=0;
+  const showCity=(e,ms)=>{ if(!MUNI||curVB[2]>140){ tip.hidden=true; return; }
+    const [px,py]=svgPoint(e), r=svg.getBoundingClientRect(), ppu=r.width/curVB[2], lim=(36/ppu)**2;
+    let best=null, bd=lim; for(const l of MUNI.labels){ const dx=l[1]-px, dy=l[2]-py, d=dx*dx+dy*dy; if(d<bd){ bd=d; best=l; } }
+    if(!best){ tip.hidden=true; return; }
+    const pr=svg.parentElement.getBoundingClientRect();
+    tip.textContent=best[0]; tip.classList.toggle("cap",!!best[4]); tip.hidden=false;
+    tip.style.left=(e.clientX-pr.left+12)+"px"; tip.style.top=(e.clientY-pr.top-28)+"px";
+    clearTimeout(tipTimer); if(ms) tipTimer=setTimeout(()=>{ tip.hidden=true; },ms); };
+  svg.addEventListener("pointermove",e=>{ if(e.pointerType!=="mouse"||ptrs.size) { if(ptrs.size) tip.hidden=true; return; } showCity(e,0); });
+  svg.addEventListener("pointerleave",()=>{ tip.hidden=true; });
+  svg.addEventListener("click",e=>{ if(e.target.closest&&e.target.closest(".dot,.ulbl,.clus")) return; if(!moved) showCity(e,2500); });
   $("zin").onclick=()=>zoomAt(curVB[0]+curVB[2]/2,curVB[1]+curVB[3]/2,0.6);
   $("zout").onclick=()=>zoomAt(curVB[0]+curVB[2]/2,curVB[1]+curVB[3]/2,1/0.6);
   window.addEventListener("resize",()=>{ if(!$("v-map").hidden) placeLabels(); });
