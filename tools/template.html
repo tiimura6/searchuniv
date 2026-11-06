@@ -81,7 +81,7 @@ details summary{cursor:pointer}
 .zoomctl .btn{width:34px;height:34px;padding:0;font-size:18px;line-height:1}
 #jmap{touch-action:none;cursor:grab;user-select:none;-webkit-user-select:none}
 #jmap.drag{cursor:grabbing}
-#jmap .ulbl{font-weight:500;fill:var(--ink);paint-order:stroke;stroke:var(--panel);stroke-width:2.5px;vector-effect:non-scaling-stroke;cursor:pointer}
+#jmap .ulbl{font-weight:700;fill:var(--ink);paint-order:stroke;stroke:var(--panel);stroke-width:2.5px;vector-effect:non-scaling-stroke;cursor:pointer}
 .mapwrap{position:relative;background:var(--panel);border:1px solid var(--line);border-radius:16px;overflow:hidden;margin-top:6px}
 #jmap{width:100%;height:auto;display:block;max-height:72vh}
 #jmap path{fill:var(--bg);stroke:var(--muted);stroke-width:.8px;stroke-linejoin:round;vector-effect:non-scaling-stroke}
@@ -584,21 +584,21 @@ function scaleMarks(){
   const k=curVB[2]/HOME_VB[2];
   document.querySelectorAll("#jmap .dot").forEach(c=>c.setAttribute("r",(2.2*k).toFixed(3)));
   document.querySelectorAll("#jmap .hl,#jmap .pulse").forEach(c=>c.setAttribute("r",(3.4*k).toFixed(3)));
-  const l=document.querySelector("#jmap .lbl"); if(l){ l.setAttribute("font-size",(9*k).toFixed(3)); const c=document.querySelector("#jmap .hl"); l.setAttribute("x",(+c.getAttribute("cx")+5*k).toFixed(2)); l.setAttribute("y",(+c.getAttribute("cy")+3*k).toFixed(2)); }
+  const l=document.querySelector("#jmap .lbl"); if(l){ l.setAttribute("font-size",(12*k).toFixed(3)); const c=document.querySelector("#jmap .hl"); l.setAttribute("x",(+c.getAttribute("cx")+5*k).toFixed(2)); l.setAttribute("y",(+c.getAttribute("cy")+3*k).toFixed(2)); }
   placeLabels();
 }
 // 重ならない範囲で大学名を表示（優先度順に配置）
 function placeLabels(){
   const g=$("labels"); if(!g) return; g.innerHTML="";
   const svg=$("jmap"); const W=svg.clientWidth||800; const pxPerUnit=W/curVB[2];
-  const fs=11/pxPerUnit; const boxes=[];
+  const fs=14/pxPerUnit; const boxes=[];
   const sel=$("mq").value;
   const order=items.filter(x=>MAP.dots[x.name] && x.name!==sel).sort((a,b)=>(PRIO[a.cat]??20)-(PRIO[b.cat]??20));
   const [vx,vy,vw,vh]=curVB;
   for(const x of order){
     const [cx,cy]=MAP.dots[x.name];
     if(cx<vx||cx>vx+vw||cy<vy||cy>vy+vh) continue;
-    const t=shortName(x.name); const w=t.length*fs*1.0, h=fs*1.2;
+    const t=shortName(x.name); const w=t.length*fs*1.02, h=fs*1.25;
     const bx=cx+3*curVB[2]/HOME_VB[2], by=cy-h/2;
     const hit=boxes.some(b=>!(bx+w<b[0]||bx>b[0]+b[2]||by+h<b[1]||by>b[1]+b[3]));
     if(hit) continue;
