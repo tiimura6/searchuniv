@@ -2,6 +2,8 @@
 """収集した学校データ（batches/*.json）を data/*.json に取り込む。
 使い方: python3 tools/merge_batch.py batches/2026-11-06T07.json
 batch の形式は PIPELINE.md を参照。既存校は info/exam の空欄だけを埋める（上書きしない）。"""
+import datetime
+TODAY = datetime.date.today().isoformat()
 import json, os, sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from geocode import geocode
@@ -59,6 +61,7 @@ def main(path):
                 cur['sources'] = list(dict.fromkeys((cur.get('sources') or []) + [u for u in v if isinstance(u, str)]))
             elif empty(cur.get(k)) and not empty(v):
                 cur[k] = v; filled += 1
+                cur.setdefault('_checked', {})[k] = TODAY
         if r.get('guide') and n not in guide:
             guide[n] = {k: r['guide'].get(k) for k in ('fit', 'ask', 'caution') if r['guide'].get(k)}
         if r.get('exam'):

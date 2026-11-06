@@ -12,7 +12,7 @@ Searchuniv に全国の大学を少しずつ追加し、既存校の空欄（研
 
 ## 1回の実行でやること
 1. リポジトリ `tiimura6/searchuniv` を用意する（add_repo を access "push" で呼び、案内どおり clone）。
-2. `data/queue.json` を読み（add の各項目は `{name,type,pref,hp,cat}`。cat と hp はそのまま batch に使う。名前に括弧付きの区分（例「（通信制のみ）」「（大学院のみ）」）がある学校は、その名前をそのまま batch の name に使い、項目に note があれば従う）、`add` の先頭から最大 **10校**、`enrich` の先頭から最大 **8校** を選ぶ（enrich の各項目は `{name, keinet, need}`。`need` に挙がった項目だけを集める：licenses は `/outline/licential`、careers は `/outline/admission_employment`、research は `outline/department/{コード}` の概要・特色）。両方空のときは、`complete` が true なら「全件完了」と報告してこの定期実行（名前「Searchuniv データ拡充」）を update_trigger で無効化する。`complete` が false なら何も変更せず「待機中（キュー準備中）」と報告して終わる（無効化しない）。
+2. `data/queue.json` を読み（add の各項目は `{name,type,pref,hp,cat}`。cat と hp はそのまま batch に使う。名前に括弧付きの区分（例「（通信制のみ）」「（大学院のみ）」）がある学校は、その名前をそのまま batch の name に使い、項目に note があれば従う）、`add` の先頭から最大 **7校**、`enrich` の先頭から最大 **8校** を選ぶ（enrich の各項目は `{name, keinet, need}`。`need` に挙がった項目だけを集める：licenses は `/outline/licential`、careers は `/outline/admission_employment`、research は `outline/department/{コード}` の概要・特色）。両方空のときは、`complete` が true なら「全件完了」と報告してこの定期実行（名前「Searchuniv データ拡充」）を update_trigger で無効化する。`complete` が false なら何も変更せず「待機中（キュー準備中）」と報告して終わる（無効化しない）。
 3. 各校の情報を集める（下の「集め方」）。WebFetch は1時間あたりの上限があるので、**WebFetch は合計60回まで（目安：新規1校5回、補完1校1〜3回）**、WebSearch は合計30回まで。上限に当たったら、そこまでの分だけで先へ進む。
 4. 集めた結果を `batches/<UTC日時>.json` に保存し、`python3 tools/merge_batch.py batches/<そのファイル>` を実行。表示された「要確認」は報告に含める。
 5. 処理できた学校を `queue.json` の `add`/`enrich` から `done` へ移す（取れなかった学校は末尾に回す。同じ学校が3回失敗したら `failed` に移す）。
@@ -29,7 +29,8 @@ Searchuniv に全国の大学を少しずつ追加し、既存校の空欄（研
 - `https://search.keinet.ne.jp/{コード}/outline/admission_employment`（進学・就職実績）
 - `https://search.keinet.ne.jp/{コード}/general/exam_subject`（共通テストの教科・科目数と英語リーディング:リスニングの配点 → info.kyotsu。R:Lは整数比に約分、例 100:100→"1:1"、160:40→"4:1"）
 - **学部・学科（info.departments）**：`tools/DEPT_SPEC.md` の形で、学部ごとの学科・課程・専攻を Kei-Net `/outline/department` から集める。enrich の need に departments があるときも同じ手順。
-- **海外協定校（info.partners）**：`tools/PARTNER_SPEC.md` の形で、大学公式の協定校一覧から国ごとの校数と代表校を数える（大学校は不要）。取れなければ enrich に need ["partners"] で積む。
+- **学部別難易度・入試日程・費用（info.fdiff / info.schedule / info.money）**：`tools/EXTRA_SPEC.md` の形。新規追加の回では集めず、追加した学校を enrich に `{name, keinet, need:["extra","partners"]}` で積んでおき、enrich の回で集める（need に extra があるとき）。
+- **海外協定校（info.partners）**：`tools/PARTNER_SPEC.md` の形で、大学公式の協定校一覧から国ごとの校数と代表校を数える（大学校は不要）。新規追加の回では集めず enrich（need に partners）で集める。
 - **入試方式（info.methods）**：`tools/METHODS_SPEC.md` の形で、一般選抜（国公立は前期・後期の共テ科目・二次科目・共テ:二次の配点比）、私立の共テ利用、学校推薦型（公募・指定校）、総合型をまとめる。`/general/exam_subject`、`/recommend/exam_rec`（推薦）、`/recommend/exam_ao`（総合型）を使う。ページが途中で切れたら大学公式の募集要項やマナビジョンで補う。取れなかったら enrich に `{name, keinet, need:["methods"]}` で積んで後回しにしてよい。enrich の need に methods があるときも同じ手順。
   - need に **methods_gap** があるとき：data/info.json のその校の methods（list と note）を読み、「未確認」「切れて確認できず」と書かれた方式・学部や、無い推薦（公募）・総合型を、大学公式の入試ページ・募集要項（PDF可）、マナビジョン、パスナビで確認する。batch では `info.methods_add` に {"list": [足す・直す行だけ], "note": "直した後の note 全文", "summary": "必要なら新しい要約"} を書く（同じ区分・方式名の行は置き換わる）。確認できたものだけ書き、確認できなければ何も書かず done に移す。
 - 余裕があれば `https://search.keinet.ne.jp/{コード}/general/exam_result`（一般選抜の「大学計」）とボーダー（偏差値・共テ得点率）
