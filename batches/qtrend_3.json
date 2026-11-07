@@ -1,0 +1,106 @@
+[
+ {
+  "name": "東京女子大学",
+  "info": {
+   "qtrend": {
+    "years": "2026年度",
+    "rows": [
+     {
+      "kubun": "一般",
+      "method": "一般選抜（文系学科）",
+      "subject": "英語",
+      "format": "90分・大問5、マークと記述の併用（情報数理科学科は60分・マークのみで大問IV・Vなし）",
+      "trend": "500〜700語程度の長文2題に、文法の空所補充、頭文字指定の語句記述が続く。最後は50語以内の自由英作文で、グラフの傾向説明やことわざの説明などが出た。",
+      "src": "https://search.keinet.ne.jp/2254/topics/33"
+     }
+    ],
+    "note": "Kei-Net掲載の大学提供の入試対策情報（2026年度分析）による。現代文・日本史は本文を確認できず未収録。"
+   }
+  },
+  "sources": [
+   "https://search.keinet.ne.jp/2254/topics/33"
+  ]
+ },
+ {
+  "name": "日本女子大学",
+  "info": {
+   "qtrend": {
+    "years": "2026年度",
+    "rows": [
+     {
+      "kubun": "一般",
+      "method": "一般選抜（全学部統一問題）",
+      "subject": "英語",
+      "format": "70分・大問3（長文読解2・文法語法1）、マークと記述の併用",
+      "trend": "長文では空所補充・下線部の意味・内容一致が中心で、下線部和訳が各日2問ある。長文の総語数は試験日により約1,000〜1,700語と幅があり、時間配分が課題になる。",
+      "src": "https://search.keinet.ne.jp/2272/topics/33"
+     }
+    ],
+    "note": "Kei-Net掲載の大学提供の入試対策情報（2026年度分析）による。現代文・日本史は本文を確認できず未収録。"
+   }
+  },
+  "sources": [
+   "https://search.keinet.ne.jp/2272/topics/33"
+  ]
+ },
+ {
+  "name": "津田塾大学",
+  "info": {
+   "qtrend": {
+    "years": "2026年度",
+    "rows": [
+     {
+      "kubun": "一般",
+      "method": "一般選抜（英語英文・多文化国際協力・国際関係・数学・情報科学科）",
+      "subject": "英語",
+      "format": "大問5、記述中心（文法・空所補充、頭文字指定の語句記述、会話文と条件英作文、長文、和文英訳）",
+      "trend": "長文では内容説明や下線部和訳など記述が多く、条件付き英作文と和文英訳が毎回課される。全体に難度は高めとされる。",
+      "src": "https://search.keinet.ne.jp/2243/topics/33"
+     },
+     {
+      "kubun": "一般",
+      "method": "一般選抜（総合政策学部）",
+      "subject": "英語",
+      "format": "大問3、記述中心",
+      "trend": "長文の空所補充に加え、英語での内容説明・自由英作文、英文の日本語要約が出題され、要約力と発信力が問われる。",
+      "src": "https://search.keinet.ne.jp/2243/topics/33"
+     }
+    ],
+    "note": "Kei-Net掲載の大学提供の入試対策情報（2026年度分析）による。試験時間は掲載なし。現代文・数学は本文を確認できず未収録。"
+   }
+  },
+  "sources": [
+   "https://search.keinet.ne.jp/2243/topics/33"
+  ]
+ },
+ {
+  "name": "北見工業大学",
+  "info": {
+   "qtrend": {
+    "years": "2026年度（パンフレット記載の実施形式）",
+    "rows": [
+     {
+      "kubun": "総合型",
+      "method": "総合型選抜",
+      "subject": "基礎学力確認試験",
+      "format": "数学Iの筆記（ユニット確定枠は物理基礎または化学基礎も）、時間は記載なし",
+      "trend": "基礎知識を確かめる水準とされ、大学は高卒認定試験の過去問程度の準備で足りるとしている。",
+      "src": "https://www.kitami-it.ac.jp/wp-content/uploads/2026/03/2026sougougata_pamphlet.pdf"
+     },
+     {
+      "kubun": "総合型",
+      "method": "総合型選抜",
+      "subject": "面接",
+      "format": "個人面接（時間は記載なし）、志望理由書または学修計画書と調査書を併用",
+      "trend": "志望動機・学修目標・将来像・意欲・協調性・適性を確かめる観点が示されている。",
+      "src": "https://www.kitami-it.ac.jp/wp-content/uploads/2026/03/2026sougougata_pamphlet.pdf"
+     }
+    ],
+    "note": "大学公式パンフレットで確認できたのは実施形式と評価観点のみで、過去の具体的な出題例は掲載なし。一般選抜の個別試験の傾向は未確認。"
+   }
+  },
+  "sources": [
+   "https://www.kitami-it.ac.jp/wp-content/uploads/2026/03/2026sougougata_pamphlet.pdf"
+  ]
+ }
+]

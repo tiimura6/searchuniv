@@ -27,7 +27,7 @@ def _raw(lam, phi):
 CX, CY = _raw(math.radians(138.5), math.radians(36 - 18/60))
 
 # ページを軽くするため、大学の詳細で開いたときに要る重いデータは別ファイルにして後から読み込む
-LAZY = ('fdiff', 'schedule', 'money', 'partners', 'sources', '_checked', 'notable', 'news', 'access', 'founded', 'students', 'methods', 'eng', 'ratios')
+LAZY = ('fdiff', 'schedule', 'money', 'partners', 'sources', '_checked', 'notable', 'news', 'access', 'founded', 'students', 'methods', 'eng', 'ratios', 'qtrend')
 
 def main():
     cards = D('cards'); exam = D('exam'); info = D('info'); hp = D('hp')
@@ -48,6 +48,9 @@ def main():
         'READ': ('/*READ*/', '/*END_READ*/', J({n: read[n] for n in names if n in read})),
         'ALIAS': ('/*ALIAS*/', '/*END_ALIAS*/', J(alias)),
         'GUIDE': ('/*GUIDE*/', '/*END_GUIDE*/', J({n: guide[n] for n in names if n in guide})),
+        'BUILD': ('/*BUILD*/', '/*END_BUILD*/', J({'built': __import__('datetime').datetime.now(__import__('datetime').timezone(__import__('datetime').timedelta(hours=9))).strftime('%Y-%m-%d %H:%M'),
+                  'schedule': max([v.get('_checked', {}).get('schedule', '') for v in info.values()] + ['']),
+                  'diffyear': next((v['difficulty'].get('year') for v in info.values() if (v.get('difficulty') or {}).get('year')), '')})),
     }
     for k, (a, b, v) in rep.items():
         pat = re.escape(a) + r'.*?' + re.escape(b)
