@@ -47,6 +47,7 @@ def main():
         'HP': ('/*HP*/', '/*END_HP*/', J({n: hp[n] for n in names if hp.get(n)})),
         'READ': ('/*READ*/', '/*END_READ*/', J({n: read[n] for n in names if n in read})),
         'ALIAS': ('/*ALIAS*/', '/*END_ALIAS*/', J(alias)),
+        'LL': ('/*LL*/', '/*END_LL*/', J({n: [round(coords[n][0], 3), round(coords[n][1], 3)] for n in names if n in coords})),
         'GUIDE': ('/*GUIDE*/', '/*END_GUIDE*/', J({n: guide[n] for n in names if n in guide})),
         'BUILD': ('/*BUILD*/', '/*END_BUILD*/', J({'built': __import__('datetime').datetime.now(__import__('datetime').timezone(__import__('datetime').timedelta(hours=9))).strftime('%Y-%m-%d %H:%M'),
                   'schedule': max([v.get('_checked', {}).get('schedule', '') for v in info.values()] + ['']),
