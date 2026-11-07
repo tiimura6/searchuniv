@@ -166,6 +166,21 @@ body.noscroll{overflow:hidden}
 .subj.extra{background:color-mix(in srgb,var(--ng) 12%,transparent);border-color:var(--ng)}
 .warn{color:var(--ng);font-size:12.5px;margin:2px 0}
 .tsch{margin-bottom:14px}
+.uov{position:fixed;inset:0;background:rgba(0,0,0,.4);z-index:40;display:flex;align-items:flex-start;justify-content:center;padding:4vh 12px;overflow-y:auto}
+.uov[hidden]{display:none}
+.uovbox{position:relative;background:var(--bg);border-radius:14px;width:min(860px,100%);box-shadow:0 10px 30px rgba(0,0,0,.25);padding:8px 8px 14px}
+.uclose{position:sticky;top:0;float:right;z-index:2;border:1px solid var(--line);background:var(--panel);border-radius:999px;width:34px;height:34px;font-size:18px;cursor:pointer}
+.uovbox .mpanel{margin:0}
+.cbtn{font-size:12.5px;font-weight:700;border:1.5px solid #b8860b;color:#8a6408;background:var(--panel);border-radius:999px;padding:4px 12px;cursor:pointer;margin-left:6px;white-space:nowrap}
+.cbtn:hover{background:color-mix(in srgb,#b8860b 12%,var(--panel))}
+.cbtn.on{background:#b8860b;color:#fff}
+.band{display:inline-block;font-size:11px;font-weight:700;border-radius:5px;padding:1px 7px;margin-right:6px;color:#fff;vertical-align:1px}
+.band.ch{background:#c0392b}.band.fit{background:#1f4e79}.band.safe{background:#2a7f62}
+.rh{font-size:11px;color:var(--muted);margin-right:6px}
+.mctl{display:flex;flex-wrap:wrap;gap:6px 14px;align-items:center;margin:10px 2px}
+.mgrp>h2 .band{font-size:13px;padding:3px 10px}
+.tbtn{font-size:12.5px;border:1px solid var(--line);background:var(--panel);border-radius:999px;padding:4px 12px;cursor:pointer;margin-left:6px;color:var(--ink)}
+.dl{margin:2px 0}.dl summary{cursor:pointer}.dl summary .sub2{margin-left:6px}.dl ul{margin:2px 0 6px;padding-left:1.2em;font-size:12.5px}
 .partners{border:1px solid var(--line);border-radius:10px;padding:10px 12px;margin:8px 0}
 .wmap{width:100%;height:auto;display:block;margin:6px 0;background:color-mix(in srgb,var(--accent) 5%,transparent);border-radius:8px}
 .wbase{fill:var(--line);stroke:var(--panel);stroke-width:.3}
@@ -370,13 +385,13 @@ ul.mini li{font-size:12.5px;margin:2px 0}
       <p class="upd" id="updline"></p>
       <div class="sfilt">
         <select id="f-kyoka" aria-label="共通テスト科目数"><option value="">共テ教科数：すべて</option><option value="le3">3教科以下</option><option value="4-5">4〜5教科</option><option value="ge6">6教科以上</option><option value="none">共テ利用なし</option></select>
-        <select id="f-kei" aria-label="学問の系統"><option value="">学問の系統：すべて</option></select><select id="f-meth" aria-label="入試方式"><option value="">入試方式：すべて</option><option value="kouki">後期日程あり</option><option value="nijiH">二次（個別）重視</option><option value="ktH">共テ重視</option><option value="suisen">公募推薦あり</option><option value="sk_nokt">推薦・総合型で共テ不要あり</option><option value="sogo">総合型あり</option><option value="ktriyo">共テ利用方式あり（私立）</option></select><select id="f-eng" aria-label="英語外部試験"><option value="">英語外部試験：すべて</option><option value="any">利用する方式あり</option><option value="shikaku">出願資格として使える</option><option value="kansan">得点換算・加点・みなし満点あり</option><option value="ippan">一般選抜で使える</option></select><select id="f-rl" aria-label="英語R:L比率"><option value="">英語R:L：すべて</option><option value="1:1">1:1（均等）</option><option value="r">リーディング重視（3:1・4:1など）</option><option value="other">その他の比率</option></select>
+        <select id="f-kei" aria-label="学問の系統"><option value="">学問の系統：すべて</option></select><select id="f-meth" aria-label="入試方式"><option value="">入試方式：すべて</option><option value="kouki">後期日程あり</option><option value="nijiH">二次（個別）重視</option><option value="ktH">共テ重視</option><option value="suisen">公募推薦あり</option><option value="sk_nokt">推薦・総合型で共テ不要あり</option><option value="sogo">総合型あり</option><option value="ktriyo">共テ利用方式あり（私立）</option></select><select id="msort" aria-label="並び順"><option value="">並び順：関連度</option><option value="hd">偏差値の高い順</option><option value="ha">偏差値の低い順</option><option value="pref">地域順</option></select><select id="f-eng" aria-label="英語外部試験"><option value="">英語外部試験：すべて</option><option value="any">利用する方式あり</option><option value="shikaku">出願資格として使える</option><option value="kansan">得点換算・加点・みなし満点あり</option><option value="ippan">一般選抜で使える</option></select><select id="f-rl" aria-label="英語R:L比率"><option value="">英語R:L：すべて</option><option value="1:1">1:1（均等）</option><option value="r">リーディング重視（3:1・4:1など）</option><option value="other">その他の比率</option></select>
         <div class="kchk" role="group" aria-label="種別で表示を切り替え"><label class="chk"><input type="checkbox" class="fk" value="国立" checked><i style="background:#1f4e79"></i>国立</label><label class="chk"><input type="checkbox" class="fk" value="公立" checked><i style="background:#2a7f62"></i>公立</label><label class="chk"><input type="checkbox" class="fk" value="私立" checked><i style="background:#b0532a"></i>私立</label><label class="chk"><input type="checkbox" class="fk" value="その他" checked><i style="background:#4b5563"></i>その他（大学校・専門職大学）</label></div>
       </div>
       <div id="mcount" class="mcount"></div>
       <div id="mresults" class="mresults"></div>
       <div id="mnews" class="cnews" hidden></div>
-      <div id="mpanel" class="mpanel"></div>
+      <div id="uov" class="uov" hidden><div class="uovbox"><button type="button" class="uclose" id="uclose" aria-label="閉じる">×</button><div id="mpanel" class="mpanel"></div></div></div>
     </div>
     <div class="sright">
       <div class="mapwrap"><svg id="jmap" viewBox="170 0 490 450" role="img" aria-label="日本地図"><g id="prefs"></g><g id="muni" transform="scale(0.1)"></g><g id="mlabels"></g><g id="dots"></g><g id="labels"></g><g id="hl"></g></svg>
@@ -386,18 +401,18 @@ ul.mini li{font-size:12.5px;margin:2px 0}
 </section>
 
 <section id="v-trend" hidden>
-  <p class="mintro">各大学の個別試験（二次試験・一般入試・推薦／総合型の小論文や面接）で、<b>これまでどんな形式・傾向の問題が出てきたか</b>を教科ごとにまとめています。問題そのものは載せていません（各大学・予備校の公開情報を要約）。</p>
+  <p class="mintro">個別試験・小論文・面接の<b>出題形式と傾向</b>（公開情報の要約）。</p>
   <div class="sbar"><input type="search" id="tq" list="univlist" placeholder="大学名を入力（例：茨城大学）" autocomplete="off"><button class="btn" id="tcand" type="button">比較の候補をまとめて表示</button></div>
   <div class="tfilt"><select id="tsub"><option value="">教科：すべて</option></select><select id="tkub"><option value="">区分：すべて</option><option>一般</option><option>共テ利用</option><option>推薦</option><option>総合型</option></select></div>
   <div id="trend-out"></div>
 </section>
 <datalist id="univlist"></datalist>
 <section id="v-plan" hidden>
-  <p class="mintro">検索・面談の「☆候補」で選んだ大学を<b>横並びで比較</b>し（一般・共テ利用・推薦・総合型の入試方式、共通テストの科目、費用など）、<b>入試日程・受験料・手続締切</b>もまとめます。候補はこの端末のブラウザにだけ保存されます（個人名は保存しません）。</p>
+  <p class="mintro">「＋ 比較に追加」した大学を横並びで比べます（この端末にだけ保存）。</p>
   <div id="plan-out"></div>
 </section>
 <section id="v-ai" hidden>
-  <p class="mintro">生徒の希望と成績を入れると、登録データから<b>挑戦校・実力相応校・安全校</b>に分けて候補と面談の話題を出します（AIは使いません）。氏名などの個人情報は入力しない設計です（入力内容は保存されません）。</p>
+  <p class="mintro">希望と成績から<b>挑戦校・実力相応校・安全校</b>を出します（個人名は入力しない・保存しない）。</p>
   <form id="aiform" class="aiform" onsubmit="return false">
     <div class="airow">
       <label>目指している職業<input id="ai-job" placeholder="例：臨床心理士、英語教員"></label>
@@ -498,7 +513,10 @@ function infoBlock(name){
   const scale=[st&&st.count?("学生 約"+Number(st.count).toLocaleString("ja-JP")+"人"+(st.note?"（"+esc(st.note)+"）":"")):"", f.founded?esc(f.founded):""].filter(Boolean).join("／");
   if(scale) rows.push(["規模・創立",scale]);
   if(f.access) rows.push(["アクセス",esc(f.access)]);
-  if(Array.isArray(f.departments)&&f.departments.length) rows.push(["学部・学科",'<div class="depts">'+f.departments.map(g=>'<div><b>'+esc(g.f)+'</b>'+((g.d||[]).length?'：'+(g.d||[]).map(esc).join("、"):'')+'</div>').join("")+'</div>']);
+  if(Array.isArray(f.departments)&&f.departments.length) rows.push(["学部・学科",'<div class="depts">'+f.departments.map(g=>{ const d=(g.d||[]); if(!d.length) return '<div class="dl"><b>'+esc(g.f)+'</b></div>';
+      // 「学科 専攻」をまとめ、学科ごとに専攻・コースを並べる
+      const by=new Map(); for(const t of d){ const i=t.indexOf(" "); const k=i>0?t.slice(0,i):t, v=i>0?t.slice(i+1):""; if(!by.has(k)) by.set(k,[]); if(v) by.get(k).push(v); }
+      return '<details class="dl"><summary><b>'+esc(g.f)+'</b><span class="sub2">'+by.size+'学科・課程</span></summary><ul>'+[...by].map(([k,v])=>'<li>'+esc(k)+(v.length?'<span class="sub2">（'+v.map(esc).join("、")+'）</span>':'')+'</li>').join("")+'</ul></details>'; }).join("")+'</div>']);
   else if(f.faculties && f.faculties.length) rows.push(["学部",'<span class="facs">'+f.faculties.map(x=>'<span>'+esc(x)+'</span>').join("")+'</span>']);
   if(f.research && f.research.length) rows.push(["有名な研究分野",'<span class="facs">'+f.research.map(x=>'<span>'+esc(x)+'</span>').join("")+'</span>']);
   if(f.licenses && f.licenses.length) rows.push(["取得できる資格",'<span class="facs">'+f.licenses.map(x=>'<span>'+esc(x)+'</span>').join("")+'</span>']);
@@ -515,6 +533,8 @@ const EXAM = /*EXAM_DATA*/{}/*END_EXAM*/;
 
 function fmtN(n){ return (n===null||n===undefined||n==="")?"—":Number(n).toLocaleString("ja-JP"); }
 function fmtR(r){ return (r===null||r===undefined||r==="")?"—":Number(r).toFixed(1)+"倍"; }
+// 指定校推薦は内容が公表されないことが多い。具体的な中身が無ければ「非公開」と表示する
+function hiddenShitei(r){ return /指定校/.test(r.name||"")&&(!r.content||/在籍|詳細|未確認|掲載|非公開|高校に届く|校内/.test(r.content)); }
 const KUBUN_COLOR={"一般":"#1f4e79","共テ利用":"#5b4b8a","推薦":"#2a7f62","総合型":"#b0532a","その他":"#4b5563"};
 function methodsHTML(name){
   const m=(INFO[name]||{}).methods; if(!m||!(m.list||[]).length) return "";
@@ -522,6 +542,7 @@ function methodsHTML(name){
   if(m.summary) h+='<div class="msum">'+esc(m.summary)+'</div>';
   for(const r of m.list){
     const parts=[];
+    if(hiddenShitei(r)){ h+='<div class="mrow"><div class="mh"><span class="ktag" style="background:'+(KUBUN_COLOR[r.kubun]||"#4b5563")+'">'+esc(r.kubun||"")+'</span>'+esc(r.name||"")+'</div><div class="md"><span><b>内容</b> 非公開（在籍高校に届く要項で確認）</span></div></div>'; continue; }
     if(r.kyotsu) parts.push('<span><b>共テ</b> '+esc(r.kyotsu)+'</span>');
     if(r.niji) parts.push('<span><b>'+(/国立|公立/.test((items.find(x=>x.name===name)||{}).type||"")?"二次":"個別")+'</b> '+esc(r.niji)+'</span>');
     if(r.content) parts.push('<span><b>選考</b> '+esc(r.content)+'</span>');
@@ -563,6 +584,16 @@ function setArt(x){ const u=ART[ART_OF[x.cat]]; for(const id of ['front','back']
 const GUIDE = /*GUIDE*/{}/*END_GUIDE*/;
 function midHensachi(name){ const d=(INFO[name]||{}).difficulty; if(!d||!d.hensachi) return null; const nums=String(d.hensachi).match(/[\d.]+/g); if(!nums) return null; const v=nums.map(Number); return (Math.min(...v)+Math.max(...v))/2; }
 function groupOf(x){ const k=kindOf(x); return (k==="国立"||k==="公立")?"pub":(k==="私立"?"pri":k); }
+// 同じ分野（学問の系統）の大学を、この大学より難しい／同程度／易しいに分けて示す（生徒の学力が入っていればそれを基準に挑戦〜安全）
+function fieldLadder(x){
+  const keis=Object.keys(KEI).filter(k=>keiHits(x,k).length&&k!=="大学校（防衛・公務など）"); if(!keis.length) return "";
+  const L=studentLevel(), base=L.hen!=null?L.hen:midHensachi(x.name); if(base==null) return "";
+  const pool=items.filter(y=>y!==x&&y.cat!=="daigakkou"&&keis.some(k=>keiHits(y,k).length)).map(y=>({y,m:midHensachi(y.name)})).filter(o=>o.m!=null);
+  const grp=[["ch",o=>o.m-base>=3,(a,b)=>a.m-b.m],["fit",o=>Math.abs(o.m-base)<3,(a,b)=>Math.abs(a.m-base)-Math.abs(b.m-base)],["safe",o=>base-o.m>=3,(a,b)=>b.m-a.m]];
+  const lab=L.hen!=null?BAND_LABEL:{ch:"より難しい",fit:"同程度",safe:"より易しい"};
+  const out=grp.map(([k,f,so])=>{ const l=pool.filter(f).sort(so).slice(0,4); return l.length?'<div><span class="band '+k+'">'+lab[k]+'</span>'+l.map(o=>'<a href="#" class="simlink" data-n="'+esc(o.y.name)+'">'+esc(o.y.name)+'</a><span class="sub2">'+o.m+'</span>').join("　")+'</div>':''; }).join("");
+  return out?out+'<div class="sub2">分野：'+esc(keis.slice(0,2).join("・"))+(L.hen!=null?'（面談タブの偏差値 '+L.hen+' が基準）':'（この大学の偏差値が基準）')+'</div>':"";
+}
 function similarSchools(x,n){
   const m=midHensachi(x.name); if(m==null) return [];
   const g=groupOf(x), r=regionOf(x.pref);
@@ -584,7 +615,9 @@ function guideBlock(x,ctx){
   if(gd.caution) rows.push(["注意点",esc(gd.caution)]);
   const t=f.tuition; if(t&&t.amount){ const r=t.amount/817800; rows.push(["費用感","初年度 約"+man(t.amount)+(kindOf(x)==="私立"||kindOf(x)==="専門職大学"?"（国立標準額の約"+r.toFixed(1)+"倍）":"")]); }
   else if(t&&t.amount===0) rows.push(["費用感",esc(t.label||"学費不要")]);
-  const sim=similarSchools(x,3);
+  const fl=fieldLadder(x);
+  if(fl) rows.push(["同じ分野の学校",fl]);
+  const sim=[];
   if(sim.length) rows.push(["難易度が近い学校",sim.map(y=>'<a href="#" class="simlink" data-n="'+esc(y.name)+'">'+esc(y.name)+'</a>').join("・")+'<span class="sub2">（偏差値帯の中央が±2.5以内・同じ設置区分、同じ地域を優先）</span>']);
   if(x.memo) rows.push(["メモ",esc(x.memo)]);
   if(!rows.length) return "";
@@ -896,9 +929,16 @@ const detailPromise=Promise.all([
 // この端末のブラウザにだけ保存（個人名は扱わない）。保存できない環境では画面を開いている間だけ保持。
 let CANDS=[]; try{ CANDS=JSON.parse(localStorage.getItem("su_cands")||"[]").filter(n=>items.some(x=>x.name===n)); }catch(e){ CANDS=[]; }
 function saveCands(){ try{ localStorage.setItem("su_cands",JSON.stringify(CANDS)); }catch(e){} const c=$("ccount"); if(c) c.textContent=CANDS.length?"（"+CANDS.length+"）":""; }
-function starBtn(name){ const on=CANDS.includes(name); return '<button type="button" class="star'+(on?' on':'')+'" data-star="'+esc(name)+'" title="比較の候補に'+(on?'入っています（押すと外す）':'追加')+'">'+(on?'★候補':'☆候補')+'</button>'; }
+// 面談タブに入れた生徒の学力（偏差値・共テ得点率）から、挑戦／実力相応／安全の目印を付ける
+function studentLevel(){ const num=v=>{ const m=String(v||"").normalize("NFKC").match(/[\d.]+/); return m?+m[0]:null; };
+  const raw=num(($("ai-level")||{}).value), mo=($("ai-moshi")||{}).value; return {hen:raw==null?null:(mo==="shinken"?shinkenToKawai(raw):raw), kt:num(($("ai-kt")||{}).value)}; }
+function bandOf(x){ const L=studentLevel(); if(L.hen!=null){ const m=midHensachi(x.name); if(m==null) return null; const g=m-L.hen; return g>=3?"ch":g<=-3?"safe":"fit"; }
+  if(L.kt!=null){ const d=((INFO[x.name]||{}).difficulty||{}).kyotei; const ks=String(d||"").match(/[\d.]+/g); if(!ks) return null; const km=(+ks[0]+ +ks[ks.length-1])/2, g=km-L.kt; return g>=5?"ch":g<=-5?"safe":"fit"; } return null; }
+const BAND_LABEL={ch:"挑戦",fit:"実力相応",safe:"安全"};
+function bandTag(x,b){ b=b||bandOf(x); return b?'<span class="band '+b+'">'+BAND_LABEL[b]+'</span>':''; }
+function starBtn(name){ const on=CANDS.includes(name); return '<button type="button" class="cbtn'+(on?' on':'')+'" data-star="'+esc(name)+'" title="'+(on?'比較の候補から外す':'比較タブで横並びに比べる候補に入れる')+'">'+(on?'✓ 比較に追加済み':'＋ 比較に追加')+'</button>'; }
 function toggleCand(name){ const i=CANDS.indexOf(name); if(i>=0) CANDS.splice(i,1); else CANDS.push(name); saveCands();
-  document.querySelectorAll('[data-star]').forEach(b=>{ if(b.dataset.star===name){ const on=CANDS.includes(name); b.classList.toggle("on",on); b.textContent=on?'★候補':'☆候補'; } }); }
+  document.querySelectorAll('[data-star]').forEach(b=>{ if(b.dataset.star===name){ const on=CANDS.includes(name); b.classList.toggle("on",on); b.textContent=on?'✓ 比較に追加済み':'＋ 比較に追加'; } }); }
 function bindStars(root){ (root||document).querySelectorAll('[data-star]').forEach(b=>b.onclick=e=>{ e.stopPropagation(); toggleCand(b.dataset.star); }); }
 saveCands();
 
@@ -989,12 +1029,17 @@ function ratioChart(names){
   g+='</svg><div class="rleg">'+series.map(s=>'<span><i style="background:'+C[s.i%4]+'"></i>'+esc(s.n)+'</span>').join("")+'</div>';
   return g;
 }
-function extraBlocks(name){ const f=INFO[name]||{}; return fdiffBlock(f)+ratiosBlock(name)+scheduleBlock(f)+engBlock(f)+moneyBlock(f)+sourceBlock(name); }
+
+function ocBlock(f){ const O=f.oc; if(!O) return "";
+  const ev=(O.events||[]);
+  return '<details class="xb" open><summary>オープンキャンパス'+(O.year?'<span class="sub2">'+esc(O.year)+'</span>':'')+'</summary>'+(ev.length?'<div class="tblw"><table class="xt"><thead><tr><th>日程</th><th>形式</th><th>内容</th></tr></thead><tbody>'+ev.map(e=>'<tr><td>'+esc(e.date||"")+'</td><td>'+esc(e.type||"")+'</td><td>'+esc(e.title||"")+(e.note?'<div class="sub2">'+esc(e.note)+'</div>':'')+'</td></tr>').join("")+'</tbody></table></div>':'')+
+    (O.note?'<div class="enote">'+esc(O.note)+'</div>':'')+(O.url?'<a href="'+esc(O.url)+'" target="_blank" rel="noopener">大学のオープンキャンパス情報 ↗</a>':'')+'</details>'; }
+function extraBlocks(name){ const f=INFO[name]||{}; return ocBlock(f)+fdiffBlock(f)+ratiosBlock(name)+scheduleBlock(f)+engBlock(f)+moneyBlock(f)+sourceBlock(name); }
 
 // ===== 比較タブ：横並び比較・日程・受験料・手続締切 =====
 let PLAN_SEL=null;   // 比較・日程に入れる大学（候補の中から）
 // 比較表の入試方式の欄：区分に合う方式を並べる（一般・共テ利用は共テ科目・個別試験・配点、推薦・総合型は選考内容・共テの有無・条件）
-function mrows(m,kinds,isGen){ const L=((m||{}).list||[]).filter(r=>kinds.includes(r.kubun)); if(!L.length) return (m&&m.list)?'<span class="sub2">なし／未確認</span>':'';
+function mrows(m,kinds,isGen){ const L=((m||{}).list||[]).filter(r=>kinds.includes(r.kubun)).map(r=>hiddenShitei(r)?{...r,content:"非公開",kyotsu:"",req:""}:r); if(!L.length) return (m&&m.list)?'<span class="sub2">なし／未確認</span>':'';
   return L.slice(0,4).map(r=>'<div class="cm"><b>'+esc(r.name||"")+'</b>'+(isGen?[r.kyotsu&&("共テ "+r.kyotsu),r.niji&&("個別 "+r.niji),r.haiten&&("配点 "+r.haiten)]:[r.content&&("選考 "+r.content),r.kyotsu&&("共テ "+r.kyotsu),r.req&&("条件 "+r.req)]).filter(Boolean).map(t=>'<div class="sub2">'+esc(t)+'</div>').join("")+'</div>').join("")+(L.length>4?'<div class="sub2">ほか'+(L.length-4)+'方式</div>':''); }
 function renderPlan(){
   const el=$("plan-out"); if(!el) return;
@@ -1084,12 +1129,12 @@ $("kt-go").onclick=async()=>{
 // ===== 更新日時（検索欄の下に表示）=====
 const BUILD=/*BUILD*/{}/*END_BUILD*/;
 (function(){ const el=$("updline"); if(!el||!BUILD.built) return; const d=s=>s?s.replace(/-/g,"/"):"";
-  el.textContent="データ更新 "+d(BUILD.built)+"（収録 "+items.length+"校）｜入試日程の確認 "+d(BUILD.schedule||BUILD.built)+"・一般選抜の日程は12月下旬に更新予定｜難易度は河合塾「"+(BUILD.diffyear||"2027年度入試用")+"」"; })();
+  el.textContent="更新 "+d(BUILD.built)+"・"+items.length+"校｜入試日程の確認 "+d((BUILD.schedule||BUILD.built).slice(0,10))+"（一般選抜は12月下旬に更新）"; el.title="難易度：河合塾「"+(BUILD.diffyear||"2027年度入試用")+"」"; })();
 $("univlist").innerHTML=items.map(x=>'<option value="'+esc(x.name)+'">').join("");
 
 // ===== 出題内容タブ =====
 let TREND_SEL=[];
-function openTrend(name){ TREND_SEL=[name]; $("tq").value=name; location.hash="#trend"; setTimeout(renderTrend,30); }
+function openTrend(name){ if(!$("uov").hidden){ $("uov").hidden=true; document.body.classList.remove("noscroll"); } TREND_SEL=[name]; $("tq").value=name; location.hash="#trend"; setTimeout(renderTrend,30); }
 function trendHTML(name){
   const x=items.find(i=>i.name===name); if(!x) return "";
   const T=(INFO[name]||{}).qtrend, sub=$("tsub").value, kub=$("tkub").value;
@@ -1211,7 +1256,7 @@ function stPlan(){
     (o.own.size?'<div>'+subjTags(o.own)+'</div>':'')+(m.e&&m.e.why?'<div class="warn">条件：'+esc(m.e.why)+'</div>':'')+'</div>'; };
   let h='<div class="stplan"><h3>受験戦略案</h3><div class="sub2">登録データ（入試方式・日程・条件）から規則に沿って組み立てた案です。最終判断は募集要項と本人・保護者との相談で。</div></div>';
   for(const q of plan){ const x=items.find(i=>i.name===q.p.name);
-    h+='<div class="stplan"><h3>'+(q.p.safety?'滑り止め':'第'+q.p.rank+'志望')+'　'+badge(x)+esc(q.p.name)+(q.p.fac?'<span class="sub2">（'+esc(q.p.fac)+'）</span>':'')+' <button type="button" class="star" data-trend="'+esc(q.p.name)+'">出題内容</button></h3>';
+    h+='<div class="stplan"><h3>'+(q.p.safety?'滑り止め':'第'+q.p.rank+'志望')+'　'+bandTag(x)+badge(x)+esc(q.p.name)+(q.p.fac?'<span class="sub2">（'+esc(q.p.fac)+'）</span>':'')+' <button type="button" class="tbtn" data-trend="'+esc(q.p.name)+'">出題内容</button></h3>';
     if(q.note){ h+='<div class="sub2">'+esc(q.note)+'</div></div>'; continue; }
     if(q.main) h+=line(q.main,q.p.rank===1?"main":"safe",q.p.rank===1?"本命":"メイン");
     else h+='<div class="warn">条件に合う一般選抜・共テ利用が見つかりません（共テの有無・教科数の設定を確認）。</div>';
@@ -1458,10 +1503,13 @@ function findUniv(q){
   return items.find(x=>nz(x.name)===a) || items.find(x=>isCorrect(q,x.name)) || items.find(x=>nz(x.name).includes(a)) || null;
 }
 function clearSelection(){
-  CUR_SEL=null; $("hl").innerHTML=""; $("mpanel").innerHTML=""; $("mq").value=""; tipHide();
+  CUR_SEL=null; $("hl").innerHTML=""; $("mpanel").innerHTML=""; $("uov").hidden=true; document.body.classList.remove("noscroll"); $("mq").value=""; tipHide();
   renderResults();   // 絞り込み中ならその一覧に戻る。地図の位置はそのまま
   if(!filtersActive()) placeLabels();
 }
+// ポップアップを閉じる：×・背景クリック・Esc（地図の位置はそのまま）
+document.addEventListener("click",e=>{ if(e.target.id==="uclose"||e.target.id==="uov") clearSelection(); });
+document.addEventListener("keydown",e=>{ if(e.key==="Escape"&&!$("uov").hidden&&($("wmodal")||{hidden:true}).hidden!==false) clearSelection(); });
 function tipHide(){ const t=$("ctip"); if(t) t.hidden=true; }
 function selectUniv(name,keepView){
   const x=items.find(i=>i.name===name); const pt=MAP.dots[name]; if(!x||!pt) return;
@@ -1472,10 +1520,11 @@ function selectUniv(name,keepView){
   const lb=document.createElementNS(SVGNS,"text"); lb.setAttribute("x",pt[0]+4); lb.setAttribute("y",pt[1]+1.8); lb.setAttribute("class","lbl"); lb.textContent=x.name;
   hl.append(ring,dot,lb); scaleMarks();
   if(!keepView) setVB([pt[0]-60,pt[1]-45,120,90]);
-  $("mpanel").innerHTML='<div class="box"><div class="ph"><h3>'+badge(x)+' '+esc(x.name)+'</h3>'+starBtn(x.name)+'<button type="button" class="star" data-trend="'+esc(x.name)+'">出題内容</button>'+hpLink(x.name)+'</div><div class="meta">'+metaPrefix(x)+esc(x.pref)+'</div><ul class="pfeat">'+x.feats.map(f=>'<li>'+esc(f)+'</li>').join("")+'</ul>'+guideBlock(x)+'<div class="newsslot">'+cardNews(x.name)+'</div>'+infoBlock(x.name)+partnerBlock(x.name)+examBlock(x.name)+extraBlocks(x.name)+'<div style="margin-top:8px"><button class="btn" id="tocard">カードで見る</button></div></div>';
+  $("mpanel").innerHTML='<div class="box"><div class="ph"><h3>'+badge(x)+' '+esc(x.name)+'</h3>'+starBtn(x.name)+'<button type="button" class="tbtn" data-trend="'+esc(x.name)+'">出題内容</button>'+hpLink(x.name)+'</div><div class="meta">'+metaPrefix(x)+esc(x.pref)+'</div><ul class="pfeat">'+x.feats.map(f=>'<li>'+esc(f)+'</li>').join("")+'</ul>'+guideBlock(x)+'<div class="newsslot">'+cardNews(x.name)+'</div>'+infoBlock(x.name)+partnerBlock(x.name)+examBlock(x.name)+extraBlocks(x.name)+'<div style="margin-top:8px"><button class="btn" id="tocard">カードで見る</button></div></div>';
   MATCH=null; LAST_LIST=[]; CUR_SEL=name; renderSearchNews();
   $("mresults").innerHTML=""; $("mcount").textContent=""; if(!filtersActive()) document.querySelectorAll("#jmap .dot.dim").forEach(c=>c.classList.remove("dim"));
-  if(!keepView&&window.matchMedia("(max-width: 860px)").matches) $("mpanel").scrollIntoView({behavior:"smooth",block:"start"});
+  $("uov").hidden=false; if(!keepView){ document.body.classList.add("noscroll"); $("mpanel").parentElement.scrollTop=0; }
+  if(false) $("mpanel").scrollIntoView({behavior:"smooth",block:"start"});
   $("tocard").onclick=()=>openCard(x.id); bindStars($("mpanel"));
   $("mpanel").querySelectorAll("[data-trend]").forEach(b=>b.onclick=()=>openTrend(b.dataset.trend));
 }
@@ -1567,13 +1616,13 @@ function searchUnivs(q){
     else if(words.length&&FL.some(t=>words.some(w=>w.length>=2&&t.includes(w)))) sc+=9;
     const etc=(f.research||[]).join("")+(f.licenses||[]).join("")+(f.careers||"");
     if(etc.includes(q)) sc+=6; else if(words.some(w=>w.length>=2&&etc.includes(w))) sc+=4;
-    const kl=Object.keys(KEI).find(k=>k.split(/[・（）]/).includes(q)); if(kl&&keiHits(x,kl).length) sc+=8;
+    // 系統名による加点はしない（「獣医」で農学系の全大学が出てしまうため）
     return {x,sc};
   }).filter(o=>o.sc>0&&passFilters(o.x)).sort((p,q2)=>q2.sc-p.sc||(PRIO[p.x.cat]??20)-(PRIO[q2.x.cat]??20)).map(o=>o.x);
 }
 var LAST_LIST=[], CUR_SEL=null;
 function renderResults(){
-  const list=searchUnivs($("mq").value);
+  let list=searchUnivs($("mq").value);
   const qv=$("mq").value.trim(), kyF=$("f-kyoka").value||$("f-rl").value;
   const noK=kyF?items.filter(x=>!((INFO[x.name]||{}).kyotsu||{}).kamoku).length:0;
   const noM=$("f-meth").value?items.filter(x=>!((((INFO[x.name]||{}).methods)||{}).list||[]).length).length:0;
@@ -1587,7 +1636,8 @@ function renderResults(){
   const kv=$("f-kei").value;
   const facHit=x=>{ const f=INFO[x.name]||{}; let h=kv?keiHits(x,kv):[]; if(!h.length&&qv&&!isCorrect(qv,x.name)&&!nz(x.name).includes(nz(qv))){ const ws=[qv,...(typeof concepts==="function"?concepts(qv).flat():[])].filter(w=>w.length>=2); const ex=facList(f).filter(t=>t.includes(qv)); h=ex.length?ex:facList(f).filter(t=>ws.some(w=>t.includes(w))); }
     return h.length?'<span class="rf">'+esc(h.slice(0,3).map(t=>/学部|学群|学域|学環|学院|学類$/.test(t.replace(/（.*$/,""))?t.replace(/（.*$/,""):t).join("・")+(h.length>3?" ほか":""))+'</span>':""; };
-  $("mresults").innerHTML=list.slice(0,200).map(x=>'<button class="ritem" data-n="'+esc(x.name)+'">'+badge(x)+'<span class="rn">'+esc(x.name)+facHit(x)+'</span><span class="rp">'+esc(x.pref)+'</span></button>').join("");
+  const so=$("msort").value; if(so){ const hv=x=>midHensachi(x.name); list=list.slice().sort(so==="pref"?(a,b)=>a.pref.localeCompare(b.pref,"ja"):(a,b)=>{ const A=hv(a),B=hv(b); if(A==null&&B==null) return 0; if(A==null) return 1; if(B==null) return -1; return so==="hd"?B-A:A-B; }); }
+  $("mresults").innerHTML=list.slice(0,200).map(x=>{ const m=midHensachi(x.name); return '<button class="ritem" data-n="'+esc(x.name)+'">'+badge(x)+'<span class="rn">'+esc(x.name)+facHit(x)+'</span><span class="rp">'+(m!=null?'<span class="rh">偏差値'+m+'</span>':'')+bandTag(x)+esc(x.pref)+'</span></button>'; }).join("");
   $("mresults").querySelectorAll(".ritem").forEach(b=>b.onclick=()=>selectUniv(b.dataset.n));
   LAST_LIST=(qv||filtersActive())?list:[]; renderSearchNews();
   // 地図上で候補の点を強調
@@ -1596,12 +1646,12 @@ function renderResults(){
   applyKindDots(); MATCH=set.size?set:(filtersActive()?new Set():null); if($("labels")&&$("labels").childNodes.length+document.querySelectorAll("#jmap .dot").length) placeLabels();
 }
 $("mq").addEventListener("input",()=>{ CUR_SEL=null; $("hl").innerHTML=""; $("mpanel").innerHTML=""; renderResults(); });
-[$("f-eng"),$("f-kei"),$("f-kyoka"),$("f-rl"),$("f-meth"),...document.querySelectorAll(".fk")].forEach(el=>el.addEventListener("change",()=>{
+[$("msort"),$("f-eng"),$("f-kei"),$("f-kyoka"),$("f-rl"),$("f-meth"),...document.querySelectorAll(".fk")].forEach(el=>el.addEventListener("change",()=>{
   // 学校を選んだ後は検索欄にその校名が入っているので、絞り込みを変えたら校名を消して一覧に戻す
   if($("mpanel").innerHTML&&items.some(x=>x.name===$("mq").value)) $("mq").value="";
   $("mpanel").innerHTML=""; renderResults(); }));
 $("mq").addEventListener("keydown",e=>{ if(e.key==="Enter"){ const l=searchUnivs($("mq").value); if(l.length) selectUniv(l[0].name); } });
-$("mreset").onclick=()=>{ MATCH=null; LAST_LIST=[]; CUR_SEL=null; renderSearchNews(); document.querySelectorAll(".fk").forEach(e=>e.checked=true); applyKindDots(); $("f-eng").value=""; $("f-kei").value=""; $("f-kyoka").value=""; $("f-rl").value=""; $("f-meth").value=""; document.querySelectorAll(".fk").forEach(e=>e.checked=true); $("hl").innerHTML=""; $("mpanel").innerHTML=""; $("mresults").innerHTML=""; $("mcount").textContent=""; $("mq").value=""; document.querySelectorAll("#jmap .dot.dim").forEach(c=>c.classList.remove("dim")); setVB(HOME_VB); };
+$("mreset").onclick=()=>{ MATCH=null; LAST_LIST=[]; CUR_SEL=null; $("uov").hidden=true; document.body.classList.remove("noscroll"); renderSearchNews(); document.querySelectorAll(".fk").forEach(e=>e.checked=true); applyKindDots(); $("f-eng").value=""; $("f-kei").value=""; $("f-kyoka").value=""; $("f-rl").value=""; $("f-meth").value=""; document.querySelectorAll(".fk").forEach(e=>e.checked=true); $("hl").innerHTML=""; $("mpanel").innerHTML=""; $("mresults").innerHTML=""; $("mcount").textContent=""; $("mq").value=""; document.querySelectorAll("#jmap .dot.dim").forEach(c=>c.classList.remove("dim")); setVB(HOME_VB); };
 window.addEventListener("hashchange",()=>{ if(location.hash==="#map") requestAnimationFrame(()=>scaleMarks()); });
 
 
@@ -1767,7 +1817,7 @@ function recommend(S){
   return res.sort((a,b)=>b.sc-a.sc||(PRIO[a.x.cat]??20)-(PRIO[b.x.cat]??20));
 }
 const FLD_LABEL={faculties:"学部",licenses:"資格",careers:"進路",research:"研究",feats:"特色",memo:"メモ"};
-const BANDS=[["ch","挑戦校","目安が本人より上"],["fit","実力相応校","目安が本人と同程度"],["safe","安全校","目安が本人より下"],["unk","候補","学力の入力なし・難易度未登録"]];
+const BANDS=[["ch","挑戦校",""],["fit","実力相応校",""],["safe","安全校",""],["unk","候補（学力未入力・難易度未登録）",""]];
 function recCard(r,i){
   const x=r.x, f=INFO[x.name]||{}, d=f.difficulty||{}, t=f.tuition, gd=GUIDE[x.name]||{}, m=f.methods||{};
   const facts=[d.hensachi&&("偏差値 "+d.hensachi),d.kyotei&&("共テ "+d.kyotei),t&&t.amount!=null&&("初年度 約"+man(t.amount)),f.kyotsu&&f.kyotsu.kamoku&&("共テ "+f.kyotsu.kamoku)].filter(Boolean);
@@ -1782,7 +1832,7 @@ function recCard(r,i){
   if(r.engOk&&r.engOk.length) rows.push(["英語外部試験",'<span style="color:#2a7f62">基準を満たす：</span>'+r.engOk.slice(0,3).map(e=>esc(e.name+"（"+e.use+"・"+e.level+"）")).join("<br>")]);
   const caut=[...(gd.caution?[gd.caution]:[]),...r.caution];
   if(caut.length) rows.push(["注意",'<span style="color:var(--ng)">'+esc(caut.join("／"))+'</span>']);
-  return '<div class="airec"><h3><span class="rk">'+(i+1)+'</span>'+badge(x)+esc(x.name)+'<span class="sub2">'+metaPrefix(x)+esc(x.pref)+'</span></h3>'+
+  return '<div class="airec"><h3><span class="rk">'+(i+1)+'</span>'+bandTag(x,r.band!=="unk"?r.band:null)+badge(x)+esc(x.name)+'<span class="sub2">'+metaPrefix(x)+esc(x.pref)+'</span></h3>'+
     (facts.length?'<div class="why">'+esc(facts.join("　"))+'</div>':'')+
     '<dl class="mrows">'+rows.map(([k,v])=>'<dt>'+k+'</dt><dd>'+v+'</dd>').join("")+'</dl>'+
     '<div class="acts"><button class="btn" data-card="'+x.id+'">カードを見る</button><button class="btn" data-map="'+esc(x.name)+'">地図で見る</button>'+starBtn(x.name)+hpLink(x.name)+'</div></div>';
@@ -1803,6 +1853,9 @@ function checklist(S,list){
   c.push("出願書類・日程の最終確認は各大学の募集要項で");
   return c;
 }
+let MK_OFF=new Set(), MSORT2="";
+document.addEventListener("change",e=>{ if(e.target.classList&&e.target.classList.contains("mk")){ if(e.target.checked) MK_OFF.delete(e.target.value); else MK_OFF.add(e.target.value); $("ai-go").click(); }
+  if(e.target.id==="msort2"){ MSORT2=e.target.value; $("ai-go").click(); } });
 $("ai-go").onclick=async()=>{
   if(!DETAIL_READY){ $("ai-status").textContent="データを読み込み中…"; await detailPromise; }
   const S=studentInput();
@@ -1812,9 +1865,14 @@ $("ai-go").onclick=async()=>{
   $("ai-status").textContent=items.length+"校の登録情報と照らし合わせて"+list.length+"校が該当。各区分の上位を表示しています。最終判断は募集要項と本人の意思で。";
   const cond=[S.job&&("職業："+S.job),S.study&&("学問："+S.study),S.hen!=null&&(S.moshi==="shinken"?("進研模試 偏差値 "+S.rawHen+"（河合換算 約"+S.hen+"）"):("河合模試 偏差値 "+S.hen)),S.kt!=null&&("共テ "+S.kt+"%"),S.engTxt&&("英検 "+S.engTxt),S.kyoka&&("共テ "+({3:"3教科まで",5:"4〜5教科",6:"6教科以上"})[S.kyoka]),S.budget&&("学費 "+man(S.budget)+"まで"),S.region&&("地域："+S.region),S.type&&("区分："+({pub:"国公立",pri:"私立",dai:"大学校"})[S.type]),S.ways.length&&("方式："+S.ways.join("・")),S.other&&("その他："+S.other)].filter(Boolean);
   let h='<div class="msheet"><h2>面談シート</h2><div class="sub2">'+new Date().toLocaleDateString("ja-JP")+'　'+esc(cond.join("／"))+'</div></div>';
+  h+='<div class="mctl" id="mctl">'+[["国立","国立"],["公立","公立"],["私立","私立"],["その他","大学校・専門職"]].map(([v,l])=>'<label class="chk"><input type="checkbox" class="mk" value="'+v+'"'+(MK_OFF.has(v)?'':' checked')+'>'+l+'</label>').join("")+
+    '<select id="msort2"><option value="">並び順：希望との一致度</option><option value="hd"'+(MSORT2==="hd"?' selected':'')+'>偏差値の高い順</option><option value="ha"'+(MSORT2==="ha"?' selected':'')+'>偏差値の低い順</option></select></div>';
+  const kg=x=>{ const k=kindOf(x); return (k==="国立"||k==="公立"||k==="私立")?k:"その他"; };
+  let view=list.filter(r=>!MK_OFF.has(kg(r.x)));
+  if(MSORT2) view=view.slice().sort((a,b)=>{ const A=midHensachi(a.x.name),B=midHensachi(b.x.name); if(A==null) return 1; if(B==null) return -1; return MSORT2==="hd"?B-A:A-B; });
   for(const [k,label,desc] of BANDS){
-    const L=list.filter(r=>r.band===k).slice(0,k==="unk"?8:5); if(!L.length) continue;
-    h+='<div class="mgrp '+k+'"><h2>'+label+'<small>'+desc+'・'+list.filter(r=>r.band===k).length+'校中 上位'+L.length+'校</small></h2><div class="aiout">'+L.map(recCard).join("")+'</div></div>';
+    const L=view.filter(r=>r.band===k).slice(0,k==="unk"?8:6); if(!L.length) continue;
+    h+='<div class="mgrp '+k+'"><h2><span class="band '+k+'">'+label+'</span><small>'+view.filter(r=>r.band===k).length+'校中 上位'+L.length+'校</small></h2><div class="aiout">'+L.map(recCard).join("")+'</div></div>';
   }
   h+='<div class="msheet" style="margin-top:12px"><h2>面談で確認すること</h2><ul>'+checklist(S,list).map(t=>'<li>'+esc(t)+'</li>').join("")+'</ul><div class="sub2">メモ：</div><div style="height:4em;border-bottom:1px dashed var(--line)"></div></div>';
   if(S.moshi==="shinken"&&S.rawHen!=null) h+='<div class="enote" style="margin-top:8px">※難易度は河合塾（Kei-Net）の偏差値です。進研模試の偏差値は河合の尺度へ目安で換算しています（例：進研67≒河合60）。境目の学校は進研模試の合格可能性判定（志望校判定）で確かめてください。</div>';

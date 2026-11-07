@@ -1,0 +1,270 @@
+[
+ {
+  "name": "福井大学",
+  "info": {
+   "qtrend": {
+    "years": "2025年度（数学は大学公開の入試対策資料）",
+    "rows": [
+     {
+      "kubun": "一般",
+      "method": "前期（国際地域学部）",
+      "subject": "英語",
+      "format": "大問3（長文読解2題は各5問の選択式、残り1題は英語小論文）",
+      "trend": "読解は全体把握・文脈上の表現理解・細部解釈・含意の読み取りを問う。英語小論文は複数段落で具体例を挙げ自分の考えを論理的に述べる力を見る。",
+      "src": "https://www.u-fukui.ac.jp/wp/wp-content/uploads/25-13k_zenki_eigo_g.pdf"
+     },
+     {
+      "kubun": "一般",
+      "method": "前期（工学部・教育学部理系型・国際地域学部）",
+      "subject": "数学",
+      "format": "記述式。範囲は工学部が数Ⅲまで、国際地域学部は数ⅠⅡAB（Bは数列・ベクトル）",
+      "trend": "確率・数列・ベクトル・微積分が頻出で整数も出る。三角関数・指数対数・2次曲線・複素数平面も出るため分野を絞りすぎないことが勧められている。",
+      "src": "https://nyushi.ad.u-fukui.ac.jp/assets/pdf/entrance-exam-measures-math.pdf"
+     }
+    ],
+    "note": "医学部・後期等は未確認"
+   }
+  },
+  "sources": [
+   "https://www.u-fukui.ac.jp/wp/wp-content/uploads/25-13k_zenki_eigo_g.pdf",
+   "https://nyushi.ad.u-fukui.ac.jp/assets/pdf/entrance-exam-measures-math.pdf"
+  ]
+ },
+ {
+  "name": "山口大学",
+  "info": {
+   "qtrend": {
+    "years": "2025〜2026年度",
+    "rows": [
+     {
+      "kubun": "一般",
+      "method": "前期",
+      "subject": "国語",
+      "format": "大問3（現代文評論・古文・漢文）、記述中心（評論の要約は100字以内）",
+      "trend": "現代文は語彙・対比構造の読解と主張の要約、古文は文法・敬語と心情・語りの視点、漢文は訓点・語義・現代語訳と作者の主張説明を問う構成（2025年度）。",
+      "src": "https://www.yamaguchi-u.ac.jp/nyushi/wp-content/uploads/2025/07/r7_zenki_kokugo_ito.pdf"
+     },
+     {
+      "kubun": "一般",
+      "method": "前期（理系α）",
+      "subject": "数学",
+      "format": "大問4。第1問は答えのみ記入、第2〜4問は過程を含む記述",
+      "trend": "2026年度は三角関数・数列の小問、微積分、不等式の表す領域、空間ベクトルから出題。",
+      "src": "https://www.yamaguchi-u.ac.jp/nyushi/wp-content/uploads/2026/02/r8_zenki_suugakualpha_mondai.pdf"
+     },
+     {
+      "kubun": "一般",
+      "method": "前期（教育学部 小学校教育コース）",
+      "subject": "小論文",
+      "format": "大学公開ページではテーマのみ掲載",
+      "trend": "2025年度は子どもの食生活と日本の食文化をテーマとした出題。",
+      "src": "https://www.yamaguchi-u.ac.jp/nyushi/past/mondaikouhyo/zenki/index.html"
+     }
+    ],
+    "note": "数学は文系・理系α・理系βの3種。英語・理科の出題意図は大学サイトで公開されているが未確認"
+   }
+  },
+  "sources": [
+   "https://www.yamaguchi-u.ac.jp/nyushi/past/mondaikouhyo/zenki/index.html",
+   "https://www.yamaguchi-u.ac.jp/nyushi/wp-content/uploads/2025/07/r7_zenki_kokugo_ito.pdf",
+   "https://www.yamaguchi-u.ac.jp/nyushi/wp-content/uploads/2026/02/r8_zenki_suugakualpha_mondai.pdf"
+  ]
+ },
+ {
+  "name": "鳥取大学",
+  "info": {
+   "qtrend": {
+    "years": "2025年度実施（大学公開の出題例）",
+    "rows": [
+     {
+      "kubun": "総合型",
+      "method": "総合型選抜（地域学部 地域創造コース）",
+      "subject": "小論文",
+      "format": "約80分の講義受講後に課題論文90分・2問（300字以内の要約、600字以内の事例説明）",
+      "trend": "講義内容を踏まえ、非営利組織と社会のずれや葛藤について要約と具体例で論じさせる。",
+      "src": "https://www.admissions.adm.tottori-u.ac.jp/pamphlet/ao/guide2026/dai2ji"
+     },
+     {
+      "kubun": "総合型",
+      "method": "総合型選抜（地域学部 地域創造コース）",
+      "subject": "面接",
+      "format": "グループディスカッション（5人程度・約15分を複数回）＋個人面接約20分",
+      "trend": "討論は地域の共創がテーマ。面接は提出書類をもとに地域づくりへの主体性と知識・思考力を確認。",
+      "src": "https://www.admissions.adm.tottori-u.ac.jp/pamphlet/ao/guide2026/dai2ji"
+     },
+     {
+      "kubun": "総合型",
+      "method": "総合型選抜（地域学部 人間形成コース）",
+      "subject": "小論文",
+      "format": "2問（英文読解を含む）＋小論文内容を応用する口頭発表",
+      "trend": "英文で二者の主張を整理する問題と、文章読解から論理的に考えを述べる問題。口頭発表で別の状況への応用力を見る。",
+      "src": "https://www.admissions.adm.tottori-u.ac.jp/pamphlet/ao/guide2026/dai2ji"
+     },
+     {
+      "kubun": "総合型",
+      "method": "総合型選抜（地域学部 人間形成コース）",
+      "subject": "面接",
+      "format": "グループディスカッション・発表＋個人面接約15分（面接官4名）",
+      "trend": "討論は新聞記事を題材に地域でできることを考える。面接は志望理由や進路が中心。",
+      "src": "https://www.admissions.adm.tottori-u.ac.jp/pamphlet/ao/guide2026/dai2ji"
+     },
+     {
+      "kubun": "総合型",
+      "method": "総合型選抜（地域学部 国際地域文化コース）",
+      "subject": "小論文",
+      "format": "課題論文90分・2問（200字以内の要約、800字以内の意見）",
+      "trend": "数ページの文章を読み、人や社会の関係構築について自分の考えを述べる。",
+      "src": "https://www.admissions.adm.tottori-u.ac.jp/pamphlet/ao/guide2026/dai2ji"
+     },
+     {
+      "kubun": "総合型",
+      "method": "総合型選抜（地域学部 国際地域文化コース）",
+      "subject": "面接",
+      "format": "資料を読んだ上での長時間グループディスカッション（12名・約4時間）＋個人面接15分（面接官3名）",
+      "trend": "討論は多数決による民主的決定の課題など社会的テーマ。",
+      "src": "https://www.admissions.adm.tottori-u.ac.jp/pamphlet/ao/guide2026/dai2ji"
+     },
+     {
+      "kubun": "総合型",
+      "method": "総合型選抜（農学部 生命環境農学科）",
+      "subject": "小論文",
+      "format": "課題論文1,000字程度",
+      "trend": "将来の夢と、その実現に農学部が適する理由・入学後の取組みを述べる志望動機型。",
+      "src": "https://www.admissions.adm.tottori-u.ac.jp/pamphlet/ao/guide2026/dai2ji"
+     },
+     {
+      "kubun": "総合型",
+      "method": "総合型選抜（農学部 生命環境農学科）",
+      "subject": "面接",
+      "format": "グループディスカッション＋個人面接25分（面接官3名、基礎的な英語の試問あり）",
+      "trend": "討論は第一次産業の担い手不足の解決策など農業・地域課題。",
+      "src": "https://www.admissions.adm.tottori-u.ac.jp/pamphlet/ao/guide2026/dai2ji"
+     }
+    ],
+    "note": "一般選抜の出題意図は大学サイトでPDF公開されているが本文未確認。医学部・工学部の総合型は未掲載"
+   }
+  },
+  "sources": [
+   "https://www.admissions.adm.tottori-u.ac.jp/pamphlet/ao/guide2026/dai2ji"
+  ]
+ },
+ {
+  "name": "宮崎大学",
+  "info": {
+   "qtrend": {
+    "years": "2025年度",
+    "rows": [
+     {
+      "kubun": "一般",
+      "method": "前期（医学部医学科）",
+      "subject": "英語",
+      "format": "大問3（長文読解・和文英訳・実用文読解）、記述中心。約60語の自由英作文や20〜40語の英語記述を含む",
+      "trend": "2025年度は教育・心理学系の文章と旅行ガイドが題材。和訳・日本語説明に加え、英語で説明・意見を書かせる設問が多い。",
+      "src": "https://www.miyazaki-u.ac.jp/exam/R705_english1st-med.pdf"
+     },
+     {
+      "kubun": "一般",
+      "method": "前期（工学部）",
+      "subject": "英語",
+      "format": "大問3（空所補充、長文読解、会話文読解）。選択・並べ替えと和訳・80字程度の日本語説明・英訳・短い自由英作文の混合",
+      "trend": "2025年度は旅行・日常会話、環境（生物多様性）、日加の就職活動比較などが題材。",
+      "src": "https://www.miyazaki-u.ac.jp/exam/R706_english-tec.pdf"
+     }
+    ],
+    "note": "試験時間は問題冊子に記載なし。出題意図は大学サイト（一般選抜における試験問題・解答例・出題意図）で公開"
+   }
+  },
+  "sources": [
+   "https://www.miyazaki-u.ac.jp/exam/R705_english1st-med.pdf",
+   "https://www.miyazaki-u.ac.jp/exam/R706_english-tec.pdf"
+  ]
+ },
+ {
+  "name": "鹿児島大学",
+  "info": {
+   "qtrend": {
+    "years": "2025年度",
+    "rows": [
+     {
+      "kubun": "一般",
+      "method": "一般選抜（理・工・農・水産・共同獣医学部）",
+      "subject": "英語",
+      "format": "大問5（長文読解3、文法・語彙選択10問、会話文の和文英訳）。日本語での説明・選択・T/Fの混合で、語数指定の英作文はなし",
+      "trend": "2025年度は海水淡水化、空き家問題、宇宙滞在など科学技術・社会問題の題材が中心。",
+      "src": "https://www.kagoshima-u.ac.jp/exam/2025-403.pdf"
+     }
+    ],
+    "note": "問題冊子に日程・試験時間の記載なし。他学部・他教科は未確認"
+   }
+  },
+  "sources": [
+   "https://www.kagoshima-u.ac.jp/exam/2025-403.pdf"
+  ]
+ },
+ {
+  "name": "佐賀大学",
+  "info": {
+   "qtrend": {
+    "years": "2025年度",
+    "rows": [
+     {
+      "kubun": "推薦",
+      "method": "学校推薦型選抜Ⅰ（医学部看護学科）",
+      "subject": "小論文",
+      "format": "大問3（英文資料の空所補充選択・下線部和訳・800字以内の論述）",
+      "trend": "2025年度は視覚障害者の空間認識と他者との関わりを扱う英文を読み、障害理解・福祉の観点で論じさせる。英文読解力も問われる。",
+      "src": "https://www.sao.saga-u.ac.jp/PDF/exam/2025_kango_sui_syouron.pdf"
+     }
+    ],
+    "note": "試験時間は問題冊子に記載なし。一般選抜は未確認"
+   }
+  },
+  "sources": [
+   "https://www.sao.saga-u.ac.jp/PDF/exam/2025_kango_sui_syouron.pdf"
+  ]
+ },
+ {
+  "name": "弘前大学",
+  "info": {
+   "qtrend": {
+    "years": "2025年度",
+    "rows": [
+     {
+      "kubun": "一般",
+      "method": "前期",
+      "subject": "生物",
+      "format": "大問4・全問必答。語句記入・記号選択に加え、20〜110字の字数指定説明や計算、図の作成を含む",
+      "trend": "2025年度は遺伝子工学（PCR・電気泳動・塩基配列決定）、多様性と進化・分類、神経とホルモンの調節、窒素循環・外来種など生態系から出題。",
+      "src": "https://nyushi.hirosaki-u.ac.jp/wp-content/uploads/2025/06/07-R7ze-rika-se.pdf"
+     }
+    ],
+    "note": "問題冊子に対象学部・試験時間の記載なし。英語・数学等は未確認"
+   }
+  },
+  "sources": [
+   "https://nyushi.hirosaki-u.ac.jp/wp-content/uploads/2025/06/07-R7ze-rika-se.pdf"
+  ]
+ },
+ {
+  "name": "長崎大学",
+  "info": {
+   "qtrend": {
+    "years": "学部公開資料（年度記載なし）",
+    "rows": [
+     {
+      "kubun": "一般",
+      "method": "前期（多文化社会学部）",
+      "subject": "総合問題",
+      "format": "「批判的・論理的思考力テスト」。文章・グラフ・地図・表などの資料を読み解いて論を展開する記述形式（時間・字数は学部ページに記載なし）",
+      "trend": "正解が一つに定まらない問いに批判的・論理的に取り組む力を見るねらいで、国語的読解・記述力に加え地歴公民の因果理解や数理的推論も求められる。",
+      "src": "https://www.hss.nagasaki-u.ac.jp/exam/data.html"
+     }
+    ],
+    "note": "他学部・他教科は未確認"
+   }
+  },
+  "sources": [
+   "https://www.hss.nagasaki-u.ac.jp/exam/data.html"
+  ]
+ }
+]

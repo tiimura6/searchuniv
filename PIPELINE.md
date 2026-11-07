@@ -12,6 +12,17 @@ Searchuniv に全国の大学を少しずつ追加し、既存校の空欄（研
 
 > `queue.json` の `excluded` にある学校は追加しない（先生の判断で除外したもの）。
 
+
+## 出典の信頼度（全項目共通・2026-11-07 先生の方針）
+1. **大学公式サイトがいちばん信用できる。** 食い違ったら公式を採る。
+2. **河合塾 Kei-Net と 旺文社パスナビ（passnavi.obunsha.co.jp）はある程度信用できる。** 両方を巡回する。
+3. それ以外のサイトは、公式・Kei-Net・パスナビのどれかと同じ内容のときだけ使う。**複数の出典で同じ内容なら採用してよい。**
+4. **指定校推薦**は、内容が公表されていなければ「非公開」とし、推測で書かない。公募推薦やその他の方式で公開されている情報はこれまでどおり入れる。
+
+## 毎日の更新
+- `add` が空になるまでは新規追加を優先する。
+- `add` が空になったら、毎回の実行で「確認日（info._checked）が古い順に8校」を選び、時期で変わる情報（入試日程・オープンキャンパス・入試方式・倍率）を公式→Kei-Net→パスナビの順で再確認し、変わっていれば `*_replace` で置き換える。
+
 ## 1回の実行でやること
 1. リポジトリ `tiimura6/searchuniv` を用意する（add_repo を access "push" で呼び、案内どおり clone）。
 2. `data/queue.json` を読み（add の各項目は `{name,type,pref,hp,cat}`。cat と hp はそのまま batch に使う。名前に括弧付きの区分（例「（通信制のみ）」「（大学院のみ）」）がある学校は、その名前をそのまま batch の name に使い、項目に note があれば従う）、`add` の先頭から最大 **7校**、`enrich` の先頭から最大 **8校** を選ぶ（enrich の各項目は `{name, keinet, need}`。`need` に挙がった項目だけを集める：licenses は `/outline/licential`、careers は `/outline/admission_employment`、research は `outline/department/{コード}` の概要・特色）。両方空のときは、`complete` が true なら「全件完了」と報告してこの定期実行（名前「Searchuniv データ拡充」）を update_trigger で無効化する。`complete` が false なら何も変更せず「待機中（キュー準備中）」と報告して終わる（無効化しない）。
@@ -36,6 +47,7 @@ Searchuniv に全国の大学を少しずつ追加し、既存校の空欄（研
 - **一般選抜の日程の取り直し（need に schedule_general）**：Kei-Net `/{コード}/general/schedule`（出願・試験・発表・手続）と `/{コード}/general/exam_fee`（検定料）、推薦は `/recommend/exam_rec`。`tools/EXTRA_SPEC.md` の schedule の形で、一般・共テ利用・推薦・総合型の全行を作り、batch では `info.schedule_replace` に入れる（既存の日程を置き換える）。year は「2027年度入試」。まだ掲載が無ければ書かずに done へ。
 - **入試倍率の推移（info.ratios）**：`tools/RATIO_SPEC.md` の形。大学公式の入試結果（過去数年分）、Kei-Net `/general/exam_result`、パスナビの入試結果から。enrich の need に ratios があるとき集める。既にある2年分を延ばすときは、過去3〜5年分そろえた ratios を `info.ratios_replace` に入れて置き換える。
 - **これまでの出題内容（info.qtrend）**：`tools/QTREND_SPEC.md` の形。問題文は写さず形式と傾向を自分の言葉で要約。enrich の need に qtrend があるとき集める。
+- **オープンキャンパス（info.oc）**：`tools/OC_SPEC.md` の形。enrich の need に oc があるとき集める。
 - **海外協定校（info.partners）**：`tools/PARTNER_SPEC.md` の形で、大学公式の協定校一覧から国ごとの校数と代表校を数える（大学校は不要）。新規追加の回では集めず enrich（need に partners）で集める。
 - **入試方式（info.methods）**：`tools/METHODS_SPEC.md` の形で、一般選抜（国公立は前期・後期の共テ科目・二次科目・共テ:二次の配点比）、私立の共テ利用、学校推薦型（公募・指定校）、総合型をまとめる。`/general/exam_subject`、`/recommend/exam_rec`（推薦）、`/recommend/exam_ao`（総合型）を使う。ページが途中で切れたら大学公式の募集要項やマナビジョンで補う。取れなかったら enrich に `{name, keinet, need:["methods"]}` で積んで後回しにしてよい。enrich の need に methods があるときも同じ手順。
   - need に **methods_gap** があるとき：data/info.json のその校の methods（list と note）を読み、「未確認」「切れて確認できず」と書かれた方式・学部や、無い推薦（公募）・総合型を、大学公式の入試ページ・募集要項（PDF可）、マナビジョン、パスナビで確認する。batch では `info.methods_add` に {"list": [足す・直す行だけ], "note": "直した後の note 全文", "summary": "必要なら新しい要約"} を書く（同じ区分・方式名の行は置き換わる）。確認できたものだけ書き、確認できなければ何も書かず done に移す。

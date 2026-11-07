@@ -114,5 +114,647 @@
   "sources": [
    "https://search.keinet.ne.jp/2210/topics/33"
   ]
+ },
+ {
+  "name": "上智大学",
+  "info": {
+   "qtrend": {
+    "years": "2021〜2026年度",
+    "rows": [
+     {
+      "kubun": "一般",
+      "method": "一般選抜（各学部の英語）",
+      "subject": "英語",
+      "format": "75分（外国語学部は60分）、マーク式中心で設問数が多い（長文読解・文法語法・長文空所補充・段落整序など）",
+      "trend": "語彙レベルの高い長文が中心で、英米や時事的な話題が多い。2026年度は経済学部経営学科で段落整序が出るなど、見慣れない形式の並べ替えに注意。",
+      "src": "https://search.keinet.ne.jp/2221/topics/33"
+     },
+     {
+      "kubun": "一般",
+      "method": "一般選抜（文学部英文学科）",
+      "subject": "英語",
+      "format": "大問2で大問1の長文と関連する約80語の英作文（記述）",
+      "trend": "英作文は長文の内容に結び付いた抽象的なテーマ（2026年度はユートピアの概念）について意見を書く形式。",
+      "src": "https://search.keinet.ne.jp/2221/topics/33"
+     }
+    ],
+    "note": "河合塾Kei-Netの英語の入試対策情報に基づく。"
+   }
+  },
+  "sources": [
+   "https://search.keinet.ne.jp/2221/topics/33"
+  ]
+ },
+ {
+  "name": "明治大学",
+  "info": {
+   "qtrend": {
+    "years": "2026年度",
+    "rows": [
+     {
+      "kubun": "一般",
+      "method": "学部別入試（全学部の英語）",
+      "subject": "英語",
+      "format": "学部により約60〜80分、小問43〜49問、選択式と記述（空所への語の記入など）の併用",
+      "trend": "長文が長くなる傾向で、多くの学部で会話文が出る。記述ではつづりの正確さも問われる。",
+      "src": "https://search.keinet.ne.jp/2286/topics/33"
+     },
+     {
+      "kubun": "一般",
+      "method": "学部別入試（政治経済学部・法学部）",
+      "subject": "英語",
+      "format": "選択式に加え和訳・内容説明の記述あり、法学部は50字の要約",
+      "trend": "2026年度は記述系の設問が目立った。法学部では会話文が出ていない。",
+      "src": "https://search.keinet.ne.jp/2286/topics/33"
+     },
+     {
+      "kubun": "一般",
+      "method": "学部別入試（商学部）",
+      "subject": "英語",
+      "format": "4択の短文文法問題と会話文を含む",
+      "trend": "長文に加えて一文単位の文法・語法と会話表現を幅広く問う構成。",
+      "src": "https://search.keinet.ne.jp/2286/topics/33"
+     },
+     {
+      "kubun": "一般",
+      "method": "学部別入試（理工学部）",
+      "subject": "英語",
+      "format": "非常に長い長文、和訳・内容説明の記述、発音・アクセント問題を含む",
+      "trend": "長文の分量が多く、記述と発音アクセントを併せて問う。会話文は出ていない。",
+      "src": "https://search.keinet.ne.jp/2286/topics/33"
+     }
+    ],
+    "note": "河合塾Kei-Netの英語の入試対策情報（2026年度分析）に基づく。"
+   }
+  },
+  "sources": [
+   "https://search.keinet.ne.jp/2286/topics/33"
+  ]
+ },
+ {
+  "name": "青山学院大学",
+  "info": {
+   "qtrend": {
+    "years": "2026年度",
+    "rows": [
+     {
+      "kubun": "一般",
+      "method": "一般選抜 全学部日程",
+      "subject": "英語",
+      "format": "80分・大問4・40問、全問マーク式（長文2題で計約1,800語）",
+      "trend": "長文は内容一致と空所補充、ほかに正誤判定・語彙と短い会話の表現の意味を問う。全大問がやや難の評価。",
+      "src": "https://search.keinet.ne.jp/2200/topics/33"
+     }
+    ],
+    "note": "河合塾Kei-Netの入試対策情報（英語・全学部日程）に基づく。学部個別日程や他教科は未収集。"
+   }
+  },
+  "sources": [
+   "https://search.keinet.ne.jp/2200/topics/33"
+  ]
+ },
+ {
+  "name": "立教大学",
+  "info": {
+   "qtrend": {
+    "years": "2026年度",
+    "rows": [
+     {
+      "kubun": "一般",
+      "method": "一般選抜",
+      "subject": "英語",
+      "format": "75分・大問5、マーク式と記述の併用（800語超の長文2題、字数指定の和訳1問、空所への語の記入）",
+      "trend": "長文読解・正誤指摘・会話の内容一致・短文の空所記述で構成され、形式と難度は毎年ほぼ一定。空所記述は基本語だが綴りまで問われ差がつきやすい。",
+      "src": "https://search.keinet.ne.jp/2290/topics/33"
+     }
+    ],
+    "note": "河合塾Kei-Netの英語の入試対策情報に基づく。学部別の違いは出典に記載なし。"
+   }
+  },
+  "sources": [
+   "https://search.keinet.ne.jp/2290/topics/33"
+  ]
+ },
+ {
+  "name": "中央大学",
+  "info": {
+   "qtrend": {
+    "years": "2026年度",
+    "rows": [
+     {
+      "kubun": "一般",
+      "method": "学部別選抜（法学部）",
+      "subject": "英語",
+      "format": "記述とマークの併用（正誤指摘・英文和訳・指定語と書き出し付きの和文英訳・多義語の空所補充）",
+      "trend": "文脈に沿った訳出が求められ、和訳は難関国立大の過去問に近いレベル。全体に時間に対して問題量が多い。",
+      "src": "https://search.keinet.ne.jp/2242/topics/33"
+     },
+     {
+      "kubun": "一般",
+      "method": "学部別選抜（商学部）",
+      "subject": "英語",
+      "format": "記述とマークの併用、80語以上の自由英作文を含む",
+      "trend": "英作文は仕事選びや将来の働き方など、身近な選択について立場を選び理由を述べるテーマ。",
+      "src": "https://search.keinet.ne.jp/2242/topics/33"
+     },
+     {
+      "kubun": "一般",
+      "method": "学部別選抜（経済学部）",
+      "subject": "英語",
+      "format": "記述とマークの併用（英文和訳・空所補充型の条件英作文）",
+      "trend": "記述問題は高い表現力を問うものが多い。",
+      "src": "https://search.keinet.ne.jp/2242/topics/33"
+     },
+     {
+      "kubun": "一般",
+      "method": "学部別選抜（基幹・社会・先進理工学部）・5学部共通選抜",
+      "subject": "英語",
+      "format": "マークシート方式",
+      "trend": "共通選抜では下線部から誤りを1つ選ぶ正誤指摘が出る。語彙を軸に文法・精読・多読をバランスよく問う。",
+      "src": "https://search.keinet.ne.jp/2242/topics/33"
+     }
+    ],
+    "note": "河合塾Kei-Netの英語の入試対策情報に基づく。試験時間・大問数は出典に記載なし。"
+   }
+  },
+  "sources": [
+   "https://search.keinet.ne.jp/2242/topics/33"
+  ]
+ },
+ {
+  "name": "法政大学",
+  "info": {
+   "qtrend": {
+    "years": "2026年度",
+    "rows": [
+     {
+      "kubun": "一般",
+      "method": "一般選抜（各日程）",
+      "subject": "英語",
+      "format": "マークシート方式、日程ごとに試験時間と大問構成が異なる、一部学部で発音・アクセント",
+      "trend": "多くの日程で読解総合問題が中心で、内容一致・空所補充・語義・タイトル選択・図表読み取りなど設問が多様。英文量・設問数が多く速読力が要る。",
+      "src": "https://search.keinet.ne.jp/2279/topics/33"
+     }
+    ],
+    "note": "河合塾Kei-Netの英語の入試対策情報に基づく。"
+   }
+  },
+  "sources": [
+   "https://search.keinet.ne.jp/2279/topics/33"
+  ]
+ },
+ {
+  "name": "東京理科大学",
+  "info": {
+   "qtrend": {
+    "years": "2026年度",
+    "rows": [
+     {
+      "kubun": "一般",
+      "method": "一般選抜（各学部・各日程）",
+      "subject": "英語",
+      "format": "マークシート式中心、日程により試験時間・大問構成が異なる。理学部第一部は下線部説明の記述あり、学部によって1,000語超の長文",
+      "trend": "読解総合問題が中心（内容一致・空所補充・同意表現・語句整序）で、多くの日程に語彙・文法の大問がある。題材は幅広く英文量・設問数が多いため速く正確に読む力が要る。",
+      "src": "https://search.keinet.ne.jp/2262/topics/33"
+     }
+    ],
+    "note": "河合塾Kei-Netの英語の入試対策情報に基づく。数学・理科は未収集。"
+   }
+  },
+  "sources": [
+   "https://search.keinet.ne.jp/2262/topics/33"
+  ]
+ },
+ {
+  "name": "工学院大学",
+  "info": {
+   "qtrend": {
+    "years": "2026年度",
+    "rows": [
+     {
+      "kubun": "一般",
+      "method": "一般選抜",
+      "subject": "英語",
+      "format": "大問5（長文総合・長文空所補充・文法語法・会話・和文英訳）、選択式と記述の併用",
+      "trend": "長文では記述の説明・下線部和訳、文挿入、内容一致が出て、合否は記述で分かれやすい。形式は日程を通じて安定しており、和文英訳は細かなミスに注意。",
+      "src": "https://search.keinet.ne.jp/2212/topics/33"
+     }
+    ],
+    "note": "河合塾Kei-Netの英語の入試対策情報に基づく。"
+   }
+  },
+  "sources": [
+   "https://search.keinet.ne.jp/2212/topics/33"
+  ]
+ },
+ {
+  "name": "同志社大学",
+  "info": {
+   "qtrend": {
+    "years": "2026年度",
+    "rows": [
+     {
+      "kubun": "一般",
+      "method": "一般選抜（全学部、学部間の傾向差は小さい）",
+      "subject": "英語",
+      "format": "100分・大問3（長文2・会話文1）、選択式中心で下線部和訳と英作文が各1問記述",
+      "trend": "文化・歴史・科学・社会など幅広い長文で、空所補充・同意表現・内容一致・整序を問う。会話文は他大学より長く文脈推測が要る。形式・分量は例年ほぼ一定。",
+      "src": "https://search.keinet.ne.jp/2498/topics/33"
+     }
+    ],
+    "note": "河合塾Kei-Netの英語の入試対策情報に基づく。"
+   }
+  },
+  "sources": [
+   "https://search.keinet.ne.jp/2498/topics/33"
+  ]
+ },
+ {
+  "name": "関西学院大学",
+  "info": {
+   "qtrend": {
+    "years": "2026年度",
+    "rows": [
+     {
+      "kubun": "一般",
+      "method": "一般選抜 全学部日程",
+      "subject": "英語",
+      "format": "全問マーク式、大問数は多め（長文読解3・文法語法・整序英作文・会話）",
+      "trend": "語彙・文法の知識から長文・会話の内容理解まで幅広く問う総合型。難度は安定しており難問・奇問はほとんどない。",
+      "src": "https://search.keinet.ne.jp/2558/topics/33"
+     },
+     {
+      "kubun": "一般",
+      "method": "一般選抜 学部個別日程・共通テスト併用日程・英数日程",
+      "subject": "英語",
+      "format": "全学部日程と同じ構成に加え、長文中の下線部和訳と条件英作文の記述あり",
+      "trend": "日程間で傾向差は小さい。和訳は比較的易しめで、条件英作文は基本表現で書ける内容。",
+      "src": "https://search.keinet.ne.jp/2558/topics/33"
+     }
+    ],
+    "note": "河合塾Kei-Netの英語の入試対策情報に基づく。"
+   }
+  },
+  "sources": [
+   "https://search.keinet.ne.jp/2558/topics/33"
+  ]
+ },
+ {
+  "name": "関西大学",
+  "info": {
+   "qtrend": {
+    "years": "2026年度",
+    "rows": [
+     {
+      "kubun": "一般",
+      "method": "一般選抜",
+      "subject": "英語",
+      "format": "大問3・すべて客観式（会話の文空所補充、200〜300語の文整序、長文2題の空所補充・内容一致・下線部の意味）",
+      "trend": "従来の傾向をおおむね踏襲。会話は文法より流れの把握、長文は文と段落の論理関係を読み取る力が問われ、内容一致は書き出しに続く文を選ぶ形式。",
+      "src": "https://search.keinet.ne.jp/2533/topics/33"
+     }
+    ],
+    "note": "河合塾Kei-Netの英語の入試対策情報に基づく。"
+   }
+  },
+  "sources": [
+   "https://search.keinet.ne.jp/2533/topics/33"
+  ]
+ },
+ {
+  "name": "南山大学",
+  "info": {
+   "qtrend": {
+    "years": "2026〜2027年度",
+    "rows": [
+     {
+      "kubun": "一般",
+      "method": "一般選抜（全学統一・人文・経済・経営・法・総合政策・理工など）",
+      "subject": "英語",
+      "format": "全問マーク式（4択の文法語法、中文（中程度の長さの英文）の空所補充、正誤指摘、長文1題）",
+      "trend": "近年形式は変わらず難度は標準〜やや難。分詞・仮定法・関係詞など語法を多様な形式で問い、長文は内容一致・文挿入・空所補充。",
+      "src": "https://search.keinet.ne.jp/2460/topics/33"
+     },
+     {
+      "kubun": "一般",
+      "method": "一般選抜（外国語学部・国際教養学部）",
+      "subject": "英語",
+      "format": "マーク式の筆記に加え、会話と長文のリスニング（音声は1回のみ）",
+      "trend": "多くの学部ではリスニングがなくなったが、外国語学部英米学科では2027年度も継続とされる。",
+      "src": "https://search.keinet.ne.jp/2460/topics/33"
+     }
+    ],
+    "note": "河合塾Kei-Netの英語の入試対策情報に基づく。試験時間・大問数は出典に記載なし。"
+   }
+  },
+  "sources": [
+   "https://search.keinet.ne.jp/2460/topics/33"
+  ]
+ },
+ {
+  "name": "国際基督教大学（ICU）",
+  "info": {
+   "qtrend": {
+    "years": "2026年度",
+    "rows": [
+     {
+      "kubun": "一般",
+      "method": "一般選抜（全選択共通）",
+      "subject": "総合教養（ATLAS）",
+      "format": "約70分（約15分の講義を含む）、マーク式",
+      "trend": "資料冊子を読み講義を聴いたうえで答える形式で、人文・社会・自然科学を横断する知識の統合と論理的・批判的思考を見る。",
+      "src": "https://www.icu.ac.jp/admissions/undergraduate/images/AY2026_General_Admissions.pdf"
+     },
+     {
+      "kubun": "一般",
+      "method": "一般選抜（人文・社会科学選択／数理・自然科学選択／日英バイリンガル面接利用）",
+      "subject": "英語",
+      "format": "約70分（リスニング約25分を含む）、マーク式",
+      "trend": "英文資料の読解と短い講義のリスニングで構成され、聞き取りを重視してコミュニケーション力を測る。",
+      "src": "https://www.icu.ac.jp/admissions/undergraduate/images/AY2026_General_Admissions.pdf"
+     },
+     {
+      "kubun": "一般",
+      "method": "一般選抜（人文・社会科学選択）",
+      "subject": "人文・社会科学",
+      "format": "約70分、マーク式",
+      "trend": "人文・社会科学のテーマの資料を読み、内容の整理・論理的推論・与えられた原理の応用・新たな考えの推論を問う。",
+      "src": "https://www.icu.ac.jp/admissions/undergraduate/images/AY2026_General_Admissions.pdf"
+     },
+     {
+      "kubun": "一般",
+      "method": "一般選抜（数理・自然科学選択）",
+      "subject": "数理・自然科学",
+      "format": "約70分、数学・物理・化学・生物から2分野選択、マーク式中心で一部記述",
+      "trend": "数学はI・II・A・B（数列）・C（ベクトル）、理科は各基礎と専門科目の範囲から出題。",
+      "src": "https://www.icu.ac.jp/admissions/undergraduate/images/AY2026_General_Admissions.pdf"
+     },
+     {
+      "kubun": "一般",
+      "method": "一般選抜（日英バイリンガル面接利用／英語外部試験利用）",
+      "subject": "面接",
+      "format": "第1次合格者にオンライン個人面接（前者は日本語と英語、後者は日本語）",
+      "trend": "アドミッション・ポリシーに沿った資質を評価する面接。",
+      "src": "https://www.icu.ac.jp/admissions/undergraduate/images/AY2026_General_Admissions.pdf"
+     }
+    ],
+    "note": "大学公式の一般選抜案内（AY2026）の試験内容説明に基づく。過年度の具体的出題テーマは未確認。"
+   }
+  },
+  "sources": [
+   "https://www.icu.ac.jp/admissions/undergraduate/images/AY2026_General_Admissions.pdf"
+  ]
+ },
+ {
+  "name": "日本大学",
+  "info": {
+   "qtrend": {
+    "years": "2025〜2026年度",
+    "rows": [
+     {
+      "kubun": "一般",
+      "method": "一般選抜 N全学統一方式第1期",
+      "subject": "英語",
+      "format": "60分・大問8・45問、すべて選択式（文法語法・語彙・熟語・中文空所補充・長文の英問英答・会話/案内文・整序作文2題）",
+      "trend": "2025・2026年度で傾向はほぼ同じで難度は標準。2026年度は共通テスト風のチャットや案内文が出た。英文中の語句整序は文意の把握が要り解きにくい。",
+      "src": "https://search.keinet.ne.jp/topics/33/2267"
+     }
+    ],
+    "note": "河合塾Kei-Netの英語の入試対策情報に基づく。"
+   }
+  },
+  "sources": [
+   "https://search.keinet.ne.jp/topics/33/2267"
+  ]
+ },
+ {
+  "name": "東洋大学",
+  "info": {
+   "qtrend": {
+    "years": "2025〜2026年度",
+    "rows": [
+     {
+      "kubun": "一般",
+      "method": "一般選抜（全学部共通の英語）",
+      "subject": "英語",
+      "format": "60分・大問5・45〜51問、全問マーク式（長文2題で計約1,100〜1,300語、文法語法4択、会話、和訳付き並べ替え作文）",
+      "trend": "全日程で同形式、レベルは標準。2026年度は一部日程で長文の総語数が約100語減った程度で大きな変更はない。",
+      "src": "https://search.keinet.ne.jp/2265/topics/33"
+     }
+    ],
+    "note": "河合塾Kei-Netの英語の入試対策情報に基づく。"
+   }
+  },
+  "sources": [
+   "https://search.keinet.ne.jp/2265/topics/33"
+  ]
+ },
+ {
+  "name": "駒澤大学",
+  "info": {
+   "qtrend": {
+    "years": "2025〜2026年度",
+    "rows": [
+     {
+      "kubun": "一般",
+      "method": "一般選抜 全学部統一日程",
+      "subject": "英語",
+      "format": "60分・大問9・50問、すべてマーク式（短めの読解2・英文とグラフ・会話・語義・文法・イディオム・アクセント・語句整序）",
+      "trend": "読解は環境・食などやや専門的な題材だが語注付き。英文とグラフの読み取りが2年続けて出た。難度はやや易〜標準で設問数が多く、知識問題の処理速度が要る。",
+      "src": "https://search.keinet.ne.jp/2216/topics/33"
+     }
+    ],
+    "note": "河合塾Kei-Netの英語の入試対策情報に基づく。"
+   }
+  },
+  "sources": [
+   "https://search.keinet.ne.jp/2216/topics/33"
+  ]
+ },
+ {
+  "name": "芝浦工業大学",
+  "info": {
+   "qtrend": {
+    "years": "2026年度",
+    "rows": [
+     {
+      "kubun": "一般",
+      "method": "一般選抜 前期日程（全学部）",
+      "subject": "数学",
+      "format": "数学III・C：90分・100点・大問4（大問1・3は空所補充、大問2・4は記述式）",
+      "trend": "複素数平面・空間ベクトル・楕円・数列・期待値などに加え、数IIIの積分（面積・体積）が毎日程出題。標準問題が中心で一部に思考力・処理力を問う問題がある。",
+      "src": "https://search.keinet.ne.jp/2219/topics/33"
+     }
+    ],
+    "note": "河合塾Kei-Netの入試対策情報（数学III・C）に基づく。英語・理科は未収集。"
+   }
+  },
+  "sources": [
+   "https://search.keinet.ne.jp/2219/topics/33"
+  ]
+ },
+ {
+  "name": "明治学院大学",
+  "info": {
+   "qtrend": {
+    "years": "2026年度",
+    "rows": [
+     {
+      "kubun": "一般",
+      "method": "一般選抜 全学部日程・学部別日程（同形式）",
+      "subject": "英語",
+      "format": "大問4（約500語の長文読解・会話文・約200語の英文を150〜180字の日本語で要約・100〜150語の自由英作文）",
+      "trend": "要約は含めるべき3点が指定される独特の形式で、今後も出題が見込まれる。自由英作文は社会問題・留学生受け入れ・自分の経験など幅広いテーマで、具体例のある説得的な論述が求められる。",
+      "src": "https://search.keinet.ne.jp/2287/topics/33"
+     }
+    ],
+    "note": "河合塾Kei-Netの英語の入試対策情報に基づく。"
+   }
+  },
+  "sources": [
+   "https://search.keinet.ne.jp/2287/topics/33"
+  ]
+ },
+ {
+  "name": "成蹊大学",
+  "info": {
+   "qtrend": {
+    "years": "2025〜2026年度",
+    "rows": [
+     {
+      "kubun": "一般",
+      "method": "一般選抜 E・P方式",
+      "subject": "英語",
+      "format": "マーク式（長文空所補充・会話・ウェブサイトや広告などの短文の正誤・読解3題）",
+      "trend": "ウェブページ・広告・SMS・メールなどの実用的な短文と、600語を超える会話文への対応が要点。",
+      "src": "https://search.keinet.ne.jp/topics/33_sp/2228"
+     },
+     {
+      "kubun": "一般",
+      "method": "一般選抜（法学部）",
+      "subject": "英語",
+      "format": "マーク式（発音アクセント・語義・語彙・語句整序・約2,000語の長文などの読解）",
+      "trend": "1,500〜2,000語程度の非常に長い長文と発音・アクセント問題が特徴。",
+      "src": "https://search.keinet.ne.jp/topics/33_sp/2228"
+     },
+     {
+      "kubun": "一般",
+      "method": "一般選抜（理工学部）",
+      "subject": "英語",
+      "format": "マーク式と一部記述（図表付きの読解総合、英単語の抜き出し・和訳・説明・語の完成）",
+      "trend": "図表を伴う英文の読解が中心で、1語を書かせる記述問題への対策が必要。",
+      "src": "https://search.keinet.ne.jp/topics/33_sp/2228"
+     },
+     {
+      "kubun": "一般",
+      "method": "一般選抜（経済学部・国際共創学部）",
+      "subject": "英語",
+      "format": "マーク式（約1,000語と約1,500語の長文2題、文挿入・正誤・日本語選択肢の内容一致）、60分",
+      "trend": "2025年度まで経済学部で課された英語・国語の総合問題は2026年度に廃止され、英語単独の60分試験になった。",
+      "src": "https://search.keinet.ne.jp/topics/33_sp/2228"
+     }
+    ],
+    "note": "河合塾Kei-Netの英語の入試対策情報に基づく。試験時間は学部で異なる。"
+   }
+  },
+  "sources": [
+   "https://search.keinet.ne.jp/topics/33_sp/2228"
+  ]
+ },
+ {
+  "name": "國學院大學",
+  "info": {
+   "qtrend": {
+    "years": "2025〜2026年度",
+    "rows": [
+     {
+      "kubun": "一般",
+      "method": "一般選抜",
+      "subject": "英語",
+      "format": "大問4・すべて選択式、2026年度37問（前年39問）、長文は500〜650語で配点の約7割",
+      "trend": "長文総合2題と正誤問題が定番で、残る1題は年により整序作文・文法語法・語彙熟語・会話などが入れ替わる。難度は標準で基礎の徹底で対応できる。",
+      "src": "https://search.keinet.ne.jp/2213/topics/33"
+     }
+    ],
+    "note": "河合塾Kei-Netの英語の入試対策情報に基づく。学部別の区分は出典になし。"
+   }
+  },
+  "sources": [
+   "https://search.keinet.ne.jp/2213/topics/33"
+  ]
+ },
+ {
+  "name": "武蔵大学",
+  "info": {
+   "qtrend": {
+    "years": "2023年度",
+    "rows": [
+     {
+      "kubun": "一般",
+      "method": "一般選抜",
+      "subject": "日本史",
+      "format": "大問3・約35問、すべてマーク式（4択）",
+      "trend": "正誤判定問題の比重が大きく、共通テストに似た組合せ型の正誤も出る。史料は既出・未見の両方が使われ、古代から占領期・平成まで幅広く問う。",
+      "src": "https://search.keinet.ne.jp/2281/topics/33"
+     }
+    ],
+    "note": "河合塾Kei-Netの入試対策情報（日本史、2023年度分析）に基づく。英語・国語は未収集。"
+   }
+  },
+  "sources": [
+   "https://search.keinet.ne.jp/2281/topics/33"
+  ]
+ },
+ {
+  "name": "東京都市大学",
+  "info": {
+   "qtrend": {
+    "years": "2025〜2026年度",
+    "rows": [
+     {
+      "kubun": "一般",
+      "method": "一般選抜 前期日程",
+      "subject": "英語",
+      "format": "大問5、マーク式と記述の併用（長文読解・語群からの空所補充・図表付き読解・会話文・約150語の文章末尾の整序英作文）",
+      "trend": "長文は生成AIや都市問題など比較的新しい文化・環境・技術系の話題が多い。図表読解に時間がかかりやすく、2025年度に始まった整序英作文は珍しい形式。3日程で形式・難度はほぼ同じ。",
+      "src": "https://search.keinet.ne.jp/2282/topics/33"
+     }
+    ],
+    "note": "河合塾Kei-Netの英語の入試対策情報に基づく。数学・物理は未収集。"
+   }
+  },
+  "sources": [
+   "https://search.keinet.ne.jp/2282/topics/33"
+  ]
+ },
+ {
+  "name": "成城大学",
+  "info": {
+   "qtrend": {
+    "years": "2026年度",
+    "rows": [
+     {
+      "kubun": "一般",
+      "method": "一般選抜 A方式",
+      "subject": "英語",
+      "format": "選択式と記述の併用（読解2題・文法語法を含む大問・英作文）、日程により字数制限付きの日本語説明あり",
+      "trend": "全日程で文法と英作文が必ず出て、記述と英作文が重視される。大問Ⅲの内容は日程ごとに異なるため、受ける日程の過去問確認が必要。",
+      "src": "https://search.keinet.ne.jp/2229/topics/33"
+     },
+     {
+      "kubun": "一般",
+      "method": "一般選抜 S方式",
+      "subject": "英語",
+      "format": "全問マーク式、指示文・選択肢はすべて英語（読解・文法語法・正誤・語句整序・空所補充）",
+      "trend": "多様な形式で、文法は文脈依存型が多い。読解は細部にとらわれず要旨をつかむ読み方が有効。",
+      "src": "https://search.keinet.ne.jp/2229/topics/33"
+     }
+    ],
+    "note": "河合塾Kei-Netの英語の入試対策情報に基づく。"
+   }
+  },
+  "sources": [
+   "https://search.keinet.ne.jp/2229/topics/33"
+  ]
  }
 ]

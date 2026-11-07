@@ -102,5 +102,1552 @@
   "sources": [
    "https://www.kitami-it.ac.jp/wp-content/uploads/2026/03/2026sougougata_pamphlet.pdf"
   ]
+ },
+ {
+  "name": "情報経営イノベーション専門職大学（iU）",
+  "info": {
+   "qtrend": {
+    "years": "2027年度入試要項",
+    "rows": [
+     {
+      "kubun": "総合型",
+      "method": "生成AI活用型",
+      "subject": "プレゼン",
+      "format": "計60分（大学支給の生成AIを使う課題35分＋発表・質疑15分、面接・口頭試問10分）",
+      "trend": "課題は当日に示され、AIへの指示の出し方の過程が画面記録で評価される。",
+      "src": "https://wp-assets.i-u.ac.jp/wp-content/uploads/2026/07/12123121/domestic_japanese_admissions.pdf"
+     },
+     {
+      "kubun": "総合型",
+      "method": "グループワーク型",
+      "subject": "グループワーク",
+      "format": "65分",
+      "trend": "テーマは事前の発表日に出願システムで示され、端末持ち込みやホワイトボード等を使って議論する。",
+      "src": "https://wp-assets.i-u.ac.jp/wp-content/uploads/2026/07/12123121/domestic_japanese_admissions.pdf"
+     },
+     {
+      "kubun": "総合型",
+      "method": "プレゼン型",
+      "subject": "プレゼン",
+      "format": "発表20分以内＋質疑10分（対面またはオンライン）",
+      "trend": "首相の立場でICT・AIを使った国の政策を提案する形式で、日程ごとに高齢化と社会保障、観光公害、防災、交通、人手不足と外国人労働者、環境などの課題が割り当てられている。",
+      "src": "https://wp-assets.i-u.ac.jp/wp-content/uploads/2026/07/12123121/domestic_japanese_admissions.pdf"
+     },
+     {
+      "kubun": "総合型",
+      "method": "小論文型",
+      "subject": "小論文",
+      "format": "60分・800字以内",
+      "trend": "テーマは事前の発表日に出願システムで示される。",
+      "src": "https://wp-assets.i-u.ac.jp/wp-content/uploads/2026/07/12123121/domestic_japanese_admissions.pdf"
+     },
+     {
+      "kubun": "一般",
+      "method": "一般選抜（3教科または2教科選択）",
+      "subject": "英語・国語・数学",
+      "format": "各60分（数学は数学I・A）、マークと記述の併用",
+      "trend": "高校の学習範囲からの筆記で、面接・小論文はない。出題傾向の詳細は要項に記載なし。",
+      "src": "https://wp-assets.i-u.ac.jp/wp-content/uploads/2026/07/12123121/domestic_japanese_admissions.pdf"
+     }
+    ],
+    "note": "大学公式の2027年度入試要項に書かれた実施形式による。過去の具体的な出題テーマは未確認。面接型は形式の詳細が記載なし。"
+   }
+  },
+  "sources": [
+   "https://wp-assets.i-u.ac.jp/wp-content/uploads/2026/07/12123121/domestic_japanese_admissions.pdf",
+   "https://passnavi.obunsha.co.jp/univ/9216/sougou/"
+  ]
+ },
+ {
+  "name": "神田外語大学",
+  "info": {
+   "qtrend": {
+    "years": "2027年度入試（Kei-Net掲載の選考方法）",
+    "rows": [
+     {
+      "kubun": "総合型",
+      "method": "総合型選抜10月（英米語・アジア言語・イベロアメリカ言語・グローバル・リベラルアーツ）",
+      "subject": "プレゼン",
+      "format": "面接・プレゼン・教科試験・書類審査の組み合わせ。プレゼン概要や資料を事前提出",
+      "trend": "事前に準備したプレゼン資料に基づく発表と面接が中心。時間や評価の詳細は掲載なし。",
+      "src": "https://search.keinet.ne.jp/2172/recommend/exam_ao"
+     },
+     {
+      "kubun": "総合型",
+      "method": "総合型選抜10月（国際コミュニケーション・国際ビジネスキャリア）",
+      "subject": "面接",
+      "format": "面接・書類審査に加え、英語の動画を事前提出",
+      "trend": "事前提出の英語動画と面接で評価する形式。動画の長さや面接の形態は掲載なし。",
+      "src": "https://search.keinet.ne.jp/2172/recommend/exam_ao"
+     },
+     {
+      "kubun": "総合型",
+      "method": "総合型選抜11月（英米語以外の各学科）",
+      "subject": "小論文",
+      "format": "小論文・面接・教科試験・書類審査（英米語学科は小論文なし）",
+      "trend": "",
+      "src": "https://search.keinet.ne.jp/2172/recommend/exam_ao"
+     }
+    ],
+    "note": "Kei-Net掲載の選考方法のみで、過去の出題テーマや一般選抜の問題傾向は未確認。"
+   }
+  },
+  "sources": [
+   "https://search.keinet.ne.jp/2172/recommend/exam_ao"
+  ]
+ },
+ {
+  "name": "公立はこだて未来大学",
+  "info": {
+   "qtrend": {
+    "years": "2027年度入試（Kei-Net掲載の選考方法）",
+    "rows": [
+     {
+      "kubun": "総合型",
+      "method": "総合型選抜（システム情報科学部）",
+      "subject": "総合問題",
+      "format": "第2次選考で250点（500点中）、時間・形式は掲載なし",
+      "trend": "出題内容の傾向は掲載なし。配点の半分を占める筆記の比重が大きい。",
+      "src": "https://search.keinet.ne.jp/1507/recommend/exam_ao"
+     },
+     {
+      "kubun": "総合型",
+      "method": "総合型選抜（システム情報科学部）",
+      "subject": "面接",
+      "format": "面接とプレゼンで合計250点（500点中）",
+      "trend": "",
+      "src": "https://search.keinet.ne.jp/1507/recommend/exam_ao"
+     }
+    ],
+    "note": "Kei-Net掲載の選考方法と配点のみ。過去の出題テーマや一般選抜の個別試験の傾向は未確認。"
+   }
+  },
+  "sources": [
+   "https://search.keinet.ne.jp/1507/recommend/exam_ao"
+  ]
+ },
+ {
+  "name": "千葉県立保健医療大学",
+  "info": {
+   "qtrend": {
+    "years": "2027年度入試（Kei-Net掲載の個別試験構成）",
+    "rows": [
+     {
+      "kubun": "一般",
+      "method": "前期（看護・栄養・歯科衛生・リハビリテーション学科共通）",
+      "subject": "小論文",
+      "format": "二次は小論文150点（二次250点中）、時間・字数は掲載なし",
+      "trend": "教科の学力試験はなく、二次は小論文と面接のみ。出題テーマの傾向は掲載なし。",
+      "src": "https://search.keinet.ne.jp/1528/general/exam_subject"
+     },
+     {
+      "kubun": "一般",
+      "method": "前期（全学科共通）",
+      "subject": "面接",
+      "format": "100点、志願理由書の提出も必要（配点なし）",
+      "trend": "",
+      "src": "https://search.keinet.ne.jp/1528/general/exam_subject"
+     }
+    ],
+    "note": "Kei-Net掲載の科目・配点のみ。過去の小論文テーマや面接内容は未確認。"
+   }
+  },
+  "sources": [
+   "https://search.keinet.ne.jp/1528/general/exam_subject"
+  ]
+ },
+ {
+  "name": "川崎市立看護大学",
+  "info": {
+   "qtrend": {
+    "years": "2027年度入試（Kei-Net掲載の個別試験構成）",
+    "rows": [
+     {
+      "kubun": "一般",
+      "method": "前期・後期（看護学部）",
+      "subject": "小論文",
+      "format": "二次で小論文を実施（前期・後期とも）、時間・字数・配点は掲載なし",
+      "trend": "教科の学力試験はなく、小論文・面接・志願理由書で選抜する。出題テーマの傾向は掲載なし。",
+      "src": "https://search.keinet.ne.jp/1541/general/exam_subject"
+     },
+     {
+      "kubun": "一般",
+      "method": "前期・後期（看護学部）",
+      "subject": "面接",
+      "format": "二次で面接を実施（前期・後期とも）",
+      "trend": "",
+      "src": "https://search.keinet.ne.jp/1541/general/exam_subject"
+     }
+    ],
+    "note": "Kei-Net掲載の試験構成のみ。過去の小論文テーマや面接内容は未確認。"
+   }
+  },
+  "sources": [
+   "https://search.keinet.ne.jp/1541/general/exam_subject"
+  ]
+ },
+ {
+  "name": "常磐大学",
+  "info": {
+   "qtrend": {
+    "years": "2027年度入試（Kei-Net掲載の科目構成）",
+    "rows": [
+     {
+      "kubun": "一般",
+      "method": "一般選抜A方式（全学科）",
+      "subject": "国語",
+      "format": "必須・100点、範囲は現代文の表示",
+      "trend": "",
+      "src": "https://search.keinet.ne.jp/2108/general/exam_subject"
+     },
+     {
+      "kubun": "一般",
+      "method": "一般選抜A方式（全学科）",
+      "subject": "英語",
+      "format": "英語または数学I・A（健康栄養・看護は理科も可）から1科目・100点、英語は外部検定の換算でも代替可",
+      "trend": "",
+      "src": "https://search.keinet.ne.jp/2108/general/exam_subject"
+     },
+     {
+      "kubun": "一般",
+      "method": "一般選抜B方式（全学科）",
+      "subject": "小論文",
+      "format": "小論文100点のみで選抜、面接（配点なし）と本人記載書類を併用",
+      "trend": "",
+      "src": "https://search.keinet.ne.jp/2108/general/exam_subject"
+     },
+     {
+      "kubun": "一般",
+      "method": "一般選抜A・B方式（看護学科）",
+      "subject": "面接",
+      "format": "必須、配点なし",
+      "trend": "",
+      "src": "https://search.keinet.ne.jp/2108/general/exam_subject"
+     }
+    ],
+    "note": "Kei-Net掲載の科目・配点のみ（表の一部に読み取りの不確かさあり）。過去の出題傾向は未確認。"
+   }
+  },
+  "sources": [
+   "https://search.keinet.ne.jp/2108/general/exam_subject"
+  ]
+ },
+ {
+  "name": "茨城キリスト教大学",
+  "info": {
+   "qtrend": {
+    "years": "2027年度入試（Kei-Net掲載の科目構成）",
+    "rows": [
+     {
+      "kubun": "一般",
+      "method": "一般選抜1期・2期（文学部 現代英語学科）",
+      "subject": "英語",
+      "format": "英語200点必須＋数学I・国語などから1科目100点（計300点）",
+      "trend": "英語の比重が大きい学科構成。出題形式や傾向は掲載なし。",
+      "src": "https://search.keinet.ne.jp/general/exam_subject/2107"
+     },
+     {
+      "kubun": "一般",
+      "method": "一般選抜1期・2期（その他の学科）",
+      "subject": "英語",
+      "format": "多くの学科で英語100点必須＋1科目（看護・食物健康科学は英語か国語を選択）",
+      "trend": "",
+      "src": "https://search.keinet.ne.jp/general/exam_subject/2107"
+     },
+     {
+      "kubun": "一般",
+      "method": "一般選抜（選択科目）",
+      "subject": "国語",
+      "format": "範囲は現代文",
+      "trend": "",
+      "src": "https://search.keinet.ne.jp/general/exam_subject/2107"
+     },
+     {
+      "kubun": "一般",
+      "method": "一般選抜（選択科目）",
+      "subject": "数学",
+      "format": "範囲は数学Iの表示",
+      "trend": "",
+      "src": "https://search.keinet.ne.jp/general/exam_subject/2107"
+     }
+    ],
+    "note": "Kei-Net掲載の科目・配点・範囲のみ。一般選抜に小論文・面接の記載なし。過去の出題傾向は未確認。"
+   }
+  },
+  "sources": [
+   "https://search.keinet.ne.jp/general/exam_subject/2107"
+  ]
+ },
+ {
+  "name": "東京慈恵会医科大学",
+  "info": {
+   "qtrend": {
+    "years": "2027年度入試（Kei-Net掲載の科目構成）",
+    "rows": [
+     {
+      "kubun": "一般",
+      "method": "一般選抜（医学部医学科）",
+      "subject": "英語",
+      "format": "100点（計480点中）",
+      "trend": "",
+      "src": "https://search.keinet.ne.jp/2253/general/exam_subject"
+     },
+     {
+      "kubun": "一般",
+      "method": "一般選抜（医学部医学科）",
+      "subject": "数学",
+      "format": "100点、数学I・II・III・A・B・C",
+      "trend": "",
+      "src": "https://search.keinet.ne.jp/2253/general/exam_subject"
+     },
+     {
+      "kubun": "一般",
+      "method": "一般選抜（医学部医学科）",
+      "subject": "理科",
+      "format": "物理・化学・生物から2科目・計200点",
+      "trend": "",
+      "src": "https://search.keinet.ne.jp/2253/general/exam_subject"
+     },
+     {
+      "kubun": "一般",
+      "method": "一般選抜 二次（医学部医学科）",
+      "subject": "小論文",
+      "format": "25点（調査書25点・面接30点とともに二次で評価）",
+      "trend": "",
+      "src": "https://search.keinet.ne.jp/2253/general/exam_subject"
+     },
+     {
+      "kubun": "一般",
+      "method": "一般選抜 二次（医学部医学科）",
+      "subject": "面接",
+      "format": "30点",
+      "trend": "",
+      "src": "https://search.keinet.ne.jp/2253/general/exam_subject"
+     },
+     {
+      "kubun": "一般",
+      "method": "一般選抜（医学部看護学科）",
+      "subject": "国語",
+      "format": "現代文100点、英語資格・検定100点と数学または理科1科目100点を併用、面接は配点なし",
+      "trend": "",
+      "src": "https://search.keinet.ne.jp/2253/general/exam_subject"
+     }
+    ],
+    "note": "Kei-Net掲載の科目・配点のみ。予備校以外の許可出典で過去の出題傾向を確認できなかった。"
+   }
+  },
+  "sources": [
+   "https://search.keinet.ne.jp/2253/general/exam_subject"
+  ]
+ },
+ {
+  "name": "日本医科大学",
+  "info": {
+   "qtrend": {
+    "years": "2027年度入試（Kei-Net掲載の科目構成）",
+    "rows": [
+     {
+      "kubun": "一般",
+      "method": "一般選抜（医学部医学科）",
+      "subject": "英語",
+      "format": "300点（計1000点中）",
+      "trend": "",
+      "src": "https://search.keinet.ne.jp/2268/general/exam_subject"
+     },
+     {
+      "kubun": "一般",
+      "method": "一般選抜（医学部医学科）",
+      "subject": "数学",
+      "format": "300点、数学I・II・III・A・B・C",
+      "trend": "",
+      "src": "https://search.keinet.ne.jp/2268/general/exam_subject"
+     },
+     {
+      "kubun": "一般",
+      "method": "一般選抜（医学部医学科）",
+      "subject": "理科",
+      "format": "物理・化学・生物から2科目・計400点",
+      "trend": "",
+      "src": "https://search.keinet.ne.jp/2268/general/exam_subject"
+     },
+     {
+      "kubun": "一般",
+      "method": "一般選抜（医学科・看護学科）",
+      "subject": "小論文",
+      "format": "必須、配点の掲載なし",
+      "trend": "",
+      "src": "https://search.keinet.ne.jp/2268/general/exam_subject"
+     },
+     {
+      "kubun": "一般",
+      "method": "一般選抜（医学科・看護学科）",
+      "subject": "面接",
+      "format": "必須、配点の掲載なし",
+      "trend": "",
+      "src": "https://search.keinet.ne.jp/2268/general/exam_subject"
+     }
+    ],
+    "note": "Kei-Net掲載の科目・配点のみ。地域枠は同じ科目構成に志望理由書が加わる。過去の出題傾向は未確認。"
+   }
+  },
+  "sources": [
+   "https://search.keinet.ne.jp/2268/general/exam_subject"
+  ]
+ },
+ {
+  "name": "聖心女子大学",
+  "info": {
+   "qtrend": {
+    "years": "2027年度入試（Kei-Net掲載の科目構成）",
+    "rows": [
+     {
+      "kubun": "一般",
+      "method": "2教科固定方式・2教科選択方式",
+      "subject": "英語",
+      "format": "必須・100点（計200点中）",
+      "trend": "",
+      "src": "https://search.keinet.ne.jp/2230/general/exam_subject"
+     },
+     {
+      "kubun": "一般",
+      "method": "2教科固定方式（選択方式では地歴・公民と選択）",
+      "subject": "国語",
+      "format": "100点、範囲は現代文・古典",
+      "trend": "",
+      "src": "https://search.keinet.ne.jp/2230/general/exam_subject"
+     },
+     {
+      "kubun": "一般",
+      "method": "総合小論文方式",
+      "subject": "小論文",
+      "format": "小論文のみ300点、英文読解を含む（第1問150点は英語資格の結果で最大1.3倍に換算）",
+      "trend": "英語の読解力と論述をあわせて問う構成。テーマの傾向は掲載なし。",
+      "src": "https://search.keinet.ne.jp/2230/general/exam_subject"
+     }
+    ],
+    "note": "Kei-Net掲載の科目・配点のみ（表の一部に読み取りの不確かさあり）。過去の出題傾向は未確認。"
+   }
+  },
+  "sources": [
+   "https://search.keinet.ne.jp/2230/general/exam_subject"
+  ]
+ },
+ {
+  "name": "小樽商科大学",
+  "info": {
+   "qtrend": {
+    "years": "2027年度入試（Kei-Net掲載の個別試験構成）",
+    "rows": [
+     {
+      "kubun": "一般",
+      "method": "前期（昼間コース 英語重視枠・数学重視枠）",
+      "subject": "英語",
+      "format": "200点（夜間主コース前期は英語200点のみ）",
+      "trend": "英語重視枠では数学・国語の低い方の得点を半分にして合計する方式。出題形式や傾向は掲載なし。",
+      "src": "https://search.keinet.ne.jp/1010/general/exam_subject"
+     },
+     {
+      "kubun": "一般",
+      "method": "前期（昼間コース）",
+      "subject": "数学",
+      "format": "200点、数学I・II・A・B・C系または数学III含む範囲から選択",
+      "trend": "数学重視枠では英語・国語の低い方を半分にして合計する。出題形式や傾向は掲載なし。",
+      "src": "https://search.keinet.ne.jp/1010/general/exam_subject"
+     },
+     {
+      "kubun": "一般",
+      "method": "前期（昼間コース）",
+      "subject": "国語",
+      "format": "200点",
+      "trend": "",
+      "src": "https://search.keinet.ne.jp/1010/general/exam_subject"
+     },
+     {
+      "kubun": "一般",
+      "method": "後期（昼間コース）",
+      "subject": "書類",
+      "format": "個別の学力試験なし、活動実績報告書を提出",
+      "trend": "教科試験に代えて活動実績を評価する。",
+      "src": "https://search.keinet.ne.jp/1010/general/exam_subject"
+     }
+    ],
+    "note": "Kei-Net掲載の科目・配点のみ（数学の範囲表示は一部判読不能）。過去の出題傾向は未確認。"
+   }
+  },
+  "sources": [
+   "https://search.keinet.ne.jp/1010/general/exam_subject"
+  ]
+ },
+ {
+  "name": "群馬県立女子大学",
+  "info": {
+   "qtrend": {
+    "years": "2027年度入試（Kei-Net掲載の個別試験構成）",
+    "rows": [
+     {
+      "kubun": "一般",
+      "method": "前期（文学部 国文学科）",
+      "subject": "国語",
+      "format": "国語200点＋調査書20点",
+      "trend": "",
+      "src": "https://search.keinet.ne.jp/1525/general/exam_subject"
+     },
+     {
+      "kubun": "一般",
+      "method": "前期（文学部 英米文化学科）",
+      "subject": "英語",
+      "format": "英語200点＋調査書20点",
+      "trend": "",
+      "src": "https://search.keinet.ne.jp/1525/general/exam_subject"
+     },
+     {
+      "kubun": "一般",
+      "method": "前期（文学部 美学美術史学科・文化情報学科）",
+      "subject": "総合問題",
+      "format": "総合問題100〜200点＋調査書20点",
+      "trend": "",
+      "src": "https://search.keinet.ne.jp/1525/general/exam_subject"
+     },
+     {
+      "kubun": "一般",
+      "method": "後期（文学部 英米文化・美学美術史・文化情報学科）",
+      "subject": "小論文",
+      "format": "小論文100点＋調査書20点",
+      "trend": "",
+      "src": "https://search.keinet.ne.jp/1525/general/exam_subject"
+     },
+     {
+      "kubun": "一般",
+      "method": "前期・後期（国際コミュニケーション学部）",
+      "subject": "面接",
+      "format": "面接（前期120点・後期90点）＋調査書10点、一部英語で実施",
+      "trend": "学科試験はなく面接中心で、英語での受け答えも求められる。質問内容は掲載なし。",
+      "src": "https://search.keinet.ne.jp/1525/general/exam_subject"
+     }
+    ],
+    "note": "Kei-Net掲載の科目・配点のみ。過去の出題傾向は未確認。"
+   }
+  },
+  "sources": [
+   "https://search.keinet.ne.jp/1525/general/exam_subject"
+  ]
+ },
+ {
+  "name": "前橋工科大学",
+  "info": {
+   "qtrend": {
+    "years": "2027年度入試（Kei-Net掲載の個別試験構成）",
+    "rows": [
+     {
+      "kubun": "一般",
+      "method": "前期（工学部 全学科）",
+      "subject": "数学",
+      "format": "数学300点＋提出書類20点（志望理由・高校時代の活動）、範囲は数学III・Cまで含む表示",
+      "trend": "二次は数学のみの1科目勝負。出題形式や傾向は掲載なし。",
+      "src": "https://search.keinet.ne.jp/1523/general/exam_subject"
+     },
+     {
+      "kubun": "一般",
+      "method": "中期（工学部 全学科）",
+      "subject": "小論文",
+      "format": "小論文のみ100点",
+      "trend": "",
+      "src": "https://search.keinet.ne.jp/1523/general/exam_subject"
+     }
+    ],
+    "note": "Kei-Net掲載の科目・配点のみ。過去の出題傾向は未確認。"
+   }
+  },
+  "sources": [
+   "https://search.keinet.ne.jp/1523/general/exam_subject"
+  ]
+ },
+ {
+  "name": "神奈川県立保健福祉大学",
+  "info": {
+   "qtrend": {
+    "years": "2027年度入試（Kei-Net掲載の個別試験構成）",
+    "rows": [
+     {
+      "kubun": "一般",
+      "method": "前期（保健福祉学部 全学科）",
+      "subject": "総合問題",
+      "format": "100点、教科別の学力試験はなし",
+      "trend": "",
+      "src": "https://search.keinet.ne.jp/1542/general/exam_subject"
+     },
+     {
+      "kubun": "一般",
+      "method": "後期（保健福祉学部 全学科）",
+      "subject": "小論文",
+      "format": "100点",
+      "trend": "",
+      "src": "https://search.keinet.ne.jp/1542/general/exam_subject"
+     },
+     {
+      "kubun": "一般",
+      "method": "前期・後期（全学科）",
+      "subject": "面接",
+      "format": "看護学科100点、ほかの学科200点、志願理由書を提出",
+      "trend": "面接の比重が大きい学科が多い。質問内容は掲載なし。",
+      "src": "https://search.keinet.ne.jp/1542/general/exam_subject"
+     }
+    ],
+    "note": "Kei-Net掲載の科目・配点のみ。過去の出題傾向は未確認。"
+   }
+  },
+  "sources": [
+   "https://search.keinet.ne.jp/1542/general/exam_subject"
+  ]
+ },
+ {
+  "name": "埼玉県立大学",
+  "info": {
+   "qtrend": {
+    "years": "2027年度入試（Kei-Net掲載の個別試験構成）",
+    "rows": [
+     {
+      "kubun": "一般",
+      "method": "前期（保健医療福祉学部 全学科・専攻）",
+      "subject": "小論文",
+      "format": "100点（二次の筆記教科は掲載なし）",
+      "trend": "",
+      "src": "https://search.keinet.ne.jp/1526/general/exam_subject"
+     },
+     {
+      "kubun": "一般",
+      "method": "前期（全学科・専攻）",
+      "subject": "面接",
+      "format": "必須、配点の掲載なし",
+      "trend": "",
+      "src": "https://search.keinet.ne.jp/1526/general/exam_subject"
+     }
+    ],
+    "note": "Kei-Net掲載の科目・配点のみ。過去の出題傾向は未確認。"
+   }
+  },
+  "sources": [
+   "https://search.keinet.ne.jp/1526/general/exam_subject"
+  ]
+ },
+ {
+  "name": "群馬県立県民健康科学大学",
+  "info": {
+   "qtrend": {
+    "years": "2027年度入試（Kei-Net掲載の個別試験構成）",
+    "rows": [
+     {
+      "kubun": "一般",
+      "method": "前期（看護学部）",
+      "subject": "小論文",
+      "format": "100点、面接100点と合わせて計200点",
+      "trend": "",
+      "src": "https://search.keinet.ne.jp/1524/general/exam_subject"
+     },
+     {
+      "kubun": "一般",
+      "method": "前期（看護学部・診療放射線学部）",
+      "subject": "面接",
+      "format": "看護100点、診療放射線は面接150点＋調査書150点、志望理由書と活動報告書を提出",
+      "trend": "診療放射線学部は筆記なしで面接と調査書で評価する。質問内容は掲載なし。",
+      "src": "https://search.keinet.ne.jp/1524/general/exam_subject"
+     }
+    ],
+    "note": "Kei-Net掲載の科目・配点のみ。過去の出題傾向は未確認。"
+   }
+  },
+  "sources": [
+   "https://search.keinet.ne.jp/1524/general/exam_subject"
+  ]
+ },
+ {
+  "name": "帯広畜産大学",
+  "info": {
+   "qtrend": {
+    "years": "2027年度入試（Kei-Net掲載の個別試験構成）",
+    "rows": [
+     {
+      "kubun": "一般",
+      "method": "前期（共同獣医学課程・畜産科学課程）",
+      "subject": "総合問題",
+      "format": "450点、英語必須で英語・数学・物理・化学・生物から3科目を選ぶ形式",
+      "trend": "",
+      "src": "https://search.keinet.ne.jp/1015/general/exam_subject"
+     },
+     {
+      "kubun": "一般",
+      "method": "後期（共同獣医学課程・畜産科学課程）",
+      "subject": "小論文",
+      "format": "200点",
+      "trend": "共同獣医学課程では英文資料を含むことがある。テーマの傾向は掲載なし。",
+      "src": "https://search.keinet.ne.jp/1015/general/exam_subject"
+     },
+     {
+      "kubun": "一般",
+      "method": "後期（両課程）",
+      "subject": "面接",
+      "format": "200点",
+      "trend": "",
+      "src": "https://search.keinet.ne.jp/1015/general/exam_subject"
+     }
+    ],
+    "note": "Kei-Net掲載の科目・配点のみ。過去の出題傾向は未確認。"
+   }
+  },
+  "sources": [
+   "https://search.keinet.ne.jp/1015/general/exam_subject"
+  ]
+ },
+ {
+  "name": "北海道教育大学",
+  "info": {
+   "qtrend": {
+    "years": "2027年度入試（Kei-Net掲載の個別試験構成）",
+    "rows": [
+     {
+      "kubun": "一般",
+      "method": "前期（札幌・旭川校の教科系課程）",
+      "subject": "英語",
+      "format": "200点、課程により必須または数学・国語との選択（志望理由書等20点を加算）",
+      "trend": "",
+      "src": "https://search.keinet.ne.jp/1030/general/exam_subject"
+     },
+     {
+      "kubun": "一般",
+      "method": "前期（札幌・旭川校の教科系課程）",
+      "subject": "国語",
+      "format": "200点、言語・社会教育や国語・社会・教育発達などで必須",
+      "trend": "",
+      "src": "https://search.keinet.ne.jp/1030/general/exam_subject"
+     },
+     {
+      "kubun": "一般",
+      "method": "前期（理数・数学・理科・生活創造などの課程）",
+      "subject": "数学",
+      "format": "200点、範囲は数学I・II・A・B・C",
+      "trend": "",
+      "src": "https://search.keinet.ne.jp/1030/general/exam_subject"
+     },
+     {
+      "kubun": "一般",
+      "method": "前期（釧路校 地域学校教育実践）",
+      "subject": "英語・数学・国語",
+      "format": "3科目から2科目（各200点）",
+      "trend": "",
+      "src": "https://search.keinet.ne.jp/1030/general/exam_subject"
+     },
+     {
+      "kubun": "一般",
+      "method": "前期（函館校 国際地域学科）",
+      "subject": "総合問題",
+      "format": "200点（地域教育専攻は小論文400点）",
+      "trend": "",
+      "src": "https://search.keinet.ne.jp/1030/general/exam_subject"
+     },
+     {
+      "kubun": "一般",
+      "method": "後期（札幌・旭川・釧路・函館校）",
+      "subject": "面接",
+      "format": "面接のみで200〜300点、口頭試問を含む課程が多い",
+      "trend": "後期は学力試験に代えて面接・口頭試問で選抜する課程が中心。",
+      "src": "https://search.keinet.ne.jp/1030/general/exam_subject"
+     },
+     {
+      "kubun": "一般",
+      "method": "前期・後期（岩見沢校・各校の芸術・体育系）",
+      "subject": "実技",
+      "format": "実技と面接、音楽はほぼ実技のみ（論述を含む専攻あり）、美術はデッサン・構成着彩",
+      "trend": "芸術・スポーツ系は実技の比重が大きい。",
+      "src": "https://search.keinet.ne.jp/1030/general/exam_subject"
+     }
+    ],
+    "note": "Kei-Net掲載の科目・配点のみ。過去の出題傾向は未確認。"
+   }
+  },
+  "sources": [
+   "https://search.keinet.ne.jp/1030/general/exam_subject"
+  ]
+ },
+ {
+  "name": "流通経済大学",
+  "info": {
+   "qtrend": {
+    "years": "2027年度入試（Kei-Net掲載の個別試験構成）",
+    "rows": [
+     {
+      "kubun": "一般",
+      "method": "一般選抜 3科目型・2科目型（全学部）",
+      "subject": "英語",
+      "format": "各100点、3科目型は英語・国語必須、2科目型は英語か国語を含む2科目",
+      "trend": "",
+      "src": "https://search.keinet.ne.jp/2109/general/exam_subject"
+     },
+     {
+      "kubun": "一般",
+      "method": "一般選抜 3科目型・2科目型・問題選択型",
+      "subject": "国語",
+      "format": "100点（問題選択型は2科目各50点）、範囲は現代文",
+      "trend": "",
+      "src": "https://search.keinet.ne.jp/2109/general/exam_subject"
+     },
+     {
+      "kubun": "一般",
+      "method": "一般選抜（選択科目）",
+      "subject": "数学",
+      "format": "範囲は数学I・A",
+      "trend": "",
+      "src": "https://search.keinet.ne.jp/2109/general/exam_subject"
+     },
+     {
+      "kubun": "一般",
+      "method": "一般選抜（選択科目）",
+      "subject": "日本史・世界史・公民",
+      "format": "地歴・公民から選択（日本史・世界史・政治経済）",
+      "trend": "",
+      "src": "https://search.keinet.ne.jp/2109/general/exam_subject"
+     },
+     {
+      "kubun": "一般",
+      "method": "一般選抜 小論文型",
+      "subject": "小論文",
+      "format": "小論文のみ100点",
+      "trend": "",
+      "src": "https://search.keinet.ne.jp/2109/general/exam_subject"
+     }
+    ],
+    "note": "Kei-Net掲載の科目・配点のみ。過去の出題傾向は未確認。"
+   }
+  },
+  "sources": [
+   "https://search.keinet.ne.jp/2109/general/exam_subject"
+  ]
+ },
+ {
+  "name": "獨協医科大学",
+  "info": {
+   "qtrend": {
+    "years": "2027年度入試（Kei-Net掲載の個別試験構成）",
+    "rows": [
+     {
+      "kubun": "一般",
+      "method": "一般選抜（医学部医学科・地域枠含む）",
+      "subject": "英語",
+      "format": "100点（学力試験計400点中）",
+      "trend": "",
+      "src": "https://search.keinet.ne.jp/2123/general/exam_subject"
+     },
+     {
+      "kubun": "一般",
+      "method": "一般選抜（医学部医学科）",
+      "subject": "数学",
+      "format": "100点、数学I・II・III・A・B・C",
+      "trend": "",
+      "src": "https://search.keinet.ne.jp/2123/general/exam_subject"
+     },
+     {
+      "kubun": "一般",
+      "method": "一般選抜（医学部医学科）",
+      "subject": "理科",
+      "format": "物理・化学・生物から2科目・計200点",
+      "trend": "",
+      "src": "https://search.keinet.ne.jp/2123/general/exam_subject"
+     },
+     {
+      "kubun": "一般",
+      "method": "一般選抜 二次（医学部医学科）",
+      "subject": "小論文",
+      "format": "必須、配点の掲載なし",
+      "trend": "",
+      "src": "https://search.keinet.ne.jp/2123/general/exam_subject"
+     },
+     {
+      "kubun": "一般",
+      "method": "一般選抜 二次（医学部医学科）",
+      "subject": "面接",
+      "format": "必須、配点の掲載なし、自己申告カードを提出",
+      "trend": "",
+      "src": "https://search.keinet.ne.jp/2123/general/exam_subject"
+     },
+     {
+      "kubun": "一般",
+      "method": "一般選抜A・B日程（看護学部）",
+      "subject": "国語",
+      "format": "100点（現代文の表示）、英語100点と合わせ、A日程は数学か理科を追加",
+      "trend": "",
+      "src": "https://search.keinet.ne.jp/2123/general/exam_subject"
+     }
+    ],
+    "note": "Kei-Net掲載の科目・配点のみ。過去の出題傾向は未確認。"
+   }
+  },
+  "sources": [
+   "https://search.keinet.ne.jp/2123/general/exam_subject"
+  ]
+ },
+ {
+  "name": "宮城教育大学",
+  "info": {
+   "qtrend": {
+    "years": "2027年度入試（Kei-Net掲載の個別試験構成）",
+    "rows": [
+     {
+      "kubun": "一般",
+      "method": "前期（初等・特別支援 文系型、中等 国語・社会・英語）",
+      "subject": "英語",
+      "format": "200点（国語200点・小論文200点と合わせ計600点）",
+      "trend": "",
+      "src": "https://search.keinet.ne.jp/1055/general/exam_subject"
+     },
+     {
+      "kubun": "一般",
+      "method": "前期（全課程）",
+      "subject": "国語",
+      "format": "200点",
+      "trend": "",
+      "src": "https://search.keinet.ne.jp/1055/general/exam_subject"
+     },
+     {
+      "kubun": "一般",
+      "method": "前期（初等・特別支援 理系型、中等 数学・理科）",
+      "subject": "数学",
+      "format": "200点、範囲は数学I・II・A・B・C（中等数学は数学IIIまで）",
+      "trend": "",
+      "src": "https://search.keinet.ne.jp/1055/general/exam_subject"
+     },
+     {
+      "kubun": "一般",
+      "method": "前期（全課程）",
+      "subject": "小論文",
+      "format": "200点",
+      "trend": "前期の全課程で必須。時間・字数・テーマは掲載なし。",
+      "src": "https://search.keinet.ne.jp/1055/general/exam_subject"
+     },
+     {
+      "kubun": "一般",
+      "method": "後期（初等教育）",
+      "subject": "面接",
+      "format": "面接のみ300点、教員志望理由書を提出（配点なし）",
+      "trend": "",
+      "src": "https://search.keinet.ne.jp/1055/general/exam_subject"
+     }
+    ],
+    "note": "Kei-Net掲載の科目・配点のみ。過去の出題傾向は未確認。"
+   }
+  },
+  "sources": [
+   "https://search.keinet.ne.jp/1055/general/exam_subject"
+  ]
+ },
+ {
+  "name": "山形大学",
+  "info": {
+   "qtrend": {
+    "years": "2027年度入試（Kei-Net掲載の個別試験構成）",
+    "rows": [
+     {
+      "kubun": "一般",
+      "method": "前期（人文社会科学部 人間文化・グローバルスタディーズ）",
+      "subject": "英語",
+      "format": "人間文化は英語100点＋国語300点、グローバルは英語のみ400点",
+      "trend": "",
+      "src": "https://search.keinet.ne.jp/1065/general/exam_subject"
+     },
+     {
+      "kubun": "一般",
+      "method": "前期（人文社会科学部 法律・公共政策・経済系）",
+      "subject": "英語・数学",
+      "format": "英語または数学から1科目・300点",
+      "trend": "",
+      "src": "https://search.keinet.ne.jp/1065/general/exam_subject"
+     },
+     {
+      "kubun": "一般",
+      "method": "前期（教育学部）",
+      "subject": "小論文",
+      "format": "小論文のみ400点",
+      "trend": "教育学部の全課程で二次は小論文だけ。テーマの傾向は掲載なし。",
+      "src": "https://search.keinet.ne.jp/1065/general/exam_subject"
+     },
+     {
+      "kubun": "一般",
+      "method": "後期（人文社会科学部 法律・公共政策・経済系）",
+      "subject": "小論文",
+      "format": "100点",
+      "trend": "",
+      "src": "https://search.keinet.ne.jp/1065/general/exam_subject"
+     },
+     {
+      "kubun": "一般",
+      "method": "前期（理学部）",
+      "subject": "数学・理科・総合問題",
+      "format": "数学・理科・総合問題から1つ選択・300点",
+      "trend": "",
+      "src": "https://search.keinet.ne.jp/1065/general/exam_subject"
+     },
+     {
+      "kubun": "一般",
+      "method": "前期（工学部 情報・機械・電気系、フレックス）",
+      "subject": "数学",
+      "format": "数学400点＋物理か化学400点（計800点）",
+      "trend": "",
+      "src": "https://search.keinet.ne.jp/1065/general/exam_subject"
+     },
+     {
+      "kubun": "一般",
+      "method": "前期（工学部 化学系・農学部）",
+      "subject": "理科",
+      "format": "工学部化学系は理科1科目400点、農学部は数学か理科1科目300点",
+      "trend": "",
+      "src": "https://search.keinet.ne.jp/1065/general/exam_subject"
+     },
+     {
+      "kubun": "一般",
+      "method": "前期（工学部 建築・デザイン学科）",
+      "subject": "面接",
+      "format": "筆記なしで面接200点、口頭試問を含む",
+      "trend": "",
+      "src": "https://search.keinet.ne.jp/1065/general/exam_subject"
+     },
+     {
+      "kubun": "一般",
+      "method": "前期（医学部医学科）",
+      "subject": "英語・数学・理科",
+      "format": "英語200・数学200・理科2科目200（計700点、面接100点を含む）",
+      "trend": "",
+      "src": "https://search.keinet.ne.jp/1065/general/exam_subject"
+     },
+     {
+      "kubun": "一般",
+      "method": "前期（医学部医学科）",
+      "subject": "面接",
+      "format": "100点",
+      "trend": "",
+      "src": "https://search.keinet.ne.jp/1065/general/exam_subject"
+     }
+    ],
+    "note": "Kei-Net掲載の科目・配点のみ（看護学科以降はページが途中で切れて未確認）。過去の出題傾向は未確認。"
+   }
+  },
+  "sources": [
+   "https://search.keinet.ne.jp/1065/general/exam_subject"
+  ]
+ },
+ {
+  "name": "公立千歳科学技術大学",
+  "info": {
+   "qtrend": {
+    "years": "2027年度入試（Kei-Net掲載の個別試験構成）",
+    "rows": [
+     {
+      "kubun": "一般",
+      "method": "前期（理工学部）",
+      "subject": "数学",
+      "format": "数学200点＋理科200点（計400点）、範囲は数学I・II・III・A・B・C",
+      "trend": "",
+      "src": "https://search.keinet.ne.jp/general/exam_subject/1509"
+     },
+     {
+      "kubun": "一般",
+      "method": "前期（理工学部）",
+      "subject": "理科",
+      "format": "物理・化学・生物から1科目・200点",
+      "trend": "",
+      "src": "https://search.keinet.ne.jp/general/exam_subject/1509"
+     },
+     {
+      "kubun": "一般",
+      "method": "中期（理工学部）",
+      "subject": "数学",
+      "format": "数学のみ500点",
+      "trend": "",
+      "src": "https://search.keinet.ne.jp/general/exam_subject/1509"
+     }
+    ],
+    "note": "Kei-Net掲載の科目・配点のみ。過去の出題傾向は未確認。"
+   }
+  },
+  "sources": [
+   "https://search.keinet.ne.jp/general/exam_subject/1509"
+  ]
+ },
+ {
+  "name": "岩手大学",
+  "info": {
+   "qtrend": {
+    "years": "2027年度入試（Kei-Net掲載の個別試験構成）",
+    "rows": [
+     {
+      "kubun": "一般",
+      "method": "前期（人文社会科学部）",
+      "subject": "英語",
+      "format": "英語300点・国語300点（計600点）",
+      "trend": "",
+      "src": "https://search.keinet.ne.jp/1045/general/exam_subject"
+     },
+     {
+      "kubun": "一般",
+      "method": "前期（人文社会科学部）",
+      "subject": "国語",
+      "format": "300点",
+      "trend": "",
+      "src": "https://search.keinet.ne.jp/1045/general/exam_subject"
+     },
+     {
+      "kubun": "一般",
+      "method": "後期（人文社会科学部 人間文化課程）",
+      "subject": "小論文",
+      "format": "小論文のみ300点",
+      "trend": "",
+      "src": "https://search.keinet.ne.jp/1045/general/exam_subject"
+     },
+     {
+      "kubun": "一般",
+      "method": "前期（教育学部 小学校・中学校の教科系）",
+      "subject": "英語・数学・国語・理科",
+      "format": "多くの課程で英・数・国・理から2科目選択（中学数学は数学400点）",
+      "trend": "",
+      "src": "https://search.keinet.ne.jp/1045/general/exam_subject"
+     },
+     {
+      "kubun": "一般",
+      "method": "前期（教育学部 音楽・美術・保健体育）",
+      "subject": "実技",
+      "format": "実技300〜360点＋面接40〜100点",
+      "trend": "芸術・体育系は実技の比重が大きい。",
+      "src": "https://search.keinet.ne.jp/1045/general/exam_subject"
+     },
+     {
+      "kubun": "一般",
+      "method": "前期・後期（理工学部）",
+      "subject": "数学",
+      "format": "数学＋理科1科目（物理・化学・生物）、英語は二次なし",
+      "trend": "",
+      "src": "https://search.keinet.ne.jp/1045/general/exam_subject"
+     },
+     {
+      "kubun": "一般",
+      "method": "前期（農学部）",
+      "subject": "数学・理科",
+      "format": "数学または理科から1科目・300点",
+      "trend": "",
+      "src": "https://search.keinet.ne.jp/1045/general/exam_subject"
+     },
+     {
+      "kubun": "一般",
+      "method": "後期（農学部）",
+      "subject": "面接",
+      "format": "面接のみ100点",
+      "trend": "",
+      "src": "https://search.keinet.ne.jp/1045/general/exam_subject"
+     },
+     {
+      "kubun": "一般",
+      "method": "前期（獣医学部 共同獣医学科）",
+      "subject": "数学・理科",
+      "format": "数学200点＋理科1科目200点",
+      "trend": "",
+      "src": "https://search.keinet.ne.jp/1045/general/exam_subject"
+     }
+    ],
+    "note": "Kei-Net掲載の科目・配点のみ（表の一部の区切りが不明瞭）。過去の出題傾向は未確認。"
+   }
+  },
+  "sources": [
+   "https://search.keinet.ne.jp/1045/general/exam_subject"
+  ]
+ },
+ {
+  "name": "芸術文化観光専門職大学",
+  "info": {
+   "qtrend": {
+    "years": "2027年度入試（Kei-Net掲載の個別試験構成）",
+    "rows": [
+     {
+      "kubun": "一般",
+      "method": "一般選抜（芸術文化・観光学部）",
+      "subject": "小論文",
+      "format": "200点（計300点中）、教科別の学力試験はなし",
+      "trend": "",
+      "src": "https://search.keinet.ne.jp/1628/general/exam_subject"
+     },
+     {
+      "kubun": "一般",
+      "method": "一般選抜（芸術文化・観光学部）",
+      "subject": "面接",
+      "format": "100点、志望理由書を提出（配点なし）",
+      "trend": "",
+      "src": "https://search.keinet.ne.jp/1628/general/exam_subject"
+     }
+    ],
+    "note": "Kei-Net掲載の科目・配点のみ。過去の出題傾向は未確認。"
+   }
+  },
+  "sources": [
+   "https://search.keinet.ne.jp/1628/general/exam_subject"
+  ]
+ },
+ {
+  "name": "立命館アジア太平洋大学（APU）",
+  "info": {
+   "qtrend": {
+    "years": "2027年度入試（Kei-Net掲載の個別試験構成）",
+    "rows": [
+     {
+      "kubun": "一般",
+      "method": "スタンダード3方式（全学部）",
+      "subject": "英語",
+      "format": "120点（英語資格スコアの換算可）、国語100点と数学か地歴公民100点を合わせ計320点",
+      "trend": "",
+      "src": "https://search.keinet.ne.jp/2766/general/exam_subject"
+     },
+     {
+      "kubun": "一般",
+      "method": "英語重視方式（全学部）",
+      "subject": "英語",
+      "format": "150点、国語100点・数学か地歴公民と合わせ、英語と他の高い方で判定",
+      "trend": "",
+      "src": "https://search.keinet.ne.jp/2766/general/exam_subject"
+     },
+     {
+      "kubun": "一般",
+      "method": "スタンダード3方式・英語重視方式・後期",
+      "subject": "国語",
+      "format": "100点、範囲は現代文（漢文の単独出題なし）",
+      "trend": "",
+      "src": "https://search.keinet.ne.jp/2766/general/exam_subject"
+     },
+     {
+      "kubun": "一般",
+      "method": "スタンダード3方式（選択）",
+      "subject": "数学",
+      "format": "数学I・II・A・B・Cの範囲、地歴公民との選択",
+      "trend": "",
+      "src": "https://search.keinet.ne.jp/2766/general/exam_subject"
+     },
+     {
+      "kubun": "一般",
+      "method": "共テ＋探究方式",
+      "subject": "総合問題",
+      "format": "総合問題のみ200点",
+      "trend": "",
+      "src": "https://search.keinet.ne.jp/2766/general/exam_subject"
+     },
+     {
+      "kubun": "一般",
+      "method": "共テ＋面接方式",
+      "subject": "面接",
+      "format": "面接のみ100点",
+      "trend": "",
+      "src": "https://search.keinet.ne.jp/2766/general/exam_subject"
+     }
+    ],
+    "note": "Kei-Net掲載の科目・配点のみ（国際経営学部の一部はページ途中で切れて未確認）。過去の出題傾向は未確認。"
+   }
+  },
+  "sources": [
+   "https://search.keinet.ne.jp/2766/general/exam_subject"
+  ]
+ },
+ {
+  "name": "関西外国語大学",
+  "info": {
+   "qtrend": {
+    "years": "2027年度入試（Kei-Net掲載の個別試験構成）",
+    "rows": [
+     {
+      "kubun": "一般",
+      "method": "前期 2科目A・1科目S・2科目B・後期（外国語学部 英米語学科）",
+      "subject": "英語",
+      "format": "200点必須（3科目Cは150点）、英語資格で最大15〜20点加点",
+      "trend": "英語の比重が非常に大きい。出題形式や傾向は掲載なし。",
+      "src": "https://search.keinet.ne.jp/2535/general/exam_subject"
+     },
+     {
+      "kubun": "一般",
+      "method": "前期 2科目A・3科目C",
+      "subject": "国語",
+      "format": "100点、範囲は現代文・古典",
+      "trend": "",
+      "src": "https://search.keinet.ne.jp/2535/general/exam_subject"
+     },
+     {
+      "kubun": "一般",
+      "method": "前期 2科目B・3科目C",
+      "subject": "日本史・世界史",
+      "format": "地歴・公民から1科目・100点",
+      "trend": "",
+      "src": "https://search.keinet.ne.jp/2535/general/exam_subject"
+     }
+    ],
+    "note": "Kei-Net掲載の科目・配点のみ（英米語学科で確認。他学科・英語キャリア学部はページが途中で切れて未確認）。一般選抜に小論文・面接はない。過去の出題傾向は未確認。"
+   }
+  },
+  "sources": [
+   "https://search.keinet.ne.jp/2535/general/exam_subject"
+  ]
+ },
+ {
+  "name": "高知リハビリテーション専門職大学",
+  "info": {
+   "qtrend": {
+    "years": "2027年度入試（Kei-Net掲載の個別試験構成）",
+    "rows": [
+     {
+      "kubun": "一般",
+      "method": "一般選抜（理学療法・作業療法・言語聴覚学専攻）",
+      "subject": "英語・数学・国語・理科",
+      "format": "英語か理科（化学・生物）から1科目、数学（IまたはA）か国語から1科目の表示、配点の掲載なし",
+      "trend": "表の一部が崩れており選択方法は要確認。出題傾向は掲載なし。",
+      "src": "https://search.keinet.ne.jp/2690/general/exam_subject"
+     },
+     {
+      "kubun": "一般",
+      "method": "一般選抜（全専攻）",
+      "subject": "面接",
+      "format": "必須、小論文はなし",
+      "trend": "",
+      "src": "https://search.keinet.ne.jp/2690/general/exam_subject"
+     }
+    ],
+    "note": "Kei-Net掲載の科目・配点のみ。過去の出題傾向は未確認。"
+   }
+  },
+  "sources": [
+   "https://search.keinet.ne.jp/2690/general/exam_subject"
+  ]
+ },
+ {
+  "name": "静岡県立農林環境専門職大学",
+  "info": {
+   "qtrend": {
+    "years": "2027年度入試（Kei-Net掲載の個別試験構成）",
+    "rows": [
+     {
+      "kubun": "一般",
+      "method": "前期（生産環境経営学部）",
+      "subject": "小論文",
+      "format": "100点（二次200点中）、教科別の学力試験はなし",
+      "trend": "",
+      "src": "https://search.keinet.ne.jp/1572/general/exam_subject"
+     },
+     {
+      "kubun": "一般",
+      "method": "前期（生産環境経営学部）",
+      "subject": "面接",
+      "format": "50点、ほかに資格試験の成績50点（任意）、志望理由書を提出",
+      "trend": "",
+      "src": "https://search.keinet.ne.jp/1572/general/exam_subject"
+     }
+    ],
+    "note": "Kei-Net掲載の科目・配点のみ。過去の出題傾向は未確認。"
+   }
+  },
+  "sources": [
+   "https://search.keinet.ne.jp/1572/general/exam_subject"
+  ]
+ },
+ {
+  "name": "国際ファッション専門職大学",
+  "info": {
+   "qtrend": {
+    "years": "2027年度入試（Kei-Net掲載の個別試験構成）",
+    "rows": [
+     {
+      "kubun": "一般",
+      "method": "一般選抜（全学科・東京・大阪・名古屋）",
+      "subject": "小論文",
+      "format": "事前の課題作文を指定日に提出（専願は免除）、配点の掲載なし",
+      "trend": "時間制の筆記ではなく事前提出の課題作文。テーマの傾向は掲載なし。",
+      "src": "https://search.keinet.ne.jp/2102/general/exam_subject"
+     },
+     {
+      "kubun": "一般",
+      "method": "一般選抜（全学科）",
+      "subject": "面接",
+      "format": "必須、配点の掲載なし",
+      "trend": "",
+      "src": "https://search.keinet.ne.jp/2102/general/exam_subject"
+     },
+     {
+      "kubun": "一般",
+      "method": "一般選抜（全学科）",
+      "subject": "適性診断",
+      "format": "英語・国語の要素を含む適性診断（教科別の学力試験はなし）",
+      "trend": "",
+      "src": "https://search.keinet.ne.jp/2102/general/exam_subject"
+     }
+    ],
+    "note": "Kei-Net掲載の科目・配点のみ。過去の出題傾向は未確認。"
+   }
+  },
+  "sources": [
+   "https://search.keinet.ne.jp/2102/general/exam_subject"
+  ]
+ },
+ {
+  "name": "東京国際工科専門職大学",
+  "info": {
+   "qtrend": {
+    "years": "2027年度入試（Kei-Net掲載の個別試験構成）",
+    "rows": [
+     {
+      "kubun": "一般",
+      "method": "一般選抜（情報工学科・デジタルエンタテインメント学科、東京キャンパス）",
+      "subject": "小論文",
+      "format": "事前の課題作文を指定日に提出（専願は免除）、配点の掲載なし",
+      "trend": "教科別の学力試験の表示はない。テーマの傾向は掲載なし。",
+      "src": "https://search.keinet.ne.jp/2113/general/exam_subject"
+     },
+     {
+      "kubun": "一般",
+      "method": "一般選抜（両学科）",
+      "subject": "面接",
+      "format": "必須、志望理由書と自己PR記入用紙を提出",
+      "trend": "",
+      "src": "https://search.keinet.ne.jp/2113/general/exam_subject"
+     },
+     {
+      "kubun": "一般",
+      "method": "一般選抜（両学科）",
+      "subject": "適性診断",
+      "format": "「その他」として実施",
+      "trend": "",
+      "src": "https://search.keinet.ne.jp/2113/general/exam_subject"
+     }
+    ],
+    "note": "Kei-Netでは「国際工科専門職大学」（東京・大阪・名古屋の3キャンパス共通の内容）として掲載。科目構成のみで過去の出題傾向は未確認。"
+   }
+  },
+  "sources": [
+   "https://search.keinet.ne.jp/2113/general/exam_subject"
+  ]
+ },
+ {
+  "name": "名古屋国際工科専門職大学",
+  "info": {
+   "qtrend": {
+    "years": "2027年度入試（Kei-Net掲載の個別試験構成）",
+    "rows": [
+     {
+      "kubun": "一般",
+      "method": "一般選抜（情報工学科・デジタルエンタテインメント学科、名古屋キャンパス）",
+      "subject": "小論文",
+      "format": "事前の課題作文を指定日に提出（専願は免除）、配点の掲載なし",
+      "trend": "教科別の学力試験の表示はない。テーマの傾向は掲載なし。",
+      "src": "https://search.keinet.ne.jp/2113/general/exam_subject"
+     },
+     {
+      "kubun": "一般",
+      "method": "一般選抜（両学科）",
+      "subject": "面接",
+      "format": "必須、志望理由書と自己PR記入用紙を提出",
+      "trend": "",
+      "src": "https://search.keinet.ne.jp/2113/general/exam_subject"
+     },
+     {
+      "kubun": "一般",
+      "method": "一般選抜（両学科）",
+      "subject": "適性診断",
+      "format": "「その他」として実施",
+      "trend": "",
+      "src": "https://search.keinet.ne.jp/2113/general/exam_subject"
+     }
+    ],
+    "note": "Kei-Netでは「国際工科専門職大学」（東京・大阪・名古屋の3キャンパス共通の内容）として掲載。科目構成のみで過去の出題傾向は未確認。"
+   }
+  },
+  "sources": [
+   "https://search.keinet.ne.jp/2113/general/exam_subject"
+  ]
+ },
+ {
+  "name": "東京保健医療専門職大学",
+  "info": {
+   "qtrend": {
+    "years": "2027年度入試（Kei-Net掲載の個別試験構成）",
+    "rows": [
+     {
+      "kubun": "一般",
+      "method": "一般選抜（理学療法学科・作業療法学科）",
+      "subject": "英語・数学・国語",
+      "format": "英語・数学（I・A）・国語から2科目選択（各100点・計200点）、エントリーシートを提出",
+      "trend": "小論文・面接の記載なし。出題形式や傾向は掲載なし。",
+      "src": "https://search.keinet.ne.jp/2114/general/exam_subject"
+     }
+    ],
+    "note": "Kei-Net掲載の科目・配点のみ。過去の出題傾向は未確認。"
+   }
+  },
+  "sources": [
+   "https://search.keinet.ne.jp/2114/general/exam_subject"
+  ]
+ },
+ {
+  "name": "開志専門職大学",
+  "info": {
+   "qtrend": {
+    "years": "2027年度入試（Kei-Net掲載の個別試験構成）",
+    "rows": [
+     {
+      "kubun": "一般",
+      "method": "一般選抜（事業創造・アニメマンガ・情報学部）",
+      "subject": "英語・数学・国語・地歴公民・情報",
+      "format": "英語・数学（I中心）・国語・地歴公民・情報Iから2科目選択の表示（計200点）、英語は資格スコアの換算可",
+      "trend": "選択方法は表から確定できず要確認。小論文・面接の記載なし。出題傾向は掲載なし。",
+      "src": "https://search.keinet.ne.jp/2343/general/exam_subject"
+     }
+    ],
+    "note": "Kei-Net掲載の科目・配点のみ。過去の出題傾向は未確認。"
+   }
+  },
+  "sources": [
+   "https://search.keinet.ne.jp/2343/general/exam_subject"
+  ]
+ },
+ {
+  "name": "筑波技術大学",
+  "info": {
+   "qtrend": {
+    "years": "2027年度入試（Kei-Net掲載の個別試験構成）",
+    "rows": [
+     {
+      "kubun": "一般",
+      "method": "前期（共生社会創成 視覚障害コース・保健学科・情報システム学科）",
+      "subject": "小論文",
+      "format": "200点（計760点中）",
+      "trend": "",
+      "src": "https://search.keinet.ne.jp/1080/general/exam_subject"
+     },
+     {
+      "kubun": "一般",
+      "method": "前期（視覚障害者対象の学科）",
+      "subject": "面接",
+      "format": "500点、志望動機中心の書類60点",
+      "trend": "",
+      "src": "https://search.keinet.ne.jp/1080/general/exam_subject"
+     },
+     {
+      "kubun": "一般",
+      "method": "前期（共生社会創成 聴覚障害コース）",
+      "subject": "プレゼン",
+      "format": "エントリーシートを用いたプレゼン300点、小論文200点・面接150点を併せる",
+      "trend": "プレゼンの比重が大きい構成。内容の傾向は掲載なし。",
+      "src": "https://search.keinet.ne.jp/1080/general/exam_subject"
+     },
+     {
+      "kubun": "一般",
+      "method": "前期（産業技術学部 産業情報学科・総合デザイン学科）",
+      "subject": "総合問題",
+      "format": "総合問題400点（産業情報学科は数学との選択）、面接200点",
+      "trend": "",
+      "src": "https://search.keinet.ne.jp/1080/general/exam_subject"
+     }
+    ],
+    "note": "Kei-Net掲載の科目・配点のみ。過去の出題傾向は未確認。"
+   }
+  },
+  "sources": [
+   "https://search.keinet.ne.jp/1080/general/exam_subject"
+  ]
  }
 ]
