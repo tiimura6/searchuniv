@@ -25,58 +25,23 @@ header{padding:20px 20px 8px;max-width:880px;margin:0 auto}
 h1{font-size:20px;margin:0 0 4px;font-weight:700;letter-spacing:.02em}
 .sub{font-size:12.5px;color:var(--muted);margin:0}
 main{max-width:880px;margin:0 auto;padding:8px 20px 40px}
-.controls{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:12px 0}
-.chips{display:flex;flex-wrap:wrap;gap:6px;margin:6px 0 10px}
-.chip{border:1px solid var(--line);background:var(--panel);color:var(--ink);border-radius:999px;padding:5px 11px;font-size:12.5px;cursor:pointer;font-family:inherit}
-.chip[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:#fff}
-@media (prefers-color-scheme: dark){.chip[aria-pressed="true"]{color:#111}}
 .chip .n{opacity:.7;margin-left:4px;font-size:11px}
 select,input[type=search],button.btn{font-family:inherit;font-size:13px;border:1px solid var(--line);background:var(--panel);color:var(--ink);border-radius:8px;padding:7px 10px}
 button.btn{cursor:pointer}
 button.btn:hover{border-color:var(--accent)}
 input[type=search]{flex:1;min-width:160px}
-.stage{perspective:1400px;margin:14px 0}
-.card{position:relative;width:100%;height:min(74vh,700px);min-height:420px;transform-style:preserve-3d;transition:transform .5s cubic-bezier(.2,.7,.2,1);cursor:pointer}
-.card.flipped{transform:rotateY(180deg)}
-.card.flipped .front{pointer-events:none;visibility:hidden;transition:visibility 0s .25s}
-.card:not(.flipped) .back{pointer-events:none;visibility:hidden;transition:visibility 0s .25s}
-.face{overscroll-behavior:contain;-webkit-overflow-scrolling:touch}
-.face{position:absolute;inset:0;backface-visibility:hidden;-webkit-backface-visibility:hidden;background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:26px 28px;display:flex;flex-direction:column;box-shadow:0 1px 2px rgba(0,0,0,.04),0 8px 24px rgba(0,0,0,.05);overflow:auto}
-.face::before{content:"";position:absolute;left:0;right:0;bottom:0;height:46%;background:var(--art) no-repeat center bottom/min(100%,560px) auto;opacity:.16;pointer-events:none;z-index:0}
-@media (prefers-color-scheme: dark){.face::before{opacity:.22;filter:invert(1)}}
-.face>*{position:relative;z-index:1}
-.back::before{opacity:.08}
-.front{align-items:center;justify-content:flex-start;text-align:center}
-.back{transform:rotateY(180deg)}
 .badge{display:inline-block;font-size:11.5px;font-weight:500;color:#fff;border-radius:6px;padding:2px 8px;margin-right:6px}
 .meta{font-size:12.5px;color:var(--muted);margin-top:10px}
-.uname{font-size:clamp(26px,5vw,38px);font-weight:700;margin:14px 0 4px;letter-spacing:.03em}
-.hint{position:absolute;bottom:14px;left:0;right:0;text-align:center;font-size:11.5px;color:var(--muted)}
-.back h2{font-size:18px;margin:6px 0 10px}
-.back ul{margin:0 0 12px;padding-left:1.2em}
-.back li{margin:4px 0;font-size:14.5px}
 .memo{margin-top:auto;background:var(--accent-soft);border-radius:10px;padding:10px 14px;font-size:13.5px}
 .memo b{display:block;color:var(--accent);font-size:12px;margin-bottom:2px}
-.qfront{font-size:15.5px;text-align:left;max-width:620px}
-.qfront ul{padding-left:1.2em}
 .nav{display:flex;gap:8px;align-items:center;justify-content:space-between;flex-wrap:wrap}
 .nav .grp{display:flex;gap:8px}
 .big{padding:10px 16px!important;font-size:14px!important}
 .ok{border-color:var(--ok)!important;color:var(--ok)!important}
 .ng{border-color:var(--ng)!important;color:var(--ng)!important}
-.progress{font-size:13px;color:var(--muted)}
-.bar{height:6px;background:var(--line);border-radius:3px;overflow:hidden;margin:6px 0 2px}
-.bar>div{height:100%;background:var(--ok);transition:width .3s}
-.status{font-size:12px;font-weight:700;margin-left:6px}
 .status.k{color:var(--ok)} .status.u{color:var(--ng)}
-.empty{padding:60px 20px;text-align:center;color:var(--muted);background:var(--panel);border-radius:16px;border:1px dashed var(--line)}
-.foot{margin-top:24px;font-size:11.5px;color:var(--muted)}
 details{margin-top:24px;font-size:12.5px;color:var(--muted)}
 details summary{cursor:pointer}
-.listview{display:none;margin-top:14px}
-.listview table{width:100%;border-collapse:collapse;font-size:13px;background:var(--panel);border-radius:12px;overflow:hidden}
-.listview th,.listview td{border-bottom:1px solid var(--line);padding:8px 10px;text-align:left;vertical-align:top}
-.listview th{font-weight:500;color:var(--muted);font-size:12px}
 .tabs{display:flex;gap:4px;margin-top:10px}
 .tabs a{font-size:13px;padding:6px 14px;border:1px solid var(--line);border-radius:999px;color:var(--ink);text-decoration:none;background:var(--panel)}
 .tabs a.on{background:var(--accent);border-color:var(--accent);color:#fff}
@@ -106,7 +71,6 @@ body.wide main,body.wide header{max-width:1320px}
 .kchk{display:flex;flex-wrap:wrap;gap:4px 12px;width:100%}
 .kchk i{display:inline-block;width:9px;height:9px;border-radius:50%}
 .mcount{font-size:12px;color:var(--muted)}
-.nocards .cardtab,.nocards [data-card],.nocards #tocard{display:none !important}
 .star{font-size:12px;border:1px solid var(--line);background:var(--panel);border-radius:999px;padding:2px 9px;cursor:pointer;color:var(--muted);margin-left:6px}
 .star.on{background:#b8860b;color:#fff;border-color:#b8860b}
 .ccount{font-size:11px;margin-left:2px}
@@ -205,7 +169,6 @@ body.noscroll{overflow:hidden}
 .pfeat{margin:8px 0;padding-left:1.2em;font-size:13.5px}
 #jmap .dot.off{display:none}
 #jmap.moving .ulbl,#jmap.moving .clus,#jmap.moving #mlabels{opacity:.35}
-.sdisc{margin:4px 2px 6px;font-size:12px;color:var(--ng);font-weight:600}
 #ctip{position:absolute;pointer-events:none;background:var(--panel);border:1px solid var(--line);border-radius:6px;padding:2px 7px;font-size:12px;color:var(--muted);white-space:nowrap;box-shadow:0 2px 6px rgba(0,0,0,.12);z-index:3}
 #ctip.cap{color:var(--ink)}
 #hl,#labels .clus text{pointer-events:none}
@@ -231,12 +194,8 @@ body.noscroll{overflow:hidden}
 .mpanel .box{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:12px 16px}
 .mpanel h3{margin:0 0 4px;font-size:17px}
 .mpanel .meta{margin-top:0}
-.nlist{display:flex;flex-direction:column;gap:8px;margin-top:6px}
-.nitem{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:10px 14px;font-size:13.5px}
 .nitem .nh{display:flex;gap:8px;align-items:baseline;flex-wrap:wrap;font-size:12px;color:var(--muted)}
 .nitem .nu{color:var(--accent);font-weight:700}
-.nitem a.nt{display:block;color:var(--ink);font-weight:700;text-decoration:none;margin:3px 0}
-.nitem a.nt:hover{text-decoration:underline}
 .nitem .ns{font-size:12.5px;color:var(--muted)}
 .star{border:0;background:none;cursor:pointer;font-size:16px;color:var(--muted);padding:0 2px;line-height:1}
 .star.on{color:#e0a400}
@@ -291,16 +250,8 @@ body.noscroll{overflow:hidden}
 ul.mini{margin:0;padding-left:1.1em}
 ul.mini li{font-size:12.5px;margin:2px 0}
 .hp{font-size:12.5px;font-weight:500;margin-left:10px;color:var(--accent);white-space:nowrap}
-.ff{width:100%;border-collapse:collapse;margin-top:10px;font-size:12.5px;background:color-mix(in srgb,var(--panel) 85%,transparent);border-radius:8px}
-.ff th{width:6.8em;text-align:left;font-weight:500;color:var(--muted);padding:4px 8px 4px 0;vertical-align:top;white-space:nowrap}
-.ff td{padding:4px 0;border-bottom:1px dashed var(--line)}
-.ff tr:last-child td{border-bottom:0}
 .ff .facs span{font-size:11.5px}
-.qfront{max-width:680px!important}
-.hints{margin-top:10px}
 .hints .btn{font-size:12.5px;padding:5px 10px}
-.hint1{font-size:13px;margin:4px 0;text-align:left}
-.hint1 b{display:inline-block;font-size:11.5px;color:var(--accent);margin-right:8px;min-width:6.5em}
 .guide{border:1px solid var(--accent);border-radius:10px;padding:8px 12px;margin:6px 0 10px;background:var(--accent-soft);font-size:13px}
 .guide .gh{font-weight:700;color:var(--accent);font-size:13px;margin-bottom:4px}
 .guide .it th{width:7.6em}
@@ -326,57 +277,18 @@ ul.mini li{font-size:12.5px;margin:2px 0}
 .src a{color:var(--accent)}
 .listview .hp{font-size:12.5px;font-weight:500;margin-left:10px;color:var(--accent);white-space:nowrap}
 .exam{margin:0;border:0;padding:0}
-.ans{margin:10px 0 6px;display:flex;flex-direction:column;align-items:center;gap:10px}
 .blank{display:flex;align-items:baseline;justify-content:center;font-size:clamp(22px,4.5vw,30px);font-weight:700;flex-wrap:nowrap}
 .blank input{width:9em;max-width:52vw;font-family:inherit;font-size:inherit;font-weight:700;text-align:center;border:0;border-bottom:3px solid var(--accent);background:transparent;color:var(--ink);padding:2px 4px;margin:0 2px}
 .blank input:focus{outline:none;background:var(--accent-soft)}
-.ansbtns{display:flex;gap:8px}
-.judge{font-size:18px;font-weight:700;margin-top:6px}
 .judge .good{color:var(--ok)} .judge .bad{color:var(--ng)}
-.judge .yours{display:block;font-size:12.5px;font-weight:400;color:var(--muted);margin-top:2px}
-.kbd{font-size:11px;border:1px solid var(--line);border-radius:4px;padding:0 5px}
 </style>
 </head>
 <body>
 <header>
   <h1>Searchuniv <span class="byline">designed by Takahiro Iimura</span></h1>
-  <nav class="tabs"><a href="#map" data-v="map">検索</a><a href="#cards" data-v="cards" class="cardtab">カード</a><a href="#ai" data-v="ai">面談</a><a href="#plan" data-v="plan">比較<span id="ccount" class="ccount"></span></a><a href="#trend" data-v="trend">出題内容</a></nav>
+  <nav class="tabs"><a href="#map" data-v="map">検索</a><a href="#ai" data-v="ai">面談</a><a href="#plan" data-v="plan">比較<span id="ccount" class="ccount"></span></a><a href="#trend" data-v="trend">出題内容</a></nav>
 </header>
 <main>
-<section id="v-cards">
-  <div class="controls">
-    <input type="search" id="q" placeholder="検索">
-    <select id="mode" aria-label="出題方向">
-      <option value="type" selected>入力</option>
-      <option value="name">大学名→特色</option>
-      <option value="feat">特色→大学名</option>
-    </select>
-    <select id="kindf" aria-label="種別"><option value="">全種別</option><option value="pub">国公立（私立を除く）</option><option>国立</option><option>公立</option><option>私立</option><option>大学校</option><option>専門職大学</option></select>
-    <select id="filt" aria-label="学習状況">
-      <option value="all">すべて</option>
-      <option value="unknown">まだ</option>
-      <option value="unseen">未判定</option>
-    </select>
-    <button class="btn" id="toggleList">一覧</button>
-  </div>
-
-  <div class="progress"><span id="pos"></span>　<span id="stat"></span>　<span id="score" style="color:var(--ok);font-weight:500"></span></div>
-  <div class="bar"><div id="barfill" style="width:0"></div></div>
-
-  <div id="cardwrap">
-    <div class="stage"><div class="card" id="card" tabindex="0" aria-live="polite">
-      <div class="face front" id="front"></div>
-      <div class="face back" id="back"></div>
-    </div></div>
-    <div class="nav">
-      <div class="grp"><button class="btn big" id="prev">←</button><button class="btn big" id="next">→</button></div>
-      <div class="grp"><button class="btn big ng" id="markU">まだ</button><button class="btn big ok" id="markK">覚えた</button></div>
-    </div>
-  </div>
-  <div class="listview" id="listview"></div>
-
-  <p class="foot">入試データは2026年度（出典は各カード）。倍率＝受験者÷合格者（受験者不明は志願者÷合格者）。総合型は最終合格者で算出。出願前に最新の募集要項で確認。</p>
-</section>
 
 <section id="v-map" hidden>
   <div class="sgrid">
@@ -477,25 +389,6 @@ ul.mini li{font-size:12.5px;margin:2px 0}
 // 外から使うものは window.Searchuniv だけに出す（グローバル名を増やさない）。
 (function(){
 
-const CATS = {
-  teidai:  {label:"旧帝大＋難関国立", color:"var(--c-teidai)"},
-  kanto:   {label:"関東の国公立", color:"var(--c-kanto)"},
-  chiho:   {label:"地方・特色国公立", color:"var(--c-chiho)"},
-  souke:   {label:"早慶上理ICU", color:"var(--c-souke)"},
-  march:   {label:"GMARCH", color:"var(--c-march)"},
-  kankan:  {label:"関関同立＋西日本有力私大", color:"var(--c-kankan)"},
-  chuken:  {label:"成成明学獨國武・日東駒専", color:"var(--c-chuken)"},
-  rikou:   {label:"理工・農系私大", color:"var(--c-rikou)"},
-  iryo:    {label:"医療系私大", color:"var(--c-iryo)"},
-  joshi:   {label:"女子大", color:"var(--c-joshi)"},
-  kokusai: {label:"外国語・国際系私大", color:"var(--c-kokusai)"},
-  ibaraki: {label:"茨城県内私大", color:"var(--c-ibaraki)"},
-  daigakkou:{label:"大学校", color:"var(--c-daigakkou)"},
-  senmon:  {label:"専門職大学", color:"var(--c-senmon)"},
-  national:{label:"国立大学", color:"var(--c-kanto)"},
-  public:  {label:"公立大学", color:"var(--c-chiho)"},
-  private: {label:"私立大学", color:"var(--c-march)"}
-};
 
 // [大学名, カテゴリ, 設置区分, 所在地, [特色...], 担任メモ]
 const D = /*CARDS*/[
@@ -761,9 +654,6 @@ function examBlock(name, compact){
 }
 function srcLabel(u){ try{ const h=new URL(u).hostname; if(h.includes("keinet")) return "河合塾Kei-Net"; if(h.includes("obunsha")) return "旺文社パスナビ"; return h.replace(/^www\./,""); }catch(e){ return "リンク"; } }
 
-const ART={"clock": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20400%20210%22%3E%3Cg%20fill%3D%22none%22%20stroke%3D%22%237a8696%22%20stroke-width%3D%222%22%20stroke-linejoin%3D%22round%22%20stroke-linecap%3D%22round%22%3E%3Cpath%20d%3D%22M0%20190%20H400%22/%3E%3Crect%20x%3D%2260%22%20y%3D%22110%22%20width%3D%22280%22%20height%3D%2280%22/%3E%3Cpath%20d%3D%22M60%20110%20L200%2080%20L340%20110%22/%3E%0A%3Crect%20x%3D%22175%22%20y%3D%2240%22%20width%3D%2250%22%20height%3D%22150%22/%3E%3Cpath%20d%3D%22M175%2040%20L200%2015%20L225%2040%22/%3E%3Ccircle%20cx%3D%22200%22%20cy%3D%2265%22%20r%3D%2212%22/%3E%3Cpath%20d%3D%22M200%2065%20v-7%20M200%2065%20h5%22/%3E%0A%3Crect%20x%3D%2275%22%20y%3D%22122%22%20width%3D%2210%22%20height%3D%2214%22/%3E%3Crect%20x%3D%2275%22%20y%3D%22146%22%20width%3D%2210%22%20height%3D%2214%22/%3E%3Crect%20x%3D%2293%22%20y%3D%22122%22%20width%3D%2210%22%20height%3D%2214%22/%3E%3Crect%20x%3D%2293%22%20y%3D%22146%22%20width%3D%2210%22%20height%3D%2214%22/%3E%3Crect%20x%3D%22111%22%20y%3D%22122%22%20width%3D%2210%22%20height%3D%2214%22/%3E%3Crect%20x%3D%22111%22%20y%3D%22146%22%20width%3D%2210%22%20height%3D%2214%22/%3E%3Crect%20x%3D%22129%22%20y%3D%22122%22%20width%3D%2210%22%20height%3D%2214%22/%3E%3Crect%20x%3D%22129%22%20y%3D%22146%22%20width%3D%2210%22%20height%3D%2214%22/%3E%3Crect%20x%3D%22250%22%20y%3D%22122%22%20width%3D%2210%22%20height%3D%2214%22/%3E%3Crect%20x%3D%22250%22%20y%3D%22146%22%20width%3D%2210%22%20height%3D%2214%22/%3E%3Crect%20x%3D%22268%22%20y%3D%22122%22%20width%3D%2210%22%20height%3D%2214%22/%3E%3Crect%20x%3D%22268%22%20y%3D%22146%22%20width%3D%2210%22%20height%3D%2214%22/%3E%3Crect%20x%3D%22286%22%20y%3D%22122%22%20width%3D%2210%22%20height%3D%2214%22/%3E%3Crect%20x%3D%22286%22%20y%3D%22146%22%20width%3D%2210%22%20height%3D%2214%22/%3E%3Crect%20x%3D%22304%22%20y%3D%22122%22%20width%3D%2210%22%20height%3D%2214%22/%3E%3Crect%20x%3D%22304%22%20y%3D%22146%22%20width%3D%2210%22%20height%3D%2214%22/%3E%3Crect%20x%3D%22188%22%20y%3D%22160%22%20width%3D%2224%22%20height%3D%2230%22/%3E%3Cpath%20d%3D%22M25%20190%20v-14%22/%3E%3Ccircle%20cx%3D%2225%22%20cy%3D%22166%22%20r%3D%2212%22/%3E%3Cpath%20d%3D%22M375%20190%20v-14%22/%3E%3Ccircle%20cx%3D%22375%22%20cy%3D%22166%22%20r%3D%2212%22/%3E%3C/g%3E%3C/svg%3E", "gothic": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20400%20210%22%3E%3Cg%20fill%3D%22none%22%20stroke%3D%22%237a8696%22%20stroke-width%3D%222%22%20stroke-linejoin%3D%22round%22%20stroke-linecap%3D%22round%22%3E%3Cpath%20d%3D%22M0%20190%20H400%22/%3E%3Crect%20x%3D%2270%22%20y%3D%22100%22%20width%3D%22260%22%20height%3D%2290%22/%3E%0A%3Cpath%20d%3D%22M70%20100%20L90%2080%20L110%20100%20M290%20100%20L310%2080%20L330%20100%22/%3E%3Crect%20x%3D%22170%22%20y%3D%2255%22%20width%3D%2260%22%20height%3D%22135%22/%3E%3Cpath%20d%3D%22M170%2055%20L200%2025%20L230%2055%22/%3E%0A%3Cpath%20d%3D%22M188%20190%20v-26%20a12%2012%200%200%201%2024%200%20v26%22/%3E%3Cpath%20d%3D%22M186%20100%20v-20%20a14%2014%200%200%201%2028%200%20v20%20Z%22/%3E%0A%3Cpath%20d%3D%22M85%20170%20v-30%20a7%207%200%200%201%2014%200%20v30%20Z%22/%3E%3Cpath%20d%3D%22M110%20170%20v-30%20a7%207%200%200%201%2014%200%20v30%20Z%22/%3E%3Cpath%20d%3D%22M135%20170%20v-30%20a7%207%200%200%201%2014%200%20v30%20Z%22/%3E%3Cpath%20d%3D%22M250%20170%20v-30%20a7%207%200%200%201%2014%200%20v30%20Z%22/%3E%3Cpath%20d%3D%22M275%20170%20v-30%20a7%207%200%200%201%2014%200%20v30%20Z%22/%3E%3Cpath%20d%3D%22M300%20170%20v-30%20a7%207%200%200%201%2014%200%20v30%20Z%22/%3E%3Cpath%20d%3D%22M30%20190%20v-14%22/%3E%3Ccircle%20cx%3D%2230%22%20cy%3D%22166%22%20r%3D%2212%22/%3E%3Cpath%20d%3D%22M370%20190%20v-14%22/%3E%3Ccircle%20cx%3D%22370%22%20cy%3D%22166%22%20r%3D%2212%22/%3E%3C/g%3E%3C/svg%3E", "modern": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20400%20210%22%3E%3Cg%20fill%3D%22none%22%20stroke%3D%22%237a8696%22%20stroke-width%3D%222%22%20stroke-linejoin%3D%22round%22%20stroke-linecap%3D%22round%22%3E%3Cpath%20d%3D%22M0%20190%20H400%22/%3E%3Cpath%20d%3D%22M50%20190%20V90%20L170%2070%20V190%22/%3E%3Cpath%20d%3D%22M170%20190%20V50%20H300%20V190%22/%3E%3Crect%20x%3D%22300%22%20y%3D%22120%22%20width%3D%2260%22%20height%3D%2270%22/%3E%0A%3Cpath%20d%3D%22M70%20190%20V87%22/%3E%3Cpath%20d%3D%22M90%20190%20V83%22/%3E%3Cpath%20d%3D%22M110%20190%20V80%22/%3E%3Cpath%20d%3D%22M130%20190%20V77%22/%3E%3Cpath%20d%3D%22M150%20190%20V74%22/%3E%3Cpath%20d%3D%22M170%2090%20H300%22/%3E%3Cpath%20d%3D%22M170%20110%20H300%22/%3E%3Cpath%20d%3D%22M170%20130%20H300%22/%3E%3Cpath%20d%3D%22M170%20150%20H300%22/%3E%3Cpath%20d%3D%22M170%20170%20H300%22/%3E%0A%3Cpath%20d%3D%22M196%2050%20V190%22/%3E%3Cpath%20d%3D%22M222%2050%20V190%22/%3E%3Cpath%20d%3D%22M248%2050%20V190%22/%3E%3Cpath%20d%3D%22M274%2050%20V190%22/%3E%3Crect%20x%3D%22310%22%20y%3D%22132%22%20width%3D%2214%22%20height%3D%2212%22/%3E%3Crect%20x%3D%22310%22%20y%3D%22154%22%20width%3D%2214%22%20height%3D%2212%22/%3E%3Crect%20x%3D%22334%22%20y%3D%22132%22%20width%3D%2214%22%20height%3D%2212%22/%3E%3Crect%20x%3D%22334%22%20y%3D%22154%22%20width%3D%2214%22%20height%3D%2212%22/%3E%3Cpath%20d%3D%22M25%20190%20v-14%22/%3E%3Ccircle%20cx%3D%2225%22%20cy%3D%22166%22%20r%3D%2212%22/%3E%3Cpath%20d%3D%22M380%20190%20v-14%22/%3E%3Ccircle%20cx%3D%22380%22%20cy%3D%22166%22%20r%3D%2212%22/%3E%3C/g%3E%3C/svg%3E", "medical": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20400%20210%22%3E%3Cg%20fill%3D%22none%22%20stroke%3D%22%237a8696%22%20stroke-width%3D%222%22%20stroke-linejoin%3D%22round%22%20stroke-linecap%3D%22round%22%3E%3Cpath%20d%3D%22M0%20190%20H400%22/%3E%3Crect%20x%3D%2280%22%20y%3D%2270%22%20width%3D%22150%22%20height%3D%22120%22/%3E%3Crect%20x%3D%22230%22%20y%3D%22110%22%20width%3D%22100%22%20height%3D%2280%22/%3E%0A%3Cpath%20d%3D%22M150%2040%20h10%20v12%20h12%20v10%20h-12%20v12%20h-10%20v-12%20h-12%20v-10%20h12%20Z%22/%3E%3Cpath%20d%3D%22M155%2074%20v-0%22/%3E%0A%3Crect%20x%3D%2295%22%20y%3D%2285%22%20width%3D%2210%22%20height%3D%2212%22/%3E%3Crect%20x%3D%2295%22%20y%3D%22107%22%20width%3D%2210%22%20height%3D%2212%22/%3E%3Crect%20x%3D%2295%22%20y%3D%22129%22%20width%3D%2210%22%20height%3D%2212%22/%3E%3Crect%20x%3D%2295%22%20y%3D%22151%22%20width%3D%2210%22%20height%3D%2212%22/%3E%3Crect%20x%3D%22117%22%20y%3D%2285%22%20width%3D%2210%22%20height%3D%2212%22/%3E%3Crect%20x%3D%22117%22%20y%3D%22107%22%20width%3D%2210%22%20height%3D%2212%22/%3E%3Crect%20x%3D%22117%22%20y%3D%22129%22%20width%3D%2210%22%20height%3D%2212%22/%3E%3Crect%20x%3D%22117%22%20y%3D%22151%22%20width%3D%2210%22%20height%3D%2212%22/%3E%3Crect%20x%3D%22139%22%20y%3D%2285%22%20width%3D%2210%22%20height%3D%2212%22/%3E%3Crect%20x%3D%22139%22%20y%3D%22107%22%20width%3D%2210%22%20height%3D%2212%22/%3E%3Crect%20x%3D%22139%22%20y%3D%22129%22%20width%3D%2210%22%20height%3D%2212%22/%3E%3Crect%20x%3D%22139%22%20y%3D%22151%22%20width%3D%2210%22%20height%3D%2212%22/%3E%3Crect%20x%3D%22161%22%20y%3D%2285%22%20width%3D%2210%22%20height%3D%2212%22/%3E%3Crect%20x%3D%22161%22%20y%3D%22107%22%20width%3D%2210%22%20height%3D%2212%22/%3E%3Crect%20x%3D%22161%22%20y%3D%22129%22%20width%3D%2210%22%20height%3D%2212%22/%3E%3Crect%20x%3D%22161%22%20y%3D%22151%22%20width%3D%2210%22%20height%3D%2212%22/%3E%3Crect%20x%3D%22183%22%20y%3D%2285%22%20width%3D%2210%22%20height%3D%2212%22/%3E%3Crect%20x%3D%22183%22%20y%3D%22107%22%20width%3D%2210%22%20height%3D%2212%22/%3E%3Crect%20x%3D%22183%22%20y%3D%22129%22%20width%3D%2210%22%20height%3D%2212%22/%3E%3Crect%20x%3D%22183%22%20y%3D%22151%22%20width%3D%2210%22%20height%3D%2212%22/%3E%3Crect%20x%3D%22205%22%20y%3D%2285%22%20width%3D%2210%22%20height%3D%2212%22/%3E%3Crect%20x%3D%22205%22%20y%3D%22107%22%20width%3D%2210%22%20height%3D%2212%22/%3E%3Crect%20x%3D%22205%22%20y%3D%22129%22%20width%3D%2210%22%20height%3D%2212%22/%3E%3Crect%20x%3D%22205%22%20y%3D%22151%22%20width%3D%2210%22%20height%3D%2212%22/%3E%3Crect%20x%3D%22245%22%20y%3D%22122%22%20width%3D%2210%22%20height%3D%2212%22/%3E%3Crect%20x%3D%22245%22%20y%3D%22144%22%20width%3D%2210%22%20height%3D%2212%22/%3E%3Crect%20x%3D%22267%22%20y%3D%22122%22%20width%3D%2210%22%20height%3D%2212%22/%3E%3Crect%20x%3D%22267%22%20y%3D%22144%22%20width%3D%2210%22%20height%3D%2212%22/%3E%3Crect%20x%3D%22289%22%20y%3D%22122%22%20width%3D%2210%22%20height%3D%2212%22/%3E%3Crect%20x%3D%22289%22%20y%3D%22144%22%20width%3D%2210%22%20height%3D%2212%22/%3E%3Crect%20x%3D%22311%22%20y%3D%22122%22%20width%3D%2210%22%20height%3D%2212%22/%3E%3Crect%20x%3D%22311%22%20y%3D%22144%22%20width%3D%2210%22%20height%3D%2212%22/%3E%3Crect%20x%3D%22140%22%20y%3D%22160%22%20width%3D%2230%22%20height%3D%2230%22/%3E%3Cpath%20d%3D%22M40%20190%20v-14%22/%3E%3Ccircle%20cx%3D%2240%22%20cy%3D%22166%22%20r%3D%2212%22/%3E%3Cpath%20d%3D%22M365%20190%20v-14%22/%3E%3Ccircle%20cx%3D%22365%22%20cy%3D%22166%22%20r%3D%2212%22/%3E%3C/g%3E%3C/svg%3E", "academy": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20400%20210%22%3E%3Cg%20fill%3D%22none%22%20stroke%3D%22%237a8696%22%20stroke-width%3D%222%22%20stroke-linejoin%3D%22round%22%20stroke-linecap%3D%22round%22%3E%3Cpath%20d%3D%22M0%20190%20H260%22/%3E%3Cpath%20d%3D%22M260%20190%20q20%20-6%2040%200%20t40%200%20t40%200%20t40%200%22/%3E%3Cpath%20d%3D%22M260%20200%20q20%20-6%2040%200%20t40%200%20t40%200%22/%3E%0A%3Crect%20x%3D%2240%22%20y%3D%22105%22%20width%3D%22200%22%20height%3D%2285%22/%3E%3Crect%20x%3D%22110%22%20y%3D%2275%22%20width%3D%2260%22%20height%3D%2230%22/%3E%3Cpath%20d%3D%22M140%2075%20V30%22/%3E%3Cpath%20d%3D%22M140%2032%20h26%20l-6%207%20l6%207%20h-26%22/%3E%0A%3Crect%20x%3D%2255%22%20y%3D%22120%22%20width%3D%2212%22%20height%3D%2214%22/%3E%3Crect%20x%3D%2255%22%20y%3D%22146%22%20width%3D%2212%22%20height%3D%2214%22/%3E%3Crect%20x%3D%2277%22%20y%3D%22120%22%20width%3D%2212%22%20height%3D%2214%22/%3E%3Crect%20x%3D%2277%22%20y%3D%22146%22%20width%3D%2212%22%20height%3D%2214%22/%3E%3Crect%20x%3D%2299%22%20y%3D%22120%22%20width%3D%2212%22%20height%3D%2214%22/%3E%3Crect%20x%3D%2299%22%20y%3D%22146%22%20width%3D%2212%22%20height%3D%2214%22/%3E%3Crect%20x%3D%22121%22%20y%3D%22120%22%20width%3D%2212%22%20height%3D%2214%22/%3E%3Crect%20x%3D%22121%22%20y%3D%22146%22%20width%3D%2212%22%20height%3D%2214%22/%3E%3Crect%20x%3D%22143%22%20y%3D%22120%22%20width%3D%2212%22%20height%3D%2214%22/%3E%3Crect%20x%3D%22143%22%20y%3D%22146%22%20width%3D%2212%22%20height%3D%2214%22/%3E%3Crect%20x%3D%22165%22%20y%3D%22120%22%20width%3D%2212%22%20height%3D%2214%22/%3E%3Crect%20x%3D%22165%22%20y%3D%22146%22%20width%3D%2212%22%20height%3D%2214%22/%3E%3Crect%20x%3D%22187%22%20y%3D%22120%22%20width%3D%2212%22%20height%3D%2214%22/%3E%3Crect%20x%3D%22187%22%20y%3D%22146%22%20width%3D%2212%22%20height%3D%2214%22/%3E%3Crect%20x%3D%22209%22%20y%3D%22120%22%20width%3D%2212%22%20height%3D%2214%22/%3E%3Crect%20x%3D%22209%22%20y%3D%22146%22%20width%3D%2212%22%20height%3D%2214%22/%3E%3Crect%20x%3D%22128%22%20y%3D%22160%22%20width%3D%2224%22%20height%3D%2230%22/%3E%3C/g%3E%3C/svg%3E", "chapel": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20400%20210%22%3E%3Cg%20fill%3D%22none%22%20stroke%3D%22%237a8696%22%20stroke-width%3D%222%22%20stroke-linejoin%3D%22round%22%20stroke-linecap%3D%22round%22%3E%3Cpath%20d%3D%22M0%20190%20H400%22/%3E%3Crect%20x%3D%22120%22%20y%3D%22100%22%20width%3D%22160%22%20height%3D%2290%22/%3E%3Cpath%20d%3D%22M110%20100%20L200%2050%20L290%20100%22/%3E%0A%3Cpath%20d%3D%22M200%2050%20V20%20M190%2030%20H210%22/%3E%3Ccircle%20cx%3D%22200%22%20cy%3D%2280%22%20r%3D%2210%22/%3E%3Cpath%20d%3D%22M188%20190%20v-30%20a12%2012%200%200%201%2024%200%20v30%22/%3E%0A%3Cpath%20d%3D%22M135%20175%20v-35%20a8%208%200%200%201%2016%200%20v35%20Z%22/%3E%3Cpath%20d%3D%22M160%20175%20v-35%20a8%208%200%200%201%2016%200%20v35%20Z%22/%3E%3Cpath%20d%3D%22M224%20175%20v-35%20a8%208%200%200%201%2016%200%20v35%20Z%22/%3E%3Cpath%20d%3D%22M249%20175%20v-35%20a8%208%200%200%201%2016%200%20v35%20Z%22/%3E%3Crect%20x%3D%2240%22%20y%3D%22130%22%20width%3D%2280%22%20height%3D%2260%22/%3E%3Crect%20x%3D%22280%22%20y%3D%22130%22%20width%3D%2280%22%20height%3D%2260%22/%3E%0A%3Crect%20x%3D%2252%22%20y%3D%22142%22%20width%3D%2210%22%20height%3D%2212%22/%3E%3Crect%20x%3D%2252%22%20y%3D%22164%22%20width%3D%2210%22%20height%3D%2212%22/%3E%3Crect%20x%3D%2274%22%20y%3D%22142%22%20width%3D%2210%22%20height%3D%2212%22/%3E%3Crect%20x%3D%2274%22%20y%3D%22164%22%20width%3D%2210%22%20height%3D%2212%22/%3E%3Crect%20x%3D%2296%22%20y%3D%22142%22%20width%3D%2210%22%20height%3D%2212%22/%3E%3Crect%20x%3D%2296%22%20y%3D%22164%22%20width%3D%2210%22%20height%3D%2212%22/%3E%3Crect%20x%3D%22292%22%20y%3D%22142%22%20width%3D%2210%22%20height%3D%2212%22/%3E%3Crect%20x%3D%22292%22%20y%3D%22164%22%20width%3D%2210%22%20height%3D%2212%22/%3E%3Crect%20x%3D%22314%22%20y%3D%22142%22%20width%3D%2210%22%20height%3D%2212%22/%3E%3Crect%20x%3D%22314%22%20y%3D%22164%22%20width%3D%2210%22%20height%3D%2212%22/%3E%3Crect%20x%3D%22336%22%20y%3D%22142%22%20width%3D%2210%22%20height%3D%2212%22/%3E%3Crect%20x%3D%22336%22%20y%3D%22164%22%20width%3D%2210%22%20height%3D%2212%22/%3E%3Cpath%20d%3D%22M20%20190%20v-14%22/%3E%3Ccircle%20cx%3D%2220%22%20cy%3D%22166%22%20r%3D%2212%22/%3E%3Cpath%20d%3D%22M380%20190%20v-14%22/%3E%3Ccircle%20cx%3D%22380%22%20cy%3D%22166%22%20r%3D%2212%22/%3E%3C/g%3E%3C/svg%3E"};
-const ART_OF={teidai:'clock',kanto:'clock',chiho:'clock',souke:'gothic',march:'gothic',kankan:'gothic',chuken:'gothic',ibaraki:'gothic',rikou:'modern',senmon:'modern',iryo:'medical',daigakkou:'academy',joshi:'chapel',kokusai:'chapel',national:'clock',public:'clock',private:'gothic'};
-function setArt(x){ const u=ART[ART_OF[x.cat]]; for(const id of ['front','back']) $(id).style.setProperty('--art', u?'url("'+u+'")':'none'); }
 const GUIDE = /*GUIDE*/{"東京大学":{"fit":"前期課程で幅広く学んだうえで専門を選びたい、全科目で高い完成度を持つ生徒。理系は大学院進学まで見据える生徒に向く。","ask":["科類と進学先学部の関係（進学選択）を理解しているか","推薦を考えるなら校内の推薦枠の扱いを確認したか","後期日程がない前提で国公立の併願先を決めたか"],"caution":"一般選抜は前期日程のみで、進学先の学部は2年次の進学選択で前期課程の成績を踏まえて決まる。"},"京都大学":{"fit":"自学自習を好み、基礎研究や独創的な探究に関心のある生徒。理系は大学院進学を前提に考える生徒に向く。","ask":["志望学部の特色入試の書類・課題・面接内容を読んだか","特色入試が推薦型か総合型か、志望学部の区分を確認したか","後期日程がない前提で国公立の併願先を決めたか"],"caution":"特色入試は学部ごとに推薦型・総合型の区分や選考内容が大きく異なり、一般選抜は前期日程のみ。"},"大阪大学":{"fit":"外国語学部で専攻語を深めたい語学の得意な生徒や、医歯薬・工・基礎工で研究を志す理系の生徒。","ask":["外国語学部なら専攻語を決め、倍率差を確認したか","志望学部が総合型・推薦型のどちらを実施するか確認したか","通うキャンパス（吹田・豊中・箕面）を確認したか"],"caution":"外国語学部は専攻語ごとに倍率差が大きく、総合型の募集は各専攻2〜6人と小規模。"},"東北大学":{"fit":"研究志向が強く、AO入試で探究や意欲を示せる生徒。理・工・農は大学院進学まで見据える生徒に向く。","ask":["AOⅡ期・Ⅲ期のどちらを受け、一般とどう併願するか","志望学部に後期日程があるか（経済・理のみ）確認したか","仙台での自宅外通学の費用を家庭と話したか"],"caution":"学校推薦型の掲載はなく、後期日程は経済・理学部のみ。"},"名古屋大学":{"fit":"中部の製造業と結びついた学びや東海圏での就職に関心がある生徒、理系で大学院進学を視野に入れる生徒。","ask":["学校推薦型（全学部実施）の要件と評定を満たすか","東海圏での生活・就職をどう考えているか","後期日程がほぼない前提で併願先を決めたか"],"caution":"後期日程は医学部医学科（一般枠）のみで、総合型は理学部のみ。"},"九州大学":{"fit":"西日本で学びたい生徒や、共創学部で文理融合・国際性のある学びを望む生徒。理系は大学院進学志向の生徒に向く。","ask":["共創学部志望なら総合型・推薦の準備を進めているか","志望学部に後期日程があるか確認したか","福岡での自宅外通学の費用を家庭と話したか"],"caution":"学校推薦型は文・共創・芸術工・歯の4学部に限られ、後期日程も学部によって有無が分かれる。"},"北海道大学":{"fit":"入学後に学部を選びたい生徒や、農学・獣医学・水産学など北海道の環境を生かした分野に関心がある生徒。","ask":["総合入試と学部別入試のどちらで出願するか決めたか","総合入試なら入学後の学部選択の仕組みを理解したか","札幌での自宅外通学の費用を家庭と話したか"],"caution":"総合入試では1年次の成績で学部が決まるため、医・獣医など人気学部は入学後の競争になる。"},"一橋大学":{"fit":"商・経済・法・社会など社会科学を少人数ゼミで深めたい文系上位層で、数学も得点源にできる生徒。","ask":["文系でも数学で得点できる見通しがあるか","学校推薦型（共通テストあり）の要件と評定を確認したか","後期日程が経済・SDSのみである点を把握したか"],"caution":"総合型選抜はなく、後期日程は経済学部とソーシャル・データサイエンス学部のみ。"},"東京科学大学":{"fit":"理工系で学部と大学院を一体的に学び研究者・技術者を目指す生徒、または医歯系の専門職を目指す生徒。","ask":["志望する学院と学院単位の募集の仕組みを理解したか","総合型（女子枠を含む）を受けるか検討したか","後期日程がない前提で国公立の併願先を決めたか"],"caution":"2024年10月の統合で名称が変わり理工系は学院単位で募集するため、旧名称で理解している保護者への説明が必要。"},"神戸大学":{"fit":"経済・経営・法など社会科学に関心がある関西志望の生徒や、国際人間科学部で国際・文理融合を学びたい生徒。","ask":["推薦（経済・経営で規模大）の要件と評定を確認したか","「志」特別選抜など総合型の対象学科か確認したか","志望学部に後期日程があるか確認したか"],"caution":"経済・経営学部や医学部医学科などは前期日程のみで後期がない。"},"筑波大学":{"fit":"学類の枠を越えて幅広く学びたい生徒や、入学後に専攻を決めたい生徒。理工・情報系は大学院進学志向の生徒に向く。","ask":["総合選抜と学類別選抜のどちらで出願するか決めたか","学校推薦型の校内選考に間に合う評定か","総合選抜なら2年次の学類決定の仕組みを理解したか"],"caution":"総合選抜と学類別選抜の両方に出願できるわけではないため、方式の選択を早めに相談する必要がある。"},"茨城大学":{"fit":"地元茨城で学び、教員や地元製造業などで働くことを考えている生徒。","ask":["志望学部のキャンパス（水戸・日立・阿見）を確認したか","自宅から通えるか、下宿が必要か家庭と話したか","学校推薦型（全学部実施）の要件と評定を確認したか"],"caution":"学部によってキャンパスが水戸・日立・阿見に分かれる。"},"千葉大学":{"fit":"在学中の海外留学に意欲がある生徒や、医・薬・看護・園芸など専門分野が明確な生徒。","ask":["留学必修の費用と支援制度を家庭と確認したか","志望学部に後期日程があるか確認したか","志望学部に推薦・総合型があるか確認したか"],"caution":"全学生の海外留学が必修のため、費用負担の見通しを家庭と共有しておく必要がある。"},"埼玉大学":{"fit":"首都圏のワンキャンパスで学びたい生徒や、教員・就職志向の文系、大学院進学を考える理工系の生徒。","ask":["共通テストで必要な得点の目安を把握しているか","学校推薦型（教養・教育・理・工）の要件を確認したか","経済学部なら昼間と夜間主の違いを理解したか"],"caution":"総合型選抜は経済・理（生体制御）・工（情報工）の一部に限られる。"},"横浜国立大学":{"fit":"経済・経営など社会科学や、都市科学・理工系に関心がある首都圏国立志望の生徒。","ask":["前期・後期それぞれの出願先をどうするか","総合型（教育・都市科学など）の対象か確認したか","教育学部なら専門領域別の総合型を確認したか"],"caution":"学校推薦型は経営学部・理工学部の一部で小規模にとどまる。"},"東京外国語大学":{"fit":"英語が突出して強く、専攻語を通じて言語・地域・国際社会を学びたい生徒。","ask":["学びたい専攻語と地域を決めているか","専攻語ごとの難易度の差を確認したか","学校推薦型の出願要件と評定を確認したか"],"caution":"2次試験は英語の比重が非常に大きく、専攻語によって難易度が変わる。"},"お茶の水女子大学":{"fit":"少人数教育の中で研究や教職を目指す女子生徒。共創工学部で工学を学びたい女子生徒にも。","ask":["推薦（通常枠・高大連携枠）と総合型のどちらを使うか","志望学科の定員規模と倍率推移を確認したか","後期日程の出願先をどうするか決めたか"],"caution":"定員が小さく、年によって倍率が振れやすい。"},"東京学芸大学":{"fit":"目指す校種・教科がある程度決まっていて、首都圏で教員を目指したい生徒。","ask":["目指す校種・教科（専攻）を決めているか","学校推薦型の対象専攻と要件を確認したか","実技系専攻なら総合型の実技準備を進めているか"],"caution":"教員養成課程の卒業者のうち教員就職は54.1%（2024年度卒）で、全員が教員になるわけではない。"},"東京農工大学":{"fit":"農・工の分野で研究に取り組みたい、大学院進学を前提に考える理系の生徒。","ask":["大学院まで含めた6年間の見通しを家庭と話したか","学校推薦型（全学科）の要件と評定を確認したか","後期日程を出願先にするか検討したか"],"caution":"学校推薦型の倍率は5.8倍（2026年度）と高く、後期日程は志願者が前期を上回る。"},"電気通信大学":{"fit":"情報・電子・機械・物理など工学系に関心があり、大学院進学も視野に入れる生徒。","ask":["2次の数学・物理の対策を計画しているか","志望する類（Ⅰ〜Ⅲ類）を決めているか","推薦・総合型の対象プログラムを確認したか"],"caution":"後期日程の志願者が前期の約2倍にのぼる。"},"東京都立大学":{"fit":"首都圏の公立総合大学で、文系・理系・健康福祉系を幅広く検討したい生徒。","ask":["都内在住か（入学金の扱い）を確認したか","多様な総合型のうち対象になる方式があるか","南大沢キャンパスへの通学時間を確認したか"],"caution":"国立の併願先として人気が高く、受験者層は首都圏国立並み。"},"横浜市立大学":{"fit":"データサイエンスなど文理融合の分野や、国際系・医療系に関心がある生徒。","ask":["市外在住の場合の入学金を確認したか","総合型（4学部）の対象と準備状況を確認したか","医学部なら特別公募（県内・県外枠）の要件を確認したか"],"caution":""},"宇都宮大学":{"fit":"北関東で学びたい生徒や、地域づくり・農学・教員養成に関心がある生徒。","ask":["茨城大学など近隣国立と比べ志望理由を整理したか","自宅から通えるか、下宿が必要か家庭と話したか","推薦・総合型の対象学部か確認したか"],"caution":""},"群馬大学":{"fit":"医学部・保健学科など医療系や、情報学部・理工学部に関心がある北関東志望の生徒。","ask":["医学科なら地域医療枠の条件を確認したか","通うキャンパス（前橋・桐生）を確認したか","学校推薦型の要件と評定を確認したか"],"caution":"理工学部は桐生キャンパスで、他学部とキャンパスが異なる。"},"高崎経済大学":{"fit":"文系で国公立を志望し、経済や地域政策を学んで就職を目指す生徒。","ask":["中期日程を併願計画に組み込むか","学校推薦型の区分と要件を確認したか","自宅外通学の費用を家庭と話したか"],"caution":""},"東京海洋大学":{"fit":"海洋生物・水産・海運・海洋環境に関心があり、乗船実習にも意欲がある生徒。","ask":["志望学部の学びと乗船実習の内容を調べたか","推薦・総合型の方式（A・B・D方式等）を確認したか","大学院進学まで含めた見通しを持っているか"],"caution":"推薦・総合型の倍率が高い（2026年度 推薦4.2倍・総合型5.7倍）。"},"東京藝術大学":{"fit":"美術・音楽の専門的な実技を早くから積み重ねてきた生徒。","ask":["専門的な実技指導を受けられる環境があるか","浪人の可能性も含めて家庭と話したか","後期日程がない前提で併願先をどうするか"],"caution":"入試は実技試験が中心で倍率が高く（2026年度8.3倍）、一般の受験指導とは別の準備が必要。"},"茨城県立医療大学":{"fit":"看護師・理学療法士・作業療法士・診療放射線技師など医療職を目指す県内の生徒。","ask":["目指す医療職と学科を決めているか","県内高校出身者向け推薦の条件と時期を確認したか","後期日程がない前提で併願先を決めたか"],"caution":"一般選抜は前期日程のみの掲載で、推薦の条件・時期を早めに把握しておく必要がある。"},"大阪公立大学":{"fit":"関西の大規模な公立総合大学で、幅広い学部から志望を選びたい生徒。","ask":["中期日程を併願計画に組み込むか","府外者の入学金を含めた学費を家庭と確認したか","推薦の区分（英語重点・全国枠など）を確認したか"],"caution":"推薦は学部ごとに区分が多様で、府内枠・地域限定枠など居住地に関わる区分がある。"},"国際教養大学":{"fit":"英語で学ぶ環境と1年間の留学に意欲があり、寮生活にも適応できる自律的な生徒。","ask":["A〜C日程のどれを受け、国公立とどう併願するか","留学・寮費を含めた費用を家庭と話したか","推薦・総合型3方式の対象か確認したか"],"caution":"授業はすべて英語で、在学中1年間の海外留学が必須（寮費等は学費とは別）。"},"会津大学":{"fit":"情報系を英語を多用する環境で学びたい生徒。","ask":["英語での授業・研究に対応する準備があるか","学校推薦型（A・B各48名）を検討したか","自宅外通学の費用を家庭と話したか"],"caution":"一般選抜は前期のみの掲載で、推薦の合格者数が一般の6割程度を占める。"},"福島県立医科大学":{"fit":"地域医療や放射線医療に関心があり、医師・看護師・医療職を目指す生徒。","ask":["地域枠推薦なら卒後の勤務条件を確認したか","県外者の入学金を含めた費用を家庭と話したか","医学部の総合型（募集5名）を検討するか"],"caution":"地域枠の推薦は卒後の勤務条件を必ず確認する必要がある。"},"新潟大学":{"fit":"学部の選択肢が広い総合大学で志望を検討したい生徒や、創生学部で学びを自分で組み立てたい生徒。","ask":["推薦（全学部実施）の要件と評定を確認したか","後期日程を出願先にするか検討したか","自宅外通学の費用を家庭と話したか"],"caution":"後期日程の志願者が多い。"},"金沢大学":{"fit":"入学後に専門を決めたい生徒や、融合学域で文理融合の学びを望む生徒。","ask":["文系一括・理系一括と学類別のどちらで受けるか","総合型の独自方式で対象になるものがあるか","後期日程がない前提で国公立の併願先を決めたか"],"caution":"一般選抜は前期日程のみで後期がない。"},"信州大学":{"fit":"自然豊かな環境で学びたい生徒や、繊維学部など特色ある分野に関心がある生徒。","ask":["志望学部の2年次以降のキャンパスを確認したか","推薦Ⅰ（共テなし）・Ⅱ（共テあり）のどちらか","転居を含む生活費を家庭と話したか"],"caution":"1年次は全員松本キャンパスで、2年次以降は学部ごとにキャンパスが異なる。"},"静岡大学":{"fit":"情報・工学などものづくりに関わる理系分野や、教員養成に関心がある生徒。","ask":["志望学部が静岡・浜松のどちらか確認したか","推薦で共通テストが課されるか確認したか","後期日程を出願先にするか検討したか"],"caution":"情報・工学部は浜松、人文社会・教育・理・農などは静岡とキャンパスが分かれる。"},"広島大学":{"fit":"中四国の総合大学で学びたい生徒や、総合型で探究や意欲を示せる生徒。","ask":["総合型（光り輝き入試）の準備を進めているか","推薦は一部学部のみ、志望学部が対象か確認したか","自宅外通学の費用を家庭と話したか"],"caution":"推薦は経済・医（ふるさと枠）・情報科学など一部に限られ、総合型が中心。"},"岡山大学":{"fit":"西日本志向で、医歯薬を含む総合大学で幅広く志望を検討したい生徒。","ask":["後期日程がない前提で国公立の併願先を決めたか","推薦・総合型の対象学部か確認したか","医学部なら地域枠の条件を確認したか"],"caution":"一般選抜はKei-Net掲載上すべて前期日程のみ。"},"熊本大学":{"fit":"半導体・情報など成長分野の理系に関心がある生徒や、薬学志望の生徒。","ask":["半導体・情報系の新設組織の内容を調べたか","推薦（全学部）の区分と要件を確認したか","自宅外通学の費用を家庭と話したか"],"caution":"総合型は共創学環の3方式のみの掲載。"},"奈良女子大学":{"fit":"少人数の女子大で学びたい女子生徒や、工学部で工学を学びたい女子生徒。","ask":["総合型（2段階選考）の準備を進めているか","後期日程を出願先にするか検討したか","自宅外通学の費用を家庭と話したか"],"caution":"推薦は小規模で、倍率は3.8倍（2026年度）。"},"長岡技術科学大学":{"fit":"技術者・研究者志望で、修士までの一貫教育と企業での実務訓練に意欲がある生徒。","ask":["修士までの6年間の進路を家庭と共有したか","推薦（普通科・理数科枠）の要件を確認したか","高専編入生が中心の環境を理解しているか"],"caution":"高専からの3年次編入が中心で、普通科からの1年次入学枠は定員が小さい。"},"豊橋技術科学大学":{"fit":"技術者・研究者志望で、実務訓練と大学院進学を前提とした学びに意欲がある生徒。","ask":["大学院までの進路を家庭と共有したか","推薦（普通科・理数科等枠）の要件を確認したか","高専編入生が多い環境を理解しているか"],"caution":"高専からの編入生が多く、大学院進学を前提としたカリキュラムである。"},"早稲田大学":{"fit":"幅広い学部から志望を選びたい私大志望の生徒や、国際教養学部で英語で学位を取りたい生徒。","ask":["志望学部で数学（共通テスト含む）が必要か確認したか","指定校推薦の校内枠と評定を確認したか","国際教養学部AOなど総合型の対象か確認したか"],"caution":"学部ごとに入試科目が大きく異なり、政治経済学部などは一般選抜で共通テストの数学が必須。"},"慶應義塾大学":{"fit":"小論文で論理的に表現でき、SFCなら高校での探究実績を学びにつなげたい生徒。","ask":["志望学部の小論文対策を始めているか","SFCのAOなら探究活動の実績を整理したか","初年度約151万円（法学部）の学費を家庭と確認したか"],"caution":"共通テスト利用入試は行っておらず、一般選抜で小論文を課す学部が多い。"},"上智大学":{"fit":"外国語・国際系の学びに関心があり、英語外部試験のスコアを準備できる生徒。","ask":["TEAP等のスコアを高3春までに取れる見通しか","公募制推薦の要件と評定を確認したか","一般選抜の3方式のどれで受けるか決めたか"],"caution":"一般選抜にTEAPスコア利用型があり、英語外部試験のスコアが入試に直結する。"},"東京理科大学":{"fit":"理系の専門を深く学び、厳しい進級基準のもとで教員・研究者・技術者を目指す生徒。","ask":["進級・卒業が厳しい点を理解しているか","グローバル方式で使える英語資格を持っているか","国立理系との併願日程を組んだか"],"caution":"進級・卒業が厳しく、入学後の留年リスクがある。"},"国際基督教大学（ICU）":{"fit":"リベラルアーツ志向で、入学後に専攻を決めたい英語力のある上位層の生徒。","ask":["英語（リスニング含む）とATLASの過去問研究を始めたか","総合型の英語資格・評定4.1以上・専願の条件を満たすか","初年度約182万円の学費を家庭と確認したか"],"caution":"入試が独特で、過去問研究が欠かせない。"},"学習院大学":{"fit":"ワンキャンパスの落ち着いた環境で、少人数教育と手厚い支援を重視する生徒。","ask":["指定校推薦の校内枠と評定を確認したか","国際社会科学部なら英語での授業に備えているか","総合型（国際社会科学・国際文化交流）を検討したか"],"caution":""},"明治大学":{"fit":"幅広い学部から志望を選び、複数回の受験機会を活用したい私大志望の生徒。","ask":["学部別と全学部統一の併願回数を設計したか","志望学部のキャンパスを確認したか","自己推薦特別入試など総合型の対象か確認したか"],"caution":"キャンパスが駿河台・和泉・生田・中野の4か所に分かれる。"},"青山学院大学":{"fit":"共通テストも含めて準備でき、青山・相模原の環境で学びたい私大志望の生徒。","ask":["志望学部で共通テストが必要か確認したか","志望学部が青山・相模原のどちらか確認したか","指定校推薦の校内枠と評定を確認したか"],"caution":"個別学部日程は共通テスト併用型が中心で、私大専願でも共通テスト受験が事実上必要な学部がある。"},"立教大学":{"fit":"英語資格のスコアを早めに準備でき、リベラルアーツや観光・異文化コミュニケーションなど特色学部に関心がある生徒。","ask":["英検等のスコアを出願までに準備できるか","自由選抜入試など総合型の対象か確認したか","志望学部が池袋・新座のどちらか確認したか"],"caution":"一般選抜は独自の英語試験を廃止し、英語資格・検定試験か共通テスト英語のスコアを利用する（一部日程を除く）。"},"中央大学":{"fit":"法曹・公務員志望の生徒や、多様な入試方式で受験機会を増やしたい私大志望の生徒。","ask":["6学部共通・学部別・共テ利用の併願を設計したか","志望学部のキャンパス（茗荷谷・八王子等）を確認したか","法学部の総合型（チャレンジ入試等）を検討したか"],"caution":""},"法政大学":{"fit":"学部の選択肢が広い中から志望を選びたい生徒や、英語外部試験で受験機会を増やしたい生徒。","ask":["英語外部試験利用で使えるスコアがあるか","志望学部のキャンパス（市ヶ谷・多摩・小金井）を確認したか","T日程を併願に組み込むか"],"caution":""},"同志社大学":{"fit":"関西で学びたい私大志望の生徒。","ask":["早慶・MARCHとの日程調整をしたか","志望学部が今出川・京田辺のどちらか確認したか","京都での自宅外通学の費用を家庭と話したか"],"caution":"早慶・MARCHと併願する場合は日程調整が必要。"},"立命館大学":{"fit":"映像・食マネジメントなど特色ある学部に関心がある生徒や、関東から関西私大を受けたい生徒。","ask":["地方会場で受験できる方式を確認したか","志望学部のキャンパス（衣笠・BKC・OIC）を確認したか","自宅外通学の費用を家庭と話したか"],"caution":"学部によってキャンパスが京都・滋賀・大阪に分かれる。"},"関西学院大学":{"fit":"国際系・商学系に関心がある関西私大志望の生徒。","ask":["総合型（探究評価型など）の対象と準備を確認したか","志望学部が西宮・三田のどちらか確認したか","自宅外通学の費用を家庭と話したか"],"caution":""},"関西大学":{"fit":"13学部の幅から文系・理工系とも選べ、防災の社会安全学部など特色ある学部に関心がある関西志望の生徒。","ask":["同志社・立命館との併願で、関大の方式と日程を組んだか","公募推薦は商と理工系3学部のみ、志望学部が対象か","関西での自宅外通学の費用を家庭と話したか"],"caution":"学校推薦型（公募）は商学部と理工系3学部に限られ、規模も小さい。"},"南山大学":{"fit":"外国語・国際教養など語学・国際系の学びを重視する、東海志望の生徒。","ask":["名古屋大との併願で共テ利用（3/5/6教科型）を使うか","総合型の資格・検定試験活用型に使える資格があるか","名古屋での生活費を家庭と話したか"],"caution":"一般方式の倍率が前年の2.4倍から3.3倍に上がっている。"},"西南学院大学":{"fit":"外国語・国際文化など語学系や、福祉・心理系の資格に関心がある九州志望の文系生徒。","ask":["九州での自宅外通学の費用を家庭と話したか","総合型を受けるなら志望学科の方式を確認したか","一般方式と共テ利用のどちらを軸にするか"],"caution":"学校推薦型は指定校・独自指定校・系列校で、公募の枠は掲載されていない。"},"成蹊大学":{"fit":"吉祥寺のワンキャンパスで少人数教育を受けたい、MARCH併願の文系・理工系生徒。","ask":["3教科個別・2教科全学統一・2教科グローバルのどれで受けるか","共テ5科目国公併願型を国立志望と併せて使うか","AO入試を受けるなら準備を始めたか"],"caution":"一般方式の倍率が5.3倍と高めである。"},"成城大学":{"fit":"文系4学部の落ち着いた環境で少人数ゼミを重視し、データサイエンスも学びたい文系生徒。","ask":["S方式（全学部統一）で複数学部を併願するか","総合型（2段階選抜）の1次書類を準備できるか","文系のみの大学で、進路の方向性を固めたか"],"caution":"総合型の倍率（5.5倍）が一般方式（4.5倍）より高い。"},"明治学院大学":{"fit":"福祉・心理・社会・国際系に関心があり、社会福祉士や公認心理師などの資格も視野に入れる生徒。","ask":["1・2年横浜、3・4年白金の通学を両方確認したか","全学英語外部型に使える英語資格があるか","自己推薦AO入試の準備を始めたか"],"caution":"多くの学部で1・2年次は横浜、3・4年次は白金とキャンパスが変わる。"},"獨協大学":{"fit":"英語・ドイツ語・フランス語などの語学を専門的に学びたい、首都圏通学を考える英語系志望の生徒。","ask":["草加キャンパスへの通学時間を確認したか","自己推薦入試や独・仏学科のQ入試を検討するか","英語以外の言語を専攻する意思があるか"],"caution":"外国語・国際教養学部の就職率は8割台前半で、法・経済学部より低い。"},"國學院大學":{"fit":"日本文学・史学・神道文化など日本文化を学び、国語・社会の教員を目指す生徒。","ask":["取りたい教員免許の教科と学科の対応を確認したか","A日程の方式（3教科・最高得点・英語外部等）を決めたか","渋谷・横浜のどちらのキャンパスか確認したか"],"caution":"共通テスト利用はV方式のみである。"},"武蔵大学":{"fit":"少人数ゼミ中心の手厚い教育を求め、経済・人文・社会・国際教養を学びたい生徒。","ask":["総合型のどの型（語学力・テーマ追究・ゼミ力等）が合うか","ロンドン大学とのパラレル・ディグリーに関心があるか","一般方式と共テ利用のどちらを軸にするか"],"caution":""},"日本大学":{"fit":"16学部から専門分野を選びたい生徒。芸術・生物資源科学・危機管理など特色ある学部の志望者にも。","ask":["志望学部のキャンパスと通学手段を確認したか","N方式で複数学部を併願する組み方を決めたか","公募・指定校推薦の対象学部か確認したか"],"caution":"学部ごとに難易度（偏差値35.0〜65.0）とキャンパスが大きく異なる。"},"東洋大学":{"fit":"文系から理工・生命・食まで幅広い学部があり、年内に学力型の推薦を受けたい生徒にも合う。","ask":["基礎学力テスト型推薦の日程と専願条件を確認したか","志望学部のキャンパス（白山・赤羽台・朝霞等）を確認したか","一般前期の方式（3教科・最高得点・ベスト2等）を決めたか"],"caution":"学部によりキャンパスが白山・赤羽台・朝霞などに分かれる。"},"駒澤大学":{"fit":"経済・経営・法などの文系学部や、グローバル・メディア・スタディーズ、医療健康科学を学びたい生徒。","ask":["T方式・S方式・全学部統一日程のどれで受けるか","共テ利用（前期・中期・後期）をどう組み込むか","自己推薦（総合評価型・特性評価型）を検討するか"],"caution":""},"専修大学":{"fit":"都心の神田で法・商を学びたい、または国際コミュニケーション・ネットワーク情報などに関心がある生徒。","ask":["志望学部が神田・生田のどちらか確認したか","公募推薦は経営・商のみ、志望学部が対象か","総合型の実施4学部に志望学部が入るか"],"caution":"法・商学部は神田キャンパスで、学部によってキャンパスが異なる。"},"芝浦工業大学":{"fit":"実学志向で工学・建築・デザインを学び、大学院進学も視野に入れる理系生徒。","ask":["豊洲・大宮のどちらで学ぶか志望学部で確認したか","院進学（学部で約5割）を前提に学費を家庭と話したか","国立理系との併願で共テ利用を使うか"],"caution":"2026年度の志願者が前年比138%と大きく増えている。"},"東京都市大学":{"fit":"建築・都市、情報、環境など工学系を学びたい理系生徒。オーストラリア留学に関心がある生徒にも。","ask":["世田谷・横浜のどちらに通うか確認したか","共テ利用の方式（探究併用型・情報併用型等）を比べたか","理工学部なら大学院進学を家庭と話したか"],"caution":"創発デザイン工学環は2027年4月設置予定で、募集内容は要項で確認が必要。"},"東京電機大学":{"fit":"電気・電子・情報系に関心があり、北千住から通学しやすい常磐線・TX沿線の理系生徒。","ask":["千住・鳩山のどちらのキャンパスか確認したか","総合型より規模の大きい推薦を検討するか","英語外部試験利用に使える資格があるか"],"caution":"一般方式の倍率が6.3倍と高い。"},"工学院大学":{"fit":"建築学部で建築を学びたい生徒や、情報・先進工を志望する理系生徒。","ask":["新宿・八王子のどちらで学ぶか確認したか","A・S・B・M日程など複数日程の組み方を決めたか","探究成果活用型など総合型を検討するか"],"caution":""},"東京農業大学":{"fit":"醸造・食品・バイオなど応用生物系や農学を、実学として学びたい生徒。","ask":["世田谷・厚木・オホーツクのどこで学ぶ学部か確認したか","茨城大農学部との併願日程を組んだか","「高校で学んだ実践スキル」等の総合型を検討するか"],"caution":"生物産業学部は北海道オホーツクで、学部により所在地が大きく異なる。"},"北里大学":{"fit":"獣医・薬・看護・医療技術など、医療・生命科学系の資格職を目指す生徒。","ask":["志望学部のキャンパス（相模原・十和田等）を確認したか","自宅外通学になる場合の費用を家庭と話したか","公募・指定校推薦の対象か確認したか"],"caution":"獣医学部は青森県十和田市で、学部によってキャンパスが遠方になる。"},"自治医科大学":{"fit":"へき地を含む地域医療に携わる意思があり、卒業後に出身県で勤務する覚悟のある医学部志望者。","ask":["卒業後原則9年の県内勤務を本人・家庭で了解したか","茨城県の選抜枠で受けることを確認したか","全寮制の生活を受け入れられるか"],"caution":"修学資金の返還免除は、卒業後に出身都道府県で一定期間（原則9年）勤務することが条件。"},"国際医療福祉大学":{"fit":"英語での授業が多い医学部や、看護・リハビリ・薬など医療福祉系の資格職を目指す生徒。","ask":["志望学部のキャンパス（大田原・成田・小田原等）を確認したか","医学部なら英語での授業に対応できる英語力があるか","一般の特待奨学生区分を検討するか"],"caution":"推薦・総合型は医学部以外の学科で実施されている。"},"順天堂大学":{"fit":"医学部のほか、スポーツ健康科学・看護・保健医療など医療・スポーツ系を志望する生徒。","ask":["志望学部のキャンパス（文京・印西等）を確認したか","医学部ならA・B方式・地域枠のどれを受けるか","スポーツ健康科学部なら総合型の期を決めたか"],"caution":"一般方式の日程・方式が学部ごとに分かれている。"},"東京慈恵会医科大学":{"fit":"私立医学部の最上位層を目指し、一般選抜で勝負する医学部志望者。","ask":["初年度の学費（入学金＋授業料350万円）を家庭と話したか","一般選抜のみの前提で他の医学部との併願を組んだか"],"caution":"共通テスト利用・推薦・総合型の掲載はなく、一般選抜中心の入試である。"},"日本医科大学":{"fit":"救急・災害医療に関心があり、私立医学部の最上位層を目指す生徒。","ask":["初年度450万円の学費を家庭と話したか","地域枠（東京・千葉・埼玉・静岡・新潟）の条件を確認したか","前期・後期の両方を受けるか"],"caution":"一般方式の倍率が14.8倍と高い。"},"獨協医科大学":{"fit":"北関東の地域医療に関心がある医学部・看護学部志望者。","ask":["医学科の初年度930万円を家庭と話したか","茨城県地域枠（指定校推薦）の要件を確認したか","看護学部なら公募・指定校推薦を検討するか"],"caution":"一般選抜の倍率は22.8倍と高く、医学科の初年度納付金は930万円である。"},"津田塾大学":{"fit":"英語教育の伝統の中で英語を深く学び、英語教員などを目指す女子生徒。","ask":["小平（学芸）と千駄ヶ谷（総合政策）のどちらか確認したか","英語4技能型の総合型に使える資格・実績があるか","指定校推薦の枠と必要な評定を確認したか"],"caution":"学部によりキャンパスが小平と千駄ヶ谷に分かれる。"},"東京女子大学":{"fit":"1学部制のリベラルアーツで幅広く学びたい、少人数・ワンキャンパスを望む女子生徒。","ask":["現代教養学部の中で志望専攻を決めたか","総合型「知のかけはし入試」を検討するか","共テ利用方式を併用するか"],"caution":""},"日本女子大学":{"fit":"家政（住居・食物・児童）や建築デザイン、理学などを目白のワンキャンパスで学びたい女子生徒。","ask":["個別3科目・英語外部利用・2科目のどれで受けるか","管理栄養士など目指す資格に合う学科か確認したか","公募推薦・総合型の対象学科か確認したか"],"caution":"経済学部は2027年4月設置予定で、新設学部の募集内容は要項で確認が必要。"},"聖心女子大学":{"fit":"カトリック系の落ち着いた環境で、少人数の教養教育を受けたい女子生徒。","ask":["3教科A・B方式と総合小論文方式のどれで受けるか","2月期・3月期のどちらを受けるか","保育士・教員など取りたい資格を確認したか"],"caution":""},"立命館アジア太平洋大学（APU）":{"fit":"学生の約半数が国際学生という多国籍環境で、日英二言語で学びたい生徒。","ask":["別府での生活費と寮の利用を家庭と話したか","英語重視方式や共テ併用など受験方式を決めたか","国際教養大学と比較して志望理由を固めたか"],"caution":""},"神田外語大学":{"fit":"実践的なコミュニケーション力を重視し、英語やアジア言語を学びたい語学系志望の生徒。","ask":["総合型（10・11月）と公募推薦のどちらを検討するか","英語資格方式に使える資格があるか","幕張への通学時間を確認したか"],"caution":""},"関西外国語大学":{"fit":"充実した留学制度を活用し、英語・スペイン語などを学びたい関西志望の語学系生徒。","ask":["公募推薦（前期・後期）を受けるか日程を確認したか","留学・下宿の費用を家庭と話したか","一般前期の方式（A・S・B・共テ＋）を決めたか"],"caution":"学校推薦型（公募）が一般選抜並みの大規模入試になっている。"},"茨城キリスト教大学":{"fit":"県北から通学し、看護・保育・教員など地元で働く資格職を目指す生徒。","ask":["取りたい資格（看護師・保育士・教員等）に合う学科か","推薦・総合型を使うか日程を確認したか"],"caution":""},"常磐大学":{"fit":"県央から通学し、心理・福祉・教育・看護など地域で働く人材を目指す生徒。","ask":["取りたい資格に合う学科か確認したか","推薦・総合型（I〜III期）の日程を確認したか"],"caution":""},"流通経済大学":{"fit":"物流・流通業界やスポーツ関連の進路に関心がある生徒。","ask":["龍ケ崎・新松戸のどちらのキャンパスか確認したか","総合型・推薦を使うか日程を確認したか"],"caution":"総合型・推薦が入学者の大きな比重を占めるため、年内入試の日程確認が重要。"},"防衛大学校":{"fit":"幹部自衛官として働く意思があり、全寮制の規律ある生活を受け入れられる生徒。経済的事情を抱える生徒にも。","ask":["自衛官として勤務する意思を本人・家庭で確かめたか","推薦・総合選抜・一般のどの採用試験を受けるか","総合選抜なら基礎体力試験の準備をしているか"],"caution":"学生は特別職国家公務員で、大学入試ではなく採用試験として選抜される。"},"防衛医科大学校":{"fit":"医官・看護官として自衛隊で働く意思がある医学・看護志望の生徒。","ask":["医学科の卒後9年の勤務義務を家庭と確認したか","看護学科の自衛官・技官コースの違いを理解したか","早い試験日を併願日程に組み込んだか"],"caution":"医学科は卒業後9年の自衛隊勤務が義務で、途中離職には償還金が生じる。"},"気象大学校":{"fit":"数学・物理に強く、気象庁の職員として働く意思がある理系上位層の生徒。","ask":["10月1次・12月2次の日程を併願計画に入れたか","気象庁職員として働く意思を確かめたか"],"caution":"人事院の採用試験として実施され、定員は毎年十数名程度と極めて少ない。"},"海上保安大学校":{"fit":"海上保安官として海の仕事に就く意思があり、体力・規律が求められる全寮制生活に向く生徒。","ask":["全寮制と規律ある生活を受け入れられるか","10月・12月の試験日程を併願計画に入れたか","航海・機関・情報通信のどれに関心があるか"],"caution":"受験資格は高卒後2年以内で、人事院の採用試験として実施される。"},"水産大学校":{"fit":"水産・海洋に関心があり、練習船での乗船実習など実践的に学びたい生徒。","ask":["5学科のうち志望学科を決めたか","推薦入試（A・B・C等）の出願要件を確認したか","下関での生活費を家庭と話したか"],"caution":"大学ではなく大学校で、学士は大学改革支援・学位授与機構の審査を経て取得する。"},"国立看護大学校":{"fit":"ナショナルセンターでの高度医療の現場を目指す看護志望の生徒。","ask":["学位授与機構を経て学士を得る仕組みを理解したか","入試方式・日程・学費を要項で確認したか","清瀬への通学を確認したか"],"caution":"入試・学費のデータがこの資料になく、要項での確認が必要。"},"職業能力開発総合大学校":{"fit":"ものづくりの技術を実習中心で学び、職業訓練指導員として教える側を目指す理系生徒。","ask":["機械・電気・電子情報・建築のどの専攻か決めたか","学校推薦（各専攻8名）を検討するか","職業訓練指導員という進路を理解したか"],"caution":"厚生労働省所管の大学校で、文部科学省所管の大学とは制度が異なる。"},"航空保安大学校":{"fit":"航空管制運航情報官・航空管制技術官として、航空関連の公務員を目指す生徒。","ask":["人事院の採用試験の日程を併願計画に入れたか","2つの試験区分のどちらを受けるか"],"caution":"人事院の採用試験として実施され、一般の大学入試とは手続きが異なる。"},"茨城県立農業大学校":{"fit":"茨城で農業の担い手を目指し、実習中心で学びたい生徒。","ask":["2年制で学位が出ないことを本人・保護者が理解したか","卒業後の就農・進路を具体的に考えたか"],"caution":"2年制で学位は出ず（専修学校相当）、大学とは修業年限・学位が異なる。"},"航空大学校":{"fit":"エアラインのパイロットを目指し、大学進学後に受験する進路を描ける生徒。","ask":["大学で2年以上・所定単位を修得する進学先を選んだか","私大の操縦士養成コースと比較したか"],"caution":"高校から直接は受験できず、大学2年以上在学で所定の単位を修得した者などが対象。"},"職業能力開発大学校（ポリテクカレッジ）":{"fit":"機械・電気・電子情報・建築などを実習中心で学び、実践技術者として就職したい生徒。","ask":["学士が出ないことを本人・保護者が理解したか","専門課程2年後に応用課程へ進むか考えたか","関東校（小山）への通学を確認したか"],"caution":"文部科学省所管の大学ではないため、学士は出ない。"},"国際ファッション専門職大学":{"fit":"ファッションのクリエーションやビジネスを、企業内実習など実践中心で学びたい生徒。","ask":["必修の海外実習費を含めた費用を家庭と話したか","総合型と推薦のどちら・どの回で出願するか","東京・大阪・名古屋のどのキャンパスか確認したか"],"caution":"必修の海外実習費（20〜60万円）が学費とは別にかかる。"},"情報経営イノベーション専門職大学（iU）":{"fit":"ICTとビジネスに関心があり、在学中の起業や長期インターンシップに挑戦したい生徒。","ask":["総合型の方式（グループワーク・プレゼン等）を決めたか","起業・IT志向を志望理由として具体化したか","総合型・推薦と一般のどれを軸にするか"],"caution":"募集の中心は総合型（60名）と公募推薦（40名）である。"},"東京国際工科専門職大学":{"fit":"AI・IoT・ゲーム・CGなどを実践的に学び、学士（専門職）を取りたいゲーム・CG系志望の生徒。","ask":["統合後の名称・募集単位を要項で確認したか","総合型（適性診断型・資格評価型等）を検討するか","専門学校との違い（学士の有無）を理解したか"],"caution":"2027年4月に名古屋・大阪の同名校と統合予定で、資料内でも名称の記載が揃っていないため要項での確認が必要。"},"開志専門職大学":{"fit":"事業創造・情報・アニメ・マンガを、地域と連携した実習で学びたい生徒。","ask":["新潟での生活費と指定PC代を家庭と話したか","総合型（A〜D日程）・推薦の日程を確認したか"],"caution":"学費とは別に指定PC代がかかる。"},"芸術文化観光専門職大学":{"fit":"演劇・ダンスなどの舞台芸術と観光を組み合わせて学びたい生徒。","ask":["1年次全寮制（寮費月3万円）を家庭と話したか","定員の過半を占める推薦・総合型を検討するか","県外者の入学金を要項で確認したか"],"caution":"推薦・総合型が定員の過半を占め、一般選抜は20名と少ない。"},"静岡県立農林環境専門職大学":{"fit":"農業・林業の経営者やリーダーを目指し、農場・演習林での実習中心に学びたい生徒。","ask":["学校長推薦（12名）を検討するか","東京農大・茨城大農学部と比較したか","静岡での生活費を家庭と話したか"],"caution":"募集は24名と少なく、一般選抜は前期のみ12名である。"},"高知リハビリテーション専門職大学":{"fit":"理学療法・作業療法・言語聴覚療法の国家資格を目指す生徒。","ask":["理学療法・作業療法・言語聴覚のどれを目指すか","高知での生活費を家庭と話したか","指定校推薦の枠を確認したか"],"caution":""},"東京保健医療専門職大学":{"fit":"首都圏で理学療法士・作業療法士を目指すリハビリ系志望の生徒。","ask":["理学療法と作業療法のどちらを目指すか決めたか","公募推薦（各学科30名）を検討するか"],"caution":"推薦の募集人員（各30名）が一般前期（各20名）より多い。"},"名古屋国際工科専門職大学":{"fit":"情報工学・デジタルエンタテインメントを東海圏で学びたい生徒。","ask":["統合後の募集単位（名古屋キャンパス）を確認したか","総合型（適性診断型・資格評価型等）を検討するか"],"caution":"2027年4月に統合予定で、現行の一般・推薦の有無は未確認のため要項での確認が必要。"},"電動モビリティシステム専門職大学":{"fit":"現在は募集停止で出願対象外。新設校を検討する生徒への注意喚起の事例として扱う。","ask":["新設校を志望するなら入学者数の推移を確認したか","EV分野を学べる他の進学先を検討したか"],"caution":"2025年度入学者から学生募集を停止しており、出願先にならない。"},"筑波技術大学":{"fit":"聴覚または視覚に障がいがあり、情報・デザイン・ものづくりや鍼灸・理学療法などの専門技術を身につけたい生徒。","ask":["自分の障がい種別と志望学部の対象が合っているか","情報・デザイン・保健のどの分野に関心があるか","取りたい資格（建築士・理学療法士・はり師等）"],"caution":"学部によって入学資格の対象となる障がいが異なるため、募集要項で必ず確認する。"},"前橋工科大学":{"fit":"地元群馬で建築・土木やデザイン、情報・医工学・生物工学など幅広い工学分野を学びたい生徒。","ask":["建築系と情報・生命系のどちらに関心があるか","大学院進学も視野に入れているか","通学・生活の見通し（前橋市）"]},"千葉県立保健医療大学":{"fit":"千葉県内で看護師・管理栄養士・歯科衛生士・理学療法士・作業療法士などの医療職をめざす生徒。","ask":["めざす医療職はどれか","学科によって通うキャンパスが違う点を理解しているか","実習の多い学びへの心構え"],"caution":"学科によりキャンパスが幕張と仁戸名に分かれる。"},"埼玉県立大学":{"fit":"看護・リハビリ・福祉・保育・臨床検査・歯科衛生など保健医療福祉の専門職をめざす生徒。","ask":["5学科・専攻のうちどの職種をめざすか","多職種連携・実習中心の学びに関心があるか","取得したい資格（保育士・臨床検査技師等）"]},"川崎市立看護大学":{"fit":"川崎市など地域の病院・行政で活躍する看護師や保健師をめざす生徒。","ask":["保健師課程（選抜制）にも挑戦したいか","病院以外の看護職（地域・行政）に関心があるか","奨学金・特待生制度の利用希望"],"caution":"保健師課程は2年次後期の選抜制で定員30人。"},"神奈川県立保健福祉大学":{"fit":"看護・栄養・社会福祉・リハビリの専門職として神奈川県内などで働きたい生徒。","ask":["4学科のうちどの職種をめざすか","横須賀への通学・生活の見通し","多職種連携への関心"]},"群馬県立女子大学":{"fit":"少人数で文学・英語・美術を深めたい、または英語力を伸ばして国際分野で活躍したい女子生徒。","ask":["文学部と国際コミュニケーション学部のどちらに関心があるか","中高の教員免許や学芸員資格を取りたいか","英語力の目標（TOEIC等）"]},"群馬県立県民健康科学大学":{"fit":"診療放射線技師や看護師・保健師として群馬県などの医療現場で働きたい生徒。","ask":["看護と診療放射線のどちらをめざすか","理数系科目（物理など）への取り組み","実習中心の学びへの心構え"]},"公立はこだて未来大学":{"fit":"情報システムやデザイン、AI・複雑系など情報分野を幅広く学び、大学院進学も視野に入れる生徒。","ask":["情報アーキテクチャと複雑系知能のどちらに関心があるか","大学院進学を考えているか","函館での生活の見通し"]},"公立千歳科学技術大学":{"fit":"化学・生物、電子・光、情報のいずれかを軸に理工学の基礎から学びたい生徒。","ask":["3学科のうちどの分野に関心があるか","大学院進学も考えているか","千歳での通学・生活の見通し"]},"北海道教育大学":{"fit":"北海道内で教員をめざす生徒のほか、地域づくりや芸術・スポーツを通じて地域に関わりたい生徒。","ask":["どのキャンパス（校）の所在地で学びたいか","めざす校種（小・中・特別支援・幼稚園）や教科","教員以外（地域・芸術・スポーツ）への関心"],"caution":"校ごとに学べる内容・取れる免許が異なるため、志望する校と専攻を募集要項で確認する。"},"北見工業大学":{"fit":"工学に関心はあるが分野を決めきれていない生徒や、寒冷地・エネルギー・食品など北海道ならではのテーマに取り組みたい生徒。","ask":["工学の中で関心のある分野（情報・機械・環境・化学）","北見での一人暮らしや寒冷地の生活への考え","大学院進学まで視野に入れているか"],"caution":"2026年度に学科が改組されたため、進路データは旧学科のもので、所属ユニットの決め方も募集要項等で確認する。"},"宮城教育大学":{"fit":"東北地方で小・中学校や特別支援学校の教員をめざし、教職の専門性を集中的に学びたい生徒。","ask":["めざす校種（小・中・特別支援）と教科","前期で文系型・理系型のどちらで受けるか","特別支援教育への関心の有無"],"caution":"教員養成に特化した単科大学のため、教職以外の進路を考える場合は学びの範囲を確認する。"},"小樽商科大学":{"fit":"経済・経営・会計・法律・情報など社会科学をまとめて学び、北海道などのビジネスの現場で活躍したい生徒。","ask":["4学科のうちどの分野に関心があるか","前期の英語重視枠と数学重視枠のどちらが合うか","夜間主コースも選択肢に入るか"],"caution":"夜間主は共通テストの科目数・配点が昼間と異なるため、募集要項で確認する。"},"山形大学":{"fit":"文系・理系・医療・教員養成など幅広い分野から選び、山形県内で学びたい生徒。","ask":["志望学部のキャンパス（山形・米沢・鶴岡）を理解しているか","教員・医療職など取りたい資格があるか","共テ英語のR:L配点が志望学科でどうなっているか"],"caution":"学部によってキャンパスの市が異なり、共通テストの英語配点比も学科ごとに違う。"},"岩手大学":{"fit":"教員養成、理工・情報、農林水産、獣医などを岩手県の地域と関わりながら学びたい生徒。","ask":["理工学部のどのコースに関心があるか（配属は2年次）","獣医・水産など動物系への関心の度合い","教員免許など取りたい資格はあるか"],"caution":"人文社会科学部の後期は共通テスト4教科と小論文のみなど、日程で受験科目が大きく違う。"},"帯広畜産大学":{"fit":"獣医師をめざす生徒や、畜産・食品・農業環境など「生命・食料・環境」の分野を北海道の現場で学びたい生徒。","ask":["獣医師志望か、畜産・食品・農業分野志望か","共通テスト6教科8科目への準備状況","帯広での生活・通学の見通し"],"caution":"共通テストは全課程で6教科8科目（情報Ⅰ含む）が必要。"},"弘前大学":{"fit":"東北・北東北で教員・医療職・心理職をめざす生徒や、理工・農学を学び大学院進学も視野に入れる生徒。","ask":["志望学部と取りたい資格（教員・医療職・心理職など）","理工・農学系なら大学院進学を考えているか","弘前での生活と学部ごとのキャンパスの違い"],"caution":"医学部は本町キャンパス、他学部は文京町キャンパスと分かれる。"},"旭川医科大学":{"fit":"北海道で医師や看護師をめざし、地域医療に関心がある生徒。","ask":["医師と看護師のどちらをめざすか","地域医療への関心の程度","旭川での生活の見通し"]},"福島大学":{"fit":"福島で教員・公務員・地域づくりや、理工・食農の分野を学びたい生徒。","ask":["改組後のどの学部・系を志望するか","教員・公務員・企業のどれを考えているか","二次は小論文と英語のどちらで受けるか"],"caution":"2027年度から学部構成が変わる予定のため、最新の募集要項で学部名・定員を確認する。"},"秋田大学":{"fit":"資源・エネルギー、データサイエンス、医療、教員など専門の進路を秋田で学びたい生徒。","ask":["国際資源・情報・理工・医・教育のどれに関心があるか","大学院進学まで考えているか","後期の面接・小論文に対応できるか"]},"上越教育大学":{"fit":"小学校の先生になりたい気持ちがはっきりしていて、共通テストで安定して得点できる生徒。","ask":["小学校教員志望がどれくらい固いか","専願の推薦を考えるか","上越での生活に抵抗がないか"],"caution":"一般・推薦とも共通テストの比重が大きい。"},"名古屋工業大学":{"fit":"数学・理科が得意で、大学院まで進んで技術者・研究者をめざしたい生徒。","ask":["工学のどの分野に関心があるか","大学院進学（6年一貫を含む）を考えているか","二次の数学・理科の記述に自信があるか"],"caution":"二次の数学・理科の配点が大きく、記述対策が必要。"},"富山大学":{"fit":"北陸で文系・理系・医療・芸術まで幅広い分野から学部を選びたい生徒。","ask":["9学部のうちどの分野に関心があるか","通うキャンパス（富山市・高岡市）の確認","二次の科目（英・国・数・理）のどれが得意か"],"caution":"学部によりキャンパスが異なる。"},"山梨大学":{"fit":"山梨で教員・技術者・医療職をめざす生徒や、ワイン・観光など地域産業に関心がある生徒。","ask":["教育・工・生命環境・医のどれを考えているか","工学部で入学後にコースを選ぶ形が合うか","面接や実技への準備状況"],"caution":"教育学部は面接の配点が大きい。"},"岐阜大学":{"fit":"東海地方で工学・獣医・医療・教員・地域づくりなど幅広い分野を1キャンパスで学びたい生徒。","ask":["どの学部・学環に関心があるか","工学部志望なら二次の数学・物理への準備","大学院進学まで考えているか"],"caution":"工学部は二次の比重が大きい。"},"愛知教育大学":{"fit":"愛知を中心に教員や、心理・福祉など子どもを支える仕事をめざす生徒。","ask":["どの校種・教科の教員を考えているか","教員以外の支援職（心理・福祉）にも関心があるか","後期の面接に向けた準備"]},"浜松医科大学":{"fit":"医師または看護師・保健師をめざし、静岡で医療を学びたい生徒。","ask":["医師と看護職のどちらをめざすか","地域枠を考えるか","前期の二次（英・数・理）と後期の小論文のどちらで勝負するか"],"caution":"医学科は共テ・二次とも高得点が必要。"},"福井大学":{"fit":"北陸で工学・医療・教員・国際地域の分野を学びたい生徒。","ask":["工学部ならどの学科に関心があるか","大学院進学を考えているか","医学部志望ならキャンパス（永平寺町）の確認"]},"京都工芸繊維大学":{"fit":"生物・化学・電子・情報・機械やデザイン・建築を専門的に学び、大学院進学まで見据える生徒。","ask":["どの課程（分野）を志望するか","一般枠と地域創生枠のどちらで出願するか","大学院進学まで考えているか"],"caution":"個別試験の比重が大きく、課程により理科の指定や総合問題があるため募集要項で確認する。"},"京都教育大学":{"fit":"京都で幼稚園から高校・特別支援学校までの教員を目指し、教科や分野を決めて学びたい生徒。","ask":["どの専攻（教科・分野）を志望するか","二次で国語・英語・数学・理科のどれを受けられるか","教員志望の度合いと希望する校種"],"caution":"二次の科目や配点が専攻ごとに大きく違い、後期は一部専攻のみのため、募集要項で志望専攻の科目を確認する。"},"兵庫教育大学":{"fit":"兵庫で小・中学校や幼稚園の教員を目指し、実地教育を重ねて実践力をつけたい生徒。","ask":["教科教育系と幼年教育系のどちらに関心があるか","小論文と面接の準備をどう進めるか","保育士資格も取りたいか"],"caution":"前期の定員は80人で残りの募集方式はKei-Netでは未確認のため、募集要項で推薦・総合型の有無を確認する。"},"和歌山大学":{"fit":"和歌山で観光・経済・教育・工学系のいずれかを学びたい生徒。","ask":["観光・経済・教育・システム工のどの分野に関心があるか","教育学部なら文科系・理科系・実技系のどれか","共テの得点見込みがボーダー52〜76%のどこにあるか"],"caution":"入試科目・配点・推薦や総合型は未確認のため、最新の募集要項で確認する。"},"大阪教育大学":{"fit":"幼稚園から高校までの教員や養護教諭をめざす生徒、教育に関わる心理・情報・日本語教育などに関心がある生徒。","ask":["どの校種・教科の教員をめざすか","教員養成課程と教育協働学科のどちらが合うか","夜間主（小学校教育）も選択肢に入るか"],"caution":"入試科目・配点・ボーダー・推薦や総合型は未確認のため、最新の募集要項で確認する。"},"奈良教育大学":{"fit":"奈良で小学校・中学校の教員を目指し、教育学・教科・伝統文化のいずれかを専門に学びたい生徒。","ask":["志望する専修と、初等・中等のどちらで学びたいか","二次の小論文・教科試験・面接の準備状況","後期日程まで出願を考えているか"],"caution":"取得できる免許・就職実績と一部専修の入試科目は未確認のため、大学公式の募集要項で確認する。"},"滋賀医科大学":{"fit":"医師または看護師を目指し、滋賀で医療を学びたい生徒。地域医療に関心がある生徒は地域医療枠も選択肢になる。","ask":["医学科と看護学科のどちらを志望するか","地域医療枠の条件を理解し、出願を考えるか","共テで医学科は8割超を狙えるか"],"caution":"入試科目・配点・地域医療枠の出願条件は未確認のため、最新の募集要項で必ず確認する。"},"滋賀大学":{"fit":"データサイエンスや経済・経営を学びたい生徒、滋賀で小中学校などの教員をめざす生徒。","ask":["データサイエンス・経済・教育のどれに関心があるか","彦根・大津どちらのキャンパスに通うことになるか","教員志望なら校種・専攻の希望はあるか"],"caution":"学部によりキャンパスが彦根と大津に分かれるため、通学・住まいを志望学部で確認する。"},"山口大学":{"fit":"山口・宇部で文系から理工・情報・医療・獣医まで幅広い分野を比べて選びたい生徒。","ask":["どの学部・学科に関心があるか","吉田（山口市）と宇部のどちらのキャンパスになるか","卒業後は就職か大学院進学か"],"caution":"学部によりキャンパスが山口市と宇部市に分かれるため、志望学部の所在地を確認する。"},"島根大学":{"fit":"山陰地域で、教員・医療・福祉や材料・理工系、農林・生命科学などを幅広く検討したい生徒。","ask":["どの学部・分野を志望するか","前期・後期のどちらを軸に出願するか","教員免許や国家資格の取得を考えているか"],"caution":"医学部は出雲キャンパスで、他学部（松江）と所在地が異なる。"},"徳島大学":{"fit":"医師・歯科医師・薬剤師・看護師などの医療職や、理工・食料・生物資源の分野を地方の総合大学で学びたい生徒。","ask":["どの学部・学科（医療系か理工系か）を志望するか","前期・後期のどちらを軸に出願するか","取りたい資格・免許は何か"],"caution":"共テ・二次の科目と配点は未確認のため、学部ごとに募集要項で確認する。"},"愛媛大学":{"fit":"四国で、文系・理工・農・医療・教員養成など幅広い分野から地域に根ざして学びたい生徒。","ask":["どの学部・コースを志望するか","前期・後期どちらで出願するか（後期がない学部もある）","夜間主コースも選択肢に入るか"],"caution":"医学部は東温市、農学部は樽味で、キャンパスが分かれる。"},"香川大学":{"fit":"四国で、教育・法・経済・医・工・農のいずれかを国立総合大学で学びたい生徒。","ask":["どの学部・分野を志望するか","三木町など学部ごとのキャンパスに通えるか","共通テストの受験科目の見通しはどうか"],"caution":"学部によりキャンパスが異なり、入試方式は未確認のため募集要項で確認する。"},"高知大学":{"fit":"高知の地域課題や防災、農林・海洋分野に関心があり、フィールドでの実習を通して学びたい生徒。","ask":["どの学部・学科（分野）を志望するか","後期日程のある学科も併願候補にするか","医学科志望なら地域枠の条件を理解しているか"],"caution":"後期日程は一部の学部・学科のみで、共テ・二次の科目と配点は募集要項で確認する必要がある。"},"鳥取大学":{"fit":"乾燥地農学や獣医学、山陰の地域医療、工学や地域学など、地域に根ざした専門分野を学びたい生徒。","ask":["どの学部・学科（分野）を志望するか","前期・後期それぞれの二次科目の準備状況","医学科志望なら地域枠（鳥取県・島根県など）の条件"],"caution":"学科により二次の選択科目や共テ・二次の配点比が大きく異なるため、募集要項で確認が必要。"},"鳴門教育大学":{"fit":"小学校・中学校などの教員になることをはっきり目指していて、教員養成に特化した環境で学びたい生徒。","ask":["教員を目指しているか、どの校種を考えているか","四国（徳島県鳴門市）での一人暮らしは可能か","大学院進学まで考えているか"],"caution":"学生数・就職率は2020年度の報告書の数値で、入試方式・科目・難易度は未確認のため最新の募集要項で確認する。"},"九州工業大学":{"fit":"機械・電気・化学・宇宙などの工学や情報分野を専門的に学びたい、九州の国立工学系大学を考えている生徒。","ask":["工学部と情報工学部のどちらを志望するか","戸畑と飯塚のどちらのキャンパスに通えるか","宇宙・半導体など関心のある分野はあるか"],"caution":"2026年度に学科の改組があり、入試方式・科目・難易度は未確認のため最新の募集要項で確認する。"},"佐賀大学":{"fit":"九州の国立大学で、教員・医療・理工・農・芸術などを地元で学びたい生徒。","ask":["学部・コースの希望は決まっているか","理工学部は学科を選ぶか学科一括枠か","教員志望なら小学校・中学校のどちらか"],"caution":"経済学部の改組（2027年度）など組織の変更が続くため、最新の募集要項で確認する。"},"大分大学":{"fit":"大分県内外で、福祉・心理・理学療法や医療、理工、教員を国立大学で目指したい生徒。","ask":["福祉健康科学部のどのコースに関心があるか","理工学部で関心のあるプログラムはどれか","医療職なら医師・看護・医工のどれを目指すか"]},"宮崎大学":{"fit":"獣医・農学・医療・工学・教員など、自然や地域をフィールドに学びたい生徒。","ask":["獣医学科・医学科など6年制を考えているか","工学部で関心のあるプログラムはどれか","木花と清武のどちらのキャンパスになるか確認したか"],"caution":"難易度（偏差値・得点率）は今回未確認のため、別途確認する。"},"琉球大学":{"fit":"沖縄・亜熱帯の自然や文化、島しょ地域の医療・教育に関心がある生徒。","ask":["沖縄で学ぶ・暮らすことをどう考えているか","国際地域創造学部なら昼間主・夜間主のどちらか","理学部・農学部で関心のある分野は何か"]},"福岡教育大学":{"fit":"小学校・中学校・特別支援学校などの教員になることを目標にしている生徒。","ask":["小学校・中学校・特別支援のどの教員を目指すか","得意な教科・実技は何か","幼児教育に関心はあるか"],"caution":"募集単位ごとに定員が小さい区分があるので、志望プログラムの定員を確認する。"},"長崎大学":{"fit":"医療系・水産・環境・情報・国際系など幅広い分野から、九州の総合国立大学で選びたい生徒。","ask":["医療系（医・歯・薬・保健）を考えているか","工学部・情報系なら大学院進学も視野にあるか","多文化社会学部のオランダ特別コースに関心はあるか"]},"鹿児島大学":{"fit":"獣医・畜産・水産・農学や医療系、教員などを南九州の総合国立大学で学びたい生徒。","ask":["共同獣医学科と畜産学科の違いを理解しているか","工学部は先進工学科のどのプログラムに関心があるか","どのキャンパスに通うことになるか確認したか"]},"室蘭工業大学":{"fit":"北海道で工学・理学を幅広く学び、大学院進学も視野に入れる生徒。","ask":["建築・機械・航空宇宙・電気・理学のどれに関心があるか","入学後2年次にコースを選ぶ仕組みを理解しているか","大学院進学を考えているか"],"caution":"コースは2年次に決まるため、希望コースに進めるかは入学後に確認が必要。"},"三重大学":{"fit":"東海地方の国立総合大学で、教員・工学・農水産・医療などを学びたい生徒。","ask":["学部・コースの希望は決まっているか","教育学部なら初等・中等のどちらを志望するか","工学部・生物資源学部なら大学院進学を考えているか"]},"鹿屋体育大学":{"fit":"競技・指導・武道・健康づくりなどスポーツを専門に学び、保健体育の教員なども視野に入れる生徒。","ask":["競技を続けたいのか、指導や健康づくりを学びたいのか","スポーツ総合と武道のどちらの課程を考えているか","保健体育の教員を志望しているか"],"caution":"一般選抜はスポーツ総合でA選抜・B選抜に分かれるため、方式の違いを募集要項で確認する。"},"政策研究大学院大学（大学院のみ）":{"fit":"将来、行政や公共政策の分野で大学院まで学ぶことを考える生徒への情報として（高校からの直接の進学先ではない）。","ask":["どの分野の政策や行政に関心があるか","学部では何を学んでから大学院を考えるか"],"caution":"大学院のみの大学で学部がないため、高校卒業後の進学先としては扱わない。"},"北陸先端科学技術大学院大学（大学院のみ）":{"fit":"情報・材料・バイオなどの分野で、学部卒業後に大学院で研究したい生徒への情報として（高校からの直接の進学先ではない）。","ask":["学部ではどの分野を学ぶつもりか","大学院進学（他大学の大学院を含む）を考えているか"],"caution":"大学院のみの大学で学部がないため、高校卒業後の進学先としては扱わない。"},"奈良先端科学技術大学院大学（大学院のみ）":{"fit":"情報・生命・物質の分野で、学部卒業後に大学院で研究したい生徒への情報として（高校からの直接の進学先ではない）。","ask":["学部ではどの分野を学ぶつもりか","大学院から分野を変える可能性はあるか"],"caution":"大学院のみの大学で学部がないため、高校卒業後の進学先としては扱わない。"},"総合研究大学院大学（大学院のみ）":{"fit":"天文・物理・生物・情報・人文などの分野で、学部卒業後に研究者を目指して大学院で学びたい生徒への情報として（高校からの直接の進学先ではない）。","ask":["学部ではどの分野を学ぶつもりか","将来、研究者として大学院（博士課程）まで進む考えはあるか"],"caution":"大学院のみの大学で学部がないため、高校卒業後の進学先としては扱わない。"},"宮城大学":{"fit":"宮城県内で経営・地域づくり・デザイン、看護、食の生産やビジネスを学び、卒業後は就職を考える生徒。","ask":["事業構想・看護・食産業のどの学群に関心があるか","看護志望なら保健師・養護教諭も視野に入れるか","通うキャンパス（大和・太白）を確認したか"],"caution":"学群によってキャンパスが大和町と仙台市太白区に分かれる。"},"名寄市立大学":{"fit":"北海道で栄養・看護・福祉・保育を学び、管理栄養士や看護師、社会福祉士、保育士などの専門職を目指す生徒。","ask":["栄養・看護・福祉・保育のどの職種を目指すか","取りたい資格（管理栄養士・保健師・保育士など）は決まっているか","名寄市での一人暮らしを考えているか"]},"山形県立米沢栄養大学":{"fit":"管理栄養士や栄養教諭を目指し、少人数の栄養専門の学びを望む生徒。","ask":["管理栄養士・栄養教諭のどちらを目指すか","病院・学校・地域など希望する働き方","共通テストで前期・後期どちらを狙うか"],"caution":"1学科42人の小規模校のため、学びの分野が栄養に絞られる点を確認したい。"},"旭川市立大学":{"fit":"旭川・道北で経済・経営や地域づくり、福祉・看護を学び、資格や地元就職を考える生徒。","ask":["地域創造・経済・福祉・看護のどれに関心があるか","看護師・社会福祉士など目指す資格はあるか","前期・中期・後期のどの日程で受けるか"],"caution":"地域創造学部は2026年度設置の新しい学部のため、卒業実績はまだない。"},"山形県立保健医療大学":{"fit":"看護師・理学療法士・作業療法士を目指し、少人数の医療系の学びを望む生徒。","ask":["看護・理学療法・作業療法のどれを目指すか","チーム医療や病院実習に関心があるか","共通テストで前期の得点率をどこまで狙えるか"],"caution":"理学療法・作業療法学科は定員各20人と少ない。"},"岩手県立大学":{"fit":"岩手で福祉・情報・看護・政策を学び、資格取得や地域での就職を考える生徒。","ask":["福祉・情報・看護・政策のどの分野に関心があるか","社会福祉士・看護師など目指す資格はあるか","前期・後期（中期）のどの日程で受けるか"],"caution":"ソフトウェア情報学部は前期・中期、他学部は前期・後期と日程が異なる。"}}/*END_GUIDE*/;
 function midHensachi(name){ const d=(INFO[name]||{}).difficulty; if(!d||!d.hensachi) return null; const nums=String(d.hensachi).match(/[\d.]+/g); if(!nums) return null; const v=nums.map(Number); return (Math.min(...v)+Math.max(...v))/2; }
 function groupOf(x){ const k=kindOf(x); return (k==="国立"||k==="公立")?"pub":(k==="私立"?"pri":k); }
@@ -808,55 +698,16 @@ function guideBlock(x,ctx){
 }
 document.addEventListener("click",e=>{ const a=e.target.closest&&e.target.closest(".simlink"); if(!a) return; e.preventDefault(); e.stopPropagation();
   if(location.hash==="#map") selectUniv(a.dataset.n); else { location.hash="#map"; setTimeout(()=>selectUniv(a.dataset.n),80); } },true);
-const LS_KEY = "searchuniv:marks";
 const SU_CANDS_KEY = "searchuniv:cands";
 // 旧キーからの移行（1回だけ）
-try{ [["univ_fc_marks_v1",LS_KEY],["su_cands",SU_CANDS_KEY]].forEach(([o,n])=>{ const v=localStorage.getItem(o); if(v!=null && localStorage.getItem(n)==null){ localStorage.setItem(n,v); } localStorage.removeItem(o); }); }catch(e){}
-let marks = {};
-try { marks = JSON.parse(localStorage.getItem(LS_KEY) || "{}"); } catch(e){ marks = {}; }
-function saveMarks(){ try { localStorage.setItem(LS_KEY, JSON.stringify(marks)); } catch(e){} }
+try{ localStorage.removeItem("univ_fc_marks_v1"); localStorage.removeItem("searchuniv:marks"); [["su_cands",SU_CANDS_KEY]].forEach(([o,n])=>{ const v=localStorage.getItem(o); if(v!=null && localStorage.getItem(n)==null){ localStorage.setItem(n,v); } localStorage.removeItem(o); }); }catch(e){}
 
 const items = D.map((r,i)=>({id:i,name:r[0],cat:r[1],type:r[2],pref:r[3],feats:r[4],memo:r[5]}));
-let activeCats = new Set(Object.keys(CATS));
-let order = items.map(x=>x.id);
-let deck = []; let idx = 0;
 
 const $ = id => document.getElementById(id);
 // 学部・学科の文字列一覧（学科データがあれば「学部 学科」、なければ学部名）
 function facList(f){ const D=f.departments; if(Array.isArray(D)&&D.length){ const out=[]; for(const g of D){ const ds=g.d||[]; if(!ds.length) out.push(g.f); else for(const d of ds) out.push(g.f+" "+d); } return out; } return f.faculties||[]; }
 function esc(s){ return String(s??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c])); }
-
-function buildChips(){
-  const wrap = $("chips"); wrap.innerHTML="";
-  const all = document.createElement("button");
-  all.className="chip"; all.textContent="すべて"; all.setAttribute("aria-pressed", activeCats.size===Object.keys(CATS).length);
-  all.onclick=()=>{ activeCats = activeCats.size===Object.keys(CATS).length ? new Set() : new Set(Object.keys(CATS)); buildChips(); rebuild(); };
-  wrap.appendChild(all);
-  for(const [k,v] of Object.entries(CATS)){
-    const n = items.filter(x=>x.cat===k).length;
-    const b = document.createElement("button");
-    b.className="chip"; b.innerHTML = esc(v.label)+'<span class="n">'+n+'</span>';
-    b.setAttribute("aria-pressed", activeCats.has(k));
-    b.onclick=()=>{ activeCats.has(k)?activeCats.delete(k):activeCats.add(k); buildChips(); rebuild(); };
-    wrap.appendChild(b);
-  }
-}
-
-function rebuild(keepPos){
-  const q = $("q").value.trim().toLowerCase();
-  const f = $("filt").value;
-  deck = order.map(i=>items[i]).filter(x=>{
-    if(!activeCats.has(x.cat)) return false;
-    const kf=$("kindf").value; if(kf==="pub"){ if(!["国立","公立"].includes(kindOf(x)) && !(kindOf(x)==="専門職大学"&&/公立/.test(x.type))) return false; } else if(kf && kindOf(x)!==kf) return false;
-    if(f==="unknown" && marks[x.id]!=="u") return false;
-    if(f==="unseen" && marks[x.id]) return false;
-    if(q){ const hay=(x.name+x.pref+x.type+x.feats.join("")+x.memo+CATS[x.cat].label).toLowerCase(); if(!hay.includes(q)) return false; }
-    return true;
-  });
-  if(!keepPos) idx = 0;
-  if(idx>=deck.length) idx = Math.max(0,deck.length-1);
-  render(); renderList();
-}
 
 const KIND_COLOR={"国立":"#1f4e79","公立":"#2a7f62","私立":"#b0532a","大学校":"#4b5563","専門職大学":"#b8860b"};
 function kindOf(x){
@@ -867,45 +718,8 @@ function kindOf(x){
 function kindDetail(x){ const k=kindOf(x); if(k==="専門職大学") return /公立/.test(x.type)?"公立":"私立"; if(k==="大学校") return x.type; return ""; }
 function metaPrefix(x){ const k=kindOf(x); return (k==="国立"||k==="公立"||k==="私立")?"":esc(x.type)+'｜'; }
 function badge(x){ const k=kindOf(x); const d=kindDetail(x); return '<span class="kind" style="background:'+KIND_COLOR[k]+'">'+k+(k==="専門職大学"&&d?'（'+d+'）':'')+'</span>'; }
-function statusTag(x){ return marks[x.id]==="k"?'<span class="status k">✓ 覚えた</span>':marks[x.id]==="u"?'<span class="status u">● まだ</span>':''; }
 
-function render(){
-  const card=$("card"); card.classList.remove("flipped");
-  const known = items.filter(x=>activeCats.has(x.cat)&&marks[x.id]==="k").length;
-  const total = items.filter(x=>activeCats.has(x.cat)).length;
-  $("stat").textContent = "習得 "+known+"/"+total;
-  $("barfill").style.width = total? (known/total*100)+"%" : "0";
-  if(!deck.length){
-    $("pos").textContent="0 / 0";
-    $("front").innerHTML='<div class="empty" style="border:0">該当なし</div>';
-    $("back").innerHTML=""; return;
-  }
-  const x = deck[idx];
-  setArt(x);
-  $("front").style.justifyContent = $("mode").value==="name" ? "center" : "flex-start";
-  $("pos").textContent = (idx+1)+" / "+deck.length;
-  const featList = '<ul>'+x.feats.map(f=>'<li>'+esc(f)+'</li>').join("")+'</ul>';
-  const memo = guideBlock(x);
-  if($("mode").value==="name"){
-    $("front").innerHTML = '<div>'+badge(x)+statusTag(x)+'</div><div class="uname">'+esc(x.name)+'</div><div class="meta">'+metaPrefix(x)+esc(x.pref)+'</div>';
-    $("back").innerHTML = '<div>'+badge(x)+statusTag(x)+'</div><h2>'+esc(x.name)+hpLink(x.name)+'</h2>'+featList+memo+cardNews(x.name)+infoBlock(x.name)+partnerBlock(x.name)+examBlock(x.name)+extraBlocks(x.name);
-  } else if($("mode").value==="type"){
-    const masked = x.feats.map(f=>maskName(f,x.name));
-    $("front").innerHTML = '<div>'+badge(x)+statusTag(x)+'</div>'+'<form id="ansForm" class="ans" onclick="event.stopPropagation()"><div class="blank">（<input id="ans" type="text" autocomplete="off" aria-label="学校名">）<span>'+esc(suffixOf(x.name))+'</span></div><div class="ansbtns"><button class="btn big" type="submit">回答</button><button class="btn big" type="button" id="giveup">パス</button></div></form>'+'<div class="qfront" style="width:100%"><ul>'+masked.map(f=>'<li>'+esc(f)+'</li>').join("")+'</ul><div class="meta">'+metaPrefix(x)+esc(maskName(x.pref,x.name))+'</div>'+frontFacts(x)+hintHTML(x)+'</div>';
-    $("back").innerHTML = '<div>'+badge(x)+statusTag(x)+'</div><div id="resultLine" class="judge" style="text-align:center"></div><div class="uname" style="text-align:center;margin-top:4px">'+esc(x.name)+'</div><div class="meta" style="text-align:center">'+esc(x.pref)+' '+hpLink(x.name)+'</div><div style="margin-top:14px">'+memo+cardNews(x.name)+infoBlock(x.name)+partnerBlock(x.name)+examBlock(x.name)+extraBlocks(x.name)+'</div>';
-    answered=false; wireHints(x);
-    $("ansForm").onsubmit=e=>{e.preventDefault(); judge($("ans").value);};
-    $("giveup").onclick=e=>{e.stopPropagation(); judge(null);};
-    setTimeout(()=>{ const a=$("ans"); if(a) a.focus({preventScroll:true}); },60);
-  } else {
-    const masked = x.feats.map(f=>maskName(f,x.name));
-    $("front").innerHTML = '<div>'+badge(x)+statusTag(x)+'</div><div class="qfront"><ul>'+masked.map(f=>'<li>'+esc(f)+'</li>').join("")+'</ul><div class="meta">'+esc(x.type)+'</div>'+frontFacts(x)+hintHTML(x)+'</div>';
-    $("back").innerHTML = '<div>'+badge(x)+statusTag(x)+'</div><div class="uname" style="text-align:center">'+esc(x.name)+'</div><div class="meta" style="text-align:center">'+esc(x.pref)+' '+hpLink(x.name)+'</div><div style="margin-top:14px">'+memo+cardNews(x.name)+infoBlock(x.name)+partnerBlock(x.name)+examBlock(x.name)+extraBlocks(x.name)+'</div>';
-    wireHints(x);
-  }
-}
 // ===== 入力問題の判定 =====
-let answered=false, score={ok:0,ng:0};
 const ALIASES = {
   "東京大学":["東大"],"京都大学":["京大"],"大阪大学":["阪大"],"東北大学":["東北大"],"名古屋大学":["名大"],"九州大学":["九大"],"北海道大学":["北大"],"一橋大学":["一橋"],"東京科学大学":["科学大"],"神戸大学":["神大"],
   "筑波大学":["筑波"],"茨城大学":["茨大"],"千葉大学":["千葉大"],"埼玉大学":["埼大"],"横浜国立大学":["横国","横浜国大"],"東京外国語大学":["東京外大","外大","東外大"],"お茶の水女子大学":["お茶大","お茶の水"],"東京学芸大学":["学芸大"],"東京農工大学":["農工大"],"電気通信大学":["電通大"],"東京都立大学":["都立大"],"横浜市立大学":["横市","横浜市大"],"東京藝術大学":["東京芸術大学","芸大","藝大","東京芸大"],"大阪公立大学":["大阪公大","公大"],"国際教養大学":["AIU"],"長岡技術科学大学":["長岡技大","長岡技科大"],"豊橋技術科学大学":["豊橋技大","豊橋技科大"],"奈良女子大学":["奈良女"],
@@ -949,109 +763,12 @@ function isCorrect(input,name){
   for(const c of cands){ if(a===c || stripSuffix(a)===stripSuffix(c)) return true; }
   return false;
 }
-function judge(input){
-  if(answered||!deck.length) return; answered=true;
-  const x=deck[idx]; const ok = input!==null && isCorrect(input,x.name);
-  if(ok){ score.ok++; marks[x.id]="k"; } else { score.ng++; marks[x.id]="u"; }
-  saveMarks();
-  const yours = input===null?"パス":esc(input||"未入力");
-  $("resultLine").innerHTML = ok ? '<span class="good">⭕</span>' : '<span class="bad">❌</span><span class="yours">'+yours+'</span>';
-  $("card").classList.add("flipped"); $("back").scrollTop=0; if(document.activeElement) document.activeElement.blur();
-  updateScore(); updateStat();
-}
-function updateScore(){ const t=score.ok+score.ng; $("score").textContent = t? ("正答 "+score.ok+"/"+t) : ""; }
-function updateStat(){
-  const known = items.filter(x=>activeCats.has(x.cat)&&marks[x.id]==="k").length;
-  const total = items.filter(x=>activeCats.has(x.cat)).length;
-  $("stat").textContent = "習得 "+known+"/"+total;
-  $("barfill").style.width = total? (known/total*100)+"%" : "0";
-}
-
-
-
-function frontFacts(x){
-  const f=INFO[x.name]||{}; const m=t=>maskName(String(t),x.name); const rows=[];
-  if(f.faculties&&f.faculties.length) rows.push(["学部",'<span class="facs">'+f.faculties.map(t=>'<span>'+esc(m(t))+'</span>').join("")+'</span>']);
-  if(f.founded) rows.push(["創立",esc(m(f.founded))]);
-  if(f.students&&f.students.count) rows.push(["学生数","約"+Number(f.students.count).toLocaleString("ja-JP")+"人"]);
-  const d=f.difficulty; if(d&&(d.hensachi||d.kyotei)) rows.push(["難易度",[d.hensachi?"偏差値 "+esc(d.hensachi):"",d.kyotei?"共テ "+esc(d.kyotei):""].filter(Boolean).join("／")]);
-  if(f.kyotsu&&f.kyotsu.kamoku) rows.push(["共通テスト",kyotsuText(f)]);
-  const t=f.tuition; if(t&&t.amount!=null) rows.push(["初年度納付金",yen(t.amount)]);
-  const e=EXAM[x.name]; if(e&&e.general&&e.general.ratio!=null) rows.push(["一般選抜倍率",Number(e.general.ratio).toFixed(1)+"倍"]);
-  if(f.research&&f.research.length) rows.push(["有名な研究分野",esc(f.research.map(m).join("／"))]);
-  if(f.notable&&f.notable.length) rows.push(["著名な教授",esc(f.notable.map(m).join("／"))]);
-  if(!rows.length) return "";
-  return '<table class="ff">'+rows.map(r=>'<tr><th>'+r[0]+'</th><td>'+r[1]+'</td></tr>').join("")+'</table>';
-}
-function hintList(x){
-  const f=INFO[x.name]||{}; const h=[];
-  const m=t=>maskName(String(t),x.name);
-  if(f.research&&f.research.length) h.push(["有名な研究分野",f.research.map(m).join("／")]);
-  if(f.notable&&f.notable.length) h.push(["著名な教授",f.notable.map(m).join("／")]);
-  return h;
-}
-function hintHTML(x){ return ""; }
-function hintHTML_unused(x){
-  const h=hintList(x); if(!h.length) return "";
-  return '<div class="hints" onclick="event.stopPropagation()"><div class="hlist"></div><button class="btn" type="button" data-n="0">ヒント（'+h[0][0]+'）</button></div>';
-}
-function wireHints(x){
-  const box=document.querySelector("#front .hints"); if(!box) return; const h=hintList(x);
-  const btn=box.querySelector("button"), list=box.querySelector(".hlist");
-  btn.onclick=e=>{ e.stopPropagation(); let n=+btn.dataset.n; if(n>=h.length) return;
-    list.insertAdjacentHTML("beforeend",'<div class="hint1"><b>'+h[n][0]+'</b>'+esc(h[n][1])+'</div>'); n++; btn.dataset.n=n;
-    if(n>=h.length) btn.remove(); else btn.textContent="ヒント（"+h[n][0]+"）"; };
-}
-
-function maskName(f,name){
-  const base = name.replace(/（.*?）/g,"");
-  const short = base.replace(/大学校?$|専門職大学$/,"");
-  let s = f.split(base).join("〇〇");
-  if(short.length>=2) s = s.split(short).join("〇〇");
-  return s;
-}
-
-function renderList(){
-  const lv=$("listview");
-  if(lv.style.display!=="block") return;
-  lv.innerHTML = '<table><thead><tr><th>学校名</th><th>所在地</th><th>特色</th><th>入試</th></tr></thead><tbody>'+
-    deck.map(x=>'<tr><td>'+badge(x)+'<br><b>'+esc(x.name)+'</b><br>'+hpLink(x.name)+'</td><td>'+esc(x.type)+'<br>'+esc(x.pref)+'</td><td>'+x.feats.map(esc).join('<br>')+'</td><td style="min-width:240px">'+examBlock(x.name,true)+'</td></tr>').join("")+'</tbody></table>';
-}
-
-function flip(){ if(!deck.length) return; if($("mode").value==="type" && !answered) return; $("card").classList.toggle("flipped"); $("back").scrollTop=0; $("front").scrollTop=0; }
-function go(d){ if(!deck.length) return; if(d>0 && idx===deck.length-1){ shuffleOrder(); rebuild(); return; } idx=(idx+d+deck.length)%deck.length; render(); }
-function mark(v){ if(!deck.length) return; const x=deck[idx]; marks[x.id]=v; saveMarks();
-  const f=$("filt").value;
-  if((f==="unknown"&&v==="k")||f==="unseen"){ rebuild(true); } else { go(1); } }
-
-$("card").onclick=flip;
-$("next").onclick=()=>go(1); $("prev").onclick=()=>go(-1);
-$("markK").onclick=()=>mark("k"); $("markU").onclick=()=>mark("u");
-$("q").oninput=()=>rebuild(); $("kindf").onchange=()=>rebuild(); $("filt").onchange=()=>rebuild(); $("mode").onchange=()=>render();
-function shuffleOrder(){ for(let i=order.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[order[i],order[j]]=[order[j],order[i]];} }
-$("toggleList").onclick=()=>{ const lv=$("listview"), cw=$("cardwrap"); const on = lv.style.display!=="block";
-  lv.style.display=on?"block":"none"; cw.style.display=on?"none":"block"; $("toggleList").textContent=on?"カード":"一覧"; renderList(); };
-document.addEventListener("keydown",e=>{
-  if($("v-cards").hidden) return;
-  if($("mode").value==="type" && answered && e.key==="Enter"){ e.preventDefault(); go(1); return; }
-  if(e.target.tagName==="INPUT"||e.target.tagName==="SELECT") return;
-  if(e.code==="Space"){e.preventDefault();flip();}
-  else if(e.key==="ArrowRight") go(1); else if(e.key==="ArrowLeft") go(-1);
-  else if(e.key==="k"||e.key==="K") mark("k"); else if(e.key==="u"||e.key==="U") mark("u");
-});
-let sx=null;
-$("card").addEventListener("touchstart",e=>{sx=e.touches[0].clientX},{passive:true});
-$("card").addEventListener("touchend",e=>{ if(sx===null) return; const dx=e.changedTouches[0].clientX-sx; if(Math.abs(dx)>50){ go(dx<0?1:-1); } sx=null; });
-
 
 // ===== 画面切替 =====
-// カードタブは一時的に非表示（true にすると戻る）
-const SHOW_CARDS=false;
-if(!SHOW_CARDS) document.documentElement.classList.add("nocards");
 function showView(){
   const v=(location.hash||"#map").slice(1);
-  const view=(SHOW_CARDS?["cards","map","ai","plan","trend"]:["map","ai","plan","trend"]).includes(v)?v:"map";
-  for(const id of ["cards","map","ai","plan","trend"]) $("v-"+id).hidden = id!==view;
+  const view=["map","ai","plan","trend"].includes(v)?v:"map";
+  for(const id of ["map","ai","plan","trend"]) $("v-"+id).hidden = id!==view;
   if(view==="plan") renderPlan();
   if(view==="trend") renderTrend();
   document.body.classList.toggle("wide", view==="map");
@@ -1313,7 +1030,7 @@ $("kt-go").onclick=async()=>{
 };
 
 // ===== 更新日時（検索欄の下に表示）=====
-const BUILD=/*BUILD*/{"built":"2026-11-07 11:31","schedule":"2026-11-06","diffyear":"2027年度入試用"}/*END_BUILD*/;
+const BUILD=/*BUILD*/{"built":"2026-11-07 11:36","schedule":"2026-11-06","diffyear":"2027年度入試用"}/*END_BUILD*/;
 (function(){ const el=$("updline"); if(!el||!BUILD.built) return; const d=s=>s?s.replace(/-/g,"/"):"";
   el.textContent="更新 "+d(BUILD.built)+"・"+items.length+"校｜入試日程の確認 "+d((BUILD.schedule||BUILD.built).slice(0,10))+"（一般選抜は12月下旬に更新）"; el.title="難易度：河合塾「"+(BUILD.diffyear||"2027年度入試用")+"」"; })();
 $("univlist").innerHTML=items.map(x=>'<option value="'+esc(x.name)+'">').join("");
@@ -1706,18 +1423,13 @@ function selectUniv(name,keepView){
   const lb=document.createElementNS(SVGNS,"text"); lb.setAttribute("x",pt[0]+4); lb.setAttribute("y",pt[1]+1.8); lb.setAttribute("class","lbl"); lb.textContent=x.name;
   hl.append(ring,dot,lb); scaleMarks();
   if(!keepView) setVB([pt[0]-60,pt[1]-45,120,90]);
-  $("mpanel").innerHTML='<div class="box"><div class="ph"><h3>'+badge(x)+' '+esc(x.name)+'</h3>'+starBtn(x.name)+'<button type="button" class="tbtn" data-trend="'+esc(x.name)+'">出題内容</button>'+hpLink(x.name)+'</div><div class="meta">'+metaPrefix(x)+esc(x.pref)+'</div><ul class="pfeat">'+x.feats.map(f=>'<li>'+esc(f)+'</li>').join("")+'</ul>'+guideBlock(x)+'<div class="newsslot">'+cardNews(x.name)+'</div>'+infoBlock(x.name)+partnerBlock(x.name)+examBlock(x.name)+extraBlocks(x.name)+'<div style="margin-top:8px"><button class="btn" id="tocard">カードで見る</button></div></div>';
+  $("mpanel").innerHTML='<div class="box"><div class="ph"><h3>'+badge(x)+' '+esc(x.name)+'</h3>'+starBtn(x.name)+'<button type="button" class="tbtn" data-trend="'+esc(x.name)+'">出題内容</button>'+hpLink(x.name)+'</div><div class="meta">'+metaPrefix(x)+esc(x.pref)+'</div><ul class="pfeat">'+x.feats.map(f=>'<li>'+esc(f)+'</li>').join("")+'</ul>'+guideBlock(x)+'<div class="newsslot">'+cardNews(x.name)+'</div>'+infoBlock(x.name)+partnerBlock(x.name)+examBlock(x.name)+extraBlocks(x.name)+'<div style="margin-top:8px"></div></div>';
   MATCH=null; LAST_LIST=[]; CUR_SEL=name; renderSearchNews();
   $("mresults").innerHTML=""; $("mcount").textContent=""; if(!filtersActive()) document.querySelectorAll("#jmap .dot.dim").forEach(c=>c.classList.remove("dim"));
   $("uov").hidden=false; if(!keepView){ document.body.classList.add("noscroll"); $("mpanel").parentElement.scrollTop=0; }
   if(false) $("mpanel").scrollIntoView({behavior:"smooth",block:"start"});
-  $("tocard").onclick=()=>openCard(x.id); bindStars($("mpanel"));
+  bindStars($("mpanel"));
   $("mpanel").querySelectorAll("[data-trend]").forEach(b=>b.onclick=()=>openTrend(b.dataset.trend));
-}
-function openCard(id){
-  $("q").value=""; $("filt").value="all"; $("mode").value="name"; rebuild();
-  const i=deck.findIndex(d=>d.id===id); if(i>=0){ idx=i; render(); }
-  location.hash="#cards";
 }
 function passFilters(x){
   const kf=$("f-kyoka").value, rf=$("f-rl").value;
@@ -1870,7 +1582,7 @@ function renderSearchNews(){
       clearTimeout(timer);
       const docs = snap.docs || snap;
       NEWS = docs.map(d=>{ const data = typeof d.data==="function" ? d.data() : (d.data||d); return Object.assign({id:d.id}, data); });
-      newsState="ok"; renderSearchNews(); if(!$("v-cards").hidden) render();
+      newsState="ok"; renderSearchNews();
     }, err=>{ clearTimeout(timer); newsState="off"; renderSearchNews(); });
   }catch(e){ clearTimeout(timer); newsState="off"; renderSearchNews(); }
 })();
@@ -2021,7 +1733,7 @@ function recCard(r,i){
   return '<div class="airec"><h3><span class="rk">'+(i+1)+'</span>'+bandTag(x,r.band!=="unk"?r.band:null)+badge(x)+esc(x.name)+'<span class="sub2">'+metaPrefix(x)+esc(x.pref)+'</span></h3>'+
     (facts.length?'<div class="why">'+esc(facts.join("　"))+'</div>':'')+
     '<dl class="mrows">'+rows.map(([k,v])=>'<dt>'+k+'</dt><dd>'+v+'</dd>').join("")+'</dl>'+
-    '<div class="acts"><button class="btn" data-card="'+x.id+'">カードを見る</button><button class="btn" data-map="'+esc(x.name)+'">地図で見る</button>'+starBtn(x.name)+hpLink(x.name)+'</div></div>';
+    '<div class="acts"><button class="btn" data-map="'+esc(x.name)+'">地図で見る</button>'+starBtn(x.name)+hpLink(x.name)+'</div></div>';
 }
 function checklist(S,list){
   const c=[];
@@ -2063,14 +1775,13 @@ $("ai-go").onclick=async()=>{
   h+='<div class="msheet" style="margin-top:12px"><h2>面談で確認すること</h2><ul>'+checklist(S,list).map(t=>'<li>'+esc(t)+'</li>').join("")+'</ul><div class="sub2">メモ：</div><div style="height:4em;border-bottom:1px dashed var(--line)"></div></div>';
   if(S.moshi==="shinken"&&S.rawHen!=null) h+='<div class="enote" style="margin-top:8px">※難易度は河合塾（Kei-Net）の偏差値です。進研模試の偏差値は河合の尺度へ目安で換算しています（例：進研67≒河合60）。境目の学校は進研模試の合格可能性判定（志望校判定）で確かめてください。</div>';
   $("ai-out").innerHTML=h;
-  $("ai-out").querySelectorAll("[data-card]").forEach(b=>b.onclick=()=>openCard(+b.dataset.card));
   $("ai-out").querySelectorAll("[data-map]").forEach(b=>b.onclick=()=>{ location.hash="#map"; setTimeout(()=>selectUniv(b.dataset.map),80); });
   bindStars($("ai-out"));
 };
 $("ai-clear").onclick=()=>{ $("aiform").reset(); $("ai-out").innerHTML=""; $("ai-status").textContent=""; };
 ["ai-job","ai-study","ai-other","ai-level","ai-kt"].forEach(id=>$(id).addEventListener("keydown",e=>{ if(e.key==="Enter"){ e.preventDefault(); $("ai-go").click(); } }));
 
-shuffleOrder(); rebuild(); showView();
+showView();
 
 window.Searchuniv = Object.freeze({
   version: BUILD.built || "",
