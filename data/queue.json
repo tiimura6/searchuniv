@@ -1,55 +1,6 @@
 {
  "add": [
   {
-   "name": "札幌医科大学",
-   "type": "公立",
-   "pref": "北海道",
-   "hp": "http://web.sapmed.ac.jp/",
-   "cat": "public"
-  },
-  {
-   "name": "札幌市立大学",
-   "type": "公立",
-   "pref": "北海道",
-   "hp": "http://www.scu.ac.jp/",
-   "cat": "public"
-  },
-  {
-   "name": "東北公益文科大学",
-   "type": "公立",
-   "pref": "山形県",
-   "hp": "https://www.koeki-u.ac.jp/",
-   "cat": "public"
-  },
-  {
-   "name": "東北農林専門職大学",
-   "type": "公立",
-   "pref": "山形県",
-   "hp": "https://tpuaf.ac.jp/university/",
-   "cat": "senmon"
-  },
-  {
-   "name": "秋田公立美術大学",
-   "type": "公立",
-   "pref": "秋田県",
-   "hp": "http://www.akibi.ac.jp/",
-   "cat": "public"
-  },
-  {
-   "name": "秋田県立大学",
-   "type": "公立",
-   "pref": "秋田県",
-   "hp": "http://www.akita-pu.ac.jp/",
-   "cat": "public"
-  },
-  {
-   "name": "釧路公立大学",
-   "type": "公立",
-   "pref": "北海道",
-   "hp": "http://www.kushiro-pu.ac.jp/",
-   "cat": "public"
-  },
-  {
    "name": "青森公立大学",
    "type": "公立",
    "pref": "青森県",
@@ -516,6 +467,41 @@
    "type": "公立",
    "pref": "長崎県",
    "hp": "http://sun.ac.jp/",
+   "cat": "public"
+  },
+  {
+   "name": "札幌医科大学",
+   "type": "公立",
+   "pref": "北海道",
+   "hp": "http://web.sapmed.ac.jp/",
+   "cat": "public"
+  },
+  {
+   "name": "札幌市立大学",
+   "type": "公立",
+   "pref": "北海道",
+   "hp": "http://www.scu.ac.jp/",
+   "cat": "public"
+  },
+  {
+   "name": "東北公益文科大学",
+   "type": "公立",
+   "pref": "山形県",
+   "hp": "https://www.koeki-u.ac.jp/",
+   "cat": "public"
+  },
+  {
+   "name": "東北農林専門職大学",
+   "type": "公立",
+   "pref": "山形県",
+   "hp": "https://tpuaf.ac.jp/university/",
+   "cat": "senmon"
+  },
+  {
+   "name": "秋田公立美術大学",
+   "type": "公立",
+   "pref": "秋田県",
+   "hp": "http://www.akibi.ac.jp/",
    "cat": "public"
   },
   {
@@ -4828,6 +4814,42 @@
   {
    "name": "関西学院大学",
    "op": "enrich"
+  },
+  {
+   "name": "秋田県立大学",
+   "op": "add"
+  },
+  {
+   "name": "釧路公立大学",
+   "op": "add"
+  },
+  {
+   "name": "東京大学",
+   "op": "enrich"
+  },
+  {
+   "name": "京都大学",
+   "op": "enrich"
+  },
+  {
+   "name": "大阪大学",
+   "op": "enrich"
+  },
+  {
+   "name": "東北大学",
+   "op": "enrich"
+  },
+  {
+   "name": "名古屋大学",
+   "op": "enrich"
+  },
+  {
+   "name": "九州大学",
+   "op": "enrich"
+  },
+  {
+   "name": "北海道大学",
+   "op": "enrich"
   }
  ],
  "failed": [],
@@ -4845,64 +4867,14 @@
   "国立看護大学校": 1,
   "電動モビリティシステム専門職大学": 1,
   "北海道教育大学": 1,
-  "総合研究大学院大学（大学院のみ）": 1
+  "総合研究大学院大学（大学院のみ）": 1,
+  "札幌医科大学": 1,
+  "札幌市立大学": 1,
+  "東北公益文科大学": 1,
+  "東北農林専門職大学": 1,
+  "秋田公立美術大学": 1
  },
  "enrich": [
-  {
-   "name": "東京大学",
-   "need": [
-    "oc"
-   ]
-  },
-  {
-   "name": "京都大学",
-   "keinet": "1280",
-   "need": [
-    "oc"
-   ]
-  },
-  {
-   "name": "大阪大学",
-   "keinet": "1295",
-   "need": [
-    "oc"
-   ]
-  },
-  {
-   "name": "東北大学",
-   "keinet": "1050",
-   "need": [
-    "oc"
-   ]
-  },
-  {
-   "name": "名古屋大学",
-   "keinet": "1250",
-   "need": [
-    "oc"
-   ]
-  },
-  {
-   "name": "九州大学",
-   "keinet": "1405",
-   "need": [
-    "oc"
-   ]
-  },
-  {
-   "name": "北海道大学",
-   "keinet": "1025",
-   "need": [
-    "oc"
-   ]
-  },
-  {
-   "name": "一橋大学",
-   "keinet": "1165",
-   "need": [
-    "oc"
-   ]
-  },
   {
    "name": "東京科学大学",
    "keinet": "1150",
@@ -10267,6 +10239,32 @@
     "ratios"
    ],
    "note": "大学公式の入試結果から過去3〜5年分に延ばす（info.ratios_replace で置き換え）"
+  },
+  {
+   "name": "一橋大学",
+   "keinet": "1165",
+   "need": [
+    "oc"
+   ]
+  },
+  {
+   "name": "秋田県立大学",
+   "keinet": "1517",
+   "need": [
+    "careers",
+    "extra",
+    "partners"
+   ]
+  },
+  {
+   "name": "釧路公立大学",
+   "keinet": "1510",
+   "need": [
+    "licenses",
+    "careers",
+    "extra",
+    "partners"
+   ]
   }
  ],
  "complete": true,
