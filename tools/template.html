@@ -62,6 +62,7 @@ details summary{cursor:pointer}
 body.wide main,body.wide header{max-width:1320px}
 .sgrid{display:grid;grid-template-columns:minmax(320px,420px) 1fr;gap:16px;align-items:start;margin-top:6px}
 .sleft{display:flex;flex-direction:column;gap:8px;max-height:calc(100vh - 150px);overflow:auto;padding-right:4px}
+.sleft>*{flex-shrink:0}  /* 中身が多いとき結果一覧が潰れないように */
 .sright{position:sticky;top:10px}
 .sbar{display:flex;gap:8px}
 .sbar input{flex:1;font-family:inherit;font-size:14px;border:1px solid var(--line);border-radius:8px;padding:9px 10px;background:var(--panel);color:var(--ink)}
@@ -391,7 +392,8 @@ ul.mini li{font-size:12.5px;margin:2px 0}
 <script>
 // Searchuniv：授業交換アプリと同じページで動かせるよう、全体を1つの関数に閉じ込める。
 // 外から使うものは window.Searchuniv だけに出す（グローバル名を増やさない）。
-(function(){
+/*SU_APP_START*/
+function SU_APP(ROOT, BODY, NAV, BASE){
 
 
 // [大学名, カテゴリ, 設置区分, 所在地, [特色...], 担任メモ]
@@ -521,15 +523,17 @@ function guideBlock(x,ctx){
   if(!rows.length) return "";
   return '<div class="guide"><div class="gh">指導のポイント</div><table class="it">'+rows.map(r=>'<tr><th>'+r[0]+'</th><td>'+r[1]+'</td></tr>').join("")+'</table></div>';
 }
-document.addEventListener("click",e=>{ const a=e.target.closest&&e.target.closest(".simlink"); if(!a) return; e.preventDefault(); e.stopPropagation();
-  if(location.hash==="#map") selectUniv(a.dataset.n); else { location.hash="#map"; setTimeout(()=>selectUniv(a.dataset.n),80); } },true);
+ROOT.addEventListener("click",e=>{ const a=e.target.closest&&e.target.closest(".simlink"); if(!a) return; e.preventDefault(); e.stopPropagation();
+  if(NAV.get()==="map") selectUniv(a.dataset.n); else { NAV.set("map"); setTimeout(()=>selectUniv(a.dataset.n),80); } },true);
 const SU_CANDS_KEY = "searchuniv:cands";
 // 旧キーからの移行（1回だけ）
 try{ localStorage.removeItem("univ_fc_marks_v1"); localStorage.removeItem("searchuniv:marks"); [["su_cands",SU_CANDS_KEY]].forEach(([o,n])=>{ const v=localStorage.getItem(o); if(v!=null && localStorage.getItem(n)==null){ localStorage.setItem(n,v); } localStorage.removeItem(o); }); }catch(e){}
 
 const items = D.map((r,i)=>({id:i,name:r[0],cat:r[1],type:r[2],pref:r[3],feats:r[4],memo:r[5]}));
 
-const $ = id => document.getElementById(id);
+const $ = id => ROOT.getElementById(id);
+// 画面のスクロールを止める（単体ではbody、埋め込み時は親ページ）
+function lockScroll(on){ BODY.classList.toggle("noscroll",on); if(BODY!==document.body) document.documentElement.style.overflow=on?"hidden":""; }
 // 学部・学科の文字列一覧（学科データがあれば「学部 学科」、なければ学部名）
 function facList(f){ const D=f.departments; if(Array.isArray(D)&&D.length){ const out=[]; for(const g of D){ const ds=g.d||[]; if(!ds.length) out.push(g.f); else for(const d of ds) out.push(g.f+" "+d); } return out; } return f.faculties||[]; }
 function esc(s){ return String(s??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c])); }
@@ -591,16 +595,17 @@ function isCorrect(input,name){
 
 // ===== 画面切替 =====
 function showView(){
-  const v=(location.hash||"#map").slice(1);
+  const v=NAV.get()||"map";
   const view=["map","ai","plan","trend"].includes(v)?v:"map";
   for(const id of ["map","ai","plan","trend"]) $("v-"+id).hidden = id!==view;
   if(view==="plan") renderPlan();
   if(view==="trend") renderTrend();
-  document.body.classList.toggle("wide", view==="map");
-  document.querySelectorAll(".tabs a").forEach(a=>a.classList.toggle("on",a.dataset.v===view));
+  BODY.classList.toggle("wide", view==="map");
+  ROOT.querySelectorAll(".tabs a").forEach(a=>a.classList.toggle("on",a.dataset.v===view));
   if(view==="map") initMap();
 }
-window.addEventListener("hashchange",showView);
+NAV.listen(showView);
+ROOT.querySelectorAll(".tabs a[data-v]").forEach(a=>a.addEventListener("click",e=>{ e.preventDefault(); NAV.set(a.dataset.v); }));
 
 // ===== 地図 =====
 const MAP = /*MAP_DATA*/{}/*END_MAP*/;
@@ -630,9 +635,9 @@ function shortName(n){ return n.replace(/（.*?）/g,""); }
 function dotR(){ const k=curVB[2]/HOME_VB[2]; const m=$("jmap").getScreenCTM(); const ppu=(m&&m.a)||1; return Math.max(3.2*k, 4.6/ppu); }
 function scaleMarks(){
   const k=curVB[2]/HOME_VB[2];
-  document.querySelectorAll("#jmap .dot").forEach(c=>c.setAttribute("r",dotR().toFixed(3)));
-  document.querySelectorAll("#jmap .hl,#jmap .pulse").forEach(c=>c.setAttribute("r",(3.4*k).toFixed(3)));
-  const l=document.querySelector("#jmap .lbl"); if(l){ l.setAttribute("font-size",(14*k).toFixed(3)); const c=document.querySelector("#jmap .hl"); l.setAttribute("x",(+c.getAttribute("cx")+5*k).toFixed(2)); l.setAttribute("y",(+c.getAttribute("cy")+3*k).toFixed(2)); }
+  ROOT.querySelectorAll("#jmap .dot").forEach(c=>c.setAttribute("r",dotR().toFixed(3)));
+  ROOT.querySelectorAll("#jmap .hl,#jmap .pulse").forEach(c=>c.setAttribute("r",(3.4*k).toFixed(3)));
+  const l=ROOT.querySelector("#jmap .lbl"); if(l){ l.setAttribute("font-size",(14*k).toFixed(3)); const c=ROOT.querySelector("#jmap .hl"); l.setAttribute("x",(+c.getAttribute("cx")+5*k).toFixed(2)); l.setAttribute("y",(+c.getAttribute("cy")+3*k).toFixed(2)); }
   scheduleLabels();
 }
 // 拡大・移動の最中は名前を並べ直さず、止まってから1回だけ並べ直す（軽くするため）
@@ -645,8 +650,8 @@ let MATCH=null;
 // ===== 詳細データ（学部別難易度・日程・費用・協定校・出典）は別ファイルから読み込む =====
 let DETAIL_READY=false;
 const detailPromise=Promise.all([
-  fetch("detail.json").then(r=>r.ok?r.json():{}).catch(()=>({})),
-  fetch("world.json").then(r=>r.ok?r.json():null).catch(()=>null)
+  fetch(BASE+"detail.json").then(r=>r.ok?r.json():{}).catch(()=>({})),
+  fetch(BASE+"world.json").then(r=>r.ok?r.json():null).catch(()=>null)
 ]).then(([d,w])=>{ for(const [n,v] of Object.entries(d||{})) INFO[n]=Object.assign(INFO[n]||{},v);
   if(w){ WORLD=w; WPATH=Object.fromEntries(WORLD.c.map(c=>[c[0],c[2]])); }
   DETAIL_READY=true;
@@ -666,7 +671,7 @@ const BAND_LABEL={ch:"挑戦",fit:"実力相応",safe:"安全"};
 function bandTag(x,b){ b=b||bandOf(x); return b?'<span class="band '+b+'">'+BAND_LABEL[b]+'</span>':''; }
 function starBtn(name){ const on=CANDS.includes(name); return '<button type="button" class="cbtn'+(on?' on':'')+'" data-star="'+esc(name)+'" title="'+(on?'比較の候補から外す':'比較タブで横並びに比べる候補に入れる')+'">'+(on?'✓ 比較に追加済み':'＋ 比較に追加')+'</button>'; }
 function toggleCand(name){ const i=CANDS.indexOf(name); if(i>=0) CANDS.splice(i,1); else CANDS.push(name); saveCands();
-  document.querySelectorAll('[data-star]').forEach(b=>{ if(b.dataset.star===name){ const on=CANDS.includes(name); b.classList.toggle("on",on); b.textContent=on?'✓ 比較に追加済み':'＋ 比較に追加'; } }); }
+  ROOT.querySelectorAll('[data-star]').forEach(b=>{ if(b.dataset.star===name){ const on=CANDS.includes(name); b.classList.toggle("on",on); b.textContent=on?'✓ 比較に追加済み':'＋ 比較に追加'; } }); }
 function bindStars(root){ (root||document).querySelectorAll('[data-star]').forEach(b=>b.onclick=e=>{ e.stopPropagation(); toggleCand(b.dataset.star); }); }
 saveCands();
 
@@ -904,7 +909,7 @@ $("univlist").innerHTML=items.map(x=>'<option value="'+esc(x.name)+'">').join(""
 
 // ===== 出題内容タブ =====
 let TREND_SEL=[];
-function openTrend(name){ if(!$("uov").hidden){ $("uov").hidden=true; document.body.classList.remove("noscroll"); } TREND_SEL=[name]; $("tq").value=name; location.hash="#trend"; setTimeout(renderTrend,30); }
+function openTrend(name){ if(!$("uov").hidden){ $("uov").hidden=true; lockScroll(false); } TREND_SEL=[name]; $("tq").value=name; NAV.set("trend"); setTimeout(renderTrend,30); }
 function trendHTML(name){
   const x=items.find(i=>i.name===name); if(!x) return "";
   const T=(INFO[name]||{}).qtrend, sub=$("tsub").value, kub=$("tkub").value;
@@ -1097,7 +1102,7 @@ let WORLD_READY=false;
 function worldDefs(){ if(WORLD_READY||!WORLD) return; WORLD_READY=true;
   const d=document.createElement("div"); d.style.cssText="position:absolute;width:0;height:0;overflow:hidden";
   d.innerHTML='<svg><defs><g id="worldbase" transform="scale(0.1)">'+WORLD.c.map(c=>'<path d="'+c[2]+'"/>').join("")+'</g></defs></svg>';
-  document.body.appendChild(d); }
+  BODY.appendChild(d); }
 let WPATH={};
 function isoOf(name){ if(!WORLD) return null; const n=String(name||"").normalize("NFKC").trim(); return WORLD.ja[n]||WORLD.ja[n.replace(/(合衆国|共和国|王国|連邦|人民共和国)$/,"")]||null; }
 function partnerBlock(name){
@@ -1125,13 +1130,13 @@ function partnerBlock(name){
 function openWorldModal(name){
   const P=(INFO[name]||{}).partners; if(!P||!WORLD) return;
   const cs=P.countries.map(c=>({...c,iso:isoOf(c.c)})).filter(c=>c.iso&&WORLD.cent[c.iso]).sort((a,b)=>(b.n||0)-(a.n||0));
-  const src=document.querySelector('.wmapwrap[data-wname="'+CSS.escape(name)+'"] svg'); if(!src) return;
-  let m=$("wmodal"); if(!m){ m=document.createElement("div"); m.id="wmodal"; document.body.appendChild(m); }
+  const src=ROOT.querySelector('.wmapwrap[data-wname="'+CSS.escape(name)+'"] svg'); if(!src) return;
+  let m=$("wmodal"); if(!m){ m=document.createElement("div"); m.id="wmodal"; BODY.appendChild(m); }
   const labels=cs.map(c=>{ const pt=WORLD.cent[c.iso]; return '<text class="wlab" x="'+pt[0]+'" y="'+(pt[1]-4)+'" text-anchor="middle">'+esc(c.c)+' '+(c.n||"")+'</text>'; }).join("");
   m.innerHTML='<div class="wmbox" role="dialog" aria-label="'+esc(name)+'の協定校"><div class="wmhead"><b>'+esc(name)+'　海外の協定校</b><span class="sub2">'+cs.length+'か国・地域'+(P.total?'・'+P.total+'校':'')+'</span><span class="wmbtns"><button type="button" class="btn" data-z="in">＋</button><button type="button" class="btn" data-z="out">－</button><button type="button" class="btn" data-z="reset">全体</button><button type="button" class="btn" data-z="close">閉じる</button></span></div>'+
     '<div class="wmbody"><div class="wmmap">'+src.outerHTML.replace('class="wmap"','class="wmap big"').replace('</svg>','<g class="wlabs">'+labels+'</g></svg>')+'</div>'+
     '<ul class="wmlist">'+cs.map(c=>'<li data-iso="'+c.iso+'"><b>'+esc(c.c)+'</b> '+(c.n?c.n+'校':'')+((c.u||[]).length?'<div class="sub2">'+esc(c.u.join("、"))+'</div>':'')+'</li>').join("")+'</ul></div></div>';
-  m.hidden=false; document.body.classList.add("noscroll");
+  m.hidden=false; lockScroll(true);
   const svg=m.querySelector("svg"), W0=WORLD.w, H0=WORLD.h; let vb=[0,0,W0,H0];
   // 国名ラベルは重ならないものだけ表示（校数の多い国から）。拡大すると増える
   const lab=()=>{ const sc=Math.min(svg.clientWidth/vb[2], svg.clientHeight/vb[3])||1, fs=12/sc, boxes=[];
@@ -1154,15 +1159,15 @@ function openWorldModal(name){
   m.onclick=e=>{ if(e.target===m) closeWorldModal(); };
   requestAnimationFrame(lab);
 }
-function closeWorldModal(){ const m=$("wmodal"); if(m){ m.hidden=true; m.innerHTML=""; } document.body.classList.remove("noscroll"); }
+function closeWorldModal(){ const m=$("wmodal"); if(m){ m.hidden=true; m.innerHTML=""; } lockScroll(!$("uov").hidden); }   // 大学のポップアップが開いていればスクロール停止を続ける
 document.addEventListener("keydown",e=>{ if(e.key==="Escape") closeWorldModal(); });
-document.addEventListener("click",e=>{ const w=e.target.closest&&e.target.closest(".wmapwrap"); if(w&&!e.target.closest("#wmodal")) openWorldModal(w.dataset.wname); });
+ROOT.addEventListener("click",e=>{ const w=e.target.closest&&e.target.closest(".wmapwrap"); if(w&&!e.target.closest("#wmodal")) openWorldModal(w.dataset.wname); });
 // ===== 市町村（拡大したときに境界線と名前を出す）=====
 let MUNI=null, muniLoading=false;
 // 市町村の境界・名前は、拡大したときに初めて読み込む
 const SHOW_MUNI=false;   // 市町村の境界・名前は表示しない（戻すなら true）
 function loadMuni(){ if(!SHOW_MUNI||MUNI||muniLoading) return; muniLoading=true;
-  fetch("muni.json").then(r=>r.ok?r.json():null).then(d=>{ if(d){ MUNI=d; placeLabels(); } }).catch(()=>{}); }
+  fetch(BASE+"muni.json").then(r=>r.ok?r.json():null).then(d=>{ if(d){ MUNI=d; placeLabels(); } }).catch(()=>{}); }
 function placeCities(boxes, ppu, inView, outside){
   const g=$("mlabels"); g.innerHTML=""; const w=curVB[2];
   if(!MUNI&&w<=260) loadMuni();
@@ -1204,7 +1209,7 @@ function placeLabels(){
   const m=svg.getScreenCTM(); const inv=m?m.inverse():null;
   const toU=(x,y)=>{ if(!inv) return [x,y]; const pt=svg.createSVGPoint(); pt.x=x; pt.y=y; const q=pt.matrixTransform(inv); return [q.x,q.y]; };
   const sr=svg.getBoundingClientRect(); const [bx0,by0]=toU(sr.left+4,sr.top+4), [bx1,by1]=toU(sr.right-4,sr.bottom-4);
-  const avoid=[...document.querySelectorAll("#v-map .legend,#v-map .zoomctl")].map(e=>{ const q=e.getBoundingClientRect(); if(!q.width) return null; const [x0,y0]=toU(q.left-3,q.top-3),[x1,y1]=toU(q.right+3,q.bottom+3); return [x0,y0,x1-x0,y1-y0]; }).filter(Boolean);
+  const avoid=[...ROOT.querySelectorAll("#v-map .legend,#v-map .zoomctl")].map(e=>{ const q=e.getBoundingClientRect(); if(!q.width) return null; const [x0,y0]=toU(q.left-3,q.top-3),[x1,y1]=toU(q.right+3,q.bottom+3); return [x0,y0,x1-x0,y1-y0]; }).filter(Boolean);
   const outside=b=>b[0]<bx0||b[1]<by0||b[0]+b[2]>bx1||b[1]+b[3]>by1;
   function layout(reserved){
     const boxes=reserved.concat(avoid); const placed=[], hidden=[];
@@ -1315,12 +1320,12 @@ function findUniv(q){
   return items.find(x=>nz(x.name)===a) || items.find(x=>isCorrect(q,x.name)) || items.find(x=>nz(x.name).includes(a)) || null;
 }
 function clearSelection(){
-  CUR_SEL=null; $("hl").innerHTML=""; $("mpanel").innerHTML=""; $("uov").hidden=true; document.body.classList.remove("noscroll"); $("mq").value=""; tipHide();
+  CUR_SEL=null; $("hl").innerHTML=""; $("mpanel").innerHTML=""; $("uov").hidden=true; lockScroll(false); $("mq").value=""; tipHide();
   renderResults();   // 絞り込み中ならその一覧に戻る。地図の位置はそのまま
   if(!filtersActive()) placeLabels();
 }
 // ポップアップを閉じる：×・背景クリック・Esc（地図の位置はそのまま）
-document.addEventListener("click",e=>{ if(e.target.id==="uclose"||e.target.id==="uov") clearSelection(); });
+ROOT.addEventListener("click",e=>{ if(e.target.id==="uclose"||e.target.id==="uov") clearSelection(); });
 document.addEventListener("keydown",e=>{ if(e.key==="Escape"&&!$("uov").hidden&&($("wmodal")||{hidden:true}).hidden!==false) clearSelection(); });
 function tipHide(){ const t=$("ctip"); if(t) t.hidden=true; }
 function selectUniv(name,keepView){
@@ -1335,8 +1340,8 @@ function selectUniv(name,keepView){
   $("mpanel").innerHTML='<div class="box"><div class="ph"><h3>'+badge(x)+' '+esc(x.name)+' '+fullTag(x.name)+'</h3>'+starBtn(x.name)+'<button type="button" class="tbtn" data-trend="'+esc(x.name)+'">出題内容</button>'+hpLink(x.name)+'</div><div class="meta">'+metaPrefix(x)+esc(x.pref)+'</div><ul class="pfeat">'+x.feats.map(f=>'<li>'+esc(f)+'</li>').join("")+'</ul>'+guideBlock(x)+'<div class="newsslot">'+cardNews(x.name)+'</div>'+infoBlock(x.name)+partnerBlock(x.name)+examBlock(x.name)+extraBlocks(x.name)+reportBox(x.name)+'</div>';
   MATCH=null; LAST_LIST=[]; CUR_SEL=name; renderSearchNews();
   try{ window.dispatchEvent(new CustomEvent("searchuniv:select",{detail:{name}})); }catch(e){}
-  $("mresults").innerHTML=""; $("mcount").textContent=""; if(!filtersActive()) document.querySelectorAll("#jmap .dot.dim").forEach(c=>c.classList.remove("dim"));
-  $("uov").hidden=false; if(!keepView){ document.body.classList.add("noscroll"); $("mpanel").parentElement.scrollTop=0; }
+  $("mresults").innerHTML=""; $("mcount").textContent=""; if(!filtersActive()) ROOT.querySelectorAll("#jmap .dot.dim").forEach(c=>c.classList.remove("dim"));
+  $("uov").hidden=false; if(!keepView){ lockScroll(true); $("mpanel").parentElement.scrollTop=0; }
   if(false) $("mpanel").scrollIntoView({behavior:"smooth",block:"start"});
   bindStars($("mpanel"));
   $("mpanel").querySelectorAll("[data-trend]").forEach(b=>b.onclick=()=>openTrend(b.dataset.trend));
@@ -1368,8 +1373,8 @@ function passFilters(x){
 }
 function kindGroup(x){ const k=kindOf(x); return (k==="国立"||k==="公立"||k==="私立")?k:"その他"; }
 function kindVisible(x){ const on=kindsOn(); return on.size===4||on.has(kindGroup(x)); }
-function applyKindDots(){ const by=new Map(items.map(x=>[x.name,x])); document.querySelectorAll("#jmap .dot").forEach(c=>{ const x=by.get(c.querySelector("title").textContent); c.classList.toggle("off", !!x&&!kindVisible(x)); }); }
-function kindsOn(){ return new Set([...document.querySelectorAll(".fk:checked")].map(e=>e.value)); }
+function applyKindDots(){ const by=new Map(items.map(x=>[x.name,x])); ROOT.querySelectorAll("#jmap .dot").forEach(c=>{ const x=by.get(c.querySelector("title").textContent); c.classList.toggle("off", !!x&&!kindVisible(x)); }); }
+function kindsOn(){ return new Set([...ROOT.querySelectorAll(".fk:checked")].map(e=>e.value)); }
 function filtersActive(){ return $("f-eng").value||$("f-kei").value||$("f-kyoka").value||$("f-rl").value||$("f-meth").value||kindsOn().size<4; }
 const REGION_Q={"北海道":["北海道"],"東北":["青森","岩手","宮城","秋田","山形","福島"],"北海道・東北":["北海道","青森","岩手","宮城","秋田","山形","福島"],"関東":["茨城","栃木","群馬","埼玉","千葉","東京","神奈川"],"首都圏":["埼玉","千葉","東京","神奈川"],"北陸":["新潟","富山","石川","福井"],"甲信越":["山梨","長野","新潟"],"東海":["岐阜","静岡","愛知","三重"],"中部":["新潟","富山","石川","福井","山梨","長野","岐阜","静岡","愛知"],"近畿":["三重","滋賀","京都","大阪","兵庫","奈良","和歌山"],"関西":["滋賀","京都","大阪","兵庫","奈良","和歌山"],"中国":["鳥取","島根","岡山","広島","山口"],"四国":["徳島","香川","愛媛","高知"],"中国・四国":["鳥取","島根","岡山","広島","山口","徳島","香川","愛媛","高知"],"九州":["福岡","佐賀","長崎","熊本","大分","宮崎","鹿児島"],"九州・沖縄":["福岡","佐賀","長崎","熊本","大分","宮崎","鹿児島","沖縄"],"沖縄":["沖縄"]};
 const KIND_Q={"国立":["国立"],"国立大学":["国立"],"公立":["公立"],"公立大学":["公立"],"国公立":["国立","公立"],"国公立大学":["国立","公立"],"私立":["私立"],"私立大学":["私立"],"大学校":["大学校"],"専門職大学":["専門職大学"],"専門職":["専門職大学"]};
@@ -1451,17 +1456,17 @@ function renderResults(){
   LAST_LIST=(qv||filtersActive())?list:[]; renderSearchNews();
   // 地図上で候補の点を強調
   const set=new Set(list.map(x=>x.name));
-  document.querySelectorAll("#jmap .dot").forEach(c=>{ const n=c.querySelector("title").textContent; c.classList.toggle("dim", set.size>0 && !set.has(n)); });
-  applyKindDots(); MATCH=set.size?set:(filtersActive()?new Set():null); if($("labels")&&$("labels").childNodes.length+document.querySelectorAll("#jmap .dot").length) placeLabels();
+  ROOT.querySelectorAll("#jmap .dot").forEach(c=>{ const n=c.querySelector("title").textContent; c.classList.toggle("dim", set.size>0 && !set.has(n)); });
+  applyKindDots(); MATCH=set.size?set:(filtersActive()?new Set():null); if($("labels")&&$("labels").childNodes.length+ROOT.querySelectorAll("#jmap .dot").length) placeLabels();
 }
 $("mq").addEventListener("input",()=>{ CUR_SEL=null; $("hl").innerHTML=""; $("mpanel").innerHTML=""; renderResults(); });
-[$("msort"),$("f-eng"),$("f-kei"),$("f-kyoka"),$("f-rl"),$("f-meth"),...document.querySelectorAll(".fk")].forEach(el=>el.addEventListener("change",()=>{
+[$("msort"),$("f-eng"),$("f-kei"),$("f-kyoka"),$("f-rl"),$("f-meth"),...ROOT.querySelectorAll(".fk")].forEach(el=>el.addEventListener("change",()=>{
   // 学校を選んだ後は検索欄にその校名が入っているので、絞り込みを変えたら校名を消して一覧に戻す
   if($("mpanel").innerHTML&&items.some(x=>x.name===$("mq").value)) $("mq").value="";
   $("mpanel").innerHTML=""; renderResults(); }));
 $("mq").addEventListener("keydown",e=>{ if(e.key==="Enter"){ const l=searchUnivs($("mq").value); if(l.length) selectUniv(l[0].name); } });
-$("mreset").onclick=()=>{ MATCH=null; LAST_LIST=[]; CUR_SEL=null; $("uov").hidden=true; document.body.classList.remove("noscroll"); renderSearchNews(); document.querySelectorAll(".fk").forEach(e=>e.checked=true); applyKindDots(); $("f-eng").value=""; $("f-kei").value=""; $("f-kyoka").value=""; $("f-rl").value=""; $("f-meth").value=""; document.querySelectorAll(".fk").forEach(e=>e.checked=true); $("hl").innerHTML=""; $("mpanel").innerHTML=""; $("mresults").innerHTML=""; $("mcount").textContent=""; $("mq").value=""; document.querySelectorAll("#jmap .dot.dim").forEach(c=>c.classList.remove("dim")); setVB(HOME_VB); };
-window.addEventListener("hashchange",()=>{ if(location.hash==="#map") requestAnimationFrame(()=>scaleMarks()); });
+$("mreset").onclick=()=>{ MATCH=null; LAST_LIST=[]; CUR_SEL=null; $("uov").hidden=true; lockScroll(false); renderSearchNews(); ROOT.querySelectorAll(".fk").forEach(e=>e.checked=true); applyKindDots(); $("f-eng").value=""; $("f-kei").value=""; $("f-kyoka").value=""; $("f-rl").value=""; $("f-meth").value=""; ROOT.querySelectorAll(".fk").forEach(e=>e.checked=true); $("hl").innerHTML=""; $("mpanel").innerHTML=""; $("mresults").innerHTML=""; $("mcount").textContent=""; $("mq").value=""; ROOT.querySelectorAll("#jmap .dot.dim").forEach(c=>c.classList.remove("dim")); setVB(HOME_VB); };
+NAV.listen(()=>{ if(NAV.get()==="map") requestAnimationFrame(()=>scaleMarks()); });
 
 
 // ===== 時事ニュース（db） =====
@@ -1489,7 +1494,7 @@ function renderSearchNews(){
   try{
     db = (window.claude && claude.use) ? await claude.use("db") : null;
     if(!db){ clearTimeout(timer);
-      try{ const r=await fetch("news.json",{cache:"no-cache"}); if(r.ok){ NEWS=await r.json(); newsState="ok"; renderSearchNews(); return; } }catch(e){}
+      try{ const r=await fetch(BASE+"news.json",{cache:"no-cache"}); if(r.ok){ NEWS=await r.json(); newsState="ok"; renderSearchNews(); return; } }catch(e){}
       newsState="off"; renderSearchNews(); return; }
     db.collection("news").orderBy("date","desc").limit(500).onSnapshot(snap=>{
       clearTimeout(timer);
@@ -1572,7 +1577,7 @@ function studentInput(){
   return {moshi, rawHen:raw, hen:raw==null?null:(moshi==="shinken"?shinkenToKawai(raw):raw), job:$("ai-job").value.trim(), study:$("ai-study").value.trim(), other:$("ai-other").value.trim(),
     region:$("ai-region").value, type:$("ai-type").value, kt:num($("ai-kt").value),
     eng:(()=>{ const t=($("ai-eiken").value||"").normalize("NFKC"); const c=t.match(/(\d{4})/); if(c) return +c[1]; const g=t.match(/準1級|準2級|1級|2級/); return g?GRADE_CSE[g[0]]:null; })(), engTxt:($("ai-eiken").value||"").trim(),
-    kyoka:+$("ai-kyoka").value||null, budget:+$("ai-budget").value||null, ways:[...document.querySelectorAll(".aiw:checked")].map(e=>e.value)};
+    kyoka:+$("ai-kyoka").value||null, budget:+$("ai-budget").value||null, ways:[...ROOT.querySelectorAll(".aiw:checked")].map(e=>e.value)};
 }
 function fdiffPick(x,S,groups){
   const F=(INFO[x.name]||{}).fdiff; if(!F||!(F.rows||[]).length||S.hen==null) return null;
@@ -1665,7 +1670,7 @@ function checklist(S,list){
   return c;
 }
 let MK_OFF=new Set(), MSORT2="";
-document.addEventListener("change",e=>{ if(e.target.classList&&e.target.classList.contains("mk")){ if(e.target.checked) MK_OFF.delete(e.target.value); else MK_OFF.add(e.target.value); $("ai-go").click(); }
+ROOT.addEventListener("change",e=>{ if(e.target.classList&&e.target.classList.contains("mk")){ if(e.target.checked) MK_OFF.delete(e.target.value); else MK_OFF.add(e.target.value); $("ai-go").click(); }
   if(e.target.id==="msort2"){ MSORT2=e.target.value; $("ai-go").click(); } });
 $("ai-go").onclick=async()=>{
   if(!DETAIL_READY){ $("ai-status").textContent="データを読み込み中…"; await detailPromise; }
@@ -1688,7 +1693,7 @@ $("ai-go").onclick=async()=>{
   h+='<div class="msheet" style="margin-top:12px"><h2>面談で確認すること</h2><ul>'+checklist(S,list).map(t=>'<li>'+esc(t)+'</li>').join("")+'</ul><div class="sub2">メモ：</div><div style="height:4em;border-bottom:1px dashed var(--line)"></div></div>';
   if(S.moshi==="shinken"&&S.rawHen!=null) h+='<div class="enote" style="margin-top:8px">※難易度は河合塾（Kei-Net）の偏差値です。進研模試の偏差値は河合の尺度へ目安で換算しています（例：進研67≒河合60）。境目の学校は進研模試の合格可能性判定（志望校判定）で確かめてください。</div>';
   $("ai-out").innerHTML=h;
-  $("ai-out").querySelectorAll("[data-map]").forEach(b=>b.onclick=()=>{ location.hash="#map"; setTimeout(()=>selectUniv(b.dataset.map),80); });
+  $("ai-out").querySelectorAll("[data-map]").forEach(b=>b.onclick=()=>{ NAV.set("map"); setTimeout(()=>selectUniv(b.dataset.map),80); });
   bindStars($("ai-out"));
 };
 $("ai-clear").onclick=()=>{ $("aiform").reset(); $("ai-out").innerHTML=""; $("ai-status").textContent=""; };
@@ -1696,14 +1701,23 @@ $("ai-clear").onclick=()=>{ $("aiform").reset(); $("ai-out").innerHTML=""; $("ai
 
 showView();
 
-window.Searchuniv = Object.freeze({
+const API = Object.freeze({
+  apiVersion: 1,
   version: BUILD.built || "",
-  selectUniv: (name)=>{ location.hash="#map"; setTimeout(()=>selectUniv(name),50); },
+  selectUniv: (name)=>{ NAV.set("map"); setTimeout(()=>selectUniv(name),50); },
   openTrend: (name)=>openTrend(name),
   candidates: ()=>CANDS.slice(),
-  showView: (v)=>{ location.hash="#"+v; },
+  showView: (v)=>NAV.set(v),
+  view: ()=>NAV.get()||"map",
 });
-})();
+window.Searchuniv = API;
+return API;
+}
+/*SU_APP_END*/
+// 単体ページとして開いたとき（index.html）。飯村システムからは su-module.js の mount() で起動する
+if(!window.__SU_MODULE__) SU_APP(document, document.body, {
+  get:()=>(location.hash||"").slice(1), set:v=>{ location.hash="#"+v; }, listen:fn=>window.addEventListener("hashchange",fn)
+}, "");
 </script>
 </body>
 </html>

@@ -17,11 +17,13 @@
 - `data/*.json` がデータ本体、`tools/template.html` がページの雛形。`python3 tools/build.py` で `index.html` を作る。
 - 全国の大学の追加と空欄の補完は、`PIPELINE.md` の手順で定期実行が少しずつ進める。
 
-## 授業交換アプリとの統合に向けた約束ごと（2026-11-07〜）
-- スクリプト全体は即時関数で閉じてある。外へ出すのは `window.Searchuniv`（version / selectUniv / openTrend / candidates / showView）だけ。新しい関数をグローバルに置かない。
-- localStorage のキーは `searchuniv:` で始める（旧キーは読み込み時に移行）。
-- まだ残っている衝突の種（統合時に対応）：
-  - 画面切替が `location.hash`（#map #ai #plan #trend）に依存している。
-  - 要素ID（mq, mpanel, uov など）と CSS（body, :root, .band など）が名前空間なし。
-  - アーティファクトの db は `news` パスを使う。
-- 統合方式の候補：A) iframe で埋め込む（最小工数・衝突なし） B) 共通シェル＋各アプリをモジュール化（`#su-root` 配下にCSS/IDを閉じる）。
+## 飯村システム（tiimura6/lesson-swap）との統合（2026-11-07〜）
+- 飯村システムの「🎓 大学検索／🗣 進路面談／⚖ 大学比較／📚 出題内容」の4タブは、この repo の `su-module.js` を直接読み込んで表示する（iframe ではない）。
+- `su-module.js` は `tools/build.py` が `index.html` と同じテンプレートから自動生成する。直接編集しない。
+- 不具合を防ぐ仕組み：
+  - Shadow DOM の中で動くので、CSS・要素ID が飯村システムと混ざらない。
+  - URL の `#` を使わない（画面切替はモジュール内の状態で持ち、`onView` で飯村システムのタブに知らせる）。
+  - モジュールの最上位の名前は `SU_` で始める（`window.CSS` などブラウザ標準を隠さない）。外に出すのは `window.SearchunivModule` と `window.Searchuniv` だけ。
+  - `apiVersion` が合わない・読み込めない・25秒で終わらない場合、飯村システムは再試行ボタンと単体ページへのリンクを出す。エラーは飯村システムの操作ログに残る。
+  - 公開前に `tools/smoke_test.py`（邪魔なCSS・同じIDを持つ親ページの中での動作も確認）を必ず通す。
+- 保存データ（比較候補 `searchuniv:cands`）は同じサイトなので両方で共通。

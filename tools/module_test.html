@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="ja"><head><meta charset="UTF-8"><title>module test</title>
+<style>
+/* わざと邪魔をする親ページのCSS：Searchuniv に漏れないことを確かめる */
+*{color:red !important} .box,.tabs,.band,#mq,#mpanel{display:none !important} body{margin:0;overflow:auto}
+</style></head>
+<body>
+<div id="mq">親ページの #mq（Searchuniv の #mq と衝突しないこと）</div>
+<div id="host"></div>
+<script src="../su-module.js"></script>
+<script>
+window.VIEWS=[];
+window.API=SearchunivModule.mount(document.getElementById("host"),{base:"../",theme:"iimura",onView:v=>VIEWS.push(v),onError:e=>{ window.MOD_ERR=String(e); }});
+</script>
+</body></html>

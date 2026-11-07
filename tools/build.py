@@ -64,8 +64,74 @@ def main():
     for src, dst in (('world', 'world.json'), ('map_muni', 'muni.json')):
         if os.path.exists(os.path.join(ROOT, 'data', src + '.json')):
             open(os.path.join(ROOT, dst), 'w', encoding='utf-8').write(json.dumps(D(src), ensure_ascii=False, separators=(',', ':')))
+    build_module(t)
     miss = [n for n in names if n not in coords]
     print('built index.html (%dKB) + detail.json (%dKB): %d校 / 座標なし %d校 %s' % (len(t.encode())//1024, os.path.getsize(os.path.join(ROOT,'detail.json'))//1024, len(names), len(miss), miss[:10]))
+
+# ===== 飯村システムに組み込むためのモジュール（su-module.js）=====
+# index.html と同じ中身を Shadow DOM の中で動かす。CSS・ID は親ページと完全に分かれる。
+THEME_IIMURA = """
+:host{color-scheme:light;--bg:#f5f5f7;--panel:#fff;--ink:#1d1d1f;--muted:#6e6e73;--line:#e5e5ea;--accent:#0071e3;--accent-soft:#e8f1fc}
+.su-body{font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Hiragino Kaku Gothic ProN","Noto Sans JP","Meiryo",sans-serif;-webkit-font-smoothing:antialiased;background:transparent}
+.su-body>header{display:none}
+.su-body main,.su-body.wide main{max-width:none;margin:0;padding:0 0 24px}
+.sright{top:8px}
+@media (min-width:861px){ .sleft{max-height:calc(100vh - 170px)} }
+.sleft > *{order:3} .sleft > .sbar{order:0} .sleft > .mcount{order:1} .sleft > .mresults{order:2;flex-shrink:0;margin-bottom:6px} .mresults:empty{display:none}
+button.btn,select,input[type=search]{border-radius:10px}
+.uov,#wmodal{z-index:9500}   /* 親ページの固定ヘッダーより手前に */
+"""
+
+def strip_dark(css):
+    out, i = [], 0
+    key = '@media (prefers-color-scheme: dark)'
+    while True:
+        j = css.find(key, i)
+        if j < 0: out.append(css[i:]); break
+        out.append(css[i:j]); k = css.index('{', j); d = 0
+        while True:
+            c = css[k]
+            if c == '{': d += 1
+            elif c == '}':
+                d -= 1
+                if d == 0: break
+            k += 1
+        i = k + 1
+    return ''.join(out)
+
+def build_module(t):
+    css = t[t.index('<style>') + 7:t.index('</style>')]
+    css = re.sub(r'(^|\n|\{)\s*:root\s*\{', lambda m: m.group(1) + ':host{', css)
+    css = re.sub(r'(^|\n)body\{', r'\1.su-body{', css)
+    css = css.replace('body.wide', '.su-body.wide').replace('body.noscroll', '.su-body.noscroll')
+    html = t[t.index('<body>') + 6:t.index('<script>')]
+    js = t[t.index('/*SU_APP_START*/'):t.index('/*SU_APP_END*/')]
+    J = lambda o: json.dumps(o, ensure_ascii=False).replace('</', '<\\/')
+    build = re.search(r'/\*BUILD\*/(.*?)/\*END_BUILD\*/', t, re.S).group(1)
+    mod = """/* Searchuniv モジュール（自動生成・直接編集しない。元は tools/template.html） */
+(function(){
+if(window.SearchunivModule) return;
+const SU_BASE_DEFAULT=(document.currentScript&&document.currentScript.src)?document.currentScript.src.replace(/[^/]*$/,""):"";
+const SU_CSS=""" + J(css) + """, SU_CSS_LIGHT=""" + J(strip_dark(css)) + """, SU_HTML=""" + J(html) + """;   // 名前は SU_ で始める（window.CSS などを隠さないため）
+const SU_THEMES={iimura:""" + J(THEME_IIMURA) + """};
+""" + js + """
+window.SearchunivModule=Object.freeze({
+  apiVersion:1, build:""" + build + """,
+  // host 要素の Shadow DOM に Searchuniv を作る。opts: {base, theme, view, onView(v), onError(e)}
+  mount(host,opts){
+    opts=opts||{}; if(host.__su) return host.__su;
+    const sr=host.shadowRoot||host.attachShadow({mode:"open"});
+    const th=SU_THEMES[opts.theme]||"";
+    sr.innerHTML='<style>'+(th?SU_CSS_LIGHT:SU_CSS)+'</style>'+(th?'<style>'+th+'</style>':'')+'<div class="su-body">'+SU_HTML+'</div>';
+    let cur=opts.view||"map"; const ls=[];
+    const NAV={get:()=>cur, set:v=>{ if(v===cur) return; cur=v; ls.forEach(f=>{ try{ f(); }catch(e){ if(opts.onError) opts.onError(e); } }); if(opts.onView) try{ opts.onView(v); }catch(e){} }, listen:f=>ls.push(f)};
+    const api=SU_APP(sr, sr.querySelector(".su-body"), NAV, opts.base||SU_BASE_DEFAULT);
+    host.__su=api; return api;
+  }
+});
+})();
+"""
+    open(os.path.join(ROOT, 'su-module.js'), 'w', encoding='utf-8').write(mod)
 
 if __name__ == '__main__':
     main()
