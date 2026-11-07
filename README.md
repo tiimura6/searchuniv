@@ -17,3 +17,12 @@
 ## データの更新
 - `data/*.json` がデータ本体、`tools/template.html` がページの雛形。`python3 tools/build.py` で `index.html` を作る。
 - 全国の大学の追加と空欄の補完は、`PIPELINE.md` の手順で定期実行が少しずつ進める。
+
+## 授業交換アプリとの統合に向けた約束ごと（2026-11-07〜）
+- スクリプト全体は即時関数で閉じてある。外へ出すのは `window.Searchuniv`（version / selectUniv / openTrend / candidates / showView）だけ。新しい関数をグローバルに置かない。
+- localStorage のキーは `searchuniv:` で始める（旧キーは読み込み時に移行）。
+- まだ残っている衝突の種（統合時に対応）：
+  - 画面切替が `location.hash`（#map #ai #plan #trend）に依存している。
+  - 要素ID（mq, mpanel, uov など）と CSS（body, :root, .band など）が名前空間なし。
+  - アーティファクトの db は `news` パスを使う。
+- 統合方式の候補：A) iframe で埋め込む（最小工数・衝突なし） B) 共通シェル＋各アプリをモジュール化（`#su-root` 配下にCSS/IDを閉じる）。

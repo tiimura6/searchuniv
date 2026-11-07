@@ -473,6 +473,10 @@ ul.mini li{font-size:12.5px;margin:2px 0}
 </main>
 
 <script>
+// Searchuniv：授業交換アプリと同じページで動かせるよう、全体を1つの関数に閉じ込める。
+// 外から使うものは window.Searchuniv だけに出す（グローバル名を増やさない）。
+(function(){
+
 const CATS = {
   teidai:  {label:"旧帝大＋難関国立", color:"var(--c-teidai)"},
   kanto:   {label:"関東の国公立", color:"var(--c-kanto)"},
@@ -625,7 +629,10 @@ function guideBlock(x,ctx){
 }
 document.addEventListener("click",e=>{ const a=e.target.closest&&e.target.closest(".simlink"); if(!a) return; e.preventDefault(); e.stopPropagation();
   if(location.hash==="#map") selectUniv(a.dataset.n); else { location.hash="#map"; setTimeout(()=>selectUniv(a.dataset.n),80); } },true);
-const LS_KEY = "univ_fc_marks_v1";
+const LS_KEY = "searchuniv:marks";
+const SU_CANDS_KEY = "searchuniv:cands";
+// 旧キーからの移行（1回だけ）
+try{ [["univ_fc_marks_v1",LS_KEY],["su_cands",SU_CANDS_KEY]].forEach(([o,n])=>{ const v=localStorage.getItem(o); if(v!=null && localStorage.getItem(n)==null){ localStorage.setItem(n,v); } localStorage.removeItem(o); }); }catch(e){}
 let marks = {};
 try { marks = JSON.parse(localStorage.getItem(LS_KEY) || "{}"); } catch(e){ marks = {}; }
 function saveMarks(){ try { localStorage.setItem(LS_KEY, JSON.stringify(marks)); } catch(e){} }
@@ -927,8 +934,8 @@ const detailPromise=Promise.all([
   if(!$("v-plan").hidden) renderPlan(); });
 // ===== 候補リスト（☆）=====
 // この端末のブラウザにだけ保存（個人名は扱わない）。保存できない環境では画面を開いている間だけ保持。
-let CANDS=[]; try{ CANDS=JSON.parse(localStorage.getItem("su_cands")||"[]").filter(n=>items.some(x=>x.name===n)); }catch(e){ CANDS=[]; }
-function saveCands(){ try{ localStorage.setItem("su_cands",JSON.stringify(CANDS)); }catch(e){} const c=$("ccount"); if(c) c.textContent=CANDS.length?"（"+CANDS.length+"）":""; }
+let CANDS=[]; try{ CANDS=JSON.parse(localStorage.getItem(SU_CANDS_KEY)||"[]").filter(n=>items.some(x=>x.name===n)); }catch(e){ CANDS=[]; }
+function saveCands(){ try{ localStorage.setItem(SU_CANDS_KEY,JSON.stringify(CANDS)); }catch(e){} const c=$("ccount"); if(c) c.textContent=CANDS.length?"（"+CANDS.length+"）":""; }
 // 面談タブに入れた生徒の学力（偏差値・共テ得点率）から、挑戦／実力相応／安全の目印を付ける
 function studentLevel(){ const num=v=>{ const m=String(v||"").normalize("NFKC").match(/[\d.]+/); return m?+m[0]:null; };
   const raw=num(($("ai-level")||{}).value), mo=($("ai-moshi")||{}).value; return {hen:raw==null?null:(mo==="shinken"?shinkenToKawai(raw):raw), kt:num(($("ai-kt")||{}).value)}; }
@@ -1885,6 +1892,15 @@ $("ai-clear").onclick=()=>{ $("aiform").reset(); $("ai-out").innerHTML=""; $("ai
 ["ai-job","ai-study","ai-other","ai-level","ai-kt"].forEach(id=>$(id).addEventListener("keydown",e=>{ if(e.key==="Enter"){ e.preventDefault(); $("ai-go").click(); } }));
 
 shuffleOrder(); rebuild(); showView();
+
+window.Searchuniv = Object.freeze({
+  version: BUILD.built || "",
+  selectUniv: (name)=>{ location.hash="#map"; setTimeout(()=>selectUniv(name),50); },
+  openTrend: (name)=>openTrend(name),
+  candidates: ()=>CANDS.slice(),
+  showView: (v)=>{ location.hash="#"+v; },
+});
+})();
 </script>
 </body>
 </html>
