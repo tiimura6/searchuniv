@@ -1,3 +1,5 @@
+> **移転しました（2026-11-07）**：Searchuniv は飯村システム（`tiimura6/lesson-swap` の `searchuniv/`）に統合しました。このリポジトリは更新を止めています。公開ページは https://tiimura6.github.io/lesson-swap/searchuniv/ 。
+
 # Searchuniv
 
 高校の進路指導向けの大学検索・面談アプリ（フラッシュカード機能は2026-11-07に削除）。国公立・私立大学、大学校、専門職大学（短大を除く）110校を収録。
