@@ -20970,7 +20970,8 @@
 "https://search.keinet.ne.jp/1230/outline/campus",
 "https://search.keinet.ne.jp/1230/outline/department",
 "https://tdb.shizuoka.ac.jp/rdb/public/Default2.aspx?id=11268&l=0&t=35",
-"https://search.keinet.ne.jp/1230/general/exam_subject"
+"https://search.keinet.ne.jp/1230/general/exam_subject",
+"https://passnavi.obunsha.co.jp/univ/0470/eiken/"
 ],
 "kyotsu": {
 "kamoku": "人文社会科学部は文型（6教科8科目程度）、教育学部は選択型（6教科7〜8科目）",
@@ -21569,7 +21570,8 @@
 "schedule": "2026-11-06",
 "money": "2026-11-06",
 "departments": "2026-11-06",
-"ratios": "2026-11-06"
+"ratios": "2026-11-06",
+"eng": "2026-11-07"
 },
 "schedule": {
 "year": "2027年度入試",
@@ -21709,6 +21711,43 @@
 }
 ],
 "note": "河合塾Kei-Netの一般選抜入試結果より（倍率＝受験者／合格者）"
+},
+"eng": {
+"year": "2026年度入試（パスナビ掲載）",
+"rows": [
+{
+"kubun": "総合型",
+"name": "総合型選抜（専門学科および総合学科枠）",
+"use": "出願資格",
+"level": "英検準2級",
+"grade": "準2級",
+"tests": "英検",
+"faculties": "人文社会科学部［昼間コース］経済学科",
+"note": ""
+},
+{
+"kubun": "推薦",
+"name": "学校推薦型選抜（共テを課す）",
+"use": "出願資格",
+"level": "英検2級",
+"grade": "2級",
+"tests": "英検",
+"faculties": "教育学部 学校教育教員養成課程 教科教育学専攻〔英語教育専修〕",
+"note": ""
+},
+{
+"kubun": "総合型",
+"name": "総合型選抜（全学科枠、専門学科および総合学科枠）",
+"use": "出願資格",
+"level": "英検準2級",
+"grade": "準2級",
+"tests": "英検",
+"faculties": "グローバル共創科学部 グローバル共創科学科",
+"note": ""
+}
+],
+"summary": "パスナビ掲載は経済学科・グローバル共創科学部の総合型（英検準2級）と教育学部英語教育専修の推薦（英検2級）を出願資格に使うもののみ。情報・理・工・農学部は掲載なし。",
+"note": "パスナビは「昨年度の入試情報」と表示（表は2026年度入試情報）。最新の募集要項で確認"
 }
 },
 "広島大学": {
@@ -21760,7 +21799,9 @@
 "https://www.hiroshima-u.ac.jp/index.php/en/research/news?page=2",
 "https://www.hiroshima-u.ac.jp/news/97228",
 "https://www.hiroshima-u.ac.jp/news/93738",
-"https://search.keinet.ne.jp/1360/general/exam_subject"
+"https://search.keinet.ne.jp/1360/general/exam_subject",
+"https://passnavi.obunsha.co.jp/univ/0720/eiken/?facultyID=015",
+"https://passnavi.obunsha.co.jp/univ/0720/eiken/"
 ],
 "kyotsu": {
 "kamoku": "前期は文型・理型・6教科7科目など、後期は3教科4科目〜5教科7科目",
@@ -22414,7 +22455,8 @@
 "schedule": "2026-11-06",
 "money": "2026-11-06",
 "departments": "2026-11-06",
-"ratios": "2026-11-06"
+"ratios": "2026-11-06",
+"eng": "2026-11-07"
 },
 "fdiff": {
 "year": "2027年度入試用",
@@ -22980,6 +23022,61 @@
 }
 ],
 "note": "河合塾Kei-Netの一般選抜入試結果より（倍率＝受験者／合格者）"
+},
+"eng": {
+"year": "2027年度入試（一般選抜は2026年度の情報）",
+"rows": [
+{
+"kubun": "一般",
+"name": "一般選抜（前期・一部後期）",
+"use": "みなし満点",
+"level": "CEFR B2（英検・TEAP(RLWS)・IELTS）",
+"tests": "英検・TEAP・IELTS",
+"faculties": "教育学部 第一類〜第五類",
+"note": "共テ外国語（英語）を満点に換算（パスナビ表記「換算 満点」）。CEFRの詳細は募集要項参照。2026年度の情報"
+},
+{
+"kubun": "推薦",
+"name": "学校推薦型選抜 Ⅱ型",
+"use": "みなし満点",
+"level": "英検準1級／TEAP 309／IELTS 5.5",
+"grade": "準1級",
+"tests": "英検・TEAP・IELTS",
+"faculties": "教育学部 国語文化教育学・家政教育学プログラム",
+"note": "共テ英語を満点に換算"
+},
+{
+"kubun": "総合型",
+"name": "総合型選抜 Ⅱ型",
+"use": "みなし満点",
+"level": "英検準1級／TEAP 309／IELTS 5.5",
+"grade": "準1級",
+"tests": "英検・TEAP・IELTS",
+"faculties": "教育学部 第一類（特別支援）・第二類・第三類（英語文化）・第四類・第五類の各プログラム",
+"note": "共テ英語を満点に換算"
+},
+{
+"kubun": "総合型",
+"name": "総合型選抜 Ⅱ型",
+"use": "加点",
+"level": "英検準1級／TEAP 309／IELTS 5.5で20点、英検1級／TEAP 375／IELTS 7.0で40点、IELTS 8.5で60点",
+"grade": "準1級",
+"tests": "英検・TEAP・IELTS",
+"faculties": "教育学部 第三類 英語文化教育学プログラム",
+"note": "第2次選考に加点"
+},
+{
+"kubun": "総合型",
+"name": "総合型選抜 Ⅰ型",
+"use": "任意提出（参考）",
+"level": "級・スコア指定なし",
+"tests": "英検・TEAP・IELTS",
+"faculties": "教育学部 第一類 初等教育学プログラム",
+"note": "パスナビ表記「出願 参考」"
+}
+],
+"summary": "教育学部では一般選抜でCEFR B2以上、推薦・総合型Ⅱ型で英検準1級等以上を共テ英語の満点に換算。英語文化教育学プログラムは級に応じて加点もある。",
+"note": "取得できたのはパスナビの教育学部ページのみ。大学トップのページでは他学部（総合科学・文・法・経済・理・医・歯・薬・工・生物生産・情報科学）に掲載が見当たらなかったが、学部別ページは未確認。最新の募集要項で確認"
 }
 },
 "岡山大学": {
@@ -32621,7 +32718,8 @@
 "https://search.keinet.ne.jp/2200/outline/expense",
 "https://search.keinet.ne.jp/2200/outline/department",
 "https://raweb1.jm.aoyama.ac.jp/aguhp/k05/resid/S001464/868",
-"https://www.suntory.co.jp/sfnd/prize_ssah/detail/2007sf1.html"
+"https://www.suntory.co.jp/sfnd/prize_ssah/detail/2007sf1.html",
+"https://passnavi.obunsha.co.jp/univ/2260/eiken/"
 ],
 "kyotsu": {
 "kamoku": "1教科1科目（個別学部B方式）〜5教科6科目（史学科6科目型）",
@@ -32804,7 +32902,8 @@
 "schedule": "2026-11-06",
 "money": "2026-11-06",
 "departments": "2026-11-06",
-"ratios": "2026-11-06"
+"ratios": "2026-11-06",
+"eng": "2026-11-07"
 },
 "fdiff": {
 "year": "2027年度入試用",
@@ -33346,6 +33445,93 @@
 }
 ],
 "note": "河合塾Kei-Net掲載値（2025・2026年度入試）"
+},
+"eng": {
+"year": "2027年度入試（一般選抜は2026年度の情報）",
+"rows": [
+{
+"kubun": "一般",
+"name": "一般選抜（個別学部日程B方式）",
+"use": "加点",
+"level": "CEFR C1（英検CSE・TEAP(RLWS)・IELTS）で15点、IELTS CEFR B2で10点、B1で5点",
+"tests": "英検CSE・TEAP・IELTS",
+"faculties": "国際政治経済学部（国際政治・国際経済・国際コミュニケーション学科）",
+"note": "総合点に加点。英検CSE・TEAPのCEFR A2は出願のみ（加点なし）。CEFRの詳細は募集要項参照。2026年度の情報"
+},
+{
+"kubun": "一般",
+"name": "一般選抜（個別学部日程A方式）",
+"use": "出願資格",
+"level": "英検CSE 2100／TEAP 260（RLWS）／IELTS 4.5",
+"cse": 2100,
+"tests": "英検・TEAP・IELTS",
+"faculties": "総合文化政策学部 総合文化政策学科",
+"note": "2026年度の情報"
+},
+{
+"kubun": "総合型",
+"name": "自己推薦",
+"use": "出願資格",
+"level": "英検準1級／TEAP 300／IELTS 5.5",
+"grade": "準1級",
+"tests": "英検・TEAP・IELTS",
+"faculties": "文学部 英米文学科",
+"note": ""
+},
+{
+"kubun": "総合型",
+"name": "自己推薦（英語資格試験高得点者）",
+"use": "出願資格",
+"level": "英検準1級・CSE 2304／TEAP 300／IELTS 5.5",
+"cse": 2304,
+"grade": "準1級",
+"tests": "英検・TEAP・IELTS",
+"faculties": "地球社会共生学部 地球社会共生学科",
+"note": "英検は準1級合格、または1級受験でCSE2304以上。海外留学・ボランティア等の自己推薦は英検2級・CSE1980／TEAP 250／IELTS 4.5"
+},
+{
+"kubun": "推薦",
+"name": "全国高等学校キリスト者推薦",
+"use": "出願資格",
+"level": "英検2級（総合文化政策はTEAP 226／IELTS 4.0も、地球社会共生はCSE1980／TEAP 250／IELTS 4.5も）",
+"grade": "2級",
+"tests": "英検・TEAP・IELTS",
+"faculties": "経済学部・総合文化政策学部・地球社会共生学部",
+"note": ""
+},
+{
+"kubun": "推薦",
+"name": "全国高等学校キリスト者推薦",
+"use": "出願資格",
+"level": "英検CSE 2304／IELTS 5.0",
+"cse": 2304,
+"tests": "英検・IELTS",
+"faculties": "国際政治経済学部（3学科）",
+"note": "英検は2級以上を受験"
+},
+{
+"kubun": "総合型",
+"name": "スポーツに優れた者",
+"use": "出願資格",
+"level": "英検CSE 1950／TEAP 225／IELTS 4.0",
+"cse": 1950,
+"tests": "英検・TEAP・IELTS",
+"faculties": "国際政治経済学部・経営学部",
+"note": "経営学部は出願欄が2列（CSE 1950／1700、TEAP 225／135）でその他要件あり。総合文化政策学部は英検準2級"
+},
+{
+"kubun": "総合型",
+"name": "理工系女子特別入学者選抜",
+"use": "出願資格",
+"level": "英検CSE 1980／TEAP 225／IELTS 4.0",
+"cse": 1980,
+"tests": "英検・TEAP・IELTS",
+"faculties": "理工学部（物理科学・電気電子工・機械創造工・情報テクノロジー学科）",
+"note": ""
+}
+],
+"summary": "一般選抜では国際政治経済学部（個別B）が英検CSE等のCEFRに応じて総合点に加点、総合文化政策学部（個別A）がCSE2100等を出願資格とする。総合型・推薦では学部ごとに英検2級〜準1級、CSE1950〜2304等を出願資格に使う。",
+"note": "パスナビの利用区分は「出願」「参考」「加点」で、行ごとの区分は一部しか読み取れていない。文学部英米文学科の一般（個別学部D）は級・スコア指定なし（英検は合格級とCSEの両方が必要）。教育人間科学・法・社会情報・コミュニティ人間科学部、統計データサイエンス学環は掲載なし。最新の募集要項で確認"
 }
 },
 "立教大学": {
@@ -34408,7 +34594,8 @@
 "https://search.keinet.ne.jp/2242/outline/campus",
 "https://search.keinet.ne.jp/2242/outline/expense",
 "https://search.keinet.ne.jp/2242/outline/department",
-"https://nrid.nii.ac.jp/ja/nrid/1000090191337"
+"https://nrid.nii.ac.jp/ja/nrid/1000090191337",
+"https://passnavi.obunsha.co.jp/univ/2680/eiken/"
 ],
 "kyotsu": {
 "kamoku": "3教科3科目（単独3教科型）〜5教科6科目（法学部単独5教科型）",
@@ -34943,7 +35130,8 @@
 "schedule": "2026-11-06",
 "money": "2026-11-06",
 "departments": "2026-11-06",
-"ratios": "2026-11-06"
+"ratios": "2026-11-06",
+"eng": "2026-11-07"
 },
 "fdiff": {
 "year": "2027年度入試用",
@@ -35323,6 +35511,94 @@
 }
 ],
 "note": "河合塾Kei-Net掲載値（2025・2026年度入試）。全学計はページ取得範囲で確認できず。各学部の代表学科・学部別一般選抜の行"
+},
+"eng": {
+"year": "2027年度入試（一般選抜は2026年度の情報）",
+"rows": [
+{
+"kubun": "一般",
+"name": "一般選抜（英語外部試験利用）",
+"use": "得点換算",
+"level": "英検CSE 1728／TEAP 135（RLWS）",
+"cse": 1728,
+"tests": "英検・TEAP",
+"faculties": "経済学部（全学科）",
+"note": "英検は2級以上。150点満点に換算。2026年度の情報"
+},
+{
+"kubun": "一般",
+"name": "一般選抜（英語外部試験利用）",
+"use": "得点換算",
+"level": "英検CSE 2304／TEAP 280（RLWS）／IELTS 4.5",
+"cse": 2304,
+"tests": "英検・TEAP・IELTS",
+"faculties": "総合政策学部（政策科学科・国際政策文化学科）",
+"note": "50点満点に換算し個別試験の得点に加算。2026年度の情報"
+},
+{
+"kubun": "一般",
+"name": "一般選抜（英語外部試験利用）",
+"use": "得点換算",
+"level": "国際経営：英検CSE 1980／TEAP 225／IELTS 4.0（200点満点）、国際情報：英検CSE 2067／TEAP 250／IELTS 4.5（150点満点）",
+"cse": 1980,
+"tests": "英検・TEAP・IELTS",
+"faculties": "国際経営学部・国際情報学部",
+"note": "国際経営は英検2級以上、国際情報は英検準1級以上。2026年度の情報"
+},
+{
+"kubun": "一般",
+"name": "一般選抜（英語外部試験利用）",
+"use": "出願資格",
+"level": "英検2級かつCSE 1980／TEAP 225（RLWS）／IELTS 4.0",
+"cse": 1980,
+"grade": "2級",
+"tests": "英検・TEAP・IELTS",
+"faculties": "文学部 人文社会学科（英語文学文化専攻以外・学びのパスポートプログラム）",
+"note": "英語文学文化専攻は英検2級かつCSE 2120／TEAP 270／IELTS 4.5。2026年度の情報"
+},
+{
+"kubun": "一般",
+"name": "一般選抜（英語外部試験利用）",
+"use": "出願資格",
+"level": "英検CSE 2140（R575・W575・L495・S495）／TEAP 267（RLWS）／IELTS R5.5・W5.5・L4.0・S4.0",
+"cse": 2140,
+"tests": "英検・TEAP・IELTS",
+"faculties": "基幹理工（物理・応用化学・生命科学）・社会理工・先進理工（精密機械・電気電子情報通信）",
+"note": "英検は準1級以上。基幹理工 数学科・先進理工 情報工学科はCSE 2300（各技能575）／TEAP 309／IELTS各5.5。2026年度の情報"
+},
+{
+"kubun": "一般",
+"name": "一般選抜（英語外部試験利用）",
+"use": "出願資格",
+"level": "英検CSE 2150／TEAP 225（RLWS）／IELTS 4.0",
+"cse": 2150,
+"tests": "英検・TEAP・IELTS",
+"faculties": "商学部 フリーメジャーコース",
+"note": "英検は2級以上。2026年度の情報"
+},
+{
+"kubun": "総合型",
+"name": "英語運用能力特別入試",
+"use": "出願資格",
+"level": "英検1級／TEAP 300（R70・L70・W70・S70）／IELTS 6.0",
+"grade": "1級",
+"tests": "英検・TEAP・IELTS",
+"faculties": "法学部（全学科）",
+"note": ""
+},
+{
+"kubun": "総合型",
+"name": "外国語能力特別・自己推薦・スポーツ系特別ほか",
+"use": "出願資格",
+"level": "経済：CSE 2200／TEAP 280／IELTS 5.0、商：英検準1級／TEAP 280／IELTS 6.0、文：CSE 1980／TEAP 225／IELTS 4.0、国際経営：CSE 2304／IELTS 5.5、スポーツ情報：CSE 1700／TEAP 135",
+"cse": 1700,
+"tests": "英検・TEAP・IELTS",
+"faculties": "経済・商・文・国際経営・スポーツ情報学部",
+"note": "英検の受験級の条件あり（経済は2級以上、国際経営は準1級以上、スポーツ情報は準2級以上など）"
+}
+],
+"summary": "一般選抜（英語外部試験利用）は経済・総合政策・国際経営・国際情報で英検CSE等を得点換算、文・理工系・商（FMC）でCSE1980〜2300等を出願資格に使う。総合型は法学部が英検1級等、他学部はCSE1700〜2304等が出願資格。",
+"note": "共通テスト利用・学校推薦型には外部試験の記載なし。2026年度一般選抜で法学部・商学部（FMC以外）・スポーツ情報学部は掲載なし。最新の募集要項で確認"
 }
 },
 "法政大学": {
@@ -35369,7 +35645,8 @@
 "https://search.keinet.ne.jp/2279/outline/campus",
 "https://search.keinet.ne.jp/2279/outline/expense",
 "https://search.keinet.ne.jp/2279/outline/department",
-"https://nrid.nii.ac.jp/ja/nrid/1000070143352"
+"https://nrid.nii.ac.jp/ja/nrid/1000070143352",
+"https://passnavi.obunsha.co.jp/univ/3050/eiken/"
 ],
 "kyotsu": {
 "kamoku": "2教科2科目（グローバル教養B方式）〜6教科7科目（C方式）",
@@ -35970,7 +36247,8 @@
 "schedule": "2026-11-06",
 "money": "2026-11-06",
 "departments": "2026-11-06",
-"ratios": "2026-11-06"
+"ratios": "2026-11-06",
+"eng": "2026-11-07"
 },
 "fdiff": {
 "year": "2027年度入試用",
@@ -36378,6 +36656,96 @@
 }
 ],
 "note": "河合塾Kei-Net掲載値（2025・2026年度入試）。学部行は各学部の代表学科・A方式"
+},
+"eng": {
+"year": "2027年度入試（一般選抜は2026年度の情報）",
+"rows": [
+{
+"kubun": "一般",
+"name": "一般選抜（英語外部試験利用入試）",
+"use": "出願資格",
+"level": "英検準1級／TEAP 309（RLWS）／IELTS 5.5",
+"grade": "準1級",
+"tests": "英検・TEAP・IELTS",
+"faculties": "法学部（法律・国際政治・政治）、文学部 英文学科、経済学部 国際経済学科、国際文化学部",
+"note": "2026年度の情報"
+},
+{
+"kubun": "一般",
+"name": "一般選抜（英語外部試験利用入試）",
+"use": "出願資格",
+"level": "英検2級／TEAP 225（RLWS）／IELTS 4.0",
+"grade": "2級",
+"tests": "英検・TEAP・IELTS",
+"faculties": "社会・経営・人間環境・現代福祉・キャリアデザイン・スポーツ健康・情報科学・デザイン工・理工・生命科学部の各学科",
+"note": "2026年度の情報"
+},
+{
+"kubun": "一般",
+"name": "一般選抜（A方式・個別）",
+"use": "得点換算",
+"level": "英検準1級かつCSE 2350／IELTS 6.0で175点、英検1級／IELTS 6.5で185点、IELTS 7.0で200点",
+"cse": 2350,
+"grade": "準1級",
+"tests": "英検・IELTS",
+"faculties": "グローバル教養学部",
+"note": "個別試験の英語に換算。2026年度の情報"
+},
+{
+"kubun": "一般",
+"name": "一般選抜（英語外部試験利用入試）",
+"use": "得点換算",
+"level": "英検準1級かつCSE 2500／IELTS 6.0で130点、英検1級／IELTS 6.5で140点、IELTS 7.0で150点",
+"cse": 2500,
+"grade": "準1級",
+"tests": "英検・IELTS",
+"faculties": "グローバル教養学部",
+"note": "個別試験の英語に換算。2026年度の情報"
+},
+{
+"kubun": "共テ利用",
+"name": "大学入学共通テスト利用入試B方式（3教科）",
+"use": "出願資格",
+"level": "英検1級、または準1級かつCSE 2350／IELTS 6.0",
+"cse": 2350,
+"grade": "準1級",
+"tests": "英検・IELTS",
+"faculties": "グローバル教養学部",
+"note": "2026年度の情報"
+},
+{
+"kubun": "総合型",
+"name": "英語外部試験利用自己推薦",
+"use": "出願資格",
+"level": "英検CSE 2304／TEAP 309（S60・W90）／IELTS 6.0（S4.0・W4.0）",
+"cse": 2304,
+"tests": "英検・TEAP・IELTS",
+"faculties": "法学部 国際政治学科",
+"note": "パスナビ表記「出願 参考」"
+},
+{
+"kubun": "総合型",
+"name": "英語外部試験利用自己推薦・分野優秀者・グローバル体験公募推薦",
+"use": "出願資格",
+"level": "英検準1級／TEAP 309／IELTS 5.5（経営戦略学科はTEAP 295／IELTS 5.0）",
+"grade": "準1級",
+"tests": "英検・TEAP・IELTS",
+"faculties": "文学部 英文学科、国際文化学部、経営学部 経営戦略学科",
+"note": "グローバル教養学部の自己推薦（S基準）はIELTS 7.0"
+},
+{
+"kubun": "推薦",
+"name": "公募推薦",
+"use": "任意提出（参考）",
+"level": "英検CSE 1980（応用情報工学科）／1850（経営システム工学科）",
+"cse": 1850,
+"tests": "英検",
+"faculties": "理工学部 応用情報工学科・経営システム工学科",
+"note": "パスナビ表記「参考」。創生科学科は級・スコア指定なし"
+}
+],
+"summary": "一般選抜の英語外部試験利用入試は、法・文英文・国際経済・国際文化が英検準1級等、他の多くの学部が英検2級等を出願資格とする。グローバル教養学部は英検準1級+CSE2350等で個別英語を得点換算。総合型は学科ごとに英検準1級・CSE2304等。",
+"note": "情報科学部・キャリアデザイン学部・現代福祉学部などの自己推薦は級・スコア指定なし（英検はCSEスコアの記載が必要などの条件あり）。キャリアデザイン学部の商業学科等対象公募推薦は英検準2級。最新の募集要項で確認"
 }
 },
 "同志社大学": {
@@ -36426,7 +36794,10 @@
 "https://search.keinet.ne.jp/2498/outline/expense",
 "https://search.keinet.ne.jp/2498/outline/department",
 "https://phys.org/rss-feed/partners/doshisha-university/",
-"https://researchmap.jp/read0201310"
+"https://researchmap.jp/read0201310",
+"https://passnavi.obunsha.co.jp/univ/3990/eiken/",
+"https://passnavi.obunsha.co.jp/univ/3990/eiken/?facultyID=030",
+"https://passnavi.obunsha.co.jp/univ/3990/eiken/?facultyID=060"
 ],
 "kyotsu": {
 "kamoku": "1教科1科目（神学部・英文A方式）〜5教科5科目（哲学科）",
@@ -36908,7 +37279,8 @@
 "schedule": "2026-11-06",
 "money": "2026-11-06",
 "departments": "2026-11-06",
-"ratios": "2026-11-06"
+"ratios": "2026-11-06",
+"eng": "2026-11-07"
 },
 "fdiff": {
 "year": "2027年度入試用",
@@ -37244,6 +37616,41 @@
 }
 ],
 "note": "河合塾Kei-Net掲載値（2025・2026年度入試）。学部別はページ取得範囲で抽出できず未収録"
+},
+"eng": {
+"year": "2027年度入試",
+"rows": [
+{
+"kubun": "総合型",
+"name": "アドミッションズオフィス方式",
+"use": "出願資格",
+"level": "TEAP 280／IELTS 5.5",
+"tests": "TEAP・IELTS",
+"faculties": "商学部 商学科＜フレックス複合コース＞",
+"note": "英検・英検CSEの欄は空欄"
+},
+{
+"kubun": "総合型",
+"name": "自己推薦",
+"use": "出願資格",
+"level": "英検準2級／IELTS 4.0",
+"grade": "準2級",
+"tests": "英検・IELTS",
+"faculties": "心理学部 心理学科",
+"note": ""
+},
+{
+"kubun": "総合型",
+"name": "自己推薦（教育と文化に関するグローバル／ローカルな活動の経験者）",
+"use": "出願資格",
+"level": "英検 級指定なし",
+"tests": "英検",
+"faculties": "社会学部 教育文化学科",
+"note": ""
+}
+],
+"summary": "パスナビ掲載は総合型の3学部（商学部フレックス複合コースのTEAP280等、心理学部の英検準2級等、社会学部教育文化学科の英検級指定なし）を出願に使うもののみ。一般選抜・共テ利用には英語外部試験の記載なし。",
+"note": "パスナビは学部別表示で、商・心理・社会学部のページを確認。他学部は大学トップのページで掲載が見当たらなかったが、学部別ページは未確認。最新の募集要項で確認"
 }
 },
 "立命館大学": {
@@ -37295,7 +37702,8 @@
 "https://search.keinet.ne.jp/2504/outline/campus",
 "https://search.keinet.ne.jp/2504/outline/expense",
 "https://search.keinet.ne.jp/2504/outline/department",
-"https://www.ritsumei.ac.jp/news/detail?id=4104"
+"https://www.ritsumei.ac.jp/news/detail?id=4104",
+"https://passnavi.obunsha.co.jp/univ/4050/eiken/"
 ],
 "kyotsu": {
 "kamoku": "2教科2科目（併用3教科型）〜6教科7科目（7科目型）",
@@ -38070,7 +38478,8 @@
 "schedule": "2026-11-06",
 "money": "2026-11-06",
 "departments": "2026-11-06",
-"ratios": "2026-11-06"
+"ratios": "2026-11-06",
+"eng": "2026-11-07"
 },
 "fdiff": {
 "year": "2027年度入試用",
@@ -38528,6 +38937,93 @@
 }
 ],
 "note": "大学公式『2027 入試ガイド』掲載の2024〜2026年度一般選抜入試結果。全学計・学部計とも一般選抜の全方式（共通テスト方式・後期分割方式等を含む）の合計"
+},
+"eng": {
+"year": "2026年度入試（パスナビ掲載）",
+"rows": [
+{
+"kubun": "共テ利用",
+"name": "共通テスト利用方式（2月選考・3月選考）",
+"use": "みなし満点",
+"level": "英検準1級／TEAP 334（RLWS）／IELTS 5.5",
+"grade": "準1級",
+"tests": "英検・TEAP・IELTS",
+"faculties": "全17学部（デザイン・アート、経営 国際経営、薬学部は2月選考のみ）",
+"note": "共テ英語の得点に換算（パスナビ表記「換算 満点」）。共テ英語の受験も必要"
+},
+{
+"kubun": "一般",
+"name": "IR方式（英語資格試験利用型）",
+"use": "得点換算",
+"level": "英検準1級／TEAP 309／IELTS 5.5で100、TEAP 281／IELTS 5.0で90、英検2級／TEAP 255／IELTS 4.5で80",
+"grade": "2級",
+"tests": "英検・TEAP・IELTS",
+"faculties": "国際関係学部 国際関係学科",
+"note": "出願資格を兼ね、個別試験の英語外部資格試験として換算"
+},
+{
+"kubun": "総合型",
+"name": "国際関係学専攻講義選抜／グローバル・スタディーズ専攻総合評価",
+"use": "出願資格",
+"level": "講義選抜：英検2級／IELTS 4.5、GS専攻：英検準1級／IELTS 6.0",
+"grade": "2級",
+"tests": "英検・IELTS",
+"faculties": "国際関係学部 国際関係学科",
+"note": "パスナビ表記「出願 参考」。アメリカン大学・立命館大学国際連携学科はIELTS 6.0"
+},
+{
+"kubun": "総合型",
+"name": "国際（英語）",
+"use": "出願資格",
+"level": "英検2級／TEAP 250（RLWS）／IELTS 4.5",
+"grade": "2級",
+"tests": "英検・TEAP・IELTS",
+"faculties": "文学部 人文学科",
+"note": "スポーツ健康科学部 CREA（グローバル・アスレティックトレーニング型）も同基準"
+},
+{
+"kubun": "総合型",
+"name": "英語重視",
+"use": "出願資格",
+"level": "英検2級かつCSE 2250（または準1級以上）／TEAP 250（RLWS）／IELTS 5.0",
+"cse": 2250,
+"grade": "2級",
+"tests": "英検・TEAP・IELTS",
+"faculties": "経営学部 国際経営学科",
+"note": ""
+},
+{
+"kubun": "総合型",
+"name": "英語重視",
+"use": "出願資格",
+"level": "英検2級／TEAP 225（RLWS）／TEAP CBT 420／IELTS 4.5",
+"grade": "2級",
+"tests": "英検・TEAP・TEAP CBT・IELTS",
+"faculties": "経済学部 経済学科 国際専攻",
+"note": "TEAP CBTは成績有効期限2026年3月31日まで"
+},
+{
+"kubun": "総合型",
+"name": "RU-ANU専攻 4月入学総合評価",
+"use": "出願資格",
+"level": "IELTS 6.5（各コンポーネント6.0）",
+"tests": "IELTS",
+"faculties": "グローバル教養学部 グローバル教養学科",
+"note": ""
+},
+{
+"kubun": "総合型",
+"name": "UNITE Program",
+"use": "出願資格",
+"level": "英検CSE 1700／IELTS 2.0（パスナビ表記どおり）",
+"cse": 1700,
+"tests": "英検・IELTS",
+"faculties": "情報理工学部 情報理工学科（6コース）",
+"note": "ISSEは級・スコア指定なし"
+}
+],
+"summary": "共通テスト方式は全学部で英検準1級等で共テ英語を満点換算。国際関係学部のIR方式は英検2級〜準1級等で得点換算。総合型は国際系・英語重視の方式で英検2級〜準1級、CSE2250等を出願資格とする。",
+"note": "パスナビは「昨年度の入試情報」と表示（表は2026年度入試情報）。学校推薦型は掲載なし。総合型は法・産業社会・デザイン・アート・政策科学・総合心理・映像・食マネジメント・理工・生命科学・薬学部で掲載なし。最新の募集要項で確認"
 }
 },
 "関西学院大学": {
@@ -38573,7 +39069,8 @@
 "https://search.keinet.ne.jp/2558/outline/campus",
 "https://search.keinet.ne.jp/2558/outline/expense",
 "https://search.keinet.ne.jp/2558/outline/department",
-"https://nrid.nii.ac.jp/ja/nrid/1000090410232"
+"https://nrid.nii.ac.jp/ja/nrid/1000090410232",
+"https://passnavi.obunsha.co.jp/univ/4390/eiken/"
 ],
 "kyotsu": {
 "kamoku": "1〜2教科2科目（併用日程英語）〜8科目（1月8科目型・文型指定）",
@@ -39216,7 +39713,8 @@
 "schedule": "2026-11-06",
 "money": "2026-11-06",
 "departments": "2026-11-06",
-"ratios": "2026-11-06"
+"ratios": "2026-11-06",
+"eng": "2026-11-07"
 },
 "fdiff": {
 "year": "2027年度入試用",
@@ -39608,6 +40106,77 @@
 }
 ],
 "note": "河合塾Kei-Net掲載値（2025・2026年度入試）。全学計はページ取得範囲で確認できず。各学部の代表学科・全学部日程の行"
+},
+"eng": {
+"year": "2026年度入試（パスナビ掲載）",
+"rows": [
+{
+"kubun": "共テ利用",
+"name": "共通テスト利用入試（英語資格・検定試験利用）",
+"use": "出願資格",
+"level": "CEFR B1（英検・英検CSE・TEAP(RLWS)・TEAP CBT・IELTS）",
+"tests": "英検・英検CSE・TEAP・TEAP CBT・IELTS",
+"faculties": "全学部（神学部は3科目型、理・工・生命環境・建築学部は3教科型）",
+"note": "パスナビ表記「出願 免除」。優遇対象は共テの英語。CEFRの詳細は募集要項参照"
+},
+{
+"kubun": "総合型",
+"name": "総合型選抜（グローバル）",
+"use": "出願資格",
+"level": "CEFR B1",
+"tests": "英検・英検CSE・TEAP・TEAP CBT・IELTS",
+"faculties": "全学部",
+"note": "国際的な活躍を志す者が対象"
+},
+{
+"kubun": "総合型",
+"name": "総合型選抜（探究評価型）",
+"use": "出願資格",
+"level": "CEFR B1",
+"tests": "英検・英検CSE・TEAP・TEAP CBT・IELTS",
+"faculties": "神（キリスト教思想・文化コース）・文・社会・法・経済・商・人間福祉・国際・教育・総合政策学部",
+"note": ""
+},
+{
+"kubun": "総合型",
+"name": "総合型選抜（探究評価型）",
+"use": "出願資格",
+"level": "CEFR A2",
+"tests": "英検・英検CSE・TEAP・TEAP CBT・IELTS",
+"faculties": "理・工・生命環境・建築学部",
+"note": ""
+},
+{
+"kubun": "総合型",
+"name": "総合型選抜（学部特色）",
+"use": "出願資格",
+"level": "CEFR B2",
+"tests": "英検・英検CSE・TEAP・TEAP CBT・IELTS",
+"faculties": "人間福祉学部",
+"note": "文・総合政策学部はCEFR B1、理・工・生命環境学部はCEFR A2"
+},
+{
+"kubun": "総合型",
+"name": "総合型選抜（学部特色：高等学校商業科等を卒業見込みの者）",
+"use": "出願資格",
+"level": "英検2級",
+"grade": "2級",
+"tests": "英検",
+"faculties": "商学部",
+"note": "事業経営を志向する者・教育学部は級・スコア指定なし（合格証・スコア表を提出）"
+},
+{
+"kubun": "総合型",
+"name": "総合型選抜（学部特色：キリスト教伝道者コース）",
+"use": "任意提出（参考）",
+"level": "級・スコア指定なし",
+"tests": "語学力認定試験",
+"faculties": "神学部",
+"note": "活動実績報告書で語学力の実績・資格を評価"
+}
+],
+"summary": "共通テスト利用入試の英語資格・検定試験利用で全学部がCEFR B1以上を出願に使う（優遇対象は共テ英語）。総合型（グローバル・探究評価型・学部特色）も学部によりCEFR A2〜B2や英検2級を出願基準とする。",
+"note": "パスナビは「昨年度の入試情報」と表示（表は2026年度入試情報）。CEFR基準の英検CSE値はページに記載なし。学校推薦型は掲載なし。最新の募集要項で確認"
 }
 },
 "関西大学": {
@@ -81698,6 +82267,432 @@
 "https://www.naist.jp/about/",
 "https://www.naist.jp/about/history.html",
 "https://www.naist.jp/accessmap/"
+]
+},
+"総合研究大学院大学（大学院のみ）": {
+"students": {
+"count": 503,
+"year": 2023
+},
+"_checked": {
+"students": "2026-11-07",
+"founded": "2026-11-07",
+"access": "2026-11-07",
+"research": "2026-11-07"
+},
+"founded": "1988年 開学（2023年に6研究科20専攻を先端学術院20コースに再編）",
+"access": "本部：神奈川県三浦郡葉山町。各コースは全国の基盤機関で研究指導を受ける",
+"research": [
+"人類文化研究",
+"国際日本研究",
+"日本歴史研究",
+"日本文学研究",
+"日本語言語科学",
+"情報学",
+"統計科学",
+"素粒子原子核",
+"加速器科学",
+"天文科学",
+"核融合科学",
+"宇宙科学",
+"分子科学",
+"物質構造科学",
+"総合地球環境学",
+"極域科学",
+"基礎生物学",
+"生理科学",
+"遺伝学",
+"統合進化科学"
+],
+"sources": [
+"https://www.soken.ac.jp/outline/disclosure/financial/file/R5jigyouhoukokusho.pdf"
+]
+},
+"宮城大学": {
+"difficulty": {
+"hensachi": "42.5〜47.5",
+"kyotei": "51%〜63%",
+"year": "2027年度入試用"
+},
+"_checked": {
+"difficulty": "2026-11-07",
+"faculties": "2026-11-07",
+"departments": "2026-11-07",
+"students": "2026-11-07",
+"founded": "2026-11-07",
+"access": "2026-11-07",
+"research": "2026-11-07",
+"licenses": "2026-11-07",
+"careers": "2026-11-07"
+},
+"faculties": [
+"事業構想学群",
+"看護学群",
+"食産業学群"
+],
+"departments": [
+{
+"f": "事業構想学群",
+"d": [
+"事業プランニング学類",
+"地域創生学類",
+"価値創造デザイン学類 感性情報デザインコース",
+"価値創造デザイン学類 生活環境デザインコース"
+]
+},
+{
+"f": "看護学群",
+"d": [
+"看護学類"
+]
+},
+{
+"f": "食産業学群",
+"d": [
+"生物生産学類",
+"フードマネジメント学類"
+]
+}
+],
+"students": {
+"count": 1826,
+"year": 2025
+},
+"founded": "1997年 開学（2005年に宮城県農業短期大学を4年制化して食産業学部を設置、2017年に学群・学類制へ移行）",
+"access": "大和キャンパス（事業構想・看護）：宮城県黒川郡大和町学苑1番地1。太白キャンパス（食産業）：宮城県仙台市太白区旗立二丁目2番1号",
+"research": [
+"経営資源の活用・地域課題の分析と持続可能な地域づくり・地域の素材を生かしたデザイン（事業構想学群）",
+"IoT・AIを用いた生産環境、生産科学（生物生産学類）",
+"食品の企画・開発、品質管理、食産業の経営（フードマネジメント学類）"
+],
+"licenses": [
+"一級・二級・木造建築士受験資格",
+"看護師・保健師国家試験受験資格",
+"養護教諭一種",
+"食品衛生監視員"
+],
+"careers": "2024年度卒業者：事業プランニング学類は就職98.5%、地域創生学類は就職94.9%、価値創造デザイン学類は就職81.2%・進学13.8%、看護学類は就職94.6%、フードマネジメント学類は就職92.1%。",
+"sources": [
+"https://search.keinet.ne.jp/1514",
+"https://search.keinet.ne.jp/1514/outline/department",
+"https://search.keinet.ne.jp/1514/outline/licential",
+"https://search.keinet.ne.jp/1514/outline/admission_employment",
+"https://search.keinet.ne.jp/1514/general/border_rate"
+]
+},
+"名寄市立大学": {
+"difficulty": {
+"hensachi": "35.0〜45.0",
+"kyotei": "40%〜55%",
+"year": "2027年度入試用"
+},
+"_checked": {
+"difficulty": "2026-11-07",
+"faculties": "2026-11-07",
+"departments": "2026-11-07",
+"founded": "2026-11-07",
+"access": "2026-11-07",
+"licenses": "2026-11-07",
+"careers": "2026-11-07"
+},
+"faculties": [
+"保健福祉学部"
+],
+"departments": [
+{
+"f": "保健福祉学部",
+"d": [
+"栄養学科",
+"看護学科",
+"社会福祉学科",
+"社会保育学科"
+]
+}
+],
+"founded": "2006年 開学（前身は1960年開学の名寄女子短期大学、1990年に市立名寄短期大学へ改称）",
+"access": "北海道名寄市西4条北8丁目1番地",
+"licenses": [
+"管理栄養士国家試験受験資格",
+"栄養士",
+"栄養教諭一種",
+"食品衛生監視員",
+"看護師・保健師・助産師国家試験受験資格",
+"養護教諭二種",
+"社会福祉士・精神保健福祉士国家試験受験資格",
+"社会福祉主事",
+"児童福祉司",
+"保育士",
+"幼稚園教諭一種",
+"特別支援学校教諭一種",
+"高等学校教諭一種（公民・福祉）"
+],
+"careers": "2024年度卒業者：栄養学科は就職97.4%、看護学科は就職84.3%・進学15.7%、社会福祉学科は就職94.1%、社会保育学科は就職94.4%。",
+"sources": [
+"https://search.keinet.ne.jp/1508",
+"https://search.keinet.ne.jp/1508/outline/licential",
+"https://search.keinet.ne.jp/1508/outline/admission_employment",
+"https://search.keinet.ne.jp/1508/general/border_rate"
+]
+},
+"山形県立米沢栄養大学": {
+"difficulty": {
+"hensachi": "42.5",
+"kyotei": "45%〜57%",
+"year": "2027年度入試用"
+},
+"_checked": {
+"difficulty": "2026-11-07",
+"faculties": "2026-11-07",
+"departments": "2026-11-07",
+"students": "2026-11-07",
+"founded": "2026-11-07",
+"access": "2026-11-07",
+"research": "2026-11-07",
+"licenses": "2026-11-07",
+"careers": "2026-11-07"
+},
+"faculties": [
+"健康栄養学部"
+],
+"departments": [
+{
+"f": "健康栄養学部",
+"d": [
+"健康栄養学科"
+]
+}
+],
+"students": {
+"count": 180,
+"year": 2025
+},
+"founded": "2014年 開学（前身は1952年開学の米沢女子短期大学）",
+"access": "山形県米沢市通町6丁目15番1号",
+"research": [
+"管理栄養士・栄養教諭の育成",
+"地域住民への健康教育・栄養指導"
+],
+"licenses": [
+"管理栄養士（受験資格）",
+"栄養士（資格）",
+"栄養教諭一種",
+"食品衛生監視員（資格）"
+],
+"careers": "2024年度卒業者43人：就職40人（93.0%）、進学0人。",
+"sources": [
+"https://search.keinet.ne.jp/1527",
+"https://search.keinet.ne.jp/1527/outline/department",
+"https://search.keinet.ne.jp/1527/outline/licential",
+"https://search.keinet.ne.jp/1527/outline/admission_employment",
+"https://search.keinet.ne.jp/1527/general/border_rate"
+]
+},
+"旭川市立大学": {
+"difficulty": {
+"hensachi": "45.0〜52.5",
+"kyotei": "50%〜65%",
+"year": "2027年度入試用"
+},
+"_checked": {
+"difficulty": "2026-11-07",
+"faculties": "2026-11-07",
+"departments": "2026-11-07",
+"founded": "2026-11-07",
+"access": "2026-11-07",
+"research": "2026-11-07",
+"licenses": "2026-11-07",
+"careers": "2026-11-07"
+},
+"faculties": [
+"地域創造学部",
+"経済学部",
+"保健福祉学部"
+],
+"departments": [
+{
+"f": "地域創造学部",
+"d": [
+"地域創造学科 地域デザインコース",
+"地域創造学科 アントレプレナーシップコース"
+]
+},
+{
+"f": "経済学部",
+"d": [
+"経営経済学科 経済学コース",
+"経営経済学科 経営学コース",
+"経営経済学科 会計学コース"
+]
+},
+{
+"f": "保健福祉学部",
+"d": [
+"コミュニティ福祉学科",
+"保健看護学科"
+]
+}
+],
+"founded": "2023年 公立大学として開学（前身は1898年の旭川裁縫専門学校、1968年北日本学院大学開設、1970年旭川大学に改称）",
+"access": "北海道旭川市永山3条23丁目1番9号",
+"research": [
+"地域デザイン・アントレプレナーシップ（地域創造学部）",
+"経済学・経営学・会計学（経済学部）",
+"福祉・看護（保健福祉学部）"
+],
+"licenses": [
+"看護師（受験資格）",
+"保健師（受験資格）",
+"社会福祉士（受験資格）",
+"精神保健福祉士（受験資格）",
+"介護福祉士（受験資格）",
+"社会福祉主事（資格）",
+"児童福祉司（資格）",
+"社会調査士（資格）",
+"中学校教諭一種（社会）",
+"高等学校教諭一種（地理歴史・公民・商業・福祉）"
+],
+"careers": "2024年度卒業者：経営経済学科は就職88.5%・進学4.2%、コミュニティ福祉学科は就職85.7%・進学3.6%、保健看護学科は就職93.3%・進学5.0%。",
+"sources": [
+"https://search.keinet.ne.jp/1501",
+"https://search.keinet.ne.jp/1501/outline/department",
+"https://search.keinet.ne.jp/1501/outline/licential",
+"https://search.keinet.ne.jp/1501/outline/admission_employment",
+"https://search.keinet.ne.jp/1501/general/border_rate"
+]
+},
+"山形県立保健医療大学": {
+"difficulty": {
+"hensachi": "45.0〜47.5",
+"kyotei": "56%〜59%",
+"year": "2027年度入試用"
+},
+"_checked": {
+"difficulty": "2026-11-07",
+"faculties": "2026-11-07",
+"departments": "2026-11-07",
+"students": "2026-11-07",
+"founded": "2026-11-07",
+"access": "2026-11-07",
+"research": "2026-11-07"
+},
+"faculties": [
+"保健医療学部"
+],
+"departments": [
+{
+"f": "保健医療学部",
+"d": [
+"看護学科",
+"理学療法学科",
+"作業療法学科"
+]
+}
+],
+"students": {
+"count": 415,
+"year": 2025
+},
+"founded": "2000年 開学（前身は1997年開学の山形県立保健医療短期大学）",
+"access": "山形県山形市上柳260番地",
+"research": [
+"看護学（フィジカルアセスメント・在宅看護・国際看護など）",
+"理学療法学（筋骨格系・小児・地域リハビリテーションなど）",
+"作業療法学（身体機能・精神機能・地域作業療法など）"
+],
+"sources": [
+"https://search.keinet.ne.jp/1511",
+"https://search.keinet.ne.jp/1511/outline/department",
+"https://search.keinet.ne.jp/1511/general/border_rate"
+]
+},
+"岩手県立大学": {
+"difficulty": {
+"hensachi": "40.0〜42.5",
+"kyotei": "48%〜62%",
+"year": "2027年度入試用"
+},
+"_checked": {
+"difficulty": "2026-11-07",
+"faculties": "2026-11-07",
+"departments": "2026-11-07",
+"students": "2026-11-07",
+"founded": "2026-11-07",
+"access": "2026-11-07",
+"research": "2026-11-07",
+"licenses": "2026-11-07",
+"careers": "2026-11-07"
+},
+"faculties": [
+"社会福祉学部",
+"ソフトウェア情報学部",
+"看護学部",
+"総合政策学部"
+],
+"departments": [
+{
+"f": "社会福祉学部",
+"d": [
+"社会福祉学科",
+"人間福祉学科"
+]
+},
+{
+"f": "ソフトウェア情報学部",
+"d": [
+"ソフトウェア情報学科 データ・数理科学コース",
+"ソフトウェア情報学科 コンピュータ工学コース",
+"ソフトウェア情報学科 人工知能コース",
+"ソフトウェア情報学科 社会システムデザインコース"
+]
+},
+{
+"f": "看護学部",
+"d": [
+"看護学科"
+]
+},
+{
+"f": "総合政策学部",
+"d": [
+"総合政策学科 法律・行政コース",
+"総合政策学科 経済・経営コース",
+"総合政策学科 地域社会・環境コース"
+]
+}
+],
+"students": {
+"count": 1946,
+"year": 2025
+},
+"founded": "1998年 開学",
+"access": "滝沢キャンパス：岩手県滝沢市巣子152-52",
+"research": [
+"コンピュータサイエンスを基盤にした地域の実学・実践研究（ソフトウェア情報学部）",
+"福祉政策・コミュニティ福祉・臨床福祉、生涯発達支援・福祉心理（社会福祉学部）",
+"災害看護・地域ヘルスケア（看護学部）"
+],
+"licenses": [
+"看護師（受験資格）",
+"保健師（受験資格）",
+"助産師（受験資格）",
+"養護教諭一種",
+"社会福祉士（受験資格）",
+"精神保健福祉士（受験資格）",
+"公認心理師（受験資格）",
+"保育士（資格）",
+"社会福祉主事（資格）",
+"児童福祉司（資格）",
+"中学校教諭一種（数学）",
+"高等学校教諭一種（数学・情報・保健）",
+"社会調査士（資格）"
+],
+"careers": "2024年度卒業者：看護学科は就職95.8%、社会福祉学科は就職94.3%、総合政策学科は就職93.6%、人間福祉学科は就職79.2%・進学10.4%、ソフトウェア情報学科は就職79.5%・進学17.2%。",
+"sources": [
+"https://search.keinet.ne.jp/1512",
+"https://search.keinet.ne.jp/1512/outline/department",
+"https://search.keinet.ne.jp/1512/outline/licential",
+"https://search.keinet.ne.jp/1512/outline/admission_employment",
+"https://search.keinet.ne.jp/1512/general/border_rate"
 ]
 }
 }

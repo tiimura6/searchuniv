@@ -1,56 +1,6 @@
 {
  "add": [
   {
-   "name": "総合研究大学院大学（大学院のみ）",
-   "type": "国立",
-   "pref": "神奈川県",
-   "hp": "https://www.soken.ac.jp/",
-   "cat": "national",
-   "note": "高校からの通常の進学先ではない（括弧内の理由）。カードの memo にもその旨を書く。"
-  },
-  {
-   "name": "名寄市立大学",
-   "type": "公立",
-   "pref": "北海道",
-   "hp": "https://www.nayoro.ac.jp/",
-   "cat": "public"
-  },
-  {
-   "name": "宮城大学",
-   "type": "公立",
-   "pref": "宮城県",
-   "hp": "http://www.myu.ac.jp/",
-   "cat": "public"
-  },
-  {
-   "name": "山形県立保健医療大学",
-   "type": "公立",
-   "pref": "山形県",
-   "hp": "http://www.yachts.ac.jp/",
-   "cat": "public"
-  },
-  {
-   "name": "山形県立米沢栄養大学",
-   "type": "公立",
-   "pref": "山形県",
-   "hp": "http://www.u.yone.ac.jp/",
-   "cat": "public"
-  },
-  {
-   "name": "岩手県立大学",
-   "type": "公立",
-   "pref": "岩手県",
-   "hp": "http://www.iwate-pu.ac.jp/",
-   "cat": "public"
-  },
-  {
-   "name": "旭川市立大学",
-   "type": "公立",
-   "pref": "北海道",
-   "hp": "https://www.asahikawa-u.ac.jp/",
-   "cat": "public"
-  },
-  {
    "name": "札幌医科大学",
    "type": "公立",
    "pref": "北海道",
@@ -4818,6 +4768,66 @@
   {
    "name": "信州大学",
    "op": "enrich"
+  },
+  {
+   "name": "総合研究大学院大学（大学院のみ）",
+   "op": "add"
+  },
+  {
+   "name": "名寄市立大学",
+   "op": "add"
+  },
+  {
+   "name": "宮城大学",
+   "op": "add"
+  },
+  {
+   "name": "山形県立保健医療大学",
+   "op": "add"
+  },
+  {
+   "name": "山形県立米沢栄養大学",
+   "op": "add"
+  },
+  {
+   "name": "岩手県立大学",
+   "op": "add"
+  },
+  {
+   "name": "旭川市立大学",
+   "op": "add"
+  },
+  {
+   "name": "静岡大学",
+   "op": "enrich"
+  },
+  {
+   "name": "広島大学",
+   "op": "enrich"
+  },
+  {
+   "name": "青山学院大学",
+   "op": "enrich"
+  },
+  {
+   "name": "中央大学",
+   "op": "enrich"
+  },
+  {
+   "name": "法政大学",
+   "op": "enrich"
+  },
+  {
+   "name": "同志社大学",
+   "op": "enrich"
+  },
+  {
+   "name": "立命館大学",
+   "op": "enrich"
+  },
+  {
+   "name": "関西学院大学",
+   "op": "enrich"
   }
  ],
  "failed": [],
@@ -4838,68 +4848,6 @@
   "総合研究大学院大学（大学院のみ）": 1
  },
  "enrich": [
-  {
-   "name": "静岡大学",
-   "keinet": "1230",
-   "need": [
-    "eng"
-   ]
-  },
-  {
-   "name": "広島大学",
-   "keinet": "1360",
-   "need": [
-    "eng"
-   ]
-  },
-  {
-   "name": "青山学院大学",
-   "keinet": "2200",
-   "need": [
-    "eng"
-   ],
-   "passnavi": 2260
-  },
-  {
-   "name": "中央大学",
-   "keinet": "2242",
-   "need": [
-    "eng"
-   ],
-   "passnavi": 2680
-  },
-  {
-   "name": "法政大学",
-   "keinet": "2279",
-   "need": [
-    "eng"
-   ],
-   "passnavi": 3050
-  },
-  {
-   "name": "同志社大学",
-   "keinet": "2498",
-   "need": [
-    "eng"
-   ],
-   "passnavi": 3990
-  },
-  {
-   "name": "立命館大学",
-   "keinet": "2504",
-   "need": [
-    "eng"
-   ],
-   "passnavi": 4050
-  },
-  {
-   "name": "関西学院大学",
-   "keinet": "2558",
-   "need": [
-    "eng"
-   ],
-   "passnavi": 4390
-  },
   {
    "name": "関西大学",
    "keinet": "2533",
@@ -8871,6 +8819,209 @@
   },
   {
    "name": "奈良先端科学技術大学院大学（大学院のみ）",
+   "need": [
+    "ratios"
+   ],
+   "note": "大学公式の入試結果から過去3〜5年分に延ばす（info.ratios_replace で置き換え）"
+  },
+  {
+   "name": "宮城大学",
+   "keinet": "1514",
+   "need": [
+    "kyotsu",
+    "methods"
+   ]
+  },
+  {
+   "name": "宮城大学",
+   "keinet": "1514",
+   "need": [
+    "partners",
+    "extra"
+   ]
+  },
+  {
+   "name": "宮城大学",
+   "keinet": "1514",
+   "need": [
+    "eng"
+   ]
+  },
+  {
+   "name": "名寄市立大学",
+   "keinet": "1508",
+   "need": [
+    "kyotsu",
+    "methods"
+   ]
+  },
+  {
+   "name": "名寄市立大学",
+   "keinet": "1508",
+   "need": [
+    "partners",
+    "extra"
+   ]
+  },
+  {
+   "name": "名寄市立大学",
+   "keinet": "1508",
+   "need": [
+    "eng"
+   ]
+  },
+  {
+   "name": "山形県立米沢栄養大学",
+   "keinet": "1527",
+   "need": [
+    "kyotsu",
+    "methods"
+   ]
+  },
+  {
+   "name": "山形県立米沢栄養大学",
+   "keinet": "1527",
+   "need": [
+    "partners",
+    "extra"
+   ]
+  },
+  {
+   "name": "山形県立米沢栄養大学",
+   "keinet": "1527",
+   "need": [
+    "eng"
+   ]
+  },
+  {
+   "name": "旭川市立大学",
+   "keinet": "1501",
+   "need": [
+    "kyotsu",
+    "methods"
+   ]
+  },
+  {
+   "name": "旭川市立大学",
+   "keinet": "1501",
+   "need": [
+    "partners",
+    "extra"
+   ]
+  },
+  {
+   "name": "旭川市立大学",
+   "keinet": "1501",
+   "need": [
+    "eng"
+   ]
+  },
+  {
+   "name": "山形県立保健医療大学",
+   "keinet": "1511",
+   "need": [
+    "kyotsu",
+    "methods"
+   ]
+  },
+  {
+   "name": "山形県立保健医療大学",
+   "keinet": "1511",
+   "need": [
+    "partners",
+    "extra"
+   ]
+  },
+  {
+   "name": "山形県立保健医療大学",
+   "keinet": "1511",
+   "need": [
+    "eng"
+   ]
+  },
+  {
+   "name": "岩手県立大学",
+   "keinet": "1512",
+   "need": [
+    "kyotsu",
+    "methods"
+   ]
+  },
+  {
+   "name": "岩手県立大学",
+   "keinet": "1512",
+   "need": [
+    "partners",
+    "extra"
+   ]
+  },
+  {
+   "name": "岩手県立大学",
+   "keinet": "1512",
+   "need": [
+    "eng"
+   ]
+  },
+  {
+   "name": "山形県立保健医療大学",
+   "keinet": "1511",
+   "need": [
+    "licenses",
+    "careers"
+   ]
+  },
+  {
+   "name": "名寄市立大学",
+   "keinet": "1508",
+   "need": [
+    "departments",
+    "research"
+   ]
+  },
+  {
+   "name": "総合研究大学院大学（大学院のみ）",
+   "need": [
+    "ratios"
+   ],
+   "note": "大学公式の入試結果から過去3〜5年分に延ばす（info.ratios_replace で置き換え）"
+  },
+  {
+   "name": "名寄市立大学",
+   "need": [
+    "ratios"
+   ],
+   "note": "大学公式の入試結果から過去3〜5年分に延ばす（info.ratios_replace で置き換え）"
+  },
+  {
+   "name": "宮城大学",
+   "need": [
+    "ratios"
+   ],
+   "note": "大学公式の入試結果から過去3〜5年分に延ばす（info.ratios_replace で置き換え）"
+  },
+  {
+   "name": "山形県立保健医療大学",
+   "need": [
+    "ratios"
+   ],
+   "note": "大学公式の入試結果から過去3〜5年分に延ばす（info.ratios_replace で置き換え）"
+  },
+  {
+   "name": "山形県立米沢栄養大学",
+   "need": [
+    "ratios"
+   ],
+   "note": "大学公式の入試結果から過去3〜5年分に延ばす（info.ratios_replace で置き換え）"
+  },
+  {
+   "name": "岩手県立大学",
+   "need": [
+    "ratios"
+   ],
+   "note": "大学公式の入試結果から過去3〜5年分に延ばす（info.ratios_replace で置き換え）"
+  },
+  {
+   "name": "旭川市立大学",
    "need": [
     "ratios"
    ],
