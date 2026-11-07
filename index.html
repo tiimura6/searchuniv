@@ -837,7 +837,7 @@ const detailPromise=Promise.all([
 // ===== 候補リスト（☆）=====
 // この端末のブラウザにだけ保存（個人名は扱わない）。保存できない環境では画面を開いている間だけ保持。
 let CANDS=[]; try{ CANDS=JSON.parse(localStorage.getItem(SU_CANDS_KEY)||"[]").filter(n=>items.some(x=>x.name===n)); }catch(e){ CANDS=[]; }
-function saveCands(){ try{ localStorage.setItem(SU_CANDS_KEY,JSON.stringify(CANDS)); }catch(e){} const c=$("ccount"); if(c) c.textContent=CANDS.length?"（"+CANDS.length+"）":""; }
+function saveCands(){ try{ localStorage.setItem(SU_CANDS_KEY,JSON.stringify(CANDS)); }catch(e){} try{ window.dispatchEvent(new CustomEvent("searchuniv:cands",{detail:{list:CANDS.slice()}})); }catch(e){} const c=$("ccount"); if(c) c.textContent=CANDS.length?"（"+CANDS.length+"）":""; }
 // 面談タブに入れた生徒の学力（偏差値・共テ得点率）から、挑戦／実力相応／安全の目印を付ける
 function studentLevel(){ const num=v=>{ const m=String(v||"").normalize("NFKC").match(/[\d.]+/); return m?+m[0]:null; };
   const raw=num(($("ai-level")||{}).value), mo=($("ai-moshi")||{}).value; return {hen:raw==null?null:(mo==="shinken"?shinkenToKawai(raw):raw), kt:num(($("ai-kt")||{}).value)}; }
@@ -888,7 +888,9 @@ function reportBox(name){
 function bindReport(root){
   root.querySelectorAll(".repf").forEach(f=>{ const b=f.querySelector(".rep-go"); b.onclick=async()=>{
     const st=f.querySelector(".rep-s"), t=f.querySelector(".rep-t").value.trim(); if(!t){ st.textContent="内容を入れてください"; return; }
-    if(!db){ st.textContent="この画面からは送れません（公開ページで送れます）"; return; }
+    if(!db){ let P=null; try{ P=window.parent!==window&&window.parent.ttLog?window.parent:null; }catch(e){}
+      if(P){ P.ttLog("大学情報の誤り報告",f.dataset.univ+"｜"+f.querySelector(".rep-f").value+"｜"+t); st.textContent="飯村システムの操作ログに記録しました。"; f.querySelector(".rep-t").value=""; }
+      else st.textContent="この画面からは送れません（Claudeのアーティファクト版から送れます）"; return; }
     b.disabled=true; st.textContent="送信中…";
     try{ const id=new Date().toISOString().replace(/[^0-9]/g,"").slice(0,14)+"-"+Math.random().toString(36).slice(2,6);
       await db.doc("reports/"+id).set({univ:f.dataset.univ,field:f.querySelector(".rep-f").value,text:t.slice(0,500),date:new Date().toISOString().slice(0,10),status:"open"});
@@ -1076,7 +1078,7 @@ $("kt-go").onclick=async()=>{
 };
 
 // ===== 更新日時（検索欄の下に表示）=====
-const BUILD=/*BUILD*/{"built":"2026-11-07 12:12","schedule":"2026-11-06","diffyear":"2027年度入試用"}/*END_BUILD*/;
+const BUILD=/*BUILD*/{"built":"2026-11-07 12:40","schedule":"2026-11-06","diffyear":"2027年度入試用"}/*END_BUILD*/;
 (function(){ const el=$("updline"); if(!el||!BUILD.built) return; const d=s=>s?s.replace(/-/g,"/"):"";
   el.textContent="更新 "+d(BUILD.built)+"・"+items.length+"校｜入試日程の確認 "+d((BUILD.schedule||BUILD.built).slice(0,10))+"（一般選抜は12月下旬に更新）"; el.title="難易度：河合塾「"+(BUILD.diffyear||"2027年度入試用")+"」"; })();
 $("univlist").innerHTML=items.map(x=>'<option value="'+esc(x.name)+'">').join("");
@@ -1513,6 +1515,7 @@ function selectUniv(name,keepView){
   if(!keepView) setVB([pt[0]-60,pt[1]-45,120,90]);
   $("mpanel").innerHTML='<div class="box"><div class="ph"><h3>'+badge(x)+' '+esc(x.name)+' '+fullTag(x.name)+'</h3>'+starBtn(x.name)+'<button type="button" class="tbtn" data-trend="'+esc(x.name)+'">出題内容</button>'+hpLink(x.name)+'</div><div class="meta">'+metaPrefix(x)+esc(x.pref)+'</div><ul class="pfeat">'+x.feats.map(f=>'<li>'+esc(f)+'</li>').join("")+'</ul>'+guideBlock(x)+'<div class="newsslot">'+cardNews(x.name)+'</div>'+infoBlock(x.name)+partnerBlock(x.name)+examBlock(x.name)+extraBlocks(x.name)+reportBox(x.name)+'</div>';
   MATCH=null; LAST_LIST=[]; CUR_SEL=name; renderSearchNews();
+  try{ window.dispatchEvent(new CustomEvent("searchuniv:select",{detail:{name}})); }catch(e){}
   $("mresults").innerHTML=""; $("mcount").textContent=""; if(!filtersActive()) document.querySelectorAll("#jmap .dot.dim").forEach(c=>c.classList.remove("dim"));
   $("uov").hidden=false; if(!keepView){ document.body.classList.add("noscroll"); $("mpanel").parentElement.scrollTop=0; }
   if(false) $("mpanel").scrollIntoView({behavior:"smooth",block:"start"});
@@ -1666,7 +1669,9 @@ function renderSearchNews(){
   const timer=setTimeout(()=>{ if(newsState==="loading"){ newsState="off"; renderSearchNews(); } },10000);
   try{
     db = (window.claude && claude.use) ? await claude.use("db") : null;
-    if(!db){ clearTimeout(timer); newsState="off"; renderSearchNews(); return; }
+    if(!db){ clearTimeout(timer);
+      try{ const r=await fetch("news.json",{cache:"no-cache"}); if(r.ok){ NEWS=await r.json(); newsState="ok"; renderSearchNews(); return; } }catch(e){}
+      newsState="off"; renderSearchNews(); return; }
     db.collection("news").orderBy("date","desc").limit(500).onSnapshot(snap=>{
       clearTimeout(timer);
       const docs = snap.docs || snap;
